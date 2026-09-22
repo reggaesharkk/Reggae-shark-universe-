@@ -9,3 +9,11 @@ Core result: for odd M>=9, if the reflection-symmetric mask has at least one ina
 The release contains the analytic theorem, a verification companion, its captured output, and a human-readable PDF in the frozen archival bundle. The verifier is corroborative; the theorem does not depend on the finite sweep.
 
 Scope firewall: this is a structural theorem for the stated mathematical operator. It does not make K_tau universal and does not establish a microscopic physical law or multi-step dynamics.
+
+## Lineage
+
+Previous: [v1.1 Structural Mechanism Audit](../../structural-mechanism/v1.1/)  
+Earlier: [v1.0 Single-Step Spectral Certificate](../../single-step/v1.0/)
+
+OSF registration: **NM5BW**  
+DOI: **10.17605/OSF.IO/NM5BW**
