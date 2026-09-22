@@ -98,8 +98,10 @@ DOI: **10.17605/OSF.IO/U7M6H**
 Specialist repository: https://github.com/reggaesharkk/physics-v1-dynamical-sector
 
 **LRSC Odd-Ring Spectral Rank Theorem v1.2**  
-GitHub path: `lrsc/odd-ring-rank-theorem/v1.2/`  
-OSF DOI: **pending deposit**
+OSF registration: **NM5BW**  
+DOI: **10.17605/OSF.IO/NM5BW**  
+Associated project: https://osf.io/g8xey  
+GitHub path: `lrsc/odd-ring-rank-theorem/v1.2/`
 
 ## Author
 
