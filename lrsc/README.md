@@ -18,3 +18,12 @@ The release chain is:
 `v1.0 -> v1.1 -> v1.2 -> multi-step dynamics (development)`
 
 The mathematical scope narrows or broadens explicitly at each stage; later releases do not silently rewrite earlier frozen results.
+
+
+## Complete frozen lineage archive
+
+OSF registration: **QJFR3**  
+DOI: **10.17605/OSF.IO/QJFR3**  
+Associated project: https://osf.io/ew85b
+
+This umbrella registration freezes the preserved lineage `v1.0 -> v1.1 -> v1.2` as distinct historical stages. It does not replace the dedicated v1.2 theorem registration **NM5BW**.
