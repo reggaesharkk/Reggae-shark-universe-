@@ -1,0 +1,26 @@
+LRSC STRUCTURAL MECHANISM AUDIT v1.1 — FINAL VERIFICATION LOG
+Author: Prince Upadhyay, Independent Research
+
+STATUS: FROZEN AUTHOR RELEASE
+
+DOOR 1:
+  unresolved local-min branches = 0
+  all |hat_j[r]|, r=0..40 rigorously exclude zero = TRUE
+  weakest lower bound = 0.00020280460537359054 at r=31
+  pre-stencil rank = 41
+
+DOOR 2:
+  custom B&B processed nodes = 21
+  terminal bound nodes = 11
+  all terminal weak-duality interval certificates PASS = TRUE
+  weakest certified terminal relative lower bound = 0.0010285136424967765832
+  threshold = 0.001
+
+COMPRESSION:
+  best |S|<=10 direct error = 0.0010398206190990441
+  K11 witness error = 0.00096236912766441347
+  K_0.001 = 11
+
+CLAIM FIREWALL:
+  Locked M=99 single-step LRSC benchmark only.
+  No universality claim for K=11 or rank=41.
