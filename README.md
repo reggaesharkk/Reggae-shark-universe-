@@ -105,6 +105,12 @@ DOI: **10.17605/OSF.IO/NM5BW**
 Associated project: https://osf.io/g8xey  
 GitHub path: `lrsc/odd-ring-rank-theorem/v1.2/`
 
+**LRSC Complete Lineage Archive v1.0 -> v1.2**  
+OSF registration: **QJFR3**  
+DOI: **10.17605/OSF.IO/QJFR3**  
+Associated project: https://osf.io/ew85b  
+GitHub lineage: `lrsc/`
+
 ## Author
 
 **Prince Upadhyay**  
