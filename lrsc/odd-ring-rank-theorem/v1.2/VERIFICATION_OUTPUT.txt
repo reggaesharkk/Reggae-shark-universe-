@@ -1,0 +1,14 @@
+LRSC ODD-RING RANK THEOREM v1.2 - VERIFICATION COMPANION
+Author: Prince Upadhyay, Independent Research
+
+[1] closed spatial shedding formula max discrepancy = 8.05883137999785504e-14
+[2] simplified Fourier formula checks = 500494
+    max discrepancy = 2.22044604925031308e-16
+    smallest observed |jhat_r| = 1.81314088234661782e-10 at M=1997, r=499
+[3] M=4L+1 decisive inequality failures on M<=2001 = []
+[4] exact cyclotomic M=99, required r=0..40: zeros=[]
+[4] exact cyclotomic M=101, required r=0..41: zeros=[]
+[4] exact cyclotomic M=127, required r=0..51: zeros=[]
+
+STATUS: PASS
+NOTE: finite checks support the analytic proof; they do not replace it.
