@@ -3,13 +3,16 @@
 **Author:** Prince Upadhyay  
 **Affiliation:** Independent Research  
 **Date:** 22 September 2026  
-**License:** CC BY 4.0
+**License:** CC BY 4.0  
+**OSF registration:** NM5BW  
+**DOI:** 10.17605/OSF.IO/NM5BW  
+**Associated project:** https://osf.io/g8xey
 
-## Recommended title
+## Registered title
 
 LRSC Odd-Ring Spectral Rank Theorem: Exact Channel-Space Rank for Near-Nyquist Odd Cyclic Systems — v1.2
 
-## Recommended description
+## Registered description
 
 This release presents an analytic family theorem for the single-step near-Nyquist LRSC operator on odd cyclic lattices. For odd M>=9, if the binary mask is reflection-symmetric and has at least one inactive reflection orbit, the conjugate-balanced post-stencil channel matrix V has rank exactly equal to p, the number of active reflection orbits.
 
