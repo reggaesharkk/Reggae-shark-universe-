@@ -32,3 +32,8 @@ NOT CLAIMED: microscopic physics, emergent spacetime validation, universal spect
 
 Frozen release ZIP SHA-256: `5a82e2eabdc12bad4aa48414285091814cdf79b0192be8b079c2eee3955ea0ef`  
 PDF SHA-256: `4e1f03f6fa997031a557a70e2d7aa8daa72453104017b415b815485e03f8b11f`
+
+## Lineage
+
+Next: [v1.1 Structural Mechanism Audit](../../structural-mechanism/v1.1/)  
+Then: [v1.2 Odd-Ring Spectral Rank Theorem](../../odd-ring-rank-theorem/v1.2/)
