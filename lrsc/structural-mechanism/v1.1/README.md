@@ -31,3 +31,7 @@ The historical v1.1 author package records the final certificate and verificatio
 
 Previous: [v1.0 single-step spectral certificate](../../single-step/v1.0/)  
 Next: [v1.2 odd-ring spectral rank theorem](../../odd-ring-rank-theorem/v1.2/)
+
+## Archive
+
+[Frozen author release archive](LRSC_Structural_Mechanism_Audit_v1.1_FROZEN_AUTHOR_RELEASE.zip)
