@@ -121,3 +121,8 @@ Independent Research
 ### One sentence
 
 **I built four falsification-oriented research programs around self-reference, AI measurement, information-theoretic phenomenological dynamics, and local cyclic redistribution; the archive separates exact theorems from simulations, computational certificates, and open physical interpretation.**
+
+
+## Complete four-program archive
+
+The versioned paper package is available as a frozen ZIP archive: [Download the Sept. 22, 2026 archive](archive/Prince_Upadhyay_All_4_Research_Programs_FINAL_2026-09-22.zip). Its contents and SHA-256 are recorded in [the archive note](archive/README.md) and [checksum file](archive/SHA256SUMS.txt).
