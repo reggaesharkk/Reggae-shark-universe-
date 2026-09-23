@@ -57,6 +57,9 @@ LRSC release chain: [v1.0](lrsc/single-step/v1.0/) -> [v1.1](lrsc/structural-mec
 
 **v1.2.1 clarification supplement:** [paper, derivation source, independent verifier, and verification output](lrsc/odd-ring-rank-theorem/v1.2.1-supplement/). This is a companion supplement to frozen v1.2; it does not replace the theorem or change DOI 10.17605/OSF.IO/NM5BW.
 
+
+**v1.1.1 reproducibility supplement:** [K_0.001 = 11 paper and source bundle](lrsc/structural-mechanism/v1.1.1-reproducibility/). This reports exhaustive IEEE double-precision enumeration through K=10 plus a directly verified K=11 witness for the locked benchmark; it is not an interval proof. Historical v1.1, frozen v1.2, and DOI 10.17605/OSF.IO/NM5BW are unchanged.
+
 ## What is genuinely distinctive
 
 This archive does **not** claim to have invented information-theoretic gravity, AI self-recognition, metacognition, recursive systems, Hopf bifurcation theory, Fourier analysis, or Chebyshev/Vandermonde methods. Those literatures already exist.

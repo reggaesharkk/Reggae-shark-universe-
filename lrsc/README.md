@@ -10,6 +10,8 @@ The LRSC branch is preserved as a versioned sequence rather than a single rewrit
 2. [v1.1 — Structural Mechanism Audit](structural-mechanism/v1.1/)  
    Modular folding, reflection-orbit rank mechanism, interval non-vanishing audit, and certified locked-benchmark K<=10 exclusion.
 
+   **v1.1.1 reproducibility supplement:** [paper, exhaustive search source, output, and release notes](structural-mechanism/v1.1.1-reproducibility/). This documents the K_0.001=11 benchmark as a finite-precision numerical exhaustive result (all subsets K<=10 plus a passing K=11 witness), not an interval proof. It does not rewrite v1.1 or v1.2.
+
 3. [v1.2 — Odd-Ring Spectral Rank Theorem](odd-ring-rank-theorem/v1.2/)  
    Analytic family theorem proving rank(V)=p for the stated near-Nyquist odd-ring setting.
 
