@@ -1,0 +1,9 @@
+rings_checked=197
+coefficients_checked=20094
+max_spatial_formula_abs_error=1.51087475863675991e-13
+max_direct_DFT_abs_error=9.32587340685131494e-15
+max_direct_finite_sum_abs_error=1.61537450082960277e-14
+rank_cases=35; rank_cases_passing=35
+rank_rings=[9, 11, 13, 17, 25]; rank_relative_tolerance=1e-10
+coefficient_absolute_tolerance=2e-14
+STATUS=PASS (finite corroboration only; not a proof)

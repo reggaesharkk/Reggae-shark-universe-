@@ -55,6 +55,8 @@ Repository path: `lrsc/odd-ring-rank-theorem/v1.2/`
 
 LRSC release chain: [v1.0](lrsc/single-step/v1.0/) -> [v1.1](lrsc/structural-mechanism/v1.1/) -> [v1.2](lrsc/odd-ring-rank-theorem/v1.2/)
 
+**v1.2.1 clarification supplement:** [paper, derivation source, independent verifier, and verification output](lrsc/odd-ring-rank-theorem/v1.2.1-supplement/). This is a companion supplement to frozen v1.2; it does not replace the theorem or change DOI 10.17605/OSF.IO/NM5BW.
+
 ## What is genuinely distinctive
 
 This archive does **not** claim to have invented information-theoretic gravity, AI self-recognition, metacognition, recursive systems, Hopf bifurcation theory, Fourier analysis, or Chebyshev/Vandermonde methods. Those literatures already exist.
