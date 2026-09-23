@@ -37,6 +37,10 @@ The script compiles the recursive enumerator `source/exhaustive_search.cpp`, pri
 - `source/VERIFICATION_OUTPUT.txt` — complete recorded run output.
 - `source/SHA256SUMS.txt` — integrity hashes.
 
+## OSF project DOI
+
+[10.17605/OSF.IO/JAK5X](https://doi.org/10.17605/OSF.IO/JAK5X) identifies the separate OSF project for this numerical reproducibility supplement. The project contains the OSF deposit ZIP; this DOI identifies the project rather than a specific ZIP file version.
+
 ## Versioning
 
 This supplement is separate from historical v1.1. Frozen v1.2 and DOI 10.17605/OSF.IO/NM5BW are not revised or replaced.
