@@ -2,24 +2,41 @@
 
 Author: Prince Upadhyay, Independent Research
 
-This companion supplement documents the single-step benchmark at M=99, k_idx=49, theta=0.08, A=0.50, using 50 channels with DC counted. It exhaustively searches every exact-cardinality subset for K=1 through 10 and directly verifies one passing K=11 witness.
+This package reproduces the fixed single-step benchmark at M=99, k_idx=49, theta=0.08, A=0.50 using 50 channels (DC counted). It exhaustively enumerates every exact-cardinality subset for K=1,...,10 and directly checks a passing K=11 witness.
 
 ## Result
 
-For each K=1,...,10, every binomial(50,K) subset was visited. The smallest residual at K=10 is 0.0010398206190990441, above 0.001. A K=11 witness, {0,1,3,42,43,44,45,46,47,48,49}, has directly recomputed residual 0.00096236912766441347. Thus K_0.001=11 for this benchmark under the stated IEEE double-precision computation. Full-channel closure is 2.3808015585084204e-16.
+The K=10 global minimum is {0,1,42,43,44,45,46,47,48,49}, relative residual 0.0010398206190990441. The K=11 witness {0,1,3,42,43,44,45,46,47,48,49} has residual 0.00096236912766441347. Therefore K_0.001=11 for this benchmark under the stated floating-point computation. The empty subset has residual 1.
 
-The result is an exhaustive numerical certificate, not an interval-arithmetic, exact-rational, or formally verified rounding-error proof. It applies only to this benchmark. K=11 is a passing witness, not an exhaustive optimization at K=11.
+This is an exhaustive numerical certificate using IEEE double precision, not an interval-arithmetic or exact-rational proof. It is benchmark-specific. The full run enumerates all combinations for each K≤10; K=11 is a directly verified witness, not an optimized K=11 search.
+
+An independently implemented verification is available in
+`LRSC_v1_1_1_Independent_Companion.zip`. It separately enumerates the
+13,432,735,555 subsets with a different C traversal and checks the K=10
+optimum and K=11 witness at 50-digit numerical precision. The latter is a
+two-subset cross-check, not a certified interval bound over the full search.
+The LRSC research is authored by Prince Upadhyay; independent verification
+does not transfer or change authorship of the research.
+
+## Reproduce
+
+Requirements: Python 3, NumPy, and a C++17 compiler (g++ by default). From this directory run:
+
+```sh
+python3 source/audit_k1_to_k10.py
+```
+
+The script compiles the recursive enumerator `source/exhaustive_search.cpp`, prints expected and visited combination counts, checks the Gram-objective best and runner-up by direct complex-vector reconstruction, and verifies the K=11 witness. Numerical low-order digits may vary across platforms.
 
 ## Files
 
-- [Supplement PDF](LRSC_v1_1_1_K001_Reproducibility_Supplement.pdf)
-- [Complete source bundle ZIP](LRSC_v1_1_1_Source_Bundle.zip)
-- source/audit_k1_to_k10.py — operator/channel construction, Gram objective, direct checks
-- source/exhaustive_search.cpp — recursive enumeration without materializing combinations
-- source/VERIFICATION_OUTPUT.txt — recorded full output
-- source/SHA256SUMS.txt — integrity hashes (run from this directory's parent package root)
-- RELEASE_NOTES.md
+- `LRSC_v1_1_1_K001_Reproducibility_Supplement.pdf` — concise methods/results/evidence-limits document.
+- `LRSC_v1_1_1_Independent_Companion.zip` — separate, independently implemented numerical verification distributed alongside this source bundle.
+- `source/audit_k1_to_k10.py` — operator arrays, Gram data, audit checks.
+- `source/exhaustive_search.cpp` — memory-safe exact-cardinality subset enumeration.
+- `source/VERIFICATION_OUTPUT.txt` — complete recorded run output.
+- `source/SHA256SUMS.txt` — integrity hashes.
 
-Run from the extracted source bundle: python3 audit_k1_to_k10.py (Python 3, NumPy, C++17 compiler required).
+## Versioning
 
-Historical v1.1, frozen v1.2, and DOI 10.17605/OSF.IO/NM5BW remain unchanged.
+This supplement is separate from historical v1.1. Frozen v1.2 and DOI 10.17605/OSF.IO/NM5BW are not revised or replaced.

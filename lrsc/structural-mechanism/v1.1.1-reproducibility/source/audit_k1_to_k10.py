@@ -119,7 +119,7 @@ def main():
     print(f"K7_global_min_direct_error={best_direct:.17g}; percent={100*best_direct:.15g}%")
     print(f"K7_second_subset={second}; K7_second_direct_error={second_direct:.17g}")
     print(f"K7_quadratic_objective_gap={found.second-found.best:.17g}")
-    for label, subset in [("Google_claim_A", claimed_a), ("Google_claim_B", claimed_b), ("archived_v1_0", archived)]:
+    for label, subset in [("prior_claim_A", claimed_a), ("prior_claim_B", claimed_b), ("archived_v1_0", archived)]:
         print(f"{label}_subset={subset}; direct_error={direct_error(target,V,norm_target,subset):.17g}")
     k8_error, k8_subset, k8_result = results[8]
     print(f"K8_best_subset={k8_subset}; K8_direct_error={k8_error:.17g}; K8_runner_up_error={direct_error(target,V,norm_target,tuple(int(k8_result.second_indices[t]) for t in range(8))):.17g}")
