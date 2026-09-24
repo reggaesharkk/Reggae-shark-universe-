@@ -1,5 +1,18 @@
 # REGGAE SHARK UNIVERSE
 
+## 24 September 2026 — consolidated archive update
+
+The Self-Referential Processing Design Lab has now completed **Phase 7**. The final locked aggregation contains **4,000 GLMM fits** across 500 deterministic replicates, four DGP cells, and the M1/M2 architecture comparison. Under the prespecified Phase 7 calibration rule, **M1 is retained as the candidate architecture for a future prospectively preregistered study; M2 is not promoted**. This is simulation-based methodological validation, not live confirmatory evidence of a self-referential effect.
+
+**Current consolidated OSF master:** https://doi.org/10.17605/OSF.IO/NV7DZ  
+**Original Self-Referential Processing foundation:** https://doi.org/10.17605/OSF.IO/37H2Y  
+**Physics Appendix A theorem:** https://doi.org/10.17605/OSF.IO/U7M6H  
+**LRSC odd-ring theorem:** https://doi.org/10.17605/OSF.IO/NM5BW
+
+The Universe remains the umbrella map. Each research line should also be maintained in a specialist repository so code, issues, releases, and future work can evolve independently without blurring evidence levels.
+
+---
+
 ### Independent research by Prince Upadhyay
 
 **Four research programs. One falsification-first archive.**
