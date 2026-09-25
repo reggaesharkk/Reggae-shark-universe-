@@ -26,14 +26,19 @@ C_7\approx3.7441266968,
 followed by continuation values
 
 [
-C_8\approx4.6560466272,
-qquad
-C_9\approx6.2610422516.
+C_8\approx4.6560466272,qquad
+C_9\approx6.2610422516,
+]
+[
+C_{10}\approx7.1596557188,qquad
+C_{11}\approx8.0348857964.
 ]
 
-The N=9 phase-only value exceeds the earlier finite WP17 sparse amplitude+phase benchmark (approx5.1129325955).
+The phase-only optimized values therefore rise across five consecutively tested cutoffs. N=9, N=10 and N=11 exceed the earlier finite WP17 sparse amplitude+phase benchmark (approx5.1129325955).
 
-This is finite-dimensional evidence only. It does not establish monotone growth for all N, an unbounded universal constant, finite-time blowup, or global regularity. The N=10/N=11 continuation is currently being run as a prospective falsification test.
+The N=10/N=11 raw result and N=11 checkpoint were cross-checked for SHA-256 provenance and exact agreement of the N=11 optimized phase vector, best search-grid observables, and all 212 accepted-improvement records. See `WP16_N10_N11_VERIFIED_CONTINUATION_2026_09_25.md`.
+
+This is finite-dimensional evidence only. It does not establish monotone growth for all N, an unbounded universal constant, finite-time blowup, or global regularity. The next mathematical target is to reverse-engineer an explicit phase construction or lower-bound family from the N=7–11 optimizers.
 
 ## Other exact/analytic obstructions already preserved in the specialist repo
 
