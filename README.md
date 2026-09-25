@@ -1,133 +1,142 @@
 # REGGAE SHARK UNIVERSE
 
-## 24 September 2026 — consolidated archive update
+## 25 September 2026 — five-program umbrella archive
 
-The Self-Referential Processing Design Lab has now completed **Phase 7**. The final locked aggregation contains **4,000 GLMM fits** across 500 deterministic replicates, four DGP cells, and the M1/M2 architecture comparison. Under the prespecified Phase 7 calibration rule, **M1 is retained as the candidate architecture for a future prospectively preregistered study; M2 is not promoted**. This is simulation-based methodological validation, not live confirmatory evidence of a self-referential effect.
+**Prince Upadhyay — Independent Research**
 
-**Current consolidated OSF master:** https://doi.org/10.17605/OSF.IO/NV7DZ  
-**Original Self-Referential Processing foundation:** https://doi.org/10.17605/OSF.IO/37H2Y  
-**Physics Appendix A theorem:** https://doi.org/10.17605/OSF.IO/U7M6H  
-**LRSC odd-ring theorem:** https://doi.org/10.17605/OSF.IO/NM5BW
-
-The Universe remains the umbrella map. Each research line should also be maintained in a specialist repository so code, issues, releases, and future work can evolve independently without blurring evidence levels.
-
----
-
-### Independent research by Prince Upadhyay
-
-**Four research programs. One falsification-first archive.**
+**Five research programs. One falsification-first archive.**
 
 > **Build. Attack. Falsify. Preserve.**  
 > Do not protect the idea from falsification. Find the strongest contradiction first.
 
----
+The Reggae Shark Universe is the public umbrella map for five research programs developed in parallel. Specialist repositories carry the live code and project-specific history; this repository preserves the paper-facing map, frozen lineage, and current cross-project archive.
 
-## What this repository actually is
+## Paper shelf
 
-Reggae Shark Universe is the public map of four research programs developed in parallel:
+**Start here:** [papers/README.md](papers/README.md)
 
-| World | Program | What was built |
+The paper shelf mirrors the canonical paper artifacts that exist in the specialist repositories and links frozen OSF records that remain authoritative. Historical releases are never silently rewritten.
+
+## The five research worlds
+
+| World | Program | Current role |
 |---|---|---|
-| **01** | Self-Referential Processing | frozen preregistration, explicit gates, recovery/power simulations, and a DesignLab stress-testing program |
-| **02** | Psi Benchmark | controlled self-vs-peer perturbation benchmark with anonymization, matching, deterministic seeds, and negative controls |
-| **03** | Information-Theoretic Physics | separated quantum/thermodynamic/phenomenological framework, Gate 0 audit, nonlinear Hopf analysis, and an exact positivity theorem |
-| **04** | LRSC | single-step spectral decomposition, fixed-unit compression certificates, structural mechanism audit, and an analytic odd-ring spectral rank theorem |
+| **01** | Self-Referential Processing + Design Lab | frozen preregistration, Gate architecture, simulation/recovery studies, and completed Phase 7 inferential validation |
+| **02** | Psi Self-Modeling Benchmark | controlled self-vs-peer perturbation benchmark with anonymization, matching, deterministic seeds, and negative controls |
+| **03** | Information-Theoretic Physics | phenomenological dynamical sector, Gate 0 firewall, nonlinear Hopf analysis, and exact positivity theorem inside the stated ODE family |
+| **04** | LRSC | spectral certificates, structural mechanism audit, reproducibility supplements, and odd-ring spectral rank theorem |
+| **05** | Navier–Stokes Bridge Audit | finite Fourier/Galerkin identities, falsification gates, phase/geometry adversaries, analytic obstructions, and explicit open proof obligations |
 
-The point is not to claim that these branches have already been unified into a law of nature. **They have not.** The research architecture is falsification-first: speculative bridges are isolated, statistical claims are preregistered and stress-tested, numerical discoveries are attacked, and exact results are separated from empirical or computational evidence.
+These programs are **not** claimed to be unified into a law of nature.
 
-## Strongest completed mathematical results
+## Live specialist repositories
 
-### Physics nonlinear sector
+- Self-Referential Processing + Design Lab: https://github.com/reggaesharkk/self-referential-processing-designlab
+- Psi Benchmark: https://github.com/reggaesharkk/psi-self-modeling-benchmark
+- Information-Theoretic Physics: https://github.com/reggaesharkk/physics-v1-dynamical-sector
+- LRSC Odd-Ring Spectral Rank: https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank
+- Navier–Stokes Bridge Audit: https://github.com/reggaesharkk/navier-stokes-bridge-audit
+
+See also [SPECIALIST_REPOSITORIES.md](SPECIALIST_REPOSITORIES.md).
+
+## Frozen archival records
+
+### Self-Referential Processing
+
+- Consolidated Design Lab master: https://doi.org/10.17605/OSF.IO/NV7DZ
+- Original frozen foundation: https://doi.org/10.17605/OSF.IO/37H2Y
+
+The completed Phase 7 Design Lab contains 4,000 GLMM fits across 500 deterministic replicates, four DGP cells, and two candidate architectures. Under the locked exact-binomial calibration rule, M1 passed the tested null Type-I and coverage compatibility screens in both covariance-generating conditions; M2 did not. M1 is therefore the candidate architecture for a future prospectively preregistered design. This is simulation-based methodological validation, not live confirmatory evidence of a Self effect.
+
+Mirrored paper:
+- [DesignLab Phase 7 Final Technical Report v1.0 — PDF](papers/self-referential-processing/DesignLab_Phase7_Final_Technical_Report_v1.0.pdf)
+- [Markdown source](papers/self-referential-processing/DesignLab_Phase7_Final_Technical_Report_v1.0.md)
+
+### Information-Theoretic Physics
+
+- Appendix A theorem DOI: https://doi.org/10.17605/OSF.IO/U7M6H
+- Specialist repository: https://github.com/reggaesharkk/physics-v1-dynamical-sector
 
 For the covered strictly-positive interior family of the phenomenological ODE, the e-driven Hopf surface is
 
     e_c = (alpha+g)(alpha+mu)(g+mu) / [beta delta (alpha+mu+g)]
     omega_c^2 = alpha mu g / (alpha+mu+g)
 
-Using
+The exact Hopf-surface expression reduces to a positive rational form over the stated domain, yielding the documented sign conclusion for the first Lyapunov coefficient in that convention. This theorem is internal to the specified phenomenological ODE family and does not establish a microscopic law of nature.
 
-    l1 = Re(G21)/(2 omega),     <p,q> = 1
+Mirrored paper materials:
+- [Appendix A v1.1 source](papers/physics/appendix_a_dynamical_sector_v1.1.tex)
+- [Hopf theorem note v1.4](papers/physics/HOPF_THEOREM_v1.4.md)
+- [Proof audit v1.4.1](papers/physics/PROOF_AUDIT_v1.4.1.md)
 
-the exact Hopf-surface expression reduces to
+### LRSC
 
-    Re(G21) = N/D
+- Frozen theorem DOI: https://doi.org/10.17605/OSF.IO/NM5BW
+- Complete lineage DOI: https://doi.org/10.17605/OSF.IO/QJFR3
+- Specialist repository: https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank
 
-with **93 numerator monomials and 28 denominator monomials**, every exact coefficient positive. Therefore **l1 > 0** throughout the theorem's positive domain. Positive transversality then makes every covered interior e-driven Hopf bifurcation **subcritical** in the stated convention.
+For the stated single-step near-Nyquist odd cyclic setting, the v1.2 theorem proves the documented rank formula for the active reflection-orbit span. It does not imply a universal fixed-unit compression number or a multi-step physical theorem.
 
-### LRSC odd-ring spectral rank
+Preserved inside this Universe:
+- [v1.2 theorem lineage](lrsc/odd-ring-rank-theorem/v1.2/)
+- [v1.2.1 proof clarification supplement](lrsc/odd-ring-rank-theorem/v1.2.1-supplement/)
+- [v1.1.1 reproducibility supplement](lrsc/structural-mechanism/v1.1.1-reproducibility/)
 
-For the single-step near-Nyquist LRSC operator on odd cyclic lattices, the v1.2 theorem proves that, for odd `M>=9`, a reflection-symmetric binary mask with at least one inactive reflection orbit gives
+Frozen v1.2 and DOI NM5BW remain untouched; supplements are additive.
 
-    rank(V) = p
+### Navier–Stokes Bridge Audit
 
-where `p` is the number of active reflection orbits. The proof uses exact residue-class formulas for the shedding spectrum, non-vanishing of the required Fourier coefficients, Chebyshev/Vandermonde independence, and injectivity of the circulant stencil on the masked channel span.
+Specialist repository: https://github.com/reggaesharkk/navier-stokes-bridge-audit
 
-The result is structural. It does **not** imply a universal fixed-unit compression number `K_tau`, a microscopic physical law, or a multi-step dynamical theorem.
+The Navier–Stokes branch is a finite-Fourier/Galerkin research audit, not a claim of having solved the Millennium problem. It contains exact finite-dimensional identities, standard/conditional estimates, adversarial searches, and explicit failed proof routes.
 
-Repository path: `lrsc/odd-ring-rank-theorem/v1.2/`
+Current refined phase-only finite benchmark sequence at the registered short evolved anchor:
 
-LRSC release chain: [v1.0](lrsc/single-step/v1.0/) -> [v1.1](lrsc/structural-mechanism/v1.1/) -> [v1.2](lrsc/odd-ring-rank-theorem/v1.2/)
+[
+C_7\approx3.7441266968,qquad
+C_8\approx4.6560466272,qquad
+C_9\approx6.2610422516.
+]
 
-**v1.2.1 clarification supplement:** [paper, derivation source, independent verifier, and verification output](lrsc/odd-ring-rank-theorem/v1.2.1-supplement/). This is a companion supplement to frozen v1.2; it does not replace the theorem or change DOI 10.17605/OSF.IO/NM5BW.
+The N=9 finite phase-only value exceeds the earlier finite WP17 sparse amplitude+phase benchmark of about 5.1129326. This does **not** establish divergence as (N\to\infty), an unbounded universal constant, blowup, or global regularity. N=10/N=11 continuation is an active falsification test.
 
-
-**v1.1.1 reproducibility supplement:** [K_0.001 = 11 paper and source bundle](lrsc/structural-mechanism/v1.1.1-reproducibility/). This reports exhaustive IEEE double-precision enumeration through K=10 plus a directly verified K=11 witness for the locked benchmark; it is not an interval proof. Historical v1.1, frozen v1.2, and DOI 10.17605/OSF.IO/NM5BW are unchanged.
-
-## What is genuinely distinctive
-
-This archive does **not** claim to have invented information-theoretic gravity, AI self-recognition, metacognition, recursive systems, Hopf bifurcation theory, Fourier analysis, or Chebyshev/Vandermonde methods. Those literatures already exist.
-
-What is distinctive in this project is the particular end-to-end construction:
-
-- an explicit self-referential-processing hypothesis converted into a preregistered, falsifiable AI evaluation program;
-- a separate Psi self-vs-peer perturbation benchmark with controls designed to attack stylistic and scale confounds;
-- a DesignLab that stress-tests assignment geometry, information scale, covariance identifiability and inferential calibration before substantive confirmatory interpretation;
-- a phenomenological information-theoretic physics model whose speculative bridges are explicitly firewalled from established physics;
-- a Gate 0 audit that **refused to close** the observer-entropy/horizon-entropy bridge when the assumptions did not justify it;
-- a nonlinear dynamical audit that went from benchmark -> sweep -> adversarial precision checks -> exact symbolic positivity certificate -> verifier/errata trail;
-- an LRSC line that went from a locked single-step spectral certificate -> global computational compression bound -> structural mechanism audit -> analytic odd-ring rank theorem;
-- cryptographic manifests and frozen historical releases so corrections do not silently rewrite the record.
-
-A claim of worldwide priority for the full combination has not been established by a systematic literature review.
+Mirrored paper materials:
+- [Main report](papers/navier-stokes/REPORT.md)
+- [Master Record supplement](papers/navier-stokes/MASTER_RECORD_SUPPLEMENT_2026_09_24.md)
+- [Cutoff-independent small-data proof audit](papers/navier-stokes/WP3_SMALL_DATA_PROOF.md)
+- [Current status](papers/navier-stokes/CURRENT_STATUS_2026_09_25.md)
 
 ## Scientific firewall
 
-The physics theorem is a theorem **inside the specified phenomenological ODE family**. It does not establish that the ODE is a microscopic law of nature. Gate 0 remains **UNRESOLVED IN GENERALITY**.
+The archive distinguishes:
 
-The AI simulation and benchmark work does not establish machine consciousness.
+- **exact theorem inside a stated mathematical model** from a claim about nature;
+- **simulation validation** from live confirmatory evidence;
+- **finite numerical/adversarial evidence** from an asymptotic theorem;
+- **frozen historical versions** from later additive supplements;
+- **negative results and failed routes** from successful proof components.
 
-The LRSC theorem is a theorem about the stated single-step mathematical operator. It does not establish a universal physical dimension, universal `K_tau`, or multi-step dynamics.
-
-The archive records where the mathematics ends and the interpretation begins.
+The AI work does not establish machine consciousness.  
+The physics theorem does not validate the unresolved observer-entropy/horizon-entropy bridge.  
+The LRSC theorem does not establish universal physical compression.  
+The Navier–Stokes branch does not establish arbitrary-data global regularity or finite-time singularity.
 
 ## Status vocabulary
 
-**ESTABLISHED** - standard result used from existing mathematics/physics.  
-**SYNTHETIC** - simulation or generated stress-test data.  
-**REPRODUCED** - result mechanically or independently reproduced under the stated procedure.  
-**DISCOVERY** - project result that survived the documented checks.  
-**FROZEN** - versioned archival artifact that is not silently rewritten.  
-**OPEN** - unresolved bridge, question or next-stage test.
+**ESTABLISHED** — standard result used from existing mathematics/physics.  
+**SYNTHETIC** — simulation or generated stress-test data.  
+**REPRODUCED** — mechanically or independently reproduced under the stated procedure.  
+**DISCOVERY** — project result that survived the documented internal checks.  
+**FROZEN** — versioned archival artifact that is not silently rewritten.  
+**OPEN** — unresolved bridge, question, or next-stage test.
 
-## Frozen theorem records
+## Historical four-program archive
 
-**Physics Appendix A v1.4**  
-OSF registration: **U7M6H**  
-DOI: **10.17605/OSF.IO/U7M6H**
+The 22 September 2026 archive remains preserved unchanged:
 
-Specialist repository: https://github.com/reggaesharkk/physics-v1-dynamical-sector
+[Prince_Upadhyay_All_4_Research_Programs_FINAL_2026-09-22.zip](archive/Prince_Upadhyay_All_4_Research_Programs_FINAL_2026-09-22.zip)
 
-**LRSC Odd-Ring Spectral Rank Theorem v1.2**  
-OSF registration: **NM5BW**  
-DOI: **10.17605/OSF.IO/NM5BW**  
-Associated project: https://osf.io/g8xey  
-GitHub path: `lrsc/odd-ring-rank-theorem/v1.2/`
-
-**LRSC Complete Lineage Archive v1.0 -> v1.2**  
-OSF registration: **QJFR3**  
-DOI: **10.17605/OSF.IO/QJFR3**  
-Associated project: https://osf.io/ew85b  
-GitHub lineage: `lrsc/`
+It is a historical four-program snapshot. It is **not** the current complete Universe; later DesignLab, LRSC supplements, and Navier–Stokes work are indexed through the live repository and [paper shelf](papers/README.md).
 
 ## Author
 
@@ -138,9 +147,4 @@ Independent Research
 
 ### One sentence
 
-**I built four falsification-oriented research programs around self-reference, AI measurement, information-theoretic phenomenological dynamics, and local cyclic redistribution; the archive separates exact theorems from simulations, computational certificates, and open physical interpretation.**
-
-
-## Complete four-program archive
-
-The versioned paper package is available as a frozen ZIP archive: [Download the Sept. 22, 2026 archive](archive/Prince_Upadhyay_All_4_Research_Programs_FINAL_2026-09-22.zip). Its contents and SHA-256 are recorded in [the archive note](archive/README.md) and [checksum file](archive/SHA256SUMS.txt).
+**Reggae Shark Universe is a five-program falsification-first research archive: exact theorems stay inside their stated domains, simulations stay simulations, finite computations stay finite, and every surviving claim carries its proof boundary with it.**
