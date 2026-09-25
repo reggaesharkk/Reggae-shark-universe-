@@ -95,16 +95,21 @@ Current refined phase-only finite benchmark sequence at the registered short evo
 [
 C_7\approx3.7441266968,qquad
 C_8\approx4.6560466272,qquad
-C_9\approx6.2610422516.
+C_9\approx6.2610422516,
+]
+[
+C_{10}\approx7.1596557188,qquad
+C_{11}\approx8.0348857964.
 ]
 
-The N=9 finite phase-only value exceeds the earlier finite WP17 sparse amplitude+phase benchmark of about 5.1129326. This does **not** establish divergence as (N\to\infty), an unbounded universal constant, blowup, or global regularity. N=10/N=11 continuation is an active falsification test.
+The phase-only benchmark now rises across five consecutively tested cutoffs, and N=9 through N=11 exceed the earlier finite WP17 sparse amplitude+phase benchmark of about 5.1129326. This does **not** establish divergence as (N\to\infty), an unbounded universal constant, blowup, or global regularity. The next target is to reverse-engineer the optimized states into an explicit analytic phase law rather than infer an asymptotic theorem from finite points.
 
 Mirrored paper materials:
 - [Main report](papers/navier-stokes/REPORT.md)
 - [Master Record supplement](papers/navier-stokes/MASTER_RECORD_SUPPLEMENT_2026_09_24.md)
 - [Cutoff-independent small-data proof audit](papers/navier-stokes/WP3_SMALL_DATA_PROOF.md)
 - [Current status](papers/navier-stokes/CURRENT_STATUS_2026_09_25.md)
+- [Verified N=10/N=11 phase-only continuation](papers/navier-stokes/WP16_N10_N11_VERIFIED_CONTINUATION_2026_09_25.md)
 
 ## Scientific firewall
 
