@@ -2,12 +2,14 @@
 
 **Prince Upadhyay — Independent Research**
 
-This directory is the current umbrella snapshot for the Self-Referential Processing research line and its Design Lab validation sequence.
+This directory is the umbrella snapshot for the Self-Referential Processing research line and its Design Lab validation sequence.
 
-## Current master record
+## Current master records
 
 - Consolidated OSF master: https://doi.org/10.17605/OSF.IO/NV7DZ
 - Original frozen foundation: https://doi.org/10.17605/OSF.IO/37H2Y
+- Specialist repository: https://github.com/reggaesharkk/self-referential-processing-designlab
+- Universe paper shelf: [../papers/self-referential-processing/](../papers/self-referential-processing/)
 
 ## Phase 7 final status
 
@@ -24,6 +26,4 @@ This is simulation-based methodological validation. It is **not** live confirmat
 
 The original frozen v8.6.3 Gate 5 estimator remains the item-level linear probability model with two-way cluster-robust inference. The later M1 GLMM was developed separately in the Design Lab and is not retroactively substituted into the frozen protocol.
 
-## Specialist repository
-
-A dedicated specialist GitHub repository is intended for this project so that the full Phase 1–7 code/results lineage can be maintained independently from the Reggae Shark Universe umbrella.
+The mirrored Phase 7 final paper is available in the Universe paper shelf in both PDF and Markdown form.
