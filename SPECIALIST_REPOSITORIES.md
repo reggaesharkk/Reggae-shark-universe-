@@ -1,14 +1,31 @@
 # Specialist repositories
 
-The Reggae Shark Universe is the umbrella map. Project-specific development also lives in specialist repositories.
+The Reggae Shark Universe is the umbrella archive and paper-facing map. Project-specific development lives in five specialist repositories.
 
 ## Live specialist repositories
 
-- Self-Referential Processing + Design Lab: https://github.com/reggaesharkk/self-referential-processing-designlab
-- Psi Benchmark: https://github.com/reggaesharkk/psi-self-modeling-benchmark
-- Information-Theoretic Physics / nonlinear dynamical sector: https://github.com/reggaesharkk/physics-v1-dynamical-sector
-- LRSC Odd-Ring Spectral Rank: https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank
-- Navier–Stokes Bridge Audit: https://github.com/reggaesharkk/navier-stokes-bridge-audit
+1. **Self-Referential Processing + Design Lab**  
+   https://github.com/reggaesharkk/self-referential-processing-designlab
+
+2. **Psi Self-Modeling Benchmark**  
+   https://github.com/reggaesharkk/psi-self-modeling-benchmark
+
+3. **Information-Theoretic Physics / dynamical sector**  
+   https://github.com/reggaesharkk/physics-v1-dynamical-sector
+
+4. **LRSC Odd-Ring Spectral Rank**  
+   https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank
+
+5. **Navier–Stokes Bridge Audit**  
+   https://github.com/reggaesharkk/navier-stokes-bridge-audit
+
+## Paper shelf
+
+The current cross-project paper index is:
+
+[papers/README.md](papers/README.md)
+
+The Universe mirrors paper artifacts where practical, while the specialist repositories remain the live source/code histories.
 
 ## Archival records
 
@@ -16,5 +33,6 @@ The Reggae Shark Universe is the umbrella map. Project-specific development also
 - Self-Referential Processing original foundation: https://doi.org/10.17605/OSF.IO/37H2Y
 - Physics Appendix A theorem: https://doi.org/10.17605/OSF.IO/U7M6H
 - LRSC frozen theorem: https://doi.org/10.17605/OSF.IO/NM5BW
+- LRSC complete lineage archive: https://doi.org/10.17605/OSF.IO/QJFR3
 
-The umbrella repository connects the research programs, while the specialist repositories preserve project-specific code, releases, verification material, provenance, and scientific boundaries.
+Frozen archival records remain authoritative and are not silently replaced by later GitHub updates.
