@@ -69,10 +69,16 @@ Current finite phase-only benchmark sequence, after fixed-state grid refinement:
 [
 C_7\approx3.74413,qquad
 C_8\approx4.65605,qquad
-C_9\approx6.26104.
+C_9\approx6.26104,
+]
+[
+C_{10}\approx7.15966,qquad
+C_{11}\approx8.03489.
 ]
 
-These are finite Galerkin/adversarial benchmarks, not an asymptotic divergence theorem and not a solution of the three-dimensional Navier–Stokes regularity problem. N=10/N=11 continuation is an active test, not a completed result.
+See the [verified N=10/N=11 continuation audit](navier-stokes/WP16_N10_N11_VERIFIED_CONTINUATION_2026_09_25.md).
+
+These are finite Galerkin/adversarial benchmarks, not an asymptotic divergence theorem and not a solution of the three-dimensional Navier–Stokes regularity problem.
 
 ---
 
