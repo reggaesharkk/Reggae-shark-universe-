@@ -2,10 +2,17 @@
 
 Filename: `Prince_Upadhyay_All_4_Research_Programs_FINAL_2026-09-22.zip`
 
-Assembled: 22 September 2026
+Assembled: 22 September 2026  
 Author: Prince Upadhyay, Independent Research
 
-This archive preserves four research programs and their versioned papers. Frozen releases remain historical records; later papers do not silently overwrite earlier versions. See the ZIP's `00_README.txt` for its file catalogue.
+This ZIP is a **historical four-program snapshot**. It preserves the research state as of 22 September 2026 and is intentionally not rewritten when later work is added.
+
+Later additions now include:
+- completed Self-Referential Processing Design Lab Phase 7 materials;
+- later LRSC supplements;
+- the Navier–Stokes Bridge Audit as a fifth live research world.
+
+For the current complete paper-facing map, use [../papers/README.md](../papers/README.md) and the repository root README.
 
 SHA-256:
 
