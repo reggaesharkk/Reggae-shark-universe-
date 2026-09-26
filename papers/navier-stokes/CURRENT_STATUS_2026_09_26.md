@@ -39,6 +39,10 @@ The N13 grid-96 refined quotient is **9.341290048632342**. Colab disconnected du
 
 An [explicit N=7 real divergence-free witness](WP16_036_FIXED_K36_ALL_STATE_NOGO_2026_09_26.md) shows that a fixed K36 absolute-mass fraction of at least 90% is false over arbitrary Galerkin states: scaling two source modes outside K36 makes the fraction tend to zero. This post-hoc result leaves the N12/N13 phase-only holdouts intact and narrows any future analytic claim to a controlled state or trajectory class.
 
+## Conditional phase-uniform bound and open signed gap
+
+[The post-hoc analysis](WP16_036_PHASE_UNIFORM_TAIL_AND_SIGNED_GAP_2026_09_26.md) proves an N-independent high-shell inequality conditional on uniform H² energy and nondegeneracy of the tracked anchor. The exact source-magnitude envelope is invariant under phase rotations at each fixed cutoff. Low outside groups dominate the finite residual; a high-tail bound alone does not certify the frozen K36 gate. In 64 exploratory fixed-magnitude N13 phase draws, all met the 90% mass condition but nine failed the signed condition. These draws are not a prospective holdout or a theorem about all phases.
+
 ## Scope
 
 These are two successful out-of-sample **finite-cutoff** transfer tests of a coalition selected at N11. It does not establish an all-N phase law, a cutoff-uniform estimate, a continuum result, finite-time blowup, or arbitrary-data global regularity. The historical [25 September status](CURRENT_STATUS_2026_09_25.md) remains available unchanged.
