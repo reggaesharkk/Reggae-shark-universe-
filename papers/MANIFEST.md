@@ -23,6 +23,8 @@ This manifest records the canonical source locations used to assemble the live R
 
 | Navier–Stokes | `papers/navier-stokes/WP16_036_FIXED_K36_ALL_STATE_NOGO_2026_09_26.md` | `navier-stokes-bridge-audit/notes/WP16_036_FIXED_K36_ALL_STATE_NOGO_2026_09_26.md` (prefaced mirror) | `8d3440313e2e7234f3c586ff271fab621fc3e028` |
 
+| Navier–Stokes | `papers/navier-stokes/WP16_036_PHASE_UNIFORM_TAIL_AND_SIGNED_GAP_2026_09_26.md` | `navier-stokes-bridge-audit/notes/WP16_036_PHASE_UNIFORM_TAIL_AND_SIGNED_GAP_2026_09_26.md` (prefaced mirror) | `ebd47f7d80ee259ee69f1854ef11dee9bebf192a` |
+
 ## Existing Universe paper artifacts retained in place
 
 - `lrsc/odd-ring-rank-theorem/v1.2.1-supplement/LRSC_v1_2_1_Proof_Clarification_Supplement.pdf`
