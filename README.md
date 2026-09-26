@@ -90,9 +90,11 @@ Specialist repository: https://github.com/reggaesharkk/navier-stokes-bridge-audi
 
 This branch audits finite Fourier/Galerkin identities, analytic estimates and obstructions, and phase adversaries. It does not claim a solution to the three-dimensional Navier–Stokes Millennium problem.
 
-The refined finite phase-only sequence through N12 is: N7 3.7441266968, N8 4.6560466272, N9 6.2610422516, N10 7.1596557188, N11 8.0348857964, and **N12 8.6929848145**. The prospectively frozen N11-derived K36 coalition passed the predeclared descriptive criteria at all three N12 states. [Read the current status](papers/navier-stokes/CURRENT_STATUS_2026_09_26.md) and [the mirrored result](papers/navier-stokes/WP16_036_N12_FROZEN_K36_HOLDOUT_2026_09_26.md); the specialist repository holds the raw inputs and outputs.
+The refined finite phase-only sequence now extends through N14. After the N12 and N13 frozen K36 transfer tests, the prospectively frozen N14 time-resolved gate completed all 520 proposals and then passed all three predeclared tests in all three states. Each state remained above the 90% K36 mass threshold through `t=0.0010`, first exited at sampled time `t=0.0023`, retained the signed criterion at exit, and reproduced the frozen local-margin sign pattern. The N14 fixed winner was numerically stable across refinement grids 48/64/96/128, with the grid-128 value **9.6395821055**.
 
-This one finite holdout does not imply all-cutoff persistence or a continuum theorem.
+[Read the current status](papers/navier-stokes/CURRENT_STATUS_2026_09_26.md), [the mirrored N14 prospective result](papers/navier-stokes/WP16_036_N14_PROSPECTIVE_TIME_GATE_RESULT_2026_09_26.md), and [the N15 protocol frozen before any N15 data](papers/navier-stokes/WP16_036_N15_PROSPECTIVE_FREEZE_2026_09_26.md). The specialist repository remains the canonical source for live code, raw inputs, checkpoints, and outputs.
+
+These successful finite-cutoff replications do not imply all-cutoff persistence, a continuum theorem, or a solution of the three-dimensional Navier–Stokes problem.
 
 Mirrored paper materials:
 - [Main report](papers/navier-stokes/REPORT.md)
@@ -100,6 +102,8 @@ Mirrored paper materials:
 - [Cutoff-independent small-data proof audit](papers/navier-stokes/WP3_SMALL_DATA_PROOF.md)
 - [Verified N10/N11 phase-only continuation](papers/navier-stokes/WP16_N10_N11_VERIFIED_CONTINUATION_2026_09_25.md)
 - [N12 frozen K36 holdout result](papers/navier-stokes/WP16_036_N12_FROZEN_K36_HOLDOUT_2026_09_26.md)
+- [N14 prospective time-gate result](papers/navier-stokes/WP16_036_N14_PROSPECTIVE_TIME_GATE_RESULT_2026_09_26.md)
+- [N15 prospective protocol freeze](papers/navier-stokes/WP16_036_N15_PROSPECTIVE_FREEZE_2026_09_26.md)
 
 ## Scientific firewall
 
