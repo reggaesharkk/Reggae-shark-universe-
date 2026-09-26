@@ -64,6 +64,7 @@ Mirrored here:
 - [Current status (26 September)](navier-stokes/CURRENT_STATUS_2026_09_26.md)
 - [N10/N11 verified continuation](navier-stokes/WP16_N10_N11_VERIFIED_CONTINUATION_2026_09_25.md)
 - [N12 prospective frozen K36 holdout](navier-stokes/WP16_036_N12_FROZEN_K36_HOLDOUT_2026_09_26.md)
+- [N13 prospective gate — pending](navier-stokes/WP16_036_N13_FROZEN_K36_HOLDOUT_GATE_2026_09_26.md)
 
 The N12 grid-96 refined finite quotient is 8.692984814467122; the N11-derived K36 coalition passed all three predeclared N12 state criteria. See the result note for raw provenance and exact numbers. These finite computations do not establish an asymptotic theorem or solve the three-dimensional Navier–Stokes problem.
 
