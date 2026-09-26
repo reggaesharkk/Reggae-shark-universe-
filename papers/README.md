@@ -1,7 +1,7 @@
 # Reggae Shark Universe — Paper Shelf
 
 **Author:** Prince Upadhyay, Independent Research  
-**Updated:** 26 September 2026
+**Updated:** 27 September 2026
 
 This directory is the current paper-facing shelf for the Reggae Shark Universe. It mirrors the canonical paper artifacts that exist in the live specialist repositories and points to frozen records that remain authoritative elsewhere.
 
@@ -61,15 +61,18 @@ Mirrored here:
 - [Main finite-Fourier bridge audit report](navier-stokes/REPORT.md)
 - [Master Record supplement](navier-stokes/MASTER_RECORD_SUPPLEMENT_2026_09_24.md)
 - [Cutoff-independent small-data proof audit](navier-stokes/WP3_SMALL_DATA_PROOF.md)
-- [Current status (26 September)](navier-stokes/CURRENT_STATUS_2026_09_26.md)
+- [Current status (27 September)](navier-stokes/CURRENT_STATUS_2026_09_27.md)
+- [Prior status (26 September)](navier-stokes/CURRENT_STATUS_2026_09_26.md)
 - [N10/N11 verified continuation](navier-stokes/WP16_N10_N11_VERIFIED_CONTINUATION_2026_09_25.md)
 - [N12 prospective frozen K36 holdout](navier-stokes/WP16_036_N12_FROZEN_K36_HOLDOUT_2026_09_26.md)
 - [N13 prospective gate](navier-stokes/WP16_036_N13_FROZEN_K36_HOLDOUT_GATE_2026_09_26.md)
 - [N13 completed prospective result](navier-stokes/WP16_036_N13_FROZEN_K36_HOLDOUT_RESULT_2026_09_26.md)
 - [N14 prospective time-gate result](navier-stokes/WP16_036_N14_PROSPECTIVE_TIME_GATE_RESULT_2026_09_26.md)
 - [N15 prospective protocol freeze](navier-stokes/WP16_036_N15_PROSPECTIVE_FREEZE_2026_09_26.md)
+- [N15 prospective result](navier-stokes/WP16_036_N15_PROSPECTIVE_TIME_GATE_RESULT_2026_09_27.md)
+- [N16 prospective protocol freeze](navier-stokes/WP16_036_N16_PROSPECTIVE_FREEZE_2026_09_27.md)
 
-The N11-derived K36 coalition has now transferred prospectively through the finite N12 and N13 holdouts, and the stronger time-resolved N14 protocol passed all three predeclared tests in all three N14 states. The N14 winner was checked without retuning at grids 48/64/96/128; the grid-128 value is 9.639582105538732. The N15 continuation/time-gate protocol is frozen before data and has no outcome yet. These finite computations do not establish an asymptotic theorem or solve the three-dimensional Navier–Stokes problem.
+The N11-derived K36 coalition transferred prospectively through N12/N13, and both stronger time-resolved N14 and N15 protocols passed all three predeclared tests in all three states. The N15 fixed winner has grid-128 value 9.911923711291015. N16 is frozen prospectively, with no N16 state or score yet. These finite computations do not establish an asymptotic theorem or solve the three-dimensional Navier–Stokes problem.
 
 ---
 

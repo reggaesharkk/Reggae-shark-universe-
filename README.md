@@ -90,9 +90,9 @@ Specialist repository: https://github.com/reggaesharkk/navier-stokes-bridge-audi
 
 This branch audits finite Fourier/Galerkin identities, analytic estimates and obstructions, and phase adversaries. It does not claim a solution to the three-dimensional Navier–Stokes Millennium problem.
 
-The refined finite phase-only sequence now extends through N14. After the N12 and N13 frozen K36 transfer tests, the prospectively frozen N14 time-resolved gate completed all 520 proposals and then passed all three predeclared tests in all three states. Each state remained above the 90% K36 mass threshold through `t=0.0010`, first exited at sampled time `t=0.0023`, retained the signed criterion at exit, and reproduced the frozen local-margin sign pattern. The N14 fixed winner was numerically stable across refinement grids 48/64/96/128, with the grid-128 value **9.6395821055**.
+The refined finite phase-only sequence now extends through N15. Following N12/N13 K36 transfer tests, the prospectively frozen N14 and N15 time-resolved gates each passed all three predeclared tests in all three states. At both cutoffs, the 90% K36 mass gate held through `t=0.0010`, first exited at sampled time `t=0.0023`, and retained the signed criterion at exit. N15 completed 520 proposals; its fixed-phase grid-128 quotient was **9.9119237113**. The N16 protocol is frozen before any N16 state or score, with search grid 64 because 48 fails the strict cubic quadrature condition at N16.
 
-[Read the current status](papers/navier-stokes/CURRENT_STATUS_2026_09_26.md), [the mirrored N14 prospective result](papers/navier-stokes/WP16_036_N14_PROSPECTIVE_TIME_GATE_RESULT_2026_09_26.md), and [the N15 protocol frozen before any N15 data](papers/navier-stokes/WP16_036_N15_PROSPECTIVE_FREEZE_2026_09_26.md). The specialist repository remains the canonical source for live code, raw inputs, checkpoints, and outputs.
+[Read the current status](papers/navier-stokes/CURRENT_STATUS_2026_09_27.md), [the N15 prospective result](papers/navier-stokes/WP16_036_N15_PROSPECTIVE_TIME_GATE_RESULT_2026_09_27.md), and [the N16 prospective freeze](papers/navier-stokes/WP16_036_N16_PROSPECTIVE_FREEZE_2026_09_27.md). The specialist repository remains the canonical source for live code, raw inputs, checkpoints, and outputs.
 
 These successful finite-cutoff replications do not imply all-cutoff persistence, a continuum theorem, or a solution of the three-dimensional Navier–Stokes problem.
 
@@ -104,6 +104,8 @@ Mirrored paper materials:
 - [N12 frozen K36 holdout result](papers/navier-stokes/WP16_036_N12_FROZEN_K36_HOLDOUT_2026_09_26.md)
 - [N14 prospective time-gate result](papers/navier-stokes/WP16_036_N14_PROSPECTIVE_TIME_GATE_RESULT_2026_09_26.md)
 - [N15 prospective protocol freeze](papers/navier-stokes/WP16_036_N15_PROSPECTIVE_FREEZE_2026_09_26.md)
+- [N15 prospective time-gate result](papers/navier-stokes/WP16_036_N15_PROSPECTIVE_TIME_GATE_RESULT_2026_09_27.md)
+- [N16 prospective protocol freeze](papers/navier-stokes/WP16_036_N16_PROSPECTIVE_FREEZE_2026_09_27.md)
 
 ## Scientific firewall
 
