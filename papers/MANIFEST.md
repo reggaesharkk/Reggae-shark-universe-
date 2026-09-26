@@ -16,6 +16,8 @@ This manifest records the canonical source locations used to assemble the live R
 
 | Navier–Stokes | `papers/navier-stokes/WP16_036_N12_FROZEN_K36_HOLDOUT_2026_09_26.md` | `navier-stokes-bridge-audit/notes/WP16_036_N12_FROZEN_K36_HOLDOUT_RESULT_2026_09_26.md` (link-adapted mirror) | `3abc9cdbefe3ebfe69fb683295d1d577a94e5709` |
 
+| Navier–Stokes | `papers/navier-stokes/WP16_036_N13_FROZEN_K36_HOLDOUT_GATE_2026_09_26.md` | `navier-stokes-bridge-audit/notes/WP16_036_N13_FROZEN_K36_HOLDOUT_GATE_2026_09_26.md` (prefaced mirror) | `88ce597744839aa037711e90f89014c8e721ff40` |
+
 ## Existing Universe paper artifacts retained in place
 
 - `lrsc/odd-ring-rank-theorem/v1.2.1-supplement/LRSC_v1_2_1_Proof_Clarification_Supplement.pdf`
