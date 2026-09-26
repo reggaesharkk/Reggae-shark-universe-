@@ -64,9 +64,12 @@ Mirrored here:
 - [Current status (26 September)](navier-stokes/CURRENT_STATUS_2026_09_26.md)
 - [N10/N11 verified continuation](navier-stokes/WP16_N10_N11_VERIFIED_CONTINUATION_2026_09_25.md)
 - [N12 prospective frozen K36 holdout](navier-stokes/WP16_036_N12_FROZEN_K36_HOLDOUT_2026_09_26.md)
-- [N13 prospective gate — pending](navier-stokes/WP16_036_N13_FROZEN_K36_HOLDOUT_GATE_2026_09_26.md)
+- [N13 prospective gate](navier-stokes/WP16_036_N13_FROZEN_K36_HOLDOUT_GATE_2026_09_26.md)
+- [N13 completed prospective result](navier-stokes/WP16_036_N13_FROZEN_K36_HOLDOUT_RESULT_2026_09_26.md)
+- [N14 prospective time-gate result](navier-stokes/WP16_036_N14_PROSPECTIVE_TIME_GATE_RESULT_2026_09_26.md)
+- [N15 prospective protocol freeze](navier-stokes/WP16_036_N15_PROSPECTIVE_FREEZE_2026_09_26.md)
 
-The N12 grid-96 refined finite quotient is 8.692984814467122; the N11-derived K36 coalition passed all three predeclared N12 state criteria. See the result note for raw provenance and exact numbers. These finite computations do not establish an asymptotic theorem or solve the three-dimensional Navier–Stokes problem.
+The N11-derived K36 coalition has now transferred prospectively through the finite N12 and N13 holdouts, and the stronger time-resolved N14 protocol passed all three predeclared tests in all three N14 states. The N14 winner was checked without retuning at grids 48/64/96/128; the grid-128 value is 9.639582105538732. The N15 continuation/time-gate protocol is frozen before data and has no outcome yet. These finite computations do not establish an asymptotic theorem or solve the three-dimensional Navier–Stokes problem.
 
 ---
 

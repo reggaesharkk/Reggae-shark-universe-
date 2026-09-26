@@ -31,6 +31,30 @@ The fixed-phase, grid-96 refined quotient at N12 is **8.692984814467122**. The p
 
 The N13 grid-96 refined quotient is **9.341290048632342**. Colab disconnected during optimization; the run was resumed from saved accepted states under the same deterministic proposal schedule. The original checkpoint cannot establish which candidate evaluations, if any, were lost between its last save and disconnection. Recovery provenance and its limitations are stated in the result note.
 
+## N14 prospective frozen K36 time gate — completed
+
+The N14 continuation and time-resolved hypotheses were frozen in the specialist repository before any N14 state or score existed, with the N11-derived K36 coalition and thresholds unchanged. The completed [prospective N14 result](WP16_036_N14_PROSPECTIVE_TIME_GATE_RESULT_2026_09_26.md) is now mirrored here; the canonical specialist merge is [PR #90](https://github.com/reggaesharkk/navier-stokes-bridge-audit/pull/90).
+
+The frozen continuation completed all 520 proposals with seed `20260939` and search grid 48. The same winning phase vector was then evaluated without retuning at grids 48/64/96/128, giving `C_infinity_stretch` values 9.6385177811, 9.6379562385, 9.6394090993, and 9.6395821055 respectively.
+
+The prospective time gate then evaluated `inherited`, `target_only`, and `full_final` under the unchanged K36 criteria. All three states:
+- passed the static gate;
+- passed the 90% mass criterion at every sampled point through `t=0.0010`;
+- had their first sampled mass exit at `t=0.0023`, inside the predeclared `[0.0015,0.0030]` window;
+- still passed the signed criterion at that exit;
+- had positive initial `dF/dt`;
+- had negative full, radial-magnitude, and vector-polarization margin rates at the first mass exit.
+
+The half-step check at `dt=0.00005` kept all three states above 0.90 at `t=0.00225` and below 0.90 at `t=0.00230`, with coarse/half-step mass-fraction differences at the coarse exit of order `10^-9` or smaller.
+
+This is a clean prospective finite-Galerkin replication at N14. It is not an all-N theorem, continuum-limit result, global-optimization certificate, or proof of Navier–Stokes regularity.
+
+## N15 prospective protocol — frozen before data
+
+After recording N14, [the N15 continuation and time-gate protocol](WP16_036_N15_PROSPECTIVE_FREEZE_2026_09_26.md) was frozen and merged before any N15 state, score, checkpoint, or time-gate output existed. It retains the same K36 coalition, thresholds, objective, reconstruction semantics, time window, and local-rate tests.
+
+The frozen N15 continuation uses seed `20260940`, search grid 48 (`48 > 3*15`), the same 520-proposal schedule, and refinement grids 48/64/96/128. The exact N14 predecessor hash and frozen source-decomposition hash are locked. A trial-0 memory/smoke check must precede any N15 search proposal. No N15 scientific outcome exists at the time of this status update.
+
 ## Post-hoc outside-K36 composition
 
 [The N12–N13 source-group breakdown](WP16_036_OUTSIDE_K36_N12_N13_POSTHOC_2026_09_26.md) reproduces the frozen holdout totals for all six states. There are 2,160 outside groups at N12 and 2,926 at N13; in the full-final N13 state, the 766 new groups contribute only 1.33380 of 67.96625 outside absolute mass. The largest outside groups were already present at N12, and positive and negative terms cancel substantially. This finite diagnostic does not establish a uniform-in-N bound.
@@ -45,4 +69,4 @@ An [explicit N=7 real divergence-free witness](WP16_036_FIXED_K36_ALL_STATE_NOGO
 
 ## Scope
 
-These are two successful out-of-sample **finite-cutoff** transfer tests of a coalition selected at N11. It does not establish an all-N phase law, a cutoff-uniform estimate, a continuum result, finite-time blowup, or arbitrary-data global regularity. The historical [25 September status](CURRENT_STATUS_2026_09_25.md) remains available unchanged.
+The project now contains successful prospective finite-cutoff transfer evidence at N12, N13, and the stronger time-resolved N14 test, all using the N11-derived K36 coalition without retuning. N15 is frozen prospectively but has not yet been run. None of this establishes an all-N phase law, a cutoff-uniform estimate, a continuum result, finite-time blowup, or arbitrary-data global regularity. The historical [25 September status](CURRENT_STATUS_2026_09_25.md) remains available unchanged.
