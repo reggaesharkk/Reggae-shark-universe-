@@ -1,0 +1,7 @@
+# WP16 K36 finite trajectory exit — 26 September 2026
+
+A post-hoc trajectory diagnostic starts the exact finite Galerkin ODE at each of the six N12/N13 phase-optimized holdout states, without changing the N11-frozen K36 coalition or its gates. All six pass at every sample through `t=0.001` after their anchor. Each first loses the **90% absolute source-mass** gate between approximately `t=0.0019` and `0.0026`; the signed-share gate still passes at each first exit. Half-step RK4 checks reproduce representative first-crossing brackets and give mass-fraction differences at coarse failure samples below `1.25e-8`.
+
+The full nonlinear derivative uses an alias-free FFT convolution and agrees with the original direct-convolution solver to `6.48e-14` (N4) and `6.46e-13` (N7) in maximum absolute error on the validation fields. This is finite, sampled evidence, not a continuum or continuous-time proof. The prior static prospective N12/N13 holdouts remain valid; this result shows their K36 mass criterion is transient when the optimized states evolve.
+
+[Full derivation and limitations](https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/main/notes/WP16_036_FINITE_TRAJECTORY_K36_GATE_2026_09_26.md) · [reproducible solver](https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/main/src/wp16_036_dealiased_trajectory_gate.py) · [six-state summary](https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/main/results/wp16_n13_holdout/dealiased_trajectory_gate_N12_N13_summary.json)
