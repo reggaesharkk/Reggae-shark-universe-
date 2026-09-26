@@ -31,6 +31,10 @@ The fixed-phase, grid-96 refined quotient at N12 is **8.692984814467122**. The p
 
 The N13 grid-96 refined quotient is **9.341290048632342**. Colab disconnected during optimization; the run was resumed from saved accepted states under the same deterministic proposal schedule. The original checkpoint cannot establish which candidate evaluations, if any, were lost between its last save and disconnection. Recovery provenance and its limitations are stated in the result note.
 
+## Post-hoc outside-K36 composition
+
+[The N12–N13 source-group breakdown](WP16_036_OUTSIDE_K36_N12_N13_POSTHOC_2026_09_26.md) reproduces the frozen holdout totals for all six states. There are 2,160 outside groups at N12 and 2,926 at N13; in the full-final N13 state, the 766 new groups contribute only 1.33380 of 67.96625 outside absolute mass. The largest outside groups were already present at N12, and positive and negative terms cancel substantially. This finite diagnostic does not establish a uniform-in-N bound.
+
 ## Scope
 
 These are two successful out-of-sample **finite-cutoff** transfer tests of a coalition selected at N11. It does not establish an all-N phase law, a cutoff-uniform estimate, a continuum result, finite-time blowup, or arbitrary-data global regularity. The historical [25 September status](CURRENT_STATUS_2026_09_25.md) remains available unchanged.
