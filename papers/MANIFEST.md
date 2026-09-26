@@ -1,4 +1,4 @@
-# Paper Shelf Manifest — 25 September 2026
+# Paper Shelf Manifest — 26 September 2026
 
 This manifest records the canonical source locations used to assemble the live Reggae Shark Universe paper shelf.
 
@@ -13,6 +13,8 @@ This manifest records the canonical source locations used to assemble the live R
 | Navier–Stokes | `papers/navier-stokes/MASTER_RECORD_SUPPLEMENT_2026_09_24.md` | `navier-stokes-bridge-audit/MASTER_RECORD_SUPPLEMENT_2026_09_24.md` | `ac6052f84380b5f07bf35639d7b66f8f0e1d0c10` |
 | Navier–Stokes | `papers/navier-stokes/WP3_SMALL_DATA_PROOF.md` | `navier-stokes-bridge-audit/WP3_PROOF.md` | `4e8d3c8b0154bc19f6a804844d99743d076e08f2` |
 | Navier–Stokes | `papers/navier-stokes/WP16_N10_N11_VERIFIED_CONTINUATION_2026_09_25.md` | `navier-stokes-bridge-audit/notes/WP16_N10_N11_VERIFIED_CONTINUATION_2026_09_25.md` | `75dbd22c10797c65ead4db2a38158300c652395d` |
+
+| Navier–Stokes | `papers/navier-stokes/WP16_036_N12_FROZEN_K36_HOLDOUT_2026_09_26.md` | `navier-stokes-bridge-audit/notes/WP16_036_N12_FROZEN_K36_HOLDOUT_RESULT_2026_09_26.md` (link-adapted mirror) | `3abc9cdbefe3ebfe69fb683295d1d577a94e5709` |
 
 ## Existing Universe paper artifacts retained in place
 
