@@ -19,10 +19,18 @@ The required absolute mass fraction was at least 90%, and the signed share had t
 
 The fixed-phase, grid-96 refined quotient at N12 is **8.692984814467122**. The prior refined values are N7 3.744126696758515, N8 4.656046627246442, N9 6.261042251605425, N10 7.159655718793216, and N11 8.034885796422683. Each value is from a finite optimized state at its cutoff. Their increase does not prove growth at every cutoff or in the limit.
 
-## Next test: N13 gate frozen, result pending
+## N13 frozen K36 holdout — completed
 
-[PR #75](https://github.com/reggaesharkk/navier-stokes-bridge-audit/pull/75) froze the unchanged N11-derived K36 source set, three N13 state definitions, input hashes, continuation settings, and the same three descriptive pass criteria before generating N13. The [gate is mirrored here](WP16_036_N13_FROZEN_K36_HOLDOUT_GATE_2026_09_26.md). There is **no N13 result yet**; a failure will be retained without retuning.
+[PR #75](https://github.com/reggaesharkk/navier-stokes-bridge-audit/pull/75) froze the same K36 source set, three state definitions, and criteria before N13 generation. The [gate](WP16_036_N13_FROZEN_K36_HOLDOUT_GATE_2026_09_26.md) and [completed result](WP16_036_N13_FROZEN_K36_HOLDOUT_RESULT_2026_09_26.md) are mirrored here; the [raw files and checksums](https://github.com/reggaesharkk/navier-stokes-bridge-audit/tree/2aeb208341a5dc1b60aa25fb3c0c4965a8f2175e/results/wp16_n13_holdout/) are in the specialist repository.
+
+| N13 state | Absolute source mass captured | K36 signed / full signed | Same sign | Frozen gate |
+|---|---:|---:|---|---|
+| Inherited | 93.5731% | 1.029876 | Yes | Pass |
+| Target only | 93.9559% | 1.024681 | Yes | Pass |
+| Full final | 93.4538% | 1.025928 | Yes | Pass |
+
+The N13 grid-96 refined quotient is **9.341290048632342**. Colab disconnected during optimization; the run was resumed from saved accepted states under the same deterministic proposal schedule. The original checkpoint cannot establish which candidate evaluations, if any, were lost between its last save and disconnection. Recovery provenance and its limitations are stated in the result note.
 
 ## Scope
 
-This is one successful out-of-sample **finite-cutoff** transfer test of a coalition selected at N11. It does not establish an all-N phase law, a cutoff-uniform estimate, a continuum result, finite-time blowup, or arbitrary-data global regularity. The historical [25 September status](CURRENT_STATUS_2026_09_25.md) remains available unchanged.
+These are two successful out-of-sample **finite-cutoff** transfer tests of a coalition selected at N11. It does not establish an all-N phase law, a cutoff-uniform estimate, a continuum result, finite-time blowup, or arbitrary-data global regularity. The historical [25 September status](CURRENT_STATUS_2026_09_25.md) remains available unchanged.
