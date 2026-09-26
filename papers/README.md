@@ -1,7 +1,7 @@
 # Reggae Shark Universe — Paper Shelf
 
 **Author:** Prince Upadhyay, Independent Research  
-**Updated:** 25 September 2026
+**Updated:** 26 September 2026
 
 This directory is the current paper-facing shelf for the Reggae Shark Universe. It mirrors the canonical paper artifacts that exist in the live specialist repositories and points to frozen records that remain authoritative elsewhere.
 
@@ -55,30 +55,17 @@ Frozen v1.2 and DOI NM5BW remain untouched. Supplements are additive companions.
 
 ## 05 — Navier–Stokes Bridge Audit
 
-Specialist repository:
-- https://github.com/reggaesharkk/navier-stokes-bridge-audit
+Specialist repository: https://github.com/reggaesharkk/navier-stokes-bridge-audit
 
 Mirrored here:
 - [Main finite-Fourier bridge audit report](navier-stokes/REPORT.md)
 - [Master Record supplement](navier-stokes/MASTER_RECORD_SUPPLEMENT_2026_09_24.md)
 - [Cutoff-independent small-data proof audit](navier-stokes/WP3_SMALL_DATA_PROOF.md)
-- [Current Navier–Stokes status](navier-stokes/CURRENT_STATUS_2026_09_25.md)
+- [Current status (26 September)](navier-stokes/CURRENT_STATUS_2026_09_26.md)
+- [N10/N11 verified continuation](navier-stokes/WP16_N10_N11_VERIFIED_CONTINUATION_2026_09_25.md)
+- [N12 prospective frozen K36 holdout](navier-stokes/WP16_036_N12_FROZEN_K36_HOLDOUT_2026_09_26.md)
 
-Current finite phase-only benchmark sequence, after fixed-state grid refinement:
-
-[
-C_7\approx3.74413,qquad
-C_8\approx4.65605,qquad
-C_9\approx6.26104,
-]
-[
-C_{10}\approx7.15966,qquad
-C_{11}\approx8.03489.
-]
-
-See the [verified N=10/N=11 continuation audit](navier-stokes/WP16_N10_N11_VERIFIED_CONTINUATION_2026_09_25.md).
-
-These are finite Galerkin/adversarial benchmarks, not an asymptotic divergence theorem and not a solution of the three-dimensional Navier–Stokes regularity problem.
+The N12 grid-96 refined finite quotient is 8.692984814467122; the N11-derived K36 coalition passed all three predeclared N12 state criteria. See the result note for raw provenance and exact numbers. These finite computations do not establish an asymptotic theorem or solve the three-dimensional Navier–Stokes problem.
 
 ---
 
