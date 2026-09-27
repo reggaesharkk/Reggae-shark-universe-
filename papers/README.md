@@ -37,6 +37,7 @@ Mirrored here:
 - [Appendix A: Equilibrium and Linear-Stability Analysis — LaTeX source](physics/appendix_a_dynamical_sector_v1.1.tex)
 - [Hopf theorem note v1.4](physics/HOPF_THEOREM_v1.4.md)
 - [Proof audit v1.4.1](physics/PROOF_AUDIT_v1.4.1.md)
+- [Recursive cosmology toy sandbox audit (exploratory)](physics/recursive_cosmology_sandbox/REPORT.md)
 
 The exact theorem applies inside the stated phenomenological ODE family. It does not establish that the ODE is a microscopic law of nature.
 
