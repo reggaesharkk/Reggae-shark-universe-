@@ -18,7 +18,7 @@ Mirrored here:
 - [DesignLab Phase 7 Final Technical Report v1.0 — PDF](self-referential-processing/DesignLab_Phase7_Final_Technical_Report_v1.0.pdf)
 - [DesignLab Phase 7 Final Technical Report v1.0 — Markdown](self-referential-processing/DesignLab_Phase7_Final_Technical_Report_v1.0.md)
 
-The Phase 7 report is simulation-based methodological validation. It does not retroactively alter the frozen v8.6.3 Gate 5 estimator and is not live confirmatory evidence of a Self effect.
+The Phase 7 report is simulation-based methodological validation. It does not retroactively alter the frozen v8.6.3 Gate 5 estimator and is not live confirmatory evidence of a Self effect. The frozen v8.6.3 line is currently paused at a fail-closed operational-readiness gate; see [the readiness status](../self-referential-processing/V8_6_3_READINESS_STATUS_2026_09_27.md).
 
 ## 02 — Psi Self-Modeling Benchmark
 
