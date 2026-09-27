@@ -1,0 +1,15 @@
+transition: theta 0.08 -> 0.07, M=99, added sites 41 and 58
+target E unchanged: True
+max |V07 - V08 - h beta^T|: 1.0524e-49
+||h||^2: 0.030303030303030303
+||E||^2: 0.50451567155458613
+0.08 K11 witness
+  sum beta: 0.00335169416257103915
+  old relative residual: 0.000962369127664989576
+  new relative residual: 0.00122107238921687845
+  quadratic identity error: 9.7612e-54
+0.07 K14 witness
+  sum beta: -0.00169455771104897451
+  old relative residual: 0.000969830262571961271
+  new relative residual: 0.00097404081502421066
+  quadratic identity error: 2.7962e-54
