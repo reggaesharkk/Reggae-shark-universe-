@@ -108,6 +108,7 @@ Mirrored paper materials:
 - [N16 prospective protocol freeze](papers/navier-stokes/WP16_036_N16_PROSPECTIVE_FREEZE_2026_09_27.md)
 - [N16 prospective time-gate result](papers/navier-stokes/WP16_036_N16_PROSPECTIVE_TIME_GATE_RESULT_2026_09_27.md)
 - [N16 post-hoc exit mechanism accounting](papers/navier-stokes/WP16_036_N16_EXIT_MECHANISM_ACCOUNTING_2026_09_27.md)
+- [N16 source-orbit and normalizer attribution](papers/navier-stokes/WP16_036_N16_SOURCE_ORBIT_ATTRIBUTION_2026_09_27.md)
 
 ## Scientific firewall
 
