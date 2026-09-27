@@ -15,9 +15,13 @@ The LRSC branch is preserved as a versioned sequence rather than a single rewrit
 3. [v1.2 — Odd-Ring Spectral Rank Theorem](odd-ring-rank-theorem/v1.2/)  
    Analytic family theorem proving rank(V)=p for the stated near-Nyquist odd-ring setting.
 
+   **v1.2.1 proof clarification:** [expanded algebra, verification source, and release artifacts](odd-ring-rank-theorem/v1.2.1-supplement/).
+
+   **v1.2.2 additive errata + independent replication:** [corrections, independent theorem/benchmark recomputation, outputs, and hashes](odd-ring-rank-theorem/v1.2.2-supplement/). The frozen v1.2 theorem and v1.2.1 supplement remain unchanged.
+
 The release chain is:
 
-`v1.0 -> v1.1 -> v1.2 -> multi-step dynamics (development)`
+`v1.0 -> v1.1 -> v1.2 -> additive supplements -> multi-step dynamics (development)`
 
 The mathematical scope narrows or broadens explicitly at each stage; later releases do not silently rewrite earlier frozen results.
 
@@ -29,3 +33,16 @@ DOI: **10.17605/OSF.IO/QJFR3**
 Associated project: https://osf.io/ew85b
 
 This umbrella registration freezes the preserved lineage `v1.0 -> v1.1 -> v1.2` as distinct historical stages. It does not replace the dedicated v1.2 theorem registration **NM5BW**.
+
+
+## Rank terminology
+
+For the odd-ring theorem, `rank(V)=p` is the matrix/channel-space rank.
+The finite benchmark quantity `K_0.001` is instead the minimum passing
+channel-subset cardinality. At the three documented M=99 mask cells:
+
+- theta=0.07: rank(V)=42, K_0.001=14
+- theta=0.08: rank(V)=41, K_0.001=11
+- theta=0.09: rank(V)=40, K_0.001=12
+
+These quantities are intentionally kept separate in the v1.2.2 supplement.

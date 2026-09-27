@@ -1,0 +1,21 @@
+### theta=0.08 Ks=10,11 basis=even
+theta=0.08 K=10: K=10 nodes=9290 leaves=764 covered=10272278170 expected=10272278170 complete=yes
+    min_R2=5.4549592559845561e-07 subset=0,1,42,43,44,45,46,47,48,49
+    exact min relative residual = 0.001039820619   pass(<=1e-3)=False   (local-search start 0.001039820619 [0, 1, 42, 43, 44, 45, 46, 47, 48, 49])
+theta=0.08 K=11: K=11 nodes=22749 leaves=1843 covered=37353738800 expected=37353738800 complete=yes
+    min_R2=4.6725937774006246e-07 subset=0,1,3,42,43,44,45,46,47,48,49
+    exact min relative residual = 0.000962369128   pass(<=1e-3)=True   (local-search start 0.000962369128 [0, 1, 3, 42, 43, 44, 45, 46, 47, 48, 49])
+### theta=0.09 Ks=11,12 basis=even
+theta=0.09 K=11: K=11 nodes=26852 leaves=2612 covered=37353738800 expected=37353738800 complete=yes
+    min_R2=5.0156462691778603e-07 subset=0,1,3,42,43,44,45,46,47,48,49
+    exact min relative residual = 0.001001168188   pass(<=1e-3)=False   (local-search start 0.001001168188 [0, 1, 3, 42, 43, 44, 45, 46, 47, 48, 49])
+theta=0.09 K=12: K=12 nodes=73910 leaves=10010 covered=121399651100 expected=121399651100 complete=yes
+    min_R2=4.4965520711294443e-07 subset=0,1,3,41,42,43,44,45,46,47,48,49
+    exact min relative residual = 0.000947945578   pass(<=1e-3)=True   (local-search start 0.000947945578 [0, 1, 3, 41, 42, 43, 44, 45, 46, 47, 48, 49])
+### theta=0.07 Ks=13,14 basis=even
+theta=0.07 K=13: K=13 nodes=249775 leaves=26477 covered=354860518600 expected=354860518600 complete=yes
+    min_R2=5.7803781936467361e-07 subset=0,1,3,12,13,42,43,44,45,46,47,48,49
+    exact min relative residual = 0.001070386927   pass(<=1e-3)=False   (local-search start 0.001070386927 [0, 1, 3, 12, 13, 42, 43, 44, 45, 46, 47, 48, 49])
+theta=0.07 K=14: K=14 nodes=528506 leaves=11836 covered=937845656300 expected=937845656300 complete=yes
+    min_R2=4.7866202293225129e-07 subset=0,1,2,4,5,6,42,43,44,45,46,47,48,49
+    exact min relative residual = 0.000974040815   pass(<=1e-3)=True   (local-search start 0.000974040815 [0, 1, 2, 4, 5, 6, 42, 43, 44, 45, 46, 47, 48, 49])
