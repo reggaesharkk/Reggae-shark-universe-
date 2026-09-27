@@ -19,6 +19,8 @@ The LRSC branch is preserved as a versioned sequence rather than a single rewrit
 
    **v1.2.2 additive errata + independent replication:** [corrections, independent theorem/benchmark recomputation, outputs, and hashes](odd-ring-rank-theorem/v1.2.2-supplement/). The frozen v1.2 theorem and v1.2.1 supplement remain unchanged.
 
+   **Post-certificate mask transition analysis:** [rank-one channel update for the M=99 theta 0.08 to 0.07 change](finite-benchmark/mask-transition/REPORT.md). This explains why the old eleven-channel witness crosses the tolerance while leaving the exhaustive cardinality certificates authoritative.
+
 The release chain is:
 
 `v1.0 -> v1.1 -> v1.2 -> additive supplements -> multi-step dynamics (development)`

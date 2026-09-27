@@ -47,10 +47,11 @@ Canonical theorem:
 - Specialist repository: https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank
 
 Already preserved in this Universe:
-- [Odd-Ring Spectral Rank Theorem v1.2](../../lrsc/odd-ring-rank-theorem/v1.2/)
-- [v1.2.1 Proof Clarification Supplement — PDF](../../lrsc/odd-ring-rank-theorem/v1.2.1-supplement/LRSC_v1_2_1_Proof_Clarification_Supplement.pdf)
-- [v1.2.2 Errata + Independent Replication Supplement](../../lrsc/odd-ring-rank-theorem/v1.2.2-supplement/)
-- [v1.1.1 K=0.001 Reproducibility Supplement — PDF](../../lrsc/structural-mechanism/v1.1.1-reproducibility/LRSC_v1_1_1_K001_Reproducibility_Supplement.pdf)
+- [Odd-Ring Spectral Rank Theorem v1.2](../lrsc/odd-ring-rank-theorem/v1.2/)
+- [v1.2.1 Proof Clarification Supplement — PDF](../lrsc/odd-ring-rank-theorem/v1.2.1-supplement/LRSC_v1_2_1_Proof_Clarification_Supplement.pdf)
+- [v1.2.2 Errata + Independent Replication Supplement](../lrsc/odd-ring-rank-theorem/v1.2.2-supplement/)
+- [Post-certificate M=99 mask-transition mechanism](../lrsc/finite-benchmark/mask-transition/REPORT.md)
+- [v1.1.1 K=0.001 Reproducibility Supplement — PDF](../lrsc/structural-mechanism/v1.1.1-reproducibility/LRSC_v1_1_1_K001_Reproducibility_Supplement.pdf)
 
 Frozen v1.2 and DOI NM5BW remain untouched. Supplements are additive companions.
 
