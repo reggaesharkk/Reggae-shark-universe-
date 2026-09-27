@@ -7,3 +7,12 @@ All three N16 states pass the predeclared static, early persistence, exit-window
 The time-gate JSON SHA-256 is `111eb0407c60cb60c24c57e3c471ece05a9e1b94b88628a688d015a4249decf7`; the N16 continuation SHA-256 is `53b0cc0a70de0d1a858e9d0c9d98feafcd5fea678c85adfe4d6253f6cf53b0ca`. See the [full N16 result](WP16_036_N16_PROSPECTIVE_TIME_GATE_RESULT_2026_09_27.md) and [compact result summary](wp16_036_N16_result_summary.json). The [earlier N16 freeze](WP16_036_N16_PROSPECTIVE_FREEZE_2026_09_27.md) and [pre-data status](CURRENT_STATUS_2026_09_27.md) remain historical records.
 
 These are finite Fourier-Galerkin observations. They establish neither an all-cutoff theorem nor a continuum regularity or blow-up result.
+
+
+## Post-hoc N12/N13 turnover mechanism update
+
+A later source-resolved audit reconstructed all six N12/N13 states at t=0 and t=0.001 and differentiated each ordered source-orbit absolute contribution along the finite Galerkin RHS. The inside K36 mass rate remains positive at t=0.001 in all six states, but outside-K36 mass grows rapidly enough that the ninefold penalty reverses F'=I'-9O' to negative.
+
+The ordered outside orbit `([3,3,4],[0,2,3])` is especially recurrent: its absolute-mass rate is negative at the anchor in all six N12/N13 states, but by t=0.001 it is the largest positive outside rate in every one. The same orbit later appears as the leading N16 full-final versus inherited outside-mass difference in the separate post-hoc attribution. These are different diagnostics—time derivative versus fixed-time state difference—and the N16 normalizer audit remains essential.
+
+See [WP16 N12/N13 source-resolved K36 turnover audit](WP16_036_N12_N13_TURNOVER_SOURCE_RATE_AUDIT_2026_09_27.md). This is post-hoc finite-cutoff mechanism analysis, not a new prospective test.
