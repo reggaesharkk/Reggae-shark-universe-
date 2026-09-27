@@ -73,6 +73,7 @@ Mirrored here:
 - [N15 prospective result](navier-stokes/WP16_036_N15_PROSPECTIVE_TIME_GATE_RESULT_2026_09_27.md)
 - [N16 prospective protocol freeze](navier-stokes/WP16_036_N16_PROSPECTIVE_FREEZE_2026_09_27.md)
 - [N16 prospective result](navier-stokes/WP16_036_N16_PROSPECTIVE_TIME_GATE_RESULT_2026_09_27.md)
+- [N16 post-hoc exit mechanism accounting](navier-stokes/WP16_036_N16_EXIT_MECHANISM_ACCOUNTING_2026_09_27.md)
 
 The N11-derived K36 coalition transferred prospectively through N12/N13, and the stronger time-resolved N14–N16 protocols passed the predeclared broad criteria. At N16 the inherited and target-only first sampled exits are 0.0023; full-final exits at 0.0024. The fixed N16 winner has grid-128 value 10.150097983229115. These finite computations do not establish an asymptotic theorem or solve the three-dimensional Navier–Stokes problem.
 
