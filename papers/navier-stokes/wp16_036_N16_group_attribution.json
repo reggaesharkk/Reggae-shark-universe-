@@ -1,0 +1,3242 @@
+{
+  "status": "post-hoc finite N16 source-orbit attribution; no prospective retuning",
+  "sha256": {
+    "n15": "c0bd97f554df3e8561d75e1ba62356d04200fbe4986f573e3305a98932ccb225",
+    "n16": "53b0cc0a70de0d1a858e9d0c9d98feafcd5fea678c85adfe4d6253f6cf53b0ca",
+    "time_gate": "111eb0407c60cb60c24c57e3c471ece05a9e1b94b88628a688d015a4249decf7",
+    "frozen_keys": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47"
+  },
+  "key_source_original_sha256": "193cbb7f485ab54ceed0d5cb38f97f0fc98c197e5f88e288fdbd277627608c8e",
+  "N": 16,
+  "dt": 0.0001,
+  "samples": {
+    "0": {
+      "inherited_z": [
+        135499.4871964465,
+        18197.764430362593
+      ],
+      "full_final_z": [
+        135933.4573559719,
+        14607.013110664786
+      ],
+      "normalizer_magnitude_ratio_full_over_inherited": 1.0000000000000007,
+      "normalizer_relative_phase_radians": -0.026456198111856864,
+      "inherited_I": 953.9618653924776,
+      "inherited_O": 65.29307706895882,
+      "full_final_I": 952.3400820034594,
+      "full_final_O": 66.98479579280303,
+      "delta_I": -1.6217833890182192,
+      "delta_O": 1.691718723844204,
+      "inside_complex_numerator_swap": 12.748860593161096,
+      "inside_tracked_normalizer_swap": -14.370643982179343,
+      "outside_complex_numerator_swap": 1.3996258884007482,
+      "outside_tracked_normalizer_swap": 0.29209283544345,
+      "outside_group_count": 6066,
+      "largest_outside_decreases": [
+        {
+          "left_orbit": [
+            0,
+            2,
+            3
+          ],
+          "right_orbit": [
+            2,
+            3,
+            9
+          ],
+          "in_K36": false,
+          "inherited_value": -0.5762500701899159,
+          "full_final_value": -0.2607271612188328,
+          "delta_absolute_mass": -0.3155229089710831,
+          "complex_numerator_swap": -0.369273224041787,
+          "tracked_normalizer_swap": 0.05375031507070391
+        },
+        {
+          "left_orbit": [
+            0,
+            2,
+            2
+          ],
+          "right_orbit": [
+            2,
+            3,
+            8
+          ],
+          "in_K36": false,
+          "inherited_value": 1.249311070043999,
+          "full_final_value": 1.081637913523137,
+          "delta_absolute_mass": -0.167673156520862,
+          "complex_numerator_swap": -0.12947351301438048,
+          "tracked_normalizer_swap": -0.03819964350648153
+        },
+        {
+          "left_orbit": [
+            0,
+            0,
+            3
+          ],
+          "right_orbit": [
+            0,
+            3,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": -0.26823024280896984,
+          "full_final_value": -0.13455872080445755,
+          "delta_absolute_mass": -0.1336715220045123,
+          "complex_numerator_swap": -0.1256329681688465,
+          "tracked_normalizer_swap": -0.00803855383566579
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            1
+          ],
+          "right_orbit": [
+            1,
+            2,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": -5.141860710657119,
+          "full_final_value": -5.017057301377396,
+          "delta_absolute_mass": -0.124803409279723,
+          "complex_numerator_swap": 0.00931517397736581,
+          "tracked_normalizer_swap": -0.1341185832570888
+        },
+        {
+          "left_orbit": [
+            0,
+            3,
+            3
+          ],
+          "right_orbit": [
+            0,
+            0,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": 0.2270185121570115,
+          "full_final_value": 0.11900295642101326,
+          "delta_absolute_mass": -0.10801555573599823,
+          "complex_numerator_swap": -0.10151986505444924,
+          "tracked_normalizer_swap": -0.006495690681548989
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            4
+          ],
+          "right_orbit": [
+            4,
+            4,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": -0.6922267629857649,
+          "full_final_value": -0.6057780696876672,
+          "delta_absolute_mass": -0.08644869329809768,
+          "complex_numerator_swap": -0.09386764068761799,
+          "tracked_normalizer_swap": 0.007418947389520314
+        },
+        {
+          "left_orbit": [
+            0,
+            3,
+            8
+          ],
+          "right_orbit": [
+            0,
+            0,
+            2
+          ],
+          "in_K36": false,
+          "inherited_value": -2.031317598279469,
+          "full_final_value": -1.9682463015669207,
+          "delta_absolute_mass": -0.06307129671254841,
+          "complex_numerator_swap": -0.016968791847013942,
+          "tracked_normalizer_swap": -0.046102504865534466
+        },
+        {
+          "left_orbit": [
+            2,
+            2,
+            3
+          ],
+          "right_orbit": [
+            2,
+            5,
+            9
+          ],
+          "in_K36": false,
+          "inherited_value": -2.783518833550981,
+          "full_final_value": -2.7258073580827133,
+          "delta_absolute_mass": -0.057711475468267714,
+          "complex_numerator_swap": -0.1555423192119063,
+          "tracked_normalizer_swap": 0.0978308437436386
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            2
+          ],
+          "right_orbit": [
+            2,
+            5,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": -1.2254977197254548,
+          "full_final_value": -1.1786644992415056,
+          "delta_absolute_mass": -0.04683322048394922,
+          "complex_numerator_swap": -0.2194608075340052,
+          "tracked_normalizer_swap": 0.172627587050056
+        },
+        {
+          "left_orbit": [
+            0,
+            1,
+            3
+          ],
+          "right_orbit": [
+            3,
+            3,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": 0.3791496159264151,
+          "full_final_value": 0.3356075305412716,
+          "delta_absolute_mass": -0.04354208538514348,
+          "complex_numerator_swap": -0.05605033938325424,
+          "tracked_normalizer_swap": 0.012508253998110758
+        },
+        {
+          "left_orbit": [
+            1,
+            3,
+            3
+          ],
+          "right_orbit": [
+            3,
+            4,
+            9
+          ],
+          "in_K36": false,
+          "inherited_value": -0.4273128135377141,
+          "full_final_value": -0.3878455961809157,
+          "delta_absolute_mass": -0.03946721735679842,
+          "complex_numerator_swap": -0.04751185361647717,
+          "tracked_normalizer_swap": 0.008044636259678745
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            4
+          ],
+          "right_orbit": [
+            2,
+            4,
+            5
+          ],
+          "in_K36": false,
+          "inherited_value": 0.16060530383515403,
+          "full_final_value": 0.12230646450725186,
+          "delta_absolute_mass": -0.03829883932790218,
+          "complex_numerator_swap": -0.014620029755275835,
+          "tracked_normalizer_swap": -0.023678809572626344
+        }
+      ],
+      "largest_outside_increases": [
+        {
+          "left_orbit": [
+            3,
+            3,
+            4
+          ],
+          "right_orbit": [
+            0,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": -4.307337653582418,
+          "full_final_value": -5.757852695975295,
+          "delta_absolute_mass": 1.450515042392877,
+          "complex_numerator_swap": 1.2863936902139699,
+          "tracked_normalizer_swap": 0.1641213521789071
+        },
+        {
+          "left_orbit": [
+            2,
+            3,
+            3
+          ],
+          "right_orbit": [
+            0,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": -0.29949919834243477,
+          "full_final_value": -0.7546216588907945,
+          "delta_absolute_mass": 0.4551224605483597,
+          "complex_numerator_swap": 0.3359184790180356,
+          "tracked_normalizer_swap": 0.11920398153032405
+        },
+        {
+          "left_orbit": [
+            2,
+            2,
+            4
+          ],
+          "right_orbit": [
+            2,
+            5,
+            10
+          ],
+          "in_K36": false,
+          "inherited_value": -1.1111126623468826,
+          "full_final_value": -1.3170621428308042,
+          "delta_absolute_mass": 0.2059494804839217,
+          "complex_numerator_swap": 0.1910153518388068,
+          "tracked_normalizer_swap": 0.014934128645114897
+        },
+        {
+          "left_orbit": [
+            0,
+            2,
+            2
+          ],
+          "right_orbit": [
+            2,
+            3,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": 0.7687829232086976,
+          "full_final_value": 0.9160890032487286,
+          "delta_absolute_mass": 0.14730608004003098,
+          "complex_numerator_swap": 0.16785918575023429,
+          "tracked_normalizer_swap": -0.0205531057102033
+        },
+        {
+          "left_orbit": [
+            2,
+            2,
+            3
+          ],
+          "right_orbit": [
+            0,
+            2,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": -0.08742124895198813,
+          "full_final_value": -0.21680647670711545,
+          "delta_absolute_mass": 0.1293852277551273,
+          "complex_numerator_swap": 0.15821259657890627,
+          "tracked_normalizer_swap": -0.028827368823778957
+        },
+        {
+          "left_orbit": [
+            2,
+            3,
+            9
+          ],
+          "right_orbit": [
+            0,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": -0.01758737216022648,
+          "full_final_value": -0.10177741326395441,
+          "delta_absolute_mass": 0.08419004110372794,
+          "complex_numerator_swap": 0.09853196719127286,
+          "tracked_normalizer_swap": -0.014341926087544922
+        },
+        {
+          "left_orbit": [
+            0,
+            2,
+            5
+          ],
+          "right_orbit": [
+            5,
+            5,
+            6
+          ],
+          "in_K36": false,
+          "inherited_value": 0.278611178917296,
+          "full_final_value": 0.35319166882479736,
+          "delta_absolute_mass": 0.07458048990750138,
+          "complex_numerator_swap": 0.08371827772762178,
+          "tracked_normalizer_swap": -0.009137787820120397
+        },
+        {
+          "left_orbit": [
+            0,
+            1,
+            3
+          ],
+          "right_orbit": [
+            0,
+            1,
+            6
+          ],
+          "in_K36": false,
+          "inherited_value": 0.05769910957412672,
+          "full_final_value": 0.1304105337271033,
+          "delta_absolute_mass": 0.07271142415297657,
+          "complex_numerator_swap": 0.07705857528962841,
+          "tracked_normalizer_swap": -0.00434715113665184
+        },
+        {
+          "left_orbit": [
+            0,
+            2,
+            4
+          ],
+          "right_orbit": [
+            2,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": 0.212716446594589,
+          "full_final_value": 0.2852375293829446,
+          "delta_absolute_mass": 0.07252108278835562,
+          "complex_numerator_swap": 0.08867897193711226,
+          "tracked_normalizer_swap": -0.01615788914875664
+        },
+        {
+          "left_orbit": [
+            2,
+            3,
+            4
+          ],
+          "right_orbit": [
+            0,
+            2,
+            2
+          ],
+          "in_K36": false,
+          "inherited_value": -0.038929059640733524,
+          "full_final_value": -0.11119411064035527,
+          "delta_absolute_mass": 0.07226505099962174,
+          "complex_numerator_swap": 0.08234784618023794,
+          "tracked_normalizer_swap": -0.0100827951806162
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            3
+          ],
+          "right_orbit": [
+            1,
+            2,
+            9
+          ],
+          "in_K36": false,
+          "inherited_value": 0.2313721183325416,
+          "full_final_value": 0.2972768690275886,
+          "delta_absolute_mass": 0.065904750695047,
+          "complex_numerator_swap": 0.058367340270717105,
+          "tracked_normalizer_swap": 0.007537410424329899
+        },
+        {
+          "left_orbit": [
+            0,
+            0,
+            2
+          ],
+          "right_orbit": [
+            0,
+            1,
+            6
+          ],
+          "in_K36": false,
+          "inherited_value": 0.07689605399393513,
+          "full_final_value": -0.13316965075693124,
+          "delta_absolute_mass": 0.056273596762996106,
+          "complex_numerator_swap": 0.05635008643213358,
+          "tracked_normalizer_swap": -7.648966913747363e-05
+        }
+      ],
+      "top_12_decrease_sum": -1.2250593805448857,
+      "remaining_outside_sum": 2.916778104389084
+    },
+    "10": {
+      "inherited_z": [
+        78977.46826161942,
+        45326.205587138254
+      ],
+      "full_final_z": [
+        80362.79597969542,
+        44138.195757623726
+      ],
+      "normalizer_magnitude_ratio_full_over_inherited": 1.006877891093827,
+      "normalizer_relative_phase_radians": -0.018760095939850077,
+      "inherited_I": 1215.212007925029,
+      "inherited_O": 86.6724236848247,
+      "full_final_I": 1208.9894854975573,
+      "full_final_O": 87.79106997274242,
+      "delta_I": -6.222522427471631,
+      "delta_O": 1.118646287917727,
+      "inside_complex_numerator_swap": 11.181447212113126,
+      "inside_tracked_normalizer_swap": -17.403969639584822,
+      "outside_complex_numerator_swap": 2.177558763293942,
+      "outside_tracked_normalizer_swap": -1.0589124753762251,
+      "outside_group_count": 6066,
+      "largest_outside_decreases": [
+        {
+          "left_orbit": [
+            1,
+            2,
+            4
+          ],
+          "right_orbit": [
+            4,
+            4,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": -0.5392947177206072,
+          "full_final_value": -0.20349596916153626,
+          "delta_absolute_mass": -0.335798748559071,
+          "complex_numerator_swap": -0.3530089969971707,
+          "tracked_normalizer_swap": 0.01721024843809972
+        },
+        {
+          "left_orbit": [
+            0,
+            2,
+            2
+          ],
+          "right_orbit": [
+            2,
+            3,
+            8
+          ],
+          "in_K36": false,
+          "inherited_value": 1.0243048828155754,
+          "full_final_value": 0.8138996857957089,
+          "delta_absolute_mass": -0.21040519701986649,
+          "complex_numerator_swap": -0.1462517513039927,
+          "tracked_normalizer_swap": -0.06415344571587378
+        },
+        {
+          "left_orbit": [
+            2,
+            3,
+            3
+          ],
+          "right_orbit": [
+            0,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": 3.599651056904181,
+          "full_final_value": 3.404902045674021,
+          "delta_absolute_mass": -0.1947490112301602,
+          "complex_numerator_swap": -0.17584214676371945,
+          "tracked_normalizer_swap": -0.018906864466440743
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            1
+          ],
+          "right_orbit": [
+            1,
+            2,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": -7.291779425006877,
+          "full_final_value": -7.162106902756877,
+          "delta_absolute_mass": -0.12967252224999992,
+          "complex_numerator_swap": 0.011363152311475666,
+          "tracked_normalizer_swap": -0.1410356745614756
+        },
+        {
+          "left_orbit": [
+            2,
+            2,
+            3
+          ],
+          "right_orbit": [
+            1,
+            3,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": -0.7786797903052931,
+          "full_final_value": -0.6594392729364831,
+          "delta_absolute_mass": -0.11924051736881003,
+          "complex_numerator_swap": -0.11423149444176278,
+          "tracked_normalizer_swap": -0.005009022927047246
+        },
+        {
+          "left_orbit": [
+            4,
+            4,
+            5
+          ],
+          "right_orbit": [
+            1,
+            1,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": 1.5311039933361614,
+          "full_final_value": 1.4366780906416667,
+          "delta_absolute_mass": -0.09442590269449469,
+          "complex_numerator_swap": -0.01734016522286541,
+          "tracked_normalizer_swap": -0.07708573747162928
+        },
+        {
+          "left_orbit": [
+            1,
+            3,
+            4
+          ],
+          "right_orbit": [
+            2,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": 1.9508259950362064,
+          "full_final_value": 1.8596694416052788,
+          "delta_absolute_mass": -0.09115655343092754,
+          "complex_numerator_swap": -0.10365250602808451,
+          "tracked_normalizer_swap": 0.012495952597156967
+        },
+        {
+          "left_orbit": [
+            0,
+            0,
+            2
+          ],
+          "right_orbit": [
+            0,
+            1,
+            6
+          ],
+          "in_K36": false,
+          "inherited_value": 0.22925561803365463,
+          "full_final_value": 0.14567391829112045,
+          "delta_absolute_mass": -0.08358169974253418,
+          "complex_numerator_swap": -0.07395295758860632,
+          "tracked_normalizer_swap": -0.009628742153927866
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            4
+          ],
+          "right_orbit": [
+            2,
+            4,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": 1.199549989924945,
+          "full_final_value": 1.1168431198088011,
+          "delta_absolute_mass": -0.08270687011614397,
+          "complex_numerator_swap": -0.08158186327640804,
+          "tracked_normalizer_swap": -0.0011250068397359314
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            2
+          ],
+          "right_orbit": [
+            1,
+            2,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": 0.4585779917929154,
+          "full_final_value": 0.37954222151113537,
+          "delta_absolute_mass": -0.07903577028178005,
+          "complex_numerator_swap": -0.08660239168216793,
+          "tracked_normalizer_swap": 0.007566621400387885
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            3
+          ],
+          "right_orbit": [
+            1,
+            2,
+            9
+          ],
+          "in_K36": false,
+          "inherited_value": -0.10774800171010146,
+          "full_final_value": -0.042058907591114386,
+          "delta_absolute_mass": -0.06568909411898707,
+          "complex_numerator_swap": -0.05690339372550276,
+          "tracked_normalizer_swap": -0.008785700393484315
+        },
+        {
+          "left_orbit": [
+            1,
+            4,
+            4
+          ],
+          "right_orbit": [
+            1,
+            1,
+            2
+          ],
+          "in_K36": false,
+          "inherited_value": -3.799469528392166,
+          "full_final_value": -3.744025226860446,
+          "delta_absolute_mass": -0.05544430153171964,
+          "complex_numerator_swap": -0.0009988511500169661,
+          "tracked_normalizer_swap": -0.054445450381702676
+        }
+      ],
+      "largest_outside_increases": [
+        {
+          "left_orbit": [
+            0,
+            2,
+            3
+          ],
+          "right_orbit": [
+            2,
+            3,
+            9
+          ],
+          "in_K36": false,
+          "inherited_value": 2.188327257001432,
+          "full_final_value": 2.6020655138448183,
+          "delta_absolute_mass": 0.4137382568433865,
+          "complex_numerator_swap": 0.4806074181719333,
+          "tracked_normalizer_swap": -0.06686916132854681
+        },
+        {
+          "left_orbit": [
+            2,
+            2,
+            4
+          ],
+          "right_orbit": [
+            2,
+            5,
+            10
+          ],
+          "in_K36": false,
+          "inherited_value": -0.6860048600997055,
+          "full_final_value": -1.0625084303495713,
+          "delta_absolute_mass": 0.3765035702498658,
+          "complex_numerator_swap": 0.37020849818006074,
+          "tracked_normalizer_swap": 0.006295072069805063
+        },
+        {
+          "left_orbit": [
+            0,
+            1,
+            3
+          ],
+          "right_orbit": [
+            0,
+            1,
+            6
+          ],
+          "in_K36": false,
+          "inherited_value": -0.02241135093661992,
+          "full_final_value": 0.2622481647875079,
+          "delta_absolute_mass": 0.23983681385088798,
+          "complex_numerator_swap": 0.24010860688323435,
+          "tracked_normalizer_swap": -0.0002717930323463836
+        },
+        {
+          "left_orbit": [
+            3,
+            3,
+            4
+          ],
+          "right_orbit": [
+            0,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": 1.3552125474003358,
+          "full_final_value": -1.5715644987893636,
+          "delta_absolute_mass": 0.21635195138902774,
+          "complex_numerator_swap": 0.23539874747783118,
+          "tracked_normalizer_swap": -0.01904679608880344
+        },
+        {
+          "left_orbit": [
+            1,
+            4,
+            7
+          ],
+          "right_orbit": [
+            1,
+            1,
+            1
+          ],
+          "in_K36": false,
+          "inherited_value": -0.992404858583435,
+          "full_final_value": -1.197133294444562,
+          "delta_absolute_mass": 0.2047284358611271,
+          "complex_numerator_swap": 0.27621565215759214,
+          "tracked_normalizer_swap": -0.07148721629646504
+        },
+        {
+          "left_orbit": [
+            2,
+            3,
+            3
+          ],
+          "right_orbit": [
+            0,
+            3,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": 0.7191076304522155,
+          "full_final_value": 0.8979429482118352,
+          "delta_absolute_mass": 0.1788353177596197,
+          "complex_numerator_swap": 0.16503566105331635,
+          "tracked_normalizer_swap": 0.013799656706303343
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            2
+          ],
+          "right_orbit": [
+            2,
+            5,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": 2.2845309713974293,
+          "full_final_value": 2.413670060925307,
+          "delta_absolute_mass": 0.12913908952787745,
+          "complex_numerator_swap": 0.30410239985960774,
+          "tracked_normalizer_swap": -0.1749633103317303
+        },
+        {
+          "left_orbit": [
+            2,
+            3,
+            9
+          ],
+          "right_orbit": [
+            0,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": -0.07421463331505923,
+          "full_final_value": -0.19985355074366598,
+          "delta_absolute_mass": 0.12563891742860675,
+          "complex_numerator_swap": 0.13568874374680995,
+          "tracked_normalizer_swap": -0.010049826318203184
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            6
+          ],
+          "right_orbit": [
+            0,
+            2,
+            2
+          ],
+          "in_K36": false,
+          "inherited_value": -0.8403264491037223,
+          "full_final_value": -0.9398070963575663,
+          "delta_absolute_mass": 0.09948064725384398,
+          "complex_numerator_swap": 0.11486892033235163,
+          "tracked_normalizer_swap": -0.015388273078507653
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            2
+          ],
+          "right_orbit": [
+            1,
+            2,
+            8
+          ],
+          "in_K36": false,
+          "inherited_value": 2.208150577891973,
+          "full_final_value": 2.295402151918191,
+          "delta_absolute_mass": 0.08725157402621786,
+          "complex_numerator_swap": 0.11917937316076843,
+          "tracked_normalizer_swap": -0.03192779913455057
+        },
+        {
+          "left_orbit": [
+            0,
+            2,
+            5
+          ],
+          "right_orbit": [
+            5,
+            5,
+            6
+          ],
+          "in_K36": false,
+          "inherited_value": 0.27387423278724343,
+          "full_final_value": 0.35865437932032407,
+          "delta_absolute_mass": 0.08478014653308064,
+          "complex_numerator_swap": 0.09241294870199016,
+          "tracked_normalizer_swap": -0.007632802168909519
+        },
+        {
+          "left_orbit": [
+            2,
+            3,
+            4
+          ],
+          "right_orbit": [
+            0,
+            2,
+            2
+          ],
+          "in_K36": false,
+          "inherited_value": -0.657783214584834,
+          "full_final_value": -0.7393690286771744,
+          "delta_absolute_mass": 0.08158581409234034,
+          "complex_numerator_swap": 0.08574832907123114,
+          "tracked_normalizer_swap": -0.004162514978890808
+        }
+      ],
+      "top_12_decrease_sum": -1.5419061883444947,
+      "remaining_outside_sum": 2.660552476262212
+    },
+    "11": {
+      "inherited_z": [
+        74732.89902569311,
+        46303.40079070531
+      ],
+      "full_final_z": [
+        76174.3683458488,
+        45348.48940262811
+      ],
+      "normalizer_magnitude_ratio_full_over_inherited": 1.0083753662209036,
+      "normalizer_relative_phase_radians": -0.017721322322860913,
+      "inherited_I": 1218.1246734578028,
+      "inherited_O": 89.93623273640473,
+      "full_final_I": 1212.3030846536944,
+      "full_final_O": 89.27185777226659,
+      "delta_I": -5.821588804108387,
+      "delta_O": -0.6643749641381476,
+      "inside_complex_numerator_swap": 13.325511049876068,
+      "inside_tracked_normalizer_swap": -19.147099853984646,
+      "outside_complex_numerator_swap": 0.45663561294711436,
+      "outside_tracked_normalizer_swap": -1.121010577085263,
+      "outside_group_count": 6066,
+      "largest_outside_decreases": [
+        {
+          "left_orbit": [
+            3,
+            3,
+            4
+          ],
+          "right_orbit": [
+            0,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": 2.348748215743262,
+          "full_final_value": -0.720196090830575,
+          "delta_absolute_mass": -1.6285521249126869,
+          "complex_numerator_swap": -1.6080036534599316,
+          "tracked_normalizer_swap": -0.020548471452755346
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            4
+          ],
+          "right_orbit": [
+            4,
+            4,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": -0.46752963256669555,
+          "full_final_value": -0.11086818951959443,
+          "delta_absolute_mass": -0.3566614430471011,
+          "complex_numerator_swap": -0.3741514966337413,
+          "tracked_normalizer_swap": 0.017490053586640172
+        },
+        {
+          "left_orbit": [
+            0,
+            2,
+            2
+          ],
+          "right_orbit": [
+            2,
+            3,
+            8
+          ],
+          "in_K36": false,
+          "inherited_value": 0.9723203847839359,
+          "full_final_value": 0.763921262834176,
+          "delta_absolute_mass": -0.20839912194975985,
+          "complex_numerator_swap": -0.14305522488311684,
+          "tracked_normalizer_swap": -0.06534389706664301
+        },
+        {
+          "left_orbit": [
+            2,
+            3,
+            3
+          ],
+          "right_orbit": [
+            0,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": 3.752307572849284,
+          "full_final_value": 3.5885127796519716,
+          "delta_absolute_mass": -0.1637947931973125,
+          "complex_numerator_swap": -0.15053015800533553,
+          "tracked_normalizer_swap": -0.013264635191976959
+        },
+        {
+          "left_orbit": [
+            2,
+            2,
+            3
+          ],
+          "right_orbit": [
+            1,
+            3,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": -0.7688577217757183,
+          "full_final_value": -0.6342826782570316,
+          "delta_absolute_mass": -0.13457504351868677,
+          "complex_numerator_swap": -0.12928622821010477,
+          "tracked_normalizer_swap": -0.0052888153085819956
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            1
+          ],
+          "right_orbit": [
+            1,
+            2,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": -7.472657082743838,
+          "full_final_value": -7.348967001352077,
+          "delta_absolute_mass": -0.12369008139176163,
+          "complex_numerator_swap": 0.021330842459438504,
+          "tracked_normalizer_swap": -0.14502092385120013
+        },
+        {
+          "left_orbit": [
+            1,
+            3,
+            4
+          ],
+          "right_orbit": [
+            2,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": 1.8512135624677477,
+          "full_final_value": 1.7467445290250738,
+          "delta_absolute_mass": -0.10446903344267389,
+          "complex_numerator_swap": -0.11454621406911969,
+          "tracked_normalizer_swap": 0.010077180626445803
+        },
+        {
+          "left_orbit": [
+            4,
+            4,
+            5
+          ],
+          "right_orbit": [
+            1,
+            1,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": 1.749832272114766,
+          "full_final_value": 1.6457263120633325,
+          "delta_absolute_mass": -0.10410596005143358,
+          "complex_numerator_swap": -0.024643976125916622,
+          "tracked_normalizer_swap": -0.07946198392551695
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            4
+          ],
+          "right_orbit": [
+            2,
+            4,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": 1.1881973722406183,
+          "full_final_value": 1.0995454315986048,
+          "delta_absolute_mass": -0.08865194064201343,
+          "complex_numerator_swap": -0.08895449921288434,
+          "tracked_normalizer_swap": 0.0003025585708709144
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            2
+          ],
+          "right_orbit": [
+            1,
+            2,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": 0.415031743765131,
+          "full_final_value": 0.32954254298071317,
+          "delta_absolute_mass": -0.08548920078441785,
+          "complex_numerator_swap": -0.09286411987778773,
+          "tracked_normalizer_swap": 0.007374919093369875
+        },
+        {
+          "left_orbit": [
+            1,
+            4,
+            4
+          ],
+          "right_orbit": [
+            1,
+            1,
+            2
+          ],
+          "in_K36": false,
+          "inherited_value": -4.082402808925419,
+          "full_final_value": -4.015702460933655,
+          "delta_absolute_mass": -0.06670034799176427,
+          "complex_numerator_swap": -0.008105622385154554,
+          "tracked_normalizer_swap": -0.05859472560660972
+        },
+        {
+          "left_orbit": [
+            0,
+            0,
+            2
+          ],
+          "right_orbit": [
+            0,
+            1,
+            6
+          ],
+          "in_K36": false,
+          "inherited_value": 0.21581108339196162,
+          "full_final_value": 0.15145365231751534,
+          "delta_absolute_mass": -0.06435743107444628,
+          "complex_numerator_swap": -0.05616421000418473,
+          "tracked_normalizer_swap": -0.008193221070261547
+        }
+      ],
+      "largest_outside_increases": [
+        {
+          "left_orbit": [
+            0,
+            2,
+            3
+          ],
+          "right_orbit": [
+            2,
+            3,
+            9
+          ],
+          "in_K36": false,
+          "inherited_value": 2.5039581002907108,
+          "full_final_value": 2.9128512567568325,
+          "delta_absolute_mass": 0.4088931564661218,
+          "complex_numerator_swap": 0.479178147147844,
+          "tracked_normalizer_swap": -0.07028499068172223
+        },
+        {
+          "left_orbit": [
+            2,
+            2,
+            4
+          ],
+          "right_orbit": [
+            2,
+            5,
+            10
+          ],
+          "in_K36": false,
+          "inherited_value": -0.6461549070360803,
+          "full_final_value": -1.0210476425931583,
+          "delta_absolute_mass": 0.374892735557078,
+          "complex_numerator_swap": 0.37041645770231657,
+          "tracked_normalizer_swap": 0.004476277854761457
+        },
+        {
+          "left_orbit": [
+            0,
+            1,
+            3
+          ],
+          "right_orbit": [
+            0,
+            1,
+            6
+          ],
+          "in_K36": false,
+          "inherited_value": -0.013294408628025531,
+          "full_final_value": 0.293940873286469,
+          "delta_absolute_mass": 0.28064646465844345,
+          "complex_numerator_swap": 0.2811451466489505,
+          "tracked_normalizer_swap": -0.0004986819905070852
+        },
+        {
+          "left_orbit": [
+            1,
+            4,
+            7
+          ],
+          "right_orbit": [
+            1,
+            1,
+            1
+          ],
+          "in_K36": false,
+          "inherited_value": -1.1595534702025618,
+          "full_final_value": -1.3917331035413438,
+          "delta_absolute_mass": 0.232179633338782,
+          "complex_numerator_swap": 0.2988925881241409,
+          "tracked_normalizer_swap": -0.06671295478535888
+        },
+        {
+          "left_orbit": [
+            2,
+            3,
+            3
+          ],
+          "right_orbit": [
+            0,
+            3,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": 0.5655761333842814,
+          "full_final_value": 0.760326830545706,
+          "delta_absolute_mass": 0.19475069716142468,
+          "complex_numerator_swap": 0.18130652774394806,
+          "tracked_normalizer_swap": 0.013444169417476615
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            2
+          ],
+          "right_orbit": [
+            2,
+            5,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": 2.6526143938967537,
+          "full_final_value": 2.7919043792824496,
+          "delta_absolute_mass": 0.13928998538569592,
+          "complex_numerator_swap": 0.3122371908516617,
+          "tracked_normalizer_swap": -0.17294720546596576
+        },
+        {
+          "left_orbit": [
+            2,
+            3,
+            9
+          ],
+          "right_orbit": [
+            0,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": -0.05823795978588411,
+          "full_final_value": -0.18702569622709186,
+          "delta_absolute_mass": 0.12878773644120775,
+          "complex_numerator_swap": 0.13831710198856367,
+          "tracked_normalizer_swap": -0.00952936554735594
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            6
+          ],
+          "right_orbit": [
+            0,
+            2,
+            2
+          ],
+          "in_K36": false,
+          "inherited_value": -0.8302171400091822,
+          "full_final_value": -0.9402453651859469,
+          "delta_absolute_mass": 0.1100282251767647,
+          "complex_numerator_swap": 0.12537907064001097,
+          "tracked_normalizer_swap": -0.015350845463246277
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            2
+          ],
+          "right_orbit": [
+            1,
+            2,
+            8
+          ],
+          "in_K36": false,
+          "inherited_value": 2.3950015860498604,
+          "full_final_value": 2.488025947966441,
+          "delta_absolute_mass": 0.09302436191658048,
+          "complex_numerator_swap": 0.12673616611607974,
+          "tracked_normalizer_swap": -0.03371180419949926
+        },
+        {
+          "left_orbit": [
+            0,
+            2,
+            5
+          ],
+          "right_orbit": [
+            5,
+            5,
+            6
+          ],
+          "in_K36": false,
+          "inherited_value": 0.26496380175133794,
+          "full_final_value": 0.34777235325339056,
+          "delta_absolute_mass": 0.08280855150205263,
+          "complex_numerator_swap": 0.09026010974862442,
+          "tracked_normalizer_swap": -0.007451558246571788
+        },
+        {
+          "left_orbit": [
+            2,
+            3,
+            4
+          ],
+          "right_orbit": [
+            0,
+            2,
+            2
+          ],
+          "in_K36": false,
+          "inherited_value": -0.6916269998041954,
+          "full_final_value": -0.7676057892356899,
+          "delta_absolute_mass": 0.0759787894314945,
+          "complex_numerator_swap": 0.07995786745883454,
+          "tracked_normalizer_swap": -0.003979078027340044
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            3
+          ],
+          "right_orbit": [
+            2,
+            4,
+            9
+          ],
+          "in_K36": false,
+          "inherited_value": 0.5174955223759787,
+          "full_final_value": 0.5862006191126504,
+          "delta_absolute_mass": 0.06870509673667169,
+          "complex_numerator_swap": 0.10032961166218937,
+          "tracked_normalizer_swap": -0.03162451492551768
+        }
+      ],
+      "top_12_decrease_sum": -3.129446522004058,
+      "remaining_outside_sum": 2.4650715578659095
+    },
+    "20": {
+      "inherited_z": [
+        49267.64458794653,
+        44483.888230569166
+      ],
+      "full_final_z": [
+        51418.74932254895,
+        45374.92343922172
+      ],
+      "normalizer_magnitude_ratio_full_over_inherited": 1.0331155980707114,
+      "normalizer_relative_phase_radians": -0.0113776563732902,
+      "inherited_I": 1112.9464137824175,
+      "inherited_O": 111.91501203315383,
+      "full_final_I": 1094.4678776037065,
+      "full_final_O": 108.45852077454904,
+      "delta_I": -18.47853617871101,
+      "delta_O": -3.4564912586047853,
+      "inside_complex_numerator_swap": 25.671839970062894,
+      "inside_tracked_normalizer_swap": -44.15037614877394,
+      "outside_complex_numerator_swap": 0.23262381119696207,
+      "outside_tracked_normalizer_swap": -3.6891150698017503,
+      "outside_group_count": 6066,
+      "largest_outside_decreases": [
+        {
+          "left_orbit": [
+            3,
+            3,
+            4
+          ],
+          "right_orbit": [
+            0,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": 11.380345109487653,
+          "full_final_value": 7.222986964567294,
+          "delta_absolute_mass": -4.157358144920359,
+          "complex_numerator_swap": -3.7388429396859633,
+          "tracked_normalizer_swap": -0.41851520523439545
+        },
+        {
+          "left_orbit": [
+            1,
+            4,
+            4
+          ],
+          "right_orbit": [
+            1,
+            1,
+            2
+          ],
+          "in_K36": false,
+          "inherited_value": -5.538267471413244,
+          "full_final_value": -5.261911370997235,
+          "delta_absolute_mass": -0.27635610041600867,
+          "complex_numerator_swap": -0.10330339465187333,
+          "tracked_normalizer_swap": -0.17305270576413534
+        },
+        {
+          "left_orbit": [
+            2,
+            2,
+            3
+          ],
+          "right_orbit": [
+            1,
+            3,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": -0.6096012135782464,
+          "full_final_value": -0.3404789533499642,
+          "delta_absolute_mass": -0.2691222602282822,
+          "complex_numerator_swap": -0.25922689802464616,
+          "tracked_normalizer_swap": -0.009895362203635988
+        },
+        {
+          "left_orbit": [
+            0,
+            2,
+            2
+          ],
+          "right_orbit": [
+            2,
+            3,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": 1.0170621701278473,
+          "full_final_value": 0.8019235791678822,
+          "delta_absolute_mass": -0.21513859095996513,
+          "complex_numerator_swap": -0.21403719101490826,
+          "tracked_normalizer_swap": -0.001101399945056869
+        },
+        {
+          "left_orbit": [
+            2,
+            3,
+            3
+          ],
+          "right_orbit": [
+            0,
+            3,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": -0.8794831843767715,
+          "full_final_value": -0.6699155045625033,
+          "delta_absolute_mass": -0.20956767981426827,
+          "complex_numerator_swap": -0.17368211346026985,
+          "tracked_normalizer_swap": -0.03588556635399842
+        },
+        {
+          "left_orbit": [
+            1,
+            3,
+            4
+          ],
+          "right_orbit": [
+            2,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": 1.016938923613563,
+          "full_final_value": 0.8129404520738842,
+          "delta_absolute_mass": -0.20399847153967887,
+          "complex_numerator_swap": -0.1897723732916512,
+          "tracked_normalizer_swap": -0.014226098248027674
+        },
+        {
+          "left_orbit": [
+            4,
+            4,
+            5
+          ],
+          "right_orbit": [
+            1,
+            1,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": 3.77034099289699,
+          "full_final_value": 3.573254665394545,
+          "delta_absolute_mass": -0.1970863275024448,
+          "complex_numerator_swap": -0.03373648455549727,
+          "tracked_normalizer_swap": -0.16334984294694754
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            2
+          ],
+          "right_orbit": [
+            1,
+            4,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": 1.7949139799194658,
+          "full_final_value": 1.6144423102613454,
+          "delta_absolute_mass": -0.18047166965812034,
+          "complex_numerator_swap": -0.1649231019376376,
+          "tracked_normalizer_swap": -0.015548567720482742
+        },
+        {
+          "left_orbit": [
+            1,
+            4,
+            5
+          ],
+          "right_orbit": [
+            1,
+            1,
+            1
+          ],
+          "in_K36": false,
+          "inherited_value": 4.381258120565151,
+          "full_final_value": 4.207064888312089,
+          "delta_absolute_mass": -0.17419323225306194,
+          "complex_numerator_swap": -0.028960840642158203,
+          "tracked_normalizer_swap": -0.14523239161090373
+        },
+        {
+          "left_orbit": [
+            2,
+            3,
+            9
+          ],
+          "right_orbit": [
+            0,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": 0.29835007349990617,
+          "full_final_value": 0.13812109671392048,
+          "delta_absolute_mass": -0.1602289767859857,
+          "complex_numerator_swap": -0.15852787374755617,
+          "tracked_normalizer_swap": -0.001701103038429519
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            4
+          ],
+          "right_orbit": [
+            2,
+            4,
+            5
+          ],
+          "in_K36": false,
+          "inherited_value": 1.315317388692589,
+          "full_final_value": 1.1909283636143675,
+          "delta_absolute_mass": -0.12438902507822158,
+          "complex_numerator_swap": -0.07344487439339031,
+          "tracked_normalizer_swap": -0.05094415068483127
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            4
+          ],
+          "right_orbit": [
+            2,
+            4,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": 0.2867633883988065,
+          "full_final_value": 0.18858542017955865,
+          "delta_absolute_mass": -0.09817796821924785,
+          "complex_numerator_swap": -0.11140950199209827,
+          "tracked_normalizer_swap": 0.013231533772850426
+        }
+      ],
+      "largest_outside_increases": [
+        {
+          "left_orbit": [
+            0,
+            1,
+            3
+          ],
+          "right_orbit": [
+            0,
+            1,
+            6
+          ],
+          "in_K36": false,
+          "inherited_value": 0.09521749733514516,
+          "full_final_value": 0.5528799695181795,
+          "delta_absolute_mass": 0.45766247218303435,
+          "complex_numerator_swap": 0.4733527862528325,
+          "tracked_normalizer_swap": -0.015690314069798143
+        },
+        {
+          "left_orbit": [
+            1,
+            4,
+            7
+          ],
+          "right_orbit": [
+            1,
+            1,
+            1
+          ],
+          "in_K36": false,
+          "inherited_value": -1.5505866066574403,
+          "full_final_value": -1.9665059198408041,
+          "delta_absolute_mass": 0.41591931318336384,
+          "complex_numerator_swap": 0.477130649842226,
+          "tracked_normalizer_swap": -0.06121133665886214
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            4
+          ],
+          "right_orbit": [
+            4,
+            4,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": 0.47248122534107995,
+          "full_final_value": 0.8868017558038389,
+          "delta_absolute_mass": 0.41432053046275896,
+          "complex_numerator_swap": 0.4522678435394242,
+          "tracked_normalizer_swap": -0.03794731307666521
+        },
+        {
+          "left_orbit": [
+            2,
+            2,
+            4
+          ],
+          "right_orbit": [
+            2,
+            5,
+            10
+          ],
+          "in_K36": false,
+          "inherited_value": -0.43236310109539683,
+          "full_final_value": -0.6431745320442166,
+          "delta_absolute_mass": 0.21081143094881977,
+          "complex_numerator_swap": 0.22345762153996188,
+          "tracked_normalizer_swap": -0.012646190591142109
+        },
+        {
+          "left_orbit": [
+            0,
+            2,
+            3
+          ],
+          "right_orbit": [
+            2,
+            3,
+            9
+          ],
+          "in_K36": false,
+          "inherited_value": 5.165657007438039,
+          "full_final_value": 5.375132006282098,
+          "delta_absolute_mass": 0.20947499884405918,
+          "complex_numerator_swap": 0.41662494896751134,
+          "tracked_normalizer_swap": -0.20714995012345216
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            2
+          ],
+          "right_orbit": [
+            2,
+            5,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": 4.490371104892677,
+          "full_final_value": 4.656540448585043,
+          "delta_absolute_mass": 0.16616934369236525,
+          "complex_numerator_swap": 0.40679164414711133,
+          "tracked_normalizer_swap": -0.24062230045474609
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            6
+          ],
+          "right_orbit": [
+            0,
+            2,
+            2
+          ],
+          "in_K36": false,
+          "inherited_value": -0.535720101090556,
+          "full_final_value": -0.688360931132075,
+          "delta_absolute_mass": 0.15264083004151896,
+          "complex_numerator_swap": 0.17649935875034167,
+          "tracked_normalizer_swap": -0.023858528708822713
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            4
+          ],
+          "right_orbit": [
+            1,
+            2,
+            2
+          ],
+          "in_K36": false,
+          "inherited_value": -0.29044724582772813,
+          "full_final_value": -0.4228215196982861,
+          "delta_absolute_mass": 0.13237427387055795,
+          "complex_numerator_swap": 0.13612424875461537,
+          "tracked_normalizer_swap": -0.0037499748840574276
+        },
+        {
+          "left_orbit": [
+            0,
+            2,
+            2
+          ],
+          "right_orbit": [
+            2,
+            3,
+            8
+          ],
+          "in_K36": false,
+          "inherited_value": -0.15258851699806203,
+          "full_final_value": -0.2835342630397735,
+          "delta_absolute_mass": 0.1309457460417115,
+          "complex_numerator_swap": 0.08176104233848719,
+          "tracked_normalizer_swap": 0.04918470370322431
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            3
+          ],
+          "right_orbit": [
+            0,
+            1,
+            5
+          ],
+          "in_K36": false,
+          "inherited_value": -0.16363492196385226,
+          "full_final_value": -0.29206262717194514,
+          "delta_absolute_mass": 0.12842770520809288,
+          "complex_numerator_swap": 0.13543745038650706,
+          "tracked_normalizer_swap": -0.00700974517841417
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            2
+          ],
+          "right_orbit": [
+            1,
+            2,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": -0.03320631486326684,
+          "full_final_value": -0.15976854345579095,
+          "delta_absolute_mass": 0.1265622285925241,
+          "complex_numerator_swap": 0.13674684391313324,
+          "tracked_normalizer_swap": -0.010184615320609137
+        },
+        {
+          "left_orbit": [
+            0,
+            2,
+            5
+          ],
+          "right_orbit": [
+            1,
+            5,
+            6
+          ],
+          "in_K36": false,
+          "inherited_value": -0.10255356664100616,
+          "full_final_value": -0.22454539155015185,
+          "delta_absolute_mass": 0.12199182490914569,
+          "complex_numerator_swap": 0.12417506437231465,
+          "tracked_normalizer_swap": -0.002183239463168965
+        }
+      ],
+      "top_12_decrease_sum": -6.266088447375644,
+      "remaining_outside_sum": 2.809597188770856
+    },
+    "22": {
+      "inherited_z": [
+        46164.66494516117,
+        42265.87741748786
+      ],
+      "full_final_z": [
+        48554.26813250616,
+        43470.81289773389
+      ],
+      "normalizer_magnitude_ratio_full_over_inherited": 1.0412232087061688,
+      "normalizer_relative_phase_radians": -0.01112363907327746,
+      "inherited_I": 1078.8152382864791,
+      "inherited_O": 117.43108503049069,
+      "full_final_I": 1063.9286512007316,
+      "full_final_O": 113.32675146168825,
+      "delta_I": -14.886587085747578,
+      "delta_O": -4.104333568802446,
+      "inside_complex_numerator_swap": 38.65805724245216,
+      "inside_tracked_normalizer_swap": -53.544644328199794,
+      "outside_complex_numerator_swap": 0.6046915230098102,
+      "outside_tracked_normalizer_swap": -4.709025091812255,
+      "outside_group_count": 6066,
+      "largest_outside_decreases": [
+        {
+          "left_orbit": [
+            3,
+            3,
+            4
+          ],
+          "right_orbit": [
+            0,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": 13.033281869978735,
+          "full_final_value": 8.643905041735271,
+          "delta_absolute_mass": -4.3893768282434635,
+          "complex_numerator_swap": -3.849937110952525,
+          "tracked_normalizer_swap": -0.5394397172909384
+        },
+        {
+          "left_orbit": [
+            1,
+            4,
+            4
+          ],
+          "right_orbit": [
+            1,
+            1,
+            2
+          ],
+          "in_K36": false,
+          "inherited_value": -5.568440233486097,
+          "full_final_value": -5.225894744973521,
+          "delta_absolute_mass": -0.3425454885125756,
+          "complex_numerator_swap": -0.13094714823718823,
+          "tracked_normalizer_swap": -0.21159834027538738
+        },
+        {
+          "left_orbit": [
+            2,
+            2,
+            3
+          ],
+          "right_orbit": [
+            1,
+            3,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": -0.5828105230247809,
+          "full_final_value": -0.28634956588051186,
+          "delta_absolute_mass": -0.296460957144269,
+          "complex_numerator_swap": -0.28571183536461797,
+          "tracked_normalizer_swap": -0.010749121779651066
+        },
+        {
+          "left_orbit": [
+            0,
+            2,
+            2
+          ],
+          "right_orbit": [
+            2,
+            3,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": 0.791696588668599,
+          "full_final_value": 0.5495583144108604,
+          "delta_absolute_mass": -0.2421382742577386,
+          "complex_numerator_swap": -0.24457499037654545,
+          "tracked_normalizer_swap": 0.0024367161188068587
+        },
+        {
+          "left_orbit": [
+            4,
+            4,
+            5
+          ],
+          "right_orbit": [
+            1,
+            1,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": 4.124684737264795,
+          "full_final_value": 3.9006163885990284,
+          "delta_absolute_mass": -0.22406834866576686,
+          "complex_numerator_swap": -0.020435479460252592,
+          "tracked_normalizer_swap": -0.20363286920551427
+        },
+        {
+          "left_orbit": [
+            1,
+            4,
+            5
+          ],
+          "right_orbit": [
+            1,
+            1,
+            1
+          ],
+          "in_K36": false,
+          "inherited_value": 4.29052445456043,
+          "full_final_value": 4.071719998042523,
+          "delta_absolute_mass": -0.2188044565179066,
+          "complex_numerator_swap": -0.04714027197621995,
+          "tracked_normalizer_swap": -0.17166418454168664
+        },
+        {
+          "left_orbit": [
+            1,
+            3,
+            4
+          ],
+          "right_orbit": [
+            2,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": 0.8892766360200927,
+          "full_final_value": 0.6721962446846473,
+          "delta_absolute_mass": -0.21708039133544532,
+          "complex_numerator_swap": -0.1995351959224898,
+          "tracked_normalizer_swap": -0.017545195412955517
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            2
+          ],
+          "right_orbit": [
+            1,
+            4,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": 1.4370576980361285,
+          "full_final_value": 1.2317497902429273,
+          "delta_absolute_mass": -0.20530790779320118,
+          "complex_numerator_swap": -0.1954710922827686,
+          "tracked_normalizer_swap": -0.009836815510432584
+        },
+        {
+          "left_orbit": [
+            2,
+            3,
+            3
+          ],
+          "right_orbit": [
+            0,
+            3,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": -1.2192144597300205,
+          "full_final_value": -1.030261930600379,
+          "delta_absolute_mass": -0.18895252912964144,
+          "complex_numerator_swap": -0.13483064377598963,
+          "tracked_normalizer_swap": -0.05412188535365181
+        },
+        {
+          "left_orbit": [
+            2,
+            3,
+            9
+          ],
+          "right_orbit": [
+            0,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": 0.42003554687517514,
+          "full_final_value": 0.2504249964865661,
+          "delta_absolute_mass": -0.16961055038860906,
+          "complex_numerator_swap": -0.16132916714790366,
+          "tracked_normalizer_swap": -0.008281383240705403
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            4
+          ],
+          "right_orbit": [
+            2,
+            4,
+            5
+          ],
+          "in_K36": false,
+          "inherited_value": 1.320111566949535,
+          "full_final_value": 1.1788946206370314,
+          "delta_absolute_mass": -0.14121694631250348,
+          "complex_numerator_swap": -0.08142021126986754,
+          "tracked_normalizer_swap": -0.05979673504263594
+        },
+        {
+          "left_orbit": [
+            0,
+            1,
+            2
+          ],
+          "right_orbit": [
+            2,
+            3,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": 1.160222320540656,
+          "full_final_value": 1.027737527808074,
+          "delta_absolute_mass": -0.13248479273258207,
+          "complex_numerator_swap": -0.1170008224781276,
+          "tracked_normalizer_swap": -0.015483970254454471
+        }
+      ],
+      "largest_outside_increases": [
+        {
+          "left_orbit": [
+            0,
+            1,
+            3
+          ],
+          "right_orbit": [
+            0,
+            1,
+            6
+          ],
+          "in_K36": false,
+          "inherited_value": 0.10580531020867633,
+          "full_final_value": 0.5856009767096049,
+          "delta_absolute_mass": 0.47979566650092853,
+          "complex_numerator_swap": 0.49801854760345077,
+          "tracked_normalizer_swap": -0.018222881102522223
+        },
+        {
+          "left_orbit": [
+            1,
+            4,
+            7
+          ],
+          "right_orbit": [
+            1,
+            1,
+            1
+          ],
+          "in_K36": false,
+          "inherited_value": -1.398881341034668,
+          "full_final_value": -1.8392890733854186,
+          "delta_absolute_mass": 0.4404077323507505,
+          "complex_numerator_swap": 0.5028765027105375,
+          "tracked_normalizer_swap": -0.06246877035978704
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            4
+          ],
+          "right_orbit": [
+            4,
+            4,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": 0.7090930773611034,
+          "full_final_value": 1.1062250261304842,
+          "delta_absolute_mass": 0.39713194876938085,
+          "complex_numerator_swap": 0.44899807457018875,
+          "tracked_normalizer_swap": -0.051866125800807905
+        },
+        {
+          "left_orbit": [
+            2,
+            2,
+            4
+          ],
+          "right_orbit": [
+            2,
+            5,
+            10
+          ],
+          "in_K36": false,
+          "inherited_value": -0.41702958333717766,
+          "full_final_value": -0.5726247167845796,
+          "delta_absolute_mass": 0.15559513344740195,
+          "complex_numerator_swap": 0.17152750748415982,
+          "tracked_normalizer_swap": -0.015932374036757874
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            2
+          ],
+          "right_orbit": [
+            2,
+            5,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": 4.505842455581432,
+          "full_final_value": 4.661344838670059,
+          "delta_absolute_mass": 0.15550238308862774,
+          "complex_numerator_swap": 0.4309745652161383,
+          "tracked_normalizer_swap": -0.27547218212751057
+        },
+        {
+          "left_orbit": [
+            0,
+            0,
+            3
+          ],
+          "right_orbit": [
+            0,
+            3,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": -0.2698756503156884,
+          "full_final_value": -0.42166560638545786,
+          "delta_absolute_mass": 0.15178995606976947,
+          "complex_numerator_swap": 0.1651888109157095,
+          "tracked_normalizer_swap": -0.013398854845940028
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            6
+          ],
+          "right_orbit": [
+            0,
+            2,
+            2
+          ],
+          "in_K36": false,
+          "inherited_value": -0.4526376602567666,
+          "full_final_value": -0.6031365982086064,
+          "delta_absolute_mass": 0.15049893795183983,
+          "complex_numerator_swap": 0.1762701573703425,
+          "tracked_normalizer_swap": -0.02577121941850266
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            4
+          ],
+          "right_orbit": [
+            1,
+            2,
+            2
+          ],
+          "in_K36": false,
+          "inherited_value": -0.3193705499011289,
+          "full_final_value": -0.46895784652689676,
+          "delta_absolute_mass": 0.14958729662576786,
+          "complex_numerator_swap": 0.15683158413868287,
+          "tracked_normalizer_swap": -0.007244287512915004
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            3
+          ],
+          "right_orbit": [
+            0,
+            1,
+            5
+          ],
+          "in_K36": false,
+          "inherited_value": -0.15482921135937355,
+          "full_final_value": -0.2942930254731834,
+          "delta_absolute_mass": 0.13946381411380987,
+          "complex_numerator_swap": 0.14812870612916407,
+          "tracked_normalizer_swap": -0.008664892015354198
+        },
+        {
+          "left_orbit": [
+            0,
+            2,
+            5
+          ],
+          "right_orbit": [
+            1,
+            5,
+            6
+          ],
+          "in_K36": false,
+          "inherited_value": -0.03392241325785231,
+          "full_final_value": -0.1725454214886448,
+          "delta_absolute_mass": 0.1386230082307925,
+          "complex_numerator_swap": 0.1404879205661449,
+          "tracked_normalizer_swap": -0.0018649123353524297
+        },
+        {
+          "left_orbit": [
+            0,
+            2,
+            3
+          ],
+          "right_orbit": [
+            2,
+            3,
+            9
+          ],
+          "in_K36": false,
+          "inherited_value": 5.669599533716618,
+          "full_final_value": 5.807691433769003,
+          "delta_absolute_mass": 0.1380919000523848,
+          "complex_numerator_swap": 0.40853746482658515,
+          "tracked_normalizer_swap": -0.27044556477420034
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            2
+          ],
+          "right_orbit": [
+            1,
+            2,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": -0.11525000279609014,
+          "full_final_value": -0.24653611584754612,
+          "delta_absolute_mass": 0.131286113051456,
+          "complex_numerator_swap": 0.14495257416305857,
+          "tracked_normalizer_swap": -0.013666461111602614
+        }
+      ],
+      "top_12_decrease_sum": -6.768047471033703,
+      "remaining_outside_sum": 2.6637139022312577
+    },
+    "23": {
+      "inherited_z": [
+        44840.99512812127,
+        41012.55419286403
+      ],
+      "full_final_z": [
+        47359.4422868196,
+        42356.54467226069
+      ],
+      "normalizer_magnitude_ratio_full_over_inherited": 1.045573111989547,
+      "normalizer_relative_phase_radians": -0.011142861467920054,
+      "inherited_I": 1064.7453821254178,
+      "inherited_O": 120.25975566405968,
+      "full_final_I": 1047.7938263788412,
+      "full_final_O": 115.8145593125522,
+      "delta_I": -16.95155574657656,
+      "delta_O": -4.445196351507477,
+      "inside_complex_numerator_swap": 40.51489354269754,
+      "inside_tracked_normalizer_swap": -57.466449289274244,
+      "outside_complex_numerator_swap": 0.8580251642912471,
+      "outside_tracked_normalizer_swap": -5.303221515798735,
+      "outside_group_count": 6066,
+      "largest_outside_decreases": [
+        {
+          "left_orbit": [
+            3,
+            3,
+            4
+          ],
+          "right_orbit": [
+            0,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": 13.795191402716442,
+          "full_final_value": 9.28692507369371,
+          "delta_absolute_mass": -4.508266329022732,
+          "complex_numerator_swap": -3.8983139147773525,
+          "tracked_normalizer_swap": -0.6099524142453792
+        },
+        {
+          "left_orbit": [
+            1,
+            4,
+            4
+          ],
+          "right_orbit": [
+            1,
+            1,
+            2
+          ],
+          "in_K36": false,
+          "inherited_value": -5.549312273045209,
+          "full_final_value": -5.172914573777771,
+          "delta_absolute_mass": -0.3763976992674385,
+          "complex_numerator_swap": -0.14550350810549562,
+          "tracked_normalizer_swap": -0.23089419116194287
+        },
+        {
+          "left_orbit": [
+            2,
+            2,
+            3
+          ],
+          "right_orbit": [
+            1,
+            3,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": -0.5748244600206797,
+          "full_final_value": -0.26486796932937023,
+          "delta_absolute_mass": -0.3099564906913094,
+          "complex_numerator_swap": -0.2987584006606575,
+          "tracked_normalizer_swap": -0.011198090030651947
+        },
+        {
+          "left_orbit": [
+            0,
+            2,
+            2
+          ],
+          "right_orbit": [
+            2,
+            3,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": 0.6850823510322591,
+          "full_final_value": 0.433408507005096,
+          "delta_absolute_mass": -0.25167384402716314,
+          "complex_numerator_swap": -0.2569522913080424,
+          "tracked_normalizer_swap": 0.005278447280879256
+        },
+        {
+          "left_orbit": [
+            1,
+            4,
+            5
+          ],
+          "right_orbit": [
+            1,
+            1,
+            1
+          ],
+          "in_K36": false,
+          "inherited_value": 4.233124555883684,
+          "full_final_value": 3.992768717072857,
+          "delta_absolute_mass": -0.24035583881082712,
+          "complex_numerator_swap": -0.0554460478537937,
+          "tracked_normalizer_swap": -0.18490979095703342
+        },
+        {
+          "left_orbit": [
+            4,
+            4,
+            5
+          ],
+          "right_orbit": [
+            1,
+            1,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": 4.282223198618701,
+          "full_final_value": 4.043738417035013,
+          "delta_absolute_mass": -0.23848478158368813,
+          "complex_numerator_swap": -0.012020279787370303,
+          "tracked_normalizer_swap": -0.22646450179631783
+        },
+        {
+          "left_orbit": [
+            1,
+            3,
+            4
+          ],
+          "right_orbit": [
+            2,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": 0.8336414137505141,
+          "full_final_value": 0.6111099495709817,
+          "delta_absolute_mass": -0.2225314641795324,
+          "complex_numerator_swap": -0.2036344139887436,
+          "tracked_normalizer_swap": -0.0188970501907888
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            2
+          ],
+          "right_orbit": [
+            1,
+            4,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": 1.2588317466815298,
+          "full_final_value": 1.0421831610033216,
+          "delta_absolute_mass": -0.2166485856782081,
+          "complex_numerator_swap": -0.21182864359323716,
+          "tracked_normalizer_swap": -0.004819942084970941
+        },
+        {
+          "left_orbit": [
+            2,
+            3,
+            3
+          ],
+          "right_orbit": [
+            0,
+            3,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": -1.3945373955419178,
+          "full_final_value": -1.216845884380104,
+          "delta_absolute_mass": -0.1776915111618138,
+          "complex_numerator_swap": -0.11187796225380897,
+          "tracked_normalizer_swap": -0.06581354890800484
+        },
+        {
+          "left_orbit": [
+            2,
+            3,
+            9
+          ],
+          "right_orbit": [
+            0,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": 0.484253228076843,
+          "full_final_value": 0.3096985436069276,
+          "delta_absolute_mass": -0.1745546844699154,
+          "complex_numerator_swap": -0.16208365540064404,
+          "tracked_normalizer_swap": -0.012471029069271361
+        },
+        {
+          "left_orbit": [
+            0,
+            1,
+            2
+          ],
+          "right_orbit": [
+            2,
+            3,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": 1.3071787300853521,
+          "full_final_value": 1.1529369426163794,
+          "delta_absolute_mass": -0.15424178746897277,
+          "complex_numerator_swap": -0.12904783849268775,
+          "tracked_normalizer_swap": -0.02519394897628502
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            4
+          ],
+          "right_orbit": [
+            2,
+            4,
+            5
+          ],
+          "in_K36": false,
+          "inherited_value": 1.3112859493390772,
+          "full_final_value": 1.1630639882553495,
+          "delta_absolute_mass": -0.14822196108372765,
+          "complex_numerator_swap": -0.08400015925504056,
+          "tracked_normalizer_swap": -0.06422180182868709
+        }
+      ],
+      "largest_outside_increases": [
+        {
+          "left_orbit": [
+            0,
+            1,
+            3
+          ],
+          "right_orbit": [
+            0,
+            1,
+            6
+          ],
+          "in_K36": false,
+          "inherited_value": 0.10845035551182128,
+          "full_final_value": 0.5985861703085043,
+          "delta_absolute_mass": 0.490135814796683,
+          "complex_numerator_swap": 0.5097086547266814,
+          "tracked_normalizer_swap": -0.019572839929998316
+        },
+        {
+          "left_orbit": [
+            1,
+            4,
+            7
+          ],
+          "right_orbit": [
+            1,
+            1,
+            1
+          ],
+          "in_K36": false,
+          "inherited_value": -1.303550114709346,
+          "full_final_value": -1.7550110986553942,
+          "delta_absolute_mass": 0.45146098394604817,
+          "complex_numerator_swap": 0.5134859809025295,
+          "tracked_normalizer_swap": -0.06202499695648134
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            4
+          ],
+          "right_orbit": [
+            4,
+            4,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": 0.8277859160667544,
+          "full_final_value": 1.2133714116452428,
+          "delta_absolute_mass": 0.3855854955784883,
+          "complex_numerator_swap": 0.4460829602358244,
+          "tracked_normalizer_swap": -0.060497464657336075
+        },
+        {
+          "left_orbit": [
+            0,
+            0,
+            3
+          ],
+          "right_orbit": [
+            0,
+            3,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": -0.27674931573229916,
+          "full_final_value": -0.4468818110839915,
+          "delta_absolute_mass": 0.17013249535169234,
+          "complex_numerator_swap": 0.18533818748622993,
+          "tracked_normalizer_swap": -0.015205692134537596
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            4
+          ],
+          "right_orbit": [
+            1,
+            2,
+            2
+          ],
+          "in_K36": false,
+          "inherited_value": -0.3386107672181992,
+          "full_final_value": -0.4969268810305751,
+          "delta_absolute_mass": 0.15831611381237587,
+          "complex_numerator_swap": 0.16774681049569173,
+          "tracked_normalizer_swap": -0.009430696683315865
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            2
+          ],
+          "right_orbit": [
+            2,
+            5,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": 4.468821738148228,
+          "full_final_value": 4.617845317461982,
+          "delta_absolute_mass": 0.14902357931375398,
+          "complex_numerator_swap": 0.44293584575742884,
+          "tracked_normalizer_swap": -0.29391226644367485
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            6
+          ],
+          "right_orbit": [
+            0,
+            2,
+            2
+          ],
+          "in_K36": false,
+          "inherited_value": -0.41131062480757113,
+          "full_final_value": -0.5599070045047218,
+          "delta_absolute_mass": 0.14859637969715062,
+          "complex_numerator_swap": 0.17509169559715534,
+          "tracked_normalizer_swap": -0.02649531590000473
+        },
+        {
+          "left_orbit": [
+            0,
+            2,
+            5
+          ],
+          "right_orbit": [
+            1,
+            5,
+            6
+          ],
+          "in_K36": false,
+          "inherited_value": -0.003170080496582262,
+          "full_final_value": -0.14949896251765263,
+          "delta_absolute_mass": 0.14632888202107036,
+          "complex_numerator_swap": 0.14793744255972696,
+          "tracked_normalizer_swap": -0.0016085605386565861
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            3
+          ],
+          "right_orbit": [
+            0,
+            1,
+            5
+          ],
+          "in_K36": false,
+          "inherited_value": -0.15178066929632905,
+          "full_final_value": -0.295982650653344,
+          "delta_absolute_mass": 0.14420198135701495,
+          "complex_numerator_swap": 0.15378412225679755,
+          "tracked_normalizer_swap": -0.009582140899782599
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            2
+          ],
+          "right_orbit": [
+            1,
+            2,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": -0.15244826660329233,
+          "full_final_value": -0.28553203974427616,
+          "delta_absolute_mass": 0.13308377314098382,
+          "complex_numerator_swap": 0.1489065333332339,
+          "tracked_normalizer_swap": -0.015822760192250068
+        },
+        {
+          "left_orbit": [
+            2,
+            2,
+            4
+          ],
+          "right_orbit": [
+            2,
+            5,
+            10
+          ],
+          "in_K36": false,
+          "inherited_value": -0.4124787809371607,
+          "full_final_value": -0.5401027679892259,
+          "delta_absolute_mass": 0.12762398705206512,
+          "complex_numerator_swap": 0.1451433942404289,
+          "tracked_normalizer_swap": -0.017519407188363784
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            3
+          ],
+          "right_orbit": [
+            1,
+            4,
+            9
+          ],
+          "in_K36": false,
+          "inherited_value": -1.3628189138379156,
+          "full_final_value": -1.4849334022281397,
+          "delta_absolute_mass": 0.1221144883902241,
+          "complex_numerator_swap": 0.17199580759242028,
+          "tracked_normalizer_swap": -0.049881319202196184
+        }
+      ],
+      "top_12_decrease_sum": -7.019024977445328,
+      "remaining_outside_sum": 2.57382862593784
+    },
+    "24": {
+      "inherited_z": [
+        43636.20438061108,
+        39682.847943833585
+      ],
+      "full_final_z": [
+        46288.290890706696,
+        41153.04817846244
+      ],
+      "normalizer_magnitude_ratio_full_over_inherited": 1.05010275234634,
+      "normalizer_relative_phase_radians": -0.011247633670797532,
+      "inherited_I": 1052.2725719010493,
+      "inherited_O": 123.19635513348445,
+      "full_final_I": 1032.9843737959645,
+      "full_final_O": 118.28960843885233,
+      "delta_I": -19.288198105084803,
+      "delta_O": -4.906746694632119,
+      "inside_complex_numerator_swap": 41.93039363891267,
+      "inside_tracked_normalizer_swap": -61.21859174399741,
+      "outside_complex_numerator_swap": 1.023708777714871,
+      "outside_tracked_normalizer_swap": -5.930455472346991,
+      "outside_group_count": 6066,
+      "largest_outside_decreases": [
+        {
+          "left_orbit": [
+            3,
+            3,
+            4
+          ],
+          "right_orbit": [
+            0,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": 14.516722096515169,
+          "full_final_value": 9.88708389422909,
+          "delta_absolute_mass": -4.629638202286079,
+          "complex_numerator_swap": -3.9430350132696494,
+          "tracked_normalizer_swap": -0.6866031890164299
+        },
+        {
+          "left_orbit": [
+            1,
+            4,
+            4
+          ],
+          "right_orbit": [
+            1,
+            1,
+            2
+          ],
+          "in_K36": false,
+          "inherited_value": -5.509557273628896,
+          "full_final_value": -5.099258148370205,
+          "delta_absolute_mass": -0.4102991252586907,
+          "complex_numerator_swap": -0.1605235802020406,
+          "tracked_normalizer_swap": -0.24977554505665012
+        },
+        {
+          "left_orbit": [
+            2,
+            2,
+            3
+          ],
+          "right_orbit": [
+            1,
+            3,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": -0.5712575697505067,
+          "full_final_value": -0.24780455878057123,
+          "delta_absolute_mass": -0.32345301096993545,
+          "complex_numerator_swap": -0.3117260427465232,
+          "tracked_normalizer_swap": -0.011726968223412237
+        },
+        {
+          "left_orbit": [
+            1,
+            4,
+            5
+          ],
+          "right_orbit": [
+            1,
+            1,
+            1
+          ],
+          "in_K36": false,
+          "inherited_value": 4.169451768933362,
+          "full_final_value": 3.908282917428656,
+          "delta_absolute_mass": -0.2611688515047059,
+          "complex_numerator_swap": -0.06320434667050123,
+          "tracked_normalizer_swap": -0.1979645048342047
+        },
+        {
+          "left_orbit": [
+            0,
+            2,
+            2
+          ],
+          "right_orbit": [
+            2,
+            3,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": 0.583926583542947,
+          "full_final_value": 0.325220701944222,
+          "delta_absolute_mass": -0.25870588159872504,
+          "complex_numerator_swap": -0.2674869644044854,
+          "tracked_normalizer_swap": 0.00878108280576037
+        },
+        {
+          "left_orbit": [
+            4,
+            4,
+            5
+          ],
+          "right_orbit": [
+            1,
+            1,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": 4.426602613793401,
+          "full_final_value": 4.173205438409974,
+          "delta_absolute_mass": -0.25339717538342654,
+          "complex_numerator_swap": -0.0025420326530976034,
+          "tracked_normalizer_swap": -0.25085514273032894
+        },
+        {
+          "left_orbit": [
+            1,
+            3,
+            4
+          ],
+          "right_orbit": [
+            2,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": 0.7825735269771452,
+          "full_final_value": 0.5552112619427233,
+          "delta_absolute_mass": -0.22736226503442192,
+          "complex_numerator_swap": -0.20729616073492851,
+          "tracked_normalizer_swap": -0.020066104299493404
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            2
+          ],
+          "right_orbit": [
+            1,
+            4,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": 1.0849040563555477,
+          "full_final_value": 0.8575545387962624,
+          "delta_absolute_mass": -0.22734951755928523,
+          "complex_numerator_swap": -0.2289694339569044,
+          "tracked_normalizer_swap": 0.0016199163976191588
+        },
+        {
+          "left_orbit": [
+            2,
+            3,
+            9
+          ],
+          "right_orbit": [
+            0,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": 0.5499350270055209,
+          "full_final_value": 0.3703480495727267,
+          "delta_absolute_mass": -0.17958697743279417,
+          "complex_numerator_swap": -0.16227929936911253,
+          "tracked_normalizer_swap": -0.017307678063681636
+        },
+        {
+          "left_orbit": [
+            0,
+            1,
+            2
+          ],
+          "right_orbit": [
+            2,
+            3,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": 1.4672429050364022,
+          "full_final_value": 1.2887914754507703,
+          "delta_absolute_mass": -0.17845142958563187,
+          "complex_numerator_swap": -0.14174346883315492,
+          "tracked_normalizer_swap": -0.036707960752476954
+        },
+        {
+          "left_orbit": [
+            2,
+            3,
+            3
+          ],
+          "right_orbit": [
+            0,
+            3,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": -1.5744021819262772,
+          "full_final_value": -1.408004140601555,
+          "delta_absolute_mass": -0.16639804132472213,
+          "complex_numerator_swap": -0.08704061140226338,
+          "tracked_normalizer_swap": -0.07935742992245876
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            4
+          ],
+          "right_orbit": [
+            2,
+            4,
+            5
+          ],
+          "in_K36": false,
+          "inherited_value": 1.295410295571799,
+          "full_final_value": 1.141299011194198,
+          "delta_absolute_mass": -0.1541112843776009,
+          "complex_numerator_swap": -0.08560477859726934,
+          "tracked_normalizer_swap": -0.06850650578033157
+        }
+      ],
+      "largest_outside_increases": [
+        {
+          "left_orbit": [
+            0,
+            1,
+            3
+          ],
+          "right_orbit": [
+            0,
+            1,
+            6
+          ],
+          "in_K36": false,
+          "inherited_value": 0.10965830889791196,
+          "full_final_value": 0.6098220187419956,
+          "delta_absolute_mass": 0.5001637098440836,
+          "complex_numerator_swap": 0.5211115939226444,
+          "tracked_normalizer_swap": -0.020947884078560727
+        },
+        {
+          "left_orbit": [
+            1,
+            4,
+            7
+          ],
+          "right_orbit": [
+            1,
+            1,
+            1
+          ],
+          "in_K36": false,
+          "inherited_value": -1.19843508981912,
+          "full_final_value": -1.6603839604341841,
+          "delta_absolute_mass": 0.46194887061506407,
+          "complex_numerator_swap": 0.5225855344237336,
+          "tracked_normalizer_swap": -0.0606366638086695
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            4
+          ],
+          "right_orbit": [
+            4,
+            4,
+            4
+          ],
+          "in_K36": false,
+          "inherited_value": 0.946719990039308,
+          "full_final_value": 1.319077158363447,
+          "delta_absolute_mass": 0.3723571683241391,
+          "complex_numerator_swap": 0.4426388318465533,
+          "tracked_normalizer_swap": -0.07028166352241416
+        },
+        {
+          "left_orbit": [
+            0,
+            0,
+            3
+          ],
+          "right_orbit": [
+            0,
+            3,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": -0.28628845783378354,
+          "full_final_value": -0.4749831758028484,
+          "delta_absolute_mass": 0.18869471796906484,
+          "complex_numerator_swap": 0.2060184502947122,
+          "tracked_normalizer_swap": -0.01732373232564735
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            4
+          ],
+          "right_orbit": [
+            1,
+            2,
+            2
+          ],
+          "in_K36": false,
+          "inherited_value": -0.361363381738054,
+          "full_final_value": -0.5284328963963736,
+          "delta_absolute_mass": 0.1670695146583196,
+          "complex_numerator_swap": 0.17905034015306526,
+          "tracked_normalizer_swap": -0.011980825494745662
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            3
+          ],
+          "right_orbit": [
+            0,
+            1,
+            5
+          ],
+          "in_K36": false,
+          "inherited_value": -0.1496495239150273,
+          "full_final_value": -0.2980713593655202,
+          "delta_absolute_mass": 0.1484218354504929,
+          "complex_numerator_swap": 0.1589869217087515,
+          "tracked_normalizer_swap": -0.010565086258258596
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            6
+          ],
+          "right_orbit": [
+            0,
+            2,
+            2
+          ],
+          "in_K36": false,
+          "inherited_value": -0.37037010331044073,
+          "full_final_value": -0.5167044812282733,
+          "delta_absolute_mass": 0.14633437791783255,
+          "complex_numerator_swap": 0.17337323457892473,
+          "tracked_normalizer_swap": -0.02703885666109218
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            1
+          ],
+          "right_orbit": [
+            1,
+            2,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": -7.9851325253172645,
+          "full_final_value": -8.131440257936676,
+          "delta_absolute_mass": 0.14630773261941155,
+          "complex_numerator_swap": 0.5544591497544813,
+          "tracked_normalizer_swap": -0.40815141713506975
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            2
+          ],
+          "right_orbit": [
+            2,
+            5,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": 4.404942127259443,
+          "full_final_value": 4.547069917244179,
+          "delta_absolute_mass": 0.14212778998473574,
+          "complex_numerator_swap": 0.4546877637773079,
+          "tracked_normalizer_swap": -0.31255997379257217
+        },
+        {
+          "left_orbit": [
+            1,
+            2,
+            2
+          ],
+          "right_orbit": [
+            1,
+            2,
+            7
+          ],
+          "in_K36": false,
+          "inherited_value": -0.18735593802241396,
+          "full_final_value": -0.3218420980633806,
+          "delta_absolute_mass": 0.13448616004096664,
+          "complex_numerator_swap": 0.15272123198730045,
+          "tracked_normalizer_swap": -0.01823507194633381
+        },
+        {
+          "left_orbit": [
+            1,
+            1,
+            3
+          ],
+          "right_orbit": [
+            1,
+            4,
+            9
+          ],
+          "in_K36": false,
+          "inherited_value": -1.3192779586127046,
+          "full_final_value": -1.448016015270311,
+          "delta_absolute_mass": 0.1287380566576064,
+          "complex_numerator_swap": 0.1826703805838491,
+          "tracked_normalizer_swap": -0.0539323239262427
+        },
+        {
+          "left_orbit": [
+            2,
+            3,
+            3
+          ],
+          "right_orbit": [
+            0,
+            2,
+            3
+          ],
+          "in_K36": false,
+          "inherited_value": 2.4435534319212846,
+          "full_final_value": 2.558333473798088,
+          "delta_absolute_mass": 0.11478004187680346,
+          "complex_numerator_swap": 0.14498865473916278,
+          "tracked_normalizer_swap": -0.03020861286235932
+        }
+      ],
+      "top_12_decrease_sum": -7.269921762316019,
+      "remaining_outside_sum": 2.3631750676838994
+    }
+  },
+  "swap_interpretation": "symmetric two-factor attribution of group absolute mass changes to complex group numerator versus tracked complex normalizer; algebraic counterfactual, not a causal flow"
+}
