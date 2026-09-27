@@ -80,9 +80,10 @@ For the stated single-step near-Nyquist odd cyclic setting, the v1.2 theorem pro
 Preserved inside this Universe:
 - [v1.2 theorem lineage](lrsc/odd-ring-rank-theorem/v1.2/)
 - [v1.2.1 proof clarification supplement](lrsc/odd-ring-rank-theorem/v1.2.1-supplement/)
+- [v1.2.2 errata + independent replication supplement](lrsc/odd-ring-rank-theorem/v1.2.2-supplement/)
 - [v1.1.1 reproducibility supplement](lrsc/structural-mechanism/v1.1.1-reproducibility/)
 
-Frozen v1.2 and DOI NM5BW remain untouched; supplements are additive.
+Frozen v1.2 and DOI NM5BW remain untouched; supplements are additive. The v1.2.2 supplement also clarifies that matrix rank(V)=p is distinct from the finite minimum passing subset cardinality K_0.001.
 
 ### Navier–Stokes Bridge Audit
 
