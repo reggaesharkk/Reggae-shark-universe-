@@ -1,0 +1,22 @@
+{
+  "schema": "intentseal-vrk-verification-v1",
+  "claim_id": "lrsc.m99.theta007.k0001.eq14",
+  "claim_class": "EXHAUSTIVE_FINITE_RESULT",
+  "kernel_status": "EVIDENCE_BOUND",
+  "claim_digest": "d9536edd9935b984a895f5d063d26016c44256583b598b67c33648d57aa182e0",
+  "locally_replayed": {
+    "K14_witness_integer_gate": true,
+    "K11_exact_coverage": "37353738800/37353738800",
+    "K12_exact_coverage": "121399651100/121399651100",
+    "K13_exact_coverage": "354860518600/354860518600",
+    "hash_tamper_tests": "PASS",
+    "dependency_invalidation_test": "PASS",
+    "ledger_tamper_test": "PASS"
+  },
+  "external_immutable_bindings": {
+    "lrsc_repository_commit": "0d59b323a06d386e81843a50db7604cec314e3f9",
+    "certificate_blob_sha": "b297f0935a5733319ccc7a988ae11a4d5b7f4fb9",
+    "v1_2_2_replication_blob_sha": "7e1cea12710e8709fe211bbc02a1cb19567e3ef1"
+  },
+  "why_not_certified": "Required definition/replication evidence is immutably bound but not fully vendored and replayed by VRK v0.1.0."
+}
