@@ -1,0 +1,17 @@
+{
+  "source": {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "0d59b323a06d386e81843a50db7604cec314e3f9",
+    "certificate_path": "finite-benchmark/theta07-rank14/CERTIFICATE.md"
+  },
+  "M": 99,
+  "theta": "0.07",
+  "relative_tolerance": 0.001,
+  "subset": [0, 1, 2, 4, 5, 6, 42, 43, 44, 45, 46, 47, 48, 49],
+  "residual_r2_interval_scaled_1e35": [
+    47866202293226631619166826454,
+    47866202293226631619166826656
+  ],
+  "target_norm2_lower_scaled_1e35": 50451567155458613003131581499930492,
+  "reported_relative_residual_upper": 0.0009740408151
+}

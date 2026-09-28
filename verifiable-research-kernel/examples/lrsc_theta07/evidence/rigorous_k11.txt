@@ -1,0 +1,15 @@
+K=11 depth=0 visited=1 pruned=0
+K=11 depth=1 visited=40 pruned=39
+K=11 depth=2 visited=40 pruned=39
+K=11 depth=3 visited=40 pruned=1
+K=11 depth=4 visited=819 pruned=136
+K=11 depth=5 visited=10941 pruned=4210
+K=11 depth=6 visited=96635 pruned=57414
+K=11 depth=7 visited=546514 pruned=417256
+K=11 depth=8 visited=1824637 pruned=1706308
+K=11 depth=9 visited=1910424 pruned=1909806
+K=11 depth=10 visited=14545 pruned=14545
+K=11 depth=11 visited=0 pruned=0
+K=11 total_nodes=4404636 leaves=0 capped=0 unresolved=0
+K=11 covered=37353738800 expected=37353738800
+STATUS=PROVED_NO_PASS_AT_K

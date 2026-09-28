@@ -134,6 +134,22 @@ SHA-256:
 
 The prototype explores deterministic mediation of privileged tool calls using policy, budgets, human review, provenance attestation, rate limiting, and keyed audit records. It is explicitly **not** presented as a production security boundary. The lineage metadata is prepared for a Zenodo software deposit; no DOI is claimed until the external deposit is actually published.
 
+## IntentSeal Verifiable Research Kernel
+
+The [VRK v0.1.0 seed](verifiable-research-kernel/README.md) is a new cross-program infrastructure experiment: a fail-closed kernel for machine-readable scientific claims, evidence typing, artifact hashing, domain-verifier receipts, hash-chained claim events, and dependency invalidation.
+
+Its first demonstrator binds the finite LRSC claim `K_0.001=14` at the documented `M=99, theta=0.07` cell. The local kernel deliberately reports `EVIDENCE_BOUND`, not `CERTIFIED`, because it replays the witness and coverage evidence locally while binding some definition/replication evidence to immutable external repository artifacts rather than replaying the entire domain proof stack.
+
+Executable development artifact:
+
+`IntentSeal_Verifiable_Research_Kernel_v0_1_0.zip`
+
+SHA-256:
+
+`ed4a2842e44a2d23785417f2e76054122b0c7da31e30054aa2ea4e3183abc49a`
+
+The long-term goal is to connect this epistemic claim layer to IntentSeal's action-authority layer so the system separately checks **what an agent is allowed to do** and **what a research agent has earned the right to claim**.
+
 ## Scientific firewall
 
 The archive distinguishes:
@@ -175,4 +191,4 @@ Independent Research
 
 ### One sentence
 
-**Reggae Shark Universe is a five-program falsification-first research archive: exact theorems stay inside their stated domains, simulations stay simulations, finite computations stay finite, and every surviving claim carries its proof boundary with it.**
+**Reggae Shark Universe is a falsification-first research archive with an emerging verifiable-agency layer: exact theorems stay inside their stated domains, simulations stay simulations, finite computations stay finite, and every surviving claim carries its proof boundary with it.**

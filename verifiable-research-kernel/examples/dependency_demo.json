@@ -1,0 +1,11 @@
+[
+  {"claim_id": "lrsc.m99.theta007.mask83", "dependencies": []},
+  {
+    "claim_id": "lrsc.m99.theta007.k0001.eq14",
+    "dependencies": [{"claim_id": "lrsc.m99.theta007.mask83", "relation": "assumes_mask_cell"}]
+  },
+  {
+    "claim_id": "paper.lrsc.summary",
+    "dependencies": [{"claim_id": "lrsc.m99.theta007.k0001.eq14", "relation": "reports"}]
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://intentseal.example/schemas/claim-v1.json",
+  "title": "IntentSeal VRK Claim Manifest v1",
+  "type": "object",
+  "required": ["schema", "claim_id", "claim_text", "claim_class", "scope", "dependencies", "evidence"],
+  "properties": {
+    "schema": {"const": "intentseal-vrk-claim-v1"},
+    "claim_id": {"type": "string", "minLength": 1},
+    "claim_text": {"type": "string", "minLength": 1},
+    "claim_class": {
+      "enum": ["CONJECTURE", "NUMERICAL_OBSERVATION", "REPRODUCED_RESULT", "EXHAUSTIVE_FINITE_RESULT", "INTERVAL_CERTIFIED_RESULT", "ANALYTIC_THEOREM"]
+    },
+    "scope": {
+      "type": "object",
+      "required": ["applies_to", "does_not_imply"],
+      "properties": {
+        "applies_to": {"type": "array", "items": {"type": "string"}},
+        "does_not_imply": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "dependencies": {"type": "array"},
+    "evidence": {"type": "array"},
+    "claim_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}
