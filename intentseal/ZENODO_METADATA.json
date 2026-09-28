@@ -1,0 +1,13 @@
+{
+  "title": "IntentSeal Verification Kernel: Frozen Prototype Lineage v0.1.1-v0.5.0",
+  "upload_type": "software",
+  "publication_date": "2026-09-28",
+  "version": "0.5.0-prototype-freeze",
+  "creators": [
+    {"name":"Upadhyay, Prince","affiliation":"Independent Research"}
+  ],
+  "description": "Frozen software lineage archive for the IntentSeal Verification Kernel research prototype, historically developed under the working title AgentOS Verification Kernel. Preserves releases v0.1.1 through v0.5.0 byte-for-byte, with Linux verification logs, release hashes, freeze metadata, and an expanded copy of the latest historical source. Research prototype only; not production security software.",
+  "keywords": ["agent security","tool-call gateway","provenance attestation","audit log","prompt injection","human confirmation","capability control"],
+  "access_right": "open",
+  "notes": "Public project name at deposit: IntentSeal Verification Kernel. Historical release ZIPs and source package names retain the earlier AgentOS working title for provenance. No license is asserted because the supplied historical releases contain no license file. The original v0.5.0 ZIP is preserved unchanged; its internal SHA256SUMS.txt contains a self-checksum entry that fails while all other entries pass."
+}
