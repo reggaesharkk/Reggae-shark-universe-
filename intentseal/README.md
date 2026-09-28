@@ -24,13 +24,13 @@ The archived source/package names inside the historical releases still use `Agen
 
 ## Frozen public archive
 
-`IntentSeal_Verification_Kernel_Prototype_Lineage_v0_1_1_to_v0_5_0.zip`
+`IntentSeal_Verification_Kernel_Prototype_Lineage_v0_1_1_to_v0_5_0 (1).zip`
 
 SHA-256:
 
-`14f920b5fcb970f8a97eaf98aa80c83e8ff4125bb85e311705f86edad5dd56db`
+`05ba923c90dfc481a70a3784b72d1cd71a0adeac2c34a22631169f545ae5d4c0`
 
-Size: 148371 bytes.
+Size: 161324 bytes.
 
 ## Historical release hashes
 
@@ -43,6 +43,12 @@ Size: 148371 bytes.
 ## Freeze rule
 
 The five historical release ZIPs are immutable. Corrections after this archive must be additive or receive a new semantic version. Renaming the public archive to IntentSeal does not rewrite the historical release bytes.
+
+## License and DOI status
+
+The outer archive LICENSE states All Rights Reserved. The historical inner ZIPs retain their own original provenance and are unchanged.
+
+The earlier 148371-byte pre-publication outer archive was superseded; its hash is retained in historical records only.
 
 ## DOI status
 

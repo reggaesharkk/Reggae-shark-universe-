@@ -4,12 +4,12 @@
 
 **Prince Upadhyay — Independent Research**
 
-**Five research programs plus one security prototype. One falsification-first archive.**
+**Six programs. One falsification-first archive.**
 
 > **Build. Attack. Falsify. Preserve.**  
 > Do not protect the idea from falsification. Find the strongest contradiction first.
 
-The Reggae Shark Universe is the public umbrella map for five research programs developed in parallel, plus the frozen IntentSeal security-prototype lineage. Specialist repositories carry the live code and project-specific history; this repository preserves the paper-facing map, frozen lineage, and current cross-project archive.
+The Reggae Shark Universe is the public umbrella map for six programs, including the frozen IntentSeal security-prototype lineage and its VRK research-verification layer. Specialist repositories carry the live code and project-specific history; this repository preserves the paper-facing map, frozen lineage, and current cross-project archive.
 
 ## Paper shelf
 
@@ -17,7 +17,7 @@ The Reggae Shark Universe is the public umbrella map for five research programs 
 
 The paper shelf mirrors the canonical paper artifacts that exist in the specialist repositories and links frozen OSF records that remain authoritative. Historical releases are never silently rewritten.
 
-## The five research worlds
+## The six programs
 
 | World | Program | Current role |
 |---|---|---|
@@ -26,9 +26,9 @@ The paper shelf mirrors the canonical paper artifacts that exist in the speciali
 | **03** | Information-Theoretic Physics | phenomenological dynamical sector, Gate 0 firewall, nonlinear Hopf analysis, and exact positivity theorem inside the stated ODE family |
 | **04** | LRSC | spectral certificates, structural mechanism audit, reproducibility supplements, and odd-ring spectral rank theorem |
 | **05** | Navier–Stokes Bridge Audit | finite Fourier/Galerkin identities, falsification gates, phase/geometry adversaries, analytic obstructions, and explicit open proof obligations |
-| **06** | IntentSeal Verification Kernel | frozen software-prototype lineage for deterministic tool-call policy, budget, review, provenance attestation, rate limiting, and keyed audit controls |
+| **06** | IntentSeal Verification Kernel | frozen Verification Kernel lineage for agent authorization, and the Verifiable Research Kernel (VRK) for finite scientific-claim evidence |
 
-These programs are **not** claimed to be unified into a law of nature. IntentSeal is an engineering/security prototype rather than a scientific theorem program.
+These programs are **not** claimed to be unified into a law of nature. IntentSeal includes an engineering security prototype and a finite-domain scientific verification prototype.
 
 ## Live specialist repositories
 
@@ -92,7 +92,7 @@ Specialist repository: https://github.com/reggaesharkk/navier-stokes-bridge-audi
 
 This branch audits finite Fourier/Galerkin identities, analytic estimates and obstructions, and phase adversaries. It does not claim a solution to the three-dimensional Navier–Stokes Millennium problem.
 
-The finite phase-only continuation now extends through N17. The separately frozen N17 mechanism test failed or was unevaluable; the broad K36 gate passed. For the N17 result and limits, see [the dated status](papers/navier-stokes/CURRENT_STATUS_2026_09_28_N17_RESULT.md). Historical N16 details follow.
+The finite phase-only continuation now extends through N17 (seed 20260942, 520 proposals). The broad K36 prospective gate passed, with first sampled mass exit at `t=0.0024` for inherited, target-only, and full-final states. The separately frozen mechanism gate failed or was unevaluable at directional split `((1, 7, 9), (2, 7, 15))`; post-hoc diagnostics do not repair that prospective failure. For the N17 result and limits, see [the dated status](papers/navier-stokes/CURRENT_STATUS_2026_09_28_N17_RESULT.md). Historical N16 details follow.
 
 At N16, the N11-derived K36 coalition passed the predeclared time-resolved criteria prospectively at N14, N15, and N16. N16 inherited and target-only states first fail the 90% mass gate at sampled time `0.0023`; its optimized full-final state first fails at `0.0024`, still inside the frozen window. The full-final half-step sample at `0.00235` is already below 90%, following a passing coarse sample at `0.00230`. The N16 fixed-phase grid-128 quotient is **10.1500979832**.
 
@@ -116,7 +116,7 @@ Mirrored paper materials:
 - [N12/N13 source-resolved K36 turnover audit](papers/navier-stokes/WP16_036_N12_N13_TURNOVER_SOURCE_RATE_AUDIT_2026_09_27.md)
 
 
-The [post-hoc N11 sparse turnover reduction](papers/navier-stokes/WP16_036_SPARSE_TURNOVER_REDUCTION_2026_09_28.md) retains 112 initial conjugate pairs and numerically changes the K36 margin from positive to negative by `t=.003`. Its [exact rational initial anchor](papers/navier-stokes/WP16_036_SPARSE_TURNOVER_EXACT_ANCHOR_2026_09_28.md) certifies `F(0)>0` for a precisely projected rational field. The evolved negative sign is not yet interval-certified.
+The [post-hoc N11 sparse turnover reduction](papers/navier-stokes/WP16_036_SPARSE_TURNOVER_REDUCTION_2026_09_28.md) retains 112 initial conjugate pairs and numerically changes the K36 margin from positive to negative by `t=.003`. Its [exact rational initial anchor](papers/navier-stokes/WP16_036_SPARSE_TURNOVER_EXACT_ANCHOR_2026_09_28.md) certifies `F(0)>0` for a precisely projected rational field. The evolved negative sign is not yet interval-certified. Continuous-time residual and gradient bounds, accumulated error, normalizer positivity, endpoint enclosure, and independent verification remain open; no finite-N11 crossing theorem is claimed.
 
 ## IntentSeal Verification Kernel
 
@@ -126,29 +126,19 @@ Fresh Linux verification at the freeze point passed 10/10, 14/14, 34/34, 47/47, 
 
 Frozen public archive:
 
-`IntentSeal_Verification_Kernel_Prototype_Lineage_v0_1_1_to_v0_5_0.zip`
+`IntentSeal_Verification_Kernel_Prototype_Lineage_v0_1_1_to_v0_5_0 (1).zip`
 
 SHA-256:
 
-`14f920b5fcb970f8a97eaf98aa80c83e8ff4125bb85e311705f86edad5dd56db`
+`05ba923c90dfc481a70a3784b72d1cd71a0adeac2c34a22631169f545ae5d4c0`
 
-The prototype explores deterministic mediation of privileged tool calls using policy, budgets, human review, provenance attestation, rate limiting, and keyed audit records. It is explicitly **not** presented as a production security boundary. The lineage metadata is prepared for a Zenodo software deposit; no DOI is claimed until the external deposit is actually published.
+The prototype explores deterministic mediation of privileged tool calls using policy, budgets, human review, provenance attestation, rate limiting, and keyed audit records. It is explicitly **not** presented as a production security boundary. The frozen archive carries an All Rights Reserved LICENSE. No DOI is claimed until an external deposit is actually published.
 
 ## IntentSeal Verifiable Research Kernel
 
-The [VRK v0.1.0 seed](verifiable-research-kernel/README.md) is a new cross-program infrastructure experiment: a fail-closed kernel for machine-readable scientific claims, evidence typing, artifact hashing, domain-verifier receipts, hash-chained claim events, and dependency invalidation.
+The [VRK project](verifiable-research-kernel/README.md) is program 06's proof-carrying scientific-claim verification layer. Demonstrator 001 checks the finite LRSC `M=99`, `k_idx=49`, `A=1/2`, `theta=0.07`, relative tolerance `1e-3` proposition `K_0.001=14`. The v0.3.0 archive reproduced 22 tests, 13 adversarial mutations, exact K0–K13 coverage of 527,046,644,056 subsets, and the direct interval K14 witness. A v0.3.1 deterministic cross-machine certificate is under audit; it is not yet the public final release.
 
-Its first demonstrator binds the finite LRSC claim `K_0.001=14` at the documented `M=99, theta=0.07` cell. The local kernel deliberately reports `EVIDENCE_BOUND`, not `CERTIFIED`, because it replays the witness and coverage evidence locally while binding some definition/replication evidence to immutable external repository artifacts rather than replaying the entire domain proof stack.
-
-Executable development artifact:
-
-`IntentSeal_Verifiable_Research_Kernel_v0_1_0.zip`
-
-SHA-256:
-
-`ed4a2842e44a2d23785417f2e76054122b0c7da31e30054aa2ea4e3183abc49a`
-
-The long-term goal is to connect this epistemic claim layer to IntentSeal's action-authority layer so the system separately checks **what an agent is allowed to do** and **what a research agent has earned the right to claim**.
+Evidence certification and IntentSeal publication authority are separate checks. Finite certification does not imply any continuum Navier–Stokes claim or universal compression law.
 
 ## Scientific firewall
 
