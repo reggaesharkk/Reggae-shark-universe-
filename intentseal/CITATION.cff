@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: "IntentSeal Verification Kernel: Frozen Prototype Lineage v0.1.1-v0.5.0"
+message: "If you use or discuss this prototype, please cite the archived software release."
+type: software
+authors:
+  - family-names: "Upadhyay"
+    given-names: "Prince"
+version: "0.5.0-prototype-freeze"
+date-released: "2026-09-28"
+repository-code: "https://github.com/reggaesharkk/Reggae-shark-universe-"
+abstract: >-
+  Frozen lineage archive for the IntentSeal Verification Kernel research prototype,
+  historically developed under the working title AgentOS Verification Kernel,
+  preserving releases v0.1.1 through v0.5.0 without rewriting their bytes.
+keywords:
+  - agent security
+  - tool-call gateway
+  - provenance attestation
+  - audit log
+  - prompt injection
+  - human confirmation
