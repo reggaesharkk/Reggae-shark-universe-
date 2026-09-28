@@ -137,9 +137,9 @@ The prototype explores deterministic mediation of privileged tool calls using po
 
 ## IntentSeal Verifiable Research Kernel
 
-The [VRK project](verifiable-research-kernel/README.md) is program 06's proof-carrying scientific-claim verification layer. Demonstrator 001 checks the finite LRSC `M=99`, `k_idx=49`, `A=1/2`, `theta=0.07`, relative tolerance `1e-3` proposition `K_0.001=14`. The v0.3.0 archive reproduced 22 tests, 13 adversarial mutations, exact K0–K13 coverage of 527,046,644,056 subsets, and the direct interval K14 witness. A v0.3.1 deterministic cross-machine certificate is under audit; it is not yet the public final release.
+The [VRK project](verifiable-research-kernel/README.md) is program 06's proof-carrying scientific-claim verification layer. **v0.3.1 is the current final release.** Its finite LRSC Demonstrator 001 reproduces exact K0–K13 coverage of 527,046,644,056 subsets, a K13 search with 3,432 branch-and-bound nodes, and the direct integer-interval K14 witness. The final release passes 30/30 tests and rejects 33/33 adversarial claim/evidence/release/trust/authority mutations. Its deterministic certificate digest is `09209816a034020076e0f66e1b8924b6dd1567c95f7159070f58ce62ac597a8f`, anchored to the public verifier-source trust root at IntentSeal commit `e3b43046346c91faf2333d18d50c87012c8b162a`.
 
-Evidence certification and IntentSeal publication authority are separate checks. Finite certification does not imply any continuum Navier–Stokes claim or universal compression law.
+Demonstrator 002 checks the frozen finite-N11 K36 crossing certificate package and returns PASS while deliberately retaining VRK status `EVIDENCE_BOUND`, because v0.3.1 does not itself regenerate all 120 Arb enclosures. Evidence certification and IntentSeal publication authority remain separate checks. No continuum Navier–Stokes or universal compression claim follows.
 
 ## Scientific firewall
 
