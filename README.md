@@ -133,7 +133,7 @@ SHA-256:
 
 `05ba923c90dfc481a70a3784b72d1cd71a0adeac2c34a22631169f545ae5d4c0`
 
-The prototype explores deterministic mediation of privileged tool calls using policy, budgets, human review, provenance attestation, rate limiting, and keyed audit records. It is explicitly **not** presented as a production security boundary. The frozen archive carries an All Rights Reserved LICENSE. No DOI is claimed until an external deposit is actually published.
+The prototype explores deterministic mediation of privileged tool calls using policy, budgets, human review, provenance attestation, rate limiting, and keyed audit records. It is explicitly **not** presented as a production security boundary. The frozen archive carries an All Rights Reserved LICENSE. Its published Zenodo record is [10.5281/zenodo.23016445](https://doi.org/10.5281/zenodo.23016445). This DOI identifies only the frozen Verification Kernel lineage.
 
 ## IntentSeal Verifiable Research Kernel
 
