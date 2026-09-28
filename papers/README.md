@@ -81,6 +81,8 @@ Mirrored here:
 - [N16 source-orbit and normalizer attribution](navier-stokes/WP16_036_N16_SOURCE_ORBIT_ATTRIBUTION_2026_09_27.md)
 - [N12/N13 source-resolved K36 turnover audit](navier-stokes/WP16_036_N12_N13_TURNOVER_SOURCE_RATE_AUDIT_2026_09_27.md)
 - [N17 source and normalizer mechanism prefreeze](navier-stokes/WP16_036_N17_MECHANISM_PREFREEZE_2026_09_27.md)
+- [Post-hoc 112-pair turnover reduction](navier-stokes/WP16_036_SPARSE_TURNOVER_REDUCTION_2026_09_28.md)
+- [Exact rational initial anchor](navier-stokes/WP16_036_SPARSE_TURNOVER_EXACT_ANCHOR_2026_09_28.md)
 - [N17 complete continuation and time-gate freeze](navier-stokes/WP16_036_N17_COMPLETE_PROSPECTIVE_FREEZE_2026_09_27.md)
 
 The [N17 result](navier-stokes/WP16_036_N17_RESULT_AND_MECHANISM_FAILURE_2026_09_28.md) records a broad K36 pass in three states and a failed or unevaluable separately frozen mechanism gate. The frozen pre-data protocol remains below as historical provenance. The N11-derived K36 coalition transferred prospectively through N12/N13, and the stronger time-resolved N14–N16 protocols passed the predeclared broad criteria. At N16 the inherited and target-only first sampled exits are 0.0023; full-final exits at 0.0024. The fixed N16 winner has grid-128 value 10.150097983229115. The N17 source and normalizer mechanism and full continuation protocol were frozen before N17 data; N17 was subsequently evaluated without retuning. These finite computations do not establish an asymptotic theorem or solve the three-dimensional Navier–Stokes problem.
