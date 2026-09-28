@@ -137,6 +137,8 @@ The prototype explores deterministic mediation of privileged tool calls using po
 
 ## IntentSeal Verifiable Research Kernel
 
+**VRK v0.3.1 Zenodo software release:** [10.5281/zenodo.23018459](https://doi.org/10.5281/zenodo.23018459) ([record](https://zenodo.org/records/23018459)). Archive SHA-256: `c18c4c697d8188490e96530cfb5ddcb2e63f7c65aa560415401b1541e575cd79`; size 177,783 bytes; All Rights Reserved; publication date 2026-09-28. This DOI identifies only the separate VRK archive, not the foundational IntentSeal Verification Kernel DOI [10.5281/zenodo.23016445](https://doi.org/10.5281/zenodo.23016445).
+
 The [VRK project](verifiable-research-kernel/README.md) is program 06's proof-carrying scientific-claim verification layer. **v0.3.1 is the current final release.** Its finite LRSC Demonstrator 001 reproduces exact K0–K13 coverage of 527,046,644,056 subsets, a K13 search with 3,432 branch-and-bound nodes, and the direct integer-interval K14 witness. The final release passes 30/30 tests and rejects 33/33 adversarial claim/evidence/release/trust/authority mutations. Its deterministic certificate digest is `09209816a034020076e0f66e1b8924b6dd1567c95f7159070f58ce62ac597a8f`, anchored to the public verifier-source trust root at IntentSeal commit `e3b43046346c91faf2333d18d50c87012c8b162a`.
 
 Demonstrator 002 checks the frozen finite-N11 K36 crossing certificate package and returns PASS while deliberately retaining VRK status `EVIDENCE_BOUND`, because v0.3.1 does not itself regenerate all 120 Arb enclosures. Evidence certification and IntentSeal publication authority remain separate checks. No continuum Navier–Stokes or universal compression claim follows.

@@ -71,4 +71,8 @@ Historical versions remain unchanged.
 
 No continuum Navier–Stokes theorem or universal physical claim follows from either demonstrator.
 
-No VRK DOI is claimed yet.
+Zenodo DOI: [10.5281/zenodo.23018459](https://doi.org/10.5281/zenodo.23018459)  
+Record: https://zenodo.org/records/23018459  
+Publication date: 2026-09-28  
+License: All Rights Reserved.  
+This DOI identifies only this v0.3.1 VRK archive, not the foundational Verification Kernel DOI.

@@ -33,6 +33,9 @@ The Universe mirrors paper artifacts where practical, while the specialist repos
 
 ## Archival records
 
+- IntentSeal Verification Kernel frozen v0.1.1–v0.5.0 lineage: https://doi.org/10.5281/zenodo.23016445
+- IntentSeal Verifiable Research Kernel v0.3.1: https://doi.org/10.5281/zenodo.23018459 (record: https://zenodo.org/records/23018459; All Rights Reserved; published 2026-09-28)
+
 - Self-Referential Processing consolidated master: https://doi.org/10.17605/OSF.IO/NV7DZ
 - Self-Referential Processing original foundation: https://doi.org/10.17605/OSF.IO/37H2Y
 - Physics Appendix A theorem: https://doi.org/10.17605/OSF.IO/U7M6H
