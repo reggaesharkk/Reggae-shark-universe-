@@ -51,6 +51,10 @@ The certified bounds are:
 
 All 120 whole-segment residual and gradient enclosures passed a second complete Arb replay from the preserved arrays. Each replayed upper bound was strictly below its stored outward-rounded bound; the verifier returned `PASS`. An independent exact-Fraction/Taylor recurrence gives final error (<0.000045868444), below the intentionally padded Arb radius used in the endpoint proof. The exact positive starting sign, the strictly negative ending interval, and the continuous nonzero denominator imply the crossing by the intermediate value theorem. No unique crossing time or first crossing interval is certified.
 
+## Additional independent full replay (2026-09-28)
+
+A further run of the documented Arb verifier recomputed all 120 segment enclosures from the frozen archive without regenerating or tuning the predictor. It used NumPy 2.3.5 and python-flint 0.9.0 and returned PASS for the initial sign, every segment digest, trajectory error radius, negative endpoint, and whole-path nonzero normalizer. The machine-readable output is [N11_Arb_Independent_Replay_2026_09_28.json](https://github.com/reggaesharkk/Reggae-shark-universe-/blob/main/verifiable-research-kernel/evidence/N11_Arb_Independent_Replay_2026_09_28.json) (SHA-256 `8c8b8fe65a359e5fa430cccfa00d7a48b72f0536959ec194d779aa3fda691e39`). The replay confirms the bounds reported above and does not extend the theorem's finite-N11 scope.
+
 ## Certificate identity
 
 Archive:
