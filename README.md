@@ -91,6 +91,8 @@ Specialist repository: https://github.com/reggaesharkk/navier-stokes-bridge-audi
 
 This branch audits finite Fourier/Galerkin identities, analytic estimates and obstructions, and phase adversaries. It does not claim a solution to the three-dimensional Navier–Stokes Millennium problem.
 
+The finite phase-only continuation now extends through N17. The separately frozen N17 mechanism test failed or was unevaluable; the broad K36 gate passed. For the N17 result and limits, see [the dated status](papers/navier-stokes/CURRENT_STATUS_2026_09_28_N17_RESULT.md). Historical N16 details follow.
+
 The finite phase-only continuation now extends through N16. The N11-derived K36 coalition passed the predeclared time-resolved criteria prospectively at N14, N15, and N16. N16 inherited and target-only states first fail the 90% mass gate at sampled time `0.0023`; its optimized full-final state first fails at `0.0024`, still inside the frozen window. The full-final half-step sample at `0.00235` is already below 90%, following a passing coarse sample at `0.00230`. The N16 fixed-phase grid-128 quotient is **10.1500979832**.
 
 [Read the current status](papers/navier-stokes/CURRENT_STATUS_2026_09_27_N16_RESULT.md), [the N16 prospective result](papers/navier-stokes/WP16_036_N16_PROSPECTIVE_TIME_GATE_RESULT_2026_09_27.md), and [its earlier protocol freeze](papers/navier-stokes/WP16_036_N16_PROSPECTIVE_FREEZE_2026_09_27.md). The specialist repository remains the canonical source for live code, raw inputs, checkpoints, and outputs.
