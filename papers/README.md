@@ -64,7 +64,8 @@ Mirrored here:
 - [Main finite-Fourier bridge audit report](navier-stokes/REPORT.md)
 - [Master Record supplement](navier-stokes/MASTER_RECORD_SUPPLEMENT_2026_09_24.md)
 - [Cutoff-independent small-data proof audit](navier-stokes/WP3_SMALL_DATA_PROOF.md)
-- [Current status (N16 result, 27 September)](navier-stokes/CURRENT_STATUS_2026_09_27_N16_RESULT.md)
+- [Current status (N17 result, 28 September)](navier-stokes/CURRENT_STATUS_2026_09_28_N17_RESULT.md)
+- [Prior status (N16 result, 27 September)](navier-stokes/CURRENT_STATUS_2026_09_27_N16_RESULT.md)
 - [Earlier pre-data status (27 September)](navier-stokes/CURRENT_STATUS_2026_09_27.md)
 - [Prior status (26 September)](navier-stokes/CURRENT_STATUS_2026_09_26.md)
 - [N10/N11 verified continuation](navier-stokes/WP16_N10_N11_VERIFIED_CONTINUATION_2026_09_25.md)
@@ -82,7 +83,7 @@ Mirrored here:
 - [N17 source and normalizer mechanism prefreeze](navier-stokes/WP16_036_N17_MECHANISM_PREFREEZE_2026_09_27.md)
 - [N17 complete continuation and time-gate freeze](navier-stokes/WP16_036_N17_COMPLETE_PROSPECTIVE_FREEZE_2026_09_27.md)
 
-The N11-derived K36 coalition transferred prospectively through N12/N13, and the stronger time-resolved N14–N16 protocols passed the predeclared broad criteria. At N16 the inherited and target-only first sampled exits are 0.0023; full-final exits at 0.0024. The fixed N16 winner has grid-128 value 10.150097983229115. The N17 source and normalizer mechanism and full continuation protocol are now frozen before N17 data; the trial-0 smoke is the next permitted execution. These finite computations do not establish an asymptotic theorem or solve the three-dimensional Navier–Stokes problem.
+The [N17 result](navier-stokes/WP16_036_N17_RESULT_AND_MECHANISM_FAILURE_2026_09_28.md) records a broad K36 pass in three states and a failed or unevaluable separately frozen mechanism gate. The frozen pre-data protocol remains below as historical provenance. The N11-derived K36 coalition transferred prospectively through N12/N13, and the stronger time-resolved N14–N16 protocols passed the predeclared broad criteria. At N16 the inherited and target-only first sampled exits are 0.0023; full-final exits at 0.0024. The fixed N16 winner has grid-128 value 10.150097983229115. The N17 source and normalizer mechanism and full continuation protocol were frozen before N17 data; N17 was subsequently evaluated without retuning. These finite computations do not establish an asymptotic theorem or solve the three-dimensional Navier–Stokes problem.
 
 ---
 
