@@ -1,14 +1,16 @@
 {
-  "schema": "agentos-prototype-freeze-v1",
-  "title": "AgentOS Verification Kernel: Prototype Lineage v0.1.1-v0.5.0",
+  "schema": "intentseal-prototype-freeze-v1",
+  "title": "IntentSeal Verification Kernel: Frozen Prototype Lineage v0.1.1-v0.5.0",
+  "public_name": "IntentSeal Verification Kernel",
+  "historical_working_title": "AgentOS Verification Kernel",
   "freeze_date": "2026-09-28",
   "author": "Prince Upadhyay, Independent Research",
   "latest_version": "0.5.0",
   "status": "frozen research prototype lineage",
   "archive": {
-    "filename": "AgentOS_Prototype_Frozen_Lineage_v0_1_1_to_v0_5_0.zip",
-    "sha256": "e853fcf1e75f48ee91dbcb64f4dbe8f3558aa25d05d0102e8bbaea8883913afa",
-    "bytes": 147414
+    "filename": "IntentSeal_Verification_Kernel_Prototype_Lineage_v0_1_1_to_v0_5_0.zip",
+    "sha256": "14f920b5fcb970f8a97eaf98aa80c83e8ff4125bb85e311705f86edad5dd56db",
+    "bytes": 148371
   },
   "releases": [
     {"version":"0.1.1","sha256":"9766417faa5f63ff97bfbcf312b2c286c8cf497f1809a002a633e3bd09983662","tests":"10/10"},
@@ -19,5 +21,6 @@
   ],
   "verification_environment": "Linux; Python 3.13",
   "windows_verified": false,
-  "license": "unspecified in supplied releases"
+  "license": "unspecified in supplied historical releases",
+  "provenance_note": "Historical release ZIPs and source/package names are preserved byte-for-byte under the AgentOS working title; only the outer public archive metadata is renamed to IntentSeal."
 }

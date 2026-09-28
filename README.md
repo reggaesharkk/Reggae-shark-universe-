@@ -1,15 +1,15 @@
 # REGGAE SHARK UNIVERSE
 
-## 26 September 2026 — five-program umbrella archive
+## 28 September 2026 — research + prototype umbrella archive
 
 **Prince Upadhyay — Independent Research**
 
-**Five research programs. One falsification-first archive.**
+**Five research programs plus one security prototype. One falsification-first archive.**
 
 > **Build. Attack. Falsify. Preserve.**  
 > Do not protect the idea from falsification. Find the strongest contradiction first.
 
-The Reggae Shark Universe is the public umbrella map for five research programs developed in parallel. Specialist repositories carry the live code and project-specific history; this repository preserves the paper-facing map, frozen lineage, and current cross-project archive.
+The Reggae Shark Universe is the public umbrella map for five research programs developed in parallel, plus the frozen IntentSeal security-prototype lineage. Specialist repositories carry the live code and project-specific history; this repository preserves the paper-facing map, frozen lineage, and current cross-project archive.
 
 ## Paper shelf
 
@@ -26,9 +26,9 @@ The paper shelf mirrors the canonical paper artifacts that exist in the speciali
 | **03** | Information-Theoretic Physics | phenomenological dynamical sector, Gate 0 firewall, nonlinear Hopf analysis, and exact positivity theorem inside the stated ODE family |
 | **04** | LRSC | spectral certificates, structural mechanism audit, reproducibility supplements, and odd-ring spectral rank theorem |
 | **05** | Navier–Stokes Bridge Audit | finite Fourier/Galerkin identities, falsification gates, phase/geometry adversaries, analytic obstructions, and explicit open proof obligations |
-| **06** | AgentOS Verification Kernel | frozen software-prototype lineage for deterministic tool-call policy, budget, review, provenance attestation, rate limiting, and keyed audit controls |
+| **06** | IntentSeal Verification Kernel | frozen software-prototype lineage for deterministic tool-call policy, budget, review, provenance attestation, rate limiting, and keyed audit controls |
 
-These programs are **not** claimed to be unified into a law of nature. AgentOS is an engineering/security prototype rather than a scientific theorem program.
+These programs are **not** claimed to be unified into a law of nature. IntentSeal is an engineering/security prototype rather than a scientific theorem program.
 
 ## Live specialist repositories
 
@@ -118,17 +118,19 @@ Mirrored paper materials:
 
 The [post-hoc N11 sparse turnover reduction](papers/navier-stokes/WP16_036_SPARSE_TURNOVER_REDUCTION_2026_09_28.md) retains 112 initial conjugate pairs and numerically changes the K36 margin from positive to negative by `t=.003`. Its [exact rational initial anchor](papers/navier-stokes/WP16_036_SPARSE_TURNOVER_EXACT_ANCHOR_2026_09_28.md) certifies `F(0)>0` for a precisely projected rational field. The evolved negative sign is not yet interval-certified.
 
-## AgentOS Verification Kernel
+## IntentSeal Verification Kernel
 
-The [AgentOS prototype freeze](agentos/README.md) preserves releases v0.1.1 through v0.5.0 as one software lineage. Fresh Linux verification at the freeze point passed 10/10, 14/14, 34/34, 47/47, and 61/61 tests respectively.
+The [IntentSeal prototype freeze](intentseal/README.md) preserves releases v0.1.1 through v0.5.0 as one software lineage. The historical release ZIPs retain the earlier working title **AgentOS Verification Kernel** byte-for-byte for provenance; the public archive and DOI-facing name are now **IntentSeal Verification Kernel**.
 
-Frozen all-in-one archive:
+Fresh Linux verification at the freeze point passed 10/10, 14/14, 34/34, 47/47, and 61/61 tests respectively.
 
-`AgentOS_Prototype_Frozen_Lineage_v0_1_1_to_v0_5_0.zip`
+Frozen public archive:
+
+`IntentSeal_Verification_Kernel_Prototype_Lineage_v0_1_1_to_v0_5_0.zip`
 
 SHA-256:
 
-`e853fcf1e75f48ee91dbcb64f4dbe8f3558aa25d05d0102e8bbaea8883913afa`
+`14f920b5fcb970f8a97eaf98aa80c83e8ff4125bb85e311705f86edad5dd56db`
 
 The prototype explores deterministic mediation of privileged tool calls using policy, budgets, human review, provenance attestation, rate limiting, and keyed audit records. It is explicitly **not** presented as a production security boundary. The lineage metadata is prepared for a Zenodo software deposit; no DOI is claimed until the external deposit is actually published.
 
