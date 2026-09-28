@@ -1,14 +1,15 @@
-# IntentSeal Verifiable Research Kernel (VRK) v0.1.0
+# IntentSeal Verifiable Research Kernel (VRK)
 
-A proof-carrying claim kernel for AI-assisted research.
+Part of program 06, IntentSeal. The historical v0.1.0 seed remains preserved below.
 
-The core rule is:
+## Current finite demonstrator, 28 September 2026
 
-> **No evidence type, no epistemic promotion.**
+The immutable v0.3.0 archive (`b01178e81b0e0f07c67a883d8e51430f8af0dc608c5246ee925f6c5c17c0b52c`) locally reproduced 22 tests, 13 semantic mutations, exact K0–K13 coverage of 527046644056 subsets, and a rigorous K14 witness for the finite LRSC M=99, theta=0.07 benchmark. Its proposition digest is `c8e24478afe2579f25020ded46f93e379b414caf4dc466f45e0dac0a854ec0cf`. The scientific status is bounded by the implemented domain verifier.
 
-VRK turns a research claim into a canonical machine-readable object carrying scope, dependencies, evidence bindings, verifier outputs, and a cryptographic digest. It is designed to make category errors mechanically visible: a numerical observation cannot silently become a theorem; an exhaustive finite result cannot silently become a continuum statement; a falsified dependency forces downstream review rather than disappearing into prose.
+A v0.3.1 deterministic clean-room candidate is in audit. It is not yet a final release or DOI deposit. The evidence seal does not confer publication authority. No continuum Navier–Stokes or universal physical claim follows.
 
-## v0.1.0 seed
+## Historical v0.1.0 seed
+
 
 Implemented and locally tested:
 
@@ -30,7 +31,7 @@ SHA-256:
 
 `ed4a2842e44a2d23785417f2e76054122b0c7da31e30054aa2ea4e3183abc49a`
 
-## Demonstrator 001
+## Demonstrator 001 in the historical v0.1.0 seed
 
 Claim:
 
