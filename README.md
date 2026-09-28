@@ -37,6 +37,7 @@ These programs are **not** claimed to be unified into a law of nature. IntentSea
 - Information-Theoretic Physics: https://github.com/reggaesharkk/physics-v1-dynamical-sector
 - LRSC Odd-Ring Spectral Rank: https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank
 - Navier–Stokes Bridge Audit: https://github.com/reggaesharkk/navier-stokes-bridge-audit
+- IntentSeal Verification Kernel + VRK: https://github.com/reggaesharkk/intentseal
 
 See also [SPECIALIST_REPOSITORIES.md](SPECIALIST_REPOSITORIES.md).
 
@@ -116,7 +117,7 @@ Mirrored paper materials:
 - [N12/N13 source-resolved K36 turnover audit](papers/navier-stokes/WP16_036_N12_N13_TURNOVER_SOURCE_RATE_AUDIT_2026_09_27.md)
 
 
-The [post-hoc N11 sparse turnover reduction](papers/navier-stokes/WP16_036_SPARSE_TURNOVER_REDUCTION_2026_09_28.md) retains 112 initial conjugate pairs and numerically changes the K36 margin from positive to negative by `t=.003`. Its [exact rational initial anchor](papers/navier-stokes/WP16_036_SPARSE_TURNOVER_EXACT_ANCHOR_2026_09_28.md) certifies `F(0)>0` for a precisely projected rational field. The evolved negative sign is not yet interval-certified. Continuous-time residual and gradient bounds, accumulated error, normalizer positivity, endpoint enclosure, and independent verification remain open; no finite-N11 crossing theorem is claimed.
+The [post-hoc N11 sparse turnover reduction](papers/navier-stokes/WP16_036_SPARSE_TURNOVER_REDUCTION_2026_09_28.md) retains 112 initial conjugate pairs. That one fixed finite N11 datum now has a completed validated-trajectory certificate: all 120 whole-segment Arb residual/gradient enclosures replayed successfully, the exact initial margin is positive, the normalizer is uniformly bounded away from zero, and the endpoint margin interval is strictly negative. Therefore at least one K36 90% crossing occurs on `(0,0.003)` for that explicit finite Galerkin trajectory. The certified bounds are `F(0) in [645.8037741471,645.8037741472]`, normalizer `>48990.29795521`, and `F(0.003) in [-54.748409847,-42.032667894]`. See the [validated theorem note](papers/navier-stokes/WP16_036_N11_VALIDATED_TURNOVER_2026_09_28.md). This remains a post-hoc finite-N11 theorem and does not imply continuum regularity, blowup, or cutoff-uniform persistence.
 
 ## IntentSeal Verification Kernel
 
