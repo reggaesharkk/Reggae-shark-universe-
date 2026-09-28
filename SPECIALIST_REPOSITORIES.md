@@ -1,6 +1,6 @@
 # Specialist repositories
 
-The Reggae Shark Universe is the umbrella archive and paper-facing map. Project-specific development lives in five specialist repositories; IntentSeal and VRK are indexed within this umbrella as program 06.
+The Reggae Shark Universe is the umbrella archive and paper-facing map. Project-specific development lives in six specialist repositories. IntentSeal and VRK remain program 06, now with their own dedicated specialist repository.
 
 ## Live specialist repositories
 
@@ -19,8 +19,9 @@ The Reggae Shark Universe is the umbrella archive and paper-facing map. Project-
 5. **Navier–Stokes Bridge Audit**  
    https://github.com/reggaesharkk/navier-stokes-bridge-audit
 
-6. **IntentSeal Verification Kernel + Verifiable Research Kernel**
-   [Frozen lineage](intentseal/README.md) and [VRK](verifiable-research-kernel/README.md) within this umbrella.
+6. **IntentSeal Verification Kernel + Verifiable Research Kernel**  
+   https://github.com/reggaesharkk/intentseal  
+   Umbrella mirrors remain at [Frozen lineage](intentseal/README.md) and [VRK](verifiable-research-kernel/README.md).
 
 ## Paper shelf
 

@@ -1,7 +1,7 @@
 # Reggae Shark Universe — Paper Shelf
 
 **Author:** Prince Upadhyay, Independent Research  
-**Updated:** 27 September 2026
+**Updated:** 28 September 2026
 
 This directory is the current paper-facing shelf for the Reggae Shark Universe. It mirrors the canonical paper artifacts that exist in the live specialist repositories and points to frozen records that remain authoritative elsewhere.
 
@@ -83,12 +83,13 @@ Mirrored here:
 - [N17 source and normalizer mechanism prefreeze](navier-stokes/WP16_036_N17_MECHANISM_PREFREEZE_2026_09_27.md)
 - [Post-hoc 112-pair turnover reduction](navier-stokes/WP16_036_SPARSE_TURNOVER_REDUCTION_2026_09_28.md)
 - [Exact rational initial anchor](navier-stokes/WP16_036_SPARSE_TURNOVER_EXACT_ANCHOR_2026_09_28.md)
-- [Pending finite-N11 crossing theorem draft](navier-stokes/WP16_036_TURNOVER_CROSSING_THEOREM_DRAFT_2026_09_28.md)
+- [Certified finite-N11 K36 crossing theorem](navier-stokes/WP16_036_N11_VALIDATED_TURNOVER_2026_09_28.md)
+- [Historical pending theorem draft](navier-stokes/WP16_036_TURNOVER_CROSSING_THEOREM_DRAFT_2026_09_28.md)
 - [Turnover certificate verifier contract](navier-stokes/WP16_036_TURNOVER_CERTIFICATE_VERIFIER_SPEC_2026_09_28.md)
-- [Held turnover publication-note template](navier-stokes/WP16_036_TURNOVER_CERTIFICATE_PUBLICATION_DRAFT_2026_09_28.md)
+- [Historical publication-note template](navier-stokes/WP16_036_TURNOVER_CERTIFICATE_PUBLICATION_DRAFT_2026_09_28.md)
 - [N17 complete continuation and time-gate freeze](navier-stokes/WP16_036_N17_COMPLETE_PROSPECTIVE_FREEZE_2026_09_27.md)
 
-The [N17 result](navier-stokes/WP16_036_N17_RESULT_AND_MECHANISM_FAILURE_2026_09_28.md) records a broad K36 pass in three states and a failed or unevaluable separately frozen mechanism gate. The frozen pre-data protocol remains below as historical provenance. The N11-derived K36 coalition transferred prospectively through N12/N13, and the stronger time-resolved N14–N16 protocols passed the predeclared broad criteria. At N16 the inherited and target-only first sampled exits are 0.0023; full-final exits at 0.0024. The fixed N16 winner has grid-128 value 10.150097983229115. The N17 source and normalizer mechanism and full continuation protocol were frozen before N17 data; N17 was subsequently evaluated without retuning. These finite computations do not establish an asymptotic theorem or solve the three-dimensional Navier–Stokes problem.
+The [N17 result](navier-stokes/WP16_036_N17_RESULT_AND_MECHANISM_FAILURE_2026_09_28.md) records a broad K36 pass in three states and a failed or unevaluable separately frozen mechanism gate. The frozen pre-data protocol remains below as historical provenance. The N11-derived K36 coalition transferred prospectively through N12/N13, and the stronger time-resolved N14–N16 protocols passed the predeclared broad criteria. At N16 the inherited and target-only first sampled exits are 0.0023; full-final exits at 0.0024. The fixed N16 winner has grid-128 value 10.150097983229115. The N17 source and normalizer mechanism and full continuation protocol were frozen before N17 data; N17 was subsequently evaluated without retuning. These finite computations do not establish an asymptotic theorem or solve the three-dimensional Navier–Stokes problem. Separately, the fixed post-hoc N11 datum now has a completed 120-segment validated-trajectory certificate proving at least one K36 90% crossing on `(0,0.003)` for that one finite Galerkin trajectory; this remains strictly finite-dimensional.
 
 ---
 

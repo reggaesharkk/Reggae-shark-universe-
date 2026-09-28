@@ -1,3 +1,6 @@
+> **Historical draft notice — superseded later on 28 September 2026.**  
+> The publication gates described below subsequently closed. The promoted theorem is recorded in [WP16_036_N11_VALIDATED_TURNOVER_2026_09_28.md](WP16_036_N11_VALIDATED_TURNOVER_2026_09_28.md). This file is preserved as the pre-certificate proof skeleton.
+
 # WP16 finite-N11 K36 crossing theorem — pending certificate draft
 
 **Prince Upadhyay — Independent Research**  
