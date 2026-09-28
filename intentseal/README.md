@@ -56,4 +56,4 @@ This package is prepared for a Zenodo **software** deposit under the title:
 
 **IntentSeal Verification Kernel: Frozen Prototype Lineage v0.1.1–v0.5.0**
 
-No DOI is claimed until Zenodo actually publishes the deposit.
+The frozen v0.1.1–v0.5.0 Verification Kernel archive is now published on Zenodo: [10.5281/zenodo.23016445](https://doi.org/10.5281/zenodo.23016445) ([record](https://zenodo.org/records/23016445)). This DOI applies only to this frozen Verification Kernel lineage.
