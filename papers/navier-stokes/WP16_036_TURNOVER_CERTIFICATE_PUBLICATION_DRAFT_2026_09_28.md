@@ -1,3 +1,6 @@
+> **Historical template notice — superseded later on 28 September 2026.**  
+> The final interval certificate passed. See [WP16_036_N11_VALIDATED_TURNOVER_2026_09_28.md](WP16_036_N11_VALIDATED_TURNOVER_2026_09_28.md) for the certified finite theorem and final bounds.
+
 # WP16 finite-N11 K36 crossing — publication note template
 
 **Prince Upadhyay — Independent Research**  
