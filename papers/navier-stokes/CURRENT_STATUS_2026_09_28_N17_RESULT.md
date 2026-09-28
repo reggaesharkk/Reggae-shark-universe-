@@ -11,3 +11,21 @@ See the [dated result note](WP16_036_N17_RESULT_AND_MECHANISM_FAILURE_2026_09_28
 These finite Galerkin observations establish neither an all-cutoff theorem nor continuum regularity or singularity.
 
 The [post-hoc N11 sparse turnover reduction](papers/navier-stokes/WP16_036_SPARSE_TURNOVER_REDUCTION_2026_09_28.md) retains 112 initial conjugate pairs and numerically changes the K36 margin from positive to negative by `t=.003`. Its [exact rational initial anchor](papers/navier-stokes/WP16_036_SPARSE_TURNOVER_EXACT_ANCHOR_2026_09_28.md) certifies `F(0)>0` for a precisely projected rational field. The evolved negative sign is not yet interval-certified.
+
+
+## Pending finite-N11 turnover certificate package
+
+The specialist repository now contains a held proof/publication package for the
+post-hoc N11 112-pair turnover witness:
+
+- [pending finite-N11 crossing theorem draft](WP16_036_TURNOVER_CROSSING_THEOREM_DRAFT_2026_09_28.md)
+- [independent-verifier contract](WP16_036_TURNOVER_CERTIFICATE_VERIFIER_SPEC_2026_09_28.md)
+- [held publication-note template](WP16_036_TURNOVER_CERTIFICATE_PUBLICATION_DRAFT_2026_09_28.md)
+
+The exact initial sign remains certified, but the crossing theorem is still
+blocked until a complete continuous-time interval certificate proves a
+strictly positive normalizer lower bound and a strictly negative upper bound
+for the endpoint margin at t=0.003, with an independent verifier PASS.
+
+This preparation does not itself add a theorem. Its purpose is to make the
+eventual publication gate fail-closed and explicit.
