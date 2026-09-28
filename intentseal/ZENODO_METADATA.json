@@ -21,5 +21,8 @@
   ],
   "access_right": "open",
   "notes": "Outer archive includes an All Rights Reserved LICENSE. Public download does not grant reuse rights. Exact archive SHA-256: 05ba923c90dfc481a70a3784b72d1cd71a0adeac2c34a22631169f545ae5d4c0. Historical AgentOS release ZIPs remain unchanged; the earlier outer archive was superseded.",
-  "license": "All Rights Reserved"
+  "license": "All Rights Reserved",
+  "doi": "10.5281/zenodo.23016445",
+  "record_url": "https://zenodo.org/records/23016445",
+  "repository_url": "https://github.com/reggaesharkk/intentseal"
 }

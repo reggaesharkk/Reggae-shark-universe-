@@ -7,7 +7,8 @@ authors:
     given-names: "Prince"
 version: "0.5.0-prototype-freeze"
 date-released: "2026-09-28"
-repository-code: "https://github.com/reggaesharkk/Reggae-shark-universe-"
+doi: "10.5281/zenodo.23016445"
+repository-code: "https://github.com/reggaesharkk/intentseal"
 abstract: >-
   Frozen lineage archive for the IntentSeal Verification Kernel research prototype,
   historically developed under the working title AgentOS Verification Kernel,

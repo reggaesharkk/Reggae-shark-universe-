@@ -42,5 +42,10 @@
   "verification_environment": "Linux; Python 3.13",
   "windows_verified": false,
   "license": "All Rights Reserved (outer archive LICENSE)",
-  "provenance_note": "Historical release ZIPs and source/package names are preserved byte-for-byte under the AgentOS working title; only the outer public archive metadata is renamed to IntentSeal. The prior outer archive (148371 bytes) is superseded; its historical inner ZIPs are unchanged."
+  "provenance_note": "Historical release ZIPs and source/package names are preserved byte-for-byte under the AgentOS working title; only the outer public archive metadata is renamed to IntentSeal. The prior outer archive (148371 bytes) is superseded; its historical inner ZIPs are unchanged.",
+  "zenodo": {
+    "doi": "10.5281/zenodo.23016445",
+    "record_url": "https://zenodo.org/records/23016445",
+    "publication_date": "2026-09-28"
+  }
 }
