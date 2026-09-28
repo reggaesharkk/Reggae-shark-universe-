@@ -26,8 +26,9 @@ The paper shelf mirrors the canonical paper artifacts that exist in the speciali
 | **03** | Information-Theoretic Physics | phenomenological dynamical sector, Gate 0 firewall, nonlinear Hopf analysis, and exact positivity theorem inside the stated ODE family |
 | **04** | LRSC | spectral certificates, structural mechanism audit, reproducibility supplements, and odd-ring spectral rank theorem |
 | **05** | Navier–Stokes Bridge Audit | finite Fourier/Galerkin identities, falsification gates, phase/geometry adversaries, analytic obstructions, and explicit open proof obligations |
+| **06** | AgentOS Verification Kernel | frozen software-prototype lineage for deterministic tool-call policy, budget, review, provenance attestation, rate limiting, and keyed audit controls |
 
-These programs are **not** claimed to be unified into a law of nature.
+These programs are **not** claimed to be unified into a law of nature. AgentOS is an engineering/security prototype rather than a scientific theorem program.
 
 ## Live specialist repositories
 
@@ -116,6 +117,20 @@ Mirrored paper materials:
 
 
 The [post-hoc N11 sparse turnover reduction](papers/navier-stokes/WP16_036_SPARSE_TURNOVER_REDUCTION_2026_09_28.md) retains 112 initial conjugate pairs and numerically changes the K36 margin from positive to negative by `t=.003`. Its [exact rational initial anchor](papers/navier-stokes/WP16_036_SPARSE_TURNOVER_EXACT_ANCHOR_2026_09_28.md) certifies `F(0)>0` for a precisely projected rational field. The evolved negative sign is not yet interval-certified.
+
+## AgentOS Verification Kernel
+
+The [AgentOS prototype freeze](agentos/README.md) preserves releases v0.1.1 through v0.5.0 as one software lineage. Fresh Linux verification at the freeze point passed 10/10, 14/14, 34/34, 47/47, and 61/61 tests respectively.
+
+Frozen all-in-one archive:
+
+`AgentOS_Prototype_Frozen_Lineage_v0_1_1_to_v0_5_0.zip`
+
+SHA-256:
+
+`e853fcf1e75f48ee91dbcb64f4dbe8f3558aa25d05d0102e8bbaea8883913afa`
+
+The prototype explores deterministic mediation of privileged tool calls using policy, budgets, human review, provenance attestation, rate limiting, and keyed audit records. It is explicitly **not** presented as a production security boundary. The lineage metadata is prepared for a Zenodo software deposit; no DOI is claimed until the external deposit is actually published.
 
 ## Scientific firewall
 
