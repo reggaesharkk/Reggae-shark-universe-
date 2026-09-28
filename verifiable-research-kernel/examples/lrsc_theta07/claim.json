@@ -1,0 +1,35 @@
+{
+  "schema": "intentseal-vrk-claim-v1",
+  "claim_id": "lrsc.m99.theta007.k0001.eq14",
+  "claim_text": "For the specified LRSC M=99, k_idx=49, A=1/2, theta=0.07 finite benchmark, the minimum passing channel-subset cardinality at relative residual tolerance 1e-3 is K_0.001=14.",
+  "claim_class": "EXHAUSTIVE_FINITE_RESULT",
+  "scope": {
+    "applies_to": [
+      "LRSC finite benchmark M=99",
+      "k_idx=49",
+      "A=1/2",
+      "theta=0.07",
+      "relative complex L2 tolerance=1e-3"
+    ],
+    "does_not_imply": [
+      "matrix rank(V)=14",
+      "continuum Navier-Stokes statement",
+      "other LRSC parameter cells",
+      "multi-step dynamical theorem"
+    ]
+  },
+  "dependencies": [
+    {
+      "claim_id": "lrsc.m99.theta007.mask83",
+      "relation": "assumes_mask_cell"
+    }
+  ],
+  "canonical_source": {
+    "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+    "commit": "0d59b323a06d386e81843a50db7604cec314e3f9",
+    "certificate_path": "finite-benchmark/theta07-rank14/CERTIFICATE.md",
+    "certificate_blob_sha": "b297f0935a5733319ccc7a988ae11a4d5b7f4fb9"
+  },
+  "local_kernel_status": "EVIDENCE_BOUND",
+  "claim_digest": "d9536edd9935b984a895f5d063d26016c44256583b598b67c33648d57aa182e0"
+}
