@@ -69,6 +69,8 @@ Frozen v1.2 and DOI NM5BW remain untouched. Supplements are additive companions.
 
 Specialist repository: https://github.com/reggaesharkk/navier-stokes-bridge-audit
 
+Current 29 September result: using one fixed 112-pair rational datum, frozen K36 keys, viscosity, observable, and time window, independently replayed validated certificates show a sign crossing for each of N11, N12, and N13. All 120 Arb segment enclosures replayed at each cutoff. The crossing is located in `[0,0.003]`; only N11 has the tighter archived bracket `[0.0028859375,0.0028921875]`. This remains a result for three specified finite-dimensional ODEs and does not establish cutoff-uniform persistence, a continuum result, blowup, or global regularity. See the [same-datum report](navier-stokes/N11_to_N13_Same_Datum_Cutoff_Report_2026_09_29.md), [N13 status](navier-stokes/CURRENT_STATUS_2026_09_29_N13_RESULT.md), and [N13 specialist release](https://github.com/reggaesharkk/navier-stokes-bridge-audit/releases/tag/n13-same-datum-v1).
+
 Mirrored here:
 - [Main finite-Fourier bridge audit report](navier-stokes/REPORT.md)
 - [Master Record supplement](navier-stokes/MASTER_RECORD_SUPPLEMENT_2026_09_24.md)
@@ -103,6 +105,14 @@ Mirrored here:
 The [N17 result](navier-stokes/WP16_036_N17_RESULT_AND_MECHANISM_FAILURE_2026_09_28.md) records a broad K36 pass in three states and a failed or unevaluable separately frozen mechanism gate. The frozen pre-data protocol remains below as historical provenance. The N11-derived K36 coalition transferred prospectively through N12/N13, and the stronger time-resolved N14–N16 protocols passed the predeclared broad criteria. At N16 the inherited and target-only first sampled exits are 0.0023; full-final exits at 0.0024. The fixed N16 winner has grid-128 value 10.150097983229115. The N17 source and normalizer mechanism and full continuation protocol were frozen before N17 data; N17 was subsequently evaluated without retuning. These finite computations do not establish an asymptotic theorem or solve the three-dimensional Navier–Stokes problem. Separately, the fixed post-hoc N11 datum now has a completed 120-segment validated-trajectory certificate proving at least one K36 90% crossing on `(0,0.003)` for that one finite Galerkin trajectory; this remains strictly finite-dimensional.
 
 ---
+
+## Other dated Drive paper archives
+
+- Public research program synthesis snapshot (26 September): [PDF](public_synthesis/Prince_Upadhyay_Research_Program_2026_Public_Synthesis.pdf). This dated synthesis is preserved as issued; the N11–N13 result is a separate additive update.
+- Self-Referential Processing frozen v8.6.3: [protocol](self-referential-processing/frozen-v8_6_3/self_referential_processing_protocol-v8_6_3.pdf) and [OSF preregistration decision record](self-referential-processing/frozen-v8_6_3/osf_preregistration_decision_record_v8_6_3.pdf).
+- IntentSeal: [The Architecture of Verification](intentseal/The_Architecture_of_Verification.pdf).
+
+These Drive versions retain their source IDs and SHA-256 hashes in the [manifest](MANIFEST.md). Exact duplicate copies are not re-added; all distinct paper versions are kept.
 
 ## Historical archive
 
