@@ -1,6 +1,6 @@
 # REGGAE SHARK UNIVERSE
 
-## 28 September 2026 — research + prototype umbrella archive
+## 29 September 2026 — research + prototype umbrella archive
 
 **Prince Upadhyay — Independent Research**
 
@@ -15,7 +15,7 @@ The Reggae Shark Universe is the public umbrella map for six programs, including
 
 **Start here:** [papers/README.md](papers/README.md)
 
-The paper shelf mirrors the canonical paper artifacts that exist in the specialist repositories and links frozen OSF records that remain authoritative. Historical releases are never silently rewritten.
+The paper shelf mirrors canonical specialist artifacts, adds the relevant paper PDFs preserved in Drive, and links frozen OSF records that remain authoritative. Historical releases are never silently rewritten; dated additions preserve their original source files and hashes.
 
 ## The six programs
 
@@ -117,7 +117,7 @@ Mirrored paper materials:
 - [N12/N13 source-resolved K36 turnover audit](papers/navier-stokes/WP16_036_N12_N13_TURNOVER_SOURCE_RATE_AUDIT_2026_09_27.md)
 
 
-The [post-hoc N11 sparse turnover reduction](papers/navier-stokes/WP16_036_SPARSE_TURNOVER_REDUCTION_2026_09_28.md) retains 112 initial conjugate pairs. That one fixed finite N11 datum now has a completed validated-trajectory certificate: all 120 whole-segment Arb residual/gradient enclosures replayed successfully, the exact initial margin is positive, the normalizer is uniformly bounded away from zero, and the endpoint margin interval is strictly negative. Therefore at least one K36 90% crossing occurs on `(0,0.003)` for that explicit finite Galerkin trajectory. The certified bounds are `F(0) in [645.8037741471,645.8037741472]`, normalizer `>48990.29795521`, and `F(0.003) in [-54.748409847,-42.032667894]`. See the [validated theorem note](papers/navier-stokes/WP16_036_N11_VALIDATED_TURNOVER_2026_09_28.md). This remains a post-hoc finite-N11 theorem and does not imply continuum regularity, blowup, or cutoff-uniform persistence.
+The [post-hoc N11 sparse turnover reduction](papers/navier-stokes/WP16_036_SPARSE_TURNOVER_REDUCTION_2026_09_28.md) retains 112 initial conjugate pairs. That one fixed finite N11 datum now has a completed validated-trajectory certificate: all 120 whole-segment Arb residual/gradient enclosures replayed successfully, the exact initial margin is positive, the normalizer is uniformly bounded away from zero, and the endpoint margin interval is strictly negative. Therefore at least one K36 90% crossing occurs on `(0,0.003)` for that explicit finite Galerkin trajectory. The certified bounds are `F(0) in [645.8037741471,645.8037741472]`, normalizer `>48990.29795521`, and `F(0.003) in [-54.748409847,-42.032667894]`. See the [validated theorem note](papers/navier-stokes/WP16_036_N11_VALIDATED_TURNOVER_2026_09_28.md). This remains a post-hoc finite-N11 theorem and does not imply continuum regularity, blowup, or cutoff-uniform persistence. A 29 September same-datum certificate now verifies sign crossings for the identical frozen 112-pair rational datum at N11, N12, and N13, with 120/120 whole-segment Arb enclosures replayed at each cutoff. See [the N11–N13 same-datum report](papers/navier-stokes/N11_to_N13_Same_Datum_Cutoff_Report_2026_09_29.md) and [N13 status](papers/navier-stokes/CURRENT_STATUS_2026_09_29_N13_RESULT.md). This adds finite-cutoff evidence only; it supplies no cutoff-uniform, continuum, blowup, or regularity conclusion.
 
 ## IntentSeal Verification Kernel
 
