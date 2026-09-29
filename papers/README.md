@@ -36,7 +36,13 @@ Canonical archive:
 Mirrored here:
 - [Appendix A: Equilibrium and Linear-Stability Analysis — LaTeX source](physics/appendix_a_dynamical_sector_v1.1.tex)
 - [Hopf theorem note v1.4](physics/HOPF_THEOREM_v1.4.md)
-- [Proof audit v1.4.1](physics/PROOF_AUDIT_v1.4.1.md)\n- [Drive PDF archive: Appendix A cosmic visual edition](physics/drive_archive/Appendix_A_Physics_v1.0_v1.1_Cosmic_Visual_Full.pdf)\n- [Drive PDF archive: physics v1.0 corrected visual edition](physics/drive_archive/Prince_Upadhyay_Physics_v1.0_Visual_Edition_CORRECTED.pdf)\n- [Drive PDF archive: Gate 0 visual audit appendix](physics/drive_archive/Physics_v1.0_Gate0_Audit_Visual_Appendix.pdf)\n- [Drive PDF archive: v1.0 release paper](physics/drive_archive/paper_physics_v1.0_release.pdf)\n- [Drive PDF archive: consolidated paper](physics/drive_archive/paper_physics_consolidated.pdf)\n- [Drive PDF archive: v1.4.1 author errata and verification patch](physics/drive_archive/Appendix_A_v1.4.1_Author_Errata_and_Verification_Patch.pdf)
+- [Proof audit v1.4.1](physics/PROOF_AUDIT_v1.4.1.md)
+- [Drive PDF archive: Appendix A cosmic visual edition](physics/drive_archive/Appendix_A_Physics_v1.0_v1.1_Cosmic_Visual_Full.pdf)
+- [Drive PDF archive: physics v1.0 corrected visual edition](physics/drive_archive/Prince_Upadhyay_Physics_v1.0_Visual_Edition_CORRECTED.pdf)
+- [Drive PDF archive: Gate 0 visual audit appendix](physics/drive_archive/Physics_v1.0_Gate0_Audit_Visual_Appendix.pdf)
+- [Drive PDF archive: v1.0 release paper](physics/drive_archive/paper_physics_v1.0_release.pdf)
+- [Drive PDF archive: consolidated paper](physics/drive_archive/paper_physics_consolidated.pdf)
+- [Drive PDF archive: v1.4.1 author errata and verification patch](physics/drive_archive/Appendix_A_v1.4.1_Author_Errata_and_Verification_Patch.pdf)
 - [Recursive cosmology toy sandbox audit (exploratory)](physics/recursive_cosmology_sandbox/REPORT.md)
 
 The exact theorem applies inside the stated phenomenological ODE family. It does not establish that the ODE is a microscopic law of nature.
@@ -52,7 +58,10 @@ Already preserved in this Universe:
 - [v1.2.1 Proof Clarification Supplement — PDF](../lrsc/odd-ring-rank-theorem/v1.2.1-supplement/LRSC_v1_2_1_Proof_Clarification_Supplement.pdf)
 - [v1.2.2 Errata + Independent Replication Supplement](../lrsc/odd-ring-rank-theorem/v1.2.2-supplement/)
 - [Post-certificate M=99 mask-transition mechanism](../lrsc/finite-benchmark/mask-transition/REPORT.md)
-- [v1.1.1 K=0.001 Reproducibility Supplement — PDF](../lrsc/structural-mechanism/v1.1.1-reproducibility/LRSC_v1_1_1_K001_Reproducibility_Supplement.pdf)\n- [Drive PDF archive: v1.2 theorem](lrsc/drive_archive/LRSC_Odd_Ring_Rank_Theorem_v1_2.pdf)\n- [Drive PDF archive: structural mechanism audit v1.1](lrsc/drive_archive/LRSC_Structural_Mechanism_Audit_v1.1.pdf)\n- [Drive PDF archive: single-step spectral certificate v1.0](lrsc/drive_archive/LRSC_Single_Step_Spectral_Certificate_v1.0.pdf)
+- [v1.1.1 K=0.001 Reproducibility Supplement — PDF](../lrsc/structural-mechanism/v1.1.1-reproducibility/LRSC_v1_1_1_K001_Reproducibility_Supplement.pdf)
+- [Drive PDF archive: v1.2 theorem](lrsc/drive_archive/LRSC_Odd_Ring_Rank_Theorem_v1_2.pdf)
+- [Drive PDF archive: structural mechanism audit v1.1](lrsc/drive_archive/LRSC_Structural_Mechanism_Audit_v1.1.pdf)
+- [Drive PDF archive: single-step spectral certificate v1.0](lrsc/drive_archive/LRSC_Single_Step_Spectral_Certificate_v1.0.pdf)
 
 Frozen v1.2 and DOI NM5BW remain untouched. Supplements are additive companions.
 
@@ -64,7 +73,9 @@ Mirrored here:
 - [Main finite-Fourier bridge audit report](navier-stokes/REPORT.md)
 - [Master Record supplement](navier-stokes/MASTER_RECORD_SUPPLEMENT_2026_09_24.md)
 - [Cutoff-independent small-data proof audit](navier-stokes/WP3_SMALL_DATA_PROOF.md)
-- [Current status (N13 same-datum certificate, 29 September)](navier-stokes/CURRENT_STATUS_2026_09_29_N13_RESULT.md)\n- [N11–N13 same-datum certified crossing report](navier-stokes/N11_to_N13_Same_Datum_Cutoff_Report_2026_09_29.md)\n- [Prior current status (N17 result, 28 September)](navier-stokes/CURRENT_STATUS_2026_09_28_N17_RESULT.md)
+- [Current status (N13 same-datum certificate, 29 September)](navier-stokes/CURRENT_STATUS_2026_09_29_N13_RESULT.md)
+- [N11–N13 same-datum certified crossing report](navier-stokes/N11_to_N13_Same_Datum_Cutoff_Report_2026_09_29.md)
+- [Prior current status (N17 result, 28 September)](navier-stokes/CURRENT_STATUS_2026_09_28_N17_RESULT.md)
 - [Prior status (N16 result, 27 September)](navier-stokes/CURRENT_STATUS_2026_09_27_N16_RESULT.md)
 - [Earlier pre-data status (27 September)](navier-stokes/CURRENT_STATUS_2026_09_27.md)
 - [Prior status (26 September)](navier-stokes/CURRENT_STATUS_2026_09_26.md)
