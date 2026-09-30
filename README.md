@@ -210,3 +210,10 @@ Using only the first Hermite segment and one omitted high Fourier mode, a 160-bi
 This is not evidence for blowup or nonexistence. The next continuum target is a reconstruction-specific Fourier-linearized stability argument that retains modewise viscous damping rather than a universal high-amplitude Gronwall factor.
 
 See [WP19 v0.16](papers/navier-stokes/WP19_v0_16_BGT_CRITICAL_SPACE_ARB_GATE.md).
+
+
+## 30 September 2026 — WP19 same-datum extension through N18
+
+The unchanged rational Navier–Stokes datum has now been scouted in floating arithmetic through N18. N18 breaks a simple monotone C500 trend, but the magnitudes of the cutoff corrections and the fixed-low recursive closure differences continue to fall sharply.
+
+Four whole-segment Arb validations for N15-N18 are running in parallel in specialist workflow `36669057015`, reducing the wall-clock validation cost to roughly one matrix cycle. Until those gates pass, the rigorous same-datum chain remains N11-N14.

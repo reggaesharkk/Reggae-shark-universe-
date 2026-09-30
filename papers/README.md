@@ -148,3 +148,15 @@ Mirrored artifacts:
 - [WP19 v0.16 reproduction script](navier-stokes/wp19_v0_16_bgt_arb_screen.py)
 
 The next continuum target is reconstruction-specific Fourier-linearized stability with modewise viscosity.
+
+
+### 30 September 2026 — WP19 v0.17-v0.18 fast same-datum extension
+
+New no-retuning floating same-datum predictors extend through N18 while N15-N18 whole-segment Arb validation runs in parallel.
+
+- [WP19 v0.17 same-datum N15-N17 fast tail scout](navier-stokes/WP19_v0_17_SAME_DATUM_N15_N17_FAST_TAIL_SCOUT.md)
+- [WP19 v0.17 result](navier-stokes/WP19_v0_17_RESULT.json)
+- [WP19 v0.18 N18 stress test and parallel Arb escalation](navier-stokes/WP19_v0_18_N18_STRESS_AND_PARALLEL_ARB.md)
+- [WP19 v0.18 result](navier-stokes/WP19_v0_18_RESULT.json)
+
+N18 falsifies a simple monotone C500 trend, but the magnitude of successive cutoff corrections and the sampled fixed-low closure differences continue to shrink sharply. These remain scouting results until GitHub Actions run `36669057015` closes.
