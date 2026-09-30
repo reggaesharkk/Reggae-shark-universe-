@@ -134,3 +134,17 @@ The frozen 22 September four-program archive remains available at:
 [Prince_Upadhyay_All_4_Research_Programs_FINAL_2026-09-22.zip](../archive/Prince_Upadhyay_All_4_Research_Programs_FINAL_2026-09-22.zip)
 
 That ZIP is a historical snapshot. The present `papers/` shelf is the live umbrella index for later paper artifacts.
+
+
+### 30 September 2026 — WP19 v0.16 critical-space Arb gate
+
+The published Brunk–Giesselmann–Tscherpel sufficient strong-existence criterion has now been specialized to the exact validated N14 Hermite reconstruction with 160-bit Arb arithmetic.
+
+A lower bound using only the first Hermite segment and one omitted Fourier mode proves `log(criterion LHS) > 6.217838664529e12`, so the sufficient condition `LHS <= 1` is rigorously false for this reconstruction. This is a no-go for that certification route only; it does not imply singularity or nonexistence of a continuum strong solution.
+
+Mirrored artifacts:
+- [WP19 v0.16 theorem note](navier-stokes/WP19_v0_16_BGT_CRITICAL_SPACE_ARB_GATE.md)
+- [WP19 v0.16 Arb result](navier-stokes/WP19_v0_16_BGT_ARB_SCREEN.json)
+- [WP19 v0.16 reproduction script](navier-stokes/wp19_v0_16_bgt_arb_screen.py)
+
+The next continuum target is reconstruction-specific Fourier-linearized stability with modewise viscosity.
