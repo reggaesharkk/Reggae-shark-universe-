@@ -193,3 +193,19 @@ A successful result would be an all-cutoff transfer theorem for the fixed observ
 Current rigorous achievements are finite-Galerkin certificates, exact algebraic/Fourier inequalities, and a fixed-low weak-solution closure-passage framework.
 
 No all-N persistence theorem, finite-time singularity theorem, arbitrary-data global-regularity theorem, or Millennium Prize solution is claimed.
+
+
+## 10. Continuum a-posteriori scout
+
+WP19 v0.15 now measures the full continuum truncation residual `Q14 B(u14,u14)` on the saved N14 predictor nodes.
+
+The strongest immediate diagnostic is the norm separation:
+
+- `L2_t H^-1 ~= 0.3312582611`;
+- `L1_t H^-1 ~= 0.0166855303`;
+- `L2_t L2 ~= 4.9703990588`;
+- `L1_t H1 ~= 3.7718196582`.
+
+Thus the node-sampled `L1_t H1` residual is about 226 times the `L1_t H^-1` residual.
+
+This does not certify a continuum solution. It redirects the regularity-side work toward a negative-Sobolev a-posteriori criterion with rigorous whole-segment residual enclosures and an explicit `W^-1,3` bound.
