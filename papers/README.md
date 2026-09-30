@@ -69,7 +69,11 @@ Frozen v1.2 and DOI NM5BW remain untouched. Supplements are additive companions.
 
 Specialist repository: https://github.com/reggaesharkk/navier-stokes-bridge-audit
 
-Current 29 September result: using one fixed 112-pair rational datum, frozen K36 keys, viscosity, observable, and time window, independently replayed validated certificates show a sign crossing for each of N11, N12, and N13. All 120 Arb segment enclosures replayed at each cutoff. The crossing is located in `[0,0.003]`; only N11 has the tighter archived bracket `[0.0028859375,0.0028921875]`. This remains a result for three specified finite-dimensional ODEs and does not establish cutoff-uniform persistence, a continuum result, blowup, or global regularity. See the [same-datum report](navier-stokes/N11_to_N13_Same_Datum_Cutoff_Report_2026_09_29.md), [N13 status](navier-stokes/CURRENT_STATUS_2026_09_29_N13_RESULT.md), and [N13 specialist release](https://github.com/reggaesharkk/navier-stokes-bridge-audit/releases/tag/n13-same-datum-v1).
+Current 30 September result: using one fixed 112-pair rational datum, frozen K36 keys, viscosity, observable, and time window, independently replayed validated certificates now show a sign crossing for each of N11, N12, N13, and N14. Every cutoff uses 120 whole-segment Arb enclosures. The newly completed N14 certificate gives `F(0.003) in [-89.015834781,-85.160766265]`, terminal trajectory-error upper bound `0.000012825905`, and whole-path normalizer lower bound `48850.68586052`. The N13 K36 sign chart had been frozen before the N14 predictor was generated.
+
+WP19 v0.12-v0.14 then sharpen the cutoff-transfer architecture. The frozen C500 objective depends only on the fixed N11 projection; the recursive high-to-low closure is explicit; and v0.14 uses incompressibility to prove the fixed-output estimate `||P11 B(a,b)||_2 <= sqrt(404724)||a||_2||b||_2`. For one fixed Leray-Hopf solution, direct shell-to-low closure increments are absolutely summable. For consecutive distinct Galerkin solutions, energy control alone leaves a worst-case non-summable `O(1/M)` direct term plus recursive state drift. No all-cutoff persistence, continuum regularity, blowup, or global-regularity theorem is claimed.
+
+See the [N14 validated result](navier-stokes/WP19_N14_VALIDATED_SAME_DATUM_RESULT_2026_09_30.md), [recursive closure gate v0.12](navier-stokes/WP19_v0_12_RECURSIVE_CLOSURE_AND_REGULARITY_GATE.md), [fixed-output weak-limit gate v0.13](navier-stokes/WP19_v0_13_FIXED_OUTPUT_CLOSURE_AND_WEAK_LIMIT.md), and [output-frequency cancellation v0.14](navier-stokes/WP19_v0_14_DIVERGENCE_FREE_OUTPUT_FREQUENCY_CANCELLATION.md).
 
 Mirrored here:
 - [Main finite-Fourier bridge audit report](navier-stokes/REPORT.md)
@@ -77,6 +81,10 @@ Mirrored here:
 - [Cutoff-independent small-data proof audit](navier-stokes/WP3_SMALL_DATA_PROOF.md)
 - [Current status (N13 same-datum certificate, 29 September)](navier-stokes/CURRENT_STATUS_2026_09_29_N13_RESULT.md)
 - [N11–N13 same-datum certified crossing report](navier-stokes/N11_to_N13_Same_Datum_Cutoff_Report_2026_09_29.md)
+- [N14 validated same-datum result](navier-stokes/WP19_N14_VALIDATED_SAME_DATUM_RESULT_2026_09_30.md)
+- [WP19 v0.12 recursive closure and regularity compatibility](navier-stokes/WP19_v0_12_RECURSIVE_CLOSURE_AND_REGULARITY_GATE.md)
+- [WP19 v0.13 fixed-output closure and weak-limit passage](navier-stokes/WP19_v0_13_FIXED_OUTPUT_CLOSURE_AND_WEAK_LIMIT.md)
+- [WP19 v0.14 divergence-free output-frequency cancellation](navier-stokes/WP19_v0_14_DIVERGENCE_FREE_OUTPUT_FREQUENCY_CANCELLATION.md)
 - [Prior current status (N17 result, 28 September)](navier-stokes/CURRENT_STATUS_2026_09_28_N17_RESULT.md)
 - [Prior status (N16 result, 27 September)](navier-stokes/CURRENT_STATUS_2026_09_27_N16_RESULT.md)
 - [Earlier pre-data status (27 September)](navier-stokes/CURRENT_STATUS_2026_09_27.md)

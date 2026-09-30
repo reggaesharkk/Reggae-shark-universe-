@@ -101,6 +101,13 @@ At N16, the N11-derived K36 coalition passed the predeclared time-resolved crite
 
 These successful finite-cutoff replications do not imply all-cutoff persistence, a continuum theorem, or a solution of the three-dimensional Navier–Stokes problem.
 
+
+**30 September 2026 update.** The rigorous same-datum computer-assisted chain now extends through **N14**. The N14 run used the unchanged 112-pair rational witness, frozen K36 keys, `nu=0.1`, `T=0.003`, and 120 whole-segment 128-bit Arb enclosures, giving `F(0.003) in [-89.015834781,-85.160766265]`, terminal trajectory-error upper bound `0.000012825905`, and whole-path normalizer lower bound `48850.68586052`.
+
+The subsequent WP19 recursive-closure line is also mirrored here individually. v0.12 isolates the exact high-to-low feedback `Gamma_M`; v0.13 passes the fixed low-mode observable to weak limits under a future uniform margin; and v0.14 proves the divergence-free output-frequency cancellation `a_p·q=a_p·k`, yielding the cutoff-independent energy-level estimate `||P11 B(a,b)||_2 <= sqrt(404724)||a||_2||b||_2`. For one fixed Leray-Hopf solution, direct shell-to-low closure increments are absolutely summable. Consecutive Galerkin transfer remains open because uniform energy control alone leaves a worst-case `O(1/M)` direct term plus recursive state drift.
+
+These results do not establish all-cutoff persistence, continuum regularity, finite-time singularity, or a Millennium-problem solution.
+
 Mirrored paper materials:
 - [N11–N13 same-datum certified crossing report](papers/navier-stokes/N11_to_N13_Same_Datum_Cutoff_Report_2026_09_29.md)
 - [N13 dated status](papers/navier-stokes/CURRENT_STATUS_2026_09_29_N13_RESULT.md)
