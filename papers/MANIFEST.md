@@ -98,3 +98,21 @@ Folder: `WP19_current_2026_09_30` — Drive folder ID `1S_cK7sGFZmnC0Ag9PbL0xlvu
 The complete N14 GitHub Actions validation artifact is 127,530,612 bytes and contains 126 files. Artifact ID: `11059294923`; artifact ZIP SHA-256: `b0bb454fa320887c2b17dfd8a0bae916273253bb057ecff7acee3d6218234698`. It remains available from the specialist repository's workflow artifact. The Drive connector used for this synchronization has a 100 MB transfer limit, so that complete 127 MB artifact is not falsely recorded here as a Drive upload.
 
 For the N14 certificate and WP19 v0.12–v0.14 results, the claim boundary remains finite-Galerkin / exact-projection analysis: no all-cutoff persistence, continuum regularity, finite-time singularity, global regularity, or Millennium-problem solution is claimed.
+
+
+## Navier–Stokes WP19 v0.15 residual scout — 30 September 2026
+
+| Program | Universe artifact | Canonical source | Specialist blob SHA |
+|---|---|---|---|
+| Navier–Stokes | `papers/navier-stokes/WP19_CURRENT_STATUS_2026_09_30.md` | `navier-stokes-bridge-audit/notes/WP19_CURRENT_STATUS_2026_09_30.md` | `2e988f49721537d49b1fb9f7f6bd56ffde2f4e35` |
+| Navier–Stokes | `papers/navier-stokes/WP19_v0_15_FULL_PDE_RESIDUAL_AND_APOSTERIORI_SCOUT.md` | `navier-stokes-bridge-audit/notes/WP19_v0_15_FULL_PDE_RESIDUAL_AND_APOSTERIORI_SCOUT.md` | `78823a3cfa41265a5382b748924c8b6509f8b4a7` |
+| Navier–Stokes | `papers/navier-stokes/WP19_v0_15_RESULT.json` | `navier-stokes-bridge-audit/results/wp19_bridge/WP19_v0_15_RESULT.json` | `c204ef3aff8d0510388db3cd9cac925a9e702c50` |
+| Navier–Stokes | `papers/navier-stokes/WP19_v0_15_REPRODUCED.json` | `navier-stokes-bridge-audit/results/wp19_bridge/WP19_v0_15_REPRODUCED.json` | `3ead64d511bce6eb48e69c31dec010473881e4cd` |
+| Navier–Stokes | `papers/navier-stokes/wp19_v0_15_full_pde_residual_scout.py` | `navier-stokes-bridge-audit/src/wp19_v0_15_full_pde_residual_scout.py` | `c0df49cb4c5c67c9a200896cd7914a93de2f2fb5` |
+
+Drive archive:
+- filename: `WP19_v0_15_Full_PDE_Residual_and_Aposteriori_Scout.zip`
+- Drive file ID: `12ucoktQPMr74ARBcSGGEeJHboEi6pGr-`
+- SHA-256: `dc2811af36412ca93ac0602f90b3b9a22bea1505708f4ad4bcc0fe84b3822d1b`
+
+The v0.15 values are floating node-sampled diagnostics. They do not certify a continuum strong solution or regularity.
