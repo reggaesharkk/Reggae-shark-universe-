@@ -1,215 +1,110 @@
-# WP19 v0.13 — Fixed-Output Bilinear Closure Bound and Continuum Low-Mode Passage
+# WP19 v0.13 — Fixed-Output Closure and Weak-Limit Passage
 
 **Author:** Prince Upadhyay, Independent Research  
 **Date:** 30 September 2026  
-**Status:** exact Fourier inequality + continuum low-mode closure theorem + weak-limit transfer criterion.  
-**Not claimed:** all-N negativity, singularity, global regularity, or uniqueness of Leray–Hopf weak solutions.
+**Status:** valid intermediate result; its fixed-output estimate is superseded by the stronger divergence-free v0.14 estimate.  
+**Not claimed:** all-N negativity, singularity, global regularity, or uniqueness of Leray-Hopf weak solutions.
 
-## 1. Fixed-output bilinear estimate
+## Historical fixed-output estimate
 
-Let (P_{11}) project to the nonzero integer Fourier modes with (|k|le11). There are exactly 5574 such output wavevectors.
+v0.13 first used the bound
 
-For divergence-free Fourier fields (a,b),
+```
+||P11 B(a,b)||_2
+<= sqrt(5574) ||a||_2 ||b||_{H1}
+```
 
-[
-widehat{P_{11}B(a,b)}(k)
-=
-P_ksum_{p+q=k}i(qcdot hat a_p)hat b_q.
-]
+for fixed low outputs.
 
-The modewise Leray projector has operator norm at most one, so Cauchy–Schwarz gives, for each fixed output (k),
+There are 5,574 nonzero integer modes with |k| <= 11.
 
-[
-|widehat{P_{11}B(a,b)}(k)|
-le
-|a|_{ell^2}|b|_{dot H^1}.
-]
+This estimate is valid but not optimal for the present divergence-free velocity inputs. WP19 v0.14 uses incompressibility to replace the high-input derivative by the fixed output frequency and obtains the stronger energy-level estimate
 
-Summing over the fixed 5574 outputs yields
+```
+||P11 B(a,b)||_2
+<= sqrt(404724) ||a||_2 ||b||_2.
+```
 
-[
-oxed{
-|P_{11}B(a,b)|_{ell^2}
-le
-sqrt{5574},
-|a|_{ell^2}
-|b|_{dot H^1}
-}
-]
+The v0.13 conclusions below remain valid; v0.14 sharpens their hypotheses and tail bounds.
 
-with
+## Continuum closure truncation
 
-[
-sqrt{5574}approx74.659225819720.
-]
+For a velocity field u, define
 
-The constant is independent of the outer Galerkin cutoff.
+```
+v = P11 u
+h = (I-P11) u
 
-## 2. Continuum closure truncation
-
-For a velocity field (u), write
-
-[
-v=P_{11}u,qquad h=(I-P_{11})u.
-]
-
-Define
-
-[
-Gamma(u)
-=
--P_{11}[B(v,h)+B(h,v)+B(h,h)].
-]
+Gamma(u) = -P11[
+    B(v,h)
+  + B(h,v)
+  + B(h,h)
+].
+```
 
 Let
 
-[
-h_M=(P_M-P_{11})u,qquad r_M=h-h_M,
-]
+```
+h_M = (P_M-P11)u
+r_M = h-h_M.
+```
 
-and define (Gamma_M(u)) by replacing (h) with (h_M).
+Then Gamma(u)-Gamma_M(u) is the sum of five bilinear terms, each containing at least one copy of r_M.
 
-Then
+The original v0.13 estimate used L2/H1 spectral-tail convergence to prove
 
-[
-Gamma-Gamma_M
-=
--P_{11}[B(v,r_M)+B(r_M,v)+B(h_M,r_M)+B(r_M,h_M)+B(r_M,r_M)].
-]
+```
+Gamma_M(u) -> Gamma(u)
+in L1(0,T;L2)
+```
 
-Applying the fixed-output bilinear estimate gives
+for a Leray-Hopf weak solution.
 
-[
-egin{aligned}
-|Gamma-Gamma_M|_2
-le C_{11}ig(&
-|v|_2|r_M|_{dot H^1}
-+|r_M|_2|v|_{dot H^1}\
-&+|h_M|_2|r_M|_{dot H^1}
-+|r_M|_2|h_M|_{dot H^1}
-+|r_M|_2|r_M|_{dot H^1}
-ig).
-end{aligned}
-]
+WP19 v0.14 strengthens this to an energy-level tail estimate.
 
-For any Leray–Hopf solution,
+## Passage of the frozen observable
 
-[
-uin L^infty(0,T;L^2)cap L^2(0,T;H^1),
-]
+The frozen signed C500 numerator J depends only on finitely many P11 coefficients.
 
-and the spectral tail (r_M	o0) in (L^2_tL^2_xcap L^2_tH^1_x). Hence
-
-[
-oxed{
-Gamma_M(u)	oGamma(u)
-quad	ext{in }L^1(0,T;L^2).
-}
-]
-
-So fixed low-mode recursive closure has a well-defined continuum weak-solution limit without assuming smoothness.
-
-## 3. Passage of the frozen observable
-
-Standard Fourier–Galerkin compactness gives, along a Leray construction subsequence, convergence of the finitely many (P_{11}) Fourier coefficients uniformly in time.
-
-The frozen signed C500 numerator (J) is a finite polynomial in exactly those coefficients. Therefore
-
-[
-oxed{
-J(P_{11}u_M(T))
-	o
-J(P_{11}u(T))
-}
-]
-
-along that subsequence.
-
-Consequently, if a future theorem establishes a cutoff-uniform margin
-
-[
-J(P_{11}u_M(T))le-delta<0
-]
-
-for all sufficiently large cutoffs, then the same negative signed numerator passes to the Leray–Hopf weak limit.
-
-For (G=J/|z|^2), a uniform nonzero-normalizer lower bound is additionally required.
-
-This is a continuum observable passage, not a regularity theorem.
-
-## 4. Direct shell-addition bound
-
-For one fixed state, add a new high shell (s) to an existing resolved high field (h). Then
-
-[
-DeltaGamma
-=
--P_{11}[B(v+h,s)+B(s,v+h)+B(s,s)].
-]
+Along a standard Fourier-Galerkin construction of a Leray-Hopf weak solution, the fixed finite set of low Fourier coefficients admits subsequential uniform-in-time convergence.
 
 Therefore
 
-[
-oxed{
-|DeltaGamma|_2
-le
-C_{11}
-[
-|v+h|_2|s|_{dot H^1}
-+
-|s|_2|v+h|_{dot H^1}
-+
-|s|_2|s|_{dot H^1}
-].
-}
-]
+```
+J(P11 u_M(T)) -> J(P11 u(T))
+```
 
-This is an explicit cutoff-independent estimate for the direct shell-to-low closure increment.
+along the Galerkin subsequence.
 
-It is not yet the full consecutive-Galerkin estimate because the already existing low and high coefficients also drift when the cutoff changes.
+Consequently, if a future theorem establishes a cutoff-uniform margin
 
-## 5. Next decomposition
+```
+J(P11 u_M(T)) <= -delta < 0
+```
 
-For consecutive Galerkin solutions,
+for all sufficiently large M, that finite-dimensional negative margin passes to the corresponding Leray-Hopf weak limit.
 
-[
-Gamma_{M+1}(u_{M+1})-Gamma_M(u_M)
-]
+For the normalized surrogate G = J/|z|^2, a uniform positive lower bound on the normalizer is also required.
 
-should be split into
+This is a continuum passage for the fixed observable, not a regularity theorem.
 
-[
-[
-Gamma_{M+1}(u_{M+1})-Gamma_M(P_Mu_{M+1})
-]
-+
-[
-Gamma_M(P_Mu_{M+1})-Gamma_M(u_M)
-].
-]
+## Consecutive-cutoff decomposition
 
-The first term is the direct new-shell contribution and is attacked by the shell-addition estimate.
+For consecutive Galerkin solutions, the closure difference naturally splits into
 
-The second term is the recursive state/backreaction drift and requires the existing stability/adjoint machinery.
+```
+Gamma_{M+1}(u_{M+1}) - Gamma_M(u_M)
 
-This yields the next architecture:
+= [Gamma_{M+1}(u_{M+1}) - Gamma_M(P_M u_{M+1})]
++ [Gamma_M(P_M u_{M+1}) - Gamma_M(u_M)].
+```
 
-[
-oxed{
-	ext{new shell}
-	o
-	ext{direct closure forcing}
-	o
-	ext{state drift}
-	o
-	ext{fixed signed numerator}.
-}
-]
+The first bracket is the direct new-shell contribution.
 
-No moving endpoint support is needed.
+The second bracket is recursive state/backreaction drift.
+
+WP19 v0.14 sharpens the first bracket to an energy-level shell estimate. The second remains the target of the fixed-Pi11 stability/adjoint machinery.
 
 ## Claim boundary
 
-v0.13 proves a cutoff-independent fixed-output bilinear estimate and a continuum truncation theorem for the low-mode closure forcing. It also shows how a future all-cutoff negative signed-numerator margin would pass to a Leray–Hopf weak limit.
-
-It does not prove that such an all-cutoff margin exists, and it does not turn the low-mode observable into a regularity or singularity criterion.
+v0.13 establishes the weak-limit passage architecture for a fixed finite observable. Its first bilinear estimate has been superseded by v0.14, but the continuum observable-passage conclusion remains part of the proof program.

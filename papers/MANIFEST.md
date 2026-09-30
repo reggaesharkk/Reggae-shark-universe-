@@ -70,12 +70,31 @@ The N11–N13 certificates verify sign crossings for one frozen datum at three f
 
 ## Navier–Stokes WP19 synchronization — 30 September 2026
 
+The specialist repository remains canonical. The following files are mirrored individually into the Universe after the specialist documentation-cleanup merge.
 
-| Navier–Stokes | `papers/navier-stokes/WP19_N14_VALIDATED_SAME_DATUM_RESULT_2026_09_30.md` | `navier-stokes-bridge-audit/notes/WP19_N14_VALIDATED_SAME_DATUM_RESULT_2026_09_30.md` | `3c59164efaf2fe27d91edc249e365b3e858b9559` |
-| Navier–Stokes | `papers/navier-stokes/WP19_v0_12_RECURSIVE_CLOSURE_AND_REGULARITY_GATE.md` | `navier-stokes-bridge-audit/notes/WP19_v0_12_RECURSIVE_CLOSURE_AND_REGULARITY_GATE.md` | `d115a6dd1a223ed0fb0f1242fbd7d9e43f0c7624` |
-| Navier–Stokes | `papers/navier-stokes/WP19_v0_13_FIXED_OUTPUT_CLOSURE_AND_WEAK_LIMIT.md` | `navier-stokes-bridge-audit/notes/WP19_v0_13_FIXED_OUTPUT_CLOSURE_AND_WEAK_LIMIT.md` | `0000f37f70066e32268e136140949f249e03ed57` |
-| Navier–Stokes | `papers/navier-stokes/WP19_v0_14_DIVERGENCE_FREE_OUTPUT_FREQUENCY_CANCELLATION.md` | `navier-stokes-bridge-audit/notes/WP19_v0_14_DIVERGENCE_FREE_OUTPUT_FREQUENCY_CANCELLATION.md` | `1d237e6787cab08b7962f05be105e2d5f14f33bd` |
+| Program | Universe artifact | Canonical source | Current specialist blob SHA |
+|---|---|---|---|
+| Navier–Stokes | `papers/navier-stokes/WP19_CURRENT_STATUS_2026_09_30.md` | `navier-stokes-bridge-audit/notes/WP19_CURRENT_STATUS_2026_09_30.md` | `b2fe474b3a1589c4604f2deb9b84c11476f06ff1` |
+| Navier–Stokes | `papers/navier-stokes/WP19_N14_VALIDATED_SAME_DATUM_RESULT_2026_09_30.md` | `navier-stokes-bridge-audit/notes/WP19_N14_VALIDATED_SAME_DATUM_RESULT_2026_09_30.md` | `f7bc4eea81fff5f0275a0b66650c62626a809b66` |
+| Navier–Stokes | `papers/navier-stokes/WP19_v0_12_RECURSIVE_CLOSURE_AND_REGULARITY_GATE.md` | `navier-stokes-bridge-audit/notes/WP19_v0_12_RECURSIVE_CLOSURE_AND_REGULARITY_GATE.md` | `c96b6178479ccb84618ed11de408e1cc23ea1eed` |
+| Navier–Stokes | `papers/navier-stokes/WP19_v0_13_FIXED_OUTPUT_CLOSURE_AND_WEAK_LIMIT.md` | `navier-stokes-bridge-audit/notes/WP19_v0_13_FIXED_OUTPUT_CLOSURE_AND_WEAK_LIMIT.md` | `f619619f86514e856f24f0d94ae283223f5bfca2` |
+| Navier–Stokes | `papers/navier-stokes/WP19_v0_14_DIVERGENCE_FREE_OUTPUT_FREQUENCY_CANCELLATION.md` | `navier-stokes-bridge-audit/notes/WP19_v0_14_DIVERGENCE_FREE_OUTPUT_FREQUENCY_CANCELLATION.md` | `1baa4f469f2a7e83ed129226795264dfec04a763` |
 | Navier–Stokes | `papers/navier-stokes/N14_VALIDATED_SAME_DATUM_SUMMARY.json` | `navier-stokes-bridge-audit/results/wp19_bridge/N14_VALIDATED_SAME_DATUM_SUMMARY.json` | `633fd51d8164cbc61614872c33d6fa073bc7e1f0` |
 | Navier–Stokes | `papers/navier-stokes/WP19_v0_12_SUMMARY.json` | `navier-stokes-bridge-audit/results/wp19_bridge/WP19_v0_12_SUMMARY.json` | `9e9b0f91ea4ff54c4360ed708da59a742cd01d95` |
 | Navier–Stokes | `papers/navier-stokes/WP19_v0_13_SUMMARY.json` | `navier-stokes-bridge-audit/results/wp19_bridge/WP19_v0_13_SUMMARY.json` | `c7cc9173ae5aa641a82c343afc2b08aae2394eba` |
 | Navier–Stokes | `papers/navier-stokes/WP19_v0_14_SUMMARY.json` | `navier-stokes-bridge-audit/results/wp19_bridge/WP19_v0_14_SUMMARY.json` | `7a7bfb29a2c4cdb0398dc0c8aacf39c71d895e42` |
+| Navier–Stokes | `papers/navier-stokes/WP19_v0_14_LATTICE_CHECK.json` | `navier-stokes-bridge-audit/results/wp19_bridge/WP19_v0_14_LATTICE_CHECK.json` | `667cea53cc2bc683a2f51dc2167dc906a862d6f1` |
+
+### Current WP19 archive ZIPs in Google Drive
+
+Folder: `WP19_current_2026_09_30` — Drive folder ID `1S_cK7sGFZmnC0Ag9PbL0xlvuQI2Gz0oa`.
+
+| Archive | Drive file ID | SHA-256 |
+|---|---|---|
+| `WP19_v0_12_Recursive_Closure_and_Regularity_Gate.zip` | `1VgtcDvydMt_A2LsWtCbQN9-oNBlpI1Yf` | `6d59f7d9c62ad968cae86034ef333883488364c0540c234d6f1afa9e526af702` |
+| `WP19_v0_13_Fixed_Output_Closure_and_Weak_Limit.zip` | `1g6IecdkjTDu2JhB6Qz15Zdbss2PYcMpw` | `fd236ae9056711c139ede0db750c8c566e47ee571fa62b9a1417023bbcf72606` |
+| `WP19_v0_14_Divergence_Free_Output_Frequency_Cancellation.zip` | `11wKiEBaRw61wt08eyf1thShmJ89KQ_6C` | `0afb76a98ffc8e6c67858ce61cac50e71e4b39b22e726cb382735d4e11f01f68` |
+
+The complete N14 GitHub Actions validation artifact is 127,530,612 bytes and contains 126 files. Artifact ID: `11059294923`; artifact ZIP SHA-256: `b0bb454fa320887c2b17dfd8a0bae916273253bb057ecff7acee3d6218234698`. It remains available from the specialist repository's workflow artifact. The Drive connector used for this synchronization has a 100 MB transfer limit, so that complete 127 MB artifact is not falsely recorded here as a Drive upload.
+
+For the N14 certificate and WP19 v0.12–v0.14 results, the claim boundary remains finite-Galerkin / exact-projection analysis: no all-cutoff persistence, continuum regularity, finite-time singularity, global regularity, or Millennium-problem solution is claimed.
