@@ -4,6 +4,28 @@
 **Repository:** `reggaesharkk/navier-stokes-bridge-audit`  
 **Status:** current proof-state summary.
 
+## Final 30 September update — authoritative current state
+
+This update supersedes older same-day statements below wherever they still describe N11–N14 as the full rigorous same-datum chain or describe the direct consecutive-shell term as non-summable.
+
+The unchanged rational datum is now rigorously certified at **every cutoff N=11,...,18**. N15, N16, and N17 completed in GitHub Actions run `36669057015`. N18 reached the six-hour hosted-job limit after preserving 99 completed segment certificates; recovery run `36706229638` hash-validated segments `000–098`, computed `099–119`, reran the aggregate error, endpoint sign, and whole-path normalizer gates, and returned **PASS**.
+
+Certified endpoint intervals for N15–N18 are:
+
+- N15: `[-88.958192681, -84.896722370]`, terminal error `0.000013195722`, normalizer lower `48856.49133823`;
+- N16: `[-88.828357601, -84.589032046]`, terminal error `0.000013456103`, normalizer lower `48858.17452511`;
+- N17: `[-88.682140170, -84.277596371]`, terminal error `0.000013665541`, normalizer lower `48860.35300815`;
+- N18: `[-88.699660529, -84.159654865]`, terminal error `0.000013774643`, normalizer lower `48860.59568947`.
+
+Across the certified finite family `N=11,...,18`, the endpoint is uniformly bounded above by `-42.032667894 < 0`; the minimum recorded whole-path normalizer lower bound is `48850.68586052`; and the maximum terminal error upper bound is `0.000013774643`.
+
+WP19 v0.19 also corrects the earlier coarse direct-shell obstruction: boundary-annulus localization makes the direct newly-opened-shell contribution absolutely summable. The remaining hard term is the **recursive state/backreaction drift**
+
+`Gamma_M(P_M u_{M+1}) - Gamma_M(u_M)`.
+
+The next theorem target is therefore a rigorous goal-oriented/dual-weighted control of that recursive drift and its nonlinear remainder. The full finite-chain record is [WP19 v0.21](WP19_v0_21_N11_N18_CERTIFIED_CHAIN.md).
+
+
 ## 1. Rigorous same-datum chain
 
 The same frozen 112-pair rational datum has now been validated at four consecutive finite Galerkin cutoffs:
@@ -254,3 +276,46 @@ A generic same-datum whole-segment validator now runs N15, N16, N17 and N18 in p
 Each job repeats the N14 proof architecture independently at its cutoff: 120 whole-segment 128-bit Arb residual/gradient enclosures, trajectory-error propagation, K36 endpoint sign gate, and whole-path normalizer guard.
 
 Until those jobs finish successfully, the rigorous same-datum chain remains N11-N14.
+
+
+## 14. v0.19 boundary-annulus correction: direct shell is summable
+
+WP19 v0.19 corrects the remaining direct-shell conclusion from v0.14.
+
+For a fixed low output `|k|<=11`, a newly opened shell `s_{M+1}` can couple to the old state only through the boundary annulus
+
+`M-11 < |p| <= M`.
+
+Thus the direct consecutive-cutoff closure term obeys
+
+`||DeltaGamma_M^direct||_{L1L2} <= C11 ||u0||_2^2/(2nu) [1/(M(M-11))+1/M^2]`.
+
+The series is absolutely summable because
+
+`1/[M(M-11)] = (1/11)[1/(M-11)-1/M]`.
+
+Therefore the direct new-shell term is no longer the all-cutoff obstruction. The remaining hard term is the recursive state/backreaction drift
+
+`Gamma_M(P_M u_{M+1}) - Gamma_M(u_M)`.
+
+## 15. v0.20 goal-oriented fixed-F11 adjoint scout
+
+A reconstruction-specific adjoint scout now targets the fixed low observable
+
+`F11(P11 u_M(T))`.
+
+Observed endpoint values remain strongly negative from N14 through N18:
+
+`-60.7795, -58.4633, -58.0254, -57.8962, -57.9152`.
+
+The first-order dual-weighted shell corrections for N14->15 through N17->18 are approximately
+
+`2.30313, 0.432965, 0.132338, -0.017294`.
+
+Their magnitude ratios are about
+
+`0.188, 0.306, 0.131`.
+
+The linearized predictions reproduce the actual fixed-F11 cutoff changes with observed remainders of about 0.56%, 1.14%, 2.44%, and 8.95% respectively. The N18 sign reversal is captured.
+
+This is floating scouting, not an interval adjoint certificate. It identifies the goal-oriented dual-weighted transfer—not a generic full-state norm—as the next rigorization target.
