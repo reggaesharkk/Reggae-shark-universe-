@@ -67,3 +67,15 @@ The following 16 distinct, relevant Drive PDFs were mirrored byte-for-byte. Desi
 The N11–N13 same-datum report is mirrored at `papers/navier-stokes/N11_to_N13_Same_Datum_Cutoff_Report_2026_09_29.md` from the specialist repository note (source Git blob SHA `451c972db509203c2a2ccad2a420f5504a8275a`; links adapted only for the Universe). The N13 full package remains in the specialist repository and its [`n13-same-datum-v1` release](https://github.com/reggaesharkk/navier-stokes-bridge-audit/releases/tag/n13-same-datum-v1); release ZIP SHA-256: `858eeec4a1cb323d23e91ffa9914af823a388a78ecc39c758abea3fcdec9ac5e`.
 
 The N11–N13 certificates verify sign crossings for one frozen datum at three finite Galerkin cutoffs. They do not establish cutoff-uniform persistence, a continuum result, blowup, or global regularity.
+
+## Navier–Stokes WP19 synchronization — 30 September 2026
+
+
+| Navier–Stokes | `papers/navier-stokes/WP19_N14_VALIDATED_SAME_DATUM_RESULT_2026_09_30.md` | `navier-stokes-bridge-audit/notes/WP19_N14_VALIDATED_SAME_DATUM_RESULT_2026_09_30.md` | `3c59164efaf2fe27d91edc249e365b3e858b9559` |
+| Navier–Stokes | `papers/navier-stokes/WP19_v0_12_RECURSIVE_CLOSURE_AND_REGULARITY_GATE.md` | `navier-stokes-bridge-audit/notes/WP19_v0_12_RECURSIVE_CLOSURE_AND_REGULARITY_GATE.md` | `d115a6dd1a223ed0fb0f1242fbd7d9e43f0c7624` |
+| Navier–Stokes | `papers/navier-stokes/WP19_v0_13_FIXED_OUTPUT_CLOSURE_AND_WEAK_LIMIT.md` | `navier-stokes-bridge-audit/notes/WP19_v0_13_FIXED_OUTPUT_CLOSURE_AND_WEAK_LIMIT.md` | `0000f37f70066e32268e136140949f249e03ed57` |
+| Navier–Stokes | `papers/navier-stokes/WP19_v0_14_DIVERGENCE_FREE_OUTPUT_FREQUENCY_CANCELLATION.md` | `navier-stokes-bridge-audit/notes/WP19_v0_14_DIVERGENCE_FREE_OUTPUT_FREQUENCY_CANCELLATION.md` | `1d237e6787cab08b7962f05be105e2d5f14f33bd` |
+| Navier–Stokes | `papers/navier-stokes/N14_VALIDATED_SAME_DATUM_SUMMARY.json` | `navier-stokes-bridge-audit/results/wp19_bridge/N14_VALIDATED_SAME_DATUM_SUMMARY.json` | `633fd51d8164cbc61614872c33d6fa073bc7e1f0` |
+| Navier–Stokes | `papers/navier-stokes/WP19_v0_12_SUMMARY.json` | `navier-stokes-bridge-audit/results/wp19_bridge/WP19_v0_12_SUMMARY.json` | `9e9b0f91ea4ff54c4360ed708da59a742cd01d95` |
+| Navier–Stokes | `papers/navier-stokes/WP19_v0_13_SUMMARY.json` | `navier-stokes-bridge-audit/results/wp19_bridge/WP19_v0_13_SUMMARY.json` | `c7cc9173ae5aa641a82c343afc2b08aae2394eba` |
+| Navier–Stokes | `papers/navier-stokes/WP19_v0_14_SUMMARY.json` | `navier-stokes-bridge-audit/results/wp19_bridge/WP19_v0_14_SUMMARY.json` | `7a7bfb29a2c4cdb0398dc0c8aacf39c71d895e42` |
