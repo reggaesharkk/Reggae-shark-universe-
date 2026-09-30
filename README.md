@@ -108,6 +108,8 @@ The subsequent WP19 recursive-closure line is also mirrored here individually. v
 
 These results do not establish all-cutoff persistence, continuum regularity, finite-time singularity, or a Millennium-problem solution.
 
+**WP19 v0.15 full-PDE residual scout.** The separately validated N14 Galerkin trajectory was also evaluated as an approximation to the full PDE by measuring the omitted spatial residual `Q14 B(u14,u14)` on its 121 saved predictor nodes. The floating scout gives `L2_t H^-1 ~= 0.3313` and `L1_t H^-1 ~= 0.01669`, versus `L2_t L2 ~= 4.9704` and `L1_t H1 ~= 3.7718`. This redirects the continuum-verification effort toward negative-Sobolev a-posteriori criteria. It is not a continuum certificate.
+
 Mirrored paper materials:
 - [N11–N13 same-datum certified crossing report](papers/navier-stokes/N11_to_N13_Same_Datum_Cutoff_Report_2026_09_29.md)
 - [N13 dated status](papers/navier-stokes/CURRENT_STATUS_2026_09_29_N13_RESULT.md)
