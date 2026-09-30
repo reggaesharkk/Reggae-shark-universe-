@@ -228,3 +228,29 @@ Therefore the published sufficient condition `LHS <= 1` is rigorously false for 
 This is a no-go for one certification route only. It does not imply blowup, singularity, or nonexistence of a continuum strong solution.
 
 The continuum-side next target is now a reconstruction-specific Fourier-linearized stability proof that retains mode-by-mode viscous damping instead of using a universal high-amplitude Gronwall factor.
+
+
+## 12. Fast same-datum extension through N18
+
+Floating same-datum predictors have now been generated prospectively for N15-N18 with no retuning.
+
+Numerical endpoint values remain strongly negative:
+
+- N15: `F ~= -86.92746`
+- N16: `F ~= -86.70869`
+- N17: `F ~= -86.47987`
+- N18: `F ~= -86.42966`
+
+The C500 surrogate is not monotone: its N17->N18 change is slightly negative. The magnitude of successive N14->N18 C500 corrections nevertheless shrinks sharply, with the last three observed absolute ratios near `0.178, 0.262, 0.261`.
+
+The sampled fixed-low closure difference also decreases rapidly. Its L1_t L2_x total is approximately `0.01716, 0.00907, 0.00350, 0.000997` over N14->15 through N17->18.
+
+These are scouting results only.
+
+## 13. Parallel rigorous escalation
+
+A generic same-datum whole-segment validator now runs N15, N16, N17 and N18 in parallel on GitHub Actions run `36669057015`.
+
+Each job repeats the N14 proof architecture independently at its cutoff: 120 whole-segment 128-bit Arb residual/gradient enclosures, trajectory-error propagation, K36 endpoint sign gate, and whole-path normalizer guard.
+
+Until those jobs finish successfully, the rigorous same-datum chain remains N11-N14.
