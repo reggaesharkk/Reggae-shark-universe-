@@ -116,3 +116,15 @@ Drive archive:
 - SHA-256: `dc2811af36412ca93ac0602f90b3b9a22bea1505708f4ad4bcc0fe84b3822d1b`
 
 The v0.15 values are floating node-sampled diagnostics. They do not certify a continuum strong solution or regularity.
+
+
+## WP19 v0.16 critical-space Arb gate — 30 September 2026
+
+| Program | Universe artifact | Canonical source | Specialist blob SHA |
+|---|---|---|---|
+| Navier–Stokes | `papers/navier-stokes/WP19_CURRENT_STATUS_2026_09_30.md` | `navier-stokes-bridge-audit/notes/WP19_CURRENT_STATUS_2026_09_30.md` | `e0a2e32c30469fd3532513afbd06ca536b11072f` |
+| Navier–Stokes | `papers/navier-stokes/WP19_v0_16_BGT_CRITICAL_SPACE_ARB_GATE.md` | `navier-stokes-bridge-audit/notes/WP19_v0_16_BGT_CRITICAL_SPACE_ARB_GATE.md` | `ed60af3835a558bfa401677f762540a7f2d9cfaa` |
+| Navier–Stokes | `papers/navier-stokes/WP19_v0_16_BGT_ARB_SCREEN.json` | `navier-stokes-bridge-audit/results/wp19_bridge/WP19_v0_16_BGT_ARB_SCREEN.json` | `d24e4107906aa1551d3ec84e3cf6ba8133446efd` |
+| Navier–Stokes | `papers/navier-stokes/wp19_v0_16_bgt_arb_screen.py` | `navier-stokes-bridge-audit/src/wp19_v0_16_bgt_arb_screen.py` | `3755946bf57e9eaedeb93f19cf26a8c56eb43e84` |
+
+Drive v0.16 archive: `WP19_v0_16_BGT_Critical_Space_Arb_Gate.zip`, Drive file ID `1UYa1DpobZ3iz_XnoIs88CCuBib0XoUxy`, SHA-256 `382c9cdff7902990132ba36f1d593e72cf1f6bdf66ec3878352f903d6a57073c`.
