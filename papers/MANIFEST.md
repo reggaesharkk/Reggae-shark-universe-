@@ -128,3 +128,18 @@ The v0.15 values are floating node-sampled diagnostics. They do not certify a co
 | Navier–Stokes | `papers/navier-stokes/wp19_v0_16_bgt_arb_screen.py` | `navier-stokes-bridge-audit/src/wp19_v0_16_bgt_arb_screen.py` | `3755946bf57e9eaedeb93f19cf26a8c56eb43e84` |
 
 Drive v0.16 archive: `WP19_v0_16_BGT_Critical_Space_Arb_Gate.zip`, Drive file ID `1UYa1DpobZ3iz_XnoIs88CCuBib0XoUxy`, SHA-256 `382c9cdff7902990132ba36f1d593e72cf1f6bdf66ec3878352f903d6a57073c`.
+
+
+## WP19 v0.17-v0.18 fast same-datum extension — 30 September 2026
+
+| Program | Universe artifact | Canonical source | Specialist blob SHA |
+|---|---|---|---|
+| Navier–Stokes | `papers/navier-stokes/WP19_CURRENT_STATUS_2026_09_30.md` | `navier-stokes-bridge-audit/notes/WP19_CURRENT_STATUS_2026_09_30.md` | `48876de5e25bad61ff0f97a26ddbbe444a82855a` |
+| Navier–Stokes | `papers/navier-stokes/WP19_v0_17_SAME_DATUM_N15_N17_FAST_TAIL_SCOUT.md` | `navier-stokes-bridge-audit/notes/WP19_v0_17_SAME_DATUM_N15_N17_FAST_TAIL_SCOUT.md` | `01e66c34bbb5f46e9f98c384ca603b899d8b9b88` |
+| Navier–Stokes | `papers/navier-stokes/WP19_v0_17_RESULT.json` | `navier-stokes-bridge-audit/results/wp19_bridge/WP19_v0_17_RESULT.json` | `4f6615169302fa40b59efc3025fae741149d0c86` |
+| Navier–Stokes | `papers/navier-stokes/WP19_v0_18_N18_STRESS_AND_PARALLEL_ARB.md` | `navier-stokes-bridge-audit/notes/WP19_v0_18_N18_STRESS_AND_PARALLEL_ARB.md` | `7907d0c24d3be9e4903ad3fb887fc524fc9e9475` |
+| Navier–Stokes | `papers/navier-stokes/WP19_v0_18_RESULT.json` | `navier-stokes-bridge-audit/results/wp19_bridge/WP19_v0_18_RESULT.json` | `01aa6ac7083ce7103e8079fed69888dfa89cd739` |
+
+Drive v0.17 archive: file ID `1xKM626lD-G8733trnJUZ7dx4QHGdgk_o`, SHA-256 `ef2f7307ed4b15ea5d59b2f162f4fde9797bf3473c17c20642fd21aefaab7621`.
+
+Drive v0.18 archive: file ID `19pkWxPzj_w-fz6DlIo6TJnNsQPk3qoan`, SHA-256 `ad3678c4db7aa78b35e27574eb01044a0417c84a745d22e63893c810df7b365e`.
