@@ -209,3 +209,22 @@ The strongest immediate diagnostic is the norm separation:
 Thus the node-sampled `L1_t H1` residual is about 226 times the `L1_t H^-1` residual.
 
 This does not certify a continuum solution. It redirects the regularity-side work toward a negative-Sobolev a-posteriori criterion with rigorous whole-segment residual enclosures and an explicit `W^-1,3` bound.
+
+
+## 11. v0.16 critical-space a-posteriori no-go
+
+WP19 v0.16 specializes the sufficient strong-existence criterion of Brunk, Giesselmann and Tscherpel to the exact N14 cubic-Hermite reconstruction after the unit-torus Navier-Stokes rescaling.
+
+Using 160-bit Arb arithmetic, one omitted mode `k=(12,5,6)`, and only the first Hermite segment, the gate proves:
+
+- whole-segment omitted-mode coefficient lower: `11.93863890885675...`;
+- corresponding unit-torus `W^-1,2` residual lower: `32.9162834523052...`;
+- criterion quantity `A > 0.00720428952807...`;
+- `log M > 9.326757996764e12`;
+- `log(criterion LHS) > 6.217838664529e12 > 0`.
+
+Therefore the published sufficient condition `LHS <= 1` is rigorously false for this particular N14 Hermite reconstruction and the stated published constants.
+
+This is a no-go for one certification route only. It does not imply blowup, singularity, or nonexistence of a continuum strong solution.
+
+The continuum-side next target is now a reconstruction-specific Fourier-linearized stability proof that retains mode-by-mode viscous damping instead of using a universal high-amplitude Gronwall factor.

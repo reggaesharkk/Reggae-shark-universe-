@@ -199,3 +199,14 @@ Independent Research
 ### One sentence
 
 **Reggae Shark Universe is a falsification-first research archive with an emerging verifiable-agency layer: exact theorems stay inside their stated domains, simulations stay simulations, finite computations stay finite, and every surviving claim carries its proof boundary with it.**
+
+
+## 30 September 2026 — Navier–Stokes WP19 v0.16
+
+The same-datum N14 finite-Galerkin crossing remains Arb-certified. On the continuum-certification side, WP19 v0.16 rigorously tests the published Brunk–Giesselmann–Tscherpel critical-space sufficient criterion against the exact N14 Hermite reconstruction.
+
+Using only the first Hermite segment and one omitted high Fourier mode, a 160-bit Arb lower gate proves the criterion's own left-hand side exceeds one by an enormous margin (`log LHS > 6.217838664529e12`). Thus that particular generic-constant certification route is ruled out for this reconstruction.
+
+This is not evidence for blowup or nonexistence. The next continuum target is a reconstruction-specific Fourier-linearized stability argument that retains modewise viscous damping rather than a universal high-amplitude Gronwall factor.
+
+See [WP19 v0.16](papers/navier-stokes/WP19_v0_16_BGT_CRITICAL_SPACE_ARB_GATE.md).
