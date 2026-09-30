@@ -1,7 +1,7 @@
 # Reggae Shark Universe — Paper Shelf
 
 **Author:** Prince Upadhyay, Independent Research  
-**Updated:** 29 September 2026
+**Updated:** 30 September 2026
 
 This directory is the current paper-facing shelf for the Reggae Shark Universe. It mirrors canonical artifacts from the specialist repositories, includes the relevant research-paper PDFs preserved in Drive, and points to frozen records that remain authoritative elsewhere. The [manifest](MANIFEST.md) records Drive source IDs and SHA-256 hashes for those added PDFs.
 
@@ -81,6 +81,7 @@ Mirrored here:
 - [Cutoff-independent small-data proof audit](navier-stokes/WP3_SMALL_DATA_PROOF.md)
 - [Current status (N13 same-datum certificate, 29 September)](navier-stokes/CURRENT_STATUS_2026_09_29_N13_RESULT.md)
 - [N11–N13 same-datum certified crossing report](navier-stokes/N11_to_N13_Same_Datum_Cutoff_Report_2026_09_29.md)
+- [Current WP19 proof-state summary — 30 September](navier-stokes/WP19_CURRENT_STATUS_2026_09_30.md)
 - [N14 validated same-datum result](navier-stokes/WP19_N14_VALIDATED_SAME_DATUM_RESULT_2026_09_30.md)
 - [WP19 v0.12 recursive closure and regularity compatibility](navier-stokes/WP19_v0_12_RECURSIVE_CLOSURE_AND_REGULARITY_GATE.md)
 - [WP19 v0.13 fixed-output closure and weak-limit passage](navier-stokes/WP19_v0_13_FIXED_OUTPUT_CLOSURE_AND_WEAK_LIMIT.md)
