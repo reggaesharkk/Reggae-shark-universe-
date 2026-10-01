@@ -149,4 +149,4 @@ Drive v0.18 archive: file ID `19pkWxPzj_w-fz6DlIo6TJnNsQPk3qoan`, SHA-256 `ad367
 
 | Program | Universe artifact | Canonical source | Specialist blob SHA |
 |---|---|---|---|
-| Navier–Stokes | `papers/navier-stokes/WP19_v0_28_REVERSE_TIME_SIGN_CORRECTION_FOLLOWUP_2026_10_01.md` | `navier-stokes-bridge-audit/notes/WP19_v0_28_REVERSE_TIME_SIGN_CORRECTION_2026_10_01.md` | `3fabe09f6c2a673df5d3554b1ee46fee619af945` |
+| Navier–Stokes | `papers/navier-stokes/WP19_v0_28_REVERSE_TIME_SIGN_CORRECTION_FOLLOWUP_2026_10_01.md` | `navier-stokes-bridge-audit/notes/WP19_v0_28_REVERSE_TIME_SIGN_CORRECTION_2026_10_01.md` | `9df00e9dd997900ff867beeb00e5e5ebb13a1203` |
