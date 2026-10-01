@@ -330,6 +330,6 @@ The original recurrence files remain unchanged as historical records. The contin
 
 ## Follow-up audit — 1 October 2026
 
-The initial WP19 v0.28 recurrence correction was followed by PR [#149](https://github.com/reggaesharkk/navier-stokes-bridge-audit/pull/149), which fixes the residual sign convention, identifies the exact finite-Galerkin adjoint and system sources by hash, lists the assumptions behind the strain-only estimate, and reconciles the N237 A/B old-recurrence inputs. The correction is conditional on the producer-supplied continuous-segment strain/residual bounds; the underlying arrays and exact adjoint path remain unverified here. See the [follow-up audit note](WP19_v0_28_REVERSE_TIME_SIGN_CORRECTION_FOLLOWUP_2026_10_01.md).
+The initial WP19 v0.28 recurrence correction was followed by PR [#149](https://github.com/reggaesharkk/navier-stokes-bridge-audit/pull/149), which fixes the residual sign convention, identifies the exact finite-Galerkin adjoint and system sources by hash, lists the assumptions behind the strain-only estimate, and reconciles the N237 A/B old-recurrence inputs. The correction explicitly identifies the M14 segment's exact adjoint as evolving on the finite M15 high-system support. It is conditional on the producer-supplied continuous-segment strain/residual bounds; the underlying arrays and exact adjoint path remain unverified here. See the [follow-up audit note](WP19_v0_28_REVERSE_TIME_SIGN_CORRECTION_FOLLOWUP_2026_10_01.md).
 
 Copyright (c) 2026 Prince Upadhyay. All Rights Reserved.
