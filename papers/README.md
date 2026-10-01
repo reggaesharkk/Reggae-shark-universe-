@@ -83,6 +83,7 @@ Mirrored here:
 - [N11–N13 same-datum certified crossing report](navier-stokes/N11_to_N13_Same_Datum_Cutoff_Report_2026_09_29.md)
 - [Current WP19 proof-state summary — 30 September](navier-stokes/WP19_CURRENT_STATUS_2026_09_30.md)
 - [WP19 v0.28 reverse-time sign correction — 1 October](navier-stokes/WP19_v0_28_REVERSE_TIME_SIGN_CORRECTION_2026_10_01.md)
+- [WP19 v0.28 reverse-time audit follow-up — 1 October](navier-stokes/WP19_v0_28_REVERSE_TIME_SIGN_CORRECTION_FOLLOWUP_2026_10_01.md)
 - [N14 validated same-datum result](navier-stokes/WP19_N14_VALIDATED_SAME_DATUM_RESULT_2026_09_30.md)
 - [WP19 v0.12 recursive closure and regularity compatibility](navier-stokes/WP19_v0_12_RECURSIVE_CLOSURE_AND_REGULARITY_GATE.md)
 - [WP19 v0.13 fixed-output closure and weak-limit passage](navier-stokes/WP19_v0_13_FIXED_OUTPUT_CLOSURE_AND_WEAK_LIMIT.md)
