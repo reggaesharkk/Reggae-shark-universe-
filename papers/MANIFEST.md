@@ -143,3 +143,10 @@ Drive v0.16 archive: `WP19_v0_16_BGT_Critical_Space_Arb_Gate.zip`, Drive file ID
 Drive v0.17 archive: file ID `1xKM626lD-G8733trnJUZ7dx4QHGdgk_o`, SHA-256 `ef2f7307ed4b15ea5d59b2f162f4fde9797bf3473c17c20642fd21aefaab7621`.
 
 Drive v0.18 archive: file ID `19pkWxPzj_w-fz6DlIo6TJnNsQPk3qoan`, SHA-256 `ad3678c4db7aa78b35e27574eb01044a0417c84a745d22e63893c810df7b365e`.
+
+
+## WP19 v0.28 reverse-time recurrence follow-up — 1 October 2026
+
+| Program | Universe artifact | Canonical source | Specialist blob SHA |
+|---|---|---|---|
+| Navier–Stokes | `papers/navier-stokes/WP19_v0_28_REVERSE_TIME_SIGN_CORRECTION_FOLLOWUP_2026_10_01.md` | `navier-stokes-bridge-audit/notes/WP19_v0_28_REVERSE_TIME_SIGN_CORRECTION_2026_10_01.md` | `3fabe09f6c2a673df5d3554b1ee46fee619af945` |

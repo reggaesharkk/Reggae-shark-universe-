@@ -326,3 +326,10 @@ This is floating scouting, not an interval adjoint certificate. It identifies th
 PR [#145](https://github.com/reggaesharkk/navier-stokes-bridge-audit/pull/145), merged as `a99414216bddc9da83054d254485b79ca9b134b9`, freezes a correction to the separate v0.28 backward-adjoint pilot. The backward adjoint has reverse-time anti-diffusion (+\nu |k|^2); the earlier scalar error recurrence omitted its bound (\nu\max |k|^2=22.5). The strain-only outgoing radii for three M14 half-segments are therefore superseded for adjoint-error use. The corrected sequential upper bounds are 74,903,737,341.768087 (segment 239), 76,596,803,403.200881 (238), and 78,324,232,548.824620 (237).
 
 The original recurrence files remain unchanged as historical records. The continuous residual enclosures and standalone structured-penalty comparison remain separately recorded, but no complete adjoint chain is certified; do not continue from the old radii. This correction concerns the v0.28 adjoint pilot only. It does not alter the separate validated finite N11–N18 signed-C500 endpoint certificates in v0.25b. No continuum Navier–Stokes claim follows.
+
+
+## Follow-up audit — 1 October 2026
+
+The initial WP19 v0.28 recurrence correction was followed by PR [#149](https://github.com/reggaesharkk/navier-stokes-bridge-audit/pull/149), which fixes the residual sign convention, identifies the exact finite-Galerkin adjoint and system sources by hash, lists the assumptions behind the strain-only estimate, and reconciles the N237 A/B old-recurrence inputs. The correction is conditional on the producer-supplied continuous-segment strain/residual bounds; the underlying arrays and exact adjoint path remain unverified here. See the [follow-up audit note](WP19_v0_28_REVERSE_TIME_SIGN_CORRECTION_FOLLOWUP_2026_10_01.md).
+
+Copyright (c) 2026 Prince Upadhyay. All Rights Reserved.
