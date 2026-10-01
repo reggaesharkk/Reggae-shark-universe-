@@ -45,4 +45,14 @@ The specialist repositories remain the canonical homes for project code and deta
 
 ## Rights
 
-Each repository publishes its own [rights policy](https://github.com/reggaesharkk). As of 1 October 2026, new author-owned original work is All Rights Reserved by default unless an item-specific notice says otherwise. Prior express licenses remain attached to their historical material; see each repository's dated policy and release record.
+Each specialist repository publishes a dated rights policy:
+
+- [Self-Referential Processing + Design Lab](https://github.com/reggaesharkk/self-referential-processing-designlab/blob/main/RIGHTS_POLICY_2026_10_01.md)
+- [Psi Self-Modeling Benchmark](https://github.com/reggaesharkk/psi-self-modeling-benchmark/blob/main/RIGHTS_POLICY_2026_10_01.md)
+- [Information-Theoretic Physics](https://github.com/reggaesharkk/physics-v1-dynamical-sector/blob/main/RIGHTS_POLICY_2026_10_01.md)
+- [LRSC](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank/blob/main/RIGHTS_POLICY_2026_10_01.md)
+- [Navier–Stokes Bridge Audit](https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/main/RIGHTS_POLICY_2026_10_01.md)
+- [IntentSeal + VRK](https://github.com/reggaesharkk/intentseal/blob/main/RIGHTS_POLICY_2026_10_01.md)
+- [Umbrella archive](https://github.com/reggaesharkk/Reggae-shark-universe-/blob/main/RIGHTS_POLICY_2026_10_01.md)
+
+As of 1 October 2026, new author-owned original work is All Rights Reserved by default unless an item-specific notice says otherwise. Prior express licenses remain attached to their historical material.
