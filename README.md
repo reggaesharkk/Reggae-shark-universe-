@@ -1,5 +1,7 @@
 # REGGAE SHARK UNIVERSE
 
+> **Rights boundary — effective 1 October 2026:** New author-owned original material first published here from this date is **All Rights Reserved** by default. Earlier express licenses remain in force for the material they cover. Read [the rights policy](RIGHTS_POLICY_2026_10_01.md) and [the Portfolio Evidence and Rights Standard](PORTFOLIO_EVIDENCE_AND_RIGHTS_STANDARD_2026_10_01.md).
+
 ## 30 September 2026 — research + prototype umbrella archive
 
 **Prince Upadhyay — Independent Research**
@@ -218,3 +220,8 @@ See [WP19 v0.16](papers/navier-stokes/WP19_v0_16_BGT_CRITICAL_SPACE_ARB_GATE.md)
 The unchanged rational Navier–Stokes datum has now been scouted in floating arithmetic through N18. N18 breaks a simple monotone C500 trend, but the magnitudes of the cutoff corrections and the fixed-low recursive closure differences continue to fall sharply.
 
 Four whole-segment Arb validations for N15-N18 are running in parallel in specialist workflow `36669057015`, reducing the wall-clock validation cost to roughly one matrix cycle. Until those gates pass, the rigorous same-datum chain remains N11-N14.
+
+
+## 1 October 2026 — Navier–Stokes WP19 correction
+
+The WP19 v0.28 backward-adjoint pilot found and corrected an omitted reverse-time anti-diffusion term in its scalar error recurrence. Its three corrected M14 segment radii supersede the earlier strain-only values; no further continuation is certified from that chain. This is a finite-segment correction, not a complete transfer proof. The separate validated N11–N18 signed-C500 endpoint certificate is unaffected. See [the dated current-status addendum](papers/navier-stokes/WP19_CURRENT_STATUS_2026_09_30.md) and [the full correction note](https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/main/notes/WP19_v0_28_BACKWARD_DIFFUSION_RECURRENCE_CORRECTION_2026_10_01.md).
