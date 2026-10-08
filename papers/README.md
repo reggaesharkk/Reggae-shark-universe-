@@ -7,6 +7,15 @@ This directory is the current paper-facing shelf for the Reggae Shark Universe. 
 
 Historical frozen releases are not silently rewritten. The older four-program ZIP under `archive/` remains a historical snapshot dated 22 September 2026.
 
+## 07 — Riemann WP84 (independent additional research track; October 2026)
+
+- [Publication, evidence and candidate contribution register](riemann/RELEASE_AND_CONTRIBUTION_REGISTER_2026_10_09.md)
+- [Frozen GitHub v0.1.0 software release](https://github.com/reggaesharkk/riemann-bandwidth1-verification/releases/tag/v0.1.0)
+- [Zenodo release-version DOI: 10.5281/zenodo.23244818](https://doi.org/10.5281/zenodo.23244818)
+- [Zenodo all-versions DOI: 10.5281/zenodo.23244817](https://doi.org/10.5281/zenodo.23244817)
+
+The public verification repo preserves selected exact identities, a finite C5 certificate, an analytic Loewner band-truncation theorem and audited source-specific estimates. The conditional 68.820273% consumer and 79.627% model calculation are **not** unconditional zeta results. Worldwide priority for possible standalone contributions remains unverified. The frozen `v0.1.0` GitHub tag is unchanged; the Zenodo page's separate `v1` metadata label is not a second source version.
+
 ## 01 — Self-Referential Processing + Design Lab
 
 Canonical foundation:

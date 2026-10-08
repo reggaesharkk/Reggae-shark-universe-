@@ -2,6 +2,21 @@
 
 > **Rights boundary — effective 1 October 2026:** New author-owned original material first published here from this date is **All Rights Reserved** by default. Earlier express licenses remain in force for the material they cover. Read [the rights policy](RIGHTS_POLICY_2026_10_01.md) and [the Portfolio Evidence and Rights Standard](PORTFOLIO_EVIDENCE_AND_RIGHTS_STANDARD_2026_10_01.md).
 
+## 9 October 2026 — Riemann WP84: additional analytic-number-theory research track
+
+**New public specialist repository:** [Riemann Bandwidth-One Verification](https://github.com/reggaesharkk/riemann-bandwidth1-verification)  
+**Frozen software release:** [v0.1.0](https://github.com/reggaesharkk/riemann-bandwidth1-verification/releases/tag/v0.1.0), source commit `6d799bddd9a27ba79c4faf8c757f7985ceb6d4c2`  
+**Version DOI:** [10.5281/zenodo.23244818](https://doi.org/10.5281/zenodo.23244818)  
+**All-versions concept DOI:** [10.5281/zenodo.23244817](https://doi.org/10.5281/zenodo.23244817)
+
+This is a **separate seventh research track**, not a retrospective alteration of the six-program historical umbrella structure. The v0.1.0 release contains a curated, reproducible 38-file snapshot; 21 of 21 GitHub Actions verification jobs passed at the frozen release commit.
+
+Its strongest scoped standalone contribution candidates are: (1) a deterministic curvature-controlled discrete Loewner trace bound of order `1/R` with explicit constant 12; (2) an exact connected five-cycle pointwise nonnegativity and supercritical-support certificate; (3) interval-certified finite-filter fourth-cumulant/Gram sign counterexamples; (4) alias-uniform prime-correlation and simultaneous endpoint-reprojection specializations; and (5) a nine-site Gaussian Loewner sixth-moment reference certificate. These are research-specific statements with known classical proof ingredients and **unresolved global novelty/priority**, not established first-in-history discoveries.
+
+**Claim firewall:** the historical 68.820273% simple-critical-zero route is conditional; 79.627% is a model frontier; strict >79% remains open; neither the Riemann Hypothesis nor an unconditional new zero-proportion record is claimed. The Zenodo record displays the version label `v1`, whereas the archived ZIP and GitHub tag are `v0.1.0`; that metadata-label mismatch should be corrected at Zenodo, without retagging GitHub.
+
+See the [dated publication and contribution register](papers/riemann/RELEASE_AND_CONTRIBUTION_REGISTER_2026_10_09.md). The original private Riemann source repository and its history are not mirrored here.
+
 ## 30 September 2026 — research + prototype umbrella archive
 
 **Prince Upadhyay — Independent Research**

@@ -23,6 +23,16 @@ The Reggae Shark Universe is the umbrella archive and paper-facing map. Project-
    https://github.com/reggaesharkk/intentseal  
    Umbrella mirrors remain at [Frozen lineage](intentseal/README.md) and [VRK](verifiable-research-kernel/README.md).
 
+## Additional independent specialist repository (October 2026)
+
+7. **Riemann Bandwidth-One Verification** — exact finite certificates, source-specific analytic identities and conditional simple-critical-zero research.  
+   https://github.com/reggaesharkk/riemann-bandwidth1-verification  
+   Frozen v0.1.0 release: https://github.com/reggaesharkk/riemann-bandwidth1-verification/releases/tag/v0.1.0  
+   Version DOI: https://doi.org/10.5281/zenodo.23244818  
+   All-versions concept DOI: https://doi.org/10.5281/zenodo.23244817
+
+This additional track does not change the historical six-program classification, and it does not claim an unconditional strict >79% simple-zero theorem.
+
 ## Paper shelf
 
 The current cross-project paper index is:
