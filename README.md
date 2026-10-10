@@ -2,6 +2,14 @@
 
 > **Rights boundary — effective 1 October 2026:** New author-owned original material first published here from this date is **All Rights Reserved** by default. Earlier express licenses remain in force for the material they cover. Read [the rights policy](RIGHTS_POLICY_2026_10_01.md) and [the Portfolio Evidence and Rights Standard](PORTFOLIO_EVIDENCE_AND_RIGHTS_STANDARD_2026_10_01.md).
 
+## 11 October 2026 — researcher profile and archive index
+
+**Prince Upadhyay · Independent Researcher, India · [ORCID 0009-0002-1170-4487](https://orcid.org/0009-0002-1170-4487)**
+
+The [researcher and archival index](RESEARCHER_AND_ARCHIVE_INDEX_2026_10_11.md) lists the 13 public OSF records associated with the ORCID Works section and five software DOI records with their evidence levels and version distinctions. OSF project, preregistration, and registration records are archival events, not peer-reviewed papers. The fifth Zenodo identifier is owner-dashboard-reported and its registry mapping is still unverified.
+
+**Physics v1.4 status qualification:** the historical chronology below records an earlier positive-sign claim. The later [dated proof-status clarification](PHYSICS_SCOPE_CORRECTION_2026_10_11.md) explains that the available positivity certificate for a rational expression does not establish the missing identity connecting it to the first Lyapunov coefficient. Treat that sign inference as unresolved pending the exact derivation. This does not alter prior records or claim the conclusion is false.
+
 ## 9 October 2026 — Riemann WP84: additional analytic-number-theory research track
 
 **New public specialist repository:** [Riemann Bandwidth-One Verification](https://github.com/reggaesharkk/riemann-bandwidth1-verification)  
