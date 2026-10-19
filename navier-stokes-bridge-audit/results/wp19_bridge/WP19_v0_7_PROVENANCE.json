@@ -1,0 +1,31 @@
+{
+  "C500_sha256": "79bdc347358705b4611f10f76a50db16e5edff572d1822ca1459cd868e15c216",
+  "K36_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+  "inherited_Arb_weight9_error_upper": {
+    "N11": "6.357870977",
+    "N12": "1.61816269",
+    "N13": "1.795093071"
+  },
+  "inherited_endpoint_certificate_sha256": {
+    "N11": "1c1b0f923d0229488b6a0a54fc5b9c18b54d1c68ef7a14d5a0d9877302b5c437",
+    "N12": "e0eaaf1cb135eae185b6f9cf9356d9ca827df89c760009c65b643ee8b695eb7f",
+    "N13": "4e17530363fdc003d4becfd3067f07f55d6e928124a45fbc43081e8b67a24fcd"
+  },
+  "inherited_endpoint_source_sha256": {
+    "N11": "88f9a7e6c38e13993ddb9cbff24cc56823027cd5e111a420c8cc89e09066feef",
+    "N12": "2ed99fcf5b5ed3af468e55eb54542cbdad3607f2267496d59cb9a4e506c9815d",
+    "N13": "4e22f5971f8f99ce56f2a9b5b5dbd8329584bb50249f5449e434e0f0b0d30b80"
+  },
+  "predictor_nodes_sha256": {
+    "N11": "b70bf7f7fe85a8c073c02c80e54e1f10d0642f5d030dfe569470c5970ebdda29",
+    "N12": "e9b35eb315ef5431c0a3a81de01485738416d1d4f0bdebfda00811c36bddf10b",
+    "N13": "d80274b3b5cfd1cf9f3a25dd1e8382a359c2b08821b498e9d0f6e363ef2546f1"
+  },
+  "schema": "wp19-v0.7-provenance-v1",
+  "trajectory_error_radius_used": {
+    "N11": "0.00004588841",
+    "N12": "0.000011374869",
+    "N13": "0.000012244529"
+  },
+  "witness_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624"
+}

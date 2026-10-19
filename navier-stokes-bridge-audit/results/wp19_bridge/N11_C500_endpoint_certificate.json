@@ -1,0 +1,21 @@
+{
+  "C500_present_key_count": 500,
+  "C500_sha256": "79bdc347358705b4611f10f76a50db16e5edff572d1822ca1459cd868e15c216",
+  "G_C500_exact_decimal_15": "-47.8162782412826",
+  "G_C500_exact_fraction": "-80728666103526318217383136060243830258912106176782078499119155645153026223334300764715380217260359490188181638395055491598513460628074309631/1688309276103978562742428869532047945035565667202963816166512251515491034882184022582036269019080466085744017651250000000000000000000000000",
+  "G_true_lower_decimal_9": "-54.174149219",
+  "G_true_upper_decimal_9": "-41.458407264",
+  "K36_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+  "N": 11,
+  "certified_G_C500_negative": true,
+  "continuum_claim": false,
+  "exact_F_le_G": true,
+  "exact_decimal_endpoint_rule": "same canonical decimal solenoidal-reality projection as Arb endpoint certificate",
+  "exact_group_count": 1624,
+  "full_F_exact_decimal_15": "-48.3905388701276",
+  "lemma": "The existing endpoint perturbation error is 9 times a key-independent global source/normalizer ratio envelope. Therefore it bounds any selected/signed normalized group combination with coefficient magnitude <=9, including G_C500.",
+  "reused_Arb_universal_weight9_error_upper_decimal": "6.357870977",
+  "schema": "wp19-v0.7-c500-endpoint-certificate-v1",
+  "status": "PASS",
+  "trajectory_error_input_decimal": "0.00004588841"
+}

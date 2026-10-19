@@ -1,0 +1,53 @@
+{
+  "status": "exact algebraic cutoff-monotonicity theorem + non-rigorous dynamic backreaction scout",
+  "frozen_K36_key_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+  "selected_orbit_max_squared_norm": 93,
+  "selected_orbit_max_norm": 9.643650760992955,
+  "safe_base_cutoff_integer": 10,
+  "anchor_squared_norms": {
+    "P=(3,2,2)": 17,
+    "Q=(3,-2,1)": 14,
+    "K=(6,0,3)": 45
+  },
+  "counterfactual_endpoint_diagnostics": {
+    "11->12": {
+      "embedded_lower_F": -48.39053887012699,
+      "higher_old_modes_only_F": -60.45030713010863,
+      "lower_old_plus_higher_new_F": -59.95354998327616,
+      "higher_full_F": -72.01505831967881
+    },
+    "12->13": {
+      "embedded_lower_F": -72.01505831967881,
+      "higher_old_modes_only_F": -77.95277105590606,
+      "lower_old_plus_higher_new_F": -79.399922362947,
+      "higher_full_F": -85.35899435159797
+    }
+  },
+  "backreaction_scout": {
+    "11->12": {
+      "max_sampled_low_backreaction": 156.60169450223992,
+      "sampled_backreaction_integral": 0.25525621969350965,
+      "sampled_recurrence_using_lower_physical_strain": 0.3730775068361693,
+      "actual_low_mode_endpoint_drift": 0.22558216838110007,
+      "actual_new_shell_endpoint_norm": 0.4955073968276579
+    },
+    "12->13": {
+      "max_sampled_low_backreaction": 140.0053538555552,
+      "sampled_backreaction_integral": 0.22453111986026247,
+      "sampled_recurrence_using_lower_physical_strain": 0.3229977762245355,
+      "actual_low_mode_endpoint_drift": 0.203005033033736,
+      "actual_new_shell_endpoint_norm": 0.3850411147492515
+    }
+  },
+  "global_L2_endpoint_radius_diagnostic": {
+    "11->12": {
+      "embedded_lower_F": -48.39053887012699,
+      "sign_preserving_Ecrit_under_existing_global_bound": 0.00034001277578838817
+    },
+    "12->13": {
+      "embedded_lower_F": -72.01505831967881,
+      "sign_preserving_Ecrit_under_existing_global_bound": 0.0004928009801679855
+    }
+  },
+  "claim_boundary": "monotonicity is exact finite algebra; dynamic backreaction and endpoint radius values are scouting diagnostics"
+}

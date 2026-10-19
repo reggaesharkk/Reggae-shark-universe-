@@ -1,0 +1,73 @@
+{
+  "status": "executed finite-Galerkin WP12 sweep; the analytical H2 concentration obstruction is separate and does not depend on these finite values",
+  "scope": {
+    "s": 2,
+    "K": 2,
+    "nu": 0.1,
+    "cutoffs": [
+      4,
+      7
+    ],
+    "scenarios": [
+      "reference",
+      "combined_double_quarter_high"
+    ],
+    "amplitude_multipliers": [
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "reserve_fractions": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "interval": [
+      0,
+      0.005
+    ],
+    "dt": 0.0005
+  },
+  "definition": "b_required=max(N_high-theta*nu*Y,0)/X; Q_energy=b_required/sqrt(G)",
+  "scaling_check": {
+    "maximum_recorded_relative_error": 0,
+    "representation": "exact invariant image sublattice with N,K -> lambda N,lambda K",
+    "interpretation": "dimensional covariance only; not continuum convergence"
+  },
+  "largest_sampled_Q_energy": {
+    "scenario": "combined_double_quarter_high",
+    "N": 7,
+    "amplitude_multiplier": 4,
+    "theta": 0.25,
+    "max_Q_energy": 0.13075951615326528,
+    "integral_b_required": 0.09826052735627538,
+    "integral_sqrt_G": 1.0877328074807602
+  },
+  "selected_comparisons": {
+    "combined_A1_theta025": {
+      "N4_max_Q": 0,
+      "N7_max_Q": 0.05237054002730628
+    },
+    "combined_A1_theta05": {
+      "N4_max_Q": 0,
+      "N7_max_Q": 0.04712865649810273
+    },
+    "combined_A4_theta025": {
+      "N4_max_Q": 0,
+      "N7_max_Q": 0.13075951615326528
+    },
+    "reference_A4_theta025": {
+      "N4_max_Q": 0.007480859160679901,
+      "N7_max_Q": 0.03884155105223455
+    }
+  },
+  "artifact_digest": "sha256:444df8bdc28b3cf4527dfe7ec2bd8fd6906f7133c6d7d085217b3622454009e7",
+  "interpretation": "The sampled N=7 trajectories require a larger circular coefficient than N=4 in the aggressive cases, but these finite values neither prove nor refute a universal constant. The all-data C*sqrt(G) coefficient is rejected analytically in the accompanying concentration argument.",
+  "warning": "b_required is defined from the unknown signed transfer and is not an a priori proof coefficient.",
+  "optimized_rerun": {
+    "workflow_run": 36112545724,
+    "result": "PASS",
+    "note": "trajectory evolution reused across reserve fractions; numerical outputs unchanged"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "status": "NON-RIGOROUS SCOUTING RESULT — guides next rigorous Arb implementation",
+  "N11_to_N12": {
+    "sampled_forcing_integral": 0.6924995779167447,
+    "crude_fourier_l1_strain_avg": 1436.2938169062122,
+    "sampled_physical_frobenius_strain_avg": 324.39532519668353,
+    "crude_total_amplification": 74.3572701357807,
+    "physical_sampled_total_amplification": 2.6463622883880884,
+    "crude_exact_constant_recurrence": 11.159884862327818,
+    "physical_sampled_exact_constant_recurrence": 1.1137131541587193,
+    "actual_predictor_endpoint_L2_difference": 0.5444399829204694,
+    "endpoint_new_shell_L2": 0.4955073968276579,
+    "float_endpoint_F_lower_state": -48.39053887012699,
+    "float_endpoint_F_higher_state": -72.01505831967904
+  },
+  "N12_to_N13": {
+    "sampled_forcing_integral": 0.5239244492667452,
+    "crude_fourier_l1_strain_avg": 1454.9987353693562,
+    "sampled_physical_frobenius_strain_avg": 325.36367190325547,
+    "crude_total_amplification": 78.64910155501897,
+    "physical_sampled_total_amplification": 2.6540612544954056,
+    "crude_exact_constant_recurrence": 8.73073107070299,
+    "physical_sampled_exact_constant_recurrence": 0.8455644183652559,
+    "actual_predictor_endpoint_L2_difference": 0.43527888012672344,
+    "endpoint_new_shell_L2": 0.3850411147492515,
+    "float_endpoint_F_lower_state": -72.01505831967904,
+    "float_endpoint_F_higher_state": -85.35899435159797
+  }
+}

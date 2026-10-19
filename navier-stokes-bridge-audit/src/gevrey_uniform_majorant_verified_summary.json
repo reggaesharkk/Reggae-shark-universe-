@@ -1,0 +1,41 @@
+{
+  "status": "executed on the real repository Galerkin trajectories; numerical verification is secondary to the analytical convolution proof",
+  "theorem": "|N_sigma,s| <= C_s^G X_sigma,s sqrt(Y_sigma,s) <= C_s^G sqrt(X_sigma,s) Y_sigma,s",
+  "constant": "C_s^G = 2 c_s K_s, with K_s^2 = sum_{m in Z^3\\{0}} |m|^{-2s}; independent of cutoff N and sigma",
+  "audit": {
+    "s": 2.0,
+    "cutoffs": [4, 7],
+    "scenarios": ["reference", "combined_double_quarter_high"],
+    "interval": [0.0, 0.005],
+    "lattice_radius_for_diagnostic": 40,
+    "truncated_K_s": 4.027161668839121,
+    "truncated_constant_reference": 16.108646675356486
+  },
+  "max_observed": {
+    "Lambda_strong_absN_over_X_sqrtY": 0.016326482268200226,
+    "Lambda_weak_absN_over_sqrtX_Y": 0.004568119680286483,
+    "mean_norm": 1.869393535279943e-16,
+    "divergence_error": 3.3820826609804605e-15,
+    "reality_error": 6.280369834735101e-16
+  },
+  "t_0_005_combined": {
+    "persistence": {
+      "N4_strong": 0.0007565709024759844,
+      "N7_strong": 0.016326482268200226,
+      "N7_over_N4": 21.579583962379626,
+      "N4_weak": 0.00022338944129358647,
+      "N7_weak": 0.004535431977018554,
+      "N7_over_N4_weak": 20.30280370797797
+    },
+    "smoothing": {
+      "N4_strong": 0.0014350499100528543,
+      "N7_strong": 0.015279295139073352,
+      "N7_over_N4": 10.647222041011563,
+      "N4_weak": 0.00044191092399021334,
+      "N7_weak": 0.004568119680286483,
+      "N7_over_N4_weak": 10.337195648025324
+    }
+  },
+  "interpretation": "Finite N=7/N=4 amplification does not contradict cutoff-uniformity of the analytical constant. The proven product majorant exposes the real obstruction: in 1/2 X' + (nu-C_s^G sqrt(X))Y <= sigma' Z, arbitrary large X cannot be absorbed by viscosity using this estimate alone.",
+  "scope": "No arbitrary-data global regularity theorem is claimed."
+}

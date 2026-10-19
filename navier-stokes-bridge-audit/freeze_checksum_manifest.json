@@ -1,0 +1,18 @@
+﻿{
+  "RadiiPolynomial.lean": {
+    "sha256": "f835b62b1432f83134e7a8e5b4c136364bf21092a4e9e3e3b7b258cf09918239",
+    "size_bytes": 1842
+  },
+  "optimize_fourier_young_a2.py": {
+    "sha256": "3a18e27c191a0172bf43b71946399127812f8623089efb3658f8b3efc29188a1",
+    "size_bytes": 1102
+  },
+  "batch_singularity_sweep.py": {
+    "sha256": "e14b036980bf85c94291897c413cf2d0e7e171b315264b38d38466b02a9477fb",
+    "size_bytes": 1422
+  },
+  "RELEASE_MANIFEST.md": {
+    "sha256": "9b1285e6834b17f858fa723d21b714b210e1948b89e2c4b8b839a9c8b7761012",
+    "size_bytes": 1150
+  }
+}

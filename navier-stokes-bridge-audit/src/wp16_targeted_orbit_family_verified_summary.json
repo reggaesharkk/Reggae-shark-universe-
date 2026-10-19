@@ -1,0 +1,23 @@
+{
+  "status": "executed targeted [0,3,m] orbit-family result",
+  "source": "wp16_targeted_orbit_family_scan_results.json",
+  "primary_family": "[0,3,m]",
+  "main_result": {
+    "orbit": [0,3,6],
+    "positive_all_three_steps": true,
+    "N9_from_N8_dlogC": 0.012148409792086317,
+    "N10_from_N9_dlogC": 0.009203746204144474,
+    "N11_from_N10_dlogC": 0.04515620979660426,
+    "geometric_mean_positive_dlogC": 0.01715538688211923
+  },
+  "prospective_0_3_9": {
+    "first_available_step": "N11_from_N10",
+    "dlogN": 0.00028604441517672677,
+    "minus_dlogPplus": -0.0002830200405714603,
+    "dlogC": 3.0243746052664743e-06,
+    "endpoint_C_gain_pct": 0.0014536013513088974,
+    "interpretation": "Positive sign but extremely weak magnitude."
+  },
+  "family_interpretation": "A smooth or monotone [0,3,m] generator law is not supported. [0,3,6] is the exceptional persistent orbit in the tested family.",
+  "next_target": "Explain the exceptional [0,3,6] response through triadic participation, coefficient weighting, numerator/denominator split, and comparison with nearby ratio-related and neighboring orbits."
+}

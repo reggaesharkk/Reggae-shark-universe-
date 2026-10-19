@@ -1,0 +1,61 @@
+{
+  "status": "executed against the exact PR #21 repository snapshot with the PR #22 audit overlaid; finite-Galerkin diagnostic only",
+  "scope": {
+    "cutoffs": [4, 7],
+    "scenarios": ["reference", "combined_double_quarter_high"],
+    "s": 2.0,
+    "dt": 0.0005,
+    "interval": [0.0, 0.005],
+    "schedules": {
+      "persistence": "sigma=max(0.2-0.5 t,0)",
+      "smoothing": "sigma=0.1 sqrt(nu t), t>0"
+    }
+  },
+  "identity_check": {
+    "max_absolute_residual": 3.4924596548080444e-09,
+    "max_relative_residual": 4.1410800581278814e-15,
+    "criterion": "relative residual < 1e-12",
+    "result": "PASS"
+  },
+  "centered_finite_difference_crosscheck": {
+    "note": "the first positive smoothing step is not used for the away-from-t0 summary because sigma'(t)~t^(-1/2) is singular at t=0",
+    "reference_N4": {
+      "persistence_max_relative_error": 1.2652666480647506e-05,
+      "smoothing_max_relative_error_away_from_t0": 0.0067115497028884625
+    },
+    "reference_N7": {
+      "persistence_max_relative_error": 6.269083344652948e-05,
+      "smoothing_max_relative_error_away_from_t0": 0.005065948878894191
+    },
+    "combined_N4": {
+      "persistence_max_relative_error": 0.00013161372600954593,
+      "smoothing_max_relative_error_away_from_t0": 0.01562645501708195
+    },
+    "combined_N7": {
+      "persistence_max_relative_error": 0.0004329817946621248,
+      "smoothing_max_relative_error_away_from_t0": 0.0015832964894776237
+    }
+  },
+  "descriptive_ratios_at_t_0_005": {
+    "ratio_definition": "|N_sigma,s|/(sqrt(X_sigma,s) Y_sigma,s)",
+    "persistence": {
+      "reference_N4": 0.0008951153273592095,
+      "reference_N7": 0.0018776626428565928,
+      "reference_N7_over_N4": 2.0976767858462635,
+      "combined_N4": 0.00022338944129358647,
+      "combined_N7": 0.004535431977018554,
+      "combined_N7_over_N4": 20.30280370797797
+    },
+    "smoothing": {
+      "reference_N4": 0.0017747534319249726,
+      "reference_N7": 0.0027386053305599022,
+      "reference_N7_over_N4": 1.5430905957395418,
+      "combined_N4": 0.00044191092399021334,
+      "combined_N7": 0.004568119680286483,
+      "combined_N7_over_N4": 10.337195648025324
+    }
+  },
+  "interpretation": "The exact Gevrey bookkeeping identity is numerically verified. The descriptive cubic ratios show substantial finite-cutoff separation, strongest in the combined perturbed case. These ratios are not registered majorants and their N=4/N=7 separation does not prove cutoff divergence.",
+  "audit_script_sha256_from_executed_copy": "d2f7b93392676cd1b2b8a64d56ed50dc72561d09d24a5827428d98a52e47ce68",
+  "full_local_result_sha256": "72a7d6a5938ba56e0ae2a047513c62442feb17991c8e8340814555fbd5dba718"
+}

@@ -1,0 +1,69 @@
+{
+  "M": 16,
+  "actual_delta_signed_numerator": 259180420.7494049,
+  "actual_transfer_over_base_certified_margin": 0.002011240481146765,
+  "adjoint": {
+    "gradient_Fourier_l1_max": 995177036211119.5,
+    "gradient_Fourier_l1_simpson_integral": 1844375847314.751,
+    "initial_L2": 4754411003206.755,
+    "terminal_L2": 4695147409827.676
+  },
+  "claim_boundary": "Floating pre-interval design result only. Adjoint propagation, Simpson quadrature, midpoint radius replay, gradient-l1 envelope, and endpoint Taylor control are not interval-enclosed. No all-N or continuum theorem.",
+  "copyright": "Copyright (c) 2026 Prince Upadhyay. All Rights Reserved.",
+  "endpoint_gradient_linear_prediction": 259166849.11506057,
+  "endpoint_identity": {
+    "base_floating_J": -131146208004.02971,
+    "base_reference_relative_error": 4.6539779669515775e-15,
+    "base_v0_25b_nominal_J": -131146208004.0291,
+    "frozen_K36_signs_match_base": true,
+    "frozen_K36_signs_match_target": true,
+    "target_floating_J": -130887027583.2803,
+    "target_reference_relative_error": 8.16058897582791e-16,
+    "target_v0_25b_nominal_J": -130887027583.2802,
+    "torch_vs_numpy_relative_error": 4.1885801702564e-15
+  },
+  "endpoint_nominal_difference_L2": 0.0032720325848405157,
+  "endpoint_taylor_remainder_observed": 13571.63434433937,
+  "frozen": {
+    "C500_count": 500,
+    "C500_portable_semantic_sha256": "1e9509cef054bf605d4a28af6580e383d021914f600a01b21cb1ebdf1086f71f",
+    "K36_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+    "K36_sign_chart_sha256": "de2e7cf42373285f16a4d357422d7784afa98c997f90e6594c0102952bf6d3d1",
+    "K36_sign_count": 36,
+    "witness_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624"
+  },
+  "full_reconstruction_residual_max_L2": 65.10911319406823,
+  "hermite_simpson_dual_prediction": 259457491.29498875,
+  "margin": {
+    "base_rigorous_negative_margin": 128865952718.7052,
+    "base_v0_25b_true_signed_numerator_upper": -128865952718.7052,
+    "scout_total_abs_dual_plus_nonlinear_plus_observed_endpoint_remainder": 1925800011.00269,
+    "scout_total_budget_over_base_certified_margin": 0.014944211177380724,
+    "target_rigorous_negative_margin": 128571250633.5551,
+    "target_v0_25b_true_signed_numerator_upper": -128571250633.5551
+  },
+  "method": "Fixed-sign/fixed-C500 P11 polynomial terminal objective; complex128 PyTorch reverse-mode terminal gradient cross-checked against NumPy and a centered directional derivative; half-step RK4 continuous adjoint along the lower cubic-Hermite reconstruction; full reconstruction residual f_high(E ubar)-E ubar_dot; per-segment Simpson dual quadrature; certified trajectory-radius decimals replayed in binary64 only for scout budgeting.",
+  "nonlinear_dynamic_remainder_candidate": {
+    "identity_bound": "|<lambda,B(e,e)>| <= ||grad lambda||_infty ||e||_2^2 <= (sum_k |k||lambda_k||_2)||e||_2^2",
+    "nominal_simpson_bound": 1665653475.6910808,
+    "observed_abs_dynamic_remainder": 290642.17992818356,
+    "radius_augmented_simpson_bound_scout": 1666328948.0733569,
+    "radius_bound_over_base_certified_margin": 0.012930715312451069,
+    "radius_bound_over_observed": 5733.266067867711
+  },
+  "objective": "fixed polynomial signed C500 numerator with prospective N13 K36 sign chart",
+  "objective_gradient_directional_check_relative_error": 1.0887679907276578e-07,
+  "observed_directional_curvature_2R_over_e2": 2535285693.8553386,
+  "positive_actual_transfer_over_base_certified_margin": 0.002011240481146765,
+  "schema": "wp19-v0.26-signed-c500-numerator-hermite-goal-adjoint-v1",
+  "state_difference": {
+    "nominal_endpoint_L2": 0.07582299672250431,
+    "nominal_max_halfgrid_L2": 0.07582299672250431,
+    "radius_augmented_endpoint_L2_scout": 0.0758501055957708,
+    "radius_augmented_max_halfgrid_L2_scout": 0.0758501055957708
+  },
+  "status": "NON-RIGOROUS SIGNED-NUMERATOR GOAL-ADJOINT / PRE-INTERVAL DESIGN GATE",
+  "total_remainder_actual_minus_dual": -277070.5455838442,
+  "total_remainder_over_base_certified_margin": 2.1500678785857975e-06,
+  "transition": "16->17"
+}

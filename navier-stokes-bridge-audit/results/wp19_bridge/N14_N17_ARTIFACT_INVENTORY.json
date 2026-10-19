@@ -1,0 +1,68 @@
+{
+  "N14": {
+    "drive_summary": "wp16_036_N14_result_summary.json",
+    "summary_status": "completed prospective frozen N14 K36 time-gate summary",
+    "hashes": {
+      "n13": "13e5e56676b9398e7c7ec32f55e32a4d07dec5a3830c67787c6cd6fb5c8e59cd",
+      "n14": "747dfb0bd0ea12271bd53b39fae7a4e18f396656bed3084bd4c632a9f3e5a3d9",
+      "n14_checkpoint": "1cc7d70b8d974dfa9b8907af56c6ab1571c981d72b84cac8db26fe1bad4eaa6f",
+      "frozen_source": "193cbb7f485ab54ceed0d5cb38f97f0fc98c197e5f88e288fdbd277627608c8e",
+      "n14_time_gate": "9593d606c4a146fc2bcacf2ded3f961e2df80582ca987b864ae994c17c84de87"
+    }
+  },
+  "N15": {
+    "drive_summary": "wp16_036_N15_result_summary.json",
+    "continuation_file": "wp16_phase_cutoff_escalation_N15.json",
+    "summary_status": "completed prospective frozen N15 K36 time-gate summary",
+    "hashes": {
+      "n14_predecessor": "747dfb0bd0ea12271bd53b39fae7a4e18f396656bed3084bd4c632a9f3e5a3d9",
+      "frozen_K36_source": "193cbb7f485ab54ceed0d5cb38f97f0fc98c197e5f88e288fdbd277627608c8e",
+      "n15_checkpoint": "2ad24749a9454c5377e627c103a7d8dd5f1701876958a4bc9c095e1fa222c4a6",
+      "n15_continuation": "c0bd97f554df3e8561d75e1ba62356d04200fbe4986f573e3305a98932ccb225",
+      "n15_time_gate": "e1a9d0d59b56375e2adf31098c97fcb71336d41ffa2e6098dfec744264a7d239"
+    },
+    "continuation": {
+      "seed": 20260940,
+      "search_grid": 48,
+      "completed_proposals": 520,
+      "active_conjugate_pairs": 6791,
+      "inherited_pairs": 5638,
+      "new_pairs": 1153,
+      "best_search_grid_C": 9.9109238004012,
+      "refined_C": {
+        "48": 9.9109238004012,
+        "64": 9.910944916518424,
+        "96": 9.911712653704301,
+        "128": 9.911923711291015
+      }
+    }
+  },
+  "N16": {
+    "drive_time_gate": "wp16_036_N16_frozen_time_gate.json",
+    "drive_checkpoint": "wp16_N16_checkpoint.json",
+    "drive_continuation": "wp16_phase_cutoff_escalation_N16.json",
+    "drive_large_source": "wp16_036_phase_velocity_rhs_sources.json",
+    "canonical_hashes": {
+      "checkpoint": "057c5846cc28f86099408f3f7563d7551d64b1f6414758cadeecf1fa99d656ba",
+      "continuation": "53b0cc0a70de0d1a858e9d0c9d98feafcd5fea678c85adfe4d6253f6cf53b0ca",
+      "time_gate": "111eb0407c60cb60c24c57e3c471ece05a9e1b94b88628a688d015a4249decf7"
+    },
+    "continuation_snapshot": {
+      "seed": 20260941,
+      "active_conjugate_pairs": 7973,
+      "inherited_pairs": 6771,
+      "new_pairs": 1202,
+      "best_refined_case": {"N": 16, "C": 10.150097983229115}
+    }
+  },
+  "N17": {
+    "canonical_repo_status": "broad gate pass; mechanism gate failed or unevaluable",
+    "canonical_hashes": {
+      "checkpoint": "f4a8da892f666e2dffa2c02915801870a1be4e4ba2fd357f8f3455760ca08b32",
+      "continuation": "755a36f966b64c8c44cd468c6f2e8212a7ed64eebeaf8aa795ee2c3197c4c3ec",
+      "time_gate": "905237d19724ee4535866168dd6ea010f794f070c1befef11b78e8e06ebc4a5b",
+      "mechanism_gate": "64a584b5d2a715b228528bf055a2453460e1ab6d951c19e5342b668eee98b0e8"
+    },
+    "mechanism_failure": "directional split failed: ((1, 7, 9), (2, 7, 15))"
+  }
+}

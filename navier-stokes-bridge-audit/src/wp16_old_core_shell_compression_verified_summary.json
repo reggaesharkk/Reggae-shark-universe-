@@ -1,0 +1,29 @@
+{
+  "status": "executed N11 old-core shell-compression result",
+  "source": "wp16_old_core_shell_compression_results.json",
+  "old_core_pair_count": 2084,
+  "full_old_core": {
+    "C_gain_pct": 8.672284606766056,
+    "N_change_pct": 2.245086597551871,
+    "P_plus_change_pct": -5.914293632890089
+  },
+  "strongest_single_shell": {
+    "shell": 7,
+    "pair_count": 247,
+    "C_gain_pct": 3.421840955627564,
+    "N_change_pct": 1.416111822205246,
+    "P_plus_change_pct": -1.9393670765180393,
+    "directional_dlogC": 0.0567808189387838
+  },
+  "five_shell_compression": {
+    "shells": [7,4,8,5,6],
+    "pair_count": 993,
+    "pair_fraction_of_old_core": 0.47648752399232244,
+    "C_gain_pct": 7.721790617452862,
+    "fraction_of_full_C_gain": 0.8903977964350015,
+    "P_plus_change_pct": -5.058358253855555,
+    "fraction_of_full_Pplus_depletion": 0.8553261514112585
+  },
+  "conclusion": "The inherited-core correction is moderately compressible by radial shell: five shells containing about 47.6% of old-core pairs recover about 89.0% of quotient gain and 85.5% of positive-stretching depletion. Shell 7 is the strongest single block.",
+  "next_target": "Compress shells 7 and 4 internally by parity, octant, coordinate-magnitude orbit, and transfer-network participation."
+}

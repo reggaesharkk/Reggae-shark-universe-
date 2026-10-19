@@ -1,0 +1,40 @@
+name: WP19 v0.28 corrected M14 recurrence chain
+on:
+  push:
+    branches: [wp19-v0.28-corrected-recurrence-chain]
+    paths:
+      - '.github/workflows/wp19_v0_28_corrected_recurrence_chain.yml'
+      - 'README.md'
+      - 'notes/WP19_CURRENT_STATUS_2026_09_30.md'
+      - 'src/wp19_v0_28_corrected_recurrence_chain.py'
+      - 'src/wp19_v0_28_verify_corrected_recurrence_chain.py'
+      - 'notes/WP19_v0_28_CORRECTED_RECURRENCE_CHAIN_2026_10_01.md'
+      - 'results/wp19_v0_28/corrected_chain_20261001/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  corrected-chain:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Recompute the frozen corrected recurrence chain
+        run: python src/wp19_v0_28_corrected_recurrence_chain.py
+      - name: Require byte-identical deterministic certificate
+        run: git diff --exit-code -- results/wp19_v0_28/corrected_chain_20261001/corrected_recurrence_chain.json
+      - name: Independently recompute and verify each recurrence step
+        run: >-
+          python src/wp19_v0_28_verify_corrected_recurrence_chain.py
+          results/wp19_v0_28/corrected_chain_20261001/corrected_recurrence_chain.json
+          --output results/wp19_v0_28/corrected_chain_20261001/independent_verification.json
+      - name: Verify package manifest
+        run: sha256sum -c results/wp19_v0_28/corrected_chain_20261001/SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-28-corrected-m14-recurrence-chain
+          path: results/wp19_v0_28/corrected_chain_20261001/
+          retention-days: 90

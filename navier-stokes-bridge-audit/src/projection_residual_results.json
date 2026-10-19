@@ -1,0 +1,1119 @@
+{
+  "identity": "d/dt <omega\u00b7S omega> = <|S omega|\u00b2 - omega\u00b7H omega> + nu<2(S omega)\u00b7Delta omega + omega\u00b7(Delta S)omega> + <2(S omega)\u00b7curl R + omega\u00b7sym(grad R)omega>, R=(I-P_N)Leray[(u\u00b7grad)u].",
+  "scope": "24 previously recorded scenario-cutoff runs, t=0 and t=.02; 32\u00b3 exact unmasked quartic spatial quadrature, finite RK4 state evolution.",
+  "warning": "R is orthogonal to omega in first enstrophy derivative, but not generally in stretching derivative. Finite time/endpoints and cutoffs do not give an a priori bound.",
+  "independent_time_derivative_check": {
+    "scenario": "reference",
+    "N": 4,
+    "time": 0,
+    "finite_difference_step": 1e-05,
+    "spectral_central_difference": 19321.18717307105,
+    "analytic_Galerkin_derivative": 19321.18728559492
+  },
+  "rows": [
+    {
+      "scenario": "reference",
+      "N": 4,
+      "initial": {
+        "G": 530.8994025572656,
+        "D": 2775.7544370581877,
+        "T": 179.78364610277248,
+        "exact_T_time_derivative": 19321.18728559492,
+        "terms": {
+          "self_amplification": 25637.445882560743,
+          "pressure_response": 2970.764470451053,
+          "viscous_response": -190.51979533392824,
+          "projection_response": -9096.503272082942
+        },
+        "budget_error": -7.275957614183426e-12,
+        "residual_enstrophy_pairing": 0.0,
+        "residual_curl_norm": 136.14150105818047,
+        "viscous_curl_norm": 15.368928045826838,
+        "residual_to_viscous_curl_norm": 8.858230102466209,
+        "checks": {
+          "pressure_source_error": 3.399531182602658e-14,
+          "retained_nonlinearity_error": 7.32410687763558e-15
+        }
+      },
+      "final": {
+        "G": 534.4330722270936,
+        "D": 2805.7112822814224,
+        "T": 544.0264397291571,
+        "exact_T_time_derivative": 16744.99805581337,
+        "terms": {
+          "self_amplification": 24543.366241185562,
+          "pressure_response": 2363.085815826452,
+          "viscous_response": -666.2045853374539,
+          "projection_response": -9495.249415861192
+        },
+        "budget_error": 0.0,
+        "residual_enstrophy_pairing": 2.842170943040401e-14,
+        "residual_curl_norm": 136.6251871901562,
+        "viscous_curl_norm": 15.399718798915831,
+        "residual_to_viscous_curl_norm": 8.87192740167274,
+        "checks": {
+          "pressure_source_error": 3.3820826609804605e-14,
+          "retained_nonlinearity_error": 1.456610054714208e-14
+        }
+      }
+    },
+    {
+      "scenario": "reference",
+      "N": 5,
+      "initial": {
+        "G": 530.8994025572656,
+        "D": 2775.7544370581877,
+        "T": 179.78364610277248,
+        "exact_T_time_derivative": 28311.512172424773,
+        "terms": {
+          "self_amplification": 25637.445882560743,
+          "pressure_response": 2970.764470451053,
+          "viscous_response": -190.51979533392824,
+          "projection_response": -106.17838525309136
+        },
+        "budget_error": -3.637978807091713e-12,
+        "residual_enstrophy_pairing": -1.7607443281164592e-16,
+        "residual_curl_norm": 12.91878090858875,
+        "viscous_curl_norm": 15.368928045826838,
+        "residual_to_viscous_curl_norm": 0.8405778770040255,
+        "checks": {
+          "pressure_source_error": 3.399531182602658e-14,
+          "retained_nonlinearity_error": 7.32410687763558e-15
+        }
+      },
+      "final": {
+        "G": 537.8200603556858,
+        "D": 2896.3007678928516,
+        "T": 716.7647326181307,
+        "exact_T_time_derivative": 24923.45411286637,
+        "terms": {
+          "self_amplification": 25444.882482815505,
+          "pressure_response": 2085.9699007907866,
+          "viscous_response": -1249.3080478131715,
+          "projection_response": -1358.0902229267476
+        },
+        "budget_error": -3.637978807091713e-12,
+        "residual_enstrophy_pairing": 7.105427357601002e-15,
+        "residual_curl_norm": 52.393868717267914,
+        "viscous_curl_norm": 16.058365144719872,
+        "residual_to_viscous_curl_norm": 3.2627149927834007,
+        "checks": {
+          "pressure_source_error": 2.99893824829751e-14,
+          "retained_nonlinearity_error": 5.617333549722722e-15
+        }
+      }
+    },
+    {
+      "scenario": "reference",
+      "N": 6,
+      "initial": {
+        "G": 530.8994025572656,
+        "D": 2775.754437058188,
+        "T": 179.78364610277248,
+        "exact_T_time_derivative": 28417.690557677863,
+        "terms": {
+          "self_amplification": 25637.445882560743,
+          "pressure_response": 2970.764470451053,
+          "viscous_response": -190.51979533392824,
+          "projection_response": 4.0389678347315804e-28
+        },
+        "budget_error": -7.275957614183426e-12,
+        "residual_enstrophy_pairing": -2.524354896707238e-29,
+        "residual_curl_norm": 4.3463175982201634e-13,
+        "viscous_curl_norm": 15.368928045826838,
+        "residual_to_viscous_curl_norm": 2.8279900753392683e-14,
+        "checks": {
+          "pressure_source_error": 3.399531182602658e-14,
+          "retained_nonlinearity_error": 7.32410687763558e-15
+        }
+      },
+      "final": {
+        "G": 537.9142553672175,
+        "D": 2901.159389426324,
+        "T": 724.1996570625874,
+        "exact_T_time_derivative": 25742.50674112974,
+        "terms": {
+          "self_amplification": 25600.585819047763,
+          "pressure_response": 2087.799381816485,
+          "viscous_response": -1292.7145213202746,
+          "projection_response": -653.1639384142347
+        },
+        "budget_error": 0.0,
+        "residual_enstrophy_pairing": -1.5543122344752192e-15,
+        "residual_curl_norm": 35.49349995705664,
+        "viscous_curl_norm": 16.1184506590119,
+        "residual_to_viscous_curl_norm": 2.202041666902524,
+        "checks": {
+          "pressure_source_error": 2.9474278140009456e-14,
+          "retained_nonlinearity_error": 1.1234667099445444e-14
+        }
+      }
+    },
+    {
+      "scenario": "half_amplitude",
+      "N": 4,
+      "initial": {
+        "G": 132.7248506393164,
+        "D": 693.9386092645469,
+        "T": 22.47295576284656,
+        "exact_T_time_derivative": 1195.666718141312,
+        "terms": {
+          "self_amplification": 1602.3403676600465,
+          "pressure_response": 185.67277940319082,
+          "viscous_response": -23.81497441674103,
+          "projection_response": -568.5314545051839
+        },
+        "budget_error": -4.547473508864641e-13,
+        "residual_enstrophy_pairing": 0.0,
+        "residual_curl_norm": 34.03537526454512,
+        "viscous_curl_norm": 7.684464022913419,
+        "residual_to_viscous_curl_norm": 4.429115051233104,
+        "checks": {
+          "pressure_source_error": 8.498827956506644e-15,
+          "retained_nonlinearity_error": 1.831026719408895e-15
+        }
+      },
+      "final": {
+        "G": 131.3433704081212,
+        "D": 681.6293035067888,
+        "T": 45.556495433989596,
+        "exact_T_time_derivative": 1107.1271905872954,
+        "terms": {
+          "self_amplification": 1547.5308388721846,
+          "pressure_response": 162.64202725246565,
+          "viscous_response": -53.81066520779791,
+          "projection_response": -549.2350103295572
+        },
+        "budget_error": 2.2737367544323206e-13,
+        "residual_enstrophy_pairing": 0.0,
+        "residual_curl_norm": 33.17087332792673,
+        "viscous_curl_norm": 7.584702122978221,
+        "residual_to_viscous_curl_norm": 4.373391702151883,
+        "checks": {
+          "pressure_source_error": 6.642457584306816e-15,
+          "retained_nonlinearity_error": 2.220446049250313e-15
+        }
+      }
+    },
+    {
+      "scenario": "half_amplitude",
+      "N": 5,
+      "initial": {
+        "G": 132.7248506393164,
+        "D": 693.9386092645469,
+        "T": 22.47295576284656,
+        "exact_T_time_derivative": 1757.5620235681777,
+        "terms": {
+          "self_amplification": 1602.3403676600465,
+          "pressure_response": 185.67277940319082,
+          "viscous_response": -23.81497441674103,
+          "projection_response": -6.63614907831821
+        },
+        "budget_error": -4.547473508864641e-13,
+        "residual_enstrophy_pairing": -2.200930410145574e-17,
+        "residual_curl_norm": 3.2296952271471877,
+        "viscous_curl_norm": 7.684464022913419,
+        "residual_to_viscous_curl_norm": 0.42028893850201277,
+        "checks": {
+          "pressure_source_error": 8.498827956506644e-15,
+          "retained_nonlinearity_error": 1.831026719408895e-15
+        }
+      },
+      "final": {
+        "G": 131.55376433217904,
+        "D": 687.2248500366486,
+        "T": 56.27849842834573,
+        "exact_T_time_derivative": 1616.24592188918,
+        "terms": {
+          "self_amplification": 1574.0610632507291,
+          "pressure_response": 158.7386267417669,
+          "viscous_response": -89.54467474993615,
+          "projection_response": -27.009093353379747
+        },
+        "budget_error": -2.2737367544323206e-13,
+        "residual_enstrophy_pairing": 2.220446049250313e-16,
+        "residual_curl_norm": 7.200993037116634,
+        "viscous_curl_norm": 7.668021461270174,
+        "residual_to_viscous_curl_norm": 0.9390940118631099,
+        "checks": {
+          "pressure_source_error": 8.603066918610599e-15,
+          "retained_nonlinearity_error": 2.7906065183836233e-15
+        }
+      }
+    },
+    {
+      "scenario": "half_amplitude",
+      "N": 6,
+      "initial": {
+        "G": 132.7248506393164,
+        "D": 693.938609264547,
+        "T": 22.47295576284656,
+        "exact_T_time_derivative": 1764.198172646496,
+        "terms": {
+          "self_amplification": 1602.3403676600465,
+          "pressure_response": 185.67277940319082,
+          "viscous_response": -23.81497441674103,
+          "projection_response": 2.524354896707238e-29
+        },
+        "budget_error": -2.2737367544323206e-13,
+        "residual_enstrophy_pairing": -3.1554436208840472e-30,
+        "residual_curl_norm": 1.0865793995550409e-13,
+        "viscous_curl_norm": 7.684464022913419,
+        "residual_to_viscous_curl_norm": 1.4139950376696342e-14,
+        "checks": {
+          "pressure_source_error": 8.498827956506644e-15,
+          "retained_nonlinearity_error": 1.831026719408895e-15
+        }
+      },
+      "final": {
+        "G": 131.55711947218214,
+        "D": 687.3938030107747,
+        "T": 56.49898053195595,
+        "exact_T_time_derivative": 1635.3061268553345,
+        "terms": {
+          "self_amplification": 1576.7594678249047,
+          "pressure_response": 158.8040680957849,
+          "viscous_response": -90.808205388235,
+          "projection_response": -9.449203677119982
+        },
+        "budget_error": -2.2737367544323206e-13,
+        "residual_enstrophy_pairing": 2.7755575615628914e-17,
+        "residual_curl_norm": 4.2225734829132495,
+        "viscous_curl_norm": 7.672373079858805,
+        "residual_to_viscous_curl_norm": 0.5503608126145708,
+        "checks": {
+          "pressure_source_error": 9.357575064186242e-15,
+          "retained_nonlinearity_error": 1.897149936107019e-15
+        }
+      }
+    },
+    {
+      "scenario": "double_amplitude",
+      "N": 4,
+      "initial": {
+        "G": 2123.5976102290624,
+        "D": 11103.01774823275,
+        "T": 1438.2691688221798,
+        "exact_T_time_derivative": 310663.15493219014,
+        "terms": {
+          "self_amplification": 410199.1341209719,
+          "pressure_response": 47532.23152721685,
+          "viscous_response": -1524.158362671426,
+          "projection_response": -145544.05235332708
+        },
+        "budget_error": -1.1641532182693481e-10,
+        "residual_enstrophy_pairing": 0.0,
+        "residual_curl_norm": 544.5660042327219,
+        "viscous_curl_norm": 30.737856091653676,
+        "residual_to_viscous_curl_norm": 17.716460204932417,
+        "checks": {
+          "pressure_source_error": 1.359812473041063e-13,
+          "retained_nonlinearity_error": 2.929642751054232e-14
+        }
+      },
+      "final": {
+        "G": 2250.0911667833534,
+        "D": 12261.641558188718,
+        "T": 6847.731367443388,
+        "exact_T_time_derivative": 211061.95832076867,
+        "terms": {
+          "self_amplification": 383839.40720654465,
+          "pressure_response": 32836.014760959704,
+          "viscous_response": -8569.248215544172,
+          "projection_response": -197044.2154311915
+        },
+        "budget_error": -2.9103830456733704e-11,
+        "residual_enstrophy_pairing": -5.684341886080801e-13,
+        "residual_curl_norm": 614.1330847579001,
+        "viscous_curl_norm": 32.28015127735521,
+        "residual_to_viscous_curl_norm": 19.025099339875755,
+        "checks": {
+          "pressure_source_error": 1.26011829449436e-13,
+          "retained_nonlinearity_error": 6.253598000993255e-14
+        }
+      }
+    },
+    {
+      "scenario": "double_amplitude",
+      "N": 5,
+      "initial": {
+        "G": 2123.5976102290624,
+        "D": 11103.01774823275,
+        "T": 1438.2691688221798,
+        "exact_T_time_derivative": 454508.3531214678,
+        "terms": {
+          "self_amplification": 410199.1341209719,
+          "pressure_response": 47532.23152721685,
+          "viscous_response": -1524.158362671426,
+          "projection_response": -1698.8541640494618
+        },
+        "budget_error": -5.820766091346741e-11,
+        "residual_enstrophy_pairing": -1.4085954624931674e-15,
+        "residual_curl_norm": 51.675123634355,
+        "viscous_curl_norm": 30.737856091653676,
+        "residual_to_viscous_curl_norm": 1.681155754008051,
+        "checks": {
+          "pressure_source_error": 1.359812473041063e-13,
+          "retained_nonlinearity_error": 2.929642751054232e-14
+        }
+      },
+      "final": {
+        "G": 2304.3718362026857,
+        "D": 13738.546775605944,
+        "T": 9592.483952365923,
+        "exact_T_time_derivative": 334633.85367674613,
+        "terms": {
+          "self_amplification": 412351.7466395032,
+          "pressure_response": 15549.486477583203,
+          "viscous_response": -18093.87465098991,
+          "projection_response": -75173.50478935026
+        },
+        "budget_error": -1.1641532182693481e-10,
+        "residual_enstrophy_pairing": -5.684341886080802e-14,
+        "residual_curl_norm": 397.02199119682564,
+        "viscous_curl_norm": 37.21579759285882,
+        "residual_to_viscous_curl_norm": 10.668103785931178,
+        "checks": {
+          "pressure_source_error": 1.1368683772161603e-13,
+          "retained_nonlinearity_error": 6.192942948236838e-14
+        }
+      }
+    },
+    {
+      "scenario": "double_amplitude",
+      "N": 6,
+      "initial": {
+        "G": 2123.5976102290624,
+        "D": 11103.017748232753,
+        "T": 1438.2691688221798,
+        "exact_T_time_derivative": 456207.20728551724,
+        "terms": {
+          "self_amplification": 410199.1341209719,
+          "pressure_response": 47532.23152721685,
+          "viscous_response": -1524.158362671426,
+          "projection_response": 6.462348535570529e-27
+        },
+        "budget_error": -5.820766091346741e-11,
+        "residual_enstrophy_pairing": -2.0194839173657902e-28,
+        "residual_curl_norm": 1.7385270392880654e-12,
+        "viscous_curl_norm": 30.737856091653676,
+        "residual_to_viscous_curl_norm": 5.655980150678537e-14,
+        "checks": {
+          "pressure_source_error": 1.359812473041063e-13,
+          "retained_nonlinearity_error": 2.929642751054232e-14
+        }
+      },
+      "final": {
+        "G": 2307.9752893236864,
+        "D": 13929.214722886492,
+        "T": 9907.416909103453,
+        "exact_T_time_derivative": 372488.23218827473,
+        "terms": {
+          "self_amplification": 420962.6169820477,
+          "pressure_response": 14319.273489743908,
+          "viscous_response": -19925.84908693445,
+          "projection_response": -42867.80919658234
+        },
+        "budget_error": -5.820766091346741e-11,
+        "residual_enstrophy_pairing": 0.0,
+        "residual_curl_norm": 294.5893855315045,
+        "viscous_curl_norm": 38.230790941215766,
+        "residual_to_viscous_curl_norm": 7.705552992206453,
+        "checks": {
+          "pressure_source_error": 9.94892651462484e-14,
+          "retained_nonlinearity_error": 7.31548520675105e-14
+        }
+      }
+    },
+    {
+      "scenario": "quarter_phase",
+      "N": 4,
+      "initial": {
+        "G": 530.8994025572657,
+        "D": 2775.7544370581886,
+        "T": -1.1368683772161603e-13,
+        "exact_T_time_derivative": 17197.08595614607,
+        "terms": {
+          "self_amplification": 24631.561755690775,
+          "pressure_response": 1662.0274725382392,
+          "viscous_response": -5.684341886080802e-14,
+          "projection_response": -9096.503272082944
+        },
+        "budget_error": 0.0,
+        "residual_enstrophy_pairing": -8.526512829121202e-14,
+        "residual_curl_norm": 136.14150105818047,
+        "viscous_curl_norm": 15.368928045826838,
+        "residual_to_viscous_curl_norm": 8.858230102466209,
+        "checks": {
+          "pressure_source_error": 1.942240413069837e-14,
+          "retained_nonlinearity_error": 7.105427357601002e-15
+        }
+      },
+      "final": {
+        "G": 526.2931826452696,
+        "D": 2747.801746869868,
+        "T": 307.3716748933956,
+        "exact_T_time_derivative": 13415.150414238284,
+        "terms": {
+          "self_amplification": 24012.765242695197,
+          "pressure_response": 2135.9458079703204,
+          "viscous_response": -396.38837164929805,
+          "projection_response": -12337.172264777937
+        },
+        "budget_error": 1.8189894035458565e-12,
+        "residual_enstrophy_pairing": 2.842170943040401e-14,
+        "residual_curl_norm": 153.16612138342308,
+        "viscous_curl_norm": 15.239226195281569,
+        "residual_to_viscous_curl_norm": 10.050780756233344,
+        "checks": {
+          "pressure_source_error": 2.5218996170054464e-14,
+          "retained_nonlinearity_error": 9.366182853541689e-15
+        }
+      }
+    },
+    {
+      "scenario": "quarter_phase",
+      "N": 5,
+      "initial": {
+        "G": 530.8994025572657,
+        "D": 2775.7544370581886,
+        "T": -1.1368683772161603e-13,
+        "exact_T_time_derivative": 26187.41084297592,
+        "terms": {
+          "self_amplification": 24631.561755690775,
+          "pressure_response": 1662.0274725382392,
+          "viscous_response": -5.684341886080802e-14,
+          "projection_response": -106.17838525309139
+        },
+        "budget_error": 0.0,
+        "residual_enstrophy_pairing": 1.0972125985553305e-16,
+        "residual_curl_norm": 12.918780908588749,
+        "viscous_curl_norm": 15.368928045826838,
+        "residual_to_viscous_curl_norm": 0.8405778770040254,
+        "checks": {
+          "pressure_source_error": 1.942240413069837e-14,
+          "retained_nonlinearity_error": 7.105427357601002e-15
+        }
+      },
+      "final": {
+        "G": 530.2160058908412,
+        "D": 2856.7328600704373,
+        "T": 520.6404348446281,
+        "exact_T_time_derivative": 25407.09917403628,
+        "terms": {
+          "self_amplification": 25425.859862730944,
+          "pressure_response": 2361.452372193332,
+          "viscous_response": -1138.4792746329545,
+          "projection_response": -1241.7337862550492
+        },
+        "budget_error": 7.275957614183426e-12,
+        "residual_enstrophy_pairing": 3.552713678800501e-15,
+        "residual_curl_norm": 50.88625474236259,
+        "viscous_curl_norm": 16.050886970275513,
+        "residual_to_viscous_curl_norm": 3.1703079609618063,
+        "checks": {
+          "pressure_source_error": 2.688976925727241e-14,
+          "retained_nonlinearity_error": 8.343500971684122e-15
+        }
+      }
+    },
+    {
+      "scenario": "quarter_phase",
+      "N": 6,
+      "initial": {
+        "G": 530.8994025572657,
+        "D": 2775.754437058188,
+        "T": -1.1368683772161603e-13,
+        "exact_T_time_derivative": 26293.589228229015,
+        "terms": {
+          "self_amplification": 24631.561755690775,
+          "pressure_response": 1662.0274725382392,
+          "viscous_response": -5.684341886080802e-14,
+          "projection_response": -4.0389678347315804e-28
+        },
+        "budget_error": 0.0,
+        "residual_enstrophy_pairing": 5.36425415550288e-29,
+        "residual_curl_norm": 3.744596010778195e-13,
+        "viscous_curl_norm": 15.368928045826838,
+        "residual_to_viscous_curl_norm": 2.4364718213349785e-14,
+        "checks": {
+          "pressure_source_error": 1.942240413069837e-14,
+          "retained_nonlinearity_error": 7.105427357601002e-15
+        }
+      },
+      "final": {
+        "G": 530.2851758540558,
+        "D": 2860.4668452107458,
+        "T": 526.0605290491553,
+        "exact_T_time_derivative": 26003.449461913984,
+        "terms": {
+          "self_amplification": 25529.93477918474,
+          "pressure_response": 2415.871131644332,
+          "viscous_response": -1171.458201700955,
+          "projection_response": -770.8982472141297
+        },
+        "budget_error": -3.637978807091713e-12,
+        "residual_enstrophy_pairing": 8.881784197001252e-16,
+        "residual_curl_norm": 39.02767233642647,
+        "viscous_curl_norm": 16.098274020694472,
+        "residual_to_viscous_curl_norm": 2.4243389251702423,
+        "checks": {
+          "pressure_source_error": 2.438299850457968e-14,
+          "retained_nonlinearity_error": 1.0805156823142814e-14
+        }
+      }
+    },
+    {
+      "scenario": "opposite_phase",
+      "N": 4,
+      "initial": {
+        "G": 530.8994025572656,
+        "D": 2775.754437058188,
+        "T": -179.78364610277254,
+        "exact_T_time_derivative": 13280.022556977889,
+        "terms": {
+          "self_amplification": 20486.893612676657,
+          "pressure_response": 1699.1124210502426,
+          "viscous_response": 190.51979533392824,
+          "projection_response": -9096.503272082946
+        },
+        "budget_error": 7.275957614183426e-12,
+        "residual_enstrophy_pairing": -2.842170943040401e-14,
+        "residual_curl_norm": 136.14150105818047,
+        "viscous_curl_norm": 15.368928045826834,
+        "residual_to_viscous_curl_norm": 8.85823010246621,
+        "checks": {
+          "pressure_source_error": 2.5121479338940402e-14,
+          "retained_nonlinearity_error": 3.972054645195637e-15
+        }
+      },
+      "final": {
+        "G": 518.1848183427894,
+        "D": 2683.8761346159636,
+        "T": 88.52926243676876,
+        "exact_T_time_derivative": 13384.092119999099,
+        "terms": {
+          "self_amplification": 19924.04773788822,
+          "pressure_response": 2501.9081976301068,
+          "viscous_response": -169.03210526110195,
+          "projection_response": -8872.831710258128
+        },
+        "budget_error": 1.8189894035458565e-12,
+        "residual_enstrophy_pairing": -2.842170943040401e-14,
+        "residual_curl_norm": 133.29848200750587,
+        "viscous_curl_norm": 15.039467895070548,
+        "residual_to_viscous_curl_norm": 8.863244560081597,
+        "checks": {
+          "pressure_source_error": 2.9524418711792076e-14,
+          "retained_nonlinearity_error": 1.1195691744974028e-14
+        }
+      }
+    },
+    {
+      "scenario": "opposite_phase",
+      "N": 5,
+      "initial": {
+        "G": 530.8994025572656,
+        "D": 2775.754437058188,
+        "T": -179.78364610277254,
+        "exact_T_time_derivative": 22270.34744380774,
+        "terms": {
+          "self_amplification": 20486.893612676657,
+          "pressure_response": 1699.1124210502426,
+          "viscous_response": 190.51979533392824,
+          "projection_response": -106.17838525309139
+        },
+        "budget_error": 3.637978807091713e-12,
+        "residual_enstrophy_pairing": 4.215378046623641e-16,
+        "residual_curl_norm": 12.918780908588749,
+        "viscous_curl_norm": 15.368928045826834,
+        "residual_to_viscous_curl_norm": 0.8405778770040256,
+        "checks": {
+          "pressure_source_error": 2.5121479338940402e-14,
+          "retained_nonlinearity_error": 3.972054645195637e-15
+        }
+      },
+      "final": {
+        "G": 521.6344507719399,
+        "D": 2777.8875321595374,
+        "T": 265.8208399259924,
+        "exact_T_time_derivative": 21921.376579644486,
+        "terms": {
+          "self_amplification": 21115.826138260716,
+          "pressure_response": 2752.571381515322,
+          "viscous_response": -774.4555787568536,
+          "projection_response": -1172.5653613746979
+        },
+        "budget_error": 0.0,
+        "residual_enstrophy_pairing": 7.105427357601002e-15,
+        "residual_curl_norm": 48.75049718415416,
+        "viscous_curl_norm": 15.746097795024212,
+        "residual_to_viscous_curl_norm": 3.0960367335937278,
+        "checks": {
+          "pressure_source_error": 3.4981716356178044e-14,
+          "retained_nonlinearity_error": 9.565974336450906e-15
+        }
+      }
+    },
+    {
+      "scenario": "opposite_phase",
+      "N": 6,
+      "initial": {
+        "G": 530.8994025572656,
+        "D": 2775.754437058188,
+        "T": -179.78364610277254,
+        "exact_T_time_derivative": 22376.525829060833,
+        "terms": {
+          "self_amplification": 20486.893612676657,
+          "pressure_response": 1699.1124210502426,
+          "viscous_response": 190.51979533392824,
+          "projection_response": -1.0097419586828951e-28
+        },
+        "budget_error": 3.637978807091713e-12,
+        "residual_enstrophy_pairing": 2.8398992587956425e-29,
+        "residual_curl_norm": 3.59843985019406e-13,
+        "viscous_curl_norm": 15.368928045826834,
+        "residual_to_viscous_curl_norm": 2.3413733472264867e-14,
+        "checks": {
+          "pressure_source_error": 2.5121479338940402e-14,
+          "retained_nonlinearity_error": 3.972054645195637e-15
+        }
+      },
+      "final": {
+        "G": 521.707241581244,
+        "D": 2781.5578789429346,
+        "T": 271.55892153502765,
+        "exact_T_time_derivative": 22602.093364123142,
+        "terms": {
+          "self_amplification": 21187.418495133337,
+          "pressure_response": 2752.323647226148,
+          "viscous_response": -806.9357900409744,
+          "projection_response": -530.7129881953732
+        },
+        "budget_error": 3.637978807091713e-12,
+        "residual_enstrophy_pairing": 0.0,
+        "residual_curl_norm": 31.101103111571884,
+        "viscous_curl_norm": 15.791497365738875,
+        "residual_to_viscous_curl_norm": 1.9694841085208692,
+        "checks": {
+          "pressure_source_error": 4.0315332976839006e-14,
+          "retained_nonlinearity_error": 6.404745667978754e-15
+        }
+      }
+    },
+    {
+      "scenario": "high_frequency_25pct_G",
+      "N": 4,
+      "initial": {
+        "G": 707.865870076354,
+        "D": 5076.318514806338,
+        "T": 179.78364610277248,
+        "exact_T_time_derivative": 19333.12817706573,
+        "terms": {
+          "self_amplification": 59650.11767480051,
+          "pressure_response": 8302.613923524503,
+          "viscous_response": -190.51979533392844,
+          "projection_response": -48429.083625925356
+        },
+        "budget_error": 3.637978807091713e-12,
+        "residual_enstrophy_pairing": -5.684341886080802e-14,
+        "residual_curl_norm": 353.02973382725713,
+        "viscous_curl_norm": 23.136060152607275,
+        "residual_to_viscous_curl_norm": 15.258852695689983,
+        "checks": {
+          "pressure_source_error": 5.33221522225316e-14,
+          "retained_nonlinearity_error": 7.32410687763558e-15
+        }
+      },
+      "final": {
+        "G": 702.4299431061602,
+        "D": 4991.695715995165,
+        "T": 540.4357638158727,
+        "exact_T_time_derivative": 15724.727811337569,
+        "terms": {
+          "self_amplification": 58320.88058149825,
+          "pressure_response": 7625.242175858522,
+          "viscous_response": -689.8264890686744,
+          "projection_response": -49531.56845695053
+        },
+        "budget_error": 5.4569682106375694e-12,
+        "residual_enstrophy_pairing": 5.684341886080802e-14,
+        "residual_curl_norm": 352.79021188450326,
+        "viscous_curl_norm": 22.858333266969563,
+        "residual_to_viscous_curl_norm": 15.43376797267574,
+        "checks": {
+          "pressure_source_error": 2.2652903099741283e-14,
+          "retained_nonlinearity_error": 1.2809491335957509e-14
+        }
+      }
+    },
+    {
+      "scenario": "high_frequency_25pct_G",
+      "N": 5,
+      "initial": {
+        "G": 707.865870076354,
+        "D": 5076.318514806338,
+        "T": 179.78364610277248,
+        "exact_T_time_derivative": 49105.01912894808,
+        "terms": {
+          "self_amplification": 59650.11767480051,
+          "pressure_response": 8302.613923524503,
+          "viscous_response": -190.51979533392844,
+          "projection_response": -18657.192674043003
+        },
+        "budget_error": 0.0,
+        "residual_enstrophy_pairing": 0.0,
+        "residual_curl_norm": 173.7449789349329,
+        "viscous_curl_norm": 23.136060152607275,
+        "residual_to_viscous_curl_norm": 7.509704668335807,
+        "checks": {
+          "pressure_source_error": 5.33221522225316e-14,
+          "retained_nonlinearity_error": 7.32410687763558e-15
+        }
+      },
+      "final": {
+        "G": 712.5285899842926,
+        "D": 5310.662395700394,
+        "T": 1011.815266623048,
+        "exact_T_time_derivative": 29277.878993443766,
+        "terms": {
+          "self_amplification": 55425.445806013,
+          "pressure_response": 6598.625925713535,
+          "viscous_response": -2360.5666382416,
+          "projection_response": -30385.62610004117
+        },
+        "budget_error": 0.0,
+        "residual_enstrophy_pairing": -1.4210854715202004e-14,
+        "residual_curl_norm": 248.71988665439648,
+        "viscous_curl_norm": 24.50355827628013,
+        "residual_to_viscous_curl_norm": 10.150357913330556,
+        "checks": {
+          "pressure_source_error": 3.351623381340333e-14,
+          "retained_nonlinearity_error": 2.2469334198890888e-14
+        }
+      }
+    },
+    {
+      "scenario": "high_frequency_25pct_G",
+      "N": 6,
+      "initial": {
+        "G": 707.865870076354,
+        "D": 5076.3185148063385,
+        "T": 179.78364610277248,
+        "exact_T_time_derivative": 63560.23949455274,
+        "terms": {
+          "self_amplification": 59650.11767480051,
+          "pressure_response": 8302.613923524503,
+          "viscous_response": -190.51979533392844,
+          "projection_response": -4201.972308438351
+        },
+        "budget_error": 7.275957614183426e-12,
+        "residual_enstrophy_pairing": -2.220446049250313e-16,
+        "residual_curl_norm": 76.04377822373394,
+        "viscous_curl_norm": 23.136060152607275,
+        "residual_to_viscous_curl_norm": 3.28680759481706,
+        "checks": {
+          "pressure_source_error": 5.33221522225316e-14,
+          "retained_nonlinearity_error": 7.32410687763558e-15
+        }
+      },
+      "final": {
+        "G": 718.1315663778272,
+        "D": 5535.199299799296,
+        "T": 1318.2587033040188,
+        "exact_T_time_derivative": 46706.77474061839,
+        "terms": {
+          "self_amplification": 56958.44934606565,
+          "pressure_response": 6384.695909016251,
+          "viscous_response": -3863.3869425239495,
+          "projection_response": -12772.98357193956
+        },
+        "budget_error": 0.0,
+        "residual_enstrophy_pairing": 7.105427357601002e-15,
+        "residual_curl_norm": 158.48680901825904,
+        "viscous_curl_norm": 25.957246620681527,
+        "residual_to_viscous_curl_norm": 6.10568645181281,
+        "checks": {
+          "pressure_source_error": 2.7336071744532855e-14,
+          "retained_nonlinearity_error": 3.517007107451656e-14
+        }
+      }
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 4,
+      "initial": {
+        "G": 2831.463480305417,
+        "D": 20305.274059225354,
+        "T": -2.2737367544323206e-13,
+        "exact_T_time_derivative": 275344.42956187006,
+        "terms": {
+          "self_amplification": 938307.736766889,
+          "pressure_response": 111902.03080978707,
+          "viscous_response": 1.3642420526593924e-12,
+          "projection_response": -774865.3380148062
+        },
+        "budget_error": 1.1641532182693481e-10,
+        "residual_enstrophy_pairing": -4.547473508864641e-13,
+        "residual_curl_norm": 1412.118935309029,
+        "viscous_curl_norm": 46.27212030521456,
+        "residual_to_viscous_curl_norm": 30.517705391379973,
+        "checks": {
+          "pressure_source_error": 2.491273180106275e-13,
+          "retained_nonlinearity_error": 2.929642751054232e-14
+        }
+      },
+      "final": {
+        "G": 2840.217594565594,
+        "D": 20270.449915263627,
+        "T": 3939.380042818916,
+        "exact_T_time_derivative": 127631.86400485452,
+        "terms": {
+          "self_amplification": 976222.2161107972,
+          "pressure_response": 133037.46798374204,
+          "viscous_response": -4765.994911822637,
+          "projection_response": -976861.8251778621
+        },
+        "budget_error": -5.820766091346741e-11,
+        "residual_enstrophy_pairing": 0.0,
+        "residual_curl_norm": 1573.5806792324995,
+        "viscous_curl_norm": 45.99174939502253,
+        "residual_to_viscous_curl_norm": 34.21441236594494,
+        "checks": {
+          "pressure_source_error": 1.1849778104645678e-13,
+          "retained_nonlinearity_error": 5.859285502108464e-14
+        }
+      }
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 5,
+      "initial": {
+        "G": 2831.463480305417,
+        "D": 20305.274059225354,
+        "T": -2.2737367544323206e-13,
+        "exact_T_time_derivative": 751694.684791988,
+        "terms": {
+          "self_amplification": 938307.736766889,
+          "pressure_response": 111902.03080978707,
+          "viscous_response": 1.3642420526593924e-12,
+          "projection_response": -298515.0827846883
+        },
+        "budget_error": 2.3283064365386963e-10,
+        "residual_enstrophy_pairing": 0.0,
+        "residual_curl_norm": 694.9799157397318,
+        "viscous_curl_norm": 46.27212030521456,
+        "residual_to_viscous_curl_norm": 15.019409336671616,
+        "checks": {
+          "pressure_source_error": 2.491273180106275e-13,
+          "retained_nonlinearity_error": 5.709267256288867e-14
+        }
+      },
+      "final": {
+        "G": 3008.970554792445,
+        "D": 25655.303107300682,
+        "T": 10642.439751354901,
+        "exact_T_time_derivative": 110174.98487296385,
+        "terms": {
+          "self_amplification": 909785.171291878,
+          "pressure_response": 46825.05926545451,
+          "viscous_response": -29420.997211219386,
+          "projection_response": -817014.2484731495
+        },
+        "budget_error": 2.3283064365386963e-10,
+        "residual_enstrophy_pairing": 5.684341886080802e-14,
+        "residual_curl_norm": 1429.1620471842234,
+        "viscous_curl_norm": 58.771981956887714,
+        "residual_to_viscous_curl_norm": 24.317064009047503,
+        "checks": {
+          "pressure_source_error": 9.325969200702455e-14,
+          "retained_nonlinearity_error": 8.691332069318709e-14
+        }
+      }
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 6,
+      "initial": {
+        "G": 2831.463480305417,
+        "D": 20305.274059225354,
+        "T": -2.2737367544323206e-13,
+        "exact_T_time_derivative": 982978.2106416625,
+        "terms": {
+          "self_amplification": 938307.736766889,
+          "pressure_response": 111902.03080978707,
+          "viscous_response": 1.3642420526593924e-12,
+          "projection_response": -67231.55693501368
+        },
+        "budget_error": 1.1641532182693481e-10,
+        "residual_enstrophy_pairing": 2.1316282072803006e-14,
+        "residual_curl_norm": 304.17511289493586,
+        "viscous_curl_norm": 46.27212030521456,
+        "residual_to_viscous_curl_norm": 6.573615189634121,
+        "checks": {
+          "pressure_source_error": 2.491273180106275e-13,
+          "retained_nonlinearity_error": 5.709267256288867e-14
+        }
+      },
+      "final": {
+        "G": 3080.761227127501,
+        "D": 28831.751237654782,
+        "T": 15143.789496807558,
+        "exact_T_time_derivative": 440974.6878418538,
+        "terms": {
+          "self_amplification": 930840.5275177432,
+          "pressure_response": 76430.15181933448,
+          "viscous_response": -52070.43284870863,
+          "projection_response": -514225.55864651536
+        },
+        "budget_error": 1.7462298274040222e-10,
+        "residual_enstrophy_pairing": 1.7053025658242404e-13,
+        "residual_curl_norm": 1103.2725605828075,
+        "viscous_curl_norm": 67.7334527083685,
+        "residual_to_viscous_curl_norm": 16.28844413606126,
+        "checks": {
+          "pressure_source_error": 8.140804486393404e-14,
+          "retained_nonlinearity_error": 1.1234667099445444e-13
+        }
+      }
+    },
+    {
+      "scenario": "reference",
+      "N": 7,
+      "initial": {
+        "G": 530.8994025572656,
+        "D": 2775.7544370581877,
+        "T": 179.78364610277248,
+        "exact_T_time_derivative": 28417.690557677866,
+        "terms": {
+          "self_amplification": 25637.445882560743,
+          "pressure_response": 2970.764470451053,
+          "viscous_response": -190.51979533392824,
+          "projection_response": 8.077935669463161e-28
+        },
+        "budget_error": -3.637978807091713e-12,
+        "residual_enstrophy_pairing": 6.310887241768095e-30,
+        "residual_curl_norm": 4.3355663113744845e-13,
+        "viscous_curl_norm": 15.368928045826838,
+        "residual_to_viscous_curl_norm": 2.8209946057700045e-14,
+        "checks": {
+          "pressure_source_error": 3.399531182602658e-14,
+          "retained_nonlinearity_error": 7.32410687763558e-15
+        }
+      },
+      "final": {
+        "G": 537.9561661272448,
+        "D": 2904.05947065251,
+        "T": 728.5628018046532,
+        "exact_T_time_derivative": 26373.890992911314,
+        "terms": {
+          "self_amplification": 25706.343066509377,
+          "pressure_response": 2098.3377092708215,
+          "viscous_response": -1325.5380667797106,
+          "projection_response": -105.25171608918073
+        },
+        "budget_error": 7.275957614183426e-12,
+        "residual_enstrophy_pairing": 3.3306690738754696e-16,
+        "residual_curl_norm": 15.164869892694156,
+        "viscous_curl_norm": 16.16454533619393,
+        "residual_to_viscous_curl_norm": 0.9381562906528891,
+        "checks": {
+          "pressure_source_error": 2.5674302340084015e-14,
+          "retained_nonlinearity_error": 9.930136612989092e-15
+        }
+      }
+    },
+    {
+      "scenario": "high_frequency_25pct_G",
+      "N": 7,
+      "initial": {
+        "G": 707.865870076354,
+        "D": 5076.318514806337,
+        "T": 179.78364610277248,
+        "exact_T_time_derivative": 67762.21180299108,
+        "terms": {
+          "self_amplification": 59650.11767480051,
+          "pressure_response": 8302.613923524503,
+          "viscous_response": -190.51979533392844,
+          "projection_response": -6.058451752097371e-28
+        },
+        "budget_error": 0.0,
+        "residual_enstrophy_pairing": -2.524354896707238e-29,
+        "residual_curl_norm": 5.796187665096187e-13,
+        "viscous_curl_norm": 23.136060152607275,
+        "residual_to_viscous_curl_norm": 2.5052613223098817e-14,
+        "checks": {
+          "pressure_source_error": 5.33221522225316e-14,
+          "retained_nonlinearity_error": 7.32410687763558e-15
+        }
+      },
+      "final": {
+        "G": 720.0084293888915,
+        "D": 5652.4727944325095,
+        "T": 1438.8788095293155,
+        "exact_T_time_derivative": 56322.55406418085,
+        "terms": {
+          "self_amplification": 58287.65640741025,
+          "pressure_response": 6551.70611412391,
+          "viscous_response": -4761.550299659398,
+          "projection_response": -3755.258157693913
+        },
+        "budget_error": 0.0,
+        "residual_enstrophy_pairing": -7.105427357601002e-15,
+        "residual_curl_norm": 92.34698768065553,
+        "viscous_curl_norm": 27.070383973863272,
+        "residual_to_viscous_curl_norm": 3.411366006844139,
+        "checks": {
+          "pressure_source_error": 3.406268457066147e-14,
+          "retained_nonlinearity_error": 3.9095617499564923e-14
+        }
+      }
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 7,
+      "initial": {
+        "G": 2831.463480305417,
+        "D": 20305.274059225354,
+        "T": -2.2737367544323206e-13,
+        "exact_T_time_derivative": 1050209.7675766763,
+        "terms": {
+          "self_amplification": 938307.736766889,
+          "pressure_response": 111902.03080978707,
+          "viscous_response": 1.3642420526593924e-12,
+          "projection_response": 1.2924697071141057e-26
+        },
+        "budget_error": 2.3283064365386963e-10,
+        "residual_enstrophy_pairing": 7.573064690121713e-29,
+        "residual_curl_norm": 2.2403616972525577e-12,
+        "viscous_curl_norm": 46.27212030521456,
+        "residual_to_viscous_curl_norm": 4.8417096136398225e-14,
+        "checks": {
+          "pressure_source_error": 2.491273180106275e-13,
+          "retained_nonlinearity_error": 5.709267256288867e-14
+        }
+      },
+      "final": {
+        "G": 3128.771096412186,
+        "D": 31935.276179876193,
+        "T": 18151.28298700804,
+        "exact_T_time_derivative": 592652.39129345,
+        "terms": {
+          "self_amplification": 966771.0018852166,
+          "pressure_response": 82414.8972757824,
+          "viscous_response": -74367.92154725647,
+          "projection_response": -382165.5863202926
+        },
+        "budget_error": 1.1641532182693481e-10,
+        "residual_enstrophy_pairing": 0.0,
+        "residual_curl_norm": 971.1560036175291,
+        "viscous_curl_norm": 78.5234282546538,
+        "residual_to_viscous_curl_norm": 12.367722922998746,
+        "checks": {
+          "pressure_source_error": 1.3453256629268839e-13,
+          "retained_nonlinearity_error": 1.7076139640032664e-13
+        }
+      }
+    }
+  ]
+}

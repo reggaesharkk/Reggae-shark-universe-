@@ -1,0 +1,49 @@
+{
+  "status": "verified finite-grid summary; the companion script emits the full three-offset table",
+  "grid": 32,
+  "threshold_rule": "|omega| >= 2 sqrt(G) at both endpoints",
+  "smallest_offset_radius": 0.19634954084936207,
+  "warning": "The threshold, finite grid, axis-aligned offsets, and sampled maximum are diagnostic choices. This is not the Constantin-Fefferman theorem and does not establish a continuum coherence radius.",
+  "rows": [
+    {
+      "scenario": "reference",
+      "N": 4,
+      "samples": [
+        {"time":0.0,"pair_count":0,"Lmax":null,"rho_upper":null},
+        {"time":0.005,"pair_count":0,"Lmax":null,"rho_upper":null},
+        {"time":0.01,"pair_count":0,"Lmax":null,"rho_upper":null},
+        {"time":0.015,"pair_count":0,"Lmax":null,"rho_upper":null}
+      ]
+    },
+    {
+      "scenario": "reference",
+      "N": 7,
+      "samples": [
+        {"time":0.0,"pair_count":0,"Lmax":null,"rho_upper":null},
+        {"time":0.005,"pair_count":192,"Lmax":0.21002916800083615,"determinant_max":0.11981250024500598,"rho_upper":4.761243447843486},
+        {"time":0.01,"pair_count":192,"Lmax":0.21021379790683772,"determinant_max":0.11511104886227808,"rho_upper":4.75706166748949},
+        {"time":0.015,"pair_count":256,"Lmax":0.2015001787873132,"determinant_max":0.12269051741653744,"rho_upper":4.962774752947077}
+      ]
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 4,
+      "samples": [
+        {"time":0.0,"pair_count":406,"Lmax":0.9046534370611937,"determinant_max":0.808286336436091,"rho_upper":1.1053956786463375},
+        {"time":0.005,"pair_count":614,"Lmax":1.0399921894698498,"determinant_max":0.9387484004611825,"rho_upper":0.9615456828668719},
+        {"time":0.01,"pair_count":818,"Lmax":1.2153722678781498,"determinant_max":1.108648929775028,"rho_upper":0.8227931691627651},
+        {"time":0.015,"pair_count":911,"Lmax":1.2964833002431817,"determinant_max":1.1699874485474084,"rho_upper":0.7713173010500249}
+      ]
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 7,
+      "samples": [
+        {"time":0.0,"pair_count":406,"Lmax":0.9046534370611937,"determinant_max":0.808286336436091,"rho_upper":1.1053956786463375},
+        {"time":0.005,"pair_count":572,"Lmax":1.2654339797028191,"determinant_max":1.1993635194157926,"rho_upper":0.7902427278227862},
+        {"time":0.01,"pair_count":802,"Lmax":1.5213533625972195,"determinant_max":1.4360141390240377,"rho_upper":0.6573094881078929},
+        {"time":0.015,"pair_count":1104,"Lmax":1.8392422197268616,"determinant_max":1.6461956864001466,"rho_upper":0.5437021776003521}
+      ]
+    }
+  ]
+}

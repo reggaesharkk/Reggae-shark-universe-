@@ -1,0 +1,63 @@
+{
+  "schema": "wp16-finite-n11-turnover-certificate-v1",
+  "protocol_version": "PENDING_FIXED_PROTOCOL_ID",
+  "status": "PENDING_INCOMPLETE_CERTIFICATE",
+  "created_at_utc": "PENDING",
+  "fixed_inputs": {
+    "witness_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624",
+    "K36_keys_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+    "exact_anchor_result_sha256": "327378d1ba2978a66484f1266d984d240fdfdaf4c5785889a48eb187c9650885"
+  },
+  "parameters": {
+    "N": 11,
+    "nu": "0.1",
+    "T": "0.003",
+    "observable": "F=I-9O",
+    "initial_pair_count": 112
+  },
+  "predictors": {
+    "predictor_a_sha256": "PENDING",
+    "predictor_b_sha256": "PENDING"
+  },
+  "arithmetic": {
+    "library": "PENDING",
+    "precision_bits": "PENDING",
+    "outward_rounding": true
+  },
+  "segment_count": 120,
+  "segments": [],
+  "aggregate": {
+    "terminal_L2_error_radius_upper": "PENDING",
+    "normalizer_abs_lower": "PENDING",
+    "F0_interval": [
+      "645.8037741471",
+      "645.8037741472"
+    ],
+    "FT_interval": [
+      "PENDING",
+      "PENDING"
+    ]
+  },
+  "generator": {
+    "path": "PENDING",
+    "sha256": "PENDING"
+  },
+  "independent_verifier": {
+    "path": "PENDING",
+    "sha256": "PENDING",
+    "result_sha256": "PENDING",
+    "status": "PENDING",
+    "recomputed_segment_enclosures": false
+  },
+  "gates": {
+    "fixed_input_hashes": false,
+    "predictor_hashes": false,
+    "segment_coverage": false,
+    "error_recurrence": false,
+    "normalizer_positive": false,
+    "initial_margin_positive": true,
+    "endpoint_margin_negative": false,
+    "independent_verifier_pass": false
+  },
+  "claim_boundary": "No theorem until every gate is true. Finite N11 Galerkin trajectory only."
+}

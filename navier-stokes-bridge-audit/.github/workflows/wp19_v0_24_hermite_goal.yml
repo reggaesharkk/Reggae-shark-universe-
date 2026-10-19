@@ -1,0 +1,164 @@
+name: WP19 v0.24 Hermite goal remainder budget
+
+# Completed historical workflow. Manual replay only.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  remainder:
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        M: [14, 15, 16, 17]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy==2.3.5
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+      - name: Download certified lower and higher artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euxo pipefail
+          M=${{ matrix.M }}
+          H=$((M+1))
+          mkdir -p work/lower work/higher
+
+          case "${M}" in
+            14) gh run download 36608785015 --repo '${{ github.repository }}' --name wp19-n14-arb-certificate --dir work/lower ;;
+            15|16|17) gh run download 36669057015 --repo '${{ github.repository }}' --name wp19-same-datum-N${M}-arb --dir work/lower ;;
+          esac
+
+          case "${H}" in
+            15|16|17) gh run download 36669057015 --repo '${{ github.repository }}' --name wp19-same-datum-N${H}-arb --dir work/higher ;;
+            18) gh run download 36706229638 --repo '${{ github.repository }}' --name wp19-same-datum-N18-arb-recovered --dir work/higher ;;
+          esac
+
+          for d in work/lower work/higher; do
+            test -f ${d}/nodes.npy
+            test -f ${d}/rhs.npy
+            test -f ${d}/metadata.json
+            test -f ${d}/000.json
+            test -f ${d}/119.json
+          done
+
+      - name: Run Hermite-consistent remainder budget
+        run: |
+          M=${{ matrix.M }}
+          H=$((M+1))
+          mkdir -p results/wp19_v0_24
+          python src/wp19_v0_24_hermite_goal_remainder.py \
+            --repo . \
+            --M ${M} \
+            --lower-dir work/lower \
+            --higher-dir work/higher \
+            --keys results/wp16_n12_holdout/frozen_K36_ordered_source_orbits.json \
+            --output results/wp19_v0_24/M${M}_to_M${H}.json
+
+      - name: Record transition hash
+        run: |
+          sha256sum results/wp19_v0_24/*.json > results/wp19_v0_24/SHA256SUMS.txt
+
+      - name: Upload transition result
+        uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-24-M${{ matrix.M }}
+          path: results/wp19_v0_24
+          if-no-files-found: error
+          retention-days: 30
+
+  aggregate:
+    needs: remainder
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download transition artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: wp19-v0-24-M*
+          path: gathered
+
+      - name: Aggregate v0.24 gate
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          v23={
+            '14->15':2.3192721117377064,
+            '15->16':0.4383115262716416,
+            '16->17':0.13083052571954365,
+            '17->18':-0.01897664937711219,
+          }
+          rows=[]
+          for M in (14,15,16,17):
+              p=Path(f'gathered/wp19-v0-24-M{M}/M{M}_to_M{M+1}.json')
+              x=json.loads(p.read_text())
+              pair=x['transition']
+              rows.append({
+                  'transition':pair,
+                  'actual_delta_F11':x['actual_delta_F11'],
+                  'v0_23_dual_prediction':v23[pair],
+                  'v0_24_hermite_simpson_dual':x['hermite_simpson_dual_prediction'],
+                  'dual_refinement_abs_difference':abs(x['hermite_simpson_dual_prediction']-v23[pair]),
+                  'total_relative_remainder':x['total_relative_remainder'],
+                  'endpoint_taylor_remainder_observed':x['endpoint_taylor_remainder_observed'],
+                  'dynamic_remainder_observed':x['dynamic_remainder_endpoint_linear_minus_dual'],
+                  'nonlinear_radius_bound_scout':x['nonlinear_dynamic_remainder_candidate']['radius_augmented_simpson_bound_scout'],
+                  'nonlinear_bound_over_observed':x['nonlinear_dynamic_remainder_candidate']['radius_bound_over_observed'],
+                  'adjoint_gradient_fourier_l1_max':x['adjoint_gradient_fourier_l1_max'],
+                  'state_difference_max_scout':x['state_difference']['radius_augmented_max_halfgrid_L2_scout'],
+                  'full_reconstruction_residual_max_L2':x['full_reconstruction_residual_max_L2'],
+              })
+
+          max_rel=max(r['total_relative_remainder'] for r in rows)
+          bounds=[r['nonlinear_radius_bound_scout'] for r in rows]
+          decreasing=all(bounds[i+1] < bounds[i] for i in range(len(bounds)-1))
+          useful=(max_rel < 0.03 and decreasing and bounds[-1] < 5.0)
+          summary={
+              'schema':'wp19-v0.24-hermite-goal-remainder-summary-v1',
+              'copyright':'Copyright (c) 2026 Prince Upadhyay. All Rights Reserved.',
+              'status':'PASS INTERVALIZATION-DESIGN GATE' if useful else 'SHARPEN REMAINDER BOUND BEFORE INTERVALIZATION',
+              'rows':rows,
+              'maximum_total_relative_remainder':max_rel,
+              'nonlinear_bound_monotone_decrease_over_sampled_pairs':decreasing,
+              'proceed_to_intervalization':useful,
+              'claim_boundary':'Floating Hermite/Simpson/remainder-budget scout only; no new interval, all-N, or continuum theorem.'
+          }
+          Path('final').mkdir()
+          Path('final/WP19_v0_24_SUMMARY.json').write_text(json.dumps(summary,indent=2,sort_keys=True)+'\n')
+          for p in Path('gathered').glob('wp19-v0-24-M*/M*_to_M*.json'):
+              (Path('final')/p.name).write_bytes(p.read_bytes())
+          print(json.dumps(summary,indent=2))
+          PY
+
+      - name: Record final hashes
+        run: |
+          find final -type f -print0 | sort -z | xargs -0 sha256sum > final/SHA256SUMS.txt
+
+      - name: Upload aggregate result
+        uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-24-hermite-goal-remainder
+          path: final
+          if-no-files-found: error
+          retention-days: 30

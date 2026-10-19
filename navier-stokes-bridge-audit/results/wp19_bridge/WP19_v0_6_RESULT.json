@@ -1,0 +1,53 @@
+{
+  "C500_N11_outside_mass_capture_fraction": 0.9994122170697335,
+  "C500_selection_status": "post-hoc exploratory selection; frozen now for any future untouched cutoff test",
+  "C500_sha256": "79bdc347358705b4611f10f76a50db16e5edff572d1822ca1459cd868e15c216",
+  "K36_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+  "adjoint_scout": {
+    "N11_to_N12": {
+      "actual_delta_G": -7.336519984897315,
+      "base_upper_G_C500": -47.8162782412821,
+      "higher_projected_upper_G_C500": -55.152798226179414,
+      "linearization_remainder": 0.1694031231508255,
+      "linearized_dual_weighted_defect_sum": -7.50592310804814,
+      "max_absolute_single_step_contribution": 0.14709870366092476,
+      "max_adjoint_norm": 3101.113170966507,
+      "negative_contribution_sum": -8.497682322638692,
+      "negative_step_count": 100,
+      "positive_contribution_sum": 0.9917592145905528,
+      "positive_step_count": 20,
+      "sum_absolute_dual_weighted_defect_contributions": 9.489441537229245,
+      "terminal_adjoint_norm": 2889.1993378341
+    },
+    "N12_to_N13": {
+      "actual_delta_G": -0.6077085239145674,
+      "base_upper_G_C500": -55.152798226179414,
+      "higher_projected_upper_G_C500": -55.76050675009398,
+      "linearization_remainder": -0.0027679504725585113,
+      "linearized_dual_weighted_defect_sum": -0.6049405734420089,
+      "max_absolute_single_step_contribution": 0.08052423005261047,
+      "max_adjoint_norm": 3118.148453664432,
+      "negative_contribution_sum": -3.401896764231175,
+      "negative_step_count": 66,
+      "positive_contribution_sum": 2.7969561907891665,
+      "positive_step_count": 54,
+      "sum_absolute_dual_weighted_defect_contributions": 6.1988529550203415,
+      "terminal_adjoint_norm": 2889.1619206679966
+    }
+  },
+  "claim_boundary": {
+    "exact": "For every state with nonzero normalizer at cutoff M>=11, the full frozen K36 observable F_M is bounded above by the signed C500 surrogate G_C500, which depends only on a fixed finite set of 1,159 Fourier modes.",
+    "not_claimed": "No cutoff-uniform dynamical bound, continuum convergence theorem, blowup theorem, or global regularity result.",
+    "scouting_only": "The discrete-adjoint numerical values use saved floating predictor paths and are not interval certificates."
+  },
+  "selected_orbit_max_norm": 11.0,
+  "selected_orbit_max_squared_norm": 121,
+  "status": "exact signed-coalition upper-observable theorem + non-rigorous discrete-adjoint scout",
+  "support_counts": {
+    "11": {"ordered_source_pairs": 1048, "unique_fourier_modes": 1159},
+    "12": {"ordered_source_pairs": 1048, "unique_fourier_modes": 1159},
+    "13": {"ordered_source_pairs": 1048, "unique_fourier_modes": 1159},
+    "14": {"ordered_source_pairs": 1048, "unique_fourier_modes": 1159},
+    "17": {"ordered_source_pairs": 1048, "unique_fourier_modes": 1159}
+  }
+}

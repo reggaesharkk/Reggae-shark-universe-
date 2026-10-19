@@ -1,0 +1,46 @@
+{
+  "status": "executed shell7-shell4 internal compression result",
+  "source": "wp16_shell7_shell4_internal_compression_results.json",
+  "target": {
+    "pair_count": 314,
+    "C_gain_pct": 5.112170762309987,
+    "N_change_pct": 1.6965242521991497,
+    "P_plus_change_pct": -3.249525231321315
+  },
+  "best_taxonomy": "sorted absolute-coordinate orbit",
+  "dominant_single_orbit": {
+    "class": [0,3,6],
+    "pair_count": 12,
+    "C_gain_pct": 2.811369186096857,
+    "fraction_of_target_C_gain": 0.5499364784181253,
+    "N_change_pct": 2.331620453265826,
+    "P_plus_change_pct": -0.4666300396823364
+  },
+  "three_orbit_subset": {
+    "classes": [[0,3,6],[0,2,3],[1,4,5]],
+    "pair_count": 48,
+    "pair_fraction": 0.15286624203821655,
+    "C_gain_pct": 4.287318688624908,
+    "fraction_of_target_C_gain": 0.8386493503373583
+  },
+  "six_orbit_subset": {
+    "classes": [[0,3,6],[0,2,3],[1,4,5],[0,1,3],[0,1,6],[1,1,3]],
+    "pair_count": 84,
+    "pair_fraction": 0.267515923566879,
+    "C_gain_pct": 5.094631165905206,
+    "fraction_of_target_C_gain": 0.996569051148664,
+    "N_change_pct": 2.646094089897999,
+    "P_plus_change_pct": -2.3298403056782657,
+    "fraction_of_target_Pplus_depletion": 0.7169786783686277
+  },
+  "sign_pattern_225_pair_subset": {
+    "pair_count": 225,
+    "pair_fraction": 0.7165605095541401,
+    "C_gain_pct": 5.097808187624686,
+    "fraction_of_target_C_gain": 0.9971905135111703,
+    "P_plus_change_pct": -3.048980900901921,
+    "fraction_of_target_Pplus_depletion": 0.9382850366920064
+  },
+  "conclusion": "Absolute-coordinate orbits strongly compress the shell7/shell4 quotient gain: six orbits using 84 of 314 pairs recover 99.66% of target C gain. However, they recover only 71.7% of target P_plus depletion, so quotient compression is stronger than denominator-mechanism compression.",
+  "next_target": "Cross-cutoff orbit-response matrix and singular-spectrum audit on N10 and N11 to test persistence and effective rank."
+}

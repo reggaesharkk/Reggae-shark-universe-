@@ -1,0 +1,17 @@
+{
+  "schema": "wp19-v0.10-summary-v1",
+  "status": "PASS at N11,N12,N13",
+  "certified_signed_numerator_negative": {"11": true, "12": true, "13": true},
+  "certified_G_upper_decimal": {
+    "11": "-44.84468560750583",
+    "12": "-54.41406495135733",
+    "13": "-54.96100844772338"
+  },
+  "normalizer_true_lower_bound_decimal": {
+    "11": "51416.57915303983",
+    "12": "51349.83296890201",
+    "13": "51109.15921574555"
+  },
+  "method": "exact rational endpoint + group-specific Cauchy source perturbation + v0.9 K36 sign lock",
+  "continuum_claim": false
+}

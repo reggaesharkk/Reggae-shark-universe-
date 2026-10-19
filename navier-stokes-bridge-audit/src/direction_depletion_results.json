@@ -1,0 +1,120 @@
+{
+  "grid": 32,
+  "offsets": [1, 2, 4],
+  "tracked_cases": [
+    ["combined_double_quarter_high", 4],
+    ["combined_double_quarter_high", 7],
+    ["reference", 4],
+    ["reference", 7]
+  ],
+  "interval": [0.0, 0.015],
+  "definition": "For axis-aligned offsets h, weight by |omega(x)|^2|omega(x+h)|/|h|^3. angular_ratio inserts |xi(x) cross xi(x+h)|; determinant_ratio inserts |(xi(x) cross xi(x+h)) dot h_hat|.",
+  "literature_context": "Inspired by Constantin-Fefferman vorticity-direction depletion. The exact theorem uses geometric coherence in high-vorticity regions; this script is only a finite-grid local proxy.",
+  "warning": "Not the full periodic Biot-Savart kernel, not a proof criterion, and not a continuum limit. Grid offsets are fixed physical separations on a 32^3 torus grid. Values can be grid-sensitive.",
+  "rows": [
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 4,
+      "samples": [
+        {"time":0.0,"G":2831.46348031,"T":-2.2737367544323206e-13,"scales":[
+          {"grid_step":1,"radius":0.19634954084936207,"angular_ratio":0.14701791407667322,"determinant_ratio":0.08058232708006109},
+          {"grid_step":2,"radius":0.39269908169872414,"angular_ratio":0.2982548891013847,"determinant_ratio":0.16090122909000634},
+          {"grid_step":4,"radius":0.7853981633974483,"angular_ratio":0.575870005927198,"determinant_ratio":0.29265085909771976}
+        ]},
+        {"time":0.005,"G":2817.86128214,"T":1294.6210766529853,"scales":[
+          {"grid_step":1,"radius":0.19634954084936207,"angular_ratio":0.1483589918281327,"determinant_ratio":0.08033922090922153},
+          {"grid_step":2,"radius":0.39269908169872414,"angular_ratio":0.30074953220693756,"determinant_ratio":0.16038127477352043},
+          {"grid_step":4,"radius":0.7853981633974483,"angular_ratio":0.5790881743000441,"determinant_ratio":0.2926106471534211}
+        ]},
+        {"time":0.01,"G":2816.28217743,"T":2380.1410228032983,"scales":[
+          {"grid_step":1,"radius":0.19634954084936207,"angular_ratio":0.14978259781299216,"determinant_ratio":0.07988400774330238},
+          {"grid_step":2,"radius":0.39269908169872414,"angular_ratio":0.30334529714107045,"determinant_ratio":0.15940815959233068},
+          {"grid_step":4,"radius":0.7853981633974483,"angular_ratio":0.5823830423246438,"determinant_ratio":0.29187643276809283}
+        ]},
+        {"time":0.015,"G":2824.41777557,"T":3244.1438529903908,"scales":[
+          {"grid_step":1,"radius":0.19634954084936207,"angular_ratio":0.1507789417180841,"determinant_ratio":0.07935571201663141},
+          {"grid_step":2,"radius":0.39269908169872414,"angular_ratio":0.3050911568523547,"determinant_ratio":0.1584294363898114},
+          {"grid_step":4,"radius":0.7853981633974483,"angular_ratio":0.5843892969887611,"determinant_ratio":0.29124982845871905}
+        ]}
+      ]
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 7,
+      "samples": [
+        {"time":0.0,"G":2831.46348031,"T":-2.2737367544323206e-13,"scales":[
+          {"grid_step":1,"radius":0.19634954084936207,"angular_ratio":0.14701791407667322,"determinant_ratio":0.08058232708006109},
+          {"grid_step":2,"radius":0.39269908169872414,"angular_ratio":0.2982548891013847,"determinant_ratio":0.16090122909000634},
+          {"grid_step":4,"radius":0.7853981633974483,"angular_ratio":0.575870005927198,"determinant_ratio":0.29265085909771976}
+        ]},
+        {"time":0.005,"G":2837.13128378,"T":5206.654384856862,"scales":[
+          {"grid_step":1,"radius":0.19634954084936207,"angular_ratio":0.14907254776651507,"determinant_ratio":0.08130853644160448},
+          {"grid_step":2,"radius":0.39269908169872414,"angular_ratio":0.3018533699045796,"determinant_ratio":0.16182314202328957},
+          {"grid_step":4,"radius":0.7853981633974483,"angular_ratio":0.5788881321573586,"determinant_ratio":0.29250879796849255}
+        ]},
+        {"time":0.01,"G":2892.7345752,"T":10210.974072915324,"scales":[
+          {"grid_step":1,"radius":0.19634954084936207,"angular_ratio":0.15459806847297933,"determinant_ratio":0.0851600295816091},
+          {"grid_step":2,"radius":0.39269908169872414,"angular_ratio":0.31187777673423295,"determinant_ratio":0.16832463358991676},
+          {"grid_step":4,"radius":0.7853981633974483,"angular_ratio":0.5869422025609746,"determinant_ratio":0.2972432556494818}
+        ]},
+        {"time":0.015,"G":2993.04786206,"T":14658.52623852628,"scales":[
+          {"grid_step":1,"radius":0.19634954084936207,"angular_ratio":0.16316673613800747,"determinant_ratio":0.09189160511869154},
+          {"grid_step":2,"radius":0.39269908169872414,"angular_ratio":0.3276002145240044,"determinant_ratio":0.1802183761307143},
+          {"grid_step":4,"radius":0.7853981633974483,"angular_ratio":0.600602999267693,"determinant_ratio":0.3086317227448108}
+        ]}
+      ]
+    },
+    {
+      "scenario": "reference",
+      "N": 4,
+      "samples": [
+        {"time":0.0,"G":530.899402557,"T":179.78364610277254,"scales":[
+          {"grid_step":1,"radius":0.19634954084936207,"angular_ratio":0.11714095928632977,"determinant_ratio":0.06500829214761066},
+          {"grid_step":2,"radius":0.39269908169872414,"angular_ratio":0.24130886762830075,"determinant_ratio":0.13278131595533843},
+          {"grid_step":4,"radius":0.7853981633974483,"angular_ratio":0.509836533057873,"determinant_ratio":0.27050747691724364}
+        ]},
+        {"time":0.005,"G":530.404979318,"T":275.3716602996271,"scales":[
+          {"grid_step":1,"radius":0.19634954084936207,"angular_ratio":0.11773569789111141,"determinant_ratio":0.06542132262309427},
+          {"grid_step":2,"radius":0.39269908169872414,"angular_ratio":0.24253949829247276,"determinant_ratio":0.13366329401235105},
+          {"grid_step":4,"radius":0.7853981633974483,"angular_ratio":0.5119318618591194,"determinant_ratio":0.2724232148864295}
+        ]},
+        {"time":0.01,"G":530.855684523,"T":368.4036718698158,"scales":[
+          {"grid_step":1,"radius":0.19634954084936207,"angular_ratio":0.11835758041023864,"determinant_ratio":0.06580834231170707},
+          {"grid_step":2,"radius":0.39269908169872414,"angular_ratio":0.24380476801791326,"determinant_ratio":0.1344503262376428},
+          {"grid_step":4,"radius":0.7853981633974483,"angular_ratio":0.5140668125649613,"determinant_ratio":0.2741448220784774}
+        ]},
+        {"time":0.015,"G":532.213284939,"T":458.16452296258456,"scales":[
+          {"grid_step":1,"radius":0.19634954084936207,"angular_ratio":0.11900638628295607,"determinant_ratio":0.06616818241221038},
+          {"grid_step":2,"radius":0.39269908169872414,"angular_ratio":0.24511767434776266,"determinant_ratio":0.1352403265282569},
+          {"grid_step":4,"radius":0.7853981633974483,"angular_ratio":0.5162184004952889,"determinant_ratio":0.27572636278954615}
+        ]}
+      ]
+    },
+    {
+      "scenario": "reference",
+      "N": 7,
+      "samples": [
+        {"time":0.0,"G":530.899402557,"T":179.78364610277254,"scales":[
+          {"grid_step":1,"radius":0.19634954084936207,"angular_ratio":0.11714095928632977,"determinant_ratio":0.06500829214761066},
+          {"grid_step":2,"radius":0.39269908169872414,"angular_ratio":0.24130886762830075,"determinant_ratio":0.13278131595533843},
+          {"grid_step":4,"radius":0.7853981633974483,"angular_ratio":0.509836533057873,"determinant_ratio":0.27050747691724364}
+        ]},
+        {"time":0.005,"G":530.629757661,"T":320.69851325602684,"scales":[
+          {"grid_step":1,"radius":0.19634954084936207,"angular_ratio":0.11801006751875148,"determinant_ratio":0.06547106793727814},
+          {"grid_step":2,"radius":0.39269908169872414,"angular_ratio":0.24299317202737553,"determinant_ratio":0.1336979095007994},
+          {"grid_step":4,"radius":0.7853981633974483,"angular_ratio":0.5128378281240511,"determinant_ratio":0.2724714583568311}
+        ]},
+        {"time":0.01,"G":531.746749326,"T":459.22562157499124,"scales":[
+          {"grid_step":1,"radius":0.19634954084936207,"angular_ratio":0.11895061440851547,"determinant_ratio":0.06600146566313253},
+          {"grid_step":2,"radius":0.39269908169872414,"angular_ratio":0.24483867921535546,"determinant_ratio":0.134734457002993},
+          {"grid_step":4,"radius":0.7853981633974483,"angular_ratio":0.5159799449741307,"determinant_ratio":0.2745233342798348}
+        ]},
+        {"time":0.015,"G":534.204742714,"T":595.2481964042577,"scales":[
+          {"grid_step":1,"radius":0.19634954084936207,"angular_ratio":0.11989339569139873,"determinant_ratio":0.06651842910753318},
+          {"grid_step":2,"radius":0.39269908169872414,"angular_ratio":0.24673394709958332,"determinant_ratio":0.1358651075441127},
+          {"grid_step":4,"radius":0.7853981633974483,"angular_ratio":0.5191391119941088,"determinant_ratio":0.276721316215642}
+        ]}
+      ]
+    }
+  ]
+}

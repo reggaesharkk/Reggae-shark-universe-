@@ -1,0 +1,426 @@
+{
+  "formula": "Delta p=-tr[(grad u)^2]; H_ij=partial_i partial_j p. For full smooth NS, (D/Dt)(S omega)=-H omega+viscous terms; Galerkin gradient evolution has an additional cutoff residual.",
+  "warning": "Pressure-response and self-amplification are instantaneous quartic diagnostics, not the observed time derivative of T in the truncated ODE. Mask and conditional statistics use approximate quadrature. No cutoff-uniform or a priori estimate.",
+  "rows": [
+    {
+      "scenario": "reference",
+      "N": 4,
+      "initial": {
+        "grid": 32,
+        "G": 530.8994025572656,
+        "T": 179.78364610277248,
+        "high_region_volume": 0.10009765625,
+        "high_region_G_fraction": 0.2845646563800585,
+        "self_amplification": {
+          "global_mean": 25637.445882560743,
+          "high_region_integral": 13108.226690926447,
+          "outside_integral": 12529.219191634293,
+          "high_region_conditional_mean": 130954.38177081643
+        },
+        "pressure_response": {
+          "global_mean": 2970.764470451053,
+          "high_region_integral": -366.2537916176524,
+          "outside_integral": 3337.018262068706,
+          "high_region_conditional_mean": -3658.9647084534236
+        },
+        "isotropic_pressure_response": {
+          "global_mean": -4604.058755162741,
+          "high_region_integral": -7338.627841593374,
+          "outside_integral": 2734.5690864306325,
+          "high_region_conditional_mean": -73314.68204674746
+        },
+        "deviatoric_pressure_response": {
+          "global_mean": 7574.823225613794,
+          "high_region_integral": 6972.374049975721,
+          "outside_integral": 602.4491756380734,
+          "high_region_conditional_mean": 69655.71733829404
+        },
+        "combined_inviscid_response": {
+          "global_mean": 28608.210353011793,
+          "high_region_integral": 12741.972899308796,
+          "outside_integral": 15866.237453703,
+          "high_region_conditional_mean": 127295.41706236299
+        },
+        "smooth_vorticity_weight": {
+          "spatial_mean": 0.40625748005399076,
+          "weighted_pressure_integral": 1498.781023904282,
+          "weighted_self_integral": 17159.2376746855,
+          "weighted_pressure_mean": 3689.2392078666394
+        },
+        "diagnostics": {
+          "pressure_source_max_error": 3.399531182602658e-14,
+          "pressure_Poisson_max_error": 1.7053025658242404e-13,
+          "global_S_dot_H": -1.4210854715202004e-14,
+          "Fourier_minus_spatial_T": -8.526512829121202e-14
+        }
+      },
+      "final": {
+        "grid": 32,
+        "G": 534.4330722270936,
+        "T": 544.0264397291571,
+        "high_region_volume": 0.1005859375,
+        "high_region_G_fraction": 0.2936568844507674,
+        "self_amplification": {
+          "global_mean": 24543.366241185562,
+          "high_region_integral": 12936.414262691778,
+          "outside_integral": 11606.95197849378,
+          "high_region_conditional_mean": 128610.56509705225
+        },
+        "pressure_response": {
+          "global_mean": 2363.085815826452,
+          "high_region_integral": 383.10684633550454,
+          "outside_integral": 1979.978969490947,
+          "high_region_conditional_mean": 3808.751559685015
+        },
+        "isotropic_pressure_response": {
+          "global_mean": -3686.780781283306,
+          "high_region_integral": -5255.306879578201,
+          "outside_integral": 1568.5260982948948,
+          "high_region_conditional_mean": -52246.93441444736
+        },
+        "deviatoric_pressure_response": {
+          "global_mean": 6049.866597109757,
+          "high_region_integral": 5638.413725913706,
+          "outside_integral": 411.4528711960521,
+          "high_region_conditional_mean": 56055.68597413238
+        },
+        "combined_inviscid_response": {
+          "global_mean": 26906.45205701201,
+          "high_region_integral": 13319.521109027282,
+          "outside_integral": 13586.930947984729,
+          "high_region_conditional_mean": 132419.31665673727
+        },
+        "smooth_vorticity_weight": {
+          "spatial_mean": 0.40463171215129234,
+          "weighted_pressure_integral": 1276.1236601676917,
+          "weighted_self_integral": 16462.040658123075,
+          "weighted_pressure_mean": 3153.790525668308
+        },
+        "diagnostics": {
+          "pressure_source_max_error": 3.3820826609804605e-14,
+          "pressure_Poisson_max_error": 1.1368683772161603e-13,
+          "global_S_dot_H": 1.7763568394002505e-14,
+          "Fourier_minus_spatial_T": -2.2737367544323206e-13
+        }
+      },
+      "endpoint_grid48_minus_grid32_high_pressure_integral": -186.365171034363,
+      "endpoint_grid48_minus_grid32_global_pressure_integral": -4.547473508864641e-12,
+      "endpoint_grid48_minus_grid32_smooth_weighted_pressure": -0.001651822451094631
+    },
+    {
+      "scenario": "reference",
+      "N": 7,
+      "initial": {
+        "grid": 32,
+        "G": 530.8994025572656,
+        "T": 179.78364610277248,
+        "high_region_volume": 0.10009765625,
+        "high_region_G_fraction": 0.2845646563800585,
+        "self_amplification": {
+          "global_mean": 25637.445882560743,
+          "high_region_integral": 13108.226690926447,
+          "outside_integral": 12529.219191634293,
+          "high_region_conditional_mean": 130954.38177081643
+        },
+        "pressure_response": {
+          "global_mean": 2970.764470451053,
+          "high_region_integral": -366.2537916176524,
+          "outside_integral": 3337.018262068706,
+          "high_region_conditional_mean": -3658.9647084534236
+        },
+        "isotropic_pressure_response": {
+          "global_mean": -4604.058755162741,
+          "high_region_integral": -7338.627841593374,
+          "outside_integral": 2734.5690864306325,
+          "high_region_conditional_mean": -73314.68204674746
+        },
+        "deviatoric_pressure_response": {
+          "global_mean": 7574.823225613794,
+          "high_region_integral": 6972.374049975721,
+          "outside_integral": 602.4491756380734,
+          "high_region_conditional_mean": 69655.71733829404
+        },
+        "combined_inviscid_response": {
+          "global_mean": 28608.210353011793,
+          "high_region_integral": 12741.972899308796,
+          "outside_integral": 15866.237453703,
+          "high_region_conditional_mean": 127295.41706236299
+        },
+        "smooth_vorticity_weight": {
+          "spatial_mean": 0.40625748005399076,
+          "weighted_pressure_integral": 1498.781023904282,
+          "weighted_self_integral": 17159.2376746855,
+          "weighted_pressure_mean": 3689.2392078666394
+        },
+        "diagnostics": {
+          "pressure_source_max_error": 3.399531182602658e-14,
+          "pressure_Poisson_max_error": 1.7053025658242404e-13,
+          "global_S_dot_H": -1.4210854715202004e-14,
+          "Fourier_minus_spatial_T": -8.526512829121202e-14
+        }
+      },
+      "final": {
+        "grid": 32,
+        "G": 537.9561661272448,
+        "T": 728.5628018046532,
+        "high_region_volume": 0.1005859375,
+        "high_region_G_fraction": 0.3193296256593143,
+        "self_amplification": {
+          "global_mean": 25706.343066509377,
+          "high_region_integral": 14845.326273769737,
+          "outside_integral": 10861.016792739641,
+          "high_region_conditional_mean": 147588.48644990497
+        },
+        "pressure_response": {
+          "global_mean": 2098.3377092708215,
+          "high_region_integral": 300.4132406516476,
+          "outside_integral": 1797.9244686191746,
+          "high_region_conditional_mean": 2986.632606090164
+        },
+        "isotropic_pressure_response": {
+          "global_mean": -3562.4857344469397,
+          "high_region_integral": -4558.853035601362,
+          "outside_integral": 996.3673011544221,
+          "high_region_conditional_mean": -45322.96610151257
+        },
+        "deviatoric_pressure_response": {
+          "global_mean": 5660.823443717762,
+          "high_region_integral": 4859.266276253009,
+          "outside_integral": 801.557167464752,
+          "high_region_conditional_mean": 48309.59870760273
+        },
+        "combined_inviscid_response": {
+          "global_mean": 27804.6807757802,
+          "high_region_integral": 15145.739514421388,
+          "outside_integral": 12658.941261358814,
+          "high_region_conditional_mean": 150575.11905599516
+        },
+        "smooth_vorticity_weight": {
+          "spatial_mean": 0.4007605638890012,
+          "weighted_pressure_integral": 1129.9909906955545,
+          "weighted_self_integral": 17631.00640807132,
+          "weighted_pressure_mean": 2819.616231023491
+        },
+        "diagnostics": {
+          "pressure_source_max_error": 2.5674302340084015e-14,
+          "pressure_Poisson_max_error": 1.7053025658242404e-13,
+          "global_S_dot_H": 3.197442310920451e-14,
+          "Fourier_minus_spatial_T": 0.0
+        }
+      },
+      "endpoint_grid48_minus_grid32_high_pressure_integral": 114.95067499857441,
+      "endpoint_grid48_minus_grid32_global_pressure_integral": -5.4569682106375694e-12,
+      "endpoint_grid48_minus_grid32_smooth_weighted_pressure": 0.007376473655313021
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 4,
+      "initial": {
+        "grid": 32,
+        "G": 2831.463480305417,
+        "T": -2.2737367544323206e-13,
+        "high_region_volume": 0.100006103515625,
+        "high_region_G_fraction": 0.2920894538769454,
+        "self_amplification": {
+          "global_mean": 938307.736766889,
+          "high_region_integral": 337976.0580639915,
+          "outside_integral": 600331.6787028976,
+          "high_region_conditional_mean": 3379554.3090146086
+        },
+        "pressure_response": {
+          "global_mean": 111902.03080978707,
+          "high_region_integral": -40471.66680260855,
+          "outside_integral": 152373.69761239563,
+          "high_region_conditional_mean": -404691.96758861066
+        },
+        "isotropic_pressure_response": {
+          "global_mean": -480570.20527738007,
+          "high_region_integral": -403521.8548973714,
+          "outside_integral": -77048.35038000868,
+          "high_region_conditional_mean": -4034972.2738105166
+        },
+        "deviatoric_pressure_response": {
+          "global_mean": 592472.2360871672,
+          "high_region_integral": 363050.18809476274,
+          "outside_integral": 229422.04799240432,
+          "high_region_conditional_mean": 3630280.3062219066
+        },
+        "combined_inviscid_response": {
+          "global_mean": 1050209.767576676,
+          "high_region_integral": 297504.3912613829,
+          "outside_integral": 752705.3763152934,
+          "high_region_conditional_mean": 2974862.3414259986
+        },
+        "smooth_vorticity_weight": {
+          "spatial_mean": 0.4248380614796664,
+          "weighted_pressure_integral": 28287.074715776682,
+          "weighted_self_integral": 563737.0955620973,
+          "weighted_pressure_mean": 66583.193175432
+        },
+        "diagnostics": {
+          "pressure_source_max_error": 2.491273180106275e-13,
+          "pressure_Poisson_max_error": 1.8189894035458565e-12,
+          "global_S_dot_H": -2.842170943040401e-14,
+          "Fourier_minus_spatial_T": 7.815970093361102e-14
+        }
+      },
+      "final": {
+        "grid": 32,
+        "G": 2840.217594565594,
+        "T": 3939.380042818916,
+        "high_region_volume": 0.100006103515625,
+        "high_region_G_fraction": 0.31910800200317124,
+        "self_amplification": {
+          "global_mean": 976222.2161107972,
+          "high_region_integral": 381874.49364654673,
+          "outside_integral": 594347.7224642504,
+          "high_region_conditional_mean": 3818511.872996657
+        },
+        "pressure_response": {
+          "global_mean": 133037.46798374204,
+          "high_region_integral": -56348.81689423572,
+          "outside_integral": 189386.28487797774,
+          "high_region_conditional_mean": -563453.7784529496
+        },
+        "isotropic_pressure_response": {
+          "global_mean": -557073.4239013381,
+          "high_region_integral": -544065.7725829985,
+          "outside_integral": -13007.651318339784,
+          "high_region_conditional_mean": -5440325.674702379
+        },
+        "deviatoric_pressure_response": {
+          "global_mean": 690110.8918850803,
+          "high_region_integral": 487716.9556887627,
+          "outside_integral": 202393.93619631752,
+          "high_region_conditional_mean": 4876871.896249428
+        },
+        "combined_inviscid_response": {
+          "global_mean": 1109259.6840945391,
+          "high_region_integral": 325525.67675231106,
+          "outside_integral": 783734.0073422282,
+          "high_region_conditional_mean": 3255058.094543707
+        },
+        "smooth_vorticity_weight": {
+          "spatial_mean": 0.4162335589705842,
+          "weighted_pressure_integral": 36959.883085475456,
+          "weighted_self_integral": 605813.2501500861,
+          "weighted_pressure_mean": 88796.01917943252
+        },
+        "diagnostics": {
+          "pressure_source_max_error": 1.1849778104645678e-13,
+          "pressure_Poisson_max_error": 1.8189894035458565e-12,
+          "global_S_dot_H": -2.8421709430404007e-13,
+          "Fourier_minus_spatial_T": 3.637978807091713e-12
+        }
+      },
+      "endpoint_grid48_minus_grid32_high_pressure_integral": -1428.1339589111667,
+      "endpoint_grid48_minus_grid32_global_pressure_integral": -2.9103830456733704e-10,
+      "endpoint_grid48_minus_grid32_smooth_weighted_pressure": 0.18530445535725448
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 7,
+      "initial": {
+        "grid": 32,
+        "G": 2831.463480305417,
+        "T": -2.2737367544323206e-13,
+        "high_region_volume": 0.100006103515625,
+        "high_region_G_fraction": 0.2920894538769454,
+        "self_amplification": {
+          "global_mean": 938307.736766889,
+          "high_region_integral": 337976.0580639915,
+          "outside_integral": 600331.6787028976,
+          "high_region_conditional_mean": 3379554.3090146086
+        },
+        "pressure_response": {
+          "global_mean": 111902.03080978707,
+          "high_region_integral": -40471.66680260855,
+          "outside_integral": 152373.69761239563,
+          "high_region_conditional_mean": -404691.96758861066
+        },
+        "isotropic_pressure_response": {
+          "global_mean": -480570.20527738007,
+          "high_region_integral": -403521.8548973714,
+          "outside_integral": -77048.35038000868,
+          "high_region_conditional_mean": -4034972.2738105166
+        },
+        "deviatoric_pressure_response": {
+          "global_mean": 592472.2360871672,
+          "high_region_integral": 363050.18809476274,
+          "outside_integral": 229422.04799240432,
+          "high_region_conditional_mean": 3630280.3062219066
+        },
+        "combined_inviscid_response": {
+          "global_mean": 1050209.767576676,
+          "high_region_integral": 297504.3912613829,
+          "outside_integral": 752705.3763152934,
+          "high_region_conditional_mean": 2974862.3414259986
+        },
+        "smooth_vorticity_weight": {
+          "spatial_mean": 0.4248380614796664,
+          "weighted_pressure_integral": 28287.074715776682,
+          "weighted_self_integral": 563737.0955620973,
+          "weighted_pressure_mean": 66583.193175432
+        },
+        "diagnostics": {
+          "pressure_source_max_error": 2.491273180106275e-13,
+          "pressure_Poisson_max_error": 1.8189894035458565e-12,
+          "global_S_dot_H": -2.842170943040401e-14,
+          "Fourier_minus_spatial_T": 7.815970093361102e-14
+        }
+      },
+      "final": {
+        "grid": 32,
+        "G": 3128.771096412186,
+        "T": 18151.28298700804,
+        "high_region_volume": 0.100006103515625,
+        "high_region_G_fraction": 0.3383511178624411,
+        "self_amplification": {
+          "global_mean": 966771.0018852166,
+          "high_region_integral": 424619.6448779692,
+          "outside_integral": 542151.3570072474,
+          "high_region_conditional_mean": 4245937.2973333215
+        },
+        "pressure_response": {
+          "global_mean": 82414.8972757824,
+          "high_region_integral": 20310.041823784035,
+          "outside_integral": 62104.85545199836,
+          "high_region_conditional_mean": 203088.02272864062
+        },
+        "isotropic_pressure_response": {
+          "global_mean": -379976.8809511413,
+          "high_region_integral": -234580.33030332666,
+          "outside_integral": -145396.55064781464,
+          "high_region_conditional_mean": -2345660.1353003993
+        },
+        "deviatoric_pressure_response": {
+          "global_mean": 462391.77822692366,
+          "high_region_integral": 254890.37212711066,
+          "outside_integral": 207501.406099813,
+          "high_region_conditional_mean": 2548748.1580290394
+        },
+        "combined_inviscid_response": {
+          "global_mean": 1049185.8991609989,
+          "high_region_integral": 444929.6867017532,
+          "outside_integral": 604256.2124592457,
+          "high_region_conditional_mean": 4449025.320061961
+        },
+        "smooth_vorticity_weight": {
+          "spatial_mean": 0.41097203373842817,
+          "weighted_pressure_integral": 38107.71709362565,
+          "weighted_self_integral": 606764.4123205866,
+          "weighted_pressure_mean": 92725.81578599606
+        },
+        "diagnostics": {
+          "pressure_source_max_error": 1.3453256629268839e-13,
+          "pressure_Poisson_max_error": 1.8189894035458565e-12,
+          "global_S_dot_H": 9.094947017729282e-13,
+          "Fourier_minus_spatial_T": -1.0913936421275139e-11
+        }
+      },
+      "endpoint_grid48_minus_grid32_high_pressure_integral": -2960.9101893459883,
+      "endpoint_grid48_minus_grid32_global_pressure_integral": -2.0372681319713593e-10,
+      "endpoint_grid48_minus_grid32_smooth_weighted_pressure": 0.029079805135552306
+    }
+  ]
+}

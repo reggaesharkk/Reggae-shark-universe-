@@ -1,0 +1,37 @@
+{
+  "status": "executed weighted-triad phase result",
+  "source_artifact": {
+    "name": "wp16_weighted_triad_phase_results.json",
+    "bytes": 25215,
+    "sha256": "964eed439c04c6ee77a03a2da03b0ce39142d60f2ecb160b1a1849c88ac09e31"
+  },
+  "reconstruction_max_relative_error": 1.5867954348210145e-15,
+  "N10": {
+    "total_chi": 0.16059835322917312,
+    "base_chi": 0.19103555764865995,
+    "weighted_theta_resultant": 0.17683707251103778,
+    "touch_new_envelope_share": 0.12589522179760845,
+    "touch_new_signed_transfer_share": 0.09832131281882289,
+    "new_advector_envelope_share": 0.006980253297305302,
+    "new_advector_signed_transfer_share": 0.00520432279794899,
+    "old_only_signed_transfer_share": 0.9016786871811775,
+    "shell4_envelope_share": 0.4321949965642294,
+    "shell4_signed_transfer_share": 0.6994670805138403,
+    "shell4_5_signed_transfer_share": 0.9107002971962803
+  },
+  "N11": {
+    "total_chi": 0.15859070721994392,
+    "base_chi": 0.19014959753341212,
+    "weighted_theta_resultant": 0.1757331869238416,
+    "touch_new_envelope_share": 0.10508997447888394,
+    "touch_new_signed_transfer_share": 0.08449083892772759,
+    "new_advector_envelope_share": 0.005503483732988272,
+    "new_advector_signed_transfer_share": 0.0021373182607028777,
+    "old_only_signed_transfer_share": 0.9155091610722728,
+    "shell4_envelope_share": 0.4262265054398721,
+    "shell4_signed_transfer_share": 0.6977926615028387,
+    "shell4_5_signed_transfer_share": 0.9109798716172703
+  },
+  "conclusion": "The newly opened shell is not disproportionately responsible for signed H2 transfer, and global optimized normalized triad coherence decreases relative to the base evolved state. The leading mechanism for the rising quotient is therefore denominator depletion of positive stretching rather than increasing global triad alignment.",
+  "next_target": "Physical-space positive-stretching depletion audit comparing the inherited N11 state with the optimized N11 state."
+}

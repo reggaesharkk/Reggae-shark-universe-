@@ -1,0 +1,828 @@
+{
+  "N": 4,
+  "nu": 0.1,
+  "mode_count": 257,
+  "ordered_pairs": 31129,
+  "dt": 0.0005,
+  "refined_dt": 0.00025,
+  "duration": 0.02,
+  "scales": [
+    1,
+    2
+  ],
+  "amplitude": 3.0,
+  "second_relative": 0.35,
+  "phase_definition": "fixed transverse real frame for each k; choose larger initial component; phi=arg(z_R)-arg(z_P)-arg(z_Q); phi_dot=sum signed Im(conj(z)*dz)/|z|^2",
+  "caution": "Component phases depend on frame and become unstable near z=0. Projected-triad optimum is not the optimum for full-flow T. Short finite-N trajectories cannot establish phase randomization or a PDE bound. N4/N5 discrepancy is cutoff sensitivity, not evidence of convergence.",
+  "runs": [
+    {
+      "label": "initial_R_phase_at_isolated_max",
+      "offset": 0.0,
+      "snapshots": [
+        {
+          "time": 0.0,
+          "E": 90.25392727379403,
+          "G": 530.8994025572655,
+          "D": 2775.754437058188,
+          "T": 179.7836461027724,
+          "instant_enstrophy_growth": -97.79179760304643,
+          "low": {
+            "phi_wrapped": -2.399723848940887,
+            "phi_dot": -9.244104779631046,
+            "component_magnitudes": [
+              5.22638970817067,
+              1.4894428151092438,
+              5.983906877261364
+            ],
+            "component_phase_velocities": [
+              -0.4275449473760235,
+              9.980832131598413,
+              0.30918240459134316
+            ]
+          },
+          "high": {
+            "phi_wrapped": -2.399723848940887,
+            "phi_dot": -6.470873345741733,
+            "component_magnitudes": [
+              1.8292363978597341,
+              0.5213049852882352,
+              2.0943674070414775
+            ],
+            "component_phase_velocities": [
+              -0.2992814631632163,
+              6.98658249211889,
+              0.2164276832139405
+            ]
+          },
+          "low_projected": {
+            "T_projected": 133.86719739595873,
+            "phase_maximum": 133.86719739595873,
+            "fraction_of_phase_maximum": 1.0,
+            "required_R_rotation_to_max": -4.511645400401263e-16
+          },
+          "high_projected": {
+            "T_projected": 45.9164487068138,
+            "phase_maximum": 45.9164487068138,
+            "fraction_of_phase_maximum": 1.0,
+            "required_R_rotation_to_max": -3.8686720977544736e-16
+          },
+          "mode_count_amplitude_gt_1e_8": 12,
+          "reality_error": 0.0,
+          "divergence_error": 4.965068306494546e-16,
+          "mean_magnitude": 0.0
+        },
+        {
+          "time": 0.005,
+          "E": 89.98864126063665,
+          "G": 530.4049793184628,
+          "D": 2769.7917775543906,
+          "T": 275.371660299627,
+          "instant_enstrophy_growth": -1.607517455812058,
+          "low": {
+            "phi_wrapped": -2.4473898510054104,
+            "phi_dot": -9.833783900285363,
+            "component_magnitudes": [
+              5.206682630515778,
+              1.4388438096965088,
+              5.9809369298031845
+            ],
+            "component_phase_velocities": [
+              -0.4199114421912569,
+              10.588769696490305,
+              0.33507435401368385
+            ]
+          },
+          "high": {
+            "phi_wrapped": -2.4307774977191503,
+            "phi_dot": -5.946090642326956,
+            "component_magnitudes": [
+              1.817577181755857,
+              0.5067767888423167,
+              2.0822153703397843
+            ],
+            "component_phase_velocities": [
+              -0.10368785885058447,
+              6.275727721858314,
+              0.22594922068077375
+            ]
+          },
+          "low_projected": {
+            "T_projected": 133.48440066681246,
+            "phase_maximum": 133.50308789130062,
+            "fraction_of_phase_maximum": 0.9998600240280331,
+            "required_R_rotation_to_max": 0.016731959695991734
+          },
+          "high_projected": {
+            "T_projected": 45.167363430352566,
+            "phase_maximum": 45.1735557547729,
+            "fraction_of_phase_maximum": 0.99986292147437,
+            "required_R_rotation_to_max": 0.016557877732262135
+          },
+          "mode_count_amplitude_gt_1e_8": 32,
+          "reality_error": 4.163336342344337e-17,
+          "divergence_error": 9.930136612989092e-16,
+          "mean_magnitude": 4.650015782599157e-17
+        },
+        {
+          "time": 0.01,
+          "E": 89.72336473170466,
+          "G": 530.855684522837,
+          "D": 2772.939635885476,
+          "T": 368.40367186981564,
+          "instant_enstrophy_growth": 91.10970828126801,
+          "low": {
+            "phi_wrapped": -2.4981806925614416,
+            "phi_dot": -10.494821067035723,
+            "component_magnitudes": [
+              5.18195959694935,
+              1.3887793314109553,
+              5.9776864093957585
+            ],
+            "component_phase_velocities": [
+              -0.4129874685446114,
+              11.263785644616725,
+              0.3559771090363913
+            ]
+          },
+          "high": {
+            "phi_wrapped": -2.4591340600725955,
+            "phi_dot": -5.3907931330555146,
+            "component_magnitudes": [
+              1.797345185526209,
+              0.49142177208166016,
+              2.067913389547536
+            ],
+            "component_phase_velocities": [
+              0.12727738070519504,
+              5.501963342727993,
+              0.2384475903776735
+            ]
+          },
+          "low_projected": {
+            "T_projected": 132.3700301664261,
+            "phase_maximum": 132.44498076064485,
+            "fraction_of_phase_maximum": 0.9994341001539786,
+            "required_R_rotation_to_max": 0.03364381749593833
+          },
+          "high_projected": {
+            "T_projected": 43.834056765091255,
+            "phase_maximum": 43.87424636602774,
+            "fraction_of_phase_maximum": 0.9990839819651557,
+            "required_R_rotation_to_max": 0.04280555845187996
+          },
+          "mode_count_amplitude_gt_1e_8": 32,
+          "reality_error": 5.551115123125783e-17,
+          "divergence_error": 1.1957467920563633e-15,
+          "mean_magnitude": 1.1235462365035387e-16
+        },
+        {
+          "time": 0.015,
+          "E": 89.45763439097672,
+          "G": 532.2132849394027,
+          "D": 2785.0090091113434,
+          "T": 458.16452296258433,
+          "instant_enstrophy_growth": 179.66362205144998,
+          "low": {
+            "phi_wrapped": -2.552463490577387,
+            "phi_dot": -11.231032975221037,
+            "component_magnitudes": [
+              5.152463996858646,
+              1.339642541711768,
+              5.974103921831208
+            ],
+            "component_phase_velocities": [
+              -0.4069328359417906,
+              12.00980826936805,
+              0.37184245820522144
+            ]
+          },
+          "high": {
+            "phi_wrapped": -2.484619607136893,
+            "phi_dot": -4.79587289977813,
+            "component_magnitudes": [
+              1.7690756269856112,
+              0.4751435023181454,
+              2.051505814709797
+            ],
+            "component_phase_velocities": [
+              0.3944971571731078,
+              4.655620901418983,
+              0.25424515881396037
+            ]
+          },
+          "low_projected": {
+            "T_projected": 130.5552723051868,
+            "phase_maximum": 130.72373962356298,
+            "fraction_of_phase_maximum": 0.9987112721923248,
+            "required_R_rotation_to_max": 0.05077410178561509
+          },
+          "high_projected": {
+            "T_projected": 41.930878634527836,
+            "phase_maximum": 42.06130857076592,
+            "fraction_of_phase_maximum": 0.996899051868093,
+            "required_R_rotation_to_max": 0.07877248383848001
+          },
+          "mode_count_amplitude_gt_1e_8": 32,
+          "reality_error": 7.850462293418876e-17,
+          "divergence_error": 2.5989654674417885e-15,
+          "mean_magnitude": 1.8156695092626775e-16
+        },
+        {
+          "time": 0.02,
+          "E": 89.19100771839643,
+          "G": 534.4330722270936,
+          "D": 2805.7112822814224,
+          "T": 544.0264397291569,
+          "instant_enstrophy_growth": 263.45531150101465,
+          "low": {
+            "phi_wrapped": -2.6106186830025893,
+            "phi_dot": -12.043706315351812,
+            "component_magnitudes": [
+              5.118446561750826,
+              1.2918894855944896,
+              5.97013210854776
+            ],
+            "component_phase_velocities": [
+              -0.40184333965250796,
+              12.828202384962557,
+              0.3826527299582357
+            ]
+          },
+          "high": {
+            "phi_wrapped": -2.507005326892396,
+            "phi_dot": -4.148305678266508,
+            "component_magnitudes": [
+              1.733370498275394,
+              0.45787661026031024,
+              2.0330443827962235
+            ],
+            "component_phase_velocities": [
+              0.6997287598481536,
+              3.722256429246156,
+              0.2736795108278012
+            ]
+          },
+          "low_projected": {
+            "T_projected": 128.07755898997283,
+            "phase_maximum": 128.3756506853948,
+            "fraction_of_phase_maximum": 0.9976779732462469,
+            "required_R_rotation_to_max": 0.0681604862852002
+          },
+          "high_projected": {
+            "T_projected": 39.49002969533666,
+            "phase_maximum": 39.79947377660034,
+            "fraction_of_phase_maximum": 0.9922249202841066,
+            "required_R_rotation_to_max": 0.12478121628435054
+          },
+          "mode_count_amplitude_gt_1e_8": 32,
+          "reality_error": 7.882977442684294e-17,
+          "divergence_error": 2.5468671054250572e-15,
+          "mean_magnitude": 2.7102054466607376e-16
+        }
+      ],
+      "final_full_fourier_dt_refinement_difference": 2.775275714256469e-10,
+      "final_T_dt_refinement_difference": 1.7149318409792613e-08,
+      "final_low_phase_rate_dt_refinement_difference": 3.044853258415969e-11
+    },
+    {
+      "label": "initial_R_phase_quarter_turn_from_max",
+      "offset": 1.5707963267948966,
+      "snapshots": [
+        {
+          "time": 0.0,
+          "E": 90.25392727379405,
+          "G": 530.8994025572656,
+          "D": 2775.7544370581886,
+          "T": -1.865174681370263e-14,
+          "instant_enstrophy_growth": -277.5754437058189,
+          "low": {
+            "phi_wrapped": -0.8289275221459911,
+            "phi_dot": 6.9648246457551,
+            "component_magnitudes": [
+              5.22638970817067,
+              1.4894428151092438,
+              5.983906877261366
+            ],
+            "component_phase_velocities": [
+              -0.5551466180589191,
+              -6.614582022484738,
+              -0.2049039947885569
+            ]
+          },
+          "high": {
+            "phi_wrapped": -0.8289275221459906,
+            "phi_dot": 4.875377252028568,
+            "component_magnitudes": [
+              1.8292363978597341,
+              0.5213049852882352,
+              2.094367407041478
+            ],
+            "component_phase_velocities": [
+              -0.38860263264124323,
+              -4.630207415739315,
+              -0.14343279635199072
+            ]
+          },
+          "low_projected": {
+            "T_projected": -0.0,
+            "phase_maximum": 133.86719739595873,
+            "fraction_of_phase_maximum": -0.0,
+            "required_R_rotation_to_max": -1.5707963267948966
+          },
+          "high_projected": {
+            "T_projected": 1.7763568394002505e-15,
+            "phase_maximum": 45.91644870681382,
+            "fraction_of_phase_maximum": 3.868672097754472e-17,
+            "required_R_rotation_to_max": -1.5707963267948966
+          },
+          "mode_count_amplitude_gt_1e_8": 12,
+          "reality_error": 0.0,
+          "divergence_error": 4.47545209131181e-16,
+          "mean_magnitude": 0.0
+        },
+        {
+          "time": 0.005,
+          "E": 89.98909902168265,
+          "G": 528.5564585819523,
+          "D": 2757.351454841752,
+          "T": 83.8649169215913,
+          "instant_enstrophy_growth": -191.87022856258392,
+          "low": {
+            "phi_wrapped": -0.7922319094669334,
+            "phi_dot": 7.736552062279311,
+            "component_magnitudes": [
+              5.232532669017752,
+              1.4134032643045515,
+              5.983807324892167
+            ],
+            "component_phase_velocities": [
+              -0.5109745263990273,
+              -7.403005667396416,
+              -0.17742813151613196
+            ]
+          },
+          "high": {
+            "phi_wrapped": -0.802634215617414,
+            "phi_dot": 5.63564071224732,
+            "component_magnitudes": [
+              1.8243551502916695,
+              0.5019128002868106,
+              2.0832379447483174
+            ],
+            "component_phase_velocities": [
+              -0.7922693558615276,
+              -5.01227435369931,
+              -0.16890299731351804
+            ]
+          },
+          "low_projected": {
+            "T_projected": 0.468700462708604,
+            "phase_maximum": 131.03002410499673,
+            "fraction_of_phase_maximum": 0.0035770462984348215,
+            "required_R_rotation_to_max": -1.5672192728682115
+          },
+          "high_projected": {
+            "T_projected": -0.07597325782291264,
+            "phase_maximum": 44.539868785061216,
+            "fraction_of_phase_maximum": -0.0017057360045118557,
+            "required_R_rotation_to_max": -1.5725020636265594
+          },
+          "mode_count_amplitude_gt_1e_8": 32,
+          "reality_error": 1.962885079083901e-17,
+          "divergence_error": 6.280369834735101e-16,
+          "mean_magnitude": 3.3206815555228693e-17
+        },
+        {
+          "time": 0.01,
+          "E": 89.72523233428699,
+          "G": 527.0442976196259,
+          "D": 2746.93689933476,
+          "T": 163.22349670472727,
+          "instant_enstrophy_growth": -111.47019322874871,
+          "low": {
+            "phi_wrapped": -0.7513075620279879,
+            "phi_dot": 8.661104910794458,
+            "component_magnitudes": [
+              5.233952173762409,
+              1.3372025828879497,
+              5.982860729215368
+            ],
+            "component_phase_velocities": [
+              -0.4686352826728113,
+              -8.342539066438144,
+              -0.15006943831649686
+            ]
+          },
+          "high": {
+            "phi_wrapped": -0.7726408192043883,
+            "phi_dot": 6.353937722755797,
+            "component_magnitudes": [
+              1.811804241854648,
+              0.48441385254038705,
+              2.0704224017938713
+            ],
+            "component_phase_velocities": [
+              -1.1687609234909282,
+              -5.381293576937321,
+              -0.196116777672453
+            ]
+          },
+          "low_projected": {
+            "T_projected": 1.0827335233070592,
+            "phase_maximum": 127.79733180739001,
+            "fraction_of_phase_maximum": 0.008472270179622397,
+            "required_R_rotation_to_max": -1.5623239552563088
+          },
+          "high_projected": {
+            "T_projected": -0.4940535477546337,
+            "phase_maximum": 42.61853684531449,
+            "fraction_of_phase_maximum": -0.011592456811640879,
+            "required_R_rotation_to_max": -1.5823890432643977
+          },
+          "mode_count_amplitude_gt_1e_8": 32,
+          "reality_error": 4.440892098500626e-16,
+          "divergence_error": 6.753223014464258e-16,
+          "mean_magnitude": 7.551922773486256e-17
+        },
+        {
+          "time": 0.015,
+          "E": 89.46192531006751,
+          "G": 526.3085641556756,
+          "D": 2743.9521625936673,
+          "T": 237.78216144381668,
+          "instant_enstrophy_growth": -36.61305481555007,
+          "low": {
+            "phi_wrapped": -0.7053145525634146,
+            "phi_dot": 9.769591231408588,
+            "component_magnitudes": [
+              5.23081803960637,
+              1.2613345539155927,
+              5.980913734029725
+            ],
+            "component_phase_velocities": [
+              -0.428314430027056,
+              -9.464142213838983,
+              -0.12286541245745035
+            ]
+          },
+          "high": {
+            "phi_wrapped": -0.7391826689585717,
+            "phi_dot": 7.019426486067712,
+            "component_magnitudes": [
+              1.7920142595280164,
+              0.46893108499332875,
+              2.055883077407819
+            ],
+            "component_phase_velocities": [
+              -1.5247950418987886,
+              -5.719783904942782,
+              -0.22515246077385823
+            ]
+          },
+          "low_projected": {
+            "T_projected": 1.8304285641986935,
+            "phase_maximum": 124.19573645854165,
+            "fraction_of_phase_maximum": 0.014738256049632728,
+            "required_R_rotation_to_max": -1.5560575371284615
+          },
+          "high_projected": {
+            "T_projected": -1.2447933880322264,
+            "phase_maximum": 40.220695835360104,
+            "fraction_of_phase_maximum": -0.030949076394095196,
+            "required_R_rotation_to_max": -1.601750346057862
+          },
+          "mode_count_amplitude_gt_1e_8": 32,
+          "reality_error": 4.440892098500626e-16,
+          "divergence_error": 1.2670655869532562e-15,
+          "mean_magnitude": 1.2587633769142807e-16
+        },
+        {
+          "time": 0.02,
+          "E": 89.19880370860253,
+          "G": 526.2931826452697,
+          "D": 2747.801746869868,
+          "T": 307.37167489339515,
+          "instant_enstrophy_growth": 32.59150020640834,
+          "low": {
+            "phi_wrapped": -0.6532462655995506,
+            "phi_dot": 11.09738864674085,
+            "component_magnitudes": [
+              5.22330585445867,
+              1.1864121217595813,
+              5.977806116516608
+            ],
+            "component_phase_velocities": [
+              -0.3901728135647474,
+              -10.803061867263748,
+              -0.09584603408764565
+            ]
+          },
+          "high": {
+            "phi_wrapped": -0.702557926499789,
+            "phi_dot": 7.618034588800773,
+            "component_magnitudes": [
+              1.7654773974255082,
+              0.4555769954152533,
+              2.03958555527023
+            ],
+            "component_phase_velocities": [
+              -1.8660095697182884,
+              -6.008102077817894,
+              -0.2560770587354091
+            ]
+          },
+          "low_projected": {
+            "T_projected": 2.6958649463261546,
+            "phase_maximum": 120.25410650790491,
+            "fraction_of_phase_maximum": 0.022418069740919342,
+            "required_R_rotation_to_max": -1.5483763788548515
+          },
+          "high_projected": {
+            "T_projected": -2.303613473802522,
+            "phase_maximum": 37.43385673631732,
+            "fraction_of_phase_maximum": -0.0615382350268926,
+            "required_R_rotation_to_max": -1.6323734685751479
+          },
+          "mode_count_amplitude_gt_1e_8": 32,
+          "reality_error": 4.440892098500626e-16,
+          "divergence_error": 1.5553031891404223e-15,
+          "mean_magnitude": 1.9539977003579348e-16
+        }
+      ],
+      "final_full_fourier_dt_refinement_difference": 1.1808222847158362e-10,
+      "final_T_dt_refinement_difference": 6.018524345563492e-09,
+      "final_low_phase_rate_dt_refinement_difference": 7.341682817241235e-12
+    }
+  ],
+  "cutoff_comparison": {
+    "N": 5,
+    "mode_count": 515,
+    "ordered_pairs": 124015,
+    "snapshots": [
+      {
+        "time": 0.0,
+        "E": 90.25392727379402,
+        "G": 530.8994025572655,
+        "D": 2775.7544370581877,
+        "T": 179.7836461027724,
+        "instant_enstrophy_growth": -97.79179760304638,
+        "low": {
+          "phi_wrapped": -2.399723848940887,
+          "phi_dot": -9.244104779631046,
+          "component_magnitudes": [
+            5.22638970817067,
+            1.4894428151092438,
+            5.983906877261364
+          ],
+          "component_phase_velocities": [
+            -0.4275449473760235,
+            9.980832131598413,
+            0.30918240459134316
+          ]
+        },
+        "high": {
+          "phi_wrapped": -2.399723848940887,
+          "phi_dot": -6.470873345741733,
+          "component_magnitudes": [
+            1.8292363978597341,
+            0.5213049852882352,
+            2.0943674070414775
+          ],
+          "component_phase_velocities": [
+            -0.2992814631632163,
+            6.98658249211889,
+            0.2164276832139405
+          ]
+        },
+        "low_projected": {
+          "T_projected": 133.86719739595873,
+          "phase_maximum": 133.86719739595873,
+          "fraction_of_phase_maximum": 1.0,
+          "required_R_rotation_to_max": -4.511645400401263e-16
+        },
+        "high_projected": {
+          "T_projected": 45.9164487068138,
+          "phase_maximum": 45.9164487068138,
+          "fraction_of_phase_maximum": 1.0,
+          "required_R_rotation_to_max": -3.8686720977544736e-16
+        },
+        "mode_count_amplitude_gt_1e_8": 12,
+        "reality_error": 0.0,
+        "divergence_error": 4.965068306494546e-16,
+        "mean_magnitude": 0.0
+      },
+      {
+        "time": 0.005,
+        "E": 89.9886041791921,
+        "G": 530.6266952520749,
+        "D": 2775.6554362160077,
+        "T": 319.9889032052204,
+        "instant_enstrophy_growth": 42.42335958361963,
+        "low": {
+          "phi_wrapped": -2.447388230436043,
+          "phi_dot": -9.833194513301919,
+          "component_magnitudes": [
+            5.206593073127347,
+            1.4389597992131262,
+            5.980955953558394
+          ],
+          "component_phase_velocities": [
+            -0.41970475478270247,
+            10.589186753355676,
+            0.33628748527105573
+          ]
+        },
+        "high": {
+          "phi_wrapped": -2.430818732200944,
+          "phi_dot": -5.9729713175008055,
+          "component_magnitudes": [
+            1.8173940435464533,
+            0.506447820442685,
+            2.0807516205979093
+          ],
+          "component_phase_velocities": [
+            -0.10058249231695898,
+            6.297357533480674,
+            0.22380372366290882
+          ]
+        },
+        "low_projected": {
+          "T_projected": 133.4844460038998,
+          "phase_maximum": 133.50319906853971,
+          "fraction_of_phase_maximum": 0.9998595309717613,
+          "required_R_rotation_to_max": 0.016761403100768686
+        },
+        "high_projected": {
+          "T_projected": 45.08279810032707,
+          "phase_maximum": 45.088995175025886,
+          "fraction_of_phase_maximum": 0.9998625590418513,
+          "required_R_rotation_to_max": 0.01657975311036167
+        },
+        "mode_count_amplitude_gt_1e_8": 56,
+        "reality_error": 1.1102230246251565e-16,
+        "divergence_error": 3.1401849173675503e-16,
+        "mean_magnitude": 3.8245714085803506e-17
+      },
+      {
+        "time": 0.01,
+        "E": 89.72307123406883,
+        "G": 531.7297462376495,
+        "D": 2796.1336936377725,
+        "T": 456.8188535108593,
+        "instant_enstrophy_growth": 177.20548414708202,
+        "low": {
+          "phi_wrapped": -2.4981756316930106,
+          "phi_dot": -10.494140419124676,
+          "component_magnitudes": [
+            5.18160290392315,
+            1.389213875318262,
+            5.977758257665877
+          ],
+          "component_phase_velocities": [
+            -0.41070811924961076,
+            11.265612503806674,
+            0.3607639654323874
+          ]
+        },
+        "high": {
+          "phi_wrapped": -2.459504756491282,
+          "phi_dot": -5.505647486056795,
+          "component_magnitudes": [
+            1.7966127185946337,
+            0.49010602330998004,
+            2.0621096384047313
+          ],
+          "component_phase_velocities": [
+            0.148693974044011,
+            5.586488090469355,
+            0.2295345784565704
+          ]
+        },
+        "low_projected": {
+          "T_projected": 132.3629186677357,
+          "phase_maximum": 132.43845332929718,
+          "fraction_of_phase_maximum": 0.9994296621588168,
+          "required_R_rotation_to_max": 0.033775495959023814
+        },
+        "high_projected": {
+          "T_projected": 43.499965192437514,
+          "phase_maximum": 43.540325111178674,
+          "fraction_of_phase_maximum": 0.9990730450763033,
+          "required_R_rotation_to_max": 0.043060380088386765
+        },
+        "mode_count_amplitude_gt_1e_8": 56,
+        "reality_error": 1.1102230246251565e-16,
+        "divergence_error": 2.220446049250313e-16,
+        "mean_magnitude": 6.152823332623771e-17
+      },
+      {
+        "time": 0.015,
+        "E": 89.45665488831172,
+        "G": 534.1497975678363,
+        "D": 2836.5884975811796,
+        "T": 589.3484050777474,
+        "instant_enstrophy_growth": 305.68955531962945,
+        "low": {
+          "phi_wrapped": -2.5524563233389586,
+          "phi_dot": -11.231014717050723,
+          "component_magnitudes": [
+            5.151670301095302,
+            1.3405579574573565,
+            5.9742519243188985
+          ],
+          "component_phase_velocities": [
+            -0.40077804954582097,
+            12.014254731771073,
+            0.38246196517452946
+          ]
+        },
+        "high": {
+          "phi_wrapped": -2.4859058891617156,
+          "phi_dot": -5.056560051360403,
+          "component_magnitudes": [
+            1.7674512562394056,
+            0.47219522035985073,
+            2.0385788711174286
+          ],
+          "component_phase_velocities": [
+            0.44972496965558245,
+            4.840364196988588,
+            0.2335291152837677
+          ]
+        },
+        "low_projected": {
+          "T_projected": 130.52282504642218,
+          "phase_maximum": 130.6933991160501,
+          "fraction_of_phase_maximum": 0.9986948532153758,
+          "required_R_rotation_to_max": 0.051096590587421935
+        },
+        "high_projected": {
+          "T_projected": 41.19848127750547,
+          "phase_maximum": 41.32984554048642,
+          "fraction_of_phase_maximum": 0.9968215641441907,
+          "required_R_rotation_to_max": 0.07975112571989389
+        },
+        "mode_count_amplitude_gt_1e_8": 56,
+        "reality_error": 1.1102230246251565e-16,
+        "divergence_error": 9.694605782913356e-16,
+        "mean_magnitude": 9.581714751216969e-17
+      },
+      {
+        "time": 0.02,
+        "E": 89.18871303026108,
+        "G": 537.8200603556858,
+        "D": 2896.3007678928525,
+        "T": 716.7647326181303,
+        "instant_enstrophy_growth": 427.13465582884504,
+        "low": {
+          "phi_wrapped": -2.610615013118087,
+          "phi_dot": -12.045291489022983,
+          "component_magnitudes": [
+            5.117060379470633,
+            1.293413600733011,
+            5.970363946791664
+          ],
+          "component_phase_velocities": [
+            -0.3901003399633398,
+            12.836650645909447,
+            0.4012588169231245
+          ]
+        },
+        "high": {
+          "phi_wrapped": -2.510071786454704,
+          "phi_dot": -4.608100089721882,
+          "component_magnitudes": [
+            1.7305648861240674,
+            0.45267465267666546,
+            2.0103243287655617
+          ],
+          "component_phase_velocities": [
+            0.8046939260851492,
+            4.039223572123426,
+            0.2358174084866932
+          ]
+        },
+        "low_projected": {
+          "T_projected": 127.9909919357841,
+          "phase_maximum": 128.29425765892586,
+          "fraction_of_phase_maximum": 0.9976361707166348,
+          "required_R_rotation_to_max": 0.06877152248320703
+        },
+        "high_projected": {
+          "T_projected": 38.23976760621123,
+          "phase_maximum": 38.551801054647306,
+          "fraction_of_phase_maximum": 0.9919061252678243,
+          "required_R_rotation_to_max": 0.12731705956193737
+        },
+        "mode_count_amplitude_gt_1e_8": 56,
+        "reality_error": 1.1102230246251565e-16,
+        "divergence_error": 6.497413668604471e-16,
+        "mean_magnitude": 1.1621782358291994e-16
+      }
+    ],
+    "final_full_fourier_dt_refinement_difference": 7.174775241569684e-10,
+    "final_T_dt_refinement_difference": 4.939465725328773e-08,
+    "final_T_difference_N5_minus_N4": 172.73829288897343,
+    "final_G_difference_N5_minus_N4": 3.3869881285921792
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "N17 mechanism evaluation failed or unevaluable",
+  "joint_pass": false,
+  "failure_rules": [
+    "directional split failed: ((1, 7, 9), (2, 7, 15))"
+  ],
+  "interpretation": "retain this failure; do not retune the frozen test"
+}

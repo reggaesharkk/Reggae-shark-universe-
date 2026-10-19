@@ -1,0 +1,120 @@
+{
+  "protocol": {
+    "C500_portable_semantic_sha256": "1e9509cef054bf605d4a28af6580e383d021914f600a01b21cb1ebdf1086f71f",
+    "K36_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+    "cutoff_M": 14,
+    "decimal_precision_digits": 90,
+    "fixed_witness_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624",
+    "frozen_segments_in_backward_order": [
+      239,
+      238,
+      237
+    ],
+    "no_retuning": true,
+    "rounding": "ROUND_CEILING; Decimal.exp upper-rounded by next_plus",
+    "step_width": "0.0000125",
+    "terminal_time": "3/1000",
+    "version": "v0.28-reverse-diffusion-corrected-decimal-g1",
+    "viscosity": "0.1"
+  },
+  "provenance_sha256": {
+    "generator_source": "040b81aefc39ce54466fb2fdfdd04d8ab247123e4fd5bca32735fe5ad900735e",
+    "historical_recurrence_reports": [
+      "41694c84922a28b0b99f9e2936589f8c2f8cb6c49fc2a68a281623a4fb39cb7e",
+      "c611b9eb2c5770d1880e64fdc7e0fc9f5136aef2f71b8b9afc4e1f533d09596c",
+      "cbfb935af79cd7bb359c5688831c4a7329b70011ee9e6c1934442147a836f77f"
+    ],
+    "independent_verifier_source": "4c98fd37ddc8aa4733d0f30c40dcaffd9947c484f88cf69d3fcd3f78005c2ef0",
+    "prior_correction_audit": "cd223389619c1780516514f7118c87ddc94e8d04c9c7528ce4cfc749948ee540",
+    "prior_correction_audit_source": "55884d2d0c5b5c23100170f1e5bc167e70135eea2066b5be1b23a68e9cbbe2b7",
+    "segments": [
+      "d1b41363c88173594ec6c9e90453513cd3c8ed3e32c7037d2e73304d057a8c08",
+      "c0bbf407df850b95e1a4b0daa3e1175962ce128e7e5f080d39127bd22b431fa6",
+      "c2110c2f7a245a36534a24f7ab6983b74bf4a51ba8fb209a0ec92a8727eecfdc"
+    ],
+    "structured_A_B_diagnostic": "b67857abf2392d963985714415e3def7d0fb4f536235765058b6a118a73bba4a"
+  },
+  "recurrence": "e_out <= exp(L*h)*e_in + ((exp(L*h)-1)/L)*R; L = imported strain_log_norm_upper + nu*max_{|k|<=15}|k|^2",
+  "rights_notice": "Copyright (c) 2026 Prince Upadhyay. All Rights Reserved.",
+  "schema": "wp19-v0.28-corrected-adjoint-error-chain-v1",
+  "scope": {
+    "established": "Corrected outward scalar error recurrence across the three already-frozen M14 segments, conditional on their imported whole-segment residual and strain bounds.",
+    "historical_chain": "Earlier strain-only outgoing radii remain immutable historical records and are superseded for continuation.",
+    "not_established": [
+      "independent reconstruction of the segment residual polynomials or continuous strain bounds",
+      "full M14 backward adjoint enclosure beyond these three half-segments",
+      "dual quadrature, nonlinear remainder, normalizer bound, or signed F endpoint transfer",
+      "all-cutoff, blow-up, or continuum Navier-Stokes regularity theorem"
+    ]
+  },
+  "segment_237_structured_residual_sensitivity_only": {
+    "base_residual_outgoing_upper": "78324232548.8246196307457504997741547715008957776049367908160897460488479268828768235373913",
+    "penalty_ratio": "0.334854921854",
+    "reduction": "6088246.316783407507941456339",
+    "structured_A_B_source_sha256": "b67857abf2392d963985714415e3def7d0fb4f536235765058b6a118a73bba4a",
+    "structured_residual_outgoing_upper": "78318144302.5078362232378090434347486885284887525596357240124856326685032877472519161751683",
+    "used_in_official_chain": false
+  },
+  "segments": [
+    {
+      "forward_time_interval_rational": [
+        "239/80000",
+        "240/80000"
+      ],
+      "historical_archived_outgoing_error_upper": "74882674993.048618657819149585465296325142145058928574913811532113780128124368218",
+      "historical_recurrence_report_sha256": "41694c84922a28b0b99f9e2936589f8c2f8cb6c49fc2a68a281623a4fb39cb7e",
+      "historical_strain_only_recurrence_recomputed": "74882674993.0486186578191495854652963251421450589285749138115321137801281243682130910469845",
+      "historical_value_underbounds_corrected_value": true,
+      "incoming_error_upper_corrected_chain": "73244978636.905585",
+      "outgoing_error_upper_corrected_chain": "74903737341.7680869479676423339802577822668827392635637865967006999148652940172487122086410",
+      "residual_L2_upper_imported": "771029886342.810495",
+      "reverse_diffusion_log_norm_upper": "22.5",
+      "segment_sha256": "d1b41363c88173594ec6c9e90453513cd3c8ed3e32c7037d2e73304d057a8c08",
+      "step": 239,
+      "strain_log_norm_upper_imported": "1758.617670280",
+      "total_log_norm_upper_used": "1781.117670280"
+    },
+    {
+      "forward_time_interval_rational": [
+        "238/80000",
+        "239/80000"
+      ],
+      "historical_archived_outgoing_error_upper": "76553735316.602437456114865789016004525391018020344149225607466942033542033220384",
+      "historical_recurrence_report_sha256": "c611b9eb2c5770d1880e64fdc7e0fc9f5136aef2f71b8b9afc4e1f533d09596c",
+      "historical_strain_only_recurrence_recomputed": "76553735316.6024374561148657890160045253910180203441492256074669420335420332203767654235560",
+      "historical_value_underbounds_corrected_value": true,
+      "incoming_error_upper_corrected_chain": "74903737341.7680869479676423339802577822668827392635637865967006999148652940172487122086410",
+      "outgoing_error_upper_corrected_chain": "76596803403.2008814415291810393914219040829827539878570803371585034700432692390455397776715",
+      "residual_L2_upper_imported": "770889881044.051112",
+      "reverse_diffusion_log_norm_upper": "22.5",
+      "segment_sha256": "c0bbf407df850b95e1a4b0daa3e1175962ce128e7e5f080d39127bd22b431fa6",
+      "step": 238,
+      "strain_log_norm_upper_imported": "1755.447052426",
+      "total_log_norm_upper_used": "1777.947052426"
+    },
+    {
+      "forward_time_interval_rational": [
+        "237/80000",
+        "238/80000"
+      ],
+      "historical_archived_outgoing_error_upper": "78258186399.829279366902453526407847624354331163635740230778665548882992825167394",
+      "historical_recurrence_report_sha256": "cbfb935af79cd7bb359c5688831c4a7329b70011ee9e6c1934442147a836f77f",
+      "historical_strain_only_recurrence_recomputed": "78258186399.8292793669024535264078476243543311636357402307786655488829928251673855719427565",
+      "historical_value_underbounds_corrected_value": true,
+      "incoming_error_upper_corrected_chain": "76596803403.2008814415291810393914219040829827539878570803371585034700432692390455397776715",
+      "outgoing_error_upper_corrected_chain": "78324232548.8246196307457504997741547715008957776049367908160897460488479268828768235373913",
+      "residual_L2_upper_imported": "724222211753.270303",
+      "reverse_diffusion_log_norm_upper": "22.5",
+      "segment_sha256": "c2110c2f7a245a36534a24f7ab6983b74bf4a51ba8fb209a0ec92a8727eecfdc",
+      "step": 237,
+      "strain_log_norm_upper_imported": "1752.285153301",
+      "total_log_norm_upper_used": "1774.785153301"
+    }
+  ],
+  "spectral_support_check": {
+    "max_k_squared": 225,
+    "reverse_diffusion_growth_bound": "22.5",
+    "support": "integer Fourier ball |k|<=15"
+  },
+  "status": "PASS_LIMITED_CORRECTED_SCALAR_RECURRENCE_CHAIN"
+}

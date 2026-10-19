@@ -1,0 +1,54 @@
+name: WP19 v0.28 imported segment-bound replay
+
+on:
+  push:
+    branches: [wp19-v028-imported-bound-replay-20261001]
+    paths:
+      - '.github/workflows/wp19_v0_28_imported_bound_replay.yml'
+      - 'src/wp19_v0_28_imported_segment_bound_replay.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  replay-frozen-segments:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 110
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install numpy==2.3.5 python-flint==0.8.0
+      - name: Download and verify immutable input archives
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p work/lower work/adjoint work/c500 output
+          gh api repos/${{ github.repository }}/actions/artifacts/11059294923/zip > work/lower.zip
+          gh api repos/${{ github.repository }}/actions/artifacts/11121015458/zip > work/adjoint.zip
+          gh api repos/${{ github.repository }}/actions/artifacts/11114258089/zip > work/c500.zip
+          echo 'b0bb454fa320887c2b17dfd8a0bae916273253bb057ecff7acee3d6218234698  work/lower.zip' | sha256sum -c -
+          echo '330bb3e931fa8d45d1837c090b13a4a638fb54577cb26b8d8eaa2fe009303058  work/adjoint.zip' | sha256sum -c -
+          echo 'ae0c129951c25bd35215760168ce62d0586ce7fed09e3019d8ea0b5a24180dc2  work/c500.zip' | sha256sum -c -
+          unzip -q work/lower.zip -d work/lower
+          unzip -q work/adjoint.zip -d work/adjoint
+          unzip -q work/c500.zip -d work/c500
+      - name: Replay the three frozen whole-segment enclosures
+        run: |
+          python src/wp19_v0_28_adjoint_segment_arb.py --self-check
+          python src/wp19_v0_28_imported_segment_bound_replay.py \
+            --lower-dir work/lower \
+            --adjoint-dir work/adjoint \
+            --sign-chart results/wp19_bridge/frozen_K36_numerator_sign_chart_N13.json \
+            --c500 work/c500/frozen_C500.json \
+            --output-dir output
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-28-imported-segment-bound-replay
+          path: output
+          if-no-files-found: error
+          retention-days: 90

@@ -1,0 +1,8 @@
+{
+  "exact_rational_initial_field_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624",
+  "gradient_Fourier_l1_upper_decimal": "1834.834693",
+  "input_binary_sha256": "d354718178894c2788ceb155f1200ccac96ff6106b86addd729696c1ef0e0e42",
+  "residual_L2_upper_decimal": "0.000200637289",
+  "status": "128-bit Arb whole-segment N13 polynomial enclosure",
+  "step": 0
+}

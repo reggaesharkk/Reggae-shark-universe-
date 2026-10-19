@@ -1,0 +1,52 @@
+input and terminal-gradient enclosure ready 5.095
+packed base fields 0.479
+convolution 0 0 40.761
+convolution 0 1 81.168
+convolution 0 2 121.65
+convolution 1 0 162.467
+convolution 1 1 203.346
+convolution 1 2 244.232
+convolution 2 0 285.206
+convolution 2 1 326.438
+convolution 2 2 367.42
+{
+  "schema": "wp19-v0.28-adjoint-segment-arb-v1",
+  "status": "CONTINUOUS_SEGMENT_ENCLOSURE_ONLY",
+  "M": 14,
+  "step": 239,
+  "forward_time_interval_rational": [
+    "239/80000",
+    "240/80000"
+  ],
+  "backward_order_index": 0,
+  "precision_bits": 192,
+  "source_sha256": "562361ea30aaa55b235e5a24ecf3b6d3052da6dcb994ab85a80b2f951190bc22",
+  "frozen": {
+    "C500_portable_semantic_sha256": "1e9509cef054bf605d4a28af6580e383d021914f600a01b21cb1ebdf1086f71f",
+    "K36_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+    "K36_sign_chart_sha256": "de2e7cf42373285f16a4d357422d7784afa98c997f90e6594c0102952bf6d3d1",
+    "witness_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624"
+  },
+  "inputs": {
+    "adjoint_report_sha256": "981dc8d6286f5d989e73dec050ad406776c1320ead36596ac173de95d6a7edc8",
+    "adjoint_values_sha256": "00a230b47c66d3417b1fc259ead4e58ff46542753ddb7710c83a64dd4cd882ab",
+    "adjoint_rhs_sha256": "8c838ac0e93d70c5d170925e0d27799b745f0adc3c7296a0335219b7359c783c",
+    "lower_nodes_sha256": "e0b0a36d8b308cccb5befb3abe45777ec0775cbc7e5a76fef0011eed0fd1f7f0",
+    "lower_rhs_sha256": "f3a55190e9cba625b7285e5ba3e09e68fa4027e7a8909d1ad80671c1ee1ef253",
+    "primal_segment_sha256": "2dfe36bbad0b335208591ac3234217c34ebe07adaaa3b8a79c75ee980da2e5ba"
+  },
+  "bounds": {
+    "nominal_residual_L2_upper": "53884259.691876",
+    "primal_uncertainty_residual_penalty_upper": "771116932371.42349",
+    "residual_L2_upper": "771170816631.115284",
+    "logarithmic_norm_upper": "1758.617679196",
+    "adjoint_polynomial_L2_upper": "4691959667101.25773",
+    "binary_decimal_predictor_distance_upper": "5.651E-15",
+    "true_primal_radius_upper": "0.000059252169008",
+    "terminal_primal_radius_upper": "0.000059252169004",
+    "terminal_adjoint_error_upper": "73258381345.245714"
+  },
+  "whole_segment_method": "degree-six Fourier-valued residual; Bernstein convex-hull L2 bound; exact dyadic imports/projections; old primal radius plus predictor-centre discrepancy",
+  "elapsed_seconds": 376.740615432,
+  "claim_boundary": "One finite M14->15 half-step enclosure only; no complete adjoint path, dual quadrature, transfer theorem, all-N or continuum claim."
+}

@@ -1,0 +1,43 @@
+{
+  "status": "executed phase-structure reverse-engineering diagnostic",
+  "source": "wp16_phase_cutoff_escalation_N10_N11.json",
+  "stability_N10_to_N11": {
+    "overlap_modes": 2084,
+    "translation_gauge": [-0.0017208576826602436, 0.0009097563506377887, 0.00045116068003643714],
+    "raw_resultant": 0.974102080107739,
+    "aligned_resultant": 0.9741371333148338,
+    "mean_abs_residual": 0.14500497219245317,
+    "median_abs_residual": 0.07637468856188392,
+    "q90_abs_residual": 0.39224162289629644,
+    "frac_abs_lt_0_25": 0.7907869481765835,
+    "frac_abs_lt_0_5": 0.9457773512476008
+  },
+  "one_point_phase_coherence": {
+    "10": {"phase_resultant": 0.022956311575788382},
+    "11": {"phase_resultant": 0.011907910547147014}
+  },
+  "unweighted_triad_phase_sample": {
+    "10": {"samples": 250000, "R1": 0.005118948720090206, "R2": 0.0029021565377216206, "mean_cos": 0.005102437994029768},
+    "11": {"samples": 250000, "R1": 0.0016323683798500808, "R2": 0.0005261645104151623, "mean_cos": 0.0014181568817120845}
+  },
+  "optimization_stage_highlights": {
+    "10": {
+      "inherited_C": 5.957744991429427,
+      "after_new_mode_optimization_C": 6.558835786295103,
+      "final_C": 7.159722837749617,
+      "full_torus_stage_C_gain_pct": 9.161489493456854,
+      "full_torus_stage_N_high_change_pct": -6.155807769600852,
+      "full_torus_stage_P_positive_change_pct": -14.031777446547055
+    },
+    "11": {
+      "inherited_C": 6.787949157487107,
+      "after_new_mode_optimization_C": 7.391222649474526,
+      "final_C": 8.034575342492898,
+      "full_torus_stage_C_gain_pct": 8.704279704848439,
+      "full_torus_stage_N_high_change_pct": 2.692276134328764,
+      "full_torus_stage_P_positive_change_pct": -5.530604302648734
+    }
+  },
+  "interpretation": "The optimized mode phases themselves are nearly one-point-uniform, while the N10 inherited core persists strongly into N11 modulo translation gauge. Uniformly sampled, unweighted triad-relative phases are also nearly uniform. The next analytical object is therefore the coefficient-weighted gauge-invariant triad phase phi_p+phi_q-phi_k and its correlation with the complex base triad coefficient.",
+  "warning": "This diagnostic does not yet compute coefficient-weighted triad-phase alignment and therefore does not identify an analytic phase law or prove asymptotic growth."
+}

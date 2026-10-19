@@ -1,0 +1,965 @@
+{
+  "trajectory": "Unforced periodic Fourier-Galerkin N=4 and N=5; same aligned two-scale initial field",
+  "nu": 0.1,
+  "dt": 0.0005,
+  "grid": "32^3; final snapshot independently checked at 40^3",
+  "formula": "T=<omega dot S omega>=sum_{r=1}^3 <lambda_r |omega dot e_r|^2>; lambda ascending",
+  "notes": "omega-weighted cosine squares are undefined at omega=0 pointwise but computed via integrals. Filtered-vorticity quadratic forms with full S are not additive across shells; shell vorticity squares are additive due to the square partition. Individual eigenvector directions at degenerate eigenvalues are not intrinsic. Snapshots give no uniform-in-cutoff or time-integrated bound.",
+  "results": [
+    {
+      "N": 4,
+      "mode_count": 257,
+      "captures": [
+        {
+          "time": 0.0,
+          "grid": 32,
+          "G": 530.8994025572655,
+          "D": 2775.7544370581877,
+          "T": 179.7836461027724,
+          "half_G_derivative": -97.79179760304638,
+          "full": {
+            "vorticity_square": 530.8994025572656,
+            "eigenframe_cosine_square_weighted": [
+              0.10715510926357197,
+              0.7665639415646576,
+              0.12628094917177932
+            ],
+            "eigenframe_stretching_contributions": [
+              -710.5416844128663,
+              47.23901273991725,
+              843.0863177757017
+            ],
+            "stretching": 179.78364610277248,
+            "positive_part": 749.6764508508752,
+            "negative_part": -569.8928047481027
+          },
+          "filtered_vorticity_shells": [
+            {
+              "level": 0,
+              "vorticity_square": 75.8776282572171,
+              "eigenframe_cosine_square_weighted": [
+                0.3593565311079273,
+                0.3399758652824468,
+                0.30066760360963857
+              ],
+              "eigenframe_stretching_contributions": [
+                -283.50175114334655,
+                4.355376741509055,
+                250.87836706328693
+              ],
+              "stretching": -28.268007338556224,
+              "positive_part": 212.20064006815457,
+              "negative_part": -240.4686474067108
+            },
+            {
+              "level": 1,
+              "vorticity_square": 317.61073345275594,
+              "eigenframe_cosine_square_weighted": [
+                0.1437911549036298,
+                0.6972315145895558,
+                0.1589773305068263
+              ],
+              "eigenframe_stretching_contributions": [
+                -394.1774450472746,
+                37.54662702006293,
+                474.47688621420883
+              ],
+              "stretching": 117.84606818701208,
+              "positive_part": 473.42854645370494,
+              "negative_part": -355.5824782666929
+            },
+            {
+              "level": 2,
+              "vorticity_square": 137.41104084729255,
+              "eigenframe_cosine_square_weighted": [
+                0.2174007190423357,
+                0.5530208770733889,
+                0.2295784038842749
+              ],
+              "eigenframe_stretching_contributions": [
+                -182.43091843550647,
+                -0.6456046540446521,
+                226.823427273075
+              ],
+              "stretching": 43.74690418351891,
+              "positive_part": 208.8416490053441,
+              "negative_part": -165.0947448218252
+            }
+          ],
+          "repeated_eigenvalue_fraction_at_threshold_1e_8": 0.0,
+          "numerical_checks": {
+            "max_imaginary_field_error": 8.132383655379272e-15,
+            "max_strain_trace_error": 5.773159728050814e-15,
+            "Fourier_minus_grid_T": -8.526512829121202e-14,
+            "Fourier_minus_grid_G": -1.1368683772161603e-13,
+            "sum_shell_stretching_minus_global": -46.45868107079764
+          }
+        },
+        {
+          "time": 0.005,
+          "grid": 32,
+          "G": 530.4049793184628,
+          "D": 2769.7917775543906,
+          "T": 275.371660299627,
+          "half_G_derivative": -1.607517455812058,
+          "full": {
+            "vorticity_square": 530.4049793184629,
+            "eigenframe_cosine_square_weighted": [
+              0.10504474204872236,
+              0.7704188768318118,
+              0.12453638111946626
+            ],
+            "eigenframe_stretching_contributions": [
+              -695.0270477997285,
+              146.7611965152559,
+              823.6375115841048
+            ],
+            "stretching": 275.37166029962714,
+            "positive_part": 809.7918613585705,
+            "negative_part": -534.4202010589433
+          },
+          "filtered_vorticity_shells": [
+            {
+              "level": 0,
+              "vorticity_square": 75.05787474074181,
+              "eigenframe_cosine_square_weighted": [
+                0.3636902222114735,
+                0.33694692677934723,
+                0.2993628510091647
+              ],
+              "eigenframe_stretching_contributions": [
+                -283.9678741102009,
+                7.078579729990219,
+                244.50910264790662
+              ],
+              "stretching": -32.38019173229721,
+              "positive_part": 208.28947443281552,
+              "negative_part": -240.66966616511274
+            },
+            {
+              "level": 1,
+              "vorticity_square": 318.615563704212,
+              "eigenframe_cosine_square_weighted": [
+                0.143461979005484,
+                0.6989599541498351,
+                0.15757806684465683
+              ],
+              "eigenframe_stretching_contributions": [
+                -393.7981728364414,
+                92.57337115458573,
+                463.8715668531584
+              ],
+              "stretching": 162.64676517131022,
+              "positive_part": 507.49449095516695,
+              "negative_part": -344.84772578385673
+            },
+            {
+              "level": 2,
+              "vorticity_square": 136.731540873509,
+              "eigenframe_cosine_square_weighted": [
+                0.21875855287163293,
+                0.5548411235435149,
+                0.22640032358485845
+              ],
+              "eigenframe_stretching_contributions": [
+                -180.1811250779704,
+                9.776072766944976,
+                219.88640417447482
+              ],
+              "stretching": 49.481351863447856,
+              "positive_part": 210.4549576733604,
+              "negative_part": -160.97360580991258
+            }
+          ],
+          "repeated_eigenvalue_fraction_at_threshold_1e_8": 0.0,
+          "numerical_checks": {
+            "max_imaginary_field_error": 6.328271240363392e-15,
+            "max_strain_trace_error": 7.105427357601002e-15,
+            "Fourier_minus_grid_T": -1.1368683772161603e-13,
+            "Fourier_minus_grid_G": -1.1368683772161603e-13,
+            "sum_shell_stretching_minus_global": -95.62373499716617
+          }
+        },
+        {
+          "time": 0.01,
+          "grid": 32,
+          "G": 530.855684522837,
+          "D": 2772.9396358854765,
+          "T": 368.40367186981564,
+          "half_G_derivative": 91.10970828126796,
+          "full": {
+            "vorticity_square": 530.855684522837,
+            "eigenframe_cosine_square_weighted": [
+              0.10278321028259782,
+              0.7760223255260039,
+              0.12119446419138658
+            ],
+            "eigenframe_stretching_contributions": [
+              -678.3171696571887,
+              250.6395116186746,
+              796.0813299083032
+            ],
+            "stretching": 368.40367186981575,
+            "positive_part": 868.2629632072886,
+            "negative_part": -499.8592913374728
+          },
+          "filtered_vorticity_shells": [
+            {
+              "level": 0,
+              "vorticity_square": 74.13829474073195,
+              "eigenframe_cosine_square_weighted": [
+                0.36929325727769424,
+                0.3341451235071608,
+                0.29656161921511587
+              ],
+              "eigenframe_stretching_contributions": [
+                -284.33465945826873,
+                10.473679263124287,
+                237.722156445483
+              ],
+              "stretching": -36.13882374964694,
+              "positive_part": 204.26879340917776,
+              "negative_part": -240.40761715882468
+            },
+            {
+              "level": 1,
+              "vorticity_square": 320.115423135123,
+              "eigenframe_cosine_square_weighted": [
+                0.1417506075516635,
+                0.7031395250904857,
+                0.15510986735784782
+              ],
+              "eigenframe_stretching_contributions": [
+                -391.3013472066501,
+                147.13506832205377,
+                450.0048732774732
+              ],
+              "stretching": 205.83859439286243,
+              "positive_part": 540.354398563692,
+              "negative_part": -334.5158041708295
+            },
+            {
+              "level": 2,
+              "vorticity_square": 136.60196664698216,
+              "eigenframe_cosine_square_weighted": [
+                0.22135564951213046,
+                0.5576484004619224,
+                0.2209959500259696
+              ],
+              "eigenframe_stretching_contributions": [
+                -180.68388408536094,
+                20.583488070073848,
+                214.08912956058018
+              ],
+              "stretching": 53.98873354528875,
+              "positive_part": 211.73023862104156,
+              "negative_part": -157.74150507575283
+            }
+          ],
+          "repeated_eigenvalue_fraction_at_threshold_1e_8": 0.0,
+          "numerical_checks": {
+            "max_imaginary_field_error": 7.188694084447889e-15,
+            "max_strain_trace_error": 8.43769498715119e-15,
+            "Fourier_minus_grid_T": -1.1368683772161603e-13,
+            "Fourier_minus_grid_G": 0.0,
+            "sum_shell_stretching_minus_global": -144.71516768131139
+          }
+        },
+        {
+          "time": 0.015,
+          "grid": 32,
+          "G": 532.2132849394026,
+          "D": 2785.0090091113425,
+          "T": 458.16452296258433,
+          "half_G_derivative": 179.6636220514501,
+          "full": {
+            "vorticity_square": 532.2132849394026,
+            "eigenframe_cosine_square_weighted": [
+              0.09967070783679143,
+              0.7832372335445341,
+              0.11709205861869036
+            ],
+            "eigenframe_stretching_contributions": [
+              -658.97450381154,
+              352.20350829311866,
+              764.935518481017
+            ],
+            "stretching": 458.16452296258444,
+            "positive_part": 924.9780815116017,
+            "negative_part": -466.81355854901705
+          },
+          "filtered_vorticity_shells": [
+            {
+              "level": 0,
+              "vorticity_square": 73.12726139461165,
+              "eigenframe_cosine_square_weighted": [
+                0.3720031205256019,
+                0.3346094924491344,
+                0.2933873870252605
+              ],
+              "eigenframe_stretching_contributions": [
+                -283.7394011542889,
+                13.508423996994889,
+                230.69200407407607
+              ],
+              "stretching": -39.53897308322344,
+              "positive_part": 200.2577343527408,
+              "negative_part": -239.79670743596427
+            },
+            {
+              "level": 1,
+              "vorticity_square": 322.0623555090051,
+              "eigenframe_cosine_square_weighted": [
+                0.1399636051785347,
+                0.7082575261559398,
+                0.1517788686655147
+              ],
+              "eigenframe_stretching_contributions": [
+                -389.06759595707484,
+                202.4069835035117,
+                434.07356523779015
+              ],
+              "stretching": 247.41295278421785,
+              "positive_part": 571.6410240901475,
+              "negative_part": -324.2280713059296
+            },
+            {
+              "level": 2,
+              "vorticity_square": 137.02366803578587,
+              "eigenframe_cosine_square_weighted": [
+                0.22448419274736578,
+                0.5596639679471798,
+                0.2158518393054814
+              ],
+              "eigenframe_stretching_contributions": [
+                -184.06926909643911,
+                31.552652468650376,
+                209.725189466075
+              ],
+              "stretching": 57.20857283829067,
+              "positive_part": 212.95882109991084,
+              "negative_part": -155.7502482616202
+            }
+          ],
+          "repeated_eigenvalue_fraction_at_threshold_1e_8": 0.0,
+          "numerical_checks": {
+            "max_imaginary_field_error": 7.16093850883226e-15,
+            "max_strain_trace_error": 1.2434497875801753e-14,
+            "Fourier_minus_grid_T": -1.1368683772161603e-13,
+            "Fourier_minus_grid_G": 0.0,
+            "sum_shell_stretching_minus_global": -193.08197042329925
+          }
+        },
+        {
+          "time": 0.02,
+          "grid": 32,
+          "G": 534.4330722270936,
+          "D": 2805.7112822814224,
+          "T": 544.0264397291569,
+          "half_G_derivative": 263.45531150101465,
+          "full": {
+            "vorticity_square": 534.4330722270936,
+            "eigenframe_cosine_square_weighted": [
+              0.09607236605902762,
+              0.7920438455891761,
+              0.11188378835181226
+            ],
+            "eigenframe_stretching_contributions": [
+              -638.1974768030196,
+              452.7627153055788,
+              729.4612012265885
+            ],
+            "stretching": 544.0264397291571,
+            "positive_part": 979.2512602165515,
+            "negative_part": -435.2248204873944
+          },
+          "filtered_vorticity_shells": [
+            {
+              "level": 0,
+              "vorticity_square": 72.03345582855763,
+              "eigenframe_cosine_square_weighted": [
+                0.3761916895444793,
+                0.33297800360321994,
+                0.29083030685231337
+              ],
+              "eigenframe_stretching_contributions": [
+                -282.8762807941155,
+                16.274635272453953,
+                224.02071069778768
+              ],
+              "stretching": -42.58093482386968,
+              "positive_part": 196.19392201402206,
+              "negative_part": -238.77485683789178
+            },
+            {
+              "level": 1,
+              "vorticity_square": 324.4109848055891,
+              "eigenframe_cosine_square_weighted": [
+                0.13736517621391275,
+                0.7161371632416638,
+                0.14649766054440533
+              ],
+              "eigenframe_stretching_contributions": [
+                -385.8807822037484,
+                258.5426777137737,
+                414.7105729575044
+              ],
+              "stretching": 287.3724684675301,
+              "positive_part": 601.5707320253887,
+              "negative_part": -314.1982635578587
+            },
+            {
+              "level": 2,
+              "vorticity_square": 137.98863159294683,
+              "eigenframe_cosine_square_weighted": [
+                0.22840400668879743,
+                0.5611097425642493,
+                0.21048625074696717
+              ],
+              "eigenframe_stretching_contributions": [
+                -190.14380196401464,
+                43.128893294867304,
+                206.1475216009583
+              ],
+              "stretching": 59.13261293180883,
+              "positive_part": 214.97976072994857,
+              "negative_part": -155.84714779813976
+            }
+          ],
+          "repeated_eigenvalue_fraction_at_threshold_1e_8": 0.0,
+          "numerical_checks": {
+            "max_imaginary_field_error": 7.896461262646426e-15,
+            "max_strain_trace_error": 1.4210854715202004e-14,
+            "Fourier_minus_grid_T": -2.2737367544323206e-13,
+            "Fourier_minus_grid_G": 0.0,
+            "sum_shell_stretching_minus_global": -240.10229315368764
+          }
+        }
+      ],
+      "final_grid_40_T_difference": 2.2737367544323206e-13,
+      "final_grid_40_alignment_difference": [
+        -2.8838424056404355e-05,
+        0.0001099395868949804,
+        -8.110116281782875e-05
+      ]
+    },
+    {
+      "N": 5,
+      "mode_count": 515,
+      "captures": [
+        {
+          "time": 0.0,
+          "grid": 32,
+          "G": 530.8994025572655,
+          "D": 2775.7544370581877,
+          "T": 179.7836461027724,
+          "half_G_derivative": -97.79179760304638,
+          "full": {
+            "vorticity_square": 530.8994025572656,
+            "eigenframe_cosine_square_weighted": [
+              0.10715510926357197,
+              0.7665639415646576,
+              0.12628094917177932
+            ],
+            "eigenframe_stretching_contributions": [
+              -710.5416844128663,
+              47.23901273991725,
+              843.0863177757017
+            ],
+            "stretching": 179.78364610277248,
+            "positive_part": 749.6764508508752,
+            "negative_part": -569.8928047481027
+          },
+          "filtered_vorticity_shells": [
+            {
+              "level": 0,
+              "vorticity_square": 75.8776282572171,
+              "eigenframe_cosine_square_weighted": [
+                0.3593565311079273,
+                0.3399758652824468,
+                0.30066760360963857
+              ],
+              "eigenframe_stretching_contributions": [
+                -283.50175114334655,
+                4.355376741509055,
+                250.87836706328693
+              ],
+              "stretching": -28.268007338556224,
+              "positive_part": 212.20064006815457,
+              "negative_part": -240.4686474067108
+            },
+            {
+              "level": 1,
+              "vorticity_square": 317.61073345275594,
+              "eigenframe_cosine_square_weighted": [
+                0.1437911549036298,
+                0.6972315145895558,
+                0.1589773305068263
+              ],
+              "eigenframe_stretching_contributions": [
+                -394.1774450472746,
+                37.54662702006293,
+                474.47688621420883
+              ],
+              "stretching": 117.84606818701208,
+              "positive_part": 473.42854645370494,
+              "negative_part": -355.5824782666929
+            },
+            {
+              "level": 2,
+              "vorticity_square": 137.41104084729255,
+              "eigenframe_cosine_square_weighted": [
+                0.2174007190423357,
+                0.5530208770733889,
+                0.2295784038842749
+              ],
+              "eigenframe_stretching_contributions": [
+                -182.43091843550647,
+                -0.6456046540446521,
+                226.823427273075
+              ],
+              "stretching": 43.74690418351891,
+              "positive_part": 208.8416490053441,
+              "negative_part": -165.0947448218252
+            },
+            {
+              "level": 3,
+              "vorticity_square": 0.0,
+              "eigenframe_cosine_square_weighted": null,
+              "eigenframe_stretching_contributions": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "stretching": 0.0,
+              "positive_part": 0.0,
+              "negative_part": 0.0
+            }
+          ],
+          "repeated_eigenvalue_fraction_at_threshold_1e_8": 0.0,
+          "numerical_checks": {
+            "max_imaginary_field_error": 8.132383655379272e-15,
+            "max_strain_trace_error": 5.773159728050814e-15,
+            "Fourier_minus_grid_T": -8.526512829121202e-14,
+            "Fourier_minus_grid_G": -1.1368683772161603e-13,
+            "sum_shell_stretching_minus_global": -46.45868107079764
+          }
+        },
+        {
+          "time": 0.005,
+          "grid": 32,
+          "G": 530.626695252075,
+          "D": 2775.6554362160077,
+          "T": 319.9889032052204,
+          "half_G_derivative": 42.42335958361963,
+          "full": {
+            "vorticity_square": 530.626695252075,
+            "eigenframe_cosine_square_weighted": [
+              0.10467347823495432,
+              0.7730300043402945,
+              0.12229651742474734
+            ],
+            "eigenframe_stretching_contributions": [
+              -692.5625699824724,
+              199.72951555849136,
+              812.8219576292142
+            ],
+            "stretching": 319.98890320522037,
+            "positive_part": 838.8924534631262,
+            "negative_part": -518.903550257906
+          },
+          "filtered_vorticity_shells": [
+            {
+              "level": 0,
+              "vorticity_square": 75.05353513099062,
+              "eigenframe_cosine_square_weighted": [
+                0.36334573334186626,
+                0.3391648069894308,
+                0.29748945966871265
+              ],
+              "eigenframe_stretching_contributions": [
+                -284.381013273503,
+                7.87604635373509,
+                244.1155629584192
+              ],
+              "stretching": -32.38940396134889,
+              "positive_part": 208.8098085000064,
+              "negative_part": -241.1992124613553
+            },
+            {
+              "level": 1,
+              "vorticity_square": 318.5984920244737,
+              "eigenframe_cosine_square_weighted": [
+                0.14095981495656243,
+                0.7033129412635518,
+                0.15572724377990285
+              ],
+              "eigenframe_stretching_contributions": [
+                -390.2222462535756,
+                98.0458715209826,
+                453.41749789760274
+              ],
+              "stretching": 161.24112316498824,
+              "positive_part": 506.0054748169597,
+              "negative_part": -344.7643516519715
+            },
+            {
+              "level": 2,
+              "vorticity_square": 136.9600307109592,
+              "eigenframe_cosine_square_weighted": [
+                0.2105166736010422,
+                0.5520539764543012,
+                0.23742934994466441
+              ],
+              "eigenframe_stretching_contributions": [
+                -173.9413451335078,
+                26.93722870437913,
+                234.2532899030176
+              ],
+              "stretching": 87.24917347388667,
+              "positive_part": 236.20247183721574,
+              "negative_part": -148.9532983633291
+            },
+            {
+              "level": 3,
+              "vorticity_square": 0.014637385651402284,
+              "eigenframe_cosine_square_weighted": [
+                0.31612903462848835,
+                0.3798855091934707,
+                0.303985456178053
+              ],
+              "eigenframe_stretching_contributions": [
+                -0.04361479338845349,
+                0.0010000135270268027,
+                0.042004710589299124
+              ],
+              "stretching": -0.0006100692721292007,
+              "positive_part": 0.030760794917964,
+              "negative_part": -0.0313708641900932
+            }
+          ],
+          "repeated_eigenvalue_fraction_at_threshold_1e_8": 0.0,
+          "numerical_checks": {
+            "max_imaginary_field_error": 6.439293542825908e-15,
+            "max_strain_trace_error": 7.549516567451064e-15,
+            "Fourier_minus_grid_T": 5.684341886080802e-14,
+            "Fourier_minus_grid_G": 0.0,
+            "sum_shell_stretching_minus_global": -103.88862059696655
+          }
+        },
+        {
+          "time": 0.01,
+          "grid": 32,
+          "G": 531.7297462376494,
+          "D": 2796.133693637773,
+          "T": 456.8188535108593,
+          "half_G_derivative": 177.20548414708202,
+          "full": {
+            "vorticity_square": 531.7297462376496,
+            "eigenframe_cosine_square_weighted": [
+              0.1014402802071725,
+              0.7820170928185928,
+              0.1165426269742776
+            ],
+            "eigenframe_stretching_contributions": [
+              -671.9647587906455,
+              355.0186018032365,
+              773.7650104982547
+            ],
+            "stretching": 456.81885351085947,
+            "positive_part": 928.940291032665,
+            "negative_part": -472.1214375218055
+          },
+          "filtered_vorticity_shells": [
+            {
+              "level": 0,
+              "vorticity_square": 74.12068183912815,
+              "eigenframe_cosine_square_weighted": [
+                0.3677355837087621,
+                0.337477617247659,
+                0.29478679904360594
+              ],
+              "eigenframe_stretching_contributions": [
+                -285.06999341399666,
+                12.005621637812222,
+                236.89128708204274
+              ],
+              "stretching": -36.173084694150084,
+              "positive_part": 205.10900372391941,
+              "negative_part": -241.2820884180695
+            },
+            {
+              "level": 1,
+              "vorticity_square": 320.05102131538894,
+              "eigenframe_cosine_square_weighted": [
+                0.137094271823376,
+                0.7109620461698984,
+                0.15194368200670197
+              ],
+              "eigenframe_stretching_contributions": [
+                -384.49667658630284,
+                156.24804052713776,
+                431.41462052453716
+              ],
+              "stretching": 203.1659844653758,
+              "positive_part": 537.2911908663906,
+              "negative_part": -334.1252064010148
+            },
+            {
+              "level": 2,
+              "vorticity_square": 137.49818053872917,
+              "eigenframe_cosine_square_weighted": [
+                0.20354103269383014,
+                0.5527204452829617,
+                0.24373852202321342
+              ],
+              "eigenframe_stretching_contributions": [
+                -168.66728257224926,
+                55.42351898359849,
+                242.54683191873977
+              ],
+              "stretching": 129.303068330088,
+              "positive_part": 264.21958389091344,
+              "negative_part": -134.91651556082545
+            },
+            {
+              "level": 3,
+              "vorticity_square": 0.05986254440329456,
+              "eigenframe_cosine_square_weighted": [
+                0.31463792242214844,
+                0.386099068493328,
+                0.2992630090845175
+              ],
+              "eigenframe_stretching_contributions": [
+                -0.17943851530781935,
+                0.008900535171615537,
+                0.16734533862201895
+              ],
+              "stretching": -0.0031926415141865783,
+              "positive_part": 0.12346468934251113,
+              "negative_part": -0.12665733085669773
+            }
+          ],
+          "repeated_eigenvalue_fraction_at_threshold_1e_8": 0.0,
+          "numerical_checks": {
+            "max_imaginary_field_error": 5.9396931817445875e-15,
+            "max_strain_trace_error": 8.43769498715119e-15,
+            "Fourier_minus_grid_T": -1.7053025658242404e-13,
+            "Fourier_minus_grid_G": -2.2737367544323206e-13,
+            "sum_shell_stretching_minus_global": -160.52607805105976
+          }
+        },
+        {
+          "time": 0.015,
+          "grid": 32,
+          "G": 534.1497975678362,
+          "D": 2836.5884975811796,
+          "T": 589.3484050777474,
+          "half_G_derivative": 305.68955531962945,
+          "full": {
+            "vorticity_square": 534.1497975678362,
+            "eigenframe_cosine_square_weighted": [
+              0.09734018903849,
+              0.7919414278383338,
+              0.11071838312319505
+            ],
+            "eigenframe_stretching_contributions": [
+              -648.6204379646376,
+              504.02557282652106,
+              733.9432702158549
+            ],
+            "stretching": 589.3484050777477,
+            "positive_part": 1018.5366420908064,
+            "negative_part": -429.1882370130588
+          },
+          "filtered_vorticity_shells": [
+            {
+              "level": 0,
+              "vorticity_square": 73.08727542703568,
+              "eigenframe_cosine_square_weighted": [
+                0.37060062339149247,
+                0.3363431477760197,
+                0.2930562288324826
+              ],
+              "eigenframe_stretching_contributions": [
+                -284.68456045662407,
+                14.57985998183925,
+                230.4943812025593
+              ],
+              "stretching": -39.61031927222636,
+              "positive_part": 201.11458782424785,
+              "negative_part": -240.72490709647417
+            },
+            {
+              "level": 1,
+              "vorticity_square": 321.9251727978329,
+              "eigenframe_cosine_square_weighted": [
+                0.1341074611285008,
+                0.7181500750834815,
+                0.1477424637880091
+              ],
+              "eigenframe_stretching_contributions": [
+                -381.63268431008305,
+                215.57811971655275,
+                409.5834664427268
+              ],
+              "stretching": 243.5289018492041,
+              "positive_part": 567.3703444595648,
+              "negative_part": -323.8414426103607
+            },
+            {
+              "level": 2,
+              "vorticity_square": 138.9999734093047,
+              "eigenframe_cosine_square_weighted": [
+                0.19704139476713517,
+                0.556010996807833,
+                0.24694760842503283
+              ],
+              "eigenframe_stretching_contributions": [
+                -166.66672973340616,
+                86.2433123504743,
+                250.21355529445106
+              ],
+              "stretching": 169.79013791151218,
+              "positive_part": 292.53581242665973,
+              "negative_part": -122.74567451514756
+            },
+            {
+              "level": 3,
+              "vorticity_square": 0.13737593366295853,
+              "eigenframe_cosine_square_weighted": [
+                0.31361535957489045,
+                0.3886708713713581,
+                0.2977137690537561
+              ],
+              "eigenframe_stretching_contributions": [
+                -0.4141411320733988,
+                0.029040559258303945,
+                0.37678559789631444
+              ],
+              "stretching": -0.00831497491878852,
+              "positive_part": 0.27882621301447996,
+              "negative_part": -0.2871411879332685
+            }
+          ],
+          "repeated_eigenvalue_fraction_at_threshold_1e_8": 0.0,
+          "numerical_checks": {
+            "max_imaginary_field_error": 6.411537967210279e-15,
+            "max_strain_trace_error": 9.769962616701378e-15,
+            "Fourier_minus_grid_T": -2.2737367544323206e-13,
+            "Fourier_minus_grid_G": 0.0,
+            "sum_shell_stretching_minus_global": -215.6479995641763
+          }
+        },
+        {
+          "time": 0.02,
+          "grid": 32,
+          "G": 537.8200603556857,
+          "D": 2896.3007678928516,
+          "T": 716.7647326181303,
+          "half_G_derivative": 427.13465582884515,
+          "full": {
+            "vorticity_square": 537.8200603556858,
+            "eigenframe_cosine_square_weighted": [
+              0.09294333720467401,
+              0.8017987316117746,
+              0.10525793118350056
+            ],
+            "eigenframe_stretching_contributions": [
+              -624.5017668390403,
+              644.5980063785155,
+              696.6684930786531
+            ],
+            "stretching": 716.7647326181304,
+            "positive_part": 1106.0376161308573,
+            "negative_part": -389.2728835127266
+          },
+          "filtered_vorticity_shells": [
+            {
+              "level": 0,
+              "vorticity_square": 71.96212228337188,
+              "eigenframe_cosine_square_weighted": [
+                0.37357186555776006,
+                0.3350045904885478,
+                0.29142354395372877
+              ],
+              "eigenframe_stretching_contributions": [
+                -283.8470047205055,
+                16.761368788159288,
+                224.38816218376428
+              ],
+              "stretching": -42.69747374858295,
+              "positive_part": 196.86628921078233,
+              "negative_part": -239.5637629593653
+            },
+            {
+              "level": 1,
+              "vorticity_square": 324.1791322576587,
+              "eigenframe_cosine_square_weighted": [
+                0.13072893897722251,
+                0.7253524432381752,
+                0.14391861778460352
+              ],
+              "eigenframe_stretching_contributions": [
+                -378.71698925431843,
+                271.1935067783425,
+                389.76493712993846
+              ],
+              "stretching": 282.2414546539927,
+              "positive_part": 596.1385315647924,
+              "negative_part": -313.89707691079957
+            },
+            {
+              "level": 2,
+              "vorticity_square": 141.43017612290276,
+              "eigenframe_cosine_square_weighted": [
+                0.1905436905242445,
+                0.5620799895992218,
+                0.24737631987653366
+              ],
+              "eigenframe_stretching_contributions": [
+                -167.4448989055615,
+                118.51936545924188,
+                257.5920925057919
+              ],
+              "stretching": 208.66655905946962,
+              "positive_part": 321.24864741210814,
+              "negative_part": -112.58208835263852
+            },
+            {
+              "level": 3,
+              "vorticity_square": 0.2486296917523525,
+              "eigenframe_cosine_square_weighted": [
+                0.31210665020022993,
+                0.39069046050328166,
+                0.2972028892964899
+              ],
+              "eigenframe_stretching_contributions": [
+                -0.753365065751079,
+                0.06525007817408737,
+                0.6723381249176966
+              ],
+              "stretching": -0.01577686265932038,
+              "positive_part": 0.497000076673737,
+              "negative_part": -0.5127769393330573
+            }
+          ],
+          "repeated_eigenvalue_fraction_at_threshold_1e_8": 0.0,
+          "numerical_checks": {
+            "max_imaginary_field_error": 7.854827899222983e-15,
+            "max_strain_trace_error": 7.549516567451064e-15,
+            "Fourier_minus_grid_T": -1.1368683772161603e-13,
+            "Fourier_minus_grid_G": -1.1368683772161603e-13,
+            "sum_shell_stretching_minus_global": -268.56996951591026
+          }
+        }
+      ],
+      "final_grid_40_T_difference": 5.684341886080801e-13,
+      "final_grid_40_alignment_difference": [
+        0.0008171159495090896,
+        -0.0011157555286464005,
+        0.00029863957917444783
+      ]
+    }
+  ]
+}

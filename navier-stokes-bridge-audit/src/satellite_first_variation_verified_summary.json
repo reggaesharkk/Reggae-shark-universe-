@@ -1,0 +1,45 @@
+{
+  "status": "executed satellite first-variation audit",
+  "parameterization": "u_eps = normalized WP18 m=2 base + eps * registered WP17 satellites",
+  "relative_amplitudes_m1_to_m6": [
+    0.049787068367863944,
+    1.0,
+    0.0024787521766663585,
+    0.01081140029716827,
+    0.0024787521766663585,
+    0.007043427716326855
+  ],
+  "phases_m1_to_m6": [
+    -3.003156442967318,
+    -1.5708698100185097,
+    -2.977730689860095,
+    2.023287979573299,
+    1.9851705838179707,
+    -1.333169824255259
+  ],
+  "polynomial_checks": {
+    "G0": 112.0,
+    "G_eps2": 0.1776262007148688,
+    "X2_0": 1024.0,
+    "X2_eps2": 6.466168009632611,
+    "N_polynomial_coefficients_increasing_order": [
+      511.99999861765514,
+      -1.0281434980033626e-13,
+      -4.2177244323139055e-14,
+      -0.03441599073117298
+    ],
+    "interpretation": "N2_high, G and X2 have zero linear response along this direction to numerical precision."
+  },
+  "shifted_grid_first_variation": [
+    {"grid":48,"positive0_mean":11.085960538156257,"positive0_std":0.029040261335468425,"positive_derivative_mean":-0.20596757653855896,"positive_derivative_std":0.01125520767804004},
+    {"grid":64,"positive0_mean":11.081070802231237,"positive0_std":0.013653289629059767,"positive_derivative_mean":-0.20801339070119113,"positive_derivative_std":0.009426480160237402},
+    {"grid":96,"positive0_mean":11.07181554770373,"positive0_std":0.006003903518700984,"positive_derivative_mean":-0.21143403445192707,"positive_derivative_std":0.004412338854389835},
+    {"grid":128,"positive0_mean":11.070357388128748,"positive0_std":0.00386563486432772,"positive_derivative_mean":-0.21414334415933656,"positive_derivative_std":0.0023796516774499},
+    {"grid":160,"positive0_mean":11.070047351877017,"positive0_std":0.002135585812620087,"positive_derivative_mean":-0.21370280744235326,"positive_derivative_std":0.0009560994533027877}
+  ],
+  "wp18_positive_stretching_baseline_4096_reduced": 11.06785194503965,
+  "wp18_C_baseline_4096_reduced": 5.059699052542701,
+  "Cprime_estimate_using_160_shifted_derivative": 0.0976948280225446,
+  "result": "The registered WP17 satellite direction is first-order improving because it linearly depletes positive stretching while N2_high, G and X2 have zero first derivatives.",
+  "warning": "One sparse-family direction only. The positive-part derivative is a deterministic shifted-grid approximation; no global supremum, cutoff-independent bound, time-integral estimate or regularity theorem is established."
+}

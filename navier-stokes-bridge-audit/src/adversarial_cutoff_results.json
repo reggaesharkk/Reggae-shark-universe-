@@ -1,0 +1,922 @@
+{
+  "interval": [
+    0.0,
+    0.02
+  ],
+  "nu": 0.1,
+  "dt": 0.0005,
+  "high_modes": [
+    [
+      3,
+      2,
+      0
+    ],
+    [
+      2,
+      -3,
+      0
+    ]
+  ],
+  "initial_high_G_fraction_when_enabled": 0.25,
+  "scenario_parameters": {
+    "reference": {
+      "amplitude_factor": 1.0,
+      "R_phase_offset_radians": 0.0,
+      "initial_extra_high_G_fraction": 0.0
+    },
+    "half_amplitude": {
+      "amplitude_factor": 0.5,
+      "R_phase_offset_radians": 0.0,
+      "initial_extra_high_G_fraction": 0.0
+    },
+    "double_amplitude": {
+      "amplitude_factor": 2.0,
+      "R_phase_offset_radians": 0.0,
+      "initial_extra_high_G_fraction": 0.0
+    },
+    "quarter_phase": {
+      "amplitude_factor": 1.0,
+      "R_phase_offset_radians": 1.5707963267948966,
+      "initial_extra_high_G_fraction": 0.0
+    },
+    "opposite_phase": {
+      "amplitude_factor": 1.0,
+      "R_phase_offset_radians": 3.141592653589793,
+      "initial_extra_high_G_fraction": 0.0
+    },
+    "high_frequency_25pct_G": {
+      "amplitude_factor": 1.0,
+      "R_phase_offset_radians": 0.0,
+      "initial_extra_high_G_fraction": 0.25
+    },
+    "combined_double_quarter_high": {
+      "amplitude_factor": 2.0,
+      "R_phase_offset_radians": 1.5707963267948966,
+      "initial_extra_high_G_fraction": 0.25
+    }
+  },
+  "warning": "The required_coefficient integral uses the unknown transfer and is tautological. Do not treat it as an a priori bound. Finite cutoffs and short time do not establish PDE regularity or continuum convergence.",
+  "runs": [
+    {
+      "scenario": "reference",
+      "N": 4,
+      "modes": 257,
+      "ordered_pairs": 31129,
+      "trajectory": {
+        "dt": 0.0005,
+        "initial": {
+          "E": 90.25392727379403,
+          "G": 530.8994025572655,
+          "D": 2775.754437058188,
+          "T": 179.7836461027724,
+          "high_G_fraction": 0.26366367219599557
+        },
+        "final": {
+          "E": 89.19100771839643,
+          "G": 534.4330722270936,
+          "D": 2805.7112822814224,
+          "T": 544.0264397291569,
+          "high_G_fraction": 0.2598018343581222
+        },
+        "min_T": 179.7836461027724,
+        "max_T": 544.0264397291569,
+        "max_G": 534.4330722270936,
+        "max_high_G_fraction": 0.26366367219599557,
+        "integrals": {
+          "G": 10.629195554533235,
+          "D": 55.577591233187604,
+          "T": 7.324593959510526,
+          "positive_T": 7.324593959510526,
+          "positive_growth": 2.0143143748918457,
+          "required_coefficient": 0.008545726909741454
+        },
+        "energy_budget_residual": 5.572453609659078e-11,
+        "enstrophy_budget_residual": -1.2777157110122062e-09,
+        "dt_refinement": {
+          "integral_T_difference": -6.917169059761363e-10,
+          "integral_positive_T_difference": -6.917169059761363e-10,
+          "final_state_l2_difference": 2.775275714256469e-10,
+          "refined_energy_budget_residual": 3.561595462997502e-12,
+          "refined_enstrophy_budget_residual": -7.949640945525971e-11
+        }
+      }
+    },
+    {
+      "scenario": "reference",
+      "N": 5,
+      "modes": 515,
+      "ordered_pairs": 124015,
+      "trajectory": {
+        "dt": 0.0005,
+        "initial": {
+          "E": 90.25392727379402,
+          "G": 530.8994025572655,
+          "D": 2775.7544370581877,
+          "T": 179.7836461027724,
+          "high_G_fraction": 0.0
+        },
+        "final": {
+          "E": 89.18871303026108,
+          "G": 537.8200603556858,
+          "D": 2896.3007678928525,
+          "T": 716.7647326181303,
+          "high_G_fraction": 0.012769527469939994
+        },
+        "min_T": 179.7836461027724,
+        "max_T": 716.7647326181303,
+        "max_G": 537.8200603556858,
+        "max_high_G_fraction": 0.012769527469939994,
+        "integrals": {
+          "G": 10.652142436052872,
+          "D": 56.18884364177809,
+          "T": 9.07921326514511,
+          "positive_T": 9.07921326514511,
+          "positive_growth": 3.6283599684202694,
+          "required_coefficient": 0.011750437420205869
+        },
+        "energy_budget_residual": 7.23519022471919e-11,
+        "enstrophy_budget_residual": -1.7571615273936914e-09,
+        "dt_refinement": {
+          "integral_T_difference": -5.750191434117369e-10,
+          "integral_positive_T_difference": -5.750191434117369e-10,
+          "final_state_l2_difference": 7.174775241569684e-10,
+          "refined_energy_budget_residual": 4.792166663492026e-12,
+          "refined_enstrophy_budget_residual": -1.0883560719321395e-10
+        }
+      }
+    },
+    {
+      "scenario": "reference",
+      "N": 6,
+      "modes": 925,
+      "ordered_pairs": 400963,
+      "trajectory": {
+        "dt": 0.0005,
+        "initial": {
+          "E": 90.25392727379402,
+          "G": 530.8994025572655,
+          "D": 2775.754437058188,
+          "T": 179.7836461027724,
+          "high_G_fraction": 0.0
+        },
+        "final": {
+          "E": 89.18866309913238,
+          "G": 537.9142553672175,
+          "D": 2901.159389426324,
+          "T": 724.1996570625873,
+          "high_G_fraction": 0.004120693722359634
+        },
+        "min_T": 179.7836461027724,
+        "max_T": 724.1996570625873,
+        "max_G": 537.9142553672175,
+        "max_high_G_fraction": 0.004120693722359634,
+        "integrals": {
+          "G": 10.652641747510874,
+          "D": 56.214272140393845,
+          "T": 9.128853619173915,
+          "positive_T": 9.128853619173915,
+          "positive_growth": 3.6749081656406997,
+          "required_coefficient": 0.011840129020771134
+        },
+        "energy_budget_residual": 8.945200136167841e-11,
+        "enstrophy_budget_residual": -1.5852830159701625e-10,
+        "dt_refinement": {
+          "integral_T_difference": 9.660325872573594e-10,
+          "integral_positive_T_difference": 9.660325872573594e-10,
+          "final_state_l2_difference": 9.48506905837336e-10,
+          "refined_energy_budget_residual": 5.813349801542245e-12,
+          "refined_enstrophy_budget_residual": -8.86846152070575e-12
+        }
+      }
+    },
+    {
+      "scenario": "half_amplitude",
+      "N": 4,
+      "modes": 257,
+      "ordered_pairs": 31129,
+      "trajectory": {
+        "dt": 0.0005,
+        "initial": {
+          "E": 22.56348181844851,
+          "G": 132.72485063931637,
+          "D": 693.938609264547,
+          "T": 22.47295576284655,
+          "high_G_fraction": 0.26366367219599557
+        },
+        "final": {
+          "E": 22.299575760819998,
+          "G": 131.34337040812122,
+          "D": 681.6293035067888,
+          "T": 45.5564954339896,
+          "high_G_fraction": 0.2578717216535565
+        },
+        "min_T": 22.47295576284655,
+        "max_T": 45.5564954339896,
+        "max_G": 132.72485063931637,
+        "max_high_G_fraction": 0.26366367219599557,
+        "integrals": {
+          "G": 2.6390605762921986,
+          "D": 13.739920775284157,
+          "T": 0.6832519619418274,
+          "positive_T": 0.6832519619418274,
+          "positive_growth": 0.0,
+          "required_coefficient": 0.00043664328251263114
+        },
+        "energy_budget_residual": 7.094880238867063e-13,
+        "enstrophy_budget_residual": -1.0989209542344724e-11
+      }
+    },
+    {
+      "scenario": "half_amplitude",
+      "N": 5,
+      "modes": 515,
+      "ordered_pairs": 124015,
+      "trajectory": {
+        "dt": 0.0005,
+        "initial": {
+          "E": 22.563481818448505,
+          "G": 132.72485063931637,
+          "D": 693.9386092645469,
+          "T": 22.47295576284655,
+          "high_G_fraction": 0.0
+        },
+        "final": {
+          "E": 22.299433110510215,
+          "G": 131.553764332179,
+          "D": 687.2248500366485,
+          "T": 56.27849842834575,
+          "high_G_fraction": 0.0032677508624895718
+        },
+        "min_T": 22.47295576284655,
+        "max_T": 56.27849842834575,
+        "max_G": 132.72485063931637,
+        "max_high_G_fraction": 0.0032677508624895718,
+        "integrals": {
+          "G": 2.6404870793936253,
+          "D": 13.777772794186307,
+          "T": 0.7922341258635952,
+          "positive_T": 0.7922341258635952,
+          "positive_growth": 0.0,
+          "required_coefficient": 0.0011034825269248942
+        },
+        "energy_budget_residual": 1.0724754417879012e-12,
+        "enstrophy_budget_residual": -1.365774160433375e-11
+      }
+    },
+    {
+      "scenario": "half_amplitude",
+      "N": 6,
+      "modes": 925,
+      "ordered_pairs": 400963,
+      "trajectory": {
+        "dt": 0.0005,
+        "initial": {
+          "E": 22.563481818448505,
+          "G": 132.72485063931637,
+          "D": 693.938609264547,
+          "T": 22.47295576284655,
+          "high_G_fraction": 0.0
+        },
+        "final": {
+          "E": 22.299431069413423,
+          "G": 131.5571194721821,
+          "D": 687.3938030107747,
+          "T": 56.498980531955965,
+          "high_G_fraction": 0.00095703325945173
+        },
+        "min_T": 22.47295576284655,
+        "max_T": 56.498980531955965,
+        "max_G": 132.72485063931637,
+        "max_high_G_fraction": 0.00095703325945173,
+        "integrals": {
+          "G": 2.640507490364492,
+          "D": 13.778792826992563,
+          "T": 0.7940136991232123,
+          "positive_T": 0.7940136991232123,
+          "positive_growth": 0.0,
+          "required_coefficient": 0.0011153761173757163
+        },
+        "energy_budget_residual": 1.3671286325234178e-12,
+        "enstrophy_budget_residual": 8.912204307875982e-12
+      }
+    },
+    {
+      "scenario": "double_amplitude",
+      "N": 4,
+      "modes": 257,
+      "ordered_pairs": 31129,
+      "trajectory": {
+        "dt": 0.0005,
+        "initial": {
+          "E": 361.01570909517613,
+          "G": 2123.597610229062,
+          "D": 11103.017748232753,
+          "T": 1438.2691688221792,
+          "high_G_fraction": 0.26366367219599557
+        },
+        "final": {
+          "E": 356.6775601440901,
+          "G": 2250.0911667833534,
+          "D": 12261.641558188718,
+          "T": 6847.731367443386,
+          "high_G_fraction": 0.265846665325366
+        },
+        "min_T": 1438.2691688221792,
+        "max_T": 6847.731367443386,
+        "max_G": 2250.0911667833534,
+        "max_high_G_fraction": 0.265846665325366,
+        "integrals": {
+          "G": 43.38148955598666,
+          "D": 230.06714252453588,
+          "T": 86.2534927107328,
+          "positive_T": 86.2534927107328,
+          "positive_growth": 63.24677845827921,
+          "required_coefficient": 0.03423173007144446
+        },
+        "energy_budget_residual": 4.5126116177129916e-09,
+        "enstrophy_budget_residual": -1.81133486876206e-07,
+        "dt_refinement": {
+          "integral_T_difference": -6.890591919272993e-08,
+          "integral_positive_T_difference": -6.890591919272993e-08,
+          "final_state_l2_difference": 1.817569957836115e-08,
+          "refined_energy_budget_residual": 3.141122917327266e-10,
+          "refined_enstrophy_budget_residual": -1.1203823646610545e-08
+        }
+      }
+    },
+    {
+      "scenario": "double_amplitude",
+      "N": 5,
+      "modes": 515,
+      "ordered_pairs": 124015,
+      "trajectory": {
+        "dt": 0.0005,
+        "initial": {
+          "E": 361.0157090951761,
+          "G": 2123.597610229062,
+          "D": 11103.01774823275,
+          "T": 1438.2691688221792,
+          "high_G_fraction": 0.0
+        },
+        "final": {
+          "E": 356.64068336218907,
+          "G": 2304.3718362026852,
+          "D": 13738.546775605942,
+          "T": 9592.483952365918,
+          "high_G_fraction": 0.04751823311403306
+        },
+        "min_T": 1438.2691688221792,
+        "max_T": 9592.483952365918,
+        "max_G": 2304.3718362026852,
+        "max_high_G_fraction": 0.04751823311403306,
+        "integrals": {
+          "G": 43.7502573725809,
+          "D": 239.99883009251985,
+          "T": 114.38699628980143,
+          "positive_T": 114.38699628980143,
+          "positive_growth": 90.38711328054944,
+          "required_coefficient": 0.0463284112594169
+        },
+        "energy_budget_residual": 4.2710777137244804e-09,
+        "enstrophy_budget_residual": -2.937377985290368e-07,
+        "dt_refinement": {
+          "integral_T_difference": 1.0927578841801733e-09,
+          "integral_positive_T_difference": 1.0927578841801733e-09,
+          "final_state_l2_difference": 4.976682022028437e-08,
+          "refined_energy_budget_residual": 3.3167601998229657e-10,
+          "refined_enstrophy_budget_residual": -1.8046421246253885e-08
+        }
+      }
+    },
+    {
+      "scenario": "double_amplitude",
+      "N": 6,
+      "modes": 925,
+      "ordered_pairs": 400963,
+      "trajectory": {
+        "dt": 0.0005,
+        "initial": {
+          "E": 361.0157090951761,
+          "G": 2123.597610229062,
+          "D": 11103.017748232753,
+          "T": 1438.2691688221792,
+          "high_G_fraction": 0.0
+        },
+        "final": {
+          "E": 356.63896857835425,
+          "G": 2307.975289323686,
+          "D": 13929.214722886492,
+          "T": 9907.41690910344,
+          "high_G_fraction": 0.01873551383504284
+        },
+        "min_T": 1438.2691688221792,
+        "max_T": 9907.41690910344,
+        "max_G": 2307.975289323686,
+        "max_high_G_fraction": 0.01873551383504284,
+        "integrals": {
+          "G": 43.76740521711885,
+          "D": 240.89702697511868,
+          "T": 116.27854249248092,
+          "positive_T": 116.27854249248092,
+          "positive_growth": 92.18883979496907,
+          "required_coefficient": 0.047127446009259145
+        },
+        "energy_budget_residual": 4.890059024376114e-09,
+        "enstrophy_budget_residual": -2.476570557519153e-07,
+        "dt_refinement": {
+          "integral_T_difference": 1.2990732045636832e-07,
+          "integral_positive_T_difference": 1.2990732045636832e-07,
+          "final_state_l2_difference": 6.733079624875684e-08,
+          "refined_energy_budget_residual": 3.802922421414223e-10,
+          "refined_enstrophy_budget_residual": -1.506982627574871e-08
+        }
+      }
+    },
+    {
+      "scenario": "quarter_phase",
+      "N": 4,
+      "modes": 257,
+      "ordered_pairs": 31129,
+      "trajectory": {
+        "dt": 0.0005,
+        "initial": {
+          "E": 90.25392727379405,
+          "G": 530.8994025572656,
+          "D": 2775.7544370581886,
+          "T": -1.865174681370263e-14,
+          "high_G_fraction": 0.2636636721959955
+        },
+        "final": {
+          "E": 89.19880370860253,
+          "G": 526.2931826452697,
+          "D": 2747.801746869868,
+          "T": 307.37167489339515,
+          "high_G_fraction": 0.25942892611947765
+        },
+        "min_T": -1.865174681370263e-14,
+        "max_T": 307.37167489339515,
+        "max_G": 530.8994025572656,
+        "max_high_G_fraction": 0.2636636721959955,
+        "integrals": {
+          "G": 10.551235652050723,
+          "D": 55.03774489601931,
+          "T": 3.2006645351562995,
+          "positive_T": 3.2006645351562995,
+          "positive_growth": 0.03926469425528656,
+          "required_coefficient": 0.0019349016170277596
+        },
+        "energy_budget_residual": 1.3550272015550036e-11,
+        "enstrophy_budget_residual": -1.5523360374913864e-09
+      }
+    },
+    {
+      "scenario": "quarter_phase",
+      "N": 5,
+      "modes": 515,
+      "ordered_pairs": 124015,
+      "trajectory": {
+        "dt": 0.0005,
+        "initial": {
+          "E": 90.25392727379405,
+          "G": 530.8994025572656,
+          "D": 2775.7544370581886,
+          "T": -1.865174681370263e-14,
+          "high_G_fraction": 0.0
+        },
+        "final": {
+          "E": 89.1962355381795,
+          "G": 530.2160058908412,
+          "D": 2856.732860070437,
+          "T": 520.6404348446287,
+          "high_G_fraction": 0.015115979725557938
+        },
+        "min_T": -1.865174681370263e-14,
+        "max_T": 520.6404348446287,
+        "max_G": 530.8994025572656,
+        "max_high_G_fraction": 0.015115979725557938,
+        "integrals": {
+          "G": 10.576917356550837,
+          "D": 55.74162704031697,
+          "T": 5.232464371366533,
+          "positive_T": 5.232464371366533,
+          "positive_growth": 1.1175626425106853,
+          "required_coefficient": 0.005315307831843074
+        },
+        "energy_budget_residual": 4.0529357647756115e-11,
+        "enstrophy_budget_residual": -5.470432995480223e-10
+      }
+    },
+    {
+      "scenario": "quarter_phase",
+      "N": 6,
+      "modes": 925,
+      "ordered_pairs": 400963,
+      "trajectory": {
+        "dt": 0.0005,
+        "initial": {
+          "E": 90.25392727379405,
+          "G": 530.8994025572656,
+          "D": 2775.7544370581886,
+          "T": -1.865174681370263e-14,
+          "high_G_fraction": 0.0
+        },
+        "final": {
+          "E": 89.19619814895043,
+          "G": 530.2851758540558,
+          "D": 2860.4668452107458,
+          "T": 526.0605290491552,
+          "high_G_fraction": 0.0053202070076285215
+        },
+        "min_T": -1.865174681370263e-14,
+        "max_T": 526.0605290491552,
+        "max_G": 530.8994025572656,
+        "max_high_G_fraction": 0.0053202070076285215,
+        "integrals": {
+          "G": 10.577291248976907,
+          "D": 55.761268676799645,
+          "T": 5.2690135145169,
+          "positive_T": 5.2690135145169,
+          "positive_growth": 1.1454372039380238,
+          "required_coefficient": 0.005379675046906961
+        },
+        "energy_budget_residual": 5.407252423594855e-11,
+        "enstrophy_budget_residual": 1.5581385071072873e-09
+      }
+    },
+    {
+      "scenario": "opposite_phase",
+      "N": 4,
+      "modes": 257,
+      "ordered_pairs": 31129,
+      "trajectory": {
+        "dt": 0.0005,
+        "initial": {
+          "E": 90.25392727379405,
+          "G": 530.8994025572656,
+          "D": 2775.754437058188,
+          "T": -179.7836461027724,
+          "high_G_fraction": 0.2636636721959955
+        },
+        "final": {
+          "E": 89.2066952750785,
+          "G": 518.1848183427894,
+          "D": 2683.876134615964,
+          "T": 88.52926243676883,
+          "high_G_fraction": 0.25531971214974397
+        },
+        "min_T": -179.7836461027724,
+        "max_T": 88.52926243676883,
+        "max_G": 530.8994025572656,
+        "max_high_G_fraction": 0.2636636721959955,
+        "integrals": {
+          "G": 10.4723199872505,
+          "D": 54.41333257846286,
+          "T": -0.9159588493487387,
+          "positive_T": 0.2918374546620475,
+          "positive_growth": 0.0,
+          "required_coefficient": 0.0
+        },
+        "energy_budget_residual": 9.504175224606115e-12,
+        "enstrophy_budget_residual": -4.307043610651817e-11
+      }
+    },
+    {
+      "scenario": "opposite_phase",
+      "N": 5,
+      "modes": 515,
+      "ordered_pairs": 124015,
+      "trajectory": {
+        "dt": 0.0005,
+        "initial": {
+          "E": 90.25392727379405,
+          "G": 530.8994025572655,
+          "D": 2775.754437058188,
+          "T": -179.7836461027724,
+          "high_G_fraction": 0.0
+        },
+        "final": {
+          "E": 89.20436752753389,
+          "G": 521.6344507719398,
+          "D": 2777.887532159538,
+          "T": 265.82083992599235,
+          "high_G_fraction": 0.013321262828802728
+        },
+        "min_T": -179.7836461027724,
+        "max_T": 265.82083992599235,
+        "max_G": 530.8994025572655,
+        "max_high_G_fraction": 0.013321262828802728,
+        "integrals": {
+          "G": 10.495597462854219,
+          "D": 55.04173396053556,
+          "T": 0.8716975031067261,
+          "positive_T": 1.5952791694914605,
+          "positive_growth": 0.0,
+          "required_coefficient": 0.0007104567342535732
+        },
+        "energy_budget_residual": 2.5264013103765137e-11,
+        "enstrophy_budget_residual": 2.8397639795230134e-10
+      }
+    },
+    {
+      "scenario": "opposite_phase",
+      "N": 6,
+      "modes": 925,
+      "ordered_pairs": 400963,
+      "trajectory": {
+        "dt": 0.0005,
+        "initial": {
+          "E": 90.25392727379405,
+          "G": 530.8994025572655,
+          "D": 2775.754437058188,
+          "T": -179.7836461027724,
+          "high_G_fraction": 0.0
+        },
+        "final": {
+          "E": 89.20432794516876,
+          "G": 521.707241581244,
+          "D": 2781.5578789429346,
+          "T": 271.55892153502754,
+          "high_G_fraction": 0.0047027546834096925
+        },
+        "min_T": -179.7836461027724,
+        "max_T": 271.55892153502754,
+        "max_G": 530.8994025572655,
+        "max_high_G_fraction": 0.0047027546834096925,
+        "integrals": {
+          "G": 10.49599328666077,
+          "D": 55.061681345478874,
+          "T": 0.9100876463291033,
+          "positive_T": 1.6298260112855611,
+          "positive_growth": 0.0,
+          "required_coefficient": 0.0007545916161090868
+        },
+        "energy_budget_residual": 4.0785819166444526e-11,
+        "enstrophy_budget_residual": 2.0805757117159374e-10
+      }
+    },
+    {
+      "scenario": "high_frequency_25pct_G",
+      "N": 4,
+      "modes": 257,
+      "ordered_pairs": 31129,
+      "trajectory": {
+        "dt": 0.0005,
+        "initial": {
+          "E": 97.06032987068204,
+          "G": 707.865870076354,
+          "D": 5076.318514806337,
+          "T": 179.7836461027724,
+          "high_G_fraction": 0.4477477541469966
+        },
+        "final": {
+          "E": 95.65250800504845,
+          "G": 702.4299431061602,
+          "D": 4991.695715995166,
+          "T": 540.4357638158725,
+          "high_G_fraction": 0.43405221735848615
+        },
+        "min_T": 179.7836461027724,
+        "max_T": 540.4357638158725,
+        "max_G": 707.865870076354,
+        "max_high_G_fraction": 0.4477477541469966,
+        "integrals": {
+          "G": 14.078218658788643,
+          "D": 100.43047398207763,
+          "T": 7.325083915109445,
+          "positive_T": 7.325083915109445,
+          "positive_growth": 0.05249513416791831,
+          "required_coefficient": 0.003476560754939205
+        },
+        "energy_budget_residual": 2.4527091468939943e-10,
+        "enstrophy_budget_residual": -1.99858440907974e-09,
+        "dt_refinement": {
+          "integral_T_difference": -3.20511617246666e-09,
+          "integral_positive_T_difference": -3.20511617246666e-09,
+          "final_state_l2_difference": 8.820447917722998e-10,
+          "refined_energy_budget_residual": 1.5928591778902046e-11,
+          "refined_enstrophy_budget_residual": -1.1936229782349983e-10
+        }
+      }
+    },
+    {
+      "scenario": "high_frequency_25pct_G",
+      "N": 5,
+      "modes": 515,
+      "ordered_pairs": 124015,
+      "trajectory": {
+        "dt": 0.0005,
+        "initial": {
+          "E": 97.06032987068204,
+          "G": 707.865870076354,
+          "D": 5076.318514806337,
+          "T": 179.7836461027724,
+          "high_G_fraction": 0.0
+        },
+        "final": {
+          "E": 95.64538586737604,
+          "G": 712.5285899842927,
+          "D": 5310.662395700393,
+          "T": 1011.8152666230487,
+          "high_G_fraction": 0.04516452286503811
+        },
+        "min_T": 179.7836461027724,
+        "max_T": 1011.8152666230487,
+        "max_G": 712.5285899842927,
+        "max_high_G_fraction": 0.04516452286503811,
+        "integrals": {
+          "G": 14.149440044453945,
+          "D": 102.6699938659654,
+          "T": 12.598359369982484,
+          "positive_T": 12.598359369982484,
+          "positive_growth": 3.4352208688261396,
+          "required_coefficient": 0.01061422675160005
+        },
+        "energy_budget_residual": 1.139389915749689e-09,
+        "enstrophy_budget_residual": -2.9416590052733227e-08,
+        "dt_refinement": {
+          "integral_T_difference": -2.175198332565742e-08,
+          "integral_positive_T_difference": -2.175198332565742e-08,
+          "final_state_l2_difference": 5.755566975871353e-09,
+          "refined_energy_budget_residual": 7.693423675902977e-11,
+          "refined_enstrophy_budget_residual": -1.768245994071549e-09
+        }
+      }
+    },
+    {
+      "scenario": "high_frequency_25pct_G",
+      "N": 6,
+      "modes": 925,
+      "ordered_pairs": 400963,
+      "trajectory": {
+        "dt": 0.0005,
+        "initial": {
+          "E": 97.06032987068204,
+          "G": 707.8658700763539,
+          "D": 5076.318514806338,
+          "T": 179.7836461027724,
+          "high_G_fraction": 0.0
+        },
+        "final": {
+          "E": 95.64166083462099,
+          "G": 718.1315663778272,
+          "D": 5535.199299799296,
+          "T": 1318.258703304019,
+          "high_G_fraction": 0.02365576802703132
+        },
+        "min_T": 179.7836461027724,
+        "max_T": 1318.258703304019,
+        "max_G": 718.1315663778272,
+        "max_high_G_fraction": 0.02365576802703132,
+        "integrals": {
+          "G": 14.186690377124759,
+          "D": 104.13089043815515,
+          "T": 15.545937209830766,
+          "positive_T": 15.545937209830766,
+          "positive_growth": 5.984276993988421,
+          "required_coefficient": 0.014600305221909037
+        },
+        "energy_budget_residual": 1.6514289935543047e-09,
+        "enstrophy_budget_residual": -1.5278587284228706e-08,
+        "dt_refinement": {
+          "integral_T_difference": 1.7920465111842532e-08,
+          "integral_positive_T_difference": 1.7920465111842532e-08,
+          "final_state_l2_difference": 1.1595150754695919e-08,
+          "refined_energy_budget_residual": 1.1386536158397575e-10,
+          "refined_enstrophy_budget_residual": -8.164207088157127e-10
+        }
+      }
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 4,
+      "modes": 257,
+      "ordered_pairs": 31129,
+      "trajectory": {
+        "dt": 0.0005,
+        "initial": {
+          "E": 388.2413194827283,
+          "G": 2831.463480305417,
+          "D": 20305.274059225358,
+          "T": -1.4921397450962104e-13,
+          "high_G_fraction": 0.4477477541469966
+        },
+        "final": {
+          "E": 382.5957610528667,
+          "G": 2840.217594565594,
+          "D": 20270.44991526363,
+          "T": 3939.3800428189197,
+          "high_G_fraction": 0.4214230532613022
+        },
+        "min_T": -1.4921397450962104e-13,
+        "max_T": 3939.3800428189197,
+        "max_G": 2840.217594565594,
+        "max_high_G_fraction": 0.4477477541469966,
+        "integrals": {
+          "G": 56.45558441146489,
+          "D": 403.7503395426402,
+          "T": 44.75209147930938,
+          "positive_T": 44.75209147930938,
+          "positive_growth": 12.306886511141322,
+          "required_coefficient": 0.009373063888952378
+        },
+        "energy_budget_residual": 1.1284909007258648e-08,
+        "enstrophy_budget_residual": -3.949567712879798e-07,
+        "dt_refinement": {
+          "integral_T_difference": -4.816151033537608e-07,
+          "integral_positive_T_difference": -4.816151033537608e-07,
+          "final_state_l2_difference": 5.231603500807452e-08,
+          "refined_energy_budget_residual": 8.483969082817566e-10,
+          "refined_enstrophy_budget_residual": -2.3246151670264226e-08
+        }
+      }
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 5,
+      "modes": 515,
+      "ordered_pairs": 124015,
+      "trajectory": {
+        "dt": 0.0005,
+        "initial": {
+          "E": 388.2413194827282,
+          "G": 2831.463480305417,
+          "D": 20305.274059225354,
+          "T": -1.4921397450962104e-13,
+          "high_G_fraction": 0.0
+        },
+        "final": {
+          "E": 382.47103096172833,
+          "G": 3008.9705547924445,
+          "D": 25655.303107300682,
+          "T": 10642.439751354921,
+          "high_G_fraction": 0.16479362646587697
+        },
+        "min_T": -1.4921397450962104e-13,
+        "max_T": 10642.439751354921,
+        "max_G": 3008.9705547924445,
+        "max_high_G_fraction": 0.16479362646587697,
+        "integrals": {
+          "G": 57.70288541863674,
+          "D": 443.47968964097316,
+          "T": 133.10151314046684,
+          "positive_T": 133.10151314046684,
+          "positive_growth": 91.41903610119437,
+          "required_coefficient": 0.03831827352246631
+        },
+        "energy_budget_residual": 2.086379069510258e-08,
+        "enstrophy_budget_residual": -6.932855669106175e-06,
+        "dt_refinement": {
+          "integral_T_difference": -4.210608125276849e-06,
+          "integral_positive_T_difference": -4.210608125276849e-06,
+          "final_state_l2_difference": 3.2379816385431445e-07,
+          "refined_energy_budget_residual": 2.6514888062934006e-09,
+          "refined_enstrophy_budget_residual": -4.153690014163658e-07
+        }
+      }
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 6,
+      "modes": 925,
+      "ordered_pairs": 400963,
+      "trajectory": {
+        "dt": 0.0005,
+        "initial": {
+          "E": 388.2413194827282,
+          "G": 2831.4634803054164,
+          "D": 20305.274059225354,
+          "T": -1.4921397450962104e-13,
+          "high_G_fraction": 0.0
+        },
+        "final": {
+          "E": 382.42555601269873,
+          "G": 3080.761227127502,
+          "D": 28831.75123765478,
+          "T": 15143.789496807583,
+          "high_G_fraction": 0.09355877833074389
+        },
+        "min_T": -1.4921397450962104e-13,
+        "max_T": 15143.789496807583,
+        "max_G": 3080.761227127502,
+        "max_high_G_fraction": 0.09355877833074389,
+        "integrals": {
+          "G": 58.15763495499132,
+          "D": 462.3895948128911,
+          "T": 170.8878396064692,
+          "positive_T": 170.8878396064692,
+          "positive_growth": 126.7655553609321,
+          "required_coefficient": 0.05031155138382667
+        },
+        "energy_budget_residual": 2.5469652165099887e-08,
+        "enstrophy_budget_residual": -6.714137285257493e-06,
+        "dt_refinement": {
+          "integral_T_difference": 1.95361607779887e-06,
+          "integral_positive_T_difference": 1.95361607779887e-06,
+          "final_state_l2_difference": 5.871917067001407e-07,
+          "refined_energy_budget_residual": 3.942245641042064e-09,
+          "refined_enstrophy_budget_residual": -3.860144630607465e-07
+        }
+      }
+    }
+  ]
+}

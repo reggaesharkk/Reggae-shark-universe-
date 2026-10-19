@@ -1,0 +1,73 @@
+{
+  "schema": "wp19-v0.24-hermite-goal-remainder-summary-v1",
+  "copyright": "Copyright (c) 2026 Prince Upadhyay. All Rights Reserved.",
+  "workflow_run_id": 36719160820,
+  "workflow_artifact_digest": "sha256:bf0fcf894ddddc7068a6634d6ee53873a8cea4b889378f68002bdc5d9fda659a",
+  "status": "PASS INTERVALIZATION-DESIGN GATE",
+  "rows": [
+    {
+      "transition": "14->15",
+      "actual_delta_F11": 2.316136059835685,
+      "v0_23_dual_prediction": 2.3192721117377064,
+      "v0_24_hermite_simpson_dual": 2.319265307015341,
+      "dual_refinement_abs_difference": 0.00000680472236558316,
+      "total_relative_remainder": 0.001351063624421871,
+      "endpoint_taylor_remainder_observed": -0.0026901648834485314,
+      "dynamic_remainder_observed": -0.00043908229620726047,
+      "nonlinear_radius_bound_scout": 2.7362907724490357,
+      "nonlinear_bound_over_observed": 6231.84035449569,
+      "adjoint_gradient_fourier_l1_max": 359839.56495891453,
+      "state_difference_max_scout": 0.15005595223678939,
+      "full_reconstruction_residual_max_L2": 123.97569561440373
+    },
+    {
+      "transition": "15->16",
+      "actual_delta_F11": 0.4379648531452176,
+      "v0_23_dual_prediction": 0.4383115262716416,
+      "v0_24_hermite_simpson_dual": 0.43832610035399366,
+      "dual_refinement_abs_difference": 0.000014574082352059037,
+      "total_relative_remainder": 0.0008248315045871522,
+      "endpoint_taylor_remainder_observed": 7.182869180555329e-7,
+      "dynamic_remainder_observed": -0.0003619654956941165,
+      "nonlinear_radius_bound_scout": 1.3716612765860219,
+      "nonlinear_bound_over_observed": 3789.480745825457,
+      "adjoint_gradient_fourier_l1_max": 376980.4850054339,
+      "state_difference_max_scout": 0.11237581126877913,
+      "full_reconstruction_residual_max_L2": 90.80104423147066
+    },
+    {
+      "transition": "16->17",
+      "actual_delta_F11": 0.12918924582345426,
+      "v0_23_dual_prediction": 0.13083052571954365,
+      "v0_24_hermite_simpson_dual": 0.13083593488063916,
+      "dual_refinement_abs_difference": 0.000005409161095509818,
+      "total_relative_remainder": 0.012746332302575812,
+      "endpoint_taylor_remainder_observed": -0.0015435888315071256,
+      "dynamic_remainder_observed": -0.00010310022567777688,
+      "nonlinear_radius_bound_scout": 0.6615979940041173,
+      "nonlinear_bound_over_observed": 6417.037301856498,
+      "adjoint_gradient_fourier_l1_max": 391667.041733442,
+      "state_difference_max_scout": 0.0758501055957708,
+      "full_reconstruction_residual_max_L2": 65.10911319406823
+    },
+    {
+      "transition": "17->18",
+      "actual_delta_F11": -0.01899376515336826,
+      "v0_23_dual_prediction": -0.01897664937711219,
+      "v0_24_hermite_simpson_dual": -0.018976689405914574,
+      "dual_refinement_abs_difference": 4.0028802383851314e-8,
+      "total_relative_remainder": 0.0008990185629759651,
+      "endpoint_taylor_remainder_observed": 5.0016453770340696e-8,
+      "dynamic_remainder_observed": -0.000017125763907454433,
+      "nonlinear_radius_bound_scout": 0.1986032610060991,
+      "nonlinear_bound_over_observed": 11596.753410786649,
+      "adjoint_gradient_fourier_l1_max": 402096.55177155207,
+      "state_difference_max_scout": 0.04905573281885327,
+      "full_reconstruction_residual_max_L2": 51.97695866157749
+    }
+  ],
+  "maximum_total_relative_remainder": 0.012746332302575812,
+  "nonlinear_bound_monotone_decrease_over_sampled_pairs": true,
+  "proceed_to_intervalization": true,
+  "claim_boundary": "Floating Hermite/Simpson/remainder-budget scout only; no new interval, all-N, or continuum theorem."
+}

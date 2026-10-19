@@ -1,0 +1,36 @@
+{
+  "seed": 20260923,
+  "N": 2,
+  "K": 1.2,
+  "viscosity": 0.07,
+  "triad": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "hermitian_error": 0.0,
+  "input_divergence_error": 1.1443916996305594e-16,
+  "projected_divergence_error": 1.8619006149354548e-16,
+  "total_flux_should_be_zero": 3.3306690738754696e-16,
+  "low_flux": -2.3029064785793976,
+  "high_flux": 2.302906478579398,
+  "direct_triad_coefficient_error": 5.551115123125783e-17,
+  "low_budget_error": 4.440892098500626e-16,
+  "full_budget_error": 0.0,
+  "scaled_cubic_error": 4.656612873077393e-10,
+  "energy_total": 8.933821061499039,
+  "C_equals_1_fails_for_amplitude_scale_above": 3.8793677227440333,
+  "at_scale_100_flux_over_total_energy": 25.777396510704058
+}

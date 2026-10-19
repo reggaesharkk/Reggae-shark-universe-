@@ -1,0 +1,43 @@
+{
+  "N11_to_N12": {
+    "K36_sign_flips_observed": 1,
+    "K36_weight_sum_half_inverse_abs_base": 4.407900894130974,
+    "certified_base_G_upper": -41.458407264,
+    "dual_weighted_first_order_sum": -7.50592310804814,
+    "exact_quadratic_envelope_target_upper_float": -54.6200853520193,
+    "float_base_G": -47.816278241282134,
+    "float_signed_smooth_delta_L": -7.554034677700997,
+    "float_target_G": -55.15279822617947,
+    "observed_max_K36_ratio_change": 1.5317049228708015,
+    "quadratic_kink_correction_Q": 0.7502275669638327,
+    "remaining_margin_after_abs_first_order_plus_observed_Q_plus_abs_smooth_remainder": 31.170626590154065,
+    "smooth_linearization_remainder": -0.0481115696528569,
+    "sum_abs_dual_weighted_first_order_terms": 9.489441537229245,
+    "uniform_per_group_ratio_change_allowed_if_all_quadratic_budget_used": 2.6930745905438234
+  },
+  "N12_to_N13": {
+    "K36_sign_flips_observed": 0,
+    "K36_weight_sum_half_inverse_abs_base": 8.562553541336523,
+    "certified_base_G_upper": -53.534635536,
+    "dual_weighted_first_order_sum": -0.6049405734420089,
+    "exact_quadratic_envelope_target_upper_float": -55.49244777127013,
+    "float_base_G": -55.15279822617947,
+    "float_signed_smooth_delta_L": -0.6077085239144253,
+    "float_target_G": -55.760506750093896,
+    "observed_max_K36_ratio_change": 0.929533876430412,
+    "quadratic_kink_correction_Q": 0.26805897882376517,
+    "remaining_margin_after_abs_first_order_plus_observed_Q_plus_abs_smooth_remainder": 47.064955651683476,
+    "smooth_linearization_remainder": -0.002767950472416403,
+    "sum_abs_dual_weighted_first_order_terms": 6.1988529550203415,
+    "uniform_per_group_ratio_change_allowed_if_all_quadratic_budget_used": 2.3512192604583415
+  },
+  "claim_boundary": {
+    "exact": "The scalar absolute-value quadratic inequality and its summed C500 bridge inequality are algebraic and global, provided the lower/base K36 normalized group values are nonzero.",
+    "not_claimed": "No interval dual-weighted cutoff bridge, unseen-cutoff prediction, all-N theorem, or continuum result.",
+    "scouting_only": "The numerical target changes, Q values, adjoint sums, and remainders use saved floating predictor endpoints."
+  },
+  "endpoint_bridge_inequality": "G_C500(v) <= G_C500(a) + [L_a(v)-L_a(a)] + Q_a(v), where L_a uses base K36 signs and fixed C500 signs, and Q_a=sum_K36 (y_g(v)-y_g(a))^2/(2|y_g(a)|).",
+  "exact_scalar_inequality": "For x0 != 0, sigma=sign(x0): |x| <= sigma*x + (x-x0)^2/(2|x0|).",
+  "schema": "wp19-v0.8-kink-safe-dual-bridge-v1",
+  "status": "exact algebraic kink envelope + floating retrospective scout"
+}

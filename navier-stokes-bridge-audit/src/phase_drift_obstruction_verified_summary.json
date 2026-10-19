@@ -1,0 +1,43 @@
+{
+  "status": "exact finite-dimensional analytic obstruction",
+  "scope": "instantaneous single-triad phase-drift lower bound",
+  "triad": {
+    "k": [1, 2, 0],
+    "p": [-1, 0, 1],
+    "q": [0, -2, -1],
+    "helicities": [1, -1, 1]
+  },
+  "cyclic_coefficients": {
+    "Ck_exact": "-7*sqrt(10)/20 - 2/5 + i*(sqrt(2)+sqrt(5))/5",
+    "Cp_exact": "0",
+    "Cq_exact": "2/5 + 7*sqrt(10)/20 - i*(sqrt(2)+sqrt(5))/5",
+    "Ck_numeric": [-1.5067971810589328, 0.730056307974577],
+    "Cp_numeric": [0.0, 0.0],
+    "Cq_numeric": [1.5067971810589328, -0.730056307974577],
+    "sum_zero": true,
+    "abs_Ck_exact": "3*(8+sqrt(10))/20",
+    "abs_Ck_numeric": 1.674341649025257
+  },
+  "phase_identity": "dotPhi = r_p*(r_k/r_q - r_q/r_k)*Im(Ck*exp(-i Phi))",
+  "counterexample_state": {
+    "condition": "r_k = r_q = R > 0, r_p > 0, Phi = arg(Ck)",
+    "phase_rate": 0,
+    "single_positive_mode_enstrophy_transfer": "10*R^2*r_p*|Ck| > 0",
+    "transfer_maximal_with_respect_to_phase": true
+  },
+  "claim_ruled_out": "No universal instantaneous single-triad lower bound |dotPhi| >= gamma*|T_k| with gamma>0 can follow solely from transfer geometry.",
+  "limitations": [
+    "instantaneous only; amplitude equality is immediately broken by nonzero transfer",
+    "six-mode reality-completed support is not claimed invariant under the full Fourier convolution",
+    "does not rule out network-level or time-integrated phase mixing",
+    "does not prove any Navier-Stokes regularity theorem"
+  ],
+  "independent_symbolic_check": {
+    "system": "Wolfram Language",
+    "Ck_numeric": [-1.5067971810589328, 0.730056307974577],
+    "Cp": 0,
+    "Cq_equals_minus_Ck": true,
+    "sum_zero": true,
+    "basis_checks_passed": true
+  }
+}

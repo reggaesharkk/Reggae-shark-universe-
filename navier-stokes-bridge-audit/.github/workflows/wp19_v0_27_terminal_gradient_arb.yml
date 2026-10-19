@@ -1,0 +1,153 @@
+name: WP19 v0.27 Arb terminal signed-C500 gradient
+
+on:
+  push:
+    branches: [wp19-v0.27-intervalization-prep]
+    paths:
+      - '.github/workflows/wp19_v0_27_terminal_gradient_arb.yml'
+      - 'src/wp19_v0_27_terminal_gradient_arb.py'
+      - 'notes/WP19_v0_27_TERMINAL_GRADIENT_ARB.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  certify:
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        M: [14, 15, 16, 17]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy==2.3.5 python-flint
+
+      - name: Download frozen C500 from successful v0.26
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euxo pipefail
+          mkdir -p work/c500
+          gh run download 36731923445             --repo '${{ github.repository }}'             --name wp19-v0-26-frozen-c500             --dir work/c500
+          test -f work/c500/frozen_C500.json
+
+      - name: Download certified predictor pair
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euxo pipefail
+          M=${{ matrix.M }}
+          H=$((M+1))
+          mkdir -p work/lower work/higher
+          case "$M" in
+            14) gh run download 36608785015 --repo '${{ github.repository }}' --name wp19-n14-arb-certificate --dir work/lower ;;
+            15|16|17) gh run download 36669057015 --repo '${{ github.repository }}' --name wp19-same-datum-N$M-arb --dir work/lower ;;
+          esac
+          case "$H" in
+            15|16|17) gh run download 36669057015 --repo '${{ github.repository }}' --name wp19-same-datum-N$H-arb --dir work/higher ;;
+            18) gh run download 36706229638 --repo '${{ github.repository }}' --name wp19-same-datum-N18-arb-recovered --dir work/higher ;;
+          esac
+          test -f work/lower/nodes.npy
+          test -f work/lower/metadata.json
+          test -f work/higher/nodes.npy
+          test -f work/higher/metadata.json
+
+      - name: Run 128-bit Arb terminal-gradient certificate
+        run: |
+          set -euxo pipefail
+          M=${{ matrix.M }}
+          H=$((M+1))
+          mkdir -p results/wp19_v0_27
+          python src/wp19_v0_27_terminal_gradient_arb.py             --repo .             --M "$M"             --lower-dir work/lower             --higher-dir work/higher             --sign-chart results/wp19_bridge/frozen_K36_numerator_sign_chart_N13.json             --c500 work/c500/frozen_C500.json             --output results/wp19_v0_27/M$M'_to_M'$H.json
+
+      - name: Record transition hashes
+        run: |
+          find results/wp19_v0_27 -type f ! -name SHA256SUMS.txt -print0             | sort -z | xargs -0 sha256sum > results/wp19_v0_27/SHA256SUMS.txt
+
+      - name: Upload transition certificate
+        uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-27-M${{ matrix.M }}
+          path: results/wp19_v0_27
+          if-no-files-found: error
+          retention-days: 30
+
+  aggregate:
+    needs: certify
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Download transition certificates
+        uses: actions/download-artifact@v4
+        with:
+          pattern: wp19-v0-27-M*
+          path: gathered
+
+      - name: Aggregate terminal-gradient gate
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          rows=[]
+          for M in (14,15,16,17):
+              x=json.loads(Path(f'gathered/wp19-v0-27-M{M}/M{M}_to_M{M+1}.json').read_text())
+              rows.append({
+                'transition':x['transition'],
+                'status':x['status'],
+                'objective_complex128':x['objective']['complex128_value'],
+                'gradient_L2_upper_decimal':x['terminal_gradient']['L2_upper_decimal'],
+                'analytic_gradient_L2':x['terminal_gradient']['analytic_complex128_L2'],
+                'linear_prediction':x['actual_cutoff_direction']['complex128_linear_prediction'],
+                'arb_linear_lower':x['actual_cutoff_direction']['arb_linear_prediction_lower_decimal'],
+                'arb_linear_upper':x['actual_cutoff_direction']['arb_linear_prediction_upper_decimal'],
+                'arb_width_over_abs_prediction':x['actual_cutoff_direction']['arb_width_over_abs_complex128_prediction_upper_decimal'],
+                'finite_difference_relative_error':x['actual_cutoff_direction']['finite_difference_relative_error'],
+              })
+          passed=all(r['status'].startswith('PASS') for r in rows)
+          max_width=max(float(r['arb_width_over_abs_prediction']) for r in rows)
+          max_fd=max(float(r['finite_difference_relative_error']) for r in rows)
+          proceed=(passed and max_width < 1e-12 and max_fd < 2e-5)
+          out={
+            'schema':'wp19-v0.27-terminal-gradient-arb-summary-v1',
+            'copyright':'Copyright (c) 2026 Prince Upadhyay. All Rights Reserved.',
+            'status':'PASS TERMINAL-GRADIENT INTERVALIZATION' if proceed else 'SHARPEN TERMINAL-GRADIENT CERTIFICATE',
+            'rows':rows,
+            'maximum_arb_width_over_abs_prediction':max_width,
+            'maximum_finite_difference_relative_error':max_fd,
+            'proceed_to_interval_adjoint_propagation':proceed,
+            'next_target':'Arb residual/enclosure certificate for backward adjoint propagation around the floating half-step adjoint reconstruction, then rigorous dual quadrature.',
+            'claim_boundary':'Terminal objective/gradient intervalization only; no interval backward adjoint, all-N transfer, or continuum theorem.'
+          }
+          Path('final').mkdir()
+          Path('final/WP19_v0_27_SUMMARY.json').write_text(json.dumps(out,indent=2,sort_keys=True)+'\n')
+          for p in Path('gathered').glob('wp19-v0-27-M*/M*_to_M*.json'):
+              (Path('final')/p.name).write_bytes(p.read_bytes())
+          print(json.dumps(out,indent=2))
+          if not proceed:
+              raise SystemExit(1)
+          PY
+
+      - name: Record aggregate hashes
+        run: |
+          find final -type f ! -name SHA256SUMS.txt -print0             | sort -z | xargs -0 sha256sum > final/SHA256SUMS.txt
+
+      - name: Upload aggregate certificate
+        uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-27-terminal-gradient-arb
+          path: final
+          if-no-files-found: error
+          retention-days: 30

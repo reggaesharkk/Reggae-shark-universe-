@@ -1,0 +1,69 @@
+{
+  "status": "verified completed N10/N11 WP16 phase-only continuation",
+  "raw_artifacts": {
+    "wp16_phase_cutoff_escalation_N10_N11.json": {
+      "bytes": 710243,
+      "sha256": "34a10cf119ab6614c46d29540c4d4701eab082229582fb0a8189add0cd8f96a5"
+    },
+    "wp16_cutoff_escalation_N11_checkpoint.json": {
+      "bytes": 191728,
+      "sha256": "2996cf37ab3f05805e137601f6594f91eebcf4f6dfcf55074937394d65d6dd09"
+    }
+  },
+  "checkpoint_consistency": {
+    "N": 11,
+    "best_phases_exact_match": true,
+    "best_observables_exact_match": true,
+    "accepted_records_exact_match": true,
+    "accepted_record_count": 212
+  },
+  "resume_from": {
+    "N": 9,
+    "refined_C": 6.261042251605425
+  },
+  "N10": {
+    "active_conjugate_pairs": 2084,
+    "inherited_pairs": 1535,
+    "new_pairs": 549,
+    "inherited_C": 5.957744991429427,
+    "best_search_C": 7.159722837749617,
+    "refined_C": {
+      "32": 7.167840914480829,
+      "40": 7.159722837749617,
+      "48": 7.160254735316118,
+      "64": 7.159979165834192,
+      "96": 7.159655718793216
+    },
+    "chi_H2_high_96": 0.16059835322917324,
+    "b_stretch_96": 5.114535831016827,
+    "elapsed_seconds": 2082.10733628273
+  },
+  "N11": {
+    "active_conjugate_pairs": 2787,
+    "inherited_pairs": 2084,
+    "new_pairs": 703,
+    "inherited_C": 6.787949157487107,
+    "best_search_C": 8.034575342492898,
+    "refined_C": {
+      "40": 8.034575342492898,
+      "48": 8.034762916942293,
+      "64": 8.034183223629737,
+      "96": 8.034885796422683
+    },
+    "chi_H2_high_96": 0.1585907072199439,
+    "b_stretch_96": 4.815247100744957,
+    "elapsed_seconds": 3680.6073372364044
+  },
+  "refined_phase_only_sequence": {
+    "7": 3.744126696758515,
+    "8": 4.656046627246442,
+    "9": 6.261042251605425,
+    "10": 7.159655718793216,
+    "11": 8.034885796422683
+  },
+  "comparison": {
+    "WP17_sparse_amplitude_phase": 5.112932595467345
+  },
+  "interpretation": "Five consecutively tested cutoffs have increasing refined phase-only optimized values. This is finite adversarial evidence only and does not establish asymptotic divergence or a Navier-Stokes regularity/singularity theorem.",
+  "next_target": "Reverse-engineer the N7-N11 optimized states into an explicit phase law or parameterized family and prove an analytic lower bound for C_N."
+}

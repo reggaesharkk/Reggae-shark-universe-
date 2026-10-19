@@ -1,0 +1,49 @@
+{
+  "status": "executed fixed-state WP16 expanded phase-only grid refinement",
+  "source_artifacts": {
+    "wp16_expanded_phase_search_results.json": {
+      "bytes": 4191774,
+      "sha256": "8f8dfa510f7156aa5b029f42d88fe302b490e4007afd9335f785a2431d1da972"
+    },
+    "wp16_expanded_summary.csv": {
+      "bytes": 2487,
+      "sha256": "7459e5166dbbbfc45c3025c1cefff1855f9d8868e93b8bb7e5117fc93f2b31a8"
+    },
+    "WP16_EXPANDED_BEST.txt": {
+      "bytes": 472,
+      "sha256": "f66b85a08fa81fbb142ec56345f639fa41bf289a8a315a711d982aa4929161d5"
+    }
+  },
+  "selected_case": {
+    "N": 7,
+    "anchor_time": 0.005,
+    "seed": 20260925,
+    "active_conjugate_pairs": 709,
+    "baseline_C": 0.9529895911406949,
+    "search_grid": 24,
+    "search_best_C": 3.745590706681554,
+    "improvement_factor": 3.9303584650890198,
+    "X2": 535519.8723055569,
+    "G": 51405.61153956244,
+    "H2_high_transfer": 16772068.34294506,
+    "H2_high_envelope": 78178985.42635325,
+    "chi_H2_high": 0.214534228750574
+  },
+  "fixed_state_refinement": [
+    {"grid":24,"H1_positive_stretching":429834.47292654467,"H1_signed_stretching":-314901.24721861683,"C_infinity_stretch":3.745590706681554},
+    {"grid":32,"H1_positive_stretching":430106.34208012186,"H1_signed_stretching":-314901.24721861724,"C_infinity_stretch":3.743223128072629},
+    {"grid":48,"H1_positive_stretching":429976.3363793314,"H1_signed_stretching":-314901.24721861683,"C_infinity_stretch":3.744354912091437},
+    {"grid":64,"H1_positive_stretching":429998.5730269491,"H1_signed_stretching":-314901.24721861735,"C_infinity_stretch":3.7441612791215664},
+    {"grid":96,"H1_positive_stretching":429992.61252859357,"H1_signed_stretching":-314901.24721861683,"C_infinity_stretch":3.7442131801693903},
+    {"grid":128,"H1_positive_stretching":430002.5446785433,"H1_signed_stretching":-314901.24721861735,"C_infinity_stretch":3.744126696758515}
+  ],
+  "refined_phase_only_benchmark": 3.744126696758515,
+  "coarse_to_128_relative_change": -0.0003908610949309946,
+  "comparison": {
+    "registered_original_WP16": 1.077899704172086,
+    "expanded_WP16_refined_phase_only": 3.744126696758515,
+    "WP17_refined_sparse_amplitude_phase": 5.112932595467345
+  },
+  "interpretation": "The expanded WP16 phase-only candidate survives physical-grid refinement. It is a refined benchmark for that phase-only evolved-spectrum family, not the repository-wide benchmark.",
+  "warning": "Finite optimized state only. No global maximum, cutoff asymptotic, cutoff-independent bound, time-integral closure, or continuum regularity theorem is established."
+}

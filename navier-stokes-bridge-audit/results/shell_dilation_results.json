@@ -1,0 +1,41 @@
+{
+  "initial_shells": {
+    "abs_k_le_1_2": 2.3029064785793976,
+    "1_2_lt_abs_k_le_1_5": 0.2767709515289489,
+    "1_5_lt_abs_k_le_2": -2.579677430108347
+  },
+  "candidate": "|Pi_K| <= C E_total^(3/2), with C independent of cutoff",
+  "dilation": [
+    {
+      "frequency_multiplier": 1,
+      "energy": 8.933821061499039,
+      "low_flux_abs": 2.3029064785793976,
+      "flux_over_energy_3_over_2": 0.08624231925104633
+    },
+    {
+      "frequency_multiplier": 2,
+      "energy": 8.933821061499039,
+      "low_flux_abs": 4.605812957158795,
+      "flux_over_energy_3_over_2": 0.17248463850209267
+    },
+    {
+      "frequency_multiplier": 4,
+      "energy": 8.933821061499039,
+      "low_flux_abs": 9.21162591431759,
+      "flux_over_energy_3_over_2": 0.34496927700418534
+    },
+    {
+      "frequency_multiplier": 8,
+      "energy": 8.933821061499039,
+      "low_flux_abs": 18.42325182863518,
+      "flux_over_energy_3_over_2": 0.6899385540083707
+    },
+    {
+      "frequency_multiplier": 16,
+      "energy": 8.933821061499039,
+      "low_flux_abs": 36.84650365727036,
+      "flux_over_energy_3_over_2": 1.3798771080167413
+    }
+  ],
+  "conclusion": "Any finite universal C fails as m grows; E fixed and flux linear in m."
+}

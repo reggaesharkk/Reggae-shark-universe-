@@ -1,0 +1,51 @@
+{
+  "status": "executed prospective N12 frozen K36 k-channel holdout",
+  "reference": "N11_from_N10 target_only k-channel first 36 absolute-ranked source-orbit groups",
+  "N": 12,
+  "frozen_prefix_size": 36,
+  "criteria": {
+    "same_sign": true,
+    "minimum_absolute_mass_fraction": 0.9,
+    "signed_share_interval": [
+      0.8,
+      1.2
+    ]
+  },
+  "states": {
+    "inherited": {
+      "k_channel_total_signed": 535.4897183839969,
+      "k_channel_total_abs_group_contribution": 1069.422580417851,
+      "frozen_K36_signed_contribution": 543.2011462977409,
+      "signed_share_of_channel_total": 1.0144007021031434,
+      "absolute_mass_captured": 1005.7758053505393,
+      "absolute_mass_fraction": 0.9404849156612691,
+      "same_sign_as_channel_total": true,
+      "passes_preregistered_consistency_criteria": true,
+      "present_key_count": 36
+    },
+    "target_only": {
+      "k_channel_total_signed": 535.488165390484,
+      "k_channel_total_abs_group_contribution": 1069.4201834298526,
+      "frozen_K36_signed_contribution": 543.2011462977409,
+      "signed_share_of_channel_total": 1.0144036440126225,
+      "absolute_mass_captured": 1005.7758053505393,
+      "absolute_mass_fraction": 0.9404870236550121,
+      "same_sign_as_channel_total": true,
+      "passes_preregistered_consistency_criteria": true,
+      "present_key_count": 36
+    },
+    "full_final": {
+      "k_channel_total_signed": 462.652056779141,
+      "k_channel_total_abs_group_contribution": 998.1704976767478,
+      "frozen_K36_signed_contribution": 477.39710258144004,
+      "signed_share_of_channel_total": 1.0318707019373266,
+      "absolute_mass_captured": 933.4865983408223,
+      "absolute_mass_fraction": 0.9351975444210403,
+      "same_sign_as_channel_total": true,
+      "passes_preregistered_consistency_criteria": true,
+      "present_key_count": 36
+    }
+  },
+  "all_three_states_pass": true,
+  "interpretation_rule": "This is one new finite-cutoff holdout of a source set frozen from N11. Passing does not establish all-N persistence or continuum phase dynamics; failure is retained without retuning K36."
+}

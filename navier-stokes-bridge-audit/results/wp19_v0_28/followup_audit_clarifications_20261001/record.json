@@ -1,0 +1,172 @@
+{
+  "schema": "wp19-v0.28-followup-audit-clarifications-v1",
+  "date": "2026-10-01",
+  "status": "APPEND_ONLY_CLARIFICATION",
+  "canonical_correction_record": "results/wp19_v0_28/reverse_time_sign_correction_20261001/reverse_time_sign_correction.json",
+  "a_b_rounding": {
+    "source_path": "src/wp19_v0_28_structured_uncertainty_ab.py",
+    "operation": "Re-imports decimal strings already recorded in the baseline segment and applies safe_decimal_upper; no predictor-array re-evaluation occurs.",
+    "recorded_two_grid_unit_shifts": {
+      "logarithmic_norm_upper": {
+        "decimal_places": 9,
+        "segment": "1752.285153301",
+        "ab": "1752.285153303"
+      },
+      "nominal_residual_upper": {
+        "decimal_places": 6,
+        "segment": "53857205.702019",
+        "ab": "53857205.702021"
+      },
+      "primal_radius_upper": {
+        "decimal_places": 15,
+        "segment": "0.000055664765007",
+        "ab": "0.000055664765009"
+      }
+    },
+    "arithmetic": {
+      "recurrence_residual_input": "segment residual_L2_upper",
+      "nominal_residual_is_used": false,
+      "shared_incoming_radius": true,
+      "outgoing_difference": "0.001956340669530685057624625487",
+      "attributed_to": "The 2e-9 strain re-rounding; the nominal residual shift is not an input to the old recurrence."
+    },
+    "evidence_limit": "The source path and decimal-grid emulation explain the shifts and reproduce the recorded decimal strings. The Arb-backed operation was not independently executed in the emulation, and underlying predictor arrays are absent.",
+    "structured_residual_comparison_remains_diagnostic_only": true,
+    "existing_ab_status": "MATERIAL_TIGHTENING",
+    "official_chain_unchanged": true
+  },
+  "recurrence": {
+    "order": [
+      239,
+      238,
+      237
+    ],
+    "governing_form": "strain-only backward scalar recurrence",
+    "optional_plus_22_5_is": "conservative and unnecessary",
+    "conditional_on": [
+      "finite M15 adjoint equation and stated projection/symmetry assumptions",
+      "whole-segment strain and residual bounds supplied by the producer",
+      "consistent Fourier-coefficient ell2 norm",
+      "valid whole-segment primal-radius bound",
+      "valid terminal error upper bound"
+    ],
+    "bounds_independently_reconstructed": false
+  },
+  "supersedes": [
+    {
+      "path": "results/wp19_v0_28/backward_diffusion_audit_20261001/backward_diffusion_audit.json",
+      "identity": {
+        "sha256": "cd223389619c1780516514f7118c87ddc94e8d04c9c7528ce4cfc749948ee540",
+        "git_blob_sha1": "e7ce950824eece37d9f336235506a1b87278f30a"
+      },
+      "fields": [
+        "status",
+        "verdict",
+        "segment_rows[*].archived_recurrence_underbounds_corrected"
+      ],
+      "withdrawn_claim": "The strain-only chain underbounds the valid backward error radius and must not be used."
+    },
+    {
+      "path": "results/wp19_v0_28/corrected_chain_20261001/independent_verification.json",
+      "identity": {
+        "git_blob_sha1": "892d579e2b9bd613fef036ac62f06820661b5d0a"
+      },
+      "fields": [
+        "status",
+        "corrected_outgoing_error_upper_by_step",
+        "reverse_diffusion_log_norm_upper"
+      ],
+      "withdrawn_claim": "The optional +22.5 recurrence is the required governing corrected chain."
+    },
+    {
+      "path": "src/wp19_v0_28_verify_backward_diffusion_audit.py",
+      "identity": {
+        "git_blob_sha1": "f44f2e7a14bec89b003f27327c1eb6146d9dda11"
+      },
+      "fields": [
+        "verify: status assertion",
+        "verify: archived recurrence underbound assertion"
+      ],
+      "withdrawn_claim": "The legacy verifier's anti-diffusion conclusion is current."
+    },
+    {
+      "path": "src/wp19_v0_28_verify_corrected_recurrence_chain.py",
+      "identity": {
+        "git_blob_sha1": "e5d7315f16c1d10726c11359a87c766c05b33802"
+      },
+      "fields": [
+        "verify: historical_value_underbounds_corrected_value assertion",
+        "recurrence: +22.5 growth input"
+      ],
+      "withdrawn_claim": "The +22.5 chain is the required corrected result."
+    },
+    {
+      "path": ".github/workflows/wp19_v0_28_backward_diffusion_audit.yml",
+      "identity": {
+        "git_blob_sha1": "035418d0d39b76326d5c0f3c837bfacfc8f3de7b"
+      },
+      "fields": [
+        "workflow replay of legacy audit specification"
+      ],
+      "withdrawn_claim": "A workflow pass establishes the former anti-diffusion verdict as current."
+    },
+    {
+      "path": ".github/workflows/wp19_v0_28_corrected_recurrence_chain.yml",
+      "identity": {
+        "git_blob_sha1": "ce4b6bab2be5deda84156ce31612af819d5ee476"
+      },
+      "fields": [
+        "workflow replay of legacy +22.5 chain"
+      ],
+      "withdrawn_claim": "A workflow pass establishes the optional +22.5 chain as required."
+    },
+    {
+      "path": ".github/workflows/wp19_v0_28_reverse_time_sign_correction.yml",
+      "identity": {
+        "git_blob_sha1": "0623b2465d2aa3dbb7dc85e098520ccc4fae03b9"
+      },
+      "fields": [
+        "workflow validation against the earlier correction record"
+      ],
+      "withdrawn_claim": "A workflow pass supersedes this follow-up scope clarification."
+    },
+    {
+      "path": "notes/WP19_CURRENT_STATUS_2026_09_30.md",
+      "identity": {
+        "git_blob_sha1": "444db2a421c85d9ceaa69a8aa91ffb0ffa5e868d"
+      },
+      "fields": [
+        "Addendum — 1 October 2026: WP19 v0.28 recurrence correction",
+        "Addendum — 1 October 2026: corrected scalar recurrence chain",
+        "earlier same-day addenda"
+      ],
+      "withdrawn_claim": "Backward viscosity requires +22.5 in the error exponent; strain-only radii cannot be continued."
+    },
+    {
+      "path": "notes/WP19_v0_28_REVERSE_TIME_SIGN_CORRECTION_2026_10_01.md",
+      "identity": {
+        "git_blob_sha1": "9df00e9dd997900ff867beeb00e5e5ebb13a1203"
+      },
+      "fields": [
+        "segment-237 A/B wording about re-evaluation and unresolved strain shift"
+      ],
+      "withdrawn_claim": "The A/B strain shift came from a fresh re-evaluation or its cause remains unresolved."
+    }
+  ],
+  "living_document_snapshots_modified_by_prior_update": [
+    {
+      "path": "notes/WP19_CURRENT_STATUS_2026_09_30.md",
+      "current_git_blob_sha1": "444db2a421c85d9ceaa69a8aa91ffb0ffa5e868d"
+    },
+    {
+      "path": "README.md",
+      "current_git_blob_sha1": "fa89f510f9332cde4cd3b17de628d4e4af4c4753"
+    },
+    {
+      "path": "results/wp19_v0_28/corrected_chain_20261001/SHA256SUMS.txt",
+      "current_git_blob_sha1": "8085c132820c9d632746ee17289f00cec0659b6c"
+    }
+  ],
+  "preservation": "This follow-up does not rewrite any listed historical artifact or living-document snapshot. Earlier versions remain recoverable from repository history.",
+  "claim_boundary": "Conditional finite-Galerkin scalar recurrence only; no full adjoint, endpoint-transfer, all-cutoff, blow-up, or continuum regularity result."
+}

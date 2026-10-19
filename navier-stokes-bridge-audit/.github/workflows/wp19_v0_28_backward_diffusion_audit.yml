@@ -1,0 +1,33 @@
+name: WP19 v0.28 backward-diffusion recurrence correction
+on:
+  push:
+    branches: [wp19-v0.28-adjoint-hermite-residual]
+    paths:
+      - '.github/workflows/wp19_v0_28_backward_diffusion_audit.yml'
+      - 'src/wp19_v0_28_backward_diffusion_log_norm_audit.py'
+      - 'src/wp19_v0_28_verify_backward_diffusion_audit.py'
+      - 'notes/WP19_v0_28_BACKWARD_DIFFUSION_RECURRENCE_CORRECTION_2026_10_01.md'
+      - 'results/wp19_v0_28/backward_diffusion_audit_20261001/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  recurrence-correction:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Recompute corrected outward recurrence from frozen segment records
+        run: python src/wp19_v0_28_backward_diffusion_log_norm_audit.py
+      - name: Independently verify corrected recurrence and frozen provenance
+        run: python src/wp19_v0_28_verify_backward_diffusion_audit.py results/wp19_v0_28/backward_diffusion_audit_20261001/backward_diffusion_audit.json
+      - name: Verify audit manifest
+        run: sha256sum -c results/wp19_v0_28/backward_diffusion_audit_20261001/SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-28-backward-diffusion-audit
+          path: results/wp19_v0_28/backward_diffusion_audit_20261001/
+          retention-days: 90

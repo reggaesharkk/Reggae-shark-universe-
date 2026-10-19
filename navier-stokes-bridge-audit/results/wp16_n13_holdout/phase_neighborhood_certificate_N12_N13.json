@@ -1,0 +1,73 @@
+{
+  "status": "post-hoc deterministic local phase certificate",
+  "N": {
+    "12": {
+      "K36_envelope": 1822.5867260518544,
+      "outside_envelope": 116.58414254961198,
+      "states": {
+        "inherited": {
+          "signed_margin": 99.38651576305534,
+          "absolute_mass_margin": 48.106092193859396,
+          "signed_gate_radius_radians": 0.0656773109126324,
+          "mass_gate_radius_radians": 0.05025282575564169,
+          "joint_radius_radians": 0.05025282575564169,
+          "joint_triad_defect_radius_radians": 0.15075847726692507,
+          "cancellation_ratio": 0.5007278957722843
+        },
+        "target_only": {
+          "signed_margin": 99.3846521708399,
+          "absolute_mass_margin": 48.10848918185768,
+          "signed_gate_radius_radians": 0.06567607940024454,
+          "mass_gate_radius_radians": 0.05025532970918941,
+          "joint_radius_radians": 0.05025532970918941,
+          "joint_triad_defect_radius_radians": 0.15076598912756822,
+          "cancellation_ratio": 0.5007275659161979
+        },
+        "full_final": {
+          "signed_margin": 77.78536555352916,
+          "absolute_mass_margin": 39.036833813054756,
+          "signed_gate_radius_radians": 0.05140268374123803,
+          "mass_gate_radius_radians": 0.04077885187086115,
+          "joint_radius_radians": 0.04077885187086115,
+          "joint_triad_defect_radius_radians": 0.12233655561258346,
+          "cancellation_ratio": 0.4635000311629811
+        }
+      }
+    },
+    "13": {
+      "K36_envelope": 1825.0278895489193,
+      "outside_envelope": 116.35441821347897,
+      "states": {
+        "inherited": {
+          "signed_margin": 78.96312883102767,
+          "absolute_mass_margin": 39.64570910148723,
+          "signed_gate_radius_radians": 0.05215900175566595,
+          "mass_gate_radius_radians": 0.04140951057826733,
+          "joint_radius_radians": 0.04140951057826733,
+          "joint_triad_defect_radius_radians": 0.124228531734802,
+          "cancellation_ratio": 0.46480459877290814
+        },
+        "target_only": {
+          "signed_margin": 86.43328678139567,
+          "absolute_mass_margin": 46.53522824761164,
+          "signed_gate_radius_radians": 0.05709340579229073,
+          "mass_gate_radius_radians": 0.04860553815417244,
+          "joint_radius_radians": 0.04860553815417244,
+          "joint_triad_defect_radius_radians": 0.1458166144625173,
+          "cancellation_ratio": 0.4656612283618432
+        },
+        "full_final": {
+          "signed_margin": 87.68226044031147,
+          "absolute_mass_margin": 39.84399335676524,
+          "signed_gate_radius_radians": 0.05791841387179039,
+          "mass_gate_radius_radians": 0.04161661631940618,
+          "joint_radius_radians": 0.04161661631940618,
+          "joint_triad_defect_radius_radians": 0.12484984895821853,
+          "cancellation_ratio": 0.48515152331670686
+        }
+      }
+    }
+  },
+  "minimum_joint_radius_radians": 0.04077885187086115,
+  "minimum_joint_triad_defect_radius_radians": 0.12233655561258346
+}

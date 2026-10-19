@@ -1,0 +1,190 @@
+{
+  "protocol": {
+    "C500_portable_semantic_sha256": "1e9509cef054bf605d4a28af6580e383d021914f600a01b21cb1ebdf1086f71f",
+    "K36_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+    "adjoint_support_M": 15,
+    "backward_segment_order": [
+      239,
+      238,
+      237
+    ],
+    "cutoff_M": 14,
+    "no_retuning": true,
+    "segment_width": "0.0000125",
+    "terminal_time": "3/1000",
+    "viscosity": "0.1",
+    "witness_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624"
+  },
+  "provenance_sha256": {
+    "Galerkin_system_source": "c44824c9562c4e79b11e8838e663ecf77d0992ba5d146b4c5015717018baae14",
+    "adjoint_system_source": "0ba7cd0464076271a80864118d930d384d2cce6a1974650f278f8e02a7756e01",
+    "correction_source": "858c103ea8fe74aa32db5a982221aa4e896af2b4f5ed7af577770ef1479fa7ba",
+    "historical_reports": [
+      "41694c84922a28b0b99f9e2936589f8c2f8cb6c49fc2a68a281623a4fb39cb7e",
+      "c611b9eb2c5770d1880e64fdc7e0fc9f5136aef2f71b8b9afc4e1f533d09596c",
+      "cbfb935af79cd7bb359c5688831c4a7329b70011ee9e6c1934442147a836f77f"
+    ],
+    "prior_audit": "cd223389619c1780516514f7118c87ddc94e8d04c9c7528ce4cfc749948ee540",
+    "prior_audit_source": "55884d2d0c5b5c23100170f1e5bc167e70135eea2066b5be1b23a68e9cbbe2b7",
+    "prior_conservative_chain": "e8403177d80ac24d6658bc63e9ac6302af70b2bee8cdcdc61f5df11ff71f8e60",
+    "producer_sources": [
+      "e1495d9e6e9ebcfa79f7440ca6abecf01a9d77f0bc64a200b8f68a2af1844f31",
+      "e1495d9e6e9ebcfa79f7440ca6abecf01a9d77f0bc64a200b8f68a2af1844f31",
+      "e1495d9e6e9ebcfa79f7440ca6abecf01a9d77f0bc64a200b8f68a2af1844f31"
+    ],
+    "segments": [
+      "d1b41363c88173594ec6c9e90453513cd3c8ed3e32c7037d2e73304d057a8c08",
+      "c0bbf407df850b95e1a4b0daa3e1175962ce128e7e5f080d39127bd22b431fa6",
+      "c2110c2f7a245a36534a24f7ab6983b74bf4a51ba8fb209a0ec92a8727eecfdc"
+    ],
+    "structured_A_B": "b67857abf2392d963985714415e3def7d0fb4f536235765058b6a118a73bba4a",
+    "structured_A_B_source": "b746a70ed9b3d00b8e591b962358207e1050c1bfe378467729048cbcca2b8c77"
+  },
+  "rights_notice": "Copyright (c) 2026 Prince Upadhyay. All Rights Reserved.",
+  "schema": "wp19-v0.28-reverse-time-sign-correction-v2",
+  "scope": {
+    "established": "The strain-only Decimal recurrence reproduces the three archived outgoing radii from steps 239, 238, 237 and is a valid backward-time scalar upper recurrence, conditional on supplied bounds.",
+    "not_established": [
+      "independent validation of archived continuous-segment strain/residual bounds",
+      "full M14 adjoint path, dual quadrature, nonlinear remainder, normalizer, or signed endpoint transfer",
+      "all-cutoff, blow-up, or continuum Navier-Stokes regularity"
+    ],
+    "terminology": "The verifier is a separate implementation of the recurrence, not an independent derivation of the PDE estimate."
+  },
+  "segment_237_A_B_rounding_reconciliation": {
+    "A_B_code_source_sha256": "b746a70ed9b3d00b8e591b962358207e1050c1bfe378467729048cbcca2b8c77",
+    "A_B_minus_archived_outgoing_difference": "0.001956340669530685057624625487",
+    "A_B_nominal_residual_upper": "53857205.702021",
+    "A_B_old_recomputed_outgoing_upper": "78258186399.831235707571984211465472249841602049194862663402821947631969731302683",
+    "A_B_old_recurrence_replayed_upper": "78258186399.8312357075719842114654722498416020491948626634028219476319697313026740539528867",
+    "A_B_primal_radius_upper": "0.000055664765009",
+    "A_B_source_sha256": "b67857abf2392d963985714415e3def7d0fb4f536235765058b6a118a73bba4a",
+    "A_B_strain_upper": "1752.285153303",
+    "archived_outgoing_upper": "78258186399.829279366902453526407847624354331163635740230778665548882992825167394",
+    "interpretation": "The A/B source recomputes and rounds its strain to 9 decimal places, then computes the old recurrence using that strain, the same incoming radius, and the segment's residual_L2_upper. The 2e-9 strain increase accounts for the full approximately 1.956341e-3 outgoing difference; the nominal residual field is not an input to this old recurrence. The source explains how the A/B computation is performed, but the packet lacks underlying arrays needed to explain why the re-evaluated strain differs by 2e-9. The A/B structured-residual comparison remains diagnostic-only and is not substituted into the official chain.",
+    "nominal_residual_is_used_by_old_recurrence": false,
+    "outgoing_difference_from_2e_9_strain_shift_using_shared_segment_residual": "0.001956340669530685057624625487",
+    "residual_upper_used_by_A_B_old_recurrence": "724222211753.270303",
+    "segment_237_nominal_residual_upper": "53857205.702019",
+    "segment_237_strain_upper": "1752.285153301",
+    "segment_237_true_primal_radius_upper": "0.000055664765007",
+    "shared_baseline_segment_sha256": "c2110c2f7a245a36534a24f7ab6983b74bf4a51ba8fb209a0ec92a8727eecfdc",
+    "shared_incoming_adjoint_error_upper": "76553735316.602437456114865789016004525391018020344149225607466942033542033220384",
+    "structured_residual_comparison_remains_diagnostic_only": true
+  },
+  "segment_rows": [
+    {
+      "archived_outgoing_is_outward_of_recomputation": true,
+      "archived_outgoing_upper_used_for_next_step": "74882674993.048618657819149585465296325142145058928574913811532113780128124368218",
+      "forward_time_interval_rational": [
+        "239/80000",
+        "240/80000"
+      ],
+      "historical_recurrence_report_sha256": "41694c84922a28b0b99f9e2936589f8c2f8cb6c49fc2a68a281623a4fb39cb7e",
+      "incoming_error_upper": "73244978636.905585",
+      "optional_plus_diffusion_conservative_outgoing_upper": "74903737341.7680869479676423339802577822668827392635637865967006999148652940172487122086410",
+      "recomputed_strain_only_outgoing_upper": "74882674993.0486186578191495854652963251421450589285749138115321137801281243682130910469845",
+      "residual_L2_upper": "771029886342.810495",
+      "segment_sha256": "d1b41363c88173594ec6c9e90453513cd3c8ed3e32c7037d2e73304d057a8c08",
+      "segment_source_sha256": "e1495d9e6e9ebcfa79f7440ca6abecf01a9d77f0bc64a200b8f68a2af1844f31",
+      "step": 239,
+      "strain_log_norm_upper": "1758.617670280"
+    },
+    {
+      "archived_outgoing_is_outward_of_recomputation": true,
+      "archived_outgoing_upper_used_for_next_step": "76553735316.602437456114865789016004525391018020344149225607466942033542033220384",
+      "forward_time_interval_rational": [
+        "238/80000",
+        "239/80000"
+      ],
+      "historical_recurrence_report_sha256": "c611b9eb2c5770d1880e64fdc7e0fc9f5136aef2f71b8b9afc4e1f533d09596c",
+      "incoming_error_upper": "74882674993.048618657819149585465296325142145058928574913811532113780128124368218",
+      "optional_plus_diffusion_conservative_outgoing_upper": "76596803403.2008814415291810393914219040829827539878570803371585034700432692390455397776715",
+      "recomputed_strain_only_outgoing_upper": "76553735316.6024374561148657890160045253910180203441492256074669420335420332203767654235560",
+      "residual_L2_upper": "770889881044.051112",
+      "segment_sha256": "c0bbf407df850b95e1a4b0daa3e1175962ce128e7e5f080d39127bd22b431fa6",
+      "segment_source_sha256": "e1495d9e6e9ebcfa79f7440ca6abecf01a9d77f0bc64a200b8f68a2af1844f31",
+      "step": 238,
+      "strain_log_norm_upper": "1755.447052426"
+    },
+    {
+      "archived_outgoing_is_outward_of_recomputation": true,
+      "archived_outgoing_upper_used_for_next_step": "78258186399.829279366902453526407847624354331163635740230778665548882992825167394",
+      "forward_time_interval_rational": [
+        "237/80000",
+        "238/80000"
+      ],
+      "historical_recurrence_report_sha256": "cbfb935af79cd7bb359c5688831c4a7329b70011ee9e6c1934442147a836f77f",
+      "incoming_error_upper": "76553735316.602437456114865789016004525391018020344149225607466942033542033220384",
+      "optional_plus_diffusion_conservative_outgoing_upper": "78324232548.8246196307457504997741547715008957776049367908160897460488479268828768235373913",
+      "recomputed_strain_only_outgoing_upper": "78258186399.8292793669024535264078476243543311636357402307786655488829928251673855719427565",
+      "residual_L2_upper": "724222211753.270303",
+      "segment_sha256": "c2110c2f7a245a36534a24f7ab6983b74bf4a51ba8fb209a0ec92a8727eecfdc",
+      "segment_source_sha256": "e1495d9e6e9ebcfa79f7440ca6abecf01a9d77f0bc64a200b8f68a2af1844f31",
+      "step": 237,
+      "strain_log_norm_upper": "1752.285153301"
+    }
+  ],
+  "sign_derivation": {
+    "assumptions": [
+      "e is real, divergence-free, and Hermitian-symmetric; the Leray projection commutes with Lambda",
+      "u_true is exactly divergence-free",
+      "the exact adjoint follows the finite M15 Galerkin ODE stated above for the M14-to-M15 segment, with the projected truncated convolution used by the archived system",
+      "the same Fourier-coefficient ell2 norm is used for e, residual, primal-radius perturbations, and strain estimates",
+      "archived strain L and residual R bound the relevant norms over each entire continuous half-segment",
+      "the archived primal radius bounds the primal trajectory error throughout its associated segment",
+      "the terminal error upper bound is valid in that same norm"
+    ],
+    "backward_time_error_equation": "de/dtau = -VJP(u,e) - nu*Lambda*e + r",
+    "backward_time_variable": "tau = T - t",
+    "conclusion": "The archived strain-only scalar recurrence is a valid upper bound in the reverse-propagation ell2 energy estimate, conditional on the listed assumptions and producer-supplied continuous-segment strain/residual bounds. The viscous term is dissipative in this norm and direction. Adding +nu*max|k|^2=22.5 is conservative but unnecessary.",
+    "energy_bound": "D^+||e||_2/dtau <= ||S(u)||_{Linf,op}*||e||_2 + ||r||_2; -nu*<Lambda e,e> is nonpositive and may be dropped",
+    "energy_identity": "1/2*d||e||_2^2/dtau = -<VJP(u,e),e> - nu*<Lambda e,e> + <r,e>",
+    "error_definition": "e = lambda - L",
+    "exact_adjoint_equation": "for the M14-to-M15 segment, d(lambda)/dt = VJP(u,lambda) + nu*Lambda*lambda on the M15 high-system support, as defined by adjoint_rhs in src/wp19_v0_23_rk4_goal_adjoint.py",
+    "forward_time_error_equation": "de/dt = VJP(u,e) + nu*Lambda*e - r",
+    "galerkin_source_sha256": "c44824c9562c4e79b11e8838e663ecf77d0992ba5d146b4c5015717018baae14",
+    "producer_residual_definition": "r = dL/dt - VJP(u,L) - nu*Lambda*L",
+    "system_source_sha256": "0ba7cd0464076271a80864118d930d384d2cce6a1974650f278f8e02a7756e01"
+  },
+  "status": "PASS_STRAIN_ONLY_BACKWARD_SCALAR_CHAIN; PRIOR SIGN CLAIM CORRECTED",
+  "supersedes": [
+    {
+      "claims_superseded": [
+        "viscosity requires +nu*max(|k|^2) in the backward error exponent",
+        "strain-only radii are invalid for backward error propagation"
+      ],
+      "path": "notes/WP19_v0_28_BACKWARD_DIFFUSION_RECURRENCE_CORRECTION_2026_10_01.md",
+      "sha256": "f5611fd0feb0a7923749fbf353af3eab1910f233bec6cf1ee3e568ff7746d47b"
+    },
+    {
+      "claims_superseded": [
+        "reverse-time viscosity is anti-diffusive for the propagated error norm",
+        "the +22.5 exponent contribution is required"
+      ],
+      "path": "results/wp19_v0_28/backward_diffusion_audit_20261001/backward_diffusion_audit.json",
+      "sha256": "cd223389619c1780516514f7118c87ddc94e8d04c9c7528ce4cfc749948ee540"
+    },
+    {
+      "claims_superseded": [
+        "the script's reverse-time sign interpretation and verdict"
+      ],
+      "path": "src/wp19_v0_28_backward_diffusion_log_norm_audit.py",
+      "sha256": "55884d2d0c5b5c23100170f1e5bc167e70135eea2066b5be1b23a68e9cbbe2b7"
+    },
+    {
+      "claims_superseded": [
+        "historical_value_underbounds_corrected_value flag and historical_chain interpretation"
+      ],
+      "path": "results/wp19_v0_28/corrected_chain_20261001/corrected_recurrence_chain.json",
+      "sha256": "e8403177d80ac24d6658bc63e9ac6302af70b2bee8cdcdc61f5df11ff71f8e60"
+    },
+    {
+      "claims_superseded": [
+        "the +22.5 recurrence is the governing corrected chain"
+      ],
+      "path": "notes/WP19_v0_28_CORRECTED_RECURRENCE_CHAIN_2026_10_01.md",
+      "sha256": "3dfe480575200082a62253055f4f7be035497c8661fa5436eb94dfbfab2266dd"
+    }
+  ]
+}

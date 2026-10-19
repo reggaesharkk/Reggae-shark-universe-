@@ -1,0 +1,5 @@
+N,track,status,seed,proposals,best_refined_C,exit_inherited,exit_target_only,exit_full_final,rigorous_arb_same_datum_certificate,usable_for_WP19
+14,prospective K36 phase/time-gate,all three predeclared N14 tests passed in all three states,,,,0.0023,0.0023,0.0023,NO,diagnostic/context only
+15,prospective K36 phase/time-gate,all three predeclared N15 tests passed in all three states,20260940,520,9.911923711291015,0.0023,0.0023,0.0023,NO,diagnostic/context only
+16,prospective K36 phase/time-gate,prospective broad K36 time-gate PASS,20260941,520,10.150097983229115,0.0023,0.0023,0.0024,NO,diagnostic/context only
+17,prospective K36 phase/time-gate + mechanism holdout,broad K36 gate PASS; separate mechanism gate FAILED/UNEVALUABLE,20260942,520,10.356696358903514,0.0024,0.0024,0.0024,NO,diagnostic/context only; mechanism miss retained

@@ -1,0 +1,81 @@
+{
+  "status": "post-hoc conditional phase-uniform tail constants",
+  "rows": {
+    "12": {
+      "constants_by_state": {
+        "inherited": {
+          "D": 1.3041502880916194,
+          "M2": 585396.0013213904,
+          "z_abs": 136793.9723767797,
+          "anchor_coefficient_abs": 1.0105782038710598,
+          "anchor_cosine_abs": 0.7587565116288872,
+          "R8_high_shell_upper_bound": 354156.74612389767,
+          "R10_high_shell_upper_bound": 21403.195922451367,
+          "R12_high_shell_upper_bound": 5151.907958717821
+        },
+        "target_only": {
+          "D": 1.3041502880916194,
+          "M2": 585396.0013213904,
+          "z_abs": 136793.9723767797,
+          "anchor_coefficient_abs": 1.0105782038710598,
+          "anchor_cosine_abs": 0.7587565116288872
+        },
+        "full_final": {
+          "D": 1.3041502880916194,
+          "M2": 585396.0013213904,
+          "z_abs": 136793.9723767797,
+          "anchor_coefficient_abs": 1.0105782038710598,
+          "anchor_cosine_abs": 0.7587565116288872
+        }
+      },
+      "phase_uniform_bounds": {
+        "D": 1.3041502880916194,
+        "M2": 585396.0013213904,
+        "z_abs": 136793.9723767797,
+        "anchor_coefficient_abs": 1.0105782038710598,
+        "anchor_cosine_abs": 0.7587565116288872,
+        "R8_high_shell_upper_bound": 354156.74612389767,
+        "R10_high_shell_upper_bound": 21403.195922451367,
+        "R12_high_shell_upper_bound": 5151.907958717821
+      }
+    },
+    "13": {
+      "constants_by_state": {
+        "inherited": {
+          "D": 1.304997072361558,
+          "M2": 588209.2428492494,
+          "z_abs": 136705.49154498897,
+          "anchor_coefficient_abs": 1.0096081312766154,
+          "anchor_cosine_abs": 0.7589927420854226,
+          "R8_high_shell_upper_bound": 356089.77852399333,
+          "R10_high_shell_upper_bound": 21520.017278070045,
+          "R12_high_shell_upper_bound": 5180.027725220952
+        },
+        "target_only": {
+          "D": 1.3049970723615578,
+          "M2": 588209.2428492494,
+          "z_abs": 136705.491544989,
+          "anchor_coefficient_abs": 1.0096081312766154,
+          "anchor_cosine_abs": 0.7589927420854227
+        },
+        "full_final": {
+          "D": 1.3049970723615578,
+          "M2": 588209.2428492495,
+          "z_abs": 136705.491544989,
+          "anchor_coefficient_abs": 1.0096081312766154,
+          "anchor_cosine_abs": 0.7589927420854227
+        }
+      },
+      "phase_uniform_bounds": {
+        "D": 1.304997072361558,
+        "M2": 588209.2428492494,
+        "z_abs": 136705.49154498897,
+        "anchor_coefficient_abs": 1.0096081312766154,
+        "anchor_cosine_abs": 0.7589927420854226,
+        "R8_high_shell_upper_bound": 356089.77852399333,
+        "R10_high_shell_upper_bound": 21520.017278070045,
+        "R12_high_shell_upper_bound": 5180.027725220952
+      }
+    }
+  }
+}

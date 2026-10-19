@@ -1,0 +1,14 @@
+{
+  "artifact_id": 11141417263,
+  "artifact_zip_sha256": "3602c5a3eeac89f2904f3709537869d8d8112f920888d8c2104f74505ab9aca2",
+  "claim_boundary": "No residual, gradient, adjoint path, or transfer PASS follows from this incomplete computation.",
+  "completed_convolution_groups": 3,
+  "exit_code": 124,
+  "independent_recurrence_check_executed": false,
+  "packing_elapsed_seconds": 793.876,
+  "run_id": 36813631740,
+  "segment_json_present": false,
+  "source_commit": "864fe3b61bb76615b379ae675323e63d4915aeae",
+  "status": "UNFINISHED TIMEOUT; NO SEGMENT CERTIFICATE",
+  "time_limit_seconds": 1800
+}

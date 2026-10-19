@@ -1,0 +1,471 @@
+{
+  "status": "post-hoc exploratory stress, frozen K36 unchanged",
+  "seed": 20260926,
+  "draws_per_setting": 32,
+  "N": {
+    "12": {
+      "grid": {
+        "37": {
+          "max_abs_rhs_difference_from_4N_plus_1": 1.4779288903810084e-12
+        },
+        "49": {
+          "max_abs_rhs_difference_from_4N_plus_1": 0.0
+        },
+        "61": {
+          "max_abs_rhs_difference_from_4N_plus_1": 2.787067085621689e-12
+        }
+      },
+      "baseline": {
+        "k_channel_total_signed": 462.6520567791413,
+        "k_channel_total_abs_group_contribution": 998.170497676748,
+        "frozen_K36_signed_contribution": 477.3971025814403,
+        "signed_share_of_channel_total": 1.0318707019373266,
+        "absolute_mass_captured": 933.4865983408225,
+        "absolute_mass_fraction": 0.9351975444210403,
+        "same_sign_as_channel_total": true,
+        "passes_preregistered_consistency_criteria": true,
+        "present_key_count": 36
+      },
+      "random": {
+        "phase_radians_0.04": {
+          "draws": 32,
+          "pass_count": 32,
+          "min_mass_fraction": 0.9306527618148899,
+          "max_mass_fraction": 0.937377655870394,
+          "min_signed_share": 1.0287412609602558,
+          "max_signed_share": 1.037714190415779
+        },
+        "phase_radians_0.08": {
+          "draws": 32,
+          "pass_count": 32,
+          "min_mass_fraction": 0.9287272154386852,
+          "max_mass_fraction": 0.9395921061699679,
+          "min_signed_share": 1.024149101387424,
+          "max_signed_share": 1.041350376281167
+        },
+        "phase_radians_0.2": {
+          "draws": 32,
+          "pass_count": 32,
+          "min_mass_fraction": 0.9180392348625288,
+          "max_mass_fraction": 0.9462778912100615,
+          "min_signed_share": 1.0153000082915369,
+          "max_signed_share": 1.0653056679182407
+        },
+        "relative_amplitude_0.02": {
+          "draws": 32,
+          "pass_count": 32,
+          "min_mass_fraction": 0.9344933766891044,
+          "max_mass_fraction": 0.9359980058246022,
+          "min_signed_share": 1.0311980727481644,
+          "max_signed_share": 1.0324741450221853
+        },
+        "relative_amplitude_0.05": {
+          "draws": 32,
+          "pass_count": 32,
+          "min_mass_fraction": 0.9330175159270194,
+          "max_mass_fraction": 0.9365235339002789,
+          "min_signed_share": 1.0301706527421464,
+          "max_signed_share": 1.0354733095471462
+        },
+        "relative_amplitude_0.1": {
+          "draws": 32,
+          "pass_count": 32,
+          "min_mass_fraction": 0.9315573092995136,
+          "max_mass_fraction": 0.939974473993895,
+          "min_signed_share": 1.0271795601899212,
+          "max_signed_share": 1.0378727878251108
+        }
+      },
+      "targeted": {
+        "top1_outside_orbits_x1.1": {
+          "orbit_count": 2,
+          "mode_count": 48,
+          "mass_fraction": 0.934526371935624,
+          "signed_share": 1.0331209766714498,
+          "pass": true
+        },
+        "top1_outside_orbits_x1.25": {
+          "orbit_count": 2,
+          "mode_count": 48,
+          "mass_fraction": 0.933443715754341,
+          "signed_share": 1.0352450845029073,
+          "pass": true
+        },
+        "top1_outside_orbits_x1.5": {
+          "orbit_count": 2,
+          "mode_count": 48,
+          "mass_fraction": 0.9314414701614759,
+          "signed_share": 1.0394729613366862,
+          "pass": true
+        },
+        "top1_outside_orbits_x2.0": {
+          "orbit_count": 2,
+          "mode_count": 48,
+          "mass_fraction": 0.9267295497965681,
+          "signed_share": 1.0507161976461465,
+          "pass": true
+        },
+        "top1_outside_orbits_x3.0": {
+          "orbit_count": 2,
+          "mode_count": 48,
+          "mass_fraction": 0.9147859640474714,
+          "signed_share": 1.086806138304136,
+          "pass": true
+        },
+        "top1_outside_orbits_x4.0": {
+          "orbit_count": 2,
+          "mode_count": 48,
+          "mass_fraction": 0.90015055462091,
+          "signed_share": 1.1493708559745421,
+          "pass": true
+        },
+        "top5_outside_orbits_x1.1": {
+          "orbit_count": 9,
+          "mode_count": 272,
+          "mass_fraction": 0.9333080568324863,
+          "signed_share": 1.0350975380761323,
+          "pass": true
+        },
+        "top5_outside_orbits_x1.25": {
+          "orbit_count": 9,
+          "mode_count": 272,
+          "mass_fraction": 0.9302615648314171,
+          "signed_share": 1.0404813961230779,
+          "pass": true
+        },
+        "top5_outside_orbits_x1.5": {
+          "orbit_count": 9,
+          "mode_count": 272,
+          "mass_fraction": 0.9247309114189702,
+          "signed_share": 1.0507355153349067,
+          "pass": true
+        },
+        "top5_outside_orbits_x2.0": {
+          "orbit_count": 9,
+          "mode_count": 272,
+          "mass_fraction": 0.9125351944648621,
+          "signed_share": 1.0753477388079806,
+          "pass": true
+        },
+        "top5_outside_orbits_x3.0": {
+          "orbit_count": 9,
+          "mode_count": 272,
+          "mass_fraction": 0.8862380465141844,
+          "signed_share": 1.1389575616753451,
+          "pass": false
+        },
+        "top5_outside_orbits_x4.0": {
+          "orbit_count": 9,
+          "mode_count": 272,
+          "mass_fraction": 0.8598967608123139,
+          "signed_share": 1.2225100802778337,
+          "pass": false
+        },
+        "top10_outside_orbits_x1.1": {
+          "orbit_count": 16,
+          "mode_count": 518,
+          "mass_fraction": 0.9327953684357587,
+          "signed_share": 1.036249828302356,
+          "pass": true
+        },
+        "top10_outside_orbits_x1.25": {
+          "orbit_count": 16,
+          "mode_count": 518,
+          "mass_fraction": 0.9291371039760438,
+          "signed_share": 1.0430416737712502,
+          "pass": true
+        },
+        "top10_outside_orbits_x1.5": {
+          "orbit_count": 16,
+          "mode_count": 518,
+          "mass_fraction": 0.9230587461024957,
+          "signed_share": 1.0546998155206955,
+          "pass": true
+        },
+        "top10_outside_orbits_x2.0": {
+          "orbit_count": 16,
+          "mode_count": 518,
+          "mass_fraction": 0.9116056893475288,
+          "signed_share": 1.0780357482758987,
+          "pass": true
+        },
+        "top10_outside_orbits_x3.0": {
+          "orbit_count": 16,
+          "mode_count": 518,
+          "mass_fraction": 0.8929224289237206,
+          "signed_share": 1.1199399477891991,
+          "pass": false
+        },
+        "top10_outside_orbits_x4.0": {
+          "orbit_count": 16,
+          "mode_count": 518,
+          "mass_fraction": 0.8792979491754231,
+          "signed_share": 1.153202069384216,
+          "pass": false
+        },
+        "radial_exp_0.1": {
+          "max_amplitude_factor": 1.1051709180756477,
+          "mass_fraction": 0.9335986935291511,
+          "signed_share": 1.0334087727283459,
+          "pass": true
+        },
+        "radial_exp_0.25": {
+          "max_amplitude_factor": 1.2840254166877414,
+          "mass_fraction": 0.9310710389319101,
+          "signed_share": 1.035886694216589,
+          "pass": true
+        },
+        "radial_exp_0.5": {
+          "max_amplitude_factor": 1.6487212707001282,
+          "mass_fraction": 0.9264840840846095,
+          "signed_share": 1.0405226668084047,
+          "pass": true
+        },
+        "radial_exp_1.0": {
+          "max_amplitude_factor": 2.718281828459045,
+          "mass_fraction": 0.9156865015912815,
+          "signed_share": 1.052098201544905,
+          "pass": true
+        },
+        "radial_exp_2.0": {
+          "max_amplitude_factor": 7.38905609893065,
+          "mass_fraction": 0.8855075906304217,
+          "signed_share": 1.0889434110378196,
+          "pass": false
+        }
+      }
+    },
+    "13": {
+      "grid": {
+        "40": {
+          "max_abs_rhs_difference_from_4N_plus_1": 2.749717764901976e-12
+        },
+        "53": {
+          "max_abs_rhs_difference_from_4N_plus_1": 0.0
+        },
+        "66": {
+          "max_abs_rhs_difference_from_4N_plus_1": 1.0725194820289065e-12
+        }
+      },
+      "baseline": {
+        "k_channel_total_signed": 503.71265027530603,
+        "k_channel_total_abs_group_contribution": 1038.258412200187,
+        "frozen_K36_signed_contribution": 516.7729198900557,
+        "signed_share_of_channel_total": 1.0259280159186226,
+        "absolute_mass_captured": 970.2921650012571,
+        "absolute_mass_fraction": 0.9345382166902922,
+        "same_sign_as_channel_total": true,
+        "passes_preregistered_consistency_criteria": true,
+        "present_key_count": 36
+      },
+      "random": {
+        "phase_radians_0.04": {
+          "draws": 32,
+          "pass_count": 32,
+          "min_mass_fraction": 0.9308650077209901,
+          "max_mass_fraction": 0.9367594838830497,
+          "min_signed_share": 1.0227013558545888,
+          "max_signed_share": 1.029850223280513
+        },
+        "phase_radians_0.08": {
+          "draws": 32,
+          "pass_count": 32,
+          "min_mass_fraction": 0.9290050835532304,
+          "max_mass_fraction": 0.9405202856737939,
+          "min_signed_share": 1.0197759768692867,
+          "max_signed_share": 1.0339349760100807
+        },
+        "phase_radians_0.2": {
+          "draws": 32,
+          "pass_count": 32,
+          "min_mass_fraction": 0.9108691741780963,
+          "max_mass_fraction": 0.9466179160263845,
+          "min_signed_share": 1.011947784515385,
+          "max_signed_share": 1.0662924125351356
+        },
+        "relative_amplitude_0.02": {
+          "draws": 32,
+          "pass_count": 32,
+          "min_mass_fraction": 0.9337493108138432,
+          "max_mass_fraction": 0.9355986512498002,
+          "min_signed_share": 1.0247933375590914,
+          "max_signed_share": 1.0266092024029239
+        },
+        "relative_amplitude_0.05": {
+          "draws": 32,
+          "pass_count": 32,
+          "min_mass_fraction": 0.9313103769431778,
+          "max_mass_fraction": 0.9369619972768408,
+          "min_signed_share": 1.023512967584953,
+          "max_signed_share": 1.0275798815196566
+        },
+        "relative_amplitude_0.1": {
+          "draws": 32,
+          "pass_count": 32,
+          "min_mass_fraction": 0.9319554918132477,
+          "max_mass_fraction": 0.9387726364690527,
+          "min_signed_share": 1.0203003479684807,
+          "max_signed_share": 1.0295233443255931
+        }
+      },
+      "targeted": {
+        "top1_outside_orbits_x1.1": {
+          "orbit_count": 2,
+          "mode_count": 48,
+          "mass_fraction": 0.9334045780268739,
+          "signed_share": 1.0276276273564349,
+          "pass": true
+        },
+        "top1_outside_orbits_x1.25": {
+          "orbit_count": 2,
+          "mode_count": 48,
+          "mass_fraction": 0.9315697142007776,
+          "signed_share": 1.0305205170816005,
+          "pass": true
+        },
+        "top1_outside_orbits_x1.5": {
+          "orbit_count": 2,
+          "mode_count": 48,
+          "mass_fraction": 0.928159802396689,
+          "signed_share": 1.0362754404095433,
+          "pass": true
+        },
+        "top1_outside_orbits_x2.0": {
+          "orbit_count": 2,
+          "mode_count": 48,
+          "mass_fraction": 0.9200701371842198,
+          "signed_share": 1.0514291967901217,
+          "pass": true
+        },
+        "top1_outside_orbits_x3.0": {
+          "orbit_count": 2,
+          "mode_count": 48,
+          "mass_fraction": 0.8992563257705452,
+          "signed_share": 1.0978602008152536,
+          "pass": false
+        },
+        "top1_outside_orbits_x4.0": {
+          "orbit_count": 2,
+          "mode_count": 48,
+          "mass_fraction": 0.8732318742435267,
+          "signed_share": 1.1702713469589634,
+          "pass": false
+        },
+        "top5_outside_orbits_x1.1": {
+          "orbit_count": 9,
+          "mode_count": 272,
+          "mass_fraction": 0.9327847450552117,
+          "signed_share": 1.0286115150112665,
+          "pass": true
+        },
+        "top5_outside_orbits_x1.25": {
+          "orbit_count": 9,
+          "mode_count": 272,
+          "mass_fraction": 0.9299219333371556,
+          "signed_share": 1.0330717440426493,
+          "pass": true
+        },
+        "top5_outside_orbits_x1.5": {
+          "orbit_count": 9,
+          "mode_count": 272,
+          "mass_fraction": 0.9246555194205361,
+          "signed_share": 1.0415053180050005,
+          "pass": true
+        },
+        "top5_outside_orbits_x2.0": {
+          "orbit_count": 9,
+          "mode_count": 272,
+          "mass_fraction": 0.912877819177988,
+          "signed_share": 1.0614171750213652,
+          "pass": true
+        },
+        "top5_outside_orbits_x3.0": {
+          "orbit_count": 9,
+          "mode_count": 272,
+          "mass_fraction": 0.8871058847823393,
+          "signed_share": 1.1108005074378402,
+          "pass": false
+        },
+        "top5_outside_orbits_x4.0": {
+          "orbit_count": 9,
+          "mode_count": 272,
+          "mass_fraction": 0.8609380789704895,
+          "signed_share": 1.1714640392917792,
+          "pass": false
+        },
+        "top10_outside_orbits_x1.1": {
+          "orbit_count": 16,
+          "mode_count": 518,
+          "mass_fraction": 0.9321649275845281,
+          "signed_share": 1.0301923717333046,
+          "pass": true
+        },
+        "top10_outside_orbits_x1.25": {
+          "orbit_count": 16,
+          "mode_count": 518,
+          "mass_fraction": 0.9284978950573213,
+          "signed_share": 1.036867069063725,
+          "pass": true
+        },
+        "top10_outside_orbits_x1.5": {
+          "orbit_count": 16,
+          "mode_count": 518,
+          "mass_fraction": 0.9222850807239273,
+          "signed_share": 1.0485198993546954,
+          "pass": true
+        },
+        "top10_outside_orbits_x2.0": {
+          "orbit_count": 16,
+          "mode_count": 518,
+          "mass_fraction": 0.910217008367427,
+          "signed_share": 1.0727196720923016,
+          "pass": true
+        },
+        "top10_outside_orbits_x3.0": {
+          "orbit_count": 16,
+          "mode_count": 518,
+          "mass_fraction": 0.8895227231615511,
+          "signed_share": 1.1198116985267454,
+          "pass": false
+        },
+        "top10_outside_orbits_x4.0": {
+          "orbit_count": 16,
+          "mode_count": 518,
+          "mass_fraction": 0.8735665191584471,
+          "signed_share": 1.1613776745613744,
+          "pass": false
+        },
+        "radial_exp_0.1": {
+          "max_amplitude_factor": 1.1051709180756477,
+          "mass_fraction": 0.9331752799614499,
+          "signed_share": 1.0270386135386305,
+          "pass": true
+        },
+        "radial_exp_0.25": {
+          "max_amplitude_factor": 1.2840254166877414,
+          "mass_fraction": 0.9310294597051844,
+          "signed_share": 1.0288173456114118,
+          "pass": true
+        },
+        "radial_exp_0.5": {
+          "max_amplitude_factor": 1.6487212707001282,
+          "mass_fraction": 0.9271589718463544,
+          "signed_share": 1.032115472114747,
+          "pass": true
+        },
+        "radial_exp_1.0": {
+          "max_amplitude_factor": 2.718281828459045,
+          "mass_fraction": 0.9181312880424721,
+          "signed_share": 1.0402259948536885,
+          "pass": true
+        },
+        "radial_exp_2.0": {
+          "max_amplitude_factor": 7.38905609893065,
+          "mass_fraction": 0.8930629714114626,
+          "signed_share": 1.0654501517993686,
+          "pass": false
+        }
+      }
+    }
+  }
+}

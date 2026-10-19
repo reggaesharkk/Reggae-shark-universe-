@@ -1,0 +1,21 @@
+{
+  "status": "independently executed in checkpointed local validation; this compact file records verified coherence values while the reproducible suite script emits the full T/A/error table",
+  "initial_24_case_pattern": {
+    "reference": {"chi": 0.2698970273628788, "A": 666.1194006447942, "T": 179.78364610277242},
+    "half_amplitude": {"chi": 0.2698970273628788, "A": 83.26492508059927, "T": 22.472955762846553},
+    "double_amplitude": {"chi": 0.2698970273628788, "A": 5328.955205158353, "T": 1438.2691688221794},
+    "quarter_phase": {"chi": -1.60003462233416e-17, "A": 666.1194006447943, "T": -1.0658141036401503e-14},
+    "opposite_phase": {"chi": -0.2698970273628788, "A": 666.1194006447944, "T": -179.78364610277248},
+    "high_frequency_25pct_G": {"chi": 0.2698970273628788, "A": 666.1194006447942},
+    "combined_double_quarter_high": {"chi": -1.60003462233416e-17, "A": 5328.955205158354}
+  },
+  "cutoff_check": "For each fixed initial scenario, chi agreed to floating-point roundoff across its available N=4,5,6 and (where archived) N=7 cutoffs.",
+  "tracked_chi": [
+    {"scenario":"reference","N":4,"times":[0.0,0.005,0.01,0.015,0.02],"chi":[0.2698970273628788,0.26653605644124123,0.26445226727400967,0.2630849472072224,0.2622556840274846]},
+    {"scenario":"reference","N":7,"times":[0.0,0.005,0.01,0.015,0.02],"chi":[0.26989702736287874,0.2661998755539314,0.2602806721047353,0.2541616617019391,0.24828420900568918]},
+    {"scenario":"combined_double_quarter_high","N":4,"times":[0.0,0.005,0.01,0.015,0.02],"chi":[-1.60003462233416e-17,0.06227712493245161,0.0687543848538612,0.07097209609422192,0.07339027942252029]},
+    {"scenario":"combined_double_quarter_high","N":7,"times":[0.0,0.005,0.01,0.015,0.02],"chi":[-1.6000346223341602e-17,0.12860275527064194,0.13738808117729237,0.1346370251891856,0.1294827029284332]}
+  ],
+  "interpretation": "The phase-sensitive coordinate survives the sparse-triad and 24-case initial tests. Dynamics are cutoff-sensitive: reference coherence decays more strongly at N=7, while the quarter-phase combined field rapidly develops positive coherence, substantially faster at N=7 than N=4. This is diagnostic structure, not a closure theorem.",
+  "limitation": "A=sum|Z| is cubic and no cutoff-uniform a priori control of A has been proved."
+}

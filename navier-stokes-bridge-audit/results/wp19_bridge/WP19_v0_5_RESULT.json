@@ -1,0 +1,50 @@
+{
+  "status": "exact finite-coalition upper-observable theorem + floating transfer scout",
+  "K36_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+  "C200_sha256": "4fb5531fcc6c4490aa7826992ff843f27fefdbc1427c7587ac0544027420e698",
+  "selected_orbit_max_squared_norm": 121,
+  "selected_orbit_max_norm": 11.0,
+  "support_counts": {
+    "11": {"ordered_source_pairs": 461, "unique_fourier_modes": 569},
+    "12": {"ordered_source_pairs": 461, "unique_fourier_modes": 569},
+    "13": {"ordered_source_pairs": 461, "unique_fourier_modes": 569},
+    "14": {"ordered_source_pairs": 461, "unique_fourier_modes": 569},
+    "17": {"ordered_source_pairs": 461, "unique_fourier_modes": 569}
+  },
+  "transfer": {
+    "11": {
+      "K36_inside_mass": 928.6038569771331,
+      "C200_outside_mass": 106.86469758867443,
+      "coalition_upper_observable_U_C200": -33.17842132093676,
+      "full_float_observable_F": -48.390538870127216,
+      "C200_present_key_count": 200,
+      "outside_mass_loss_budget_before_U_reaches_zero": 3.686491257881862
+    },
+    "12": {
+      "K36_inside_mass": 926.5765499740407,
+      "C200_outside_mass": 107.86634724961465,
+      "coalition_upper_observable_U_C200": -44.22057527249103,
+      "full_float_observable_F": -72.0150583196787,
+      "C200_present_key_count": 200,
+      "outside_mass_loss_budget_before_U_reaches_zero": 4.913397252499003
+    },
+    "13": {
+      "K36_inside_mass": 930.3861642570183,
+      "C200_outside_mass": 108.49997320846202,
+      "coalition_upper_observable_U_C200": -46.11359461913992,
+      "full_float_observable_F": -85.35899435159797,
+      "C200_present_key_count": 200,
+      "outside_mass_loss_budget_before_U_reaches_zero": 5.123732735459991
+    }
+  },
+  "global_L2_sensitivity_scout": {
+    "N11_sign_preserving_radius": 0.0005808087498833623,
+    "N12_sign_preserving_radius": 0.0008366087260812892,
+    "interpretation": "still far too pessimistic; next gate must be support-aware or direction-aware"
+  },
+  "claim_boundary": {
+    "exact": "For every state at cutoff M>=11, F_M <= U_C200, and U_C200 depends only on the fixed K36+C200 source support and anchors.",
+    "scouting_only": "The numerical U_C200 values at N11,N12,N13 are floating endpoint diagnostics until interval re-evaluated.",
+    "not_claimed": "No cutoff-uniform dynamic bound or continuum theorem is established."
+  }
+}

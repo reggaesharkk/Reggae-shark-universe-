@@ -1,0 +1,104 @@
+name: WP19 v0.22 recursive drift scout
+
+# Completed historical workflow. Manual replay only.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  recursive-drift-scout:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy==2.3.5
+
+      - name: Download certified predictor artifacts N14-N18
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euxo pipefail
+          mkdir -p work/N14 work/N15 work/N16 work/N17 work/N18
+          gh run download 36608785015 --repo '${{ github.repository }}' --name wp19-n14-arb-certificate --dir work/N14
+          gh run download 36669057015 --repo '${{ github.repository }}' --name wp19-same-datum-N15-arb --dir work/N15
+          gh run download 36669057015 --repo '${{ github.repository }}' --name wp19-same-datum-N16-arb --dir work/N16
+          gh run download 36669057015 --repo '${{ github.repository }}' --name wp19-same-datum-N17-arb --dir work/N17
+          gh run download 36706229638 --repo '${{ github.repository }}' --name wp19-same-datum-N18-arb-recovered --dir work/N18
+          for N in 14 15 16 17 18; do
+            test -f work/N${N}/nodes.npy
+            test -f work/N${N}/metadata.json
+            test -f work/N${N}/000.json
+            test -f work/N${N}/119.json
+          done
+
+      - name: Run v0.22 transition scouts
+        run: |
+          set -euxo pipefail
+          mkdir -p results/wp19_v0_22
+          for M in 14 15 16 17; do
+            H=$((M+1))
+            python src/wp19_v0_22_recursive_drift_lipschitz_scout.py \
+              --repo . \
+              --M ${M} \
+              --lower-dir work/N${M} \
+              --higher-dir work/N${H} \
+              --output results/wp19_v0_22/M${M}_to_M${H}.json
+          done
+
+      - name: Aggregate falsification gate
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('results/wp19_v0_22')
+          rows=[]
+          for M in (14,15,16,17):
+              x=json.loads((root/f'M{M}_to_M{M+1}.json').read_text())
+              rows.append({
+                  'transition':x['transition'],
+                  'endpoint_nominal_drift':x['nominal_state_drift']['endpoint_L2'],
+                  'state_L1_upper_scout':x['state_difference_upper_scout']['node_trapezoid_L1_t_L2'],
+                  'recursive_gamma_L1_scout':x['recursive_gamma_lipschitz']['radius_augmented_node_trapezoid_L1_scout'],
+                  'direct_shell_bound':x['direct_shell_v0_19']['L1_t_L2_bound'],
+                  'combined_simple_route':x['combined_simple_route_scout']['direct_plus_recursive'],
+              })
+          rec=[r['recursive_gamma_L1_scout'] for r in rows]
+          combined=[r['combined_simple_route'] for r in rows]
+          summary={
+              'schema':'wp19-v0.22-recursive-drift-scout-summary-v1',
+              'copyright':'Copyright (c) 2026 Prince Upadhyay. All Rights Reserved.',
+              'status':'NON-RIGOROUS FALSIFICATION GATE',
+              'rows':rows,
+              'recursive_successive_abs_ratios':[rec[i+1]/rec[i] for i in range(3)],
+              'combined_successive_abs_ratios':[combined[i+1]/combined[i] for i in range(3)],
+              'decision_rule':'Rigorize simple Lipschitz route only if constants are numerically useful; otherwise advance to goal-oriented adjoint.',
+              'continuum_claim':False
+          }
+          (root/'WP19_v0_22_SUMMARY.json').write_text(json.dumps(summary,indent=2,sort_keys=True)+'\n')
+          print(json.dumps(summary,indent=2))
+          PY
+
+      - name: Record hashes
+        run: |
+          find results/wp19_v0_22 -type f -print0 | sort -z | xargs -0 sha256sum > results/wp19_v0_22/SHA256SUMS.txt
+
+      - name: Upload v0.22 artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-22-recursive-drift-scout
+          path: results/wp19_v0_22
+          if-no-files-found: error
+          retention-days: 30

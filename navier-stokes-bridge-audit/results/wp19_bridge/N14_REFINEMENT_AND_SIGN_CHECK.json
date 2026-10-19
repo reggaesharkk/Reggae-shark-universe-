@@ -1,0 +1,18 @@
+{
+  "schema": "wp19-v0.11-n14-refinement-and-sign-check-v1",
+  "coarse_h": 0.000025,
+  "half_h": 0.0000125,
+  "coarse_halfstep_endpoint_L2_difference": 6.116319815941696e-09,
+  "coarse_F_exact_decimal_endpoint": "-87.088300522981",
+  "halfstep_F_exact_decimal_endpoint": "-87.088300789981",
+  "coarse_G_C500_exact_decimal_endpoint": "-52.8414629120453",
+  "halfstep_G_C500_exact_decimal_endpoint": "-52.8414630837451",
+  "frozen_N13_sign_chart_sha256": "7cbb307c70aa14fabdc28ae07f0965716bf498e63c371b61e1b9bfd00611c7bd",
+  "coarse_sign_matches": 36,
+  "halfstep_sign_matches": 36,
+  "sign_total": 36,
+  "coarse_sign_differences": [],
+  "halfstep_sign_differences": [],
+  "full_vs_Pi11_G_float_difference": 0.0,
+  "claim_boundary": "Numerical refinement and sign-chart consistency only; not an Arb trajectory error bound."
+}

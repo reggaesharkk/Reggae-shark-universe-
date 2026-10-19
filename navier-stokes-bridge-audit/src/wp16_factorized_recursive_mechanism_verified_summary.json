@@ -1,0 +1,57 @@
+{
+  "status": "executed N11 phase-path block-decomposition result",
+  "source_artifact": {
+    "name": "wp16_phase_path_block_decomposition_results.json",
+    "bytes": 21794,
+    "sha256": "672a10e468fee00f26a08f044812f9f1bf519865edc608bf0fb0ac42f35f68c9"
+  },
+  "pair_counts": {
+    "active": 2787,
+    "old_core": 2084,
+    "new_shell": 703
+  },
+  "phase_displacement": {
+    "mean_abs_old_core": 0.14326195673988665,
+    "median_abs_old_core": 0.07693781600116079,
+    "mean_abs_new_shell": 1.5382335311953164,
+    "median_abs_new_shell": 1.5277504522549048
+  },
+  "refined_endpoints_96": {
+    "inherited": {
+      "C": 6.7874845947098255,
+      "N_high": 20308658.87009112,
+      "P_plus": 266002.76902245893
+    },
+    "old_core_only": {
+      "C": 7.3763815693251535,
+      "C_gain_pct": 8.676218213066967,
+      "N_high_change_pct": 2.245086597551871,
+      "P_plus_change_pct": -5.917699126138565
+    },
+    "new_shell_only": {
+      "C": 7.38686136032772,
+      "C_gain_pct": 8.830616957643622,
+      "N_high_change_pct": 7.984972633100629,
+      "P_plus_change_pct": -0.7770279616002851
+    },
+    "full": {
+      "C": 8.034885796422683,
+      "C_gain_pct": 18.377959968926994,
+      "N_high_change_pct": 10.976206332240768,
+      "P_plus_change_pct": -6.252645035130788
+    }
+  },
+  "log_gain_decomposition": {
+    "old": 0.08320280051399354,
+    "new": 0.08462251470724347,
+    "full": 0.16871237022286545,
+    "interaction": 0.0008870550016284451,
+    "multiplicative_interaction_pct": 0.08874485512744279
+  },
+  "mechanism": {
+    "old_core": "small inherited-core phase corrections primarily deplete positive stretching while slightly increasing signed H2 transfer",
+    "new_shell": "order-one newly opened-shell phases primarily increase signed H2 transfer while barely changing positive stretching",
+    "combined": "the two gains are nearly multiplicatively separable on this finite N11 state"
+  },
+  "next_target": "Compress the old-core correction into structured shell/parity/interaction classes and measure classwise first-order effects on log numerator, negative log P_plus, and log quotient."
+}

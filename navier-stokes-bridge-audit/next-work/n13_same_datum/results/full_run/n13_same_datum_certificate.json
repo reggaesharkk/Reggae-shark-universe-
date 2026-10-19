@@ -1,0 +1,53 @@
+{
+  "K36_keys_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+  "N": 13,
+  "T_exact_decimal": "0.003",
+  "aggregate_gradient_l1": {
+    "endpoint_F_certified": false,
+    "h": 2.5e-05,
+    "initial_L2_error_upper_decimal": "0",
+    "maximum_gradient_l1_upper_decimal": "2449.357954",
+    "maximum_residual_upper_decimal": "0.00021170051",
+    "status": "Arb residual and gradient segment bounds; endpoint F enclosure separate",
+    "steps": 120,
+    "terminal_L2_error_upper_decimal": "0.000055841233",
+    "witness_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624"
+  },
+  "continuum_claim": false,
+  "endpoint": {
+    "E_input_decimal": "0.000012244529",
+    "F_error_upper_decimal": "1.795093071",
+    "F_of_exact_decimal_endpoint_lower_ball": "[-85.358994351598131745108764212017823390 +/- 4.50e-37]",
+    "F_of_exact_decimal_endpoint_lower_decimal": "-85.358994354",
+    "F_of_exact_decimal_endpoint_upper": "-85.358994349",
+    "F_true_lower_decimal": "-87.154087422",
+    "F_true_upper_decimal": "-83.563901281",
+    "certified_negative_if_E_valid": true,
+    "ordered_group_count": 2962,
+    "status": "Arb endpoint margin conditional on supplied Galerkin L2 error radius",
+    "z_abs_lower_decimal": "[51111.113247994545323860528142906217073 +/- 3.73e-34]",
+    "z_perturbation_upper_decimal": "1.954032251"
+  },
+  "gradient_l1_error_upper_decimal": "0.000055841233",
+  "h_exact_decimal": "0.000025",
+  "independent_arb_segment_replay": true,
+  "initial_F_interval_decimal": [
+    "645.8037741471",
+    "645.8037741472"
+  ],
+  "max_gradient_l1_upper_decimal": "2449.357954",
+  "max_symmetric_strain_upper_decimal": "1731.957622",
+  "normalizer_guard": {
+    "E_uniform_input_decimal": "0.000012244529",
+    "all_120_segments_pass": true,
+    "status": "Arb normalizer nonvanishing guard conditional on uniform L2 radius",
+    "z_abs_uniform_lower_decimal": "48869.38355689"
+  },
+  "nu_exact_decimal": "0.1",
+  "result": "PASS",
+  "schema": "wp16-n13-same-datum-certificate-v1",
+  "scope": "same fixed rational trigonometric datum, embedded unchanged from N11 into one additional finite cutoff N13",
+  "steps": 120,
+  "symmetric_strain_error_upper_decimal": "0.000012244529",
+  "witness_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624"
+}

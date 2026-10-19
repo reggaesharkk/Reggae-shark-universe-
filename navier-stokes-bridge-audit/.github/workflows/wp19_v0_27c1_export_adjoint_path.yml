@@ -1,0 +1,261 @@
+name: WP19 v0.27c1 Arb adjoint path export
+
+on:
+  push:
+    branches: [wp19-v0.27c1-adjoint-path-export]
+    paths:
+      - '.github/workflows/wp19_v0_27c1_export_adjoint_path.yml'
+      - 'src/wp19_v0_27c1_export_adjoint_path.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  prepare-c500:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install NumPy
+        run: python -m pip install numpy==2.3.5
+      - name: Reproduce historical N11 predictor exactly
+        run: |
+          set -euxo pipefail
+          mkdir -p work/c500
+          python - <<'PY'
+          import hashlib,sys
+          from pathlib import Path
+          import numpy as np
+          root=Path('.').resolve()
+          sys.path.insert(0,str(root/'src'))
+          import wp16_036_sparse_turnover_exact_anchor as exact
+          import wp16_036_sparse_turnover_witness as witness_mod
+          from wp16_036_dealiased_trajectory_gate import DealiasedSystem
+          witness=root/'results/wp16_n17_holdout/wp16_036_sparse_turnover_112_pairs.json'
+          modes,_,sha=exact.input_state(witness)
+          expw='4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624'
+          assert sha==expw,sha
+          s=DealiasedSystem(witness_mod.N)
+          a=np.asarray([[complex(float(v[0]),float(v[1])) for v in modes.get(k,(exact.ZERO,)*3)] for k in s.modes],dtype=np.complex128)
+          nodes=np.lib.format.open_memmap('work/c500/n11_nodes.npy',mode='w+',dtype=np.complex128,shape=(121,len(s.modes),3))
+          for step in range(121):
+              nodes[step]=a
+              if step<120:
+                  a=s.rk4(a,0.000025)
+          nodes.flush()
+          got=hashlib.sha256(Path('work/c500/n11_nodes.npy').read_bytes()).hexdigest()
+          exp='b70bf7f7fe85a8c073c02c80e54e1f10d0642f5d030dfe569470c5970ebdda29'
+          assert got==exp,(got,exp)
+          PY
+      - name: Rebuild portable frozen C500
+        run: |
+          python src/wp19_v0_25_rebuild_c500_portable.py \
+            --repo . \
+            --n11-nodes work/c500/n11_nodes.npy \
+            --k36 results/wp16_n12_holdout/frozen_K36_ordered_source_orbits.json \
+            --output work/c500/frozen_C500.json \
+            --report work/c500/C500_RECONSTRUCTION_REPORT.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-27c1-frozen-c500
+          path: work/c500
+          if-no-files-found: error
+          retention-days: 30
+
+  vjp:
+    needs: prepare-c500
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        M: [14,15,16,17]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install validated arithmetic dependencies
+        run: |
+          python -m pip install numpy==2.3.5 python-flint
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - uses: actions/download-artifact@v4
+        with:
+          name: wp19-v0-27c1-frozen-c500
+          path: work/c500
+      - name: Download certified lower predictor
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euxo pipefail
+          M=${{ matrix.M }}
+          mkdir -p work/lower
+          case "$M" in
+            14) gh run download 36608785015 --repo '${{ github.repository }}' --name wp19-n14-arb-certificate --dir work/lower ;;
+            15|16|17) gh run download 36669057015 --repo '${{ github.repository }}' --name wp19-same-datum-N$M-arb --dir work/lower ;;
+          esac
+          test -f work/lower/nodes.npy
+          test -f work/lower/rhs.npy
+          test -f work/lower/metadata.json
+      - name: Run direct Arb adjoint VJP point cross-check
+        run: |
+          set -euxo pipefail
+          M=${{ matrix.M }}
+          mkdir -p results/wp19_v0_27c1
+          python src/wp19_v0_27c1_export_adjoint_path.py \
+            --repo . \
+            --M $M \
+            --lower-dir work/lower \
+            --sign-chart results/wp19_bridge/frozen_K36_numerator_sign_chart_N13.json \
+            --c500 work/c500/frozen_C500.json \
+            --output results/wp19_v0_27c1/M$M'_arb_vjp_point.json' \
+            --adjoint-values-output results/wp19_v0_27c1/M$M'_adjoint_values.npy' \
+            --adjoint-rhs-output results/wp19_v0_27c1/M$M'_adjoint_rhs.npy'
+      - name: Fail closed
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          M=int('${{ matrix.M }}')
+          root=Path('results/wp19_v0_27c1')
+          x=json.loads((root/f'M{M}_arb_vjp_point.json').read_text())
+          assert x['status']=='PASS ARB VJP CROSSCHECK AND ADJOINT PATH EXPORT',x
+          direct=float(x['selected_mode_direct_crosscheck']['arb_vs_explicit_direct_relative_difference_upper_decimal'])
+          assert direct<1e-12,x
+          path=x['adjoint_reconstruction']
+          assert path['time_node_count']==241,path
+          import hashlib
+          for key in ('values','rhs'):
+              p=root/path[f'{key}_file']
+              assert hashlib.sha256(p.read_bytes()).hexdigest()==path[f'{key}_sha256'],p
+          print(json.dumps({
+              'M':M,
+              'arb_vs_explicit_direct_relative_upper':direct,
+              'arb_vs_fft_relative_upper':x['arb_vs_fft_relative_difference_upper_decimal'],
+              'fft_vs_explicit_direct_relative':x['selected_mode_direct_crosscheck']['fft_vs_explicit_direct_relative_difference'],
+          },indent=2))
+          PY
+      - name: Write self-excluding shard manifest
+        run: |
+          python - <<'PY'
+          import hashlib
+          from pathlib import Path
+          root=Path('results/wp19_v0_27c1')
+          files=sorted(p for p in root.iterdir() if p.is_file() and p.name!='SHA256SUMS.txt')
+          (root/'SHA256SUMS.txt').write_text(''.join(f"{hashlib.sha256(p.read_bytes()).hexdigest()}  {p.name}\n" for p in files))
+          expected={p.name for p in files}
+          rows=(root/'SHA256SUMS.txt').read_text().splitlines()
+          seen=set()
+          for row in rows:
+              digest,name=row.split('  ',1)
+              assert name in expected and name not in seen
+              assert hashlib.sha256((root/name).read_bytes()).hexdigest()==digest
+              seen.add(name)
+          assert seen==expected
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-27c1-M${{ matrix.M }}
+          path: results/wp19_v0_27c1
+          if-no-files-found: error
+          retention-days: 30
+
+  aggregate:
+    needs: vjp
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install NumPy for array-shape and manifest verification
+        run: python -m pip install numpy==2.3.5
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: wp19-v0-27c1-M*
+          path: gathered
+      - name: Aggregate
+        run: |
+          python - <<'PY'
+          import hashlib, json
+          import numpy as np
+          from pathlib import Path
+          rows=[]
+          for M in (14,15,16,17):
+              shard=Path(f'gathered/wp19-v0-27c1-M{M}')
+              manifest=(shard/'SHA256SUMS.txt').read_text().splitlines()
+              expected={p.name for p in shard.iterdir() if p.is_file() and p.name!='SHA256SUMS.txt'}
+              seen=set()
+              for line in manifest:
+                  digest,name=line.split('  ',1)
+                  assert name in expected and name not in seen
+                  assert hashlib.sha256((shard/name).read_bytes()).hexdigest()==digest
+                  seen.add(name)
+              assert seen==expected
+              x=json.loads((shard/f'M{M}_arb_vjp_point.json').read_text())
+              values=np.load(shard/f'M{M}_adjoint_values.npy',allow_pickle=False)
+              rhs=np.load(shard/f'M{M}_adjoint_rhs.npy',allow_pickle=False)
+              assert list(values.shape)==x['adjoint_reconstruction']['values_shape']
+              assert list(rhs.shape)==x['adjoint_reconstruction']['rhs_shape']
+              assert hashlib.sha256((shard/f'M{M}_adjoint_values.npy').read_bytes()).hexdigest()==x['adjoint_reconstruction']['values_sha256']
+              assert hashlib.sha256((shard/f'M{M}_adjoint_rhs.npy').read_bytes()).hexdigest()==x['adjoint_reconstruction']['rhs_sha256']
+              rows.append({
+                  'M':M,
+                  'status':x['status'],
+                  'arb_vs_explicit_direct_relative_upper':x['selected_mode_direct_crosscheck']['arb_vs_explicit_direct_relative_difference_upper_decimal'],
+                  'arb_vs_fft_relative_upper':x['arb_vs_fft_relative_difference_upper_decimal'],
+                  'fft_vs_explicit_direct_relative':x['selected_mode_direct_crosscheck']['fft_vs_explicit_direct_relative_difference'],
+                  'adjoint_node_count':x['adjoint_reconstruction']['time_node_count'],
+                  'adjoint_values_sha256':x['adjoint_reconstruction']['values_sha256'],
+                  'adjoint_rhs_sha256':x['adjoint_reconstruction']['rhs_sha256'],
+              })
+          passed=all(
+              r['status']=='PASS ARB VJP CROSSCHECK AND ADJOINT PATH EXPORT'
+              and float(r['arb_vs_explicit_direct_relative_upper'])<1e-12
+              and r['adjoint_node_count']==241
+              for r in rows
+          )
+          out={
+              'schema':'wp19-v0.27c1-adjoint-path-export-summary-v1',
+              'status':'PASS ARB VJP CROSSCHECK AND ADJOINT PATH EXPORT' if passed else 'FAIL',
+              'rows':rows,
+              'next_target':'Enclose the backward-adjoint Hermite residual on every half-step segment and propagate state error from terminal-gradient and predictor uncertainties.',
+              'claim_boundary':'The VJP arithmetic is cross-checked at one interior point. The 241-node path is a binary64 reconstruction only, not an adjoint trajectory certificate; no all-N/continuum theorem.'
+          }
+          Path('final').mkdir()
+          Path('final/WP19_v0_27c1_SUMMARY.json').write_text(json.dumps(out,indent=2,sort_keys=True)+'\n')
+          for p in Path('gathered').glob('wp19-v0-27c1-M*/*'):
+              if p.is_file() and p.name!='SHA256SUMS.txt':
+                  (Path('final')/p.name).write_bytes(p.read_bytes())
+          print(json.dumps(out,indent=2))
+          if not passed:
+              raise SystemExit(1)
+          PY
+      - name: Write self-excluding archive manifest
+        run: |
+          python - <<'PY'
+          import hashlib
+          from pathlib import Path
+          root=Path('final')
+          files=sorted(p for p in root.iterdir() if p.is_file() and p.name!='SHA256SUMS.txt')
+          (root/'SHA256SUMS.txt').write_text(''.join(f"{hashlib.sha256(p.read_bytes()).hexdigest()}  {p.name}\n" for p in files))
+          expected={p.name for p in files}
+          rows=(root/'SHA256SUMS.txt').read_text().splitlines()
+          seen=set()
+          for row in rows:
+              digest,name=row.split('  ',1)
+              assert name in expected and name not in seen
+              assert hashlib.sha256((root/name).read_bytes()).hexdigest()==digest
+              seen.add(name)
+          assert seen==expected
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-27c1-adjoint-path-export
+          path: final
+          if-no-files-found: error
+          retention-days: 30

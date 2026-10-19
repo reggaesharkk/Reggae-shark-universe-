@@ -1,0 +1,29 @@
+{
+  "status": "executed optimized WP13 endpoint-vorticity diagnostic",
+  "scope": {
+    "s": 2.0,
+    "K": 2,
+    "nu": 0.1,
+    "grid": 32,
+    "cutoffs": [4, 7],
+    "scenarios": ["reference", "combined_double_quarter_high"],
+    "amplitudes": [1.0, 2.0, 4.0],
+    "reserve_fractions": [0.25, 0.5, 0.75],
+    "interval": [0.0, 0.005]
+  },
+  "analytical_result": "For fixed-energy concentration u_lambda=lambda^(3/2)v(lambda x), b_required scales like lambda^(5/2), while ||omega||_Lp scales like lambda^(5/2-3/p). Therefore every finite-p magnitude-only coefficient C||omega||_Lp is too weak. p=infinity is not rejected by this scaling argument.",
+  "largest_sampled_case": {
+    "scenario": "combined_double_quarter_high",
+    "N": 7,
+    "amplitude_multiplier": 4.0,
+    "theta": 0.25,
+    "b_over_omega_L2": 0.13075951615326528,
+    "b_over_omega_L4_grid": 0.1103048081708694,
+    "b_over_omega_L8_grid": 0.08653272884929705,
+    "b_over_omega_Linf_grid": 0.04287981737879498,
+    "b_over_fourier_L1_endpoint_envelope": 0.018719871710310903
+  },
+  "artifact_digest": "sha256:1fdf9012df34b8bdf7ebf45c089a1b5009352ba3b94fcfa222f8edecd115bf4b",
+  "interpretation": "Endpoint normalization is numerically stronger on the sampled trajectories, but neither sampled grid Linf nor the Fourier l1 envelope supplies the independent time-integral estimate required by L3. The next diagnostic should compare the remaining dimensionless factor b_required/endpoint-scale with geometric depletion variables.",
+  "warning": "b_required is circular; finite-grid Linf is a sampled lower estimate of the continuum supremum; these data do not prove an endpoint regularity criterion."
+}

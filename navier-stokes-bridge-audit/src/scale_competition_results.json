@@ -1,0 +1,47 @@
+{
+  "definition": "ell_omega=sqrt(G/D), R_sample=rho_upper_sample/ell_omega",
+  "exact_scaling": "Under u_lambda(x)=lambda^(3/2)v(lambda x), ell_omega scales as lambda^(-1), matching the absolute coherence-length scaling.",
+  "warning": "rho_upper_sample=1/Lmax is only an upper bound on an admissible sampled coherence radius. R_sample>1 is not a regularity margin or safety certificate. ell_omega is a vorticity-gradient length, not an analyticity radius.",
+  "rows": [
+    {
+      "scenario": "reference",
+      "N": 4,
+      "samples": [
+        {"time":0.0,"G":530.899402557,"D":2775.75443706,"T":179.783646103,"ell_omega":0.4373359043387007,"rho_upper_sample":null,"R_sample":null,"nonlinear_to_viscous":0.647691112857881,"pair_count":0},
+        {"time":0.005,"G":530.404979318,"D":2769.79177755,"T":275.3716603,"ell_omega":0.43760298621445953,"rho_upper_sample":null,"R_sample":null,"nonlinear_to_viscous":0.9941931670318889,"pair_count":0},
+        {"time":0.01,"G":530.855684523,"D":2772.93963589,"T":368.40367187,"ell_omega":0.4375398800074389,"rho_upper_sample":null,"R_sample":null,"nonlinear_to_viscous":1.3285725150552165,"pair_count":0},
+        {"time":0.015,"G":532.213284939,"D":2785.00900911,"T":458.164522963,"ell_omega":0.43714905481486517,"rho_upper_sample":null,"R_sample":null,"nonlinear_to_viscous":1.6451096601785755,"pair_count":0}
+      ]
+    },
+    {
+      "scenario": "reference",
+      "N": 7,
+      "samples": [
+        {"time":0.0,"G":530.899402557,"D":2775.75443706,"T":179.783646103,"ell_omega":0.4373359043387007,"rho_upper_sample":null,"R_sample":null,"nonlinear_to_viscous":0.647691112857881,"pair_count":0},
+        {"time":0.005,"G":530.629757661,"D":2775.81001516,"T":320.698513256,"ell_omega":0.4372206769429743,"rho_upper_sample":4.761243447843486,"R_sample":10.889832419275509,"nonlinear_to_viscous":1.1553367161899718,"pair_count":192},
+        {"time":0.01,"G":531.746749326,"D":2797.0348328,"T":459.225621575,"ell_omega":0.4360166531483929,"rho_upper_sample":4.75706166748949,"R_sample":10.910274605844797,"nonlinear_to_viscous":1.6418237730368958,"pair_count":192},
+        {"time":0.015,"G":534.204742714,"D":2839.62608472,"T":595.248196404,"ell_omega":0.43373356466343114,"rho_upper_sample":4.962774752947077,"R_sample":11.44199134041569,"nonlinear_to_viscous":2.096223999878881,"pair_count":256}
+      ]
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 4,
+      "samples": [
+        {"time":0.0,"G":2831.46348031,"D":20305.2740592,"T":0.0,"ell_omega":0.373423251548372,"rho_upper_sample":1.1053956786463375,"R_sample":2.9601618056112793,"nonlinear_to_viscous":0.0,"pair_count":406},
+        {"time":0.005,"G":2817.86128214,"D":20165.546449,"T":1294.62107665,"ell_omega":0.3738133908024892,"rho_upper_sample":0.9615456828668719,"R_sample":2.572269567781215,"nonlinear_to_viscous":0.6419861898491715,"pair_count":614},
+        {"time":0.01,"G":2816.28217743,"D":20137.7592574,"T":2380.1410228,"ell_omega":0.37396620688946284,"rho_upper_sample":0.8227931691627651,"R_sample":2.200181983236968,"nonlinear_to_viscous":1.1819276570150566,"pair_count":818},
+        {"time":0.015,"G":2824.41777557,"D":20184.219242,"T":3244.14385299,"ell_omega":0.3740753046479806,"rho_upper_sample":0.7713173010500249,"R_sample":2.0619281856647474,"nonlinear_to_viscous":1.6072797626701043,"pair_count":911}
+      ]
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 7,
+      "samples": [
+        {"time":0.0,"G":2831.46348031,"D":20305.2740592,"T":0.0,"ell_omega":0.373423251548372,"rho_upper_sample":1.1053956786463375,"R_sample":2.9601618056112793,"nonlinear_to_viscous":0.0,"pair_count":406},
+        {"time":0.005,"G":2837.13128378,"D":20849.9975286,"T":5206.65438486,"ell_omega":0.36888065466263964,"rho_upper_sample":0.7902427278227862,"R_sample":2.142273225900694,"nonlinear_to_viscous":2.4971978438042114,"pair_count":572},
+        {"time":0.01,"G":2892.7345752,"D":22951.8159985,"T":10210.9740729,"ell_omega":0.3550142005640722,"rho_upper_sample":0.6573094881078929,"R_sample":1.8515019477613518,"nonlinear_to_viscous":4.44887209375389,"pair_count":802},
+        {"time":0.015,"G":2993.04786206,"D":26702.6602899,"T":14658.5262385,"ell_omega":0.33479460541312553,"rho_upper_sample":0.5437021776003521,"R_sample":1.624010602496683,"nonlinear_to_viscous":5.489541891172469,"pair_count":1104}
+      ]
+    }
+  ]
+}

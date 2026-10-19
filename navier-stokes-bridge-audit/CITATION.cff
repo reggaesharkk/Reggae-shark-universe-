@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite the specific archived version of this finite-mode audit."
+type: software
+authors:
+  - family-names: Upadhyay
+    given-names: Prince
+    affiliation: Independent Research
+title: "Navier–Stokes Bridge Audit: Finite Fourier Diagnostics"
+version: "0.2"
+doi: 10.5281/zenodo.22939984
+date-released: 2026-09-24
+url: https://github.com/reggaesharkk/navier-stokes-bridge-audit/releases/tag/v0.2
+abstract: "Code, finite Fourier Galerkin diagnostics, a classical explicit small-data estimate, and a phase/strain Master Record supplement for unforced periodic three-dimensional Navier–Stokes. No arbitrary-data regularity claim."

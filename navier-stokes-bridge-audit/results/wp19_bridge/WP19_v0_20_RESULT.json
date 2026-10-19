@@ -1,0 +1,25 @@
+{
+  "schema": "wp19-v0.20-fixed-F11-goal-oriented-tail-adjoint-scout-v1",
+  "date": "2026-09-30",
+  "status": "NON-RIGOROUS CONTINUOUS-ADJOINT / NODE-TRAPEZOID SCOUT",
+  "fixed_F11": {
+    "N14": -60.77946361029569,
+    "N15": -58.46332755046103,
+    "N16": -58.02536269731456,
+    "N17": -57.89617345149145,
+    "N18": -57.91516721664482
+  },
+  "pairs": [
+    {"pair":"14->15","actual":2.3161360598347756,"dual":2.303131578129127,"remainder":0.013004481705535031,"relative_remainder":0.005614724},
+    {"pair":"15->16","actual":0.43796485314646816,"dual":0.4329647111636107,"remainder":0.005000141982857476,"relative_remainder":0.011416765402371873},
+    {"pair":"16->17","actual":0.1291892458231132,"dual":0.13233789167789065,"remainder":-0.0031486458547774487,"relative_remainder":0.024372352626693062},
+    {"pair":"17->18","actual":-0.018993765153595632,"dual":-0.017293827409091196,"remainder":-0.0016999377445044359,"relative_remainder":0.08949977694036233}
+  ],
+  "dual_magnitude_ratios": [0.188, 0.306, 0.131],
+  "endpoint_gradient_N14_to_N18": {
+    "prediction": 2.8646437784064283,
+    "actual": 2.8642963936509886,
+    "remainder": -0.0003473847554396059
+  },
+  "claim_boundary": "Floating first-order scout; no interval adjoint or all-N theorem."
+}

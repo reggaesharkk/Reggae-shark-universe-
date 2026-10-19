@@ -1,0 +1,263 @@
+name: WP19 v0.25 signed C500 N14-N18
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/wp19_v0_25_signed_c500.yml'
+      - 'notes/WP19_v0_25_SIGNED_C500_N14_N18.md'
+      - 'src/wp19_v0_6_build_fixed_c500.py'
+      - 'src/wp19_v0_10_signed_numerator_exact.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  rebuild-c500:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy==2.3.5
+
+      - name: Rebuild frozen N11 endpoint and C500
+        run: |
+          set -euxo pipefail
+          mkdir -p work/c500
+          python - <<'PY'
+          import sys
+          from pathlib import Path
+          import numpy as np
+          root=Path('.').resolve()
+          sys.path.insert(0,str(root/'src'))
+          import hashlib
+          import wp16_036_sparse_turnover_exact_anchor as exact
+          import wp16_036_sparse_turnover_witness as turnover_witness
+          from wp16_036_dealiased_trajectory_gate import DealiasedSystem
+          witness=root/'results/wp16_n17_holdout/wp16_036_sparse_turnover_112_pairs.json'
+          expected='4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624'
+          modes,_,sha=exact.input_state(witness)
+          assert sha==expected
+          s=DealiasedSystem(turnover_witness.N)
+          a=np.asarray([
+              [complex(float(v[0]),float(v[1]))
+               for v in modes.get(k,(exact.ZERO,)*3)]
+              for k in s.modes
+          ],dtype=np.complex128)
+          nodes=np.lib.format.open_memmap(
+              'work/c500/n11_nodes.npy',
+              mode='w+',
+              dtype=np.complex128,
+              shape=(121,len(s.modes),3)
+          )
+          for step in range(121):
+              nodes[step]=a
+              if step<120:
+                  a=s.rk4(a,0.000025)
+          nodes.flush()
+          node_sha=hashlib.sha256(Path('work/c500/n11_nodes.npy').read_bytes()).hexdigest()
+          expected_nodes='b70bf7f7fe85a8c073c02c80e54e1f10d0642f5d030dfe569470c5970ebdda29'
+          assert node_sha==expected_nodes,(node_sha,expected_nodes)
+          print('N11 predictor nodes reproduced exactly',node_sha)
+          PY
+
+          python src/wp19_v0_6_build_fixed_c500.py \
+            --repo . \
+            --n11-nodes work/c500/n11_nodes.npy \
+            --k36 results/wp16_n12_holdout/frozen_K36_ordered_source_orbits.json \
+            --output work/c500/frozen_C500.json
+
+          echo '79bdc347358705b4611f10f76a50db16e5edff572d1822ca1459cd868e15c216  work/c500/frozen_C500.json' | sha256sum -c -
+
+      - name: Upload frozen C500
+        uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-25-frozen-c500
+          path: work/c500/frozen_C500.json
+          if-no-files-found: error
+          retention-days: 30
+
+  certify:
+    needs: rebuild-c500
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix:
+        N: [14, 15, 16, 17, 18]
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy==2.3.5
+
+      - name: Download frozen C500
+        uses: actions/download-artifact@v4
+        with:
+          name: wp19-v0-25-frozen-c500
+          path: work/c500
+
+      - name: Download certified target trajectory
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euxo pipefail
+          N=${{ matrix.N }}
+          mkdir -p work/target
+          case "${N}" in
+            14) gh run download 36608785015 --repo '${{ github.repository }}' --name wp19-n14-arb-certificate --dir work/target ;;
+            15|16|17) gh run download 36669057015 --repo '${{ github.repository }}' --name wp19-same-datum-N${N}-arb --dir work/target ;;
+            18) gh run download 36706229638 --repo '${{ github.repository }}' --name wp19-same-datum-N18-arb-recovered --dir work/target ;;
+          esac
+          test -f work/target/nodes.npy
+
+      - name: Extract certified terminal radius
+        id: radius
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          N=int('${{ matrix.N }}')
+          matches=[]
+          for p in Path('work/target').glob('*.json'):
+              try:
+                  x=json.loads(p.read_text())
+              except Exception:
+                  continue
+              if x.get('N')==N and 'symmetric_strain_error_upper_decimal' in x and 'endpoint' in x:
+                  matches.append((p,x))
+          if len(matches)!=1:
+              raise SystemExit(f'expected one certificate for N{N}, got {[str(p) for p,_ in matches]}')
+          p,x=matches[0]
+          E=x['symmetric_strain_error_upper_decimal']
+          print('certificate',p)
+          print('E',E)
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:
+              f.write(f'E={E}\n')
+          PY
+
+      - name: Run exact signed-C500 endpoint composition
+        run: |
+          set -euxo pipefail
+          N=${{ matrix.N }}
+          mkdir -p results/wp19_v0_25
+          python src/wp19_v0_10_signed_numerator_exact.py \
+            --N ${N} \
+            --nodes work/target/nodes.npy \
+            --k36 results/wp16_n12_holdout/frozen_K36_ordered_source_orbits.json \
+            --c500 work/c500/frozen_C500.json \
+            --E '${{ steps.radius.outputs.E }}' \
+            --repo-src src \
+            --out results/wp19_v0_25/N${N}_signed_C500.json
+
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          N=int('${{ matrix.N }}')
+          p=Path(f'results/wp19_v0_25/N{N}_signed_C500.json')
+          x=json.loads(p.read_text())
+          assert x['status']=='PASS',x
+          assert x['K36_sign_locked_count']==36,x
+          assert x['certified_signed_numerator_negative'] is True,x
+          assert float(x['normalizer_true_lower_bound_decimal'])>0,x
+          print(json.dumps({k:x[k] for k in ['N','status','K36_sign_locked_count','true_signed_numerator_upper_decimal','certified_G_upper_decimal','normalizer_true_lower_bound_decimal']},indent=2))
+          PY
+
+      - name: Record transition hash
+        run: |
+          sha256sum results/wp19_v0_25/*.json > results/wp19_v0_25/SHA256SUMS.txt
+
+      - name: Upload endpoint certificate
+        uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-25-N${{ matrix.N }}
+          path: results/wp19_v0_25
+          if-no-files-found: error
+          retention-days: 30
+
+  aggregate:
+    needs: certify
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Download endpoint artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: wp19-v0-25-N*
+          path: gathered
+
+      - name: Aggregate N11-N18 signed-C500 chain
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          prior={
+            11:{'certified_G_upper_decimal':'-44.84468560750583','normalizer_true_lower_bound_decimal':'51416.57915303983'},
+            12:{'certified_G_upper_decimal':'-54.41406495135733','normalizer_true_lower_bound_decimal':'51349.83296890201'},
+            13:{'certified_G_upper_decimal':'-54.96100844772338','normalizer_true_lower_bound_decimal':'51109.15921574555'},
+          }
+          rows=[]
+          for N in (11,12,13):
+              rows.append({'N':N,'status':'PASS','K36_sign_locked_count':36,'certified_signed_numerator_negative':True,**prior[N],'source':'WP19 v0.10'})
+          for N in (14,15,16,17,18):
+              p=Path(f'gathered/wp19-v0-25-N{N}/N{N}_signed_C500.json')
+              x=json.loads(p.read_text())
+              rows.append({
+                  'N':N,
+                  'status':x['status'],
+                  'K36_sign_locked_count':x['K36_sign_locked_count'],
+                  'certified_signed_numerator_negative':x['certified_signed_numerator_negative'],
+                  'true_signed_numerator_upper_decimal':x['true_signed_numerator_upper_decimal'],
+                  'certified_G_upper_decimal':x['certified_G_upper_decimal'],
+                  'normalizer_true_lower_bound_decimal':x['normalizer_true_lower_bound_decimal'],
+                  'E_input_decimal':x['E_input_decimal'],
+                  'source':'WP19 v0.25'
+              })
+          passed=all(r['status']=='PASS' and r['K36_sign_locked_count']==36 and r['certified_signed_numerator_negative'] for r in rows)
+          summary={
+              'schema':'wp19-v0.25-signed-c500-n11-n18-summary-v1',
+              'copyright':'Copyright (c) 2026 Prince Upadhyay. All Rights Reserved.',
+              'status':'PASS' if passed else 'FAIL',
+              'rows':rows,
+              'all_eight_cutoffs_signed_numerator_negative':passed,
+              'next_target':'interval goal-oriented transfer for the fixed polynomial signed C500 numerator, with normalizer handled separately',
+              'claim_boundary':'Finite endpoint certificate family only; no all-N or continuum theorem.'
+          }
+          Path('final').mkdir()
+          Path('final/WP19_v0_25_SUMMARY.json').write_text(json.dumps(summary,indent=2,sort_keys=True)+'\n')
+          for p in Path('gathered').glob('wp19-v0-25-N*/N*_signed_C500.json'):
+              (Path('final')/p.name).write_bytes(p.read_bytes())
+          print(json.dumps(summary,indent=2))
+          if not passed:
+              raise SystemExit(1)
+          PY
+
+      - name: Record final hashes
+        run: |
+          find final -type f -print0 | sort -z | xargs -0 sha256sum > final/SHA256SUMS.txt
+
+      - name: Upload aggregate certificate
+        uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-25-signed-c500-n11-n18
+          path: final
+          if-no-files-found: error
+          retention-days: 30

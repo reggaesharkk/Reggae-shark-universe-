@@ -1,0 +1,105 @@
+{
+  "status": "post-hoc exact instantaneous ordered-source rate envelope",
+  "N": {
+    "12": {
+      "inherited": {
+        "margin": 432.9548297447353,
+        "mass_fraction": 0.9404849156612692,
+        "ordered_source_rate_envelope_inside": 810337.6811497655,
+        "ordered_source_rate_envelope_outside": 88570.39641328441,
+        "margin_rate_lower_bound": -1607471.248869325,
+        "grouped_margin_rate_away_from_zero_kinks": 401321.34545123985,
+        "instantaneous_margin_over_rate_envelope": 0.00026933908152277703,
+        "conditional_H1_rate_lower_bound": -298095111.44759816,
+        "instantaneous_margin_over_H1_bound": 1.452404997996232e-06,
+        "norm_a_L2": 111.24888541900596,
+        "norm_a_H1_seminorm": 227.59294991460172,
+        "norm_rhs_L2": 8111.8548306843895,
+        "norm_rhs_H1_seminorm": 33454.68413582309,
+        "tracked_z_abs": 136793.97237677945
+      },
+      "target_only": {
+        "margin": 432.9764026367195,
+        "mass_fraction": 0.9404870236550122,
+        "ordered_source_rate_envelope_inside": 810340.6400694437,
+        "ordered_source_rate_envelope_outside": 88569.25276873168,
+        "margin_rate_lower_bound": -1607463.9149880288,
+        "grouped_margin_rate_away_from_zero_kinks": 401330.1576036235,
+        "instantaneous_margin_over_rate_envelope": 0.0002693537308051758,
+        "conditional_H1_rate_lower_bound": -298097845.82492656,
+        "instantaneous_margin_over_H1_bound": 1.4524640439401477e-06,
+        "norm_a_L2": 111.24888541900596,
+        "norm_a_H1_seminorm": 227.59294991460172,
+        "norm_rhs_L2": 8111.923712706477,
+        "norm_rhs_H1_seminorm": 33455.71675959528,
+        "tracked_z_abs": 136793.97237677945
+      },
+      "full_final": {
+        "margin": 351.33150431749334,
+        "mass_fraction": 0.9351975444210403,
+        "ordered_source_rate_envelope_inside": 649954.762606536,
+        "ordered_source_rate_envelope_outside": 81006.46160455947,
+        "margin_rate_lower_bound": -1379012.9170475714,
+        "grouped_margin_rate_away_from_zero_kinks": 209854.16148080613,
+        "instantaneous_margin_over_rate_envelope": 0.000254770278054889,
+        "conditional_H1_rate_lower_bound": -286462714.73386997,
+        "instantaneous_margin_over_H1_bound": 1.2264475837418767e-06,
+        "norm_a_L2": 111.24888541900594,
+        "norm_a_H1_seminorm": 227.59294991460172,
+        "norm_rhs_L2": 8128.965842773986,
+        "norm_rhs_H1_seminorm": 33379.06577090264,
+        "tracked_z_abs": 136793.97237677945
+      }
+    },
+    "13": {
+      "inherited": {
+        "margin": 356.81138191338584,
+        "mass_fraction": 0.9357313342785715,
+        "ordered_source_rate_envelope_inside": 654596.4122109578,
+        "ordered_source_rate_envelope_outside": 82105.05053782614,
+        "margin_rate_lower_bound": -1393541.8670513933,
+        "grouped_margin_rate_away_from_zero_kinks": 208744.06744511687,
+        "instantaneous_margin_over_rate_envelope": 0.0002560464025873625,
+        "conditional_H1_rate_lower_bound": -287123251.1947876,
+        "instantaneous_margin_over_H1_bound": 1.242711554806549e-06,
+        "norm_a_L2": 111.24888091898181,
+        "norm_a_H1_seminorm": 227.61287124829474,
+        "norm_rhs_L2": 8134.811798052572,
+        "norm_rhs_H1_seminorm": 33603.49337246938,
+        "tracked_z_abs": 136705.49154498876
+      },
+      "target_only": {
+        "margin": 418.8170542285062,
+        "mass_fraction": 0.9395587492958439,
+        "ordered_source_rate_envelope_inside": 640507.1648463313,
+        "ordered_source_rate_envelope_outside": 82720.08073480586,
+        "margin_rate_lower_bound": -1384987.8914595842,
+        "grouped_margin_rate_away_from_zero_kinks": 187391.87260849745,
+        "instantaneous_margin_over_rate_envelope": 0.0003023976287526466,
+        "conditional_H1_rate_lower_bound": -282152523.8966095,
+        "instantaneous_margin_over_H1_bound": 1.4843640185971733e-06,
+        "norm_a_L2": 111.24888091898181,
+        "norm_a_H1_seminorm": 227.61287124829474,
+        "norm_rhs_L2": 8136.898930309012,
+        "norm_rhs_H1_seminorm": 33613.01879438379,
+        "tracked_z_abs": 136705.49154498876
+      },
+      "full_final": {
+        "margin": 358.59594021088776,
+        "mass_fraction": 0.9345382166902922,
+        "ordered_source_rate_envelope_inside": 672451.8297812056,
+        "ordered_source_rate_envelope_outside": 80778.80934216571,
+        "margin_rate_lower_bound": -1399461.113860697,
+        "grouped_margin_rate_away_from_zero_kinks": 121276.53035936842,
+        "instantaneous_margin_over_rate_envelope": 0.0002562385883103448,
+        "conditional_H1_rate_lower_bound": -286367544.21915734,
+        "instantaneous_margin_over_H1_bound": 1.2522227027810595e-06,
+        "norm_a_L2": 111.24888091898185,
+        "norm_a_H1_seminorm": 227.61287124829474,
+        "norm_rhs_L2": 8120.728335126989,
+        "norm_rhs_H1_seminorm": 33549.265375263254,
+        "tracked_z_abs": 136705.49154498876
+      }
+    }
+  }
+}

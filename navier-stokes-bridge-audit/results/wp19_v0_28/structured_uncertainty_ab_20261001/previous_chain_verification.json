@@ -1,0 +1,20 @@
+{
+  "M": 14,
+  "backward_error_after_segment_upper": "76553735316.602437456114865789016004525391018020344149225607466942033542033220384",
+  "backward_order_index": 1,
+  "claim_boundary": "Two consecutive finite M14 half-segment recurrence steps only; no full adjoint or signed-numerator cutoff-transfer certificate.",
+  "incoming_adjoint_error_upper": "74882674993.048618657819149585465296325142145058928574913811532113780128124368218",
+  "pending": [
+    "238 remaining M14 segments",
+    "other cutoff paths",
+    "rigorous dual quadrature",
+    "nonlinear remainder",
+    "normalizer transfer"
+  ],
+  "previous_segment_sha256": "d1b41363c88173594ec6c9e90453513cd3c8ed3e32c7037d2e73304d057a8c08",
+  "previous_verification_sha256": "41694c84922a28b0b99f9e2936589f8c2f8cb6c49fc2a68a281623a4fb39cb7e",
+  "segment_sha256": "c0bbf407df850b95e1a4b0daa3e1175962ce128e7e5f080d39127bd22b431fa6",
+  "status": "PASS LIMITED CHAINED SEGMENT RECURRENCE CHECK",
+  "step": 238,
+  "verified_scope": "provenance, fixed identities, producer-supplied Arb scalar bounds, and outward Decimal recurrence; no independent residual recomputation"
+}

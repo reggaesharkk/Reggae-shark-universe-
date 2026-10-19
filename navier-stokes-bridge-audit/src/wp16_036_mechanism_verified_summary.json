@@ -1,0 +1,26 @@
+{
+  "status": "executed [0,3,6] mechanism result",
+  "source": "wp16_036_resonance_mechanism_results.json",
+  "target": [0,3,6],
+  "three_step_directional_dlogC": {
+    "N9_from_N8": 0.012148409792086317,
+    "N10_from_N9": 0.009203746204144474,
+    "N11_from_N10": 0.04515620979660426
+  },
+  "three_step_endpoint_changes": {
+    "N9_from_N8": {"C_gain_pct": 1.332693528140938, "N_change_pct": 0.5670748747128362, "P_plus_change_pct": -0.7555494942167784},
+    "N10_from_N9": {"C_gain_pct": 0.9575373440470658, "N_change_pct": 0.4851314618300462, "P_plus_change_pct": -0.4679253225117197},
+    "N11_from_N10": {"C_gain_pct": 2.811369186096857, "N_change_pct": 2.331620453265826, "P_plus_change_pct": -0.4666300396823364}
+  },
+  "N11_output_channel": {
+    "total_delta_N": 473520.8439990543,
+    "advector_delta_N": 82251.6316676428,
+    "advected_delta_N": -263856.25998234516,
+    "output_delta_N": 655425.3501409992,
+    "output_delta_fraction_of_total_before": 0.03227319707980594,
+    "output_N_before": -194992.00576114593,
+    "output_N_after": 460433.3443798532
+  },
+  "conclusion": "The [0,3,6] effect is not explained by total triad participation, scaled 1:2 geometry, or denominator depletion alone. The strongest finite structural clue is a large positive target-as-output transfer change.",
+  "next_target": "Decompose [0,3,6] target-as-output triads by partner orbit pair and test persistence across cutoff steps."
+}

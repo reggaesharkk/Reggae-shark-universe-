@@ -1,0 +1,3 @@
+PASS: hashes, source identities, order, radius carry, outward recurrence replay, conservative-chain ordering, A/B reconciliation, and scope labels
+LIMIT: conditional on producer-supplied segment strain/residual bounds; no endpoint transfer theorem
+METHOD: separate arithmetic implementation of the scalar recurrence; not an independent PDE derivation

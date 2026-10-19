@@ -1,0 +1,11 @@
+{
+  "schema": "wp19-v0.19-boundary-annulus-direct-shell-theorem-v1",
+  "date": "2026-09-30",
+  "C11": 636.1792200315879,
+  "support_localization": "For P11 output, a new shell can interact with the old state only through old frequencies M-11 < |k| <= M.",
+  "direct_energy_bound": "||DeltaGamma_M^direct||_{L1L2} <= C11 ||u0||_2^2/(2nu) [1/(M(M-11)) + 1/M^2]",
+  "summable": true,
+  "correction_to_v0_14": "The earlier direct O(1/M) obstruction was a whole-state support loss. Boundary-annulus localization gives O(M^-2).",
+  "remaining_open_term": "Gamma_M(P_M u_{M+1}) - Gamma_M(u_M)",
+  "claim_boundary": "No all-N observable persistence, continuum regularity, or blowup claim."
+}

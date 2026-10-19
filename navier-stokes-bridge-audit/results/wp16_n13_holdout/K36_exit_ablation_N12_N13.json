@@ -1,0 +1,249 @@
+{
+  "status": "post-hoc hybrid-state ablation at first coarse sampled exit",
+  "N": {
+    "12": {
+      "inherited": {
+        "time": 0.0026000000000000003,
+        "initial": {
+          "absolute_mass_fraction": 0.9404849156612692,
+          "signed_share_of_channel_total": 1.0144007021031431,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "evolved": {
+          "absolute_mass_fraction": 0.8983979658832366,
+          "signed_share_of_channel_total": 0.8901532656051284,
+          "passes_preregistered_consistency_criteria": false
+        },
+        "evolved_magnitudes_initial_directions": {
+          "absolute_mass_fraction": 0.9153006699483599,
+          "signed_share_of_channel_total": 1.0108044434629833,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "initial_magnitudes_evolved_directions": {
+          "absolute_mass_fraction": 0.9289820324131616,
+          "signed_share_of_channel_total": 0.9505159835126438,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "evolved_scalar_phases_initial_magnitudes_polarizations": {
+          "absolute_mass_fraction": 0.9468089458094194,
+          "signed_share_of_channel_total": 0.9798373876124401,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "evolved_magnitudes_scalar_phases_initial_polarizations": {
+          "absolute_mass_fraction": 0.9182210245203222,
+          "signed_share_of_channel_total": 0.9380989798756534,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "relative_L2_displacement": 0.18572394863936637,
+        "relative_magnitude_L2_displacement": 0.11272652623814326,
+        "anchor_mode_amplitude_ratios": {
+          "(3, 2, 2)": 0.5976836854363167,
+          "(3, -2, 1)": 1.067854119294809,
+          "(6, 0, 3)": 1.0568797341958458
+        }
+      },
+      "target_only": {
+        "time": 0.0026000000000000003,
+        "initial": {
+          "absolute_mass_fraction": 0.9404870236550121,
+          "signed_share_of_channel_total": 1.0144036440126225,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "evolved": {
+          "absolute_mass_fraction": 0.8984006858390883,
+          "signed_share_of_channel_total": 0.8901268765331443,
+          "passes_preregistered_consistency_criteria": false
+        },
+        "evolved_magnitudes_initial_directions": {
+          "absolute_mass_fraction": 0.9153251081695798,
+          "signed_share_of_channel_total": 1.0108539272825372,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "initial_magnitudes_evolved_directions": {
+          "absolute_mass_fraction": 0.928979707066617,
+          "signed_share_of_channel_total": 0.950512638524887,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "evolved_scalar_phases_initial_magnitudes_polarizations": {
+          "absolute_mass_fraction": 0.9468051689940186,
+          "signed_share_of_channel_total": 0.9798385975194323,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "evolved_magnitudes_scalar_phases_initial_polarizations": {
+          "absolute_mass_fraction": 0.9182250376600424,
+          "signed_share_of_channel_total": 0.9380847251771692,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "relative_L2_displacement": 0.18572348970741023,
+        "relative_magnitude_L2_displacement": 0.11272548625444735,
+        "anchor_mode_amplitude_ratios": {
+          "(3, 2, 2)": 0.5976841549458095,
+          "(3, -2, 1)": 1.067859638994832,
+          "(6, 0, 3)": 1.0568614607026126
+        }
+      },
+      "full_final": {
+        "time": 0.0021000000000000003,
+        "initial": {
+          "absolute_mass_fraction": 0.9351975444210403,
+          "signed_share_of_channel_total": 1.0318707019373266,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "evolved": {
+          "absolute_mass_fraction": 0.8964588630479094,
+          "signed_share_of_channel_total": 0.9153564232848194,
+          "passes_preregistered_consistency_criteria": false
+        },
+        "evolved_magnitudes_initial_directions": {
+          "absolute_mass_fraction": 0.9168380285377441,
+          "signed_share_of_channel_total": 1.0367513972436224,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "initial_magnitudes_evolved_directions": {
+          "absolute_mass_fraction": 0.9233883443361071,
+          "signed_share_of_channel_total": 0.9610791816154735,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "evolved_scalar_phases_initial_magnitudes_polarizations": {
+          "absolute_mass_fraction": 0.9440256032724053,
+          "signed_share_of_channel_total": 0.9846283545737916,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "evolved_magnitudes_scalar_phases_initial_polarizations": {
+          "absolute_mass_fraction": 0.9197973224093694,
+          "signed_share_of_channel_total": 0.9561130099126921,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "relative_L2_displacement": 0.15136006047686537,
+        "relative_magnitude_L2_displacement": 0.09563932085664104,
+        "anchor_mode_amplitude_ratios": {
+          "(3, 2, 2)": 0.6816988875951225,
+          "(3, -2, 1)": 1.0104834026122629,
+          "(6, 0, 3)": 0.839215260782543
+        }
+      }
+    },
+    "13": {
+      "inherited": {
+        "time": 0.002,
+        "initial": {
+          "absolute_mass_fraction": 0.9357313342785715,
+          "signed_share_of_channel_total": 1.029876438262264,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "evolved": {
+          "absolute_mass_fraction": 0.8968769012205098,
+          "signed_share_of_channel_total": 0.9275335368454428,
+          "passes_preregistered_consistency_criteria": false
+        },
+        "evolved_magnitudes_initial_directions": {
+          "absolute_mass_fraction": 0.9169161824981377,
+          "signed_share_of_channel_total": 1.0382549817171955,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "initial_magnitudes_evolved_directions": {
+          "absolute_mass_fraction": 0.9228964927079683,
+          "signed_share_of_channel_total": 0.9699983594205385,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "evolved_scalar_phases_initial_magnitudes_polarizations": {
+          "absolute_mass_fraction": 0.9410123080616821,
+          "signed_share_of_channel_total": 0.9928043539544332,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "evolved_magnitudes_scalar_phases_initial_polarizations": {
+          "absolute_mass_fraction": 0.9169519520553876,
+          "signed_share_of_channel_total": 0.9631087578059854,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "relative_L2_displacement": 0.144399654769225,
+        "relative_magnitude_L2_displacement": 0.09187367577833615,
+        "anchor_mode_amplitude_ratios": {
+          "(3, 2, 2)": 0.6980976630328847,
+          "(3, -2, 1)": 1.0098166290691746,
+          "(6, 0, 3)": 0.8398236257804689
+        }
+      },
+      "target_only": {
+        "time": 0.002,
+        "initial": {
+          "absolute_mass_fraction": 0.9395587492958439,
+          "signed_share_of_channel_total": 1.0246809360677684,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "evolved": {
+          "absolute_mass_fraction": 0.896989547753128,
+          "signed_share_of_channel_total": 0.9223735767111695,
+          "passes_preregistered_consistency_criteria": false
+        },
+        "evolved_magnitudes_initial_directions": {
+          "absolute_mass_fraction": 0.9201210639435673,
+          "signed_share_of_channel_total": 1.0319762356720021,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "initial_magnitudes_evolved_directions": {
+          "absolute_mass_fraction": 0.9230982981895416,
+          "signed_share_of_channel_total": 0.9686222689074346,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "evolved_scalar_phases_initial_magnitudes_polarizations": {
+          "absolute_mass_fraction": 0.9417336664183943,
+          "signed_share_of_channel_total": 0.9920846445607223,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "evolved_magnitudes_scalar_phases_initial_polarizations": {
+          "absolute_mass_fraction": 0.9179483553307187,
+          "signed_share_of_channel_total": 0.9603894845061132,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "relative_L2_displacement": 0.14443511575560805,
+        "relative_magnitude_L2_displacement": 0.09187487661930599,
+        "anchor_mode_amplitude_ratios": {
+          "(3, 2, 2)": 0.6978615322986205,
+          "(3, -2, 1)": 1.0093074802808961,
+          "(6, 0, 3)": 0.896064517725281
+        }
+      },
+      "full_final": {
+        "time": 0.0023,
+        "initial": {
+          "absolute_mass_fraction": 0.9345382166902922,
+          "signed_share_of_channel_total": 1.0259280159186226,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "evolved": {
+          "absolute_mass_fraction": 0.899647933329296,
+          "signed_share_of_channel_total": 0.9196780826158498,
+          "passes_preregistered_consistency_criteria": false
+        },
+        "evolved_magnitudes_initial_directions": {
+          "absolute_mass_fraction": 0.9082635664821188,
+          "signed_share_of_channel_total": 1.0327208512886337,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "initial_magnitudes_evolved_directions": {
+          "absolute_mass_fraction": 0.9257144990966316,
+          "signed_share_of_channel_total": 0.9670436091414089,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "evolved_scalar_phases_initial_magnitudes_polarizations": {
+          "absolute_mass_fraction": 0.947090683746071,
+          "signed_share_of_channel_total": 0.9926635731218323,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "evolved_magnitudes_scalar_phases_initial_polarizations": {
+          "absolute_mass_fraction": 0.9225015379340742,
+          "signed_share_of_channel_total": 0.9661259790425031,
+          "passes_preregistered_consistency_criteria": true
+        },
+        "relative_L2_displacement": 0.16520782301124767,
+        "relative_magnitude_L2_displacement": 0.10302313594407143,
+        "anchor_mode_amplitude_ratios": {
+          "(3, 2, 2)": 0.6569282085193391,
+          "(3, -2, 1)": 0.9792670471755978,
+          "(6, 0, 3)": 0.9209450842393127
+        }
+      }
+    }
+  }
+}

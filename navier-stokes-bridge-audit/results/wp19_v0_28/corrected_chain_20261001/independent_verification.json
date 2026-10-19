@@ -1,0 +1,18 @@
+{
+  "corrected_outgoing_error_upper_by_step": {
+    "237": "78324232548.8246196307457504997741547715008957776049367908160897460488479268828768235373913",
+    "238": "76596803403.2008814415291810393914219040829827539878570803371585034700432692390455397776715",
+    "239": "74903737341.7680869479676423339802577822668827392635637865967006999148652940172487122086410"
+  },
+  "input_chain_sha256": "e8403177d80ac24d6658bc63e9ac6302af70b2bee8cdcdc61f5df11ff71f8e60",
+  "reverse_diffusion_log_norm_upper": "22.5",
+  "schema": "wp19-v0.28-corrected-chain-independent-verification-v1",
+  "scope": "Scalar outward recurrence recheck only, conditional on the pinned producer-supplied whole-segment bounds; not a full adjoint or observable certificate.",
+  "segments_verified_once_in_backward_order": [
+    239,
+    238,
+    237
+  ],
+  "status": "PASS_LIMITED_CORRECTED_SCALAR_RECURRENCE_CHAIN",
+  "verifier_source_sha256": "4c98fd37ddc8aa4733d0f30c40dcaffd9947c484f88cf69d3fcd3f78005c2ef0"
+}

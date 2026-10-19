@@ -1,0 +1,50 @@
+{
+  "universal_constant_upper": 6.453143735558639,
+  "viscosity": 0.1,
+  "base_gradient_square": 39.58981376265963,
+  "sufficient_amplitude_strictly_below": 0.002462844159697669,
+  "finite_N2_constant_for_diagnostic_only": 3.203730464456848,
+  "rows": [
+    {
+      "amplitude": 0.001,
+      "criterion_satisfied": true,
+      "upper_bound_on_abs_nonlinearity": 4.23067720163215e-06,
+      "actual_nonlinearity": 4.882583908687745e-09,
+      "viscous_damping": 1.0419498637605818e-05,
+      "instantaneous_H1_derivative": -1.0414616053697131e-05
+    },
+    {
+      "amplitude": 0.002,
+      "criterion_satisfied": true,
+      "upper_bound_on_abs_nonlinearity": 3.38454176130572e-05,
+      "actual_nonlinearity": 3.906067126950196e-08,
+      "viscous_damping": 4.167799455042327e-05,
+      "instantaneous_H1_derivative": -4.1638933879153774e-05
+    },
+    {
+      "amplitude": 0.01,
+      "criterion_satisfied": false,
+      "upper_bound_on_abs_nonlinearity": 0.004230677201632149,
+      "actual_nonlinearity": 4.8825839086877435e-06,
+      "viscous_damping": 0.0010419498637605814,
+      "instantaneous_H1_derivative": -0.0010370672798518936
+    },
+    {
+      "amplitude": 1,
+      "criterion_satisfied": false,
+      "upper_bound_on_abs_nonlinearity": 4230.677201632148,
+      "actual_nonlinearity": 4.882583908687745,
+      "viscous_damping": 10.419498637605816,
+      "instantaneous_H1_derivative": -5.536914728918071
+    },
+    {
+      "amplitude": 5,
+      "criterion_satisfied": false,
+      "upper_bound_on_abs_nonlinearity": 528834.6502040185,
+      "actual_nonlinearity": 610.3229885859677,
+      "viscous_damping": 260.48746594014534,
+      "instantaneous_H1_derivative": 349.8355226458223
+    }
+  ],
+  "scope": "Small-data sufficient condition; failure of criterion implies nothing about blowup."
+}

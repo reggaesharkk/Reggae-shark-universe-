@@ -1,0 +1,67 @@
+{
+  "status": "completed prospective frozen N14 K36 time-gate summary",
+  "date": "2026-09-26",
+  "hashes": {
+    "n13": "13e5e56676b9398e7c7ec32f55e32a4d07dec5a3830c67787c6cd6fb5c8e59cd",
+    "n14": "747dfb0bd0ea12271bd53b39fae7a4e18f396656bed3084bd4c632a9f3e5a3d9",
+    "n14_checkpoint": "1cc7d70b8d974dfa9b8907af56c6ab1571c981d72b84cac8db26fe1bad4eaa6f",
+    "frozen_source": "193cbb7f485ab54ceed0d5cb38f97f0fc98c197e5f88e288fdbd277627608c8e",
+    "n14_time_gate": "9593d606c4a146fc2bcacf2ded3f961e2df80582ca987b864ae994c17c84de87"
+  },
+  "protocol": {
+    "dt": 0.0001,
+    "steps": 30,
+    "nu": 0.1,
+    "minimum_absolute_mass_fraction": 0.9,
+    "signed_share_interval": [
+      0.8,
+      1.2
+    ]
+  },
+  "states": {
+    "inherited": {
+      "static_gate_pass": true,
+      "all_samples_through_t001_pass_mass": true,
+      "first_mass_exit_time": 0.0023,
+      "mass_fraction_at_exit": 0.8990100657488133,
+      "signed_share_at_exit": 0.9175928896243938,
+      "signed_gate_at_first_mass_exit": true,
+      "initial_margin_rate": 122266.14303472161,
+      "exit_margin_rate": -362236.0725898943,
+      "exit_radial_rate": -246299.08411952783,
+      "exit_vector_polarization_rate": -281253.7558270378,
+      "half_step_mass_fraction_t00225": 0.9004224286735126,
+      "half_step_mass_fraction_t00230": 0.8990100644182566
+    },
+    "target_only": {
+      "static_gate_pass": true,
+      "all_samples_through_t001_pass_mass": true,
+      "first_mass_exit_time": 0.0023,
+      "mass_fraction_at_exit": 0.8990121011658782,
+      "signed_share_at_exit": 0.917582396614785,
+      "signed_gate_at_first_mass_exit": true,
+      "initial_margin_rate": 122262.225124814,
+      "exit_margin_rate": -356404.6157976008,
+      "exit_radial_rate": -246356.34628111802,
+      "exit_vector_polarization_rate": -277971.6562713474,
+      "half_step_mass_fraction_t00225": 0.9004245186975955,
+      "half_step_mass_fraction_t00230": 0.8990120999611644
+    },
+    "full_final": {
+      "static_gate_pass": true,
+      "all_samples_through_t001_pass_mass": true,
+      "first_mass_exit_time": 0.0023,
+      "mass_fraction_at_exit": 0.8990775620544299,
+      "signed_share_at_exit": 0.9176292439527933,
+      "signed_gate_at_first_mass_exit": true,
+      "initial_margin_rate": 102278.8475552261,
+      "exit_margin_rate": -386591.413325732,
+      "exit_radial_rate": -260566.16566165758,
+      "exit_vector_polarization_rate": -296958.89709273615,
+      "half_step_mass_fraction_t00225": 0.9005717855754409,
+      "half_step_mass_fraction_t00230": 0.8990775624862959
+    }
+  },
+  "joint_outcome": "all three predeclared N14 tests passed in all three states",
+  "interpretation_rule": "finite prospective N14 Galerkin replication; not an all-N or continuum theorem and not a Navier-Stokes regularity proof"
+}

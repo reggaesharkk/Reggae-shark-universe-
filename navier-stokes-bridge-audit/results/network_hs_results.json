@@ -1,0 +1,126 @@
+{
+  "inequality": "|Pi_K| <= sqrt(2 E_low) * C2 * ||u||_H2 * ||grad u||_2",
+  "cutoff_independent_C2_upper": 6.530165700177883,
+  "finite_embedding_constants": {
+    "1": {
+      "2": 3.3466401061363023,
+      "4": 5.746854309086308,
+      "8": 9.0469825935436,
+      "16": 13.48468201548716
+    },
+    "1.5": {
+      "2": 2.639579082906609,
+      "4": 3.7503661692867736,
+      "8": 4.736246578030314,
+      "16": 5.5750795915666655
+    },
+    "2": {
+      "2": 2.138535324312725,
+      "4": 2.6356856180748487,
+      "8": 2.9043939488482446,
+      "16": 3.035449118563774
+    }
+  },
+  "rows": [
+    {
+      "cube_radius": 1,
+      "occupied_modes": 26,
+      "seed": 20260923,
+      "K": 1.0,
+      "absolute_low_flux": 0.08670844599570528,
+      "H2": 3.5875438764205647,
+      "bound": 45.403909028855715,
+      "actual_over_bound": 0.0019097132350564604,
+      "total_nonlinear_flux_error": 8.673617379884035e-18
+    },
+    {
+      "cube_radius": 1,
+      "occupied_modes": 26,
+      "seed": 20260924,
+      "K": 1.0,
+      "absolute_low_flux": 0.00947142081261961,
+      "H2": 4.495618911272643,
+      "bound": 42.696179545330935,
+      "actual_over_bound": 0.00022183298162693253,
+      "total_nonlinear_flux_error": 5.637851296924623e-18
+    },
+    {
+      "cube_radius": 1,
+      "occupied_modes": 26,
+      "seed": 20260925,
+      "K": 1.0,
+      "absolute_low_flux": 0.007795153949066516,
+      "H2": 3.9850715132623287,
+      "bound": 40.82821888142951,
+      "actual_over_bound": 0.00019092564316128177,
+      "total_nonlinear_flux_error": 2.3418766925686896e-17
+    },
+    {
+      "cube_radius": 2,
+      "occupied_modes": 124,
+      "seed": 20260923,
+      "K": 2.0,
+      "absolute_low_flux": 0.022134710329968506,
+      "H2": 6.996222389777876,
+      "bound": 135.3260148440165,
+      "actual_over_bound": 0.00016356581811325838,
+      "total_nonlinear_flux_error": 5.692061405548898e-18
+    },
+    {
+      "cube_radius": 2,
+      "occupied_modes": 124,
+      "seed": 20260924,
+      "K": 2.0,
+      "absolute_low_flux": 0.05289897912847426,
+      "H2": 7.3948998519116484,
+      "bound": 144.16965329091377,
+      "actual_over_bound": 0.00036692173367256197,
+      "total_nonlinear_flux_error": 2.9144709649125966e-17
+    },
+    {
+      "cube_radius": 2,
+      "occupied_modes": 124,
+      "seed": 20260925,
+      "K": 2.0,
+      "absolute_low_flux": 0.018394826622287523,
+      "H2": 7.98892371979758,
+      "bound": 156.7095526880814,
+      "actual_over_bound": 0.00011738165483058359,
+      "total_nonlinear_flux_error": 2.439454888092385e-17
+    },
+    {
+      "cube_radius": 3,
+      "occupied_modes": 342,
+      "seed": 20260923,
+      "K": 3.0,
+      "absolute_low_flux": 0.016590293197520846,
+      "H2": 11.536817609374848,
+      "bound": 315.46757338345145,
+      "actual_over_bound": 5.258953565206942e-05,
+      "total_nonlinear_flux_error": 3.5548278730368477e-17
+    },
+    {
+      "cube_radius": 3,
+      "occupied_modes": 342,
+      "seed": 20260924,
+      "K": 3.0,
+      "absolute_low_flux": 0.02681015013744746,
+      "H2": 10.205339026882196,
+      "bound": 260.0757721395949,
+      "actual_over_bound": 0.00010308591960291169,
+      "total_nonlinear_flux_error": 5.3915341158630725e-17
+    },
+    {
+      "cube_radius": 3,
+      "occupied_modes": 342,
+      "seed": 20260925,
+      "K": 3.0,
+      "absolute_low_flux": 0.035621443336125616,
+      "H2": 12.138086344373274,
+      "bound": 346.60279314228507,
+      "actual_over_bound": 0.00010277309946980877,
+      "total_nonlinear_flux_error": 3.6591823321385775e-17
+    }
+  ],
+  "scope": "Numerical checks of a proven embedding bound, not evidence of global regularity."
+}

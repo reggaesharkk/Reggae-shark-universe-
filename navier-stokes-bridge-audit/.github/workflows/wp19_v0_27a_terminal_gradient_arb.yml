@@ -1,0 +1,242 @@
+name: WP19 v0.27a terminal gradient Arb
+
+on:
+  push:
+    branches: [wp19-v0.27a-terminal-gradient-arb]
+    paths:
+      - '.github/workflows/wp19_v0_27a_terminal_gradient_arb.yml'
+      - 'src/wp19_v0_27a_terminal_gradient_arb.py'
+      - 'notes/WP19_v0_27_TERMINAL_GRADIENT_ARB.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  prepare-c500:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install NumPy
+        run: python -m pip install numpy==2.3.5
+
+      - name: Reproduce historical N11 predictor exactly
+        run: |
+          set -euxo pipefail
+          mkdir -p work/c500
+          python - <<'PY'
+          import hashlib,sys
+          from pathlib import Path
+          import numpy as np
+          root=Path('.').resolve()
+          sys.path.insert(0,str(root/'src'))
+          import wp16_036_sparse_turnover_exact_anchor as exact
+          import wp16_036_sparse_turnover_witness as witness_mod
+          from wp16_036_dealiased_trajectory_gate import DealiasedSystem
+
+          witness=root/'results/wp16_n17_holdout/wp16_036_sparse_turnover_112_pairs.json'
+          modes,_,sha=exact.input_state(witness)
+          expected='4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624'
+          assert sha==expected,sha
+          s=DealiasedSystem(witness_mod.N)
+          a=np.asarray([
+              [complex(float(v[0]),float(v[1]))
+               for v in modes.get(k,(exact.ZERO,)*3)]
+              for k in s.modes
+          ],dtype=np.complex128)
+          nodes=np.lib.format.open_memmap(
+              'work/c500/n11_nodes.npy',mode='w+',dtype=np.complex128,
+              shape=(121,len(s.modes),3)
+          )
+          for step in range(121):
+              nodes[step]=a
+              if step<120:
+                  a=s.rk4(a,0.000025)
+          nodes.flush()
+          got=hashlib.sha256(Path('work/c500/n11_nodes.npy').read_bytes()).hexdigest()
+          exp='b70bf7f7fe85a8c073c02c80e54e1f10d0642f5d030dfe569470c5970ebdda29'
+          assert got==exp,(got,exp)
+          print('N11 predictor SHA PASS',got)
+          PY
+
+      - name: Rebuild portable frozen C500
+        run: |
+          python src/wp19_v0_25_rebuild_c500_portable.py \
+            --repo . \
+            --n11-nodes work/c500/n11_nodes.npy \
+            --k36 results/wp16_n12_holdout/frozen_K36_ordered_source_orbits.json \
+            --output work/c500/frozen_C500.json \
+            --report work/c500/C500_RECONSTRUCTION_REPORT.json
+          cat work/c500/C500_RECONSTRUCTION_REPORT.json
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-27a-frozen-c500
+          path: |
+            work/c500/frozen_C500.json
+            work/c500/C500_RECONSTRUCTION_REPORT.json
+          if-no-files-found: error
+          retention-days: 30
+
+  gradient:
+    needs: prepare-c500
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        M: [14,15,16,17]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install validated arithmetic dependencies
+        run: |
+          python -m pip install numpy==2.3.5 python-flint
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: wp19-v0-27a-frozen-c500
+          path: work/c500
+
+      - name: Download certified predictor endpoints
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euxo pipefail
+          M=${{ matrix.M }}
+          H=$((M+1))
+          mkdir -p work/lower work/higher
+          case "$M" in
+            14) gh run download 36608785015 --repo '${{ github.repository }}' --name wp19-n14-arb-certificate --dir work/lower ;;
+            15|16|17) gh run download 36669057015 --repo '${{ github.repository }}' --name wp19-same-datum-N$M-arb --dir work/lower ;;
+          esac
+          case "$H" in
+            15|16|17) gh run download 36669057015 --repo '${{ github.repository }}' --name wp19-same-datum-N$H-arb --dir work/higher ;;
+            18) gh run download 36706229638 --repo '${{ github.repository }}' --name wp19-same-datum-N18-arb-recovered --dir work/higher ;;
+          esac
+          for d in work/lower work/higher; do
+            test -f $d/nodes.npy
+            test -f $d/metadata.json
+          done
+
+      - name: Run Arb terminal-gradient subcertificate
+        run: |
+          set -euxo pipefail
+          M=${{ matrix.M }}
+          H=$((M+1))
+          mkdir -p results/wp19_v0_27a
+          python src/wp19_v0_27a_terminal_gradient_arb.py \
+            --repo . \
+            --M $M \
+            --lower-dir work/lower \
+            --higher-dir work/higher \
+            --k36 results/wp16_n12_holdout/frozen_K36_ordered_source_orbits.json \
+            --sign-chart results/wp19_bridge/frozen_K36_numerator_sign_chart_N13.json \
+            --c500 work/c500/frozen_C500.json \
+            --v026-result results/wp19_bridge/wp19_v0_26/M$M'_to_M'$H.json \
+            --output results/wp19_v0_27a/M$M'_terminal_gradient_arb.json'
+
+      - name: Fail closed on certificate status
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          M=int('${{ matrix.M }}')
+          p=Path(f'results/wp19_v0_27a/M{M}_terminal_gradient_arb.json')
+          x=json.loads(p.read_text())
+          assert x['status']=='PASS TERMINAL-GRADIENT ARB SUBCERTIFICATE',x
+          assert int(x['support']['selected_ordered_pair_count'])==1048,x
+          assert int(x['support']['selected_mode_count'])==1159,x
+          rel=float(x['terminal_gradient']['arb_vs_pytorch_relative_difference_upper_decimal'])
+          drel=float(x['directional_crosscheck']['arb_vs_v0_26_relative_discrepancy_upper_decimal'])
+          jrel=float(x['signed_numerator']['arb_vs_v0_26_relative_discrepancy_upper_decimal'])
+          assert rel < 1e-8,(M,rel)
+          assert drel < 1e-8,(M,drel)
+          assert jrel < 1e-10,(M,jrel)
+          print(json.dumps({'M':M,'gradient_rel':rel,'directional_rel':drel,'objective_rel':jrel},indent=2))
+          PY
+
+      - name: Record hash
+        run: sha256sum results/wp19_v0_27a/*.json > results/wp19_v0_27a/SHA256SUMS.txt
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-27a-M${{ matrix.M }}
+          path: results/wp19_v0_27a
+          if-no-files-found: error
+          retention-days: 30
+
+  aggregate:
+    needs: gradient
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: wp19-v0-27a-M*
+          path: gathered
+
+      - name: Aggregate terminal-gradient Arb gate
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          rows=[]
+          for M in (14,15,16,17):
+              p=Path(f'gathered/wp19-v0-27a-M{M}/M{M}_terminal_gradient_arb.json')
+              x=json.loads(p.read_text())
+              rows.append({
+                  'M':M,
+                  'transition':x['transition'],
+                  'status':x['status'],
+                  'gradient_L2_lower':x['terminal_gradient']['L2_lower_decimal'],
+                  'gradient_L2_upper':x['terminal_gradient']['L2_upper_decimal'],
+                  'arb_vs_pytorch_L2_difference_upper':x['terminal_gradient']['arb_vs_pytorch_L2_difference_upper_decimal'],
+                  'arb_vs_pytorch_relative_difference_upper':x['terminal_gradient']['arb_vs_pytorch_relative_difference_upper_decimal'],
+                  'directional_relative_discrepancy_upper':x['directional_crosscheck']['arb_vs_v0_26_relative_discrepancy_upper_decimal'],
+                  'objective_relative_discrepancy_upper':x['signed_numerator']['arb_vs_v0_26_relative_discrepancy_upper_decimal'],
+              })
+          passed=all(r['status']=='PASS TERMINAL-GRADIENT ARB SUBCERTIFICATE' for r in rows)
+          max_grad=max(float(r['arb_vs_pytorch_relative_difference_upper']) for r in rows)
+          max_dir=max(float(r['directional_relative_discrepancy_upper']) for r in rows)
+          max_obj=max(float(r['objective_relative_discrepancy_upper']) for r in rows)
+          passed=passed and max_grad<1e-8 and max_dir<1e-8 and max_obj<1e-10
+          summary={
+              'schema':'wp19-v0.27a-terminal-gradient-arb-summary-v1',
+              'status':'PASS TERMINAL-GRADIENT ARB SUBCERTIFICATE' if passed else 'FAIL',
+              'rows':rows,
+              'maximum_arb_vs_pytorch_relative_difference_upper':max_grad,
+              'maximum_directional_relative_discrepancy_upper':max_dir,
+              'maximum_objective_relative_discrepancy_upper':max_obj,
+              'next_target':'v0.27b: validated backward adjoint propagation with whole-segment Arb residual enclosures; endpoint state/Hessian uncertainty remains separate.',
+              'claim_boundary':'Terminal-gradient arithmetic at fixed nominal projected endpoints only; no all-N or continuum theorem.'
+          }
+          Path('final').mkdir()
+          Path('final/WP19_v0_27a_SUMMARY.json').write_text(json.dumps(summary,indent=2,sort_keys=True)+'\n')
+          for p in Path('gathered').glob('wp19-v0-27a-M*/M*_terminal_gradient_arb.json'):
+              (Path('final')/p.name).write_bytes(p.read_bytes())
+          print(json.dumps(summary,indent=2))
+          if not passed:
+              raise SystemExit(1)
+          PY
+
+      - name: Record final hashes
+        run: find final -type f -print0 | sort -z | xargs -0 sha256sum > final/SHA256SUMS.txt
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-27a-terminal-gradient-arb
+          path: final
+          if-no-files-found: error
+          retention-days: 30

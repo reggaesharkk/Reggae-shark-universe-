@@ -1,0 +1,183 @@
+{
+  "N": 4,
+  "nu": 0.1,
+  "mode_count": 257,
+  "window": "exp(kappa*(cos(x)+cos(y)+cos(z)-3))",
+  "residual_convention": "R_N=(I-Q_N)P[(u.grad)u], P=Leray, Q_N=Fourier ball cutoff",
+  "identity": "d<phi u.omega>/dt = <[h u+(p-|u|^2/2)omega].grad phi> + nu<h lap phi-2 phi grad u:grad omega> + <phi(omega.R_N+u.curl R_N)>",
+  "results": [
+    {
+      "shape": "line",
+      "time": 0.1,
+      "rows": [
+        {
+          "kappa": 0,
+          "window_mean": 1.0,
+          "localized_helicity": -0.4687664447734994,
+          "lhs_helicity_derivative": 0.36340123944354447,
+          "transport_and_pressure": 0.0,
+          "diffusion_window_term": 0.0,
+          "viscous_gradient_pair": 0.3634012394435443,
+          "projection_residual": -8.673617379884035e-19,
+          "rhs": 0.3634012394435443,
+          "closure_error": 1.6653345369377348e-16,
+          "error_if_residual_omitted": 1.6653345369377348e-16,
+          "grid64_vs_grid96_lhs_diff": 3.885780586188048e-16,
+          "grid64_vs_grid96_residual_diff": 2.9233303021090637e-18
+        },
+        {
+          "kappa": 1,
+          "window_mean": 0.10103816881425744,
+          "localized_helicity": -0.10532057237299781,
+          "lhs_helicity_derivative": 0.06437646827457835,
+          "transport_and_pressure": 0.009442991749654314,
+          "diffusion_window_term": 0.00955154764541745,
+          "viscous_gradient_pair": 0.04494679941529836,
+          "projection_residual": 0.00043512946420822245,
+          "rhs": 0.06437646827457834,
+          "closure_error": 1.3877787807814457e-17,
+          "error_if_residual_omitted": 0.00043512946420823373,
+          "grid64_vs_grid96_lhs_diff": 8.326672684688674e-17,
+          "grid64_vs_grid96_residual_diff": 4.336808689942018e-19
+        },
+        {
+          "kappa": 4,
+          "window_mean": 0.008869989969871995,
+          "localized_helicity": -0.020392648825101452,
+          "lhs_helicity_derivative": 0.0254432361771002,
+          "transport_and_pressure": 0.017360268931752906,
+          "diffusion_window_term": 0.003499320310344757,
+          "viscous_gradient_pair": 0.004080411469830029,
+          "projection_residual": 0.0005032354651725041,
+          "rhs": 0.025443236177100197,
+          "closure_error": 3.469446951953614e-18,
+          "error_if_residual_omitted": 0.0005032354651725059,
+          "grid64_vs_grid96_lhs_diff": 2.7755575615628914e-17,
+          "grid64_vs_grid96_residual_diff": 1.3010426069826053e-18
+        },
+        {
+          "kappa": 9,
+          "window_mean": 0.0024581626699344853,
+          "localized_helicity": -0.0065748993954138175,
+          "lhs_helicity_derivative": 0.01085516396051281,
+          "transport_and_pressure": 0.00848183226374772,
+          "diffusion_window_term": 0.0011331466637128401,
+          "viscous_gradient_pair": 0.00116079586345716,
+          "projection_residual": 7.93891695950776e-05,
+          "rhs": 0.010855163960512797,
+          "closure_error": 1.214306433183765e-17,
+          "error_if_residual_omitted": 7.93891695950906e-05,
+          "grid64_vs_grid96_lhs_diff": 1.214306433183765e-17,
+          "grid64_vs_grid96_residual_diff": 8.131516293641283e-20
+        },
+        {
+          "kappa": 16,
+          "window_mean": 0.001016412804315421,
+          "localized_helicity": -0.0028449203788799516,
+          "lhs_helicity_derivative": 0.005203685492456825,
+          "transport_and_pressure": 0.004246685826515887,
+          "diffusion_window_term": 0.00047304844340719687,
+          "viscous_gradient_pair": 0.0004936943469789137,
+          "projection_residual": -9.743124445182405e-06,
+          "rhs": 0.005203685492456815,
+          "closure_error": 9.540979117872439e-18,
+          "error_if_residual_omitted": 9.743124445172474e-06,
+          "grid64_vs_grid96_lhs_diff": 7.806255641895632e-18,
+          "grid64_vs_grid96_residual_diff": 2.795208725939191e-19
+        }
+      ],
+      "global_fourier_check": {
+        "lhs_fourier": 0.36340123944354447,
+        "viscous_fourier": 0.3634012394435443,
+        "global_fourier_error": 1.6653345369377348e-16
+      }
+    },
+    {
+      "shape": "cube",
+      "time": 0.1,
+      "rows": [
+        {
+          "kappa": 0,
+          "window_mean": 1.0,
+          "localized_helicity": -0.2170538699537456,
+          "lhs_helicity_derivative": 0.10844885560403478,
+          "transport_and_pressure": 0.0,
+          "diffusion_window_term": 0.0,
+          "viscous_gradient_pair": 0.10844885560403467,
+          "projection_residual": 5.204170427930421e-18,
+          "rhs": 0.10844885560403467,
+          "closure_error": 1.1102230246251565e-16,
+          "error_if_residual_omitted": 1.1102230246251565e-16,
+          "grid64_vs_grid96_lhs_diff": 4.163336342344337e-17,
+          "grid64_vs_grid96_residual_diff": 1.445602896647339e-17
+        },
+        {
+          "kappa": 1,
+          "window_mean": 0.10103816881425744,
+          "localized_helicity": 0.012342111333341458,
+          "lhs_helicity_derivative": -0.037318419003197316,
+          "transport_and_pressure": -0.03377603709011609,
+          "diffusion_window_term": -0.001544917362248743,
+          "viscous_gradient_pair": -0.001549314973565269,
+          "projection_residual": -0.0004481495772672322,
+          "rhs": -0.03731841900319733,
+          "closure_error": 1.3877787807814457e-17,
+          "error_if_residual_omitted": 0.00044814957726721505,
+          "grid64_vs_grid96_lhs_diff": 2.7755575615628914e-17,
+          "grid64_vs_grid96_residual_diff": 4.336808689942018e-19
+        },
+        {
+          "kappa": 4,
+          "window_mean": 0.008869989969871995,
+          "localized_helicity": 0.0008568782465786807,
+          "lhs_helicity_derivative": 0.0011494258115388378,
+          "transport_and_pressure": -0.0033312341399216383,
+          "diffusion_window_term": 0.0018548826985793296,
+          "viscous_gradient_pair": -0.00021273302350200706,
+          "projection_residual": 0.002838510276383157,
+          "rhs": 0.0011494258115388413,
+          "closure_error": 3.469446951953614e-18,
+          "error_if_residual_omitted": 0.0028385102763831536,
+          "grid64_vs_grid96_lhs_diff": 4.553649124439119e-18,
+          "grid64_vs_grid96_residual_diff": 6.938893903907228e-18
+        },
+        {
+          "kappa": 9,
+          "window_mean": 0.0024581626699344853,
+          "localized_helicity": -0.00034209976590886216,
+          "lhs_helicity_derivative": 0.0032412439015676513,
+          "transport_and_pressure": 0.001116439971131146,
+          "diffusion_window_term": 0.0009203610481102559,
+          "viscous_gradient_pair": 0.0002772165122128789,
+          "projection_residual": 0.0009272263701133714,
+          "rhs": 0.003241243901567652,
+          "closure_error": 8.673617379884035e-19,
+          "error_if_residual_omitted": 0.0009272263701133707,
+          "grid64_vs_grid96_lhs_diff": 4.7704895589362195e-18,
+          "grid64_vs_grid96_residual_diff": 2.4936649967166602e-18
+        },
+        {
+          "kappa": 16,
+          "window_mean": 0.001016412804315421,
+          "localized_helicity": -0.00024929150852932055,
+          "lhs_helicity_derivative": 0.002063710369523793,
+          "transport_and_pressure": 0.0011991859414715663,
+          "diffusion_window_term": 0.000428018355917978,
+          "viscous_gradient_pair": 0.0002065338309848257,
+          "projection_residual": 0.00022997224114942264,
+          "rhs": 0.0020637103695237925,
+          "closure_error": 4.336808689942018e-19,
+          "error_if_residual_omitted": 0.00022997224114942308,
+          "grid64_vs_grid96_lhs_diff": 3.469446951953614e-18,
+          "grid64_vs_grid96_residual_diff": 6.505213034913027e-19
+        }
+      ],
+      "global_fourier_check": {
+        "lhs_fourier": 0.10844885560403475,
+        "viscous_fourier": 0.10844885560403464,
+        "global_fourier_error": 1.1102230246251565e-16
+      }
+    }
+  ],
+  "scope": "Finite N=4 Galerkin identity for two fields at t=.1; no infinite-resolution or regularity result."
+}

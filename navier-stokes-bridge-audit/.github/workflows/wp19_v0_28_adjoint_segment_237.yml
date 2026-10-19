@@ -1,0 +1,71 @@
+name: WP19 v0.28 M14 chained adjoint segment 237
+on:
+  push:
+    branches: [wp19-v0.28-adjoint-hermite-residual]
+    paths:
+      - '.github/workflows/wp19_v0_28_adjoint_segment_237.yml'
+      - 'src/wp19_v0_28_verify_segment_237_chain.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  segment-237:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install numpy==2.3.5 python-flint==0.8.0
+      - name: Independent coefficient and formatter checks
+        run: python src/wp19_v0_28_adjoint_segment_arb.py --self-check
+      - name: Retrieve immutable inputs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p work/lower work/adjoint work/c500 output
+          gh api repos/${{ github.repository }}/actions/artifacts/11059294923/zip > work/lower.zip
+          gh api repos/${{ github.repository }}/actions/artifacts/11121015458/zip > work/adjoint.zip
+          gh api repos/${{ github.repository }}/actions/artifacts/11114258089/zip > work/c500.zip
+          echo 'b0bb454fa320887c2b17dfd8a0bae916273253bb057ecff7acee3d6218234698  work/lower.zip' | sha256sum -c -
+          echo '330bb3e931fa8d45d1837c090b13a4a638fb54577cb26b8d8eaa2fe009303058  work/adjoint.zip' | sha256sum -c -
+          echo 'ae0c129951c25bd35215760168ce62d0586ce7fed09e3019d8ea0b5a24180dc2  work/c500.zip' | sha256sum -c -
+          unzip -q work/lower.zip -d work/lower
+          unzip -q work/adjoint.zip -d work/adjoint
+          unzip -q work/c500.zip -d work/c500
+      - name: Enclose continuous backward segment 237
+        run: |
+          set -euo pipefail
+          timeout 1800s python -u src/wp19_v0_28_adjoint_segment_arb.py \
+            --M 14 --step 237 --lower-dir work/lower --adjoint-dir work/adjoint \
+            --sign-chart results/wp19_bridge/frozen_K36_numerator_sign_chart_N13.json \
+            --c500 work/c500/frozen_C500.json --output output/M14_segment_237.json 2>&1 | tee output/pilot.log
+      - name: Verify chained recurrence from segment 238
+        run: |
+          python src/wp19_v0_28_verify_segment_237_chain.py \
+            output/M14_segment_237.json \
+            results/wp19_v0_28/pilot_chained_238_36819581437/M14_segment_238.json \
+            results/wp19_v0_28/pilot_chained_238_36819581437/chain_verification.json \
+            output/chain_verification.json
+      - name: Manifest
+        if: always()
+        run: |
+          mkdir -p output
+          cp src/wp19_v0_28_adjoint_segment_arb.py src/wp19_v0_28_verify_segment_237_chain.py output/
+          python - <<'PY'
+          import hashlib
+          from pathlib import Path
+          root=Path('output')
+          files=sorted(p for p in root.iterdir() if p.is_file() and p.name!='SHA256SUMS.txt')
+          (root/'SHA256SUMS.txt').write_text(''.join(f'{hashlib.sha256(p.read_bytes()).hexdigest()}  {p.name}\n' for p in files))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: wp19-v0-28-M14-segment-237-chained
+          path: output
+          if-no-files-found: error
+          retention-days: 90

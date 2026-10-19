@@ -1,0 +1,30 @@
+{
+  "status": "executed N11 positive-stretching depletion result",
+  "source": "wp16_positive_stretching_depletion_results.json",
+  "grid96": {
+    "inherited_P_plus": 266002.76902245893,
+    "optimized_P_plus": 249370.56009186574,
+    "P_plus_change_pct": -6.252645035130788,
+    "inherited_positive_volume_fraction": 0.3753763834635417,
+    "optimized_positive_volume_fraction": 0.3684556749131944,
+    "positive_volume_change_pct": -1.843671806545455,
+    "top_1pct_contribution_inherited": 0.1280865079016788,
+    "top_1pct_contribution_optimized": 0.12944553151759253,
+    "top_5pct_contribution_inherited": 0.41429012256507286,
+    "top_5pct_contribution_optimized": 0.4162632287748999,
+    "top_10pct_contribution_inherited": 0.6329500946663548,
+    "top_10pct_contribution_optimized": 0.6382017678577062,
+    "positive_set_jaccard": 0.7911050992858387,
+    "top_1pct_jaccard": 0.5592563221429201,
+    "top_5pct_jaccard": 0.6208482183750115,
+    "inherited_positive_quantile_bin_ratios": {
+      "0_50": 1.0180143973837545,
+      "50_90": 0.9040978800463976,
+      "90_95": 0.8777230674581624,
+      "95_99": 0.8757547907300818,
+      "99_100": 0.9048787757397566
+    }
+  },
+  "conclusion": "The N11 optimizer depletes positive stretching broadly rather than by clipping only the extreme tail. The largest relative suppression is in inherited 90-99% positive-stretching quantiles, while the lowest half slightly gains. Hot regions move substantially, but the broad positive set remains mostly overlapping.",
+  "next_target": "Phase-path and block-decomposition audit separating inherited-core phase corrections from newly opened-shell phases."
+}

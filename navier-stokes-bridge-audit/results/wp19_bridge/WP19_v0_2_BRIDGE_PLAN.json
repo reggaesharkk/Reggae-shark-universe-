@@ -1,0 +1,22 @@
+{
+  "phase_1": {
+    "input_cutoffs": [11, 12],
+    "target_cutoffs": [12, 13],
+    "data_class": "same rational datum; whole-segment Arb certified",
+    "goal": "certify lower-cutoff-only state-distance bound"
+  },
+  "phase_2": {
+    "target_cutoff": 14,
+    "data_class": "must be same rational witness, zero-padded",
+    "warning": "do not substitute old N14 optimizer/time-gate state"
+  },
+  "historical_constraints": {
+    "broad_gate_exit_times": {
+      "N14": {"inherited": 0.0023, "target_only": 0.0023, "full_final": 0.0023},
+      "N15": {"inherited": 0.0023, "target_only": 0.0023, "full_final": 0.0023},
+      "N16": {"inherited": 0.0023, "target_only": 0.0023, "full_final": 0.0024},
+      "N17": {"inherited": 0.0024, "target_only": 0.0024, "full_final": 0.0024}
+    },
+    "N17_mechanism_gate": "failed or unevaluable; retain as falsification evidence"
+  }
+}

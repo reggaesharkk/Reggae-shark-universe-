@@ -1,0 +1,17 @@
+{
+  "schema": "wp19-v0.9-summary-v1",
+  "status": "PASS at N11,N12,N13",
+  "K36_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+  "all_36_K36_numerator_signs_certified_within_each_endpoint_ball": true,
+  "sign_locked_counts": {"11": 36, "12": 36, "13": 36},
+  "worst_margin_ratios": {"11": "3.10539895915", "12": "1.95714754698", "13": "5.27722246188"},
+  "sign_chart_differences": {
+    "N11_to_N12": [{"left_orbit": [2,2,2], "right_orbit": [2,5,8], "sign_N11": 1, "sign_N12": -1}],
+    "N12_to_N13": [],
+    "N11_to_N13": [{"left_orbit": [2,2,2], "right_orbit": [2,5,8], "sign_N11": 1, "sign_N13": -1}]
+  },
+  "N12_and_N13_same_sign_chamber": true,
+  "N11_to_N12_changed_group_count": 1,
+  "frozen_N13_sign_chart_sha256": "7cbb307c70aa14fabdc28ae07f0965716bf498e63c371b61e1b9bfd00611c7bd",
+  "continuum_claim": false
+}

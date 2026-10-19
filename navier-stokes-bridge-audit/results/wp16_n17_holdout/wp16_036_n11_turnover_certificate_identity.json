@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "scope": "one fixed finite N11 Fourier-Galerkin trajectory; no continuum claim",
+  "certificate_archive": "N11_K36_Turnover_Certificate_2026-09-28.zip",
+  "certificate_sha256": "d29224e1dd4ad9f9454951415a3b080bc9f092839e24caaeddd056013785cfbe",
+  "archive_entries": 257,
+  "protocol": "wp16-n11-arb-hermite-v1-exact-rational-start",
+  "segments": 120,
+  "interval_precision_bits": 128,
+  "viscosity_exact_decimal": "0.1",
+  "endpoint_exact_decimal": "0.003",
+  "witness_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624",
+  "K36_keys_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+  "exact_initial_result_sha256": "327378d1ba2978a66484f1266d984d240fdfdaf4c5785889a48eb187c9650885",
+  "F0_interval_decimal": [
+    "645.8037741471",
+    "645.8037741472"
+  ],
+  "terminal_L2_error_upper_decimal": "0.00004588841",
+  "normalizer_uniform_lower_decimal": "48990.29795521",
+  "F_endpoint_interval_decimal": [
+    "-54.748409847",
+    "-42.032667894"
+  ],
+  "independent_rational_error_upper_decimal": "0.000045868444",
+  "theorem": "there exists at least one t* in (0,0.003) with F(u(t*))=0"
+}

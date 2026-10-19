@@ -1,0 +1,67 @@
+{
+  "case_source": "projection_residual_results.json (24 existing cases)",
+  "tracked_cases": [
+    ["combined_double_quarter_high", 4],
+    ["combined_double_quarter_high", 7],
+    ["reference", 4],
+    ["reference", 7]
+  ],
+  "definition": "A=sum|Z_kpq|, chi=T/A for exact ordered Fourier triads",
+  "warning": "Finite cutoffs and short trajectories only. Cutoff stability in these samples is not a cutoff-uniform bound; A remains cubic.",
+  "initial": [
+    {"scenario":"reference","N":4,"T":179.78364610277242,"A":666.1194006447942,"chi":0.2698970273628788,"ordered_triad_terms":31129,"decomposition_error":2.842170943040401e-14,"complex_sum_imag":0.0},
+    {"scenario":"reference","N":5,"T":179.7836461027724,"A":666.1194006447942,"chi":0.26989702736287874,"ordered_triad_terms":124015,"decomposition_error":0.0,"complex_sum_imag":0.0},
+    {"scenario":"reference","N":6,"T":179.78364610277242,"A":666.1194006447942,"chi":0.2698970273628788,"ordered_triad_terms":400963,"decomposition_error":2.842170943040401e-14,"complex_sum_imag":0.0},
+    {"scenario":"half_amplitude","N":4,"T":22.472955762846553,"A":83.26492508059927,"chi":0.2698970273628788,"ordered_triad_terms":31129,"decomposition_error":3.552713678800501e-15,"complex_sum_imag":0.0},
+    {"scenario":"half_amplitude","N":5,"T":22.47295576284655,"A":83.26492508059927,"chi":0.26989702736287874,"ordered_triad_terms":124015,"decomposition_error":0.0,"complex_sum_imag":0.0},
+    {"scenario":"half_amplitude","N":6,"T":22.472955762846553,"A":83.26492508059927,"chi":0.2698970273628788,"ordered_triad_terms":400963,"decomposition_error":3.552713678800501e-15,"complex_sum_imag":0.0},
+    {"scenario":"double_amplitude","N":4,"T":1438.2691688221794,"A":5328.955205158353,"chi":0.2698970273628788,"ordered_triad_terms":31129,"decomposition_error":2.2737367544323206e-13,"complex_sum_imag":0.0},
+    {"scenario":"double_amplitude","N":5,"T":1438.2691688221792,"A":5328.955205158353,"chi":0.26989702736287874,"ordered_triad_terms":124015,"decomposition_error":0.0,"complex_sum_imag":0.0},
+    {"scenario":"double_amplitude","N":6,"T":1438.2691688221794,"A":5328.955205158353,"chi":0.2698970273628788,"ordered_triad_terms":400963,"decomposition_error":2.2737367544323206e-13,"complex_sum_imag":0.0},
+    {"scenario":"quarter_phase","N":4,"T":-1.0658141036401503e-14,"A":666.1194006447943,"chi":-1.60003462233416e-17,"ordered_triad_terms":31129,"decomposition_error":7.993605777301127e-15,"complex_sum_imag":0.0},
+    {"scenario":"quarter_phase","N":5,"T":-7.105427357601002e-15,"A":666.1194006447943,"chi":-1.0666897482227731e-17,"ordered_triad_terms":124015,"decomposition_error":1.1546319456101628e-14,"complex_sum_imag":0.0},
+    {"scenario":"quarter_phase","N":6,"T":-1.0658141036401503e-14,"A":666.1194006447943,"chi":-1.60003462233416e-17,"ordered_triad_terms":400963,"decomposition_error":7.993605777301127e-15,"complex_sum_imag":0.0},
+    {"scenario":"opposite_phase","N":4,"T":-179.78364610277248,"A":666.1194006447944,"chi":-0.2698970273628788,"ordered_triad_terms":31129,"decomposition_error":8.526512829121202e-14,"complex_sum_imag":0.0},
+    {"scenario":"opposite_phase","N":5,"T":-179.78364610277248,"A":666.1194006447944,"chi":-0.2698970273628788,"ordered_triad_terms":124015,"decomposition_error":8.526512829121202e-14,"complex_sum_imag":0.0},
+    {"scenario":"opposite_phase","N":6,"T":-179.78364610277248,"A":666.1194006447944,"chi":-0.2698970273628788,"ordered_triad_terms":400963,"decomposition_error":8.526512829121202e-14,"complex_sum_imag":0.0},
+    {"scenario":"high_frequency_25pct_G","N":4,"T":179.78364610277242,"A":666.1194006447942,"chi":0.2698970273628788,"ordered_triad_terms":31129,"decomposition_error":2.842170943040401e-14,"complex_sum_imag":0.0},
+    {"scenario":"high_frequency_25pct_G","N":5,"T":179.7836461027724,"A":666.1194006447942,"chi":0.26989702736287874,"ordered_triad_terms":124015,"decomposition_error":0.0,"complex_sum_imag":0.0},
+    {"scenario":"high_frequency_25pct_G","N":6,"T":179.78364610277242,"A":666.1194006447942,"chi":0.2698970273628788,"ordered_triad_terms":400963,"decomposition_error":2.842170943040401e-14,"complex_sum_imag":0.0},
+    {"scenario":"combined_double_quarter_high","N":4,"T":-8.526512829121202e-14,"A":5328.955205158354,"chi":-1.60003462233416e-17,"ordered_triad_terms":31129,"decomposition_error":6.394884621840902e-14,"complex_sum_imag":0.0},
+    {"scenario":"combined_double_quarter_high","N":5,"T":-5.684341886080802e-14,"A":5328.955205158354,"chi":-1.0666897482227731e-17,"ordered_triad_terms":124015,"decomposition_error":9.237055564881302e-14,"complex_sum_imag":0.0},
+    {"scenario":"combined_double_quarter_high","N":6,"T":-8.526512829121202e-14,"A":5328.955205158354,"chi":-1.60003462233416e-17,"ordered_triad_terms":400963,"decomposition_error":6.394884621840902e-14,"complex_sum_imag":0.0},
+    {"scenario":"reference","N":7,"T":179.7836461027724,"A":666.1194006447942,"chi":0.26989702736287874,"ordered_triad_terms":944185,"decomposition_error":0.0,"complex_sum_imag":0.0},
+    {"scenario":"high_frequency_25pct_G","N":7,"T":179.7836461027724,"A":666.1194006447942,"chi":0.26989702736287874,"ordered_triad_terms":944185,"decomposition_error":0.0,"complex_sum_imag":0.0},
+    {"scenario":"combined_double_quarter_high","N":7,"T":-8.526512829121202e-14,"A":5328.955205158353,"chi":-1.6000346223341602e-17,"ordered_triad_terms":944185,"decomposition_error":6.394884621840902e-14,"complex_sum_imag":0.0}
+  ],
+  "tracked": [
+    {"scenario":"reference","N":4,"samples":[
+      {"time":0.0,"T":179.78364610277242,"A":666.1194006447942,"chi":0.2698970273628788,"ordered_triad_terms":31129,"decomposition_error":2.842170943040401e-14,"complex_sum_imag":0.0},
+      {"time":0.005,"T":275.371660299627,"A":1033.1497508305547,"chi":0.26653605644124123,"ordered_triad_terms":31129,"decomposition_error":0.0,"complex_sum_imag":-5.329070518200751e-15},
+      {"time":0.01,"T":368.4036718698156,"A":1393.0819185909936,"chi":0.26445226727400967,"ordered_triad_terms":31129,"decomposition_error":1.7053025658242404e-13,"complex_sum_imag":3.552713678800501e-15},
+      {"time":0.015,"T":458.16452296258433,"A":1741.507934323984,"chi":0.2630849472072224,"ordered_triad_terms":31129,"decomposition_error":5.684341886080802e-14,"complex_sum_imag":2.1316282072803006e-14},
+      {"time":0.02,"T":544.0264397291569,"A":2074.412387844156,"chi":0.2622556840274846,"ordered_triad_terms":31129,"decomposition_error":1.1368683772161603e-13,"complex_sum_imag":1.4210854715202004e-14}
+    ]},
+    {"scenario":"reference","N":7,"samples":[
+      {"time":0.0,"T":179.7836461027724,"A":666.1194006447942,"chi":0.26989702736287874,"ordered_triad_terms":944185,"decomposition_error":0.0,"complex_sum_imag":0.0},
+      {"time":0.005,"T":320.69851325602684,"A":1204.7282613813777,"chi":0.2661998755539314,"ordered_triad_terms":944185,"decomposition_error":3.979039320256561e-13,"complex_sum_imag":2.4868995751603507e-14},
+      {"time":0.01,"T":459.22562157499124,"A":1764.347762980271,"chi":0.2602806721047353,"ordered_triad_terms":944185,"decomposition_error":3.410605131648481e-13,"complex_sum_imag":5.329070518200751e-15},
+      {"time":0.015,"T":595.2481964042577,"A":2342.006235001399,"chi":0.2541616617019391,"ordered_triad_terms":944185,"decomposition_error":4.547473508864641e-13,"complex_sum_imag":-3.552713678800501e-14},
+      {"time":0.02,"T":728.5628018046531,"A":2934.3904097741424,"chi":0.24828420900568918,"ordered_triad_terms":944185,"decomposition_error":1.1368683772161603e-13,"complex_sum_imag":3.552713678800501e-14}
+    ]},
+    {"scenario":"combined_double_quarter_high","N":4,"samples":[
+      {"time":0.0,"T":-8.526512829121202e-14,"A":5328.955205158354,"chi":-1.60003462233416e-17,"ordered_triad_terms":31129,"decomposition_error":6.394884621840902e-14,"complex_sum_imag":0.0},
+      {"time":0.005,"T":1294.621076652984,"A":20788.06749761143,"chi":0.06227712493245161,"ordered_triad_terms":31129,"decomposition_error":4.547473508864641e-13,"complex_sum_imag":5.115907697472721e-13},
+      {"time":0.01,"T":2380.141022803295,"A":34618.025131958224,"chi":0.0687543848538612,"ordered_triad_terms":31129,"decomposition_error":1.3642420526593924e-12,"complex_sum_imag":4.547473508864641e-13},
+      {"time":0.015,"T":3244.143852990387,"A":45710.13160839284,"chi":0.07097209609422192,"ordered_triad_terms":31129,"decomposition_error":9.094947017729282e-13,"complex_sum_imag":6.821210263296962e-13},
+      {"time":0.02,"T":3939.3800428189206,"A":53677.136452080274,"chi":0.07339027942252029,"ordered_triad_terms":31129,"decomposition_error":1.8189894035458565e-12,"complex_sum_imag":0.0}
+    ]},
+    {"scenario":"combined_double_quarter_high","N":7,"samples":[
+      {"time":0.0,"T":-8.526512829121202e-14,"A":5328.955205158353,"chi":-1.6000346223341602e-17,"ordered_triad_terms":944185,"decomposition_error":6.394884621840902e-14,"complex_sum_imag":0.0},
+      {"time":0.005,"T":5206.654384856865,"A":40486.33619007279,"chi":0.12860275527064194,"ordered_triad_terms":944185,"decomposition_error":1.8189894035458565e-11,"complex_sum_imag":1.1368683772161603e-13},
+      {"time":0.01,"T":10210.974072915324,"A":74322.12449156036,"chi":0.13738808117729237,"ordered_triad_terms":944185,"decomposition_error":3.2741809263825417e-11,"complex_sum_imag":1.1368683772161603e-12},
+      {"time":0.015,"T":14658.526238526281,"A":108874.40670891837,"chi":0.1346370251891856,"ordered_triad_terms":944185,"decomposition_error":3.637978807091713e-12,"complex_sum_imag":1.1368683772161603e-12},
+      {"time":0.02,"T":18151.28298700803,"A":140183.0713793524,"chi":0.1294827029284332,"ordered_triad_terms":944185,"decomposition_error":7.275957614183426e-12,"complex_sum_imag":2.2737367544323206e-13}
+    ]}
+  ]
+}

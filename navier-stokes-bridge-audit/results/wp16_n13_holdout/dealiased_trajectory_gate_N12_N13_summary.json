@@ -1,0 +1,92 @@
+{
+  "status": "post-hoc finite Galerkin trajectory result; sampled gate crossings, not continuum bounds",
+  "rhs_validation_max_abs": {
+    "4": 6.483094093885688e-14,
+    "7": 6.462814875959078e-13
+  },
+  "dt": 0.0001,
+  "states": {
+    "12": {
+      "inherited": {
+        "coarse_last_pass_time": 0.0025,
+        "coarse_first_fail_time": 0.0026000000000000003,
+        "coarse_first_fail_mass_fraction": 0.8983979658832366,
+        "coarse_first_fail_signed_share": 0.8901532656051284,
+        "failure": "absolute mass fraction below 0.90",
+        "endpoint_t001_mass_fraction": 0.9300222153861151,
+        "endpoint_t001_signed_share": 0.97951266306344,
+        "max_reality_error": 7.105427357601002e-15,
+        "max_divergence_error": 1.949951169430988e-14,
+        "halfstep_last_pass_time": 0.0025,
+        "halfstep_first_fail_time": 0.00255,
+        "coarse_halfstep_mass_fraction_difference_at_coarse_fail": 1.242459846118038e-08
+      },
+      "target_only": {
+        "coarse_last_pass_time": 0.0025,
+        "coarse_first_fail_time": 0.0026000000000000003,
+        "coarse_first_fail_mass_fraction": 0.8984006858390883,
+        "coarse_first_fail_signed_share": 0.8901268765331443,
+        "failure": "absolute mass fraction below 0.90",
+        "endpoint_t001_mass_fraction": 0.9300246976040609,
+        "endpoint_t001_signed_share": 0.9795108243568786,
+        "max_reality_error": 1.7763568394002505e-15,
+        "max_divergence_error": 2.3364326363345895e-14
+      },
+      "full_final": {
+        "coarse_last_pass_time": 0.002,
+        "coarse_first_fail_time": 0.0021000000000000003,
+        "coarse_first_fail_mass_fraction": 0.8964588630479094,
+        "coarse_first_fail_signed_share": 0.9153564232848194,
+        "failure": "absolute mass fraction below 0.90",
+        "endpoint_t001_mass_fraction": 0.9267152636301643,
+        "endpoint_t001_signed_share": 0.9917141824881414,
+        "max_reality_error": 1.900395703982448e-15,
+        "max_divergence_error": 1.873614428913671e-14,
+        "halfstep_last_pass_time": 0.002,
+        "halfstep_first_fail_time": 0.00205,
+        "coarse_halfstep_mass_fraction_difference_at_coarse_fail": 4.555048116472449e-09
+      }
+    },
+    "13": {
+      "inherited": {
+        "coarse_last_pass_time": 0.0019,
+        "coarse_first_fail_time": 0.002,
+        "coarse_first_fail_mass_fraction": 0.8968769012205098,
+        "coarse_first_fail_signed_share": 0.9275335368454428,
+        "failure": "absolute mass fraction below 0.90",
+        "endpoint_t001_mass_fraction": 0.9260786219827188,
+        "endpoint_t001_signed_share": 0.99165593493404,
+        "max_reality_error": 0.0,
+        "max_divergence_error": 5.000689022075465e-14,
+        "halfstep_last_pass_time": 0.0019,
+        "halfstep_first_fail_time": 0.0019500000000000001,
+        "coarse_halfstep_mass_fraction_difference_at_coarse_fail": 1.5572547695796857e-09
+      },
+      "target_only": {
+        "coarse_last_pass_time": 0.0019,
+        "coarse_first_fail_time": 0.002,
+        "coarse_first_fail_mass_fraction": 0.896989547753128,
+        "coarse_first_fail_signed_share": 0.9223735767111695,
+        "failure": "absolute mass fraction below 0.90",
+        "endpoint_t001_mass_fraction": 0.9255739427405795,
+        "endpoint_t001_signed_share": 0.9872277715623066,
+        "max_reality_error": 0.0,
+        "max_divergence_error": 3.680318157801683e-14
+      },
+      "full_final": {
+        "coarse_last_pass_time": 0.0022,
+        "coarse_first_fail_time": 0.0023,
+        "coarse_first_fail_mass_fraction": 0.899647933329296,
+        "coarse_first_fail_signed_share": 0.9196780826158498,
+        "failure": "absolute mass fraction below 0.90",
+        "endpoint_t001_mass_fraction": 0.9288272302089727,
+        "endpoint_t001_signed_share": 0.9967949785738064,
+        "max_reality_error": 0.0,
+        "max_divergence_error": 3.813999881000976e-14,
+        "halfstep_last_pass_time": 0.0022500000000000003,
+        "halfstep_first_fail_time": 0.0023,
+        "coarse_halfstep_mass_fraction_difference_at_coarse_fail": 2.87050272440581e-09
+      }
+    }
+  }
+}

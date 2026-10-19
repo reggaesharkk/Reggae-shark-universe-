@@ -1,0 +1,192 @@
+{
+  "status": "executed finite Galerkin diagnostic; not a phase-muting proof",
+  "s": 2.0,
+  "nu": 0.1,
+  "dt": 0.0005,
+  "interval": [
+    0.0,
+    0.005
+  ],
+  "relative_floor": 1e-09,
+  "rows": [
+    {
+      "scenario": "reference",
+      "N": 4,
+      "checks": {
+        "centered_complex_zdot_relative_error": 1.0196869519668646e-08,
+        "centered_step": 1e-05,
+        "translation_max_abs_error": 1.764402461857846e-14,
+        "sign_reversal_max_abs_error": 0.0,
+        "viscous_product_max_abs_error": 5.979812823045123e-15,
+        "viscous_phase_rate_max_abs_on_active_triads": 2.5162339719883777e-16,
+        "max_abs_zdot": 881.5528429931155
+      },
+      "signed_transfer_integrals": {
+        "persistence": 29.02781556422498,
+        "smoothing": 8.8822213039307
+      },
+      "endpoints": {
+        "persistence": {
+          "time": 0.005,
+          "sigma": 0.1975,
+          "X": 8777.058813505422,
+          "Y": 86055.7632976634,
+          "nonlinear": 7216.613710208341,
+          "cancellation_ratio": 0.4380495969430032,
+          "strong_quotient": 0.0028028152386317257,
+          "weak_quotient": 0.0008951153273592095,
+          "phase_rate_pair_count": 476
+        },
+        "smoothing": {
+          "time": 0.005,
+          "sigma": 0.00223606797749979,
+          "X": 2804.539560704131,
+          "Y": 23866.72503905802,
+          "nonlinear": 2243.167167448596,
+          "cancellation_ratio": 0.4070634659540317,
+          "strong_quotient": 0.005177303853727367,
+          "weak_quotient": 0.0017747534319249726,
+          "phase_rate_pair_count": 476
+        }
+      },
+      "max_reconstruction_relative_error": 6.345750953263257e-16
+    },
+    {
+      "scenario": "reference",
+      "N": 7,
+      "checks": {
+        "centered_complex_zdot_relative_error": 1.189072252542154e-08,
+        "centered_step": 1e-05,
+        "translation_max_abs_error": 1.764402461857846e-14,
+        "sign_reversal_max_abs_error": 0.0,
+        "viscous_product_max_abs_error": 5.979812823045123e-15,
+        "viscous_phase_rate_max_abs_on_active_triads": 2.5162339719883777e-16,
+        "max_abs_zdot": 881.5528429931155
+      },
+      "signed_transfer_integrals": {
+        "persistence": 49.305338732354585,
+        "smoothing": 11.96770320945989
+      },
+      "endpoints": {
+        "persistence": {
+          "time": 0.005,
+          "sigma": 0.1975,
+          "X": 8816.995369932189,
+          "Y": 86957.24071320356,
+          "nonlinear": 15331.463826593723,
+          "cancellation_ratio": 0.48335011744311396,
+          "strong_quotient": 0.005896714955593939,
+          "weak_quotient": 0.0018776626428565928,
+          "phase_rate_pair_count": 2312
+        },
+        "smoothing": {
+          "time": 0.005,
+          "sigma": 0.00223606797749979,
+          "X": 2810.6895180200595,
+          "Y": 24008.55528999465,
+          "nonlinear": 3485.7955684266776,
+          "cancellation_ratio": 0.41592926415310416,
+          "strong_quotient": 0.008003980571172608,
+          "weak_quotient": 0.0027386053305599022,
+          "phase_rate_pair_count": 2312
+        }
+      },
+      "max_reconstruction_relative_error": 1.3285332279635634e-15
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 4,
+      "checks": {
+        "centered_complex_zdot_relative_error": 1.473684831262462e-07,
+        "centered_step": 1e-05,
+        "translation_max_abs_error": 7.090185760565034e-14,
+        "sign_reversal_max_abs_error": 0.0,
+        "viscous_product_max_abs_error": 3.44401564761504e-14,
+        "viscous_phase_rate_max_abs_on_active_triads": 2.663007301983177e-16,
+        "max_abs_zdot": 26939.077964460703
+      },
+      "signed_transfer_integrals": {
+        "persistence": 141.71238100309293,
+        "smoothing": 37.11843510984038
+      },
+      "endpoints": {
+        "persistence": {
+          "time": 0.005,
+          "sigma": 0.1975,
+          "X": 72896.10713537021,
+          "Y": 836138.693164033,
+          "nonlinear": 50430.48343822417,
+          "cancellation_ratio": 0.07043392151831217,
+          "strong_quotient": 0.0007565709024759844,
+          "weak_quotient": 0.00022338944129358647,
+          "phase_rate_pair_count": 4508
+        },
+        "smoothing": {
+          "time": 0.005,
+          "sigma": 0.00223606797749979,
+          "X": 20452.356591807522,
+          "Y": 215679.01573532342,
+          "nonlinear": 13630.579132337727,
+          "cancellation_ratio": 0.07154184239831121,
+          "strong_quotient": 0.0014350499100528543,
+          "weak_quotient": 0.00044191092399021334,
+          "phase_rate_pair_count": 4508
+        }
+      },
+      "max_reconstruction_relative_error": 3.169575887975901e-15
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 7,
+      "checks": {
+        "centered_complex_zdot_relative_error": 3.761409840639081e-07,
+        "centered_step": 1e-05,
+        "translation_max_abs_error": 7.090185760565034e-14,
+        "sign_reversal_max_abs_error": 0.0,
+        "viscous_product_max_abs_error": 3.44401564761504e-14,
+        "viscous_phase_rate_max_abs_on_active_triads": 2.663007301983177e-16,
+        "max_abs_zdot": 26939.077964460703
+      },
+      "signed_transfer_integrals": {
+        "persistence": 3196.46686630033,
+        "smoothing": 389.6730217916339
+      },
+      "endpoints": {
+        "persistence": {
+          "time": 0.005,
+          "sigma": 0.1975,
+          "X": 78888.14071270092,
+          "Y": 1022255.9498477448,
+          "nonlinear": 1302219.4116539145,
+          "cancellation_ratio": 0.40827834672077046,
+          "strong_quotient": 0.016326482268200226,
+          "weak_quotient": 0.004535431977018554,
+          "phase_rate_pair_count": 38604
+        },
+        "smoothing": {
+          "time": 0.005,
+          "sigma": 0.00223606797749979,
+          "X": 21153.839630820785,
+          "Y": 236657.84226385126,
+          "nonlinear": 157236.35868817175,
+          "cancellation_ratio": 0.274255121431191,
+          "strong_quotient": 0.015279295139073352,
+          "weak_quotient": 0.004568119680286483,
+          "phase_rate_pair_count": 38604
+        }
+      },
+      "max_reconstruction_relative_error": 5.367407653347852e-15
+    }
+  ],
+  "finite_difference_refinement_N7": {
+    "reference": {
+      "h_1e-5": 1.189072252542154e-08,
+      "h_5e-6": 2.9726562173268824e-09
+    },
+    "combined_double_quarter_high": {
+      "h_1e-5": 3.761409840639081e-07,
+      "h_5e-6": 9.403525828222519e-08
+    }
+  },
+  "interpretation": "The perturbed N7 cancellation ratio is larger than N4 at t=.005; this sample does not establish automatic phase muting or a cutoff-uniform time-integrated bound. The direct viscous contribution to nonzero triad phase rate vanishes (verified by the product rule); viscosity still changes amplitudes and thereby later nonlinear phase dynamics."
+}

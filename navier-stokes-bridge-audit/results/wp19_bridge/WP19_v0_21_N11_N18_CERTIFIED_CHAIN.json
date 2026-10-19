@@ -1,0 +1,111 @@
+{
+  "schema": "wp19-v0.21-n11-n18-certified-chain-v1",
+  "date": "2026-09-30",
+  "author": "Prince Upadhyay, Independent Research",
+  "frozen": {
+    "witness_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624",
+    "K36_keys_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+    "nu": "0.1",
+    "T": "0.003",
+    "h": "0.000025",
+    "steps": 120
+  },
+  "cutoffs": [
+    {
+      "N": 11,
+      "error": "0.000010526681",
+      "F": [
+        "-54.748409847",
+        "-42.032667894"
+      ],
+      "normalizer_lower": ">48990.29795521",
+      "result": "PASS"
+    },
+    {
+      "N": 12,
+      "error": "0.000011374869",
+      "F": [
+        "-73.633221010",
+        "-70.396895629"
+      ],
+      "normalizer_lower": "49091.85228719",
+      "result": "PASS"
+    },
+    {
+      "N": 13,
+      "error": "0.000012244529",
+      "F": [
+        "-87.154087422",
+        "-83.563901281"
+      ],
+      "normalizer_lower": "48869.38355689",
+      "result": "PASS"
+    },
+    {
+      "N": 14,
+      "error": "0.000012825905",
+      "F": [
+        "-89.015834781",
+        "-85.160766265"
+      ],
+      "normalizer_lower": "48850.68586052",
+      "result": "PASS"
+    },
+    {
+      "N": 15,
+      "error": "0.000013195722",
+      "F": [
+        "-88.958192681",
+        "-84.896722370"
+      ],
+      "normalizer_lower": "48856.49133823",
+      "result": "PASS"
+    },
+    {
+      "N": 16,
+      "error": "0.000013456103",
+      "F": [
+        "-88.828357601",
+        "-84.589032046"
+      ],
+      "normalizer_lower": "48858.17452511",
+      "result": "PASS"
+    },
+    {
+      "N": 17,
+      "error": "0.000013665541",
+      "F": [
+        "-88.682140170",
+        "-84.277596371"
+      ],
+      "normalizer_lower": "48860.35300815",
+      "result": "PASS"
+    },
+    {
+      "N": 18,
+      "error": "0.000013774643",
+      "F": [
+        "-88.699660529",
+        "-84.159654865"
+      ],
+      "normalizer_lower": "48860.59568947",
+      "result": "PASS"
+    }
+  ],
+  "finite_range_uniform": {
+    "endpoint_upper_bound": "-42.032667894",
+    "minimum_normalizer_lower": "48850.68586052",
+    "maximum_terminal_error_upper": "0.000013774643"
+  },
+  "github_actions": {
+    "original_run_id": 36669057015,
+    "N15_artifact_digest": "sha256:824634cc562b7a958f2ce8ba94d2561a71aa1b8fcbdf2551f3b204f84b3d80c0",
+    "N16_artifact_digest": "sha256:8e67a2de3b38338b0a61e9519f9433ba4684dc7957407d3f8b4b9c85cb8e034e",
+    "N17_artifact_digest": "sha256:e38906e9ee170cfc8483ac7340df7c96ddcec8b2e33b2715e983b1dcf54387d2",
+    "N18_partial_artifact_digest": "sha256:7399353fbf30e0c63c425b1c199db5042ea9d43e03131a846f7a1154edacd808",
+    "N18_recovery_run_id": 36706229638,
+    "N18_recovered_artifact_digest": "sha256:72edeeaedc41516dda4c9745a079bbb0d62606953f7d856b347d9ce0ade6aa91"
+  },
+  "next_open_term": "Gamma_M(P_M u_{M+1}) - Gamma_M(u_M)",
+  "claim_boundary": "Finite N=11..18 certificate family only; no all-N or continuum regularity/blowup theorem."
+}

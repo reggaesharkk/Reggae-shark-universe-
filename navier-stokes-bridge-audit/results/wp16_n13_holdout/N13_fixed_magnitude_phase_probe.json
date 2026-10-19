@@ -1,0 +1,460 @@
+{
+  "status": "exploratory random phase probe, not a frozen holdout",
+  "N": 13,
+  "seed": 20260926,
+  "draws": 64,
+  "active_pairs": 4557,
+  "pass_count": 55,
+  "min_abs_fraction": 0.9095675175845013,
+  "max_abs_fraction": 0.9588488580693039,
+  "results": [
+    {
+      "draw": 0,
+      "fraction": 0.9365765817904236,
+      "signed_share": 0.9718639623808624,
+      "total_signed": -3.1612399023868014,
+      "pass": true
+    },
+    {
+      "draw": 1,
+      "fraction": 0.9445195079464883,
+      "signed_share": 1.0476916681407025,
+      "total_signed": -275.9602533852049,
+      "pass": true
+    },
+    {
+      "draw": 2,
+      "fraction": 0.9432443060898551,
+      "signed_share": 1.017958570672013,
+      "total_signed": -535.7294300959063,
+      "pass": true
+    },
+    {
+      "draw": 3,
+      "fraction": 0.9462853836591553,
+      "signed_share": 0.8939133548950647,
+      "total_signed": -282.0997539768254,
+      "pass": true
+    },
+    {
+      "draw": 4,
+      "fraction": 0.9095675175845013,
+      "signed_share": 1.0091807952402696,
+      "total_signed": 103.13427205668025,
+      "pass": true
+    },
+    {
+      "draw": 5,
+      "fraction": 0.9473190508276902,
+      "signed_share": 0.9706158504422994,
+      "total_signed": 352.3473527610394,
+      "pass": true
+    },
+    {
+      "draw": 6,
+      "fraction": 0.9504878083640014,
+      "signed_share": 1.037137253211841,
+      "total_signed": -106.07860420720966,
+      "pass": true
+    },
+    {
+      "draw": 7,
+      "fraction": 0.9540909050734678,
+      "signed_share": 1.0173558433511525,
+      "total_signed": 444.2300612004751,
+      "pass": true
+    },
+    {
+      "draw": 8,
+      "fraction": 0.9252309609366548,
+      "signed_share": 0.9855669055197706,
+      "total_signed": 166.96746878682396,
+      "pass": true
+    },
+    {
+      "draw": 9,
+      "fraction": 0.916602399082229,
+      "signed_share": 0.901663300515581,
+      "total_signed": -355.49952907186736,
+      "pass": true
+    },
+    {
+      "draw": 10,
+      "fraction": 0.9325435454614222,
+      "signed_share": 0.9858658202114626,
+      "total_signed": -427.67826023544575,
+      "pass": true
+    },
+    {
+      "draw": 11,
+      "fraction": 0.9453789571453104,
+      "signed_share": 1.0068970525076457,
+      "total_signed": 312.59267367909945,
+      "pass": true
+    },
+    {
+      "draw": 12,
+      "fraction": 0.949050997793583,
+      "signed_share": 1.0017144968702747,
+      "total_signed": -467.99732315275867,
+      "pass": true
+    },
+    {
+      "draw": 13,
+      "fraction": 0.9440053711217,
+      "signed_share": 1.0235700839822335,
+      "total_signed": -158.2176200310116,
+      "pass": true
+    },
+    {
+      "draw": 14,
+      "fraction": 0.9443006104745423,
+      "signed_share": 1.0766148469299668,
+      "total_signed": -108.36370257089345,
+      "pass": true
+    },
+    {
+      "draw": 15,
+      "fraction": 0.9184025596862466,
+      "signed_share": 1.0275793435653862,
+      "total_signed": -276.0136435040689,
+      "pass": true
+    },
+    {
+      "draw": 16,
+      "fraction": 0.9328918549183821,
+      "signed_share": 1.102993196219235,
+      "total_signed": -284.3949724070122,
+      "pass": true
+    },
+    {
+      "draw": 17,
+      "fraction": 0.9439579640802633,
+      "signed_share": 0.9633524743891184,
+      "total_signed": -343.4786144826326,
+      "pass": true
+    },
+    {
+      "draw": 18,
+      "fraction": 0.947963796796802,
+      "signed_share": 1.1280589438235011,
+      "total_signed": -99.04244164475834,
+      "pass": true
+    },
+    {
+      "draw": 19,
+      "fraction": 0.9463231606428807,
+      "signed_share": 0.9554047109294518,
+      "total_signed": 170.65687808983088,
+      "pass": true
+    },
+    {
+      "draw": 20,
+      "fraction": 0.9231026526428314,
+      "signed_share": 10.279838963649977,
+      "total_signed": 0.8105020804725346,
+      "pass": false
+    },
+    {
+      "draw": 21,
+      "fraction": 0.9390290106925485,
+      "signed_share": 0.9217252241921653,
+      "total_signed": 148.97787261179263,
+      "pass": true
+    },
+    {
+      "draw": 22,
+      "fraction": 0.9296369412385865,
+      "signed_share": 0.9393247269597488,
+      "total_signed": 267.80613675958017,
+      "pass": true
+    },
+    {
+      "draw": 23,
+      "fraction": 0.9276983995545741,
+      "signed_share": 1.035990717018298,
+      "total_signed": -401.9406076080618,
+      "pass": true
+    },
+    {
+      "draw": 24,
+      "fraction": 0.9406850744687046,
+      "signed_share": 1.0618207985154937,
+      "total_signed": -134.8543037359311,
+      "pass": true
+    },
+    {
+      "draw": 25,
+      "fraction": 0.9336814981599132,
+      "signed_share": 3.013763527401351,
+      "total_signed": 13.11004517565629,
+      "pass": false
+    },
+    {
+      "draw": 26,
+      "fraction": 0.9434630665383922,
+      "signed_share": 0.9679644252423678,
+      "total_signed": -589.7135354749121,
+      "pass": true
+    },
+    {
+      "draw": 27,
+      "fraction": 0.9486114333336231,
+      "signed_share": 1.001915999377062,
+      "total_signed": -483.30161070701377,
+      "pass": true
+    },
+    {
+      "draw": 28,
+      "fraction": 0.9445000895161999,
+      "signed_share": 0.49049207347641605,
+      "total_signed": 12.690075863983315,
+      "pass": false
+    },
+    {
+      "draw": 29,
+      "fraction": 0.9352657488781433,
+      "signed_share": 0.9323411862964047,
+      "total_signed": 179.62378207110353,
+      "pass": true
+    },
+    {
+      "draw": 30,
+      "fraction": 0.937596495024363,
+      "signed_share": 1.0571025527488185,
+      "total_signed": 114.0304777720943,
+      "pass": true
+    },
+    {
+      "draw": 31,
+      "fraction": 0.9310982763378348,
+      "signed_share": 1.0628924971227824,
+      "total_signed": 272.19158746418924,
+      "pass": true
+    },
+    {
+      "draw": 32,
+      "fraction": 0.9564577047358988,
+      "signed_share": 1.0070438786861653,
+      "total_signed": 794.5893179940624,
+      "pass": true
+    },
+    {
+      "draw": 33,
+      "fraction": 0.9544791096519784,
+      "signed_share": 0.9947662498648527,
+      "total_signed": 412.3839221408692,
+      "pass": true
+    },
+    {
+      "draw": 34,
+      "fraction": 0.940566956775039,
+      "signed_share": 1.0208977904970047,
+      "total_signed": -237.40537891817053,
+      "pass": true
+    },
+    {
+      "draw": 35,
+      "fraction": 0.9395017997063153,
+      "signed_share": 0.9706170211003277,
+      "total_signed": -163.85499505608993,
+      "pass": true
+    },
+    {
+      "draw": 36,
+      "fraction": 0.9239439896909614,
+      "signed_share": 0.7143626392148936,
+      "total_signed": -61.156362361048934,
+      "pass": false
+    },
+    {
+      "draw": 37,
+      "fraction": 0.9377164738991995,
+      "signed_share": -1.1549843659429992,
+      "total_signed": -10.903386404786634,
+      "pass": false
+    },
+    {
+      "draw": 38,
+      "fraction": 0.9472049343538029,
+      "signed_share": 0.8885683280700524,
+      "total_signed": 60.3309887490343,
+      "pass": true
+    },
+    {
+      "draw": 39,
+      "fraction": 0.9286097894333579,
+      "signed_share": 1.4334324587035807,
+      "total_signed": -23.874709347422854,
+      "pass": false
+    },
+    {
+      "draw": 40,
+      "fraction": 0.9369564533242468,
+      "signed_share": 0.9393062484091882,
+      "total_signed": -458.06240560195397,
+      "pass": true
+    },
+    {
+      "draw": 41,
+      "fraction": 0.9119798063620475,
+      "signed_share": 0.9907341500147949,
+      "total_signed": -161.7255375252415,
+      "pass": true
+    },
+    {
+      "draw": 42,
+      "fraction": 0.9393947320625229,
+      "signed_share": 1.2808609688678863,
+      "total_signed": 42.683473048344396,
+      "pass": false
+    },
+    {
+      "draw": 43,
+      "fraction": 0.9567180478285859,
+      "signed_share": 1.0184626385966515,
+      "total_signed": -587.4038174790178,
+      "pass": true
+    },
+    {
+      "draw": 44,
+      "fraction": 0.9383198308401818,
+      "signed_share": 1.0011973651154835,
+      "total_signed": -427.8097842830872,
+      "pass": true
+    },
+    {
+      "draw": 45,
+      "fraction": 0.9321410743661179,
+      "signed_share": 1.1884738743607088,
+      "total_signed": 7.101391289508016,
+      "pass": true
+    },
+    {
+      "draw": 46,
+      "fraction": 0.9324250675562713,
+      "signed_share": 0.760947847237542,
+      "total_signed": -86.41340058817367,
+      "pass": false
+    },
+    {
+      "draw": 47,
+      "fraction": 0.9307013196460331,
+      "signed_share": 1.0145672959314682,
+      "total_signed": 122.37490410230087,
+      "pass": true
+    },
+    {
+      "draw": 48,
+      "fraction": 0.9313934501539907,
+      "signed_share": 1.2156896818017446,
+      "total_signed": -73.66762521537427,
+      "pass": false
+    },
+    {
+      "draw": 49,
+      "fraction": 0.9250676379621815,
+      "signed_share": 0.9522114803737903,
+      "total_signed": -148.2419003437172,
+      "pass": true
+    },
+    {
+      "draw": 50,
+      "fraction": 0.9426504324489674,
+      "signed_share": 1.016060708731015,
+      "total_signed": 340.14899376045435,
+      "pass": true
+    },
+    {
+      "draw": 51,
+      "fraction": 0.95522942742891,
+      "signed_share": 1.049016269803261,
+      "total_signed": 217.10691772338237,
+      "pass": true
+    },
+    {
+      "draw": 52,
+      "fraction": 0.9587953474771883,
+      "signed_share": 1.0694786493472983,
+      "total_signed": -231.16313619401973,
+      "pass": true
+    },
+    {
+      "draw": 53,
+      "fraction": 0.9326728407670392,
+      "signed_share": 0.9874111219784888,
+      "total_signed": 518.0845734292714,
+      "pass": true
+    },
+    {
+      "draw": 54,
+      "fraction": 0.954717168545393,
+      "signed_share": 0.9331718153229038,
+      "total_signed": -100.91152807078932,
+      "pass": true
+    },
+    {
+      "draw": 55,
+      "fraction": 0.9518899207064233,
+      "signed_share": 0.9675980290482018,
+      "total_signed": -198.18723024701242,
+      "pass": true
+    },
+    {
+      "draw": 56,
+      "fraction": 0.9413722571270315,
+      "signed_share": 1.0474280100749551,
+      "total_signed": -275.19411119095787,
+      "pass": true
+    },
+    {
+      "draw": 57,
+      "fraction": 0.9335937299418569,
+      "signed_share": 1.0769305391569959,
+      "total_signed": 125.9171372842468,
+      "pass": true
+    },
+    {
+      "draw": 58,
+      "fraction": 0.9346527435195184,
+      "signed_share": 0.9747796430908128,
+      "total_signed": 472.4297987607079,
+      "pass": true
+    },
+    {
+      "draw": 59,
+      "fraction": 0.9588488580693039,
+      "signed_share": 1.0267252642078146,
+      "total_signed": -487.92686636413646,
+      "pass": true
+    },
+    {
+      "draw": 60,
+      "fraction": 0.9489969673340644,
+      "signed_share": 0.9847496974449379,
+      "total_signed": -697.1847359887126,
+      "pass": true
+    },
+    {
+      "draw": 61,
+      "fraction": 0.9307039478524097,
+      "signed_share": 0.8598237746020406,
+      "total_signed": -106.23959185583504,
+      "pass": true
+    },
+    {
+      "draw": 62,
+      "fraction": 0.9374571138004802,
+      "signed_share": 0.8920680416765863,
+      "total_signed": -126.12864681706382,
+      "pass": true
+    },
+    {
+      "draw": 63,
+      "fraction": 0.9445130700420673,
+      "signed_share": 0.9829557861572525,
+      "total_signed": 437.73666136109523,
+      "pass": true
+    }
+  ]
+}

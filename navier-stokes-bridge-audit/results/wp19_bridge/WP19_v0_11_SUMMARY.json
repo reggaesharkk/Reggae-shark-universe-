@@ -1,0 +1,47 @@
+{
+  "schema": "wp19-v0.11-summary-v1",
+  "date": "2026-09-29",
+  "exact_results": {
+    "fixed_support_theorem": "For any Fourier state at cutoff M>=11, the frozen C500 surrogate G_C500 and its signed numerator are functions of Pi_11 state only (assuming nonzero normalizer for G).",
+    "max_selected_orbit_squared_norm": 121,
+    "max_selected_orbit_norm": 11.0,
+    "max_selected_orbit_component": 10,
+    "K36_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+    "C500_sha256": "79bdc347358705b4611f10f76a50db16e5edff572d1822ca1459cd868e15c216"
+  },
+  "prospective_N14_floating_predictor": {
+    "status": "NON-RIGOROUS predictor; no Arb trajectory enclosure yet",
+    "witness_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624",
+    "nodes_sha256": "e0b0a36d8b308cccb5befb3abe45777ec0775cbc7e5a76fef0011eed0fd1f7f0",
+    "rhs_sha256": "f3a55190e9cba625b7285e5ba3e09e68fa4027e7a8909d1ad80671c1ee1ef253",
+    "F_coarse_exact_decimal_endpoint": "-87.088300522981",
+    "G_coarse_exact_decimal_endpoint": "-52.8414629120453",
+    "F_halfstep_exact_decimal_endpoint": "-87.088300789981",
+    "G_halfstep_exact_decimal_endpoint": "-52.8414630837451",
+    "coarse_halfstep_endpoint_L2_difference": 6.116319815941696e-09,
+    "frozen_N13_K36_sign_chart_matches_coarse": "36/36",
+    "frozen_N13_K36_sign_chart_matches_halfstep": "36/36",
+    "full_vs_Pi11_G_float_difference": 0.0
+  },
+  "N13_to_N14_dual_scout": {
+    "actual_delta_G": 2.9190438380487223,
+    "actual_delta_J": 7737987742.583984,
+    "linearized_dual_weighted_defect_sum_for_J": 7741527672.657514,
+    "J_linearization_remainder": -3539930.0735292435,
+    "absolute_remainder_fraction_of_actual_delta_J": 0.00045747424153286877,
+    "sum_absolute_J_dual_weighted_contributions": 7741527672.657514,
+    "positive_contribution_sum": 7741527672.657514,
+    "negative_contribution_sum": 0.0,
+    "positive_count": 120,
+    "negative_count": 0,
+    "quadratic_kink_correction_Q": 5118480.742228056,
+    "K36_sign_flip_count": 0
+  },
+  "scouting_budget_only": {
+    "v0_10_N13_certified_signed_numerator_upper": -143588143363.5466,
+    "after_charging_observed_abs_first_order_abs_remainder_and_Q": -135837957280.07332,
+    "remaining_negative_margin": 135837957280.07332
+  },
+  "claim_boundary": "N14 values and dual-weighted dynamics are floating diagnostics. No N14 Arb trajectory certificate, next-cutoff theorem, all-N estimate, or continuum Navier-Stokes conclusion is claimed.",
+  "arb_blocker_in_this_runtime": "python-flint/flint module unavailable; exact N14 predictor and all non-Arb diagnostics were completed, but whole-segment Arb enclosure could not be executed here."
+}

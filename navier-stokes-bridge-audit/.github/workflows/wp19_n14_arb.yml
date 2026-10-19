@@ -1,0 +1,55 @@
+name: WP19 N14 Arb certificate
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/wp19_n14_arb.yml"
+      - "next-work/n14_same_datum/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  n14-arb:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install validated runtime dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy==2.3.5 python-flint
+
+      - name: Run N14 same-datum Arb certificate
+        run: |
+          python next-work/n14_same_datum/tools/run_n14_certificate.py \
+            --output-dir next-work/n14_same_datum/results/full_run \
+            --workers 2
+
+      - name: Record hashes
+        if: always()
+        run: |
+          if [ -d next-work/n14_same_datum/results/full_run ]; then
+            find next-work/n14_same_datum/results/full_run -maxdepth 1 -type f -print0 \
+              | sort -z \
+              | xargs -0 sha256sum \
+              > next-work/n14_same_datum/results/full_run/SHA256SUMS.txt || true
+          fi
+
+      - name: Upload N14 validation artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wp19-n14-arb-certificate
+          path: next-work/n14_same_datum/results/full_run
+          if-no-files-found: error
+          retention-days: 30

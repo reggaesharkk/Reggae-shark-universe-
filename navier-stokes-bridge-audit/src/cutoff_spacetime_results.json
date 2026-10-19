@@ -1,0 +1,381 @@
+{
+  "interval": [
+    0.0,
+    0.02
+  ],
+  "nu": 0.1,
+  "cutoffs": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "initial_field": "Same aligned two-scale field from phase_cascade_trajectory.initial; embedded unchanged in every Fourier ball.",
+  "transfer": "T=-Re sum_k |k|^2 conjugate(a_k) dot P_k[(u dot grad)u]_k = <omega dot S omega> at each cutoff.",
+  "interpretation": "Short finite-cutoff evidence only. No uniform-in-cutoff estimate, continuum convergence rate, global regularity, or long-time claim.",
+  "runs": [
+    {
+      "N": 4,
+      "modes": 257,
+      "ordered_pairs": 31129,
+      "coarse": {
+        "dt": 0.0005,
+        "steps": 40,
+        "initial": {
+          "E": 90.25392727379403,
+          "G": 530.8994025572655,
+          "D": 2775.754437058188,
+          "T": 179.7836461027724,
+          "high_G_fraction": 0.26366367219599557,
+          "reality_error": 0.0,
+          "divergence_error": 4.965068306494546e-16
+        },
+        "final": {
+          "E": 89.19100771839643,
+          "G": 534.4330722270936,
+          "D": 2805.7112822814224,
+          "T": 544.0264397291569,
+          "high_G_fraction": 0.2598018343581222,
+          "reality_error": 7.882977442684294e-17,
+          "divergence_error": 2.5468671054250572e-15
+        },
+        "max_G": 534.4330722270936,
+        "max_T": 544.0264397291569,
+        "max_high_G_fraction": 0.26366367219599557,
+        "integral": {
+          "G": 10.629195554533235,
+          "D": 55.577591233187604,
+          "T": 7.324593959510526,
+          "positive_T": 7.324593959510526,
+          "positive_growth": 2.0143143748918457
+        },
+        "energy_budget_residual": 5.572453609659078e-11,
+        "enstrophy_budget_residual": -1.2777157110122062e-09
+      },
+      "refined": {
+        "dt": 0.00025,
+        "steps": 80,
+        "initial": {
+          "E": 90.25392727379403,
+          "G": 530.8994025572655,
+          "D": 2775.754437058188,
+          "T": 179.7836461027724,
+          "high_G_fraction": 0.26366367219599557,
+          "reality_error": 0.0,
+          "divergence_error": 4.965068306494546e-16
+        },
+        "final": {
+          "E": 89.19100771833698,
+          "G": 534.4330722278798,
+          "D": 2805.7112822946824,
+          "T": 544.0264397463062,
+          "high_G_fraction": 0.259801834359527,
+          "reality_error": 1.3597399555105182e-16,
+          "divergence_error": 1.1957467920563633e-15
+        },
+        "max_G": 534.4330722278798,
+        "max_T": 544.0264397463062,
+        "max_high_G_fraction": 0.26366367219599557,
+        "integral": {
+          "G": 10.629195554606188,
+          "D": 55.57759123432133,
+          "T": 7.324593958818809,
+          "positive_T": 7.324593958818809,
+          "positive_growth": 2.014180414533329
+        },
+        "energy_budget_residual": 3.561595462997502e-12,
+        "enstrophy_budget_residual": -7.949640945525971e-11
+      },
+      "refinement": {
+        "final_state_l2_difference": 2.775275714256469e-10,
+        "integral_differences": {
+          "G": 7.295319903732889e-11,
+          "D": 1.1337277783241007e-09,
+          "T": -6.917169059761363e-10,
+          "positive_T": -6.917169059761363e-10,
+          "positive_growth": -0.00013396035851664934
+        },
+        "final_T_difference": 1.7149318409792613e-08,
+        "final_G_difference": 7.862581696826965e-10
+      }
+    },
+    {
+      "N": 5,
+      "modes": 515,
+      "ordered_pairs": 124015,
+      "coarse": {
+        "dt": 0.0005,
+        "steps": 40,
+        "initial": {
+          "E": 90.25392727379402,
+          "G": 530.8994025572655,
+          "D": 2775.7544370581877,
+          "T": 179.7836461027724,
+          "high_G_fraction": 0.0,
+          "reality_error": 0.0,
+          "divergence_error": 4.965068306494546e-16
+        },
+        "final": {
+          "E": 89.18871303026108,
+          "G": 537.8200603556858,
+          "D": 2896.3007678928525,
+          "T": 716.7647326181303,
+          "high_G_fraction": 0.012769527469939994,
+          "reality_error": 1.1102230246251565e-16,
+          "divergence_error": 6.497413668604471e-16
+        },
+        "max_G": 537.8200603556858,
+        "max_T": 716.7647326181303,
+        "max_high_G_fraction": 0.012769527469939994,
+        "integral": {
+          "G": 10.652142436052872,
+          "D": 56.18884364177809,
+          "T": 9.07921326514511,
+          "positive_T": 9.07921326514511,
+          "positive_growth": 3.6283599684202694
+        },
+        "energy_budget_residual": 7.23519022471919e-11,
+        "enstrophy_budget_residual": -1.7571615273936914e-09
+      },
+      "refined": {
+        "dt": 0.00025,
+        "steps": 80,
+        "initial": {
+          "E": 90.25392727379402,
+          "G": 530.8994025572655,
+          "D": 2775.7544370581877,
+          "T": 179.7836461027724,
+          "high_G_fraction": 0.0,
+          "reality_error": 0.0,
+          "divergence_error": 4.965068306494546e-16
+        },
+        "final": {
+          "E": 89.18871303018403,
+          "G": 537.8200603575377,
+          "D": 2896.3007679296115,
+          "T": 716.764732667525,
+          "high_G_fraction": 0.012769527472005804,
+          "reality_error": 8.333897564733124e-17,
+          "divergence_error": 3.836700112198048e-15
+        },
+        "max_G": 537.8200603575377,
+        "max_T": 716.764732667525,
+        "max_high_G_fraction": 0.012769527472005804,
+        "integral": {
+          "G": 10.652142436147786,
+          "D": 56.18884364325137,
+          "T": 9.079213264570091,
+          "positive_T": 9.079213264570091,
+          "positive_growth": 3.6292986588132865
+        },
+        "energy_budget_residual": 4.792166663492026e-12,
+        "enstrophy_budget_residual": -1.0883560719321395e-10
+      },
+      "refinement": {
+        "final_state_l2_difference": 7.174775241569684e-10,
+        "integral_differences": {
+          "G": 9.491429864283418e-11,
+          "D": 1.4732748354617797e-09,
+          "T": -5.750191434117369e-10,
+          "positive_T": -5.750191434117369e-10,
+          "positive_growth": 0.0009386903930170831
+        },
+        "final_T_difference": 4.939465725328773e-08,
+        "final_G_difference": 1.8519585864851251e-09
+      }
+    },
+    {
+      "N": 6,
+      "modes": 925,
+      "ordered_pairs": 400963,
+      "coarse": {
+        "dt": 0.0005,
+        "steps": 40,
+        "initial": {
+          "E": 90.25392727379402,
+          "G": 530.8994025572655,
+          "D": 2775.754437058188,
+          "T": 179.7836461027724,
+          "high_G_fraction": 0.0,
+          "reality_error": 0.0,
+          "divergence_error": 4.965068306494546e-16
+        },
+        "final": {
+          "E": 89.18866309913238,
+          "G": 537.9142553672175,
+          "D": 2901.159389426324,
+          "T": 724.1996570625873,
+          "high_G_fraction": 0.004120693722359634,
+          "reality_error": 1.2432050435751766e-16,
+          "divergence_error": 2.975418419039454e-15
+        },
+        "max_G": 537.9142553672175,
+        "max_T": 724.1996570625873,
+        "max_high_G_fraction": 0.004120693722359634,
+        "integral": {
+          "G": 10.652641747510874,
+          "D": 56.214272140393845,
+          "T": 9.128853619173915,
+          "positive_T": 9.128853619173915,
+          "positive_growth": 3.6749081656406997
+        },
+        "energy_budget_residual": 8.945200136167841e-11,
+        "enstrophy_budget_residual": -1.5852830159701625e-10
+      },
+      "refined": {
+        "dt": 0.00025,
+        "steps": 80,
+        "initial": {
+          "E": 90.25392727379402,
+          "G": 530.8994025572655,
+          "D": 2775.754437058188,
+          "T": 179.7836461027724,
+          "high_G_fraction": 0.0,
+          "reality_error": 0.0,
+          "divergence_error": 4.965068306494546e-16
+        },
+        "final": {
+          "E": 89.18866309904223,
+          "G": 537.9142553694903,
+          "D": 2901.159389482246,
+          "T": 724.1996571290172,
+          "high_G_fraction": 0.004120693724383022,
+          "reality_error": 2.220446049250313e-16,
+          "divergence_error": 1.6165091241761062e-15
+        },
+        "max_G": 537.9142553694903,
+        "max_T": 724.1996571290172,
+        "max_high_G_fraction": 0.004120693724383022,
+        "integral": {
+          "G": 10.652641747576023,
+          "D": 56.21427214018664,
+          "T": 9.128853620139948,
+          "positive_T": 9.128853620139948,
+          "positive_growth": 3.6757513890637523
+        },
+        "energy_budget_residual": 5.813349801542245e-12,
+        "enstrophy_budget_residual": -8.86846152070575e-12
+      },
+      "refinement": {
+        "final_state_l2_difference": 9.48506905837336e-10,
+        "integral_differences": {
+          "G": 6.514966344184359e-11,
+          "D": -2.0720847260236042e-10,
+          "T": 9.660325872573594e-10,
+          "positive_T": 9.660325872573594e-10,
+          "positive_growth": 0.0008432234230526525
+        },
+        "final_T_difference": 6.642983407800784e-08,
+        "final_G_difference": 2.2728272597305477e-09
+      }
+    },
+    {
+      "N": 7,
+      "modes": 1419,
+      "ordered_pairs": 944185,
+      "coarse": {
+        "dt": 0.0005,
+        "steps": 40,
+        "initial": {
+          "E": 90.25392727379403,
+          "G": 530.8994025572655,
+          "D": 2775.754437058188,
+          "T": 179.7836461027724,
+          "high_G_fraction": 0.0,
+          "reality_error": 0.0,
+          "divergence_error": 4.965068306494546e-16
+        },
+        "final": {
+          "E": 89.18864607420078,
+          "G": 537.956166127245,
+          "D": 2904.0594706525103,
+          "T": 728.5628018046532,
+          "high_G_fraction": 0.0005033485583423161,
+          "reality_error": 2.2887833992611187e-16,
+          "divergence_error": 3.3861802251067274e-15
+        },
+        "max_G": 537.956166127245,
+        "max_T": 728.5628018046532,
+        "max_high_G_fraction": 0.0005033485583423161,
+        "integral": {
+          "G": 10.652811996899198,
+          "D": 56.22601631800503,
+          "T": 9.150983416167625,
+          "positive_T": 9.150983416167625,
+          "positive_growth": 3.6958500006574018
+        },
+        "energy_budget_residual": 9.666178968359418e-11,
+        "enstrophy_budget_residual": 6.226112958529484e-10
+      },
+      "refined": {
+        "dt": 0.00025,
+        "steps": 80,
+        "initial": {
+          "E": 90.25392727379403,
+          "G": 530.8994025572655,
+          "D": 2775.754437058188,
+          "T": 179.7836461027724,
+          "high_G_fraction": 0.0,
+          "reality_error": 0.0,
+          "divergence_error": 4.965068306494546e-16
+        },
+        "final": {
+          "E": 89.18864607410669,
+          "G": 537.9561661300676,
+          "D": 2904.0594707303017,
+          "T": 728.5628018892302,
+          "high_G_fraction": 0.0005033485597105808,
+          "reality_error": 4.440892098500626e-16,
+          "divergence_error": 2.9624445261614194e-15
+        },
+        "max_G": 537.9561661300676,
+        "max_T": 728.5628018892302,
+        "max_high_G_fraction": 0.0005033485597105808,
+        "integral": {
+          "G": 10.652811996936332,
+          "D": 56.22601631567902,
+          "T": 9.150983417928789,
+          "positive_T": 9.150983417928789,
+          "positive_growth": 3.6966881921014405
+        },
+        "energy_budget_residual": 6.285194587007936e-12,
+        "enstrophy_budget_residual": 4.015543453306236e-11
+      },
+      "refinement": {
+        "final_state_l2_difference": 9.812149679181537e-10,
+        "integral_differences": {
+          "G": 3.7134739727662236e-11,
+          "D": -2.326011383502191e-09,
+          "T": 1.7611636593528601e-09,
+          "positive_T": 1.7611636593528601e-09,
+          "positive_growth": 0.0008381914440387384
+        },
+        "final_T_difference": 8.457698186248308e-08,
+        "final_G_difference": 2.8226168069522828e-09
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "low": 4,
+      "high": 5,
+      "final_shared_mode_l2_difference": 0.07518317573319622,
+      "integrated_T_difference": 1.754619305751282,
+      "integrated_positive_T_difference": 1.754619305751282
+    },
+    {
+      "low": 5,
+      "high": 6,
+      "final_shared_mode_l2_difference": 0.008482347404095739,
+      "integrated_T_difference": 0.049640355569856354,
+      "integrated_positive_T_difference": 0.049640355569856354
+    },
+    {
+      "low": 6,
+      "high": 7,
+      "final_shared_mode_l2_difference": 0.005433800790093103,
+      "integrated_T_difference": 0.022129797788840833,
+      "integrated_positive_T_difference": 0.022129797788840833
+    }
+  ]
+}

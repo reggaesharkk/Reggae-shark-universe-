@@ -1,0 +1,146 @@
+{
+  "N": 4,
+  "nu": 0.1,
+  "mode_count": 257,
+  "ordered_convolution_pairs": 31129,
+  "dt": 0.0025,
+  "steps": 40,
+  "K": 2.0,
+  "runs": [
+    {
+      "shape": "line",
+      "initial_occupied_modes": 44,
+      "max_step_energy_budget_error": 8.409736698255371e-10,
+      "snapshots": [
+        {
+          "energy": 1.0,
+          "gradient_square": 3.945704194989724,
+          "H2": 4.64827983357922,
+          "low_flux": 0.057405830449735545,
+          "ratio_flux_to_bound": 0.0007145098526640915,
+          "full_flux_error": 4.683753385137379e-17,
+          "reality_error": 0.0,
+          "divergence_error": 6.283435673255384e-17,
+          "new_modes_above_amplitude_1e-8": 0,
+          "time": 0.0
+        },
+        {
+          "energy": 0.9901933288470803,
+          "gradient_square": 3.900275624976171,
+          "H2": 4.6202456072325395,
+          "low_flux": 0.06496145386752818,
+          "ratio_flux_to_bound": 0.0008220959112956511,
+          "full_flux_error": 5.721538152113348e-17,
+          "reality_error": 1.388308075437784e-17,
+          "divergence_error": 5.989194037114866e-17,
+          "new_modes_above_amplitude_1e-8": 212,
+          "time": 0.025
+        },
+        {
+          "energy": 0.9804955693344436,
+          "gradient_square": 3.858510764502924,
+          "H2": 4.596978872946469,
+          "low_flux": 0.07177062560874238,
+          "ratio_flux_to_bound": 0.0009222774497631527,
+          "full_flux_error": 7.069336977784391e-17,
+          "reality_error": 1.3888160085291177e-17,
+          "divergence_error": 6.6010730182116e-17,
+          "new_modes_above_amplitude_1e-8": 212,
+          "time": 0.05
+        },
+        {
+          "energy": 0.9708980349540808,
+          "gradient_square": 3.8200346162248717,
+          "H2": 4.578074079813617,
+          "low_flux": 0.07785325343197999,
+          "ratio_flux_to_bound": 0.0010146507488074648,
+          "full_flux_error": 1.1537605181140276e-16,
+          "reality_error": 1.388117552611411e-17,
+          "divergence_error": 7.318806362944028e-17,
+          "new_modes_above_amplitude_1e-8": 212,
+          "time": 0.075
+        },
+        {
+          "energy": 0.9613929529544548,
+          "gradient_square": 3.7844910304266715,
+          "H2": 4.5631315472428335,
+          "low_flux": 0.0832350067257765,
+          "ratio_flux_to_bound": 0.001098986174302992,
+          "full_flux_error": 6.315477654728063e-18,
+          "reality_error": 1.4304896245381992e-17,
+          "divergence_error": 6.973502068242161e-17,
+          "new_modes_above_amplitude_1e-8": 212,
+          "time": 0.1
+        }
+      ]
+    },
+    {
+      "shape": "cube",
+      "initial_occupied_modes": 124,
+      "max_step_energy_budget_error": 2.4372562943547615e-09,
+      "snapshots": [
+        {
+          "energy": 1.0,
+          "gradient_square": 6.6393010993761,
+          "H2": 6.996222389777876,
+          "low_flux": -0.022134710329968544,
+          "ratio_flux_to_bound": 0.00016356581811325865,
+          "full_flux_error": 4.553649124439119e-18,
+          "reality_error": 0.0,
+          "divergence_error": 3.469446951953614e-17,
+          "new_modes_above_amplitude_1e-8": 0,
+          "time": 0.0
+        },
+        {
+          "energy": 0.9836038915355012,
+          "gradient_square": 6.479437453328305,
+          "H2": 6.90148809042215,
+          "low_flux": -0.015540905361197123,
+          "ratio_flux_to_bound": 0.00011834124598579677,
+          "full_flux_error": 7.121514207335256e-17,
+          "reality_error": 1.4409695421113136e-17,
+          "divergence_error": 7.473417450352271e-17,
+          "new_modes_above_amplitude_1e-8": 132,
+          "time": 0.025
+        },
+        {
+          "energy": 0.9675940759881507,
+          "gradient_square": 6.330061631414333,
+          "H2": 6.815638049842798,
+          "low_flux": -0.009318275545055446,
+          "ratio_flux_to_bound": 7.300836053936911e-05,
+          "full_flux_error": 3.113693114106808e-17,
+          "reality_error": 1.44178507760142e-17,
+          "divergence_error": 7.076311083754596e-17,
+          "new_modes_above_amplitude_1e-8": 132,
+          "time": 0.05
+        },
+        {
+          "energy": 0.951945826191827,
+          "gradient_square": 6.189998026793428,
+          "H2": 6.73762447643678,
+          "low_flux": -0.003460645956570763,
+          "ratio_flux_to_bound": 2.7859658982201878e-05,
+          "full_flux_error": 4.794037074869889e-17,
+          "reality_error": 1.5908242479561666e-17,
+          "divergence_error": 8.777083671441753e-17,
+          "new_modes_above_amplitude_1e-8": 132,
+          "time": 0.075
+        },
+        {
+          "energy": 0.936637218462081,
+          "gradient_square": 6.058178730453576,
+          "H2": 6.666452227220954,
+          "low_flux": 0.0020369528045832107,
+          "ratio_flux_to_bound": 1.6828833808630985e-05,
+          "full_flux_error": 1.6225763137603377e-17,
+          "reality_error": 1.5899372948149023e-17,
+          "divergence_error": 7.473417450352271e-17,
+          "new_modes_above_amplitude_1e-8": 132,
+          "time": 0.1
+        }
+      ]
+    }
+  ],
+  "scope": "Finite-dimensional short-time RK4 trajectory; not infinite-resolution regularity."
+}

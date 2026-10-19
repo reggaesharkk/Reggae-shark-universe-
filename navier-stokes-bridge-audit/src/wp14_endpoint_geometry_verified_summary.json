@@ -1,0 +1,49 @@
+{
+  "status": "executed matched-state WP14 endpoint-geometry diagnostic",
+  "scope": {
+    "s": 2.0,
+    "K": 2,
+    "nu": 0.1,
+    "grid": 32,
+    "cutoffs": [4, 7],
+    "scenarios": ["reference", "combined_double_quarter_high"],
+    "amplitudes": [1.0, 2.0, 4.0],
+    "reserve_fractions": [0.25, 0.5, 0.75],
+    "interval": [0.0, 0.005]
+  },
+  "wolfram_scaling_check": {
+    "b_required_exponent": 2.5,
+    "omega_infinity_exponent": 2.5,
+    "Gamma_required_exponent": 0.0,
+    "direction_gradient_exponent": 1.0,
+    "coherence_radius_exponent": -1.0,
+    "ell_omega_exponent": -1.0,
+    "g_direction_exponent": 0.0,
+    "triadic_coherence_exponent": 0.0,
+    "strain_alignment_exponent": 0.0
+  },
+  "descriptive_active_pool_pearson": {
+    "g_direction": 0.7994195595368664,
+    "g_stretch": 0.7425930541376633,
+    "chi_H2_high": -0.7354530101274256
+  },
+  "combined_N7_active_pool_pearson": {
+    "g_direction": 0.9725442314801137,
+    "g_stretch": 0.9874868510226318,
+    "chi_H2_high": -0.7738299320437817
+  },
+  "hardest_sampled_case": {
+    "scenario": "combined_double_quarter_high",
+    "N": 7,
+    "amplitude_multiplier": 4.0,
+    "theta": 0.25,
+    "max_Gamma_req_grid": 0.042879817378794975,
+    "max_g_direction": 0.6396795782969408,
+    "max_g_stretch": 0.042420697444896516,
+    "max_abs_chi_H2_high": 0.40178162210951346
+  },
+  "candidate_exposed": "b_stretch=<positive omega.S.omega>/G = omega_infinity_grid*g_stretch on the sampled grid definition",
+  "artifact_digest": "sha256:c2f396162730af04e5c6827e94512a3bd05d3ac12acff76261bf040f97bebe0a",
+  "interpretation": "The matched aggressive N=7 family shows very strong descriptive co-movement between Gamma_req and both g_direction and g_stretch. H2 high-tail triadic coherence moves oppositely and is not a standalone positive depletion factor on this sample. No correlation or near-equality is promoted to an a priori estimate.",
+  "warning": "Gamma_req is circular; geometry is finite-grid except for the exact triadic decomposition; pooled correlations mix dependent trajectory samples and are descriptive only."
+}

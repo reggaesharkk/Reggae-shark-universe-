@@ -1,0 +1,51 @@
+{
+  "schema": "wp19-v0.16-bgt-arb-screen-v1",
+  "status": "ARBITRARY-PRECISION WHOLE-SEGMENT SCREEN",
+  "source_theorem": {
+    "paper": "Brunk-Giesselmann-Tscherpel, A posteriori existence of strong solutions to the Navier-Stokes equations in 3D, arXiv:2509.25105",
+    "constants_used": {
+      "cPi1": 14,
+      "cPi2": 35,
+      "ce1": 24,
+      "ce2": 22
+    },
+    "domain_conversion": "U(y,s)=2*pi*u(2*pi*y,4*pi^2*s), preserving nu=0.1"
+  },
+  "provenance": {
+    "witness_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624",
+    "nodes_sha256": "e0b0a36d8b308cccb5befb3abe45777ec0775cbc7e5a76fef0011eed0fd1f7f0",
+    "rhs_sha256": "f3a55190e9cba625b7285e5ba3e09e68fa4027e7a8909d1ad80671c1ee1ef253",
+    "N14_workflow_artifact_sha256": "b0bb454fa320887c2b17dfd8a0bae916273253bb057ecff7acee3d6218234698",
+    "certified_low_mode_residual_L2_max": "0.000216927907"
+  },
+  "first_segment_rigorous_lower_gate": {
+    "target_high_mode": [12,5,6],
+    "target_squared_norm": 205,
+    "initial_original_L2_lower": "[111.22062618900332957644131182146961031683424706 +/- 2.56e-45]",
+    "first_segment_state_variation_L2_upper": "[0.20191508932990209009433679062071986606139307527 +/- 3.31e-48]",
+    "first_segment_original_L2_lower": "[111.01871109967342748634697503084889045077285398 +/- 2.02e-45]",
+    "target_tail_coeff_at_theta0_L2_lower": "[12.168410232983179160866311411127012336129541966 +/- 3.55e-46]",
+    "target_tail_coeff_theta_derivative_L2_upper": "[0.22977132412642886902192501195319778035713322028 +/- 4.71e-48]",
+    "target_tail_coeff_whole_segment_L2_lower": "[11.938638908856750291844386399173814555772408745 +/- 3.46e-46]",
+    "target_unit_Wminus1_2_whole_segment_lower": "[32.916283452305218229613865172324996701687395009 +/- 4.16e-46]",
+    "A_lower_from_single_mode_first_segment": "[0.0072042895280746927301928259268113655639331528449 +/- 3.74e-50]",
+    "logM_lower_from_first_segment_L2_only": "[9326757996764.8738490354363009704209812823016322 +/- 1.77e-35]",
+    "log_BGT_condition_LHS_lower": "[6217838664529.3108075792426229113633088599335314 +/- 3.17e-35]",
+    "criterion_condition_42_proven_false_for_this_reconstruction": true
+  },
+  "whole_path_rigorous_upper_envelope": {
+    "unit_torus_T": "[7.5990887731753328582909597407295729178269081004e-5 +/- 4.87e-52]",
+    "max_U_L2_upper": "[698.81980432605884578748197527645369769168428325 +/- 7.57e-46]",
+    "max_U_W1_2_upper": "[8982.0323411688547341185136235298126070299323532 +/- 4.41e-44]",
+    "max_U_fourier_l1_upper": "[4325.1221853759392525136446910721976648571208126 +/- 1.06e-44]",
+    "max_full_residual_Wminus1_2_upper": "[2645826649.0987594799472040940823639671156236873 +/- 2.51e-38]",
+    "max_full_residual_Wminus1_3_upper": "[18706683.102229440552840763331779342002013351536 +/- 3.44e-40]",
+    "integral_residual_Wminus1_2_squared_upper": "[508774442987785.95412593162631368247800151206311 +/- 2.40e-33]",
+    "integral_residual_Wminus1_3_cubed_upper": "[314123572910245797.15766044455595656616781382577 +/- 3.23e-30]",
+    "A_upper": "[2275940443412945792112643.1230304767983487954171 +/- 2.36e-23]",
+    "logM_upper": "[9627834268990550688411585.5682070268026359032157 +/- 2.07e-23]",
+    "log_BGT_condition_LHS_upper": "[6418556179327033792274451.1452029161350924232875 +/- 2.78e-23]"
+  },
+  "decision": "PUBLISHED_BGT_SUFFICIENT_CRITERION RIGOROUSLY FAILS FOR THIS PARTICULAR N14 HERMITE RECONSTRUCTION",
+  "claim_boundary": "Failure of this sufficient a-posteriori criterion does not imply blowup, singularity, or failure of continuum strong existence. It only rules out certification by this specific reconstruction and the stated published constants/criterion."
+}

@@ -1,0 +1,208 @@
+{
+  "N": 4,
+  "nu": 0.1,
+  "identity": "d<phi |omega|^2/2>/dt = <phi omega.S.omega> + <(|omega|^2/2)u.grad phi> + nu<(|omega|^2/2)lap phi> - nu<phi |grad omega|^2> + <phi omega.curl R_N>",
+  "results": [
+    {
+      "shape": "line",
+      "time": 0.1,
+      "rows": [
+        {
+          "kappa": 0,
+          "window_mean": 1.0,
+          "localized_enstrophy": 1.8922455152133368,
+          "lhs_enstrophy_derivative": -0.6838292221865134,
+          "vortex_stretching": 0.44921093288153885,
+          "transport_window_term": 0.0,
+          "diffusion_window_term": 0.0,
+          "viscous_vorticity_dissipation": -1.1330401550680524,
+          "curl_projection_residual": 0.0,
+          "rhs": -0.6838292221865137,
+          "closure_error": 2.220446049250313e-16,
+          "error_if_residual_omitted": 2.220446049250313e-16,
+          "enstrophy_weighted_fraction_positive_stretch": 0.5856638278525065,
+          "grid64_vs_grid96_lhs_diff": 8.881784197001252e-16
+        },
+        {
+          "kappa": 1,
+          "window_mean": 0.10103816881425744,
+          "localized_enstrophy": 0.19676000324420684,
+          "lhs_enstrophy_derivative": -0.06982854774418562,
+          "vortex_stretching": 0.059209228590673034,
+          "transport_window_term": -0.016463262322349,
+          "diffusion_window_term": -8.795253471840966e-05,
+          "viscous_vorticity_dissipation": -0.11458708213985346,
+          "curl_projection_residual": 0.002100520662062245,
+          "rhs": -0.06982854774418558,
+          "closure_error": 4.163336342344337e-17,
+          "error_if_residual_omitted": 0.0021005206620622052,
+          "enstrophy_weighted_fraction_positive_stretch": 0.5961542746964725,
+          "grid64_vs_grid96_lhs_diff": 1.1102230246251565e-16
+        },
+        {
+          "kappa": 4,
+          "window_mean": 0.008869989969871995,
+          "localized_enstrophy": 0.01988767448422788,
+          "lhs_enstrophy_derivative": 0.0008037102145293175,
+          "vortex_stretching": 0.018491591715931337,
+          "transport_window_term": -0.007222284313956315,
+          "diffusion_window_term": -0.0019014624687688976,
+          "viscous_vorticity_dissipation": -0.008601935925050489,
+          "curl_projection_residual": 3.7801206373691424e-05,
+          "rhs": 0.000803710214529326,
+          "closure_error": 8.456776945386935e-18,
+          "error_if_residual_omitted": 3.780120637368297e-05,
+          "enstrophy_weighted_fraction_positive_stretch": 0.8537125006572689,
+          "grid64_vs_grid96_lhs_diff": 1.0842021724855044e-18
+        },
+        {
+          "kappa": 9,
+          "window_mean": 0.0024581626699344853,
+          "localized_enstrophy": 0.0061120202536558005,
+          "lhs_enstrophy_derivative": 0.0011493041525138835,
+          "vortex_stretching": 0.007682040549358959,
+          "transport_window_term": -0.0032492453473767537,
+          "diffusion_window_term": -0.0008500964082751174,
+          "viscous_vorticity_dissipation": -0.002211214646562519,
+          "curl_projection_residual": -0.00022217999463067624,
+          "rhs": 0.001149304152513892,
+          "closure_error": 8.456776945386935e-18,
+          "error_if_residual_omitted": 0.00022217999463068475,
+          "enstrophy_weighted_fraction_positive_stretch": 0.969390789289686,
+          "grid64_vs_grid96_lhs_diff": 1.0842021724855044e-18
+        },
+        {
+          "kappa": 16,
+          "window_mean": 0.001016412804315421,
+          "localized_enstrophy": 0.002623846500715346,
+          "lhs_enstrophy_derivative": 0.0005367201480540652,
+          "vortex_stretching": 0.0036269031463556185,
+          "transport_window_term": -0.0016315424129564647,
+          "diffusion_window_term": -0.0003574855999980995,
+          "viscous_vorticity_dissipation": -0.0009063526436383696,
+          "curl_projection_residual": -0.00019480234170861192,
+          "rhs": 0.0005367201480540728,
+          "closure_error": 7.589415207398531e-18,
+          "error_if_residual_omitted": 0.0001948023417086195,
+          "enstrophy_weighted_fraction_positive_stretch": 0.9945890873283053,
+          "grid64_vs_grid96_lhs_diff": 1.1926223897340549e-18
+        }
+      ],
+      "alignment_diagnostic": [
+        {
+          "kappa": 0,
+          "weighted_cos2_vorticity_vs_max_strain_eigenvector": 0.3847956761930699,
+          "weighted_max_strain_eigenvalue": 0.867197790304211,
+          "sample_grid": "16^3 subsample of 64^3"
+        },
+        {
+          "kappa": 9,
+          "weighted_cos2_vorticity_vs_max_strain_eigenvector": 0.839693990793982,
+          "weighted_max_strain_eigenvalue": 0.7788594985648696,
+          "sample_grid": "16^3 subsample of 64^3"
+        }
+      ]
+    },
+    {
+      "shape": "cube",
+      "time": 0.1,
+      "rows": [
+        {
+          "kappa": 0,
+          "window_mean": 1.0,
+          "localized_enstrophy": 3.0290893652267887,
+          "lhs_enstrophy_derivative": -2.560542029879514,
+          "vortex_stretching": 0.48465331011927726,
+          "transport_window_term": 0.0,
+          "diffusion_window_term": 0.0,
+          "viscous_vorticity_dissipation": -3.0451953399987914,
+          "curl_projection_residual": 2.2551405187698492e-17,
+          "rhs": -2.5605420298795143,
+          "closure_error": 4.440892098500626e-16,
+          "error_if_residual_omitted": 4.440892098500626e-16,
+          "enstrophy_weighted_fraction_positive_stretch": 0.5473873380650993,
+          "grid64_vs_grid96_lhs_diff": 3.9968028886505635e-15
+        },
+        {
+          "kappa": 1,
+          "window_mean": 0.10103816881425744,
+          "localized_enstrophy": 0.2929694400743752,
+          "lhs_enstrophy_derivative": -0.262981656538788,
+          "vortex_stretching": 0.07239562559536512,
+          "transport_window_term": -0.03286149854160469,
+          "diffusion_window_term": 0.0018640272949879946,
+          "viscous_vorticity_dissipation": -0.3066180386087604,
+          "curl_projection_residual": 0.002238227721223943,
+          "rhs": -0.262981656538788,
+          "closure_error": 0.0,
+          "error_if_residual_omitted": 0.002238227721223951,
+          "enstrophy_weighted_fraction_positive_stretch": 0.5586113784944234,
+          "grid64_vs_grid96_lhs_diff": 3.3306690738754696e-16
+        },
+        {
+          "kappa": 4,
+          "window_mean": 0.008869989969871995,
+          "localized_enstrophy": 0.020568979786379983,
+          "lhs_enstrophy_derivative": -0.028796740573586797,
+          "vortex_stretching": 0.007338611013110894,
+          "transport_window_term": -0.01257508732390694,
+          "diffusion_window_term": 0.0016830030954004351,
+          "viscous_vorticity_dissipation": -0.0242106813995724,
+          "curl_projection_residual": -0.0010325859586187691,
+          "rhs": -0.02879674057358678,
+          "closure_error": 1.734723475976807e-17,
+          "error_if_residual_omitted": 0.0010325859586187876,
+          "enstrophy_weighted_fraction_positive_stretch": 0.5816001248804495,
+          "grid64_vs_grid96_lhs_diff": 3.8163916471489756e-17
+        },
+        {
+          "kappa": 9,
+          "window_mean": 0.0024581626699344853,
+          "localized_enstrophy": 0.005255476604137465,
+          "lhs_enstrophy_derivative": -0.009307892351155774,
+          "vortex_stretching": 0.0031745523445049894,
+          "transport_window_term": -0.005690607257710567,
+          "diffusion_window_term": 0.00047959305322363936,
+          "viscous_vorticity_dissipation": -0.006082355569814197,
+          "curl_projection_residual": -0.0011890749213596349,
+          "rhs": -0.00930789235115577,
+          "closure_error": 5.204170427930421e-18,
+          "error_if_residual_omitted": 0.0011890749213596397,
+          "enstrophy_weighted_fraction_positive_stretch": 0.629331100826946,
+          "grid64_vs_grid96_lhs_diff": 1.0408340855860843e-17
+        },
+        {
+          "kappa": 16,
+          "window_mean": 0.001016412804315421,
+          "localized_enstrophy": 0.002119189982982421,
+          "lhs_enstrophy_derivative": -0.004169808603654871,
+          "vortex_stretching": 0.0015278779639368789,
+          "transport_window_term": -0.0028689980681507682,
+          "diffusion_window_term": 0.0001929546725692589,
+          "viscous_vorticity_dissipation": -0.0023861703802680076,
+          "curl_projection_residual": -0.0006354727917422295,
+          "rhs": -0.004169808603654868,
+          "closure_error": 3.469446951953614e-18,
+          "error_if_residual_omitted": 0.0006354727917422332,
+          "enstrophy_weighted_fraction_positive_stretch": 0.6703108628573672,
+          "grid64_vs_grid96_lhs_diff": 6.938893903907228e-18
+        }
+      ],
+      "alignment_diagnostic": [
+        {
+          "kappa": 0,
+          "weighted_cos2_vorticity_vs_max_strain_eigenvector": 0.37828456309763653,
+          "weighted_max_strain_eigenvalue": 1.0950709416311688,
+          "sample_grid": "16^3 subsample of 64^3"
+        },
+        {
+          "kappa": 9,
+          "weighted_cos2_vorticity_vs_max_strain_eigenvector": 0.5118785041260362,
+          "weighted_max_strain_eigenvalue": 1.0582246128812416,
+          "sample_grid": "16^3 subsample of 64^3"
+        }
+      ]
+    }
+  ],
+  "scope": "Finite Galerkin localized vorticity balance; alignment samples do not test a regularity theorem."
+}

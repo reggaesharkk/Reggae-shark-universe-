@@ -1,0 +1,14 @@
+{
+  "backward_error_after_one_segment_upper": "74882674993.048618657819149585465296325142145058928574913811532113780128124368218",
+  "claim_boundary": "No full adjoint or signed-numerator cutoff-transfer certificate.",
+  "pending": [
+    "239 remaining M14 segments",
+    "other cutoff paths",
+    "rigorous dual quadrature",
+    "nonlinear remainder",
+    "normalizer transfer"
+  ],
+  "segment_sha256": "d1b41363c88173594ec6c9e90453513cd3c8ed3e32c7037d2e73304d057a8c08",
+  "status": "PASS LIMITED PILOT RECURRENCE CHECK",
+  "verified_scope": "provenance, scalar bounds, and outward Decimal recurrence only; residual enclosure supplied by Arb producer"
+}

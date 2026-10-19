@@ -1,0 +1,14 @@
+{
+  "C500_sha256": "79bdc347358705b4611f10f76a50db16e5edff572d1822ca1459cd868e15c216",
+  "K36_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+  "all_upper_bounds_strictly_negative": true,
+  "certified_intervals": {
+    "11": ["-54.174149219", "-41.458407264"],
+    "12": ["-56.770960917", "-53.534635536"],
+    "13": ["-57.555599822", "-53.965413679"]
+  },
+  "continuum_claim": false,
+  "method": "exact rational evaluation of precisely defined decimal endpoint + inherited Arb-certified universal coefficient-9 perturbation envelope",
+  "schema": "wp19-v0.7-summary-v1",
+  "status": "PASS at N11,N12,N13"
+}

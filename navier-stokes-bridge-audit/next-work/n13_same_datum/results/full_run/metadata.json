@@ -1,0 +1,17 @@
+{
+  "K36_keys_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+  "N": 13,
+  "T_exact_decimal": "0.003",
+  "h_exact_decimal": "0.000025",
+  "initial_L2_error_bound_decimal": "0",
+  "initial_error_bound_decimal": "0",
+  "initial_field_rule": "exact rational N11 witness projected on N13; all other modes zero",
+  "modes": 9171,
+  "nodes_sha256": "d80274b3b5cfd1cf9f3a25dd1e8382a359c2b08821b498e9d0f6e363ef2546f1",
+  "nu_exact_decimal": "0.1",
+  "rhs_sha256": "a6ca697ece1eb6a5ef138c23b05e3940bb4c8c96b41e56cfb8d21f2ee9f1e03b",
+  "schema": "wp16-n13-same-datum-hermite-predictor-v1",
+  "status": "PREDICTOR_READY",
+  "steps": 120,
+  "witness_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624"
+}

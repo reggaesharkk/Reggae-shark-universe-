@@ -1,0 +1,188 @@
+{
+  "interval": [
+    0,
+    0.02
+  ],
+  "dt": 0.0005,
+  "nu": 0.1,
+  "identity": "T=Q+R; Q=sum_j <P_j omega,S P_j omega>; R=sum_j <P_j omega,[P_j,S]omega>; P_j real self-adjoint, sum_j P_j^2=I on nonzero modes",
+  "limitation": "Finite-cutoff RK4 trajectories only; Simpson comparisons show quadrature refinement, not a rigorous continuum or cutoff-uniform bound.",
+  "runs": [
+    {
+      "N": 4,
+      "initial": {
+        "G": 530.8994025572655,
+        "D": 2775.7544370581877,
+        "T": 179.7836461027724,
+        "Qsum": 133.32496503197473,
+        "Rsum": 46.45868107079776,
+        "shell_terms": [
+          {
+            "level": 0,
+            "Q": -28.268007338556238,
+            "commutator": 32.19323951571046,
+            "projected_full_stretching": 3.9252321771542222
+          },
+          {
+            "level": 1,
+            "Q": 117.84606818701208,
+            "commutator": 13.442251668556295,
+            "projected_full_stretching": 131.28831985556837
+          },
+          {
+            "level": 2,
+            "Q": 43.7469041835189,
+            "commutator": 0.8231898865310043,
+            "projected_full_stretching": 44.570094070049905
+          }
+        ],
+        "identity_error": -9.237055564881302e-14,
+        "time": 0.0
+      },
+      "final": {
+        "G": 534.4330722270936,
+        "D": 2805.7112822814224,
+        "T": 544.0264397291569,
+        "Qsum": 303.92414657546914,
+        "Rsum": 240.1022931536881,
+        "shell_terms": [
+          {
+            "level": 0,
+            "Q": -42.58093482386969,
+            "commutator": 72.96271124889148,
+            "projected_full_stretching": 30.38177642502179
+          },
+          {
+            "level": 1,
+            "Q": 287.37246846753,
+            "commutator": 70.33403514096705,
+            "projected_full_stretching": 357.70650360849703
+          },
+          {
+            "level": 2,
+            "Q": 59.132612931808836,
+            "commutator": 96.80554676382957,
+            "projected_full_stretching": 155.9381596956384
+          }
+        ],
+        "identity_error": -3.410605131648481e-13,
+        "time": 0.02
+      },
+      "integral_simpson_dt_0_0005": {
+        "T": 7.324593959510526,
+        "Qsum": 4.43990694774178,
+        "Rsum": 2.884687011768749,
+        "D": 55.577591233187604
+      },
+      "integral_simpson_dt_0_001": {
+        "T": 7.3245939739502015,
+        "Qsum": 4.439906957385749,
+        "Rsum": 2.884687016564455,
+        "D": 55.57759121670974
+      },
+      "integration_resolution_differences": {
+        "T": -1.4439675233290927e-08,
+        "Qsum": -9.643969178796397e-09,
+        "Rsum": -4.795706054494531e-09,
+        "D": 1.6477862629926676e-08
+      },
+      "half_G_change": 1.7668348349140501,
+      "integrated_budget_residual": -1.2777157110122062e-09,
+      "max_instantaneous_commutator_identity_error": 3.979039320256561e-13
+    },
+    {
+      "N": 5,
+      "initial": {
+        "G": 530.8994025572655,
+        "D": 2775.7544370581877,
+        "T": 179.7836461027724,
+        "Qsum": 133.32496503197473,
+        "Rsum": 46.45868107079776,
+        "shell_terms": [
+          {
+            "level": 0,
+            "Q": -28.268007338556238,
+            "commutator": 32.19323951571046,
+            "projected_full_stretching": 3.9252321771542222
+          },
+          {
+            "level": 1,
+            "Q": 117.84606818701208,
+            "commutator": 13.442251668556295,
+            "projected_full_stretching": 131.28831985556837
+          },
+          {
+            "level": 2,
+            "Q": 43.7469041835189,
+            "commutator": 0.8231898865310043,
+            "projected_full_stretching": 44.570094070049905
+          },
+          {
+            "level": 3,
+            "Q": 0.0,
+            "commutator": 0.0,
+            "projected_full_stretching": 0.0
+          }
+        ],
+        "identity_error": -9.237055564881302e-14,
+        "time": 0.0
+      },
+      "final": {
+        "G": 537.8200603556857,
+        "D": 2896.3007678928516,
+        "T": 716.7647326181303,
+        "Qsum": 448.1947631022201,
+        "Rsum": 268.5699695159106,
+        "shell_terms": [
+          {
+            "level": 0,
+            "Q": -42.69747374858295,
+            "commutator": 77.81600138336933,
+            "projected_full_stretching": 35.11852763478637
+          },
+          {
+            "level": 1,
+            "Q": 282.2414546539927,
+            "commutator": 80.45867634338248,
+            "projected_full_stretching": 362.7001309973752
+          },
+          {
+            "level": 2,
+            "Q": 208.66655905946965,
+            "commutator": 104.36621414078058,
+            "projected_full_stretching": 313.03277320025023
+          },
+          {
+            "level": 3,
+            "Q": -0.01577686265932038,
+            "commutator": 5.92907764837821,
+            "projected_full_stretching": 5.9133007857188895
+          }
+        ],
+        "identity_error": -3.979039320256561e-13,
+        "time": 0.02
+      },
+      "integral_simpson_dt_0_0005": {
+        "T": 9.07921326514511,
+        "Qsum": 5.888838631845783,
+        "Rsum": 3.1903746332993292,
+        "D": 56.188843641778085
+      },
+      "integral_simpson_dt_0_001": {
+        "T": 9.079213283452852,
+        "Qsum": 5.888838643934368,
+        "Rsum": 3.190374639518485,
+        "D": 56.18884362215756
+      },
+      "integration_resolution_differences": {
+        "T": -1.8307741100898056e-08,
+        "Qsum": -1.2088585243930083e-08,
+        "Rsum": -6.219155856967973e-09,
+        "D": 1.9620522095920023e-08
+      },
+      "half_G_change": 3.460328899210083,
+      "integrated_budget_residual": -1.7572183708125522e-09,
+      "max_instantaneous_commutator_identity_error": 5.115907697472721e-13
+    }
+  ]
+}

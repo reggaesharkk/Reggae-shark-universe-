@@ -1,0 +1,68 @@
+name: WP19 v0.16 BGT Arb screen
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/wp19_v0_16_bgt_arb.yml"
+      - "src/wp19_v0_16_bgt_arb_screen.py"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  bgt-arb-screen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy==2.3.5 python-flint
+
+      - name: Download validated N14 artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/n14
+          gh run download 36608785015 \
+            --repo "${{ github.repository }}" \
+            --name wp19-n14-arb-certificate \
+            --dir /tmp/n14
+          test -f /tmp/n14/nodes.npy
+          test -f /tmp/n14/rhs.npy
+          sha256sum /tmp/n14/nodes.npy /tmp/n14/rhs.npy
+
+      - name: Run v0.16 Arb screen
+        run: |
+          mkdir -p results/wp19_v0_16_workflow
+          python src/wp19_v0_16_bgt_arb_screen.py \
+            --artifact-dir /tmp/n14 \
+            --output results/wp19_v0_16_workflow/WP19_v0_16_BGT_ARB_SCREEN.json
+
+      - name: Hash result
+        if: always()
+        run: |
+          if [ -f results/wp19_v0_16_workflow/WP19_v0_16_BGT_ARB_SCREEN.json ]; then
+            sha256sum results/wp19_v0_16_workflow/WP19_v0_16_BGT_ARB_SCREEN.json \
+              > results/wp19_v0_16_workflow/SHA256SUMS.txt
+          fi
+
+      - name: Upload v0.16 result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-16-bgt-arb-screen
+          path: results/wp19_v0_16_workflow
+          if-no-files-found: error
+          retention-days: 30

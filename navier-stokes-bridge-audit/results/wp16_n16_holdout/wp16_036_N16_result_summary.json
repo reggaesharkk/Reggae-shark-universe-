@@ -1,0 +1,88 @@
+{
+  "status": "completed prospective frozen N16 K36 time-gate summary",
+  "date": "2026-09-27",
+  "hashes": {
+    "n15_predecessor": "c0bd97f554df3e8561d75e1ba62356d04200fbe4986f573e3305a98932ccb225",
+    "frozen_K36_source": "193cbb7f485ab54ceed0d5cb38f97f0fc98c197e5f88e288fdbd277627608c8e",
+    "n16_checkpoint": "057c5846cc28f86099408f3f7563d7551d64b1f6414758cadeecf1fa99d656ba",
+    "n16_continuation": "53b0cc0a70de0d1a858e9d0c9d98feafcd5fea678c85adfe4d6253f6cf53b0ca",
+    "n16_time_gate": "111eb0407c60cb60c24c57e3c471ece05a9e1b94b88628a688d015a4249decf7"
+  },
+  "continuation": {
+    "seed": 20260941,
+    "search_grid": 64,
+    "completed_proposals": 520,
+    "active_conjugate_pairs": 7973,
+    "inherited_pairs": 6771,
+    "new_pairs": 1202,
+    "best_search_grid_C": 10.149314859960093,
+    "refined_C": {
+      "64": 10.149314859960093,
+      "96": 10.15014144419499,
+      "128": 10.150097983229115
+    }
+  },
+  "protocol": {
+    "dt": 0.0001,
+    "steps": 30,
+    "nu": 0.1,
+    "same_sign": true,
+    "minimum_absolute_mass_fraction": 0.9,
+    "signed_share_interval": [0.8, 1.2]
+  },
+  "states": {
+    "inherited": {
+      "all_six_predeclared_checks_pass": true,
+      "first_mass_failure_index": 23,
+      "first_any_failure_index": 23,
+      "first_mass_exit_time": 0.0023,
+      "mass_fraction_at_exit": 0.8985154141285887,
+      "signed_share_at_exit": 0.9075863004743228,
+      "initial_margin_rate": 278501.0612512906,
+      "exit_margin_rate": -405645.35062230786,
+      "exit_radial_rate": -217619.089278287,
+      "exit_vector_polarization_rate": -308800.7070232379,
+      "exit_scalar_phase_rate": 120774.44530405046,
+      "half_step_mass_fraction_t00225": 0.900204294643131,
+      "half_step_mass_fraction_t00230": 0.8985154127057607,
+      "coarse_half_difference_at_exit": 1.4228279665573496e-09
+    },
+    "target_only": {
+      "all_six_predeclared_checks_pass": true,
+      "first_mass_failure_index": 23,
+      "first_any_failure_index": 23,
+      "first_mass_exit_time": 0.0023,
+      "mass_fraction_at_exit": 0.8985340354239556,
+      "signed_share_at_exit": 0.9075805522356793,
+      "initial_margin_rate": 278340.8258494546,
+      "exit_margin_rate": -405443.2705970612,
+      "exit_radial_rate": -217628.6649728354,
+      "exit_vector_polarization_rate": -308766.9640649437,
+      "exit_scalar_phase_rate": 120952.35833839979,
+      "half_step_mass_fraction_t00225": 0.9002217183171562,
+      "half_step_mass_fraction_t00230": 0.898534033985691,
+      "coarse_half_difference_at_exit": 1.4382646185140402e-09
+    },
+    "full_final": {
+      "all_six_predeclared_checks_pass": true,
+      "first_mass_failure_index": 24,
+      "first_any_failure_index": 24,
+      "first_mass_exit_time": 0.0024000000000000002,
+      "mass_fraction_at_last_coarse_pass_t00230": 0.900469470023854,
+      "mass_fraction_at_exit": 0.8972532948158594,
+      "signed_share_at_exit": 0.91810410437316,
+      "initial_margin_rate": 265221.1015970351,
+      "exit_margin_rate": -365503.27279201156,
+      "exit_radial_rate": -220365.56467810442,
+      "exit_vector_polarization_rate": -236513.26346225687,
+      "exit_scalar_phase_rate": 91375.55531424368,
+      "half_step_mass_fraction_t00235": 0.8988413518444025,
+      "half_step_mass_fraction_t00240": 0.8972532825142303,
+      "coarse_half_difference_at_exit": 1.2301629048749874e-08,
+      "half_step_bracket_from_coarse_last_pass_and_midpoint": [0.0023, 0.00235],
+      "half_step_saved_rows_both_fail_mass": true
+    }
+  },
+  "joint_outcome": "all frozen N16 checks passed in all three states; full_final first sampled mass exit is 0.0024 rather than the N14/N15 0.0023 comparison datum",
+  "interpretation_rule": "finite prospective N16 Galerkin replication under a broad predeclared window; no all-N or continuum claim"
+}

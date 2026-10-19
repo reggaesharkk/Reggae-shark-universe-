@@ -1,0 +1,37 @@
+{
+  "M": 14,
+  "actual_cutoff_direction": {
+    "arb_interval_width_decimal": "0.000003",
+    "arb_linear_prediction_lower_decimal": "5757388589.282617",
+    "arb_linear_prediction_upper_decimal": "5757388589.282621",
+    "arb_vs_complex128_relative_gap_upper_decimal": "3.0602E-14",
+    "arb_width_over_abs_complex128_prediction_upper_decimal": "3E-18",
+    "complex128_linear_prediction": 5757388589.282795,
+    "finite_difference_relative_error": 5.7879350181834046e-09
+  },
+  "claim_boundary": "This certifies only the terminal polynomial value/gradient at the canonical decimal predictor endpoint. It does not intervalize backward adjoint propagation, quadrature, nonlinear remainder, endpoint Taylor remainder, all-N transfer, or continuum behavior.",
+  "copyright": "Copyright (c) 2026 Prince Upadhyay. All Rights Reserved.",
+  "frozen": {
+    "C500_semantic_sha256": "1e9509cef054bf605d4a28af6580e383d021914f600a01b21cb1ebdf1086f71f",
+    "K36_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+    "K36_sign_chart_sha256": "de2e7cf42373285f16a4d357422d7784afa98c997f90e6594c0102952bf6d3d1",
+    "coefficient_count": 536,
+    "witness_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624"
+  },
+  "next_target": "certify the backward adjoint itself by an Arb residual/enclosure around the floating half-step adjoint reconstruction, then rigorously enclose dual quadrature",
+  "objective": {
+    "arb_lower_decimal": "-137927743305.7194189",
+    "arb_upper_decimal": "-137927743305.71941005",
+    "arb_vs_complex128_relative_gap_upper_decimal": "8E-16",
+    "complex128_value": -137927743305.7193
+  },
+  "precision_bits": 128,
+  "schema": "wp19-v0.27-terminal-signed-c500-gradient-arb-v1",
+  "status": "PASS 128-BIT ARB TERMINAL-GRADIENT CERTIFICATE",
+  "terminal_gradient": {
+    "L2_upper_decimal": "4691959667101.255187",
+    "analytic_complex128_L2": 4691959667101.259,
+    "formula": "manual reverse-mode of fixed degree-7 signed numerator under Re Fourier-L2 pairing, followed by exact Leray/reality tangent projection"
+  },
+  "transition": "14->15"
+}

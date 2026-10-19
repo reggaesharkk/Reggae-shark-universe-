@@ -1,0 +1,72 @@
+{
+  "status": "N17 finite prospective evaluation: broad pass; separate mechanism failed or unevaluable",
+  "N": 17,
+  "seed": 20260942,
+  "proposals": 520,
+  "hashes": {
+    "N16": "53b0cc0a70de0d1a858e9d0c9d98feafcd5fea678c85adfe4d6253f6cf53b0ca",
+    "N17_continuation": "755a36f966b64c8c44cd468c6f2e8212a7ed64eebeaf8aa795ee2c3197c4c3ec",
+    "N17_checkpoint": "f4a8da892f666e2dffa2c02915801870a1be4e4ba2fd357f8f3455760ca08b32",
+    "frozen_source": "193cbb7f485ab54ceed0d5cb38f97f0fc98c197e5f88e288fdbd277627608c8e",
+    "time_gate_output": "905237d19724ee4535866168dd6ea010f794f070c1befef11b78e8e06ebc4a5b",
+    "mechanism_gate_output": "64a584b5d2a715b228528bf055a2453460e1ab6d951c19e5342b668eee98b0e8"
+  },
+  "best_refined_C": 10.356696358903514,
+  "broad_gate": {
+    "joint_pass": true,
+    "failure_rules": [],
+    "states": {
+      "inherited": {
+        "first_mass_failure_index": 24,
+        "static_gate_pass": true,
+        "all_samples_through_t001_pass_mass": true,
+        "mass_exit_in_frozen_window": true,
+        "signed_gate_at_first_mass_exit": true,
+        "initial_margin_rate_positive": true,
+        "exit_full_radial_polarization_rates_negative": true,
+        "first_exit_time": 0.0024000000000000002,
+        "last_pass_mass_fraction": 0.9003525861472681,
+        "first_fail_mass_fraction": 0.8971247842265829,
+        "signed_share_at_exit": 0.9179688944503592,
+        "half_step_difference": 1.1764162533012268e-08
+      },
+      "target_only": {
+        "first_mass_failure_index": 24,
+        "static_gate_pass": true,
+        "all_samples_through_t001_pass_mass": true,
+        "mass_exit_in_frozen_window": true,
+        "signed_gate_at_first_mass_exit": true,
+        "initial_margin_rate_positive": true,
+        "exit_full_radial_polarization_rates_negative": true,
+        "first_exit_time": 0.0024000000000000002,
+        "last_pass_mass_fraction": 0.9003522714164276,
+        "first_fail_mass_fraction": 0.8971245033450508,
+        "signed_share_at_exit": 0.9179669220023174,
+        "half_step_difference": 1.1765228347115908e-08
+      },
+      "full_final": {
+        "first_mass_failure_index": 24,
+        "static_gate_pass": true,
+        "all_samples_through_t001_pass_mass": true,
+        "mass_exit_in_frozen_window": true,
+        "signed_gate_at_first_mass_exit": true,
+        "initial_margin_rate_positive": true,
+        "exit_full_radial_polarization_rates_negative": true,
+        "first_exit_time": 0.0024000000000000002,
+        "last_pass_mass_fraction": 0.9003208464144224,
+        "first_fail_mass_fraction": 0.8967448854201051,
+        "signed_share_at_exit": 0.9243488830695001,
+        "half_step_difference": 1.3253038777527593e-08
+      }
+    }
+  },
+  "mechanism_gate": {
+    "status": "N17 mechanism evaluation failed or unevaluable",
+    "joint_pass": false,
+    "failure_rules": [
+      "directional split failed: ((1, 7, 9), (2, 7, 15))"
+    ],
+    "interpretation": "retain this failure; do not retune the frozen test"
+  },
+  "posthoc_note": "The separate exploratory bypass did not change the frozen gate result."
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "wp19-v0.23-rk4-goal-adjoint-summary-v1",
+  "copyright": "Copyright (c) 2026 Prince Upadhyay. All Rights Reserved.",
+  "status": "PASS ROUTE-SELECTION GATE",
+  "maximum_objective_gradient_check_relative_error": 8.704375266985877e-8,
+  "maximum_relative_remainder": 0.012704462245505414,
+  "maximum_spectral_vjp_relative_error": 7.841785625131264e-9,
+  "route_survives_for_interval_rigorization": true,
+  "rows": [
+    {
+      "transition": "14->15",
+      "actual_delta_F11": 2.316136059835685,
+      "v0_20_dual_prediction": 2.303131578129127,
+      "v0_23_dual_prediction": 2.3192721117377064,
+      "v0_23_remainder": -0.003136051902021375,
+      "v0_23_relative_remainder": 0.0013540015875595226,
+      "v0_20_vs_v0_23_dual_abs_difference": 0.016140533608579588,
+      "objective_gradient_directional_check_relative_error": 3.44689455504061e-9,
+      "spectral_vjp_relative_error": 7.841785625131264e-9,
+      "terminal_adjoint_norm": 1935.4475319967478,
+      "initial_adjoint_norm": 1956.8951119659935,
+      "max_tail_rhs_norm": 123.97569561440373
+    },
+    {
+      "transition": "15->16",
+      "actual_delta_F11": 0.4379648531453313,
+      "v0_20_dual_prediction": 0.4329647111636107,
+      "v0_23_dual_prediction": 0.4383115262716416,
+      "v0_23_remainder": -0.0003466731263103151,
+      "v0_23_relative_remainder": 0.000791554673441518,
+      "v0_20_vs_v0_23_dual_abs_difference": 0.005346815108030922,
+      "objective_gradient_directional_check_relative_error": 1.3705365481687702e-8,
+      "spectral_vjp_relative_error": 7.841785625131264e-9,
+      "terminal_adjoint_norm": 1935.541615067667,
+      "initial_adjoint_norm": 1958.0680622845614,
+      "max_tail_rhs_norm": 90.80104423147066
+    },
+    {
+      "transition": "16->17",
+      "actual_delta_F11": 0.12918924582345426,
+      "v0_20_dual_prediction": 0.13233789167789065,
+      "v0_23_dual_prediction": 0.13083052571954365,
+      "v0_23_remainder": -0.0016412798960893926,
+      "v0_23_relative_remainder": 0.012704462245505414,
+      "v0_20_vs_v0_23_dual_abs_difference": 0.0015073659583469956,
+      "objective_gradient_directional_check_relative_error": 3.547688711769021e-8,
+      "spectral_vjp_relative_error": 7.841785625131264e-9,
+      "terminal_adjoint_norm": 1935.8631433176615,
+      "initial_adjoint_norm": 1959.076128919531,
+      "max_tail_rhs_norm": 65.10911319406823
+    },
+    {
+      "transition": "17->18",
+      "actual_delta_F11": -0.01899376515336826,
+      "v0_20_dual_prediction": -0.017293827409091196,
+      "v0_23_dual_prediction": -0.01897664937711219,
+      "v0_23_remainder": -0.000017115776256067944,
+      "v0_23_relative_remainder": 0.0009011260336149159,
+      "v0_20_vs_v0_23_dual_abs_difference": 0.0016828219680209942,
+      "objective_gradient_directional_check_relative_error": 8.704375266985877e-8,
+      "spectral_vjp_relative_error": 7.841785625131264e-9,
+      "terminal_adjoint_norm": 1935.7011104571873,
+      "initial_adjoint_norm": 1959.188229276583,
+      "max_tail_rhs_norm": 51.97695866157749
+    }
+  ],
+  "claim_boundary": "Floating independent cross-check only; no new interval, all-N, or continuum theorem.",
+  "workflow_run_id": 36716712866,
+  "workflow_artifact_digest": "sha256:7b4a4fe5f7deb085d1c524a2db95ce81064e55649a134b9e2f25cc26a82d3218"
+}

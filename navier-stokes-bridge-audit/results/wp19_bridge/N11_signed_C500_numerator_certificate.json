@@ -1,0 +1,18 @@
+{
+  "schema": "wp19-v0.10-signed-c500-numerator-certificate-v1",
+  "status": "PASS",
+  "N": 11,
+  "E_input_decimal": "0.00004588841",
+  "K36_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+  "C500_sha256": "79bdc347358705b4611f10f76a50db16e5edff572d1822ca1459cd868e15c216",
+  "K36_sign_locked_count": 36,
+  "normalizer_true_lower_bound_decimal": "51416.57915303983",
+  "normalizer_true_upper_bound_decimal": "51431.28998291358",
+  "nominal_signed_numerator_decimal": "-126446372544.2311",
+  "signed_numerator_error_upper_decimal": "7824215175.758824",
+  "true_signed_numerator_lower_decimal": "-134270587719.9899",
+  "true_signed_numerator_upper_decimal": "-118622157368.4723",
+  "certified_signed_numerator_negative": true,
+  "certified_G_upper_decimal": "-44.84468560750583",
+  "continuum_claim": false
+}

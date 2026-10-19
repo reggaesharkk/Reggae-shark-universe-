@@ -1,0 +1,25 @@
+{
+  "status": "executed WP18 isolated scale-2 triad reduction",
+  "exact_formula": "N2_high(theta)=-512 A^3 sin(theta), G=112 A^2, X2=1024 A^2",
+  "reduced_formula": "C_infinity(theta)=max(-7 sin(theta),0)/P_positive(theta)",
+  "phase_scan": {
+    "points": 361,
+    "quadrature_n": 192,
+    "best_sampled_theta": -1.5707963267948966,
+    "best_sampled_C_infinity": 5.0606747400550915
+  },
+  "refinement_at_minus_pi_over_2": [
+    {"n":256,"P_positive":1.3833366306960517,"C_infinity":5.060228902113161},
+    {"n":512,"P_positive":1.3834447906613687,"C_infinity":5.0598332851819725},
+    {"n":1024,"P_positive":1.3834731175965258,"C_infinity":5.059729683913866},
+    {"n":2048,"P_positive":1.383479817208421,"C_infinity":5.059705181767354},
+    {"n":4096,"P_positive":1.3834814931299562,"C_infinity":5.059699052542701}
+  ],
+  "artifact_digest": "sha256:a32b85b4eef025f28852ee2cf1bdb8a1f67b1873eea5ea694d2e375dce1b0680",
+  "comparison_to_WP17": {
+    "WP17_C96": 5.112932595467345,
+    "isolated_triad_C4096": 5.059699052542701,
+    "interpretation": "small satellite modes in the optimized ladder contribute a real finite interaction correction beyond the pure scale-2 triad"
+  },
+  "warning": "The phase maximum is finite-scan evidence and the positive-part integral is numerical quadrature. No global all-field supremum or L2-L3 theorem is claimed."
+}

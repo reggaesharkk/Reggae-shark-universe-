@@ -1,0 +1,28 @@
+{
+  "status": "executed and grid-refined WP17 sparse multiscale ladder adversary",
+  "objective": "C_infinity_stretch=max(N_H2_high,0)/(b_stretch*X2)",
+  "family": "scaled sparse triads m=1..L with A1=1 and searched relative amplitudes/phases",
+  "refined_C96": {
+    "L2": 5.058450685696028,
+    "L3": 5.057412076375342,
+    "L4": 5.082513236298816,
+    "L5": 5.081769741270571,
+    "L6": 5.112932595467345
+  },
+  "best_case": {
+    "L": 6,
+    "C32": 5.231658948549883,
+    "C48": 5.149040985635246,
+    "C64": 5.129943268292732,
+    "C96": 5.112932595467345,
+    "amplitudes": [1.0, 20.085536923187668, 0.049787068367863944, 0.2171527798601354, 0.049787068367863944, 0.14147102746208645],
+    "phases": [-3.003156442967318, -1.5708698100185097, -2.977730689860095, 2.023287979573299, 1.9851705838179707, -1.333169824255259],
+    "H1_signed_stretching": -259299.2026459395,
+    "H1_positive_stretching": 88327.01296497748,
+    "H2_high_transfer": 4148500.0840559984,
+    "chi_H2_high": 0.7993170811686907
+  },
+  "artifact_digest": "sha256:187fa4f160b5faca78c710a83ef24b7d423a074ebf2872cf3050a51ca01dedee",
+  "interpretation": "The refined adversarial benchmark rises to about 5.113 but does not grow with ladder length. All best ladders saturate the A2 search ceiling, indicating collapse toward a dominant scale-2 sparse-triad limit rather than an expanding cascade.",
+  "warning": "Finite sparse-family optimization only. No universal constant, asymptotic supremum or L2-L3 theorem is established."
+}

@@ -1,0 +1,75 @@
+{
+  "threshold_formula": "nu_star = positive nonlinear H1 growth / sum |k|^4 |a_k|^2",
+  "scaling": "Under u(x)->A u(mx), nu_star scales as A/m",
+  "independent_physical_space_growth": 4.8825839086877405,
+  "physical_vs_fourier_error": 4.440892098500626e-15,
+  "rows": [
+    {
+      "amplitude": 1,
+      "frequency_multiplier": 1,
+      "viscosity": 0.01,
+      "enstrophy": 19.794906881329815,
+      "nonlinear_enstrophy_growth": 4.882583908687745,
+      "viscous_enstrophy_damping": 1.0419498637605815,
+      "instantaneous_enstrophy_derivative": 3.8406340449271634,
+      "viscosity_threshold_nu_star": 0.04686006571434863,
+      "budget_error": 4.440892098500626e-16
+    },
+    {
+      "amplitude": 1,
+      "frequency_multiplier": 1,
+      "viscosity": 0.1,
+      "enstrophy": 19.794906881329815,
+      "nonlinear_enstrophy_growth": 4.882583908687745,
+      "viscous_enstrophy_damping": 10.419498637605816,
+      "instantaneous_enstrophy_derivative": -5.536914728918071,
+      "viscosity_threshold_nu_star": 0.04686006571434863,
+      "budget_error": 1.7763568394002505e-15
+    },
+    {
+      "amplitude": 5,
+      "frequency_multiplier": 1,
+      "viscosity": 0.1,
+      "enstrophy": 494.87267203324535,
+      "nonlinear_enstrophy_growth": 610.3229885859677,
+      "viscous_enstrophy_damping": 260.48746594014534,
+      "instantaneous_enstrophy_derivative": 349.8355226458223,
+      "viscosity_threshold_nu_star": 0.23430032857174302,
+      "budget_error": 2.8421709430404007e-13
+    },
+    {
+      "amplitude": 1,
+      "frequency_multiplier": 2,
+      "viscosity": 0.1,
+      "enstrophy": 79.17962752531926,
+      "nonlinear_enstrophy_growth": 39.06067126950196,
+      "viscous_enstrophy_damping": 166.71197820169306,
+      "instantaneous_enstrophy_derivative": -127.65130693219109,
+      "viscosity_threshold_nu_star": 0.023430032857174314,
+      "budget_error": 5.684341886080802e-14
+    },
+    {
+      "amplitude": 1,
+      "frequency_multiplier": 4,
+      "viscosity": 0.1,
+      "enstrophy": 316.71851010127705,
+      "nonlinear_enstrophy_growth": 312.4853701560157,
+      "viscous_enstrophy_damping": 2667.391651227089,
+      "instantaneous_enstrophy_derivative": -2354.9062810710734,
+      "viscosity_threshold_nu_star": 0.011715016428587157,
+      "budget_error": 0.0
+    },
+    {
+      "amplitude": 5,
+      "frequency_multiplier": 4,
+      "viscosity": 0.1,
+      "enstrophy": 7917.962752531926,
+      "nonlinear_enstrophy_growth": 39060.67126950193,
+      "viscous_enstrophy_damping": 66684.79128067721,
+      "instantaneous_enstrophy_derivative": -27624.120011175277,
+      "viscosity_threshold_nu_star": 0.058575082142935754,
+      "budget_error": 7.275957614183426e-12
+    }
+  ],
+  "limit": "An instantaneous positive derivative is not a finite-time singularity."
+}

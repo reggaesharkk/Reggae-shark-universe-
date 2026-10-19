@@ -1,0 +1,11 @@
+{
+  "schema": "wp19-v0.14-wolfram-lattice-check-v1",
+  "projector": "P11",
+  "condition": "0 < k1^2+k2^2+k3^2 <= 121",
+  "nonzero_integer_mode_count": 5574,
+  "sum_squared_norms": 404724,
+  "sqrt_sum_squared_norms": 636.1792200315882685,
+  "wolfram_language_expression": "pts = Select[Tuples[Range[-11,11],3], 0 < Total[#^2] <= 121 &]; {Length[pts], Total[Total[#^2]& /@ pts], N[Sqrt[Total[Total[#^2]& /@ pts]],20]}",
+  "status": "independently recomputed with Wolfram Language",
+  "claim_boundary": "finite lattice enumeration supporting the explicit fixed-output constant only"
+}

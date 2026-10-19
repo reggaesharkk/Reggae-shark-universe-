@@ -1,0 +1,60 @@
+{
+  "claim_boundary": "Terminal objective/gradient intervalization only; no interval backward adjoint, all-N transfer, or continuum theorem.",
+  "copyright": "Copyright (c) 2026 Prince Upadhyay. All Rights Reserved.",
+  "maximum_arb_width_over_abs_prediction": 3e-18,
+  "maximum_finite_difference_relative_error": 1.1176688676425961e-07,
+  "next_target": "Arb residual/enclosure certificate for backward adjoint propagation around the floating half-step adjoint reconstruction, then rigorous dual quadrature.",
+  "proceed_to_interval_adjoint_propagation": true,
+  "rows": [
+    {
+      "analytic_gradient_L2": 4691959667101.259,
+      "arb_linear_lower": "5757388589.282617",
+      "arb_linear_upper": "5757388589.282621",
+      "arb_width_over_abs_prediction": "3E-18",
+      "finite_difference_relative_error": 5.7879350181834046e-09,
+      "gradient_L2_upper_decimal": "4691959667101.255187",
+      "linear_prediction": 5757388589.282795,
+      "objective_complex128": -137927743305.7193,
+      "status": "PASS 128-BIT ARB TERMINAL-GRADIENT CERTIFICATE",
+      "transition": "14->15"
+    },
+    {
+      "analytic_gradient_L2": 4693885687244.996,
+      "arb_linear_lower": "1022749302.136833",
+      "arb_linear_upper": "1022749302.136838",
+      "arb_width_over_abs_prediction": "3E-18",
+      "finite_difference_relative_error": 4.6397074570062245e-08,
+      "gradient_L2_upper_decimal": "4693885687244.997204",
+      "linear_prediction": 1022749302.1367447,
+      "objective_complex128": -132169054840.09792,
+      "status": "PASS 128-BIT ARB TERMINAL-GRADIENT CERTIFICATE",
+      "transition": "15->16"
+    },
+    {
+      "analytic_gradient_L2": 4695147409827.676,
+      "arb_linear_lower": "259166849.114831",
+      "arb_linear_upper": "259166849.114835",
+      "arb_width_over_abs_prediction": "3E-18",
+      "finite_difference_relative_error": 1.1176688676425961e-07,
+      "gradient_L2_upper_decimal": "4695147409827.675138",
+      "linear_prediction": 259166849.11516672,
+      "objective_complex128": -131146208004.03012,
+      "status": "PASS 128-BIT ARB TERMINAL-GRADIENT CERTIFICATE",
+      "transition": "16->17"
+    },
+    {
+      "analytic_gradient_L2": 4695324835717.128,
+      "arb_linear_lower": "-72146755.96073",
+      "arb_linear_upper": "-72146755.960725",
+      "arb_width_over_abs_prediction": "3E-18",
+      "finite_difference_relative_error": 3.403291924899939e-08,
+      "gradient_L2_upper_decimal": "4695324835717.131266",
+      "linear_prediction": -72146755.9607733,
+      "objective_complex128": -130887027583.27917,
+      "status": "PASS 128-BIT ARB TERMINAL-GRADIENT CERTIFICATE",
+      "transition": "17->18"
+    }
+  ],
+  "schema": "wp19-v0.27-terminal-gradient-arb-summary-v1",
+  "status": "PASS TERMINAL-GRADIENT INTERVALIZATION"
+}

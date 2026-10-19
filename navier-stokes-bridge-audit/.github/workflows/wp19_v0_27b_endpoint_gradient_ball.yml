@@ -1,0 +1,246 @@
+name: WP19 v0.27b endpoint gradient ball Arb
+
+on:
+  push:
+    branches: [wp19-v0.27b-endpoint-gradient-ball]
+    paths:
+      - '.github/workflows/wp19_v0_27b_endpoint_gradient_ball.yml'
+      - 'src/wp19_v0_27b_endpoint_gradient_ball.py'
+      - 'src/wp19_v0_27a_terminal_gradient_arb.py'
+      - 'notes/WP19_v0_27b_ENDPOINT_GRADIENT_BALL_ARB.md'
+      - 'notes/WP19_v0_27_RECOVERY_CHECKPOINT_2026_09_30.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  prepare-c500:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install NumPy
+        run: python -m pip install numpy==2.3.5
+
+      - name: Reproduce historical N11 predictor exactly
+        run: |
+          set -euxo pipefail
+          mkdir -p work/c500
+          python - <<'PY'
+          import hashlib,sys
+          from pathlib import Path
+          import numpy as np
+          root=Path('.').resolve()
+          sys.path.insert(0,str(root/'src'))
+          import wp16_036_sparse_turnover_exact_anchor as exact
+          import wp16_036_sparse_turnover_witness as witness_mod
+          from wp16_036_dealiased_trajectory_gate import DealiasedSystem
+
+          witness=root/'results/wp16_n17_holdout/wp16_036_sparse_turnover_112_pairs.json'
+          modes,_,sha=exact.input_state(witness)
+          expected='4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624'
+          assert sha==expected,sha
+          s=DealiasedSystem(witness_mod.N)
+          a=np.asarray([
+              [complex(float(v[0]),float(v[1]))
+               for v in modes.get(k,(exact.ZERO,)*3)]
+              for k in s.modes
+          ],dtype=np.complex128)
+          nodes=np.lib.format.open_memmap(
+              'work/c500/n11_nodes.npy',mode='w+',dtype=np.complex128,
+              shape=(121,len(s.modes),3)
+          )
+          for step in range(121):
+              nodes[step]=a
+              if step<120:
+                  a=s.rk4(a,0.000025)
+          nodes.flush()
+          got=hashlib.sha256(Path('work/c500/n11_nodes.npy').read_bytes()).hexdigest()
+          exp='b70bf7f7fe85a8c073c02c80e54e1f10d0642f5d030dfe569470c5970ebdda29'
+          assert got==exp,(got,exp)
+          print('N11 predictor SHA PASS',got)
+          PY
+
+      - name: Rebuild portable frozen C500
+        run: |
+          python src/wp19_v0_25_rebuild_c500_portable.py \
+            --repo . \
+            --n11-nodes work/c500/n11_nodes.npy \
+            --k36 results/wp16_n12_holdout/frozen_K36_ordered_source_orbits.json \
+            --output work/c500/frozen_C500.json \
+            --report work/c500/C500_RECONSTRUCTION_REPORT.json
+          cat work/c500/C500_RECONSTRUCTION_REPORT.json
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-27b-frozen-c500
+          path: |
+            work/c500/frozen_C500.json
+            work/c500/C500_RECONSTRUCTION_REPORT.json
+          if-no-files-found: error
+          retention-days: 30
+
+  endpoint-ball:
+    needs: prepare-c500
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        M: [14,15,16,17]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install validated arithmetic dependencies
+        run: |
+          python -m pip install numpy==2.3.5 python-flint
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: wp19-v0-27b-frozen-c500
+          path: work/c500
+
+      - name: Download certified predictor endpoints
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euxo pipefail
+          M=${{ matrix.M }}
+          H=$((M+1))
+          mkdir -p work/lower work/higher
+          case "$M" in
+            14) gh run download 36608785015 --repo '${{ github.repository }}' --name wp19-n14-arb-certificate --dir work/lower ;;
+            15|16|17) gh run download 36669057015 --repo '${{ github.repository }}' --name wp19-same-datum-N$M-arb --dir work/lower ;;
+          esac
+          case "$H" in
+            15|16|17) gh run download 36669057015 --repo '${{ github.repository }}' --name wp19-same-datum-N$H-arb --dir work/higher ;;
+            18) gh run download 36706229638 --repo '${{ github.repository }}' --name wp19-same-datum-N18-arb-recovered --dir work/higher ;;
+          esac
+          for d in work/lower work/higher; do
+            test -f $d/nodes.npy
+            test -f $d/metadata.json
+          done
+
+      - name: Run endpoint gradient-ball Arb subcertificate
+        run: |
+          set -euxo pipefail
+          M=${{ matrix.M }}
+          H=$((M+1))
+          mkdir -p results/wp19_v0_27b
+          python src/wp19_v0_27b_endpoint_gradient_ball.py \
+            --repo . \
+            --M $M \
+            --lower-dir work/lower \
+            --higher-dir work/higher \
+            --k36 results/wp16_n12_holdout/frozen_K36_ordered_source_orbits.json \
+            --sign-chart results/wp19_bridge/frozen_K36_numerator_sign_chart_N13.json \
+            --c500 work/c500/frozen_C500.json \
+            --v026-result results/wp19_bridge/wp19_v0_26/M$M'_to_M'$H.json \
+            --output results/wp19_v0_27b/M$M'_endpoint_gradient_ball.json'
+
+      - name: Fail closed on integrity
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          M=int('${{ matrix.M }}')
+          p=Path(f'results/wp19_v0_27b/M{M}_endpoint_gradient_ball.json')
+          x=json.loads(p.read_text())
+          assert x['integrity_pass'] is True,x
+          assert x['status'].startswith('PASS ENDPOINT-GRADIENT-BALL ARB SUBCERTIFICATE'),x
+          assert x['endpoint_box']['contains_nominal_objective'] is True,x
+          assert x['endpoint_box']['contains_every_nominal_gradient_component'] is True,x
+          print(json.dumps({
+              'M':M,
+              'status':x['status'],
+              'budget_closing':x['budget_closing'],
+              'taylor_over_margin':x['rigorous_budgets']['endpoint_first_order_taylor_remainder_over_margin_upper_decimal'],
+          },indent=2))
+          PY
+
+      - name: Record hash
+        run: sha256sum results/wp19_v0_27b/*.json > results/wp19_v0_27b/SHA256SUMS.txt
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-27b-M${{ matrix.M }}
+          path: results/wp19_v0_27b
+          if-no-files-found: error
+          retention-days: 30
+
+  aggregate:
+    needs: endpoint-ball
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: wp19-v0-27b-M*
+          path: gathered
+
+      - name: Aggregate endpoint uncertainty gate
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          rows=[]
+          for M in (14,15,16,17):
+              p=Path(f'gathered/wp19-v0-27b-M{M}/M{M}_endpoint_gradient_ball.json')
+              x=json.loads(p.read_text())
+              rows.append({
+                  'M':M,
+                  'transition':x['transition'],
+                  'status':x['status'],
+                  'integrity_pass':x['integrity_pass'],
+                  'budget_closing':x['budget_closing'],
+                  'terminal_radius':x['certified_endpoint_uncertainty']['lower_cutoff_terminal_L2_error_upper_decimal'],
+                  'gradient_variation_L2_upper':x['endpoint_box']['gradient_variation_L2_upper_decimal'],
+                  'taylor_remainder_over_margin_upper':x['rigorous_budgets']['endpoint_first_order_taylor_remainder_over_margin_upper_decimal'],
+                  'linear_uncertainty_over_margin_upper':x['rigorous_budgets']['linear_terminal_state_uncertainty_over_margin_upper_decimal'],
+                  'direct_objective_box_deviation_over_margin_upper':x['rigorous_budgets']['direct_objective_box_deviation_over_margin_upper_decimal'],
+              })
+          integrity=all(r['integrity_pass'] for r in rows)
+          all_budget=all(r['budget_closing'] for r in rows)
+          if not integrity:
+              raise SystemExit('integrity failure in one or more v0.27b rows')
+          summary={
+              'schema':'wp19-v0.27b-endpoint-gradient-ball-arb-summary-v1',
+              'status':'PASS ENDPOINT-GRADIENT-BALL ARB SUBCERTIFICATE',
+              'all_four_endpoint_taylor_budgets_below_base_margin':all_budget,
+              'maximum_taylor_remainder_over_margin_upper':max(float(r['taylor_remainder_over_margin_upper']) for r in rows),
+              'maximum_linear_uncertainty_over_margin_upper':max(float(r['linear_uncertainty_over_margin_upper']) for r in rows),
+              'rows':rows,
+              'next_target':(
+                  'v0.27c: interval backward-adjoint propagation'
+                  if all_budget else
+                  'structured L2/tangent Hessian or directional endpoint enclosure before interval backward-adjoint propagation'
+              ),
+              'claim_boundary':'Finite-dimensional endpoint uncertainty certificate only; no all-N or continuum theorem.'
+          }
+          Path('final').mkdir()
+          Path('final/WP19_v0_27b_SUMMARY.json').write_text(json.dumps(summary,indent=2,sort_keys=True)+'\n')
+          for p in Path('gathered').glob('wp19-v0-27b-M*/M*_endpoint_gradient_ball.json'):
+              (Path('final')/p.name).write_bytes(p.read_bytes())
+          print(json.dumps(summary,indent=2))
+          PY
+
+      - name: Record final hashes
+        run: find final -type f -print0 | sort -z | xargs -0 sha256sum > final/SHA256SUMS.txt
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-27b-endpoint-gradient-ball-arb
+          path: final
+          if-no-files-found: error
+          retention-days: 30

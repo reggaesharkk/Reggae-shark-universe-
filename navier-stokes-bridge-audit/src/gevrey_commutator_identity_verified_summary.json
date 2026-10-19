@@ -1,0 +1,201 @@
+{
+  "status": "Executed finite-Galerkin identity check; no large-data estimate",
+  "s": 2.0,
+  "nu": 0.1,
+  "dt": 0.0005,
+  "interval": [
+    0.0,
+    0.005
+  ],
+  "cutoffs": [
+    4,
+    7
+  ],
+  "scenarios": [
+    "reference",
+    "combined_double_quarter_high"
+  ],
+  "max_relative_error": 4.739157762474473e-15,
+  "max_transport_relative_error": 1.2868319721581794e-15,
+  "max_shell_relative_error": 4.164661346394873e-15,
+  "max_partition_error": 3.3306690738754696e-16,
+  "rows": [
+    {
+      "N": 4,
+      "scenario": "reference",
+      "time": 0.0,
+      "weights": {
+        "zero_radius": {
+          "sigma": 0.0,
+          "nonlinear": 1306.6442451714731,
+          "relative_error": 5.220403555523104e-16
+        },
+        "persistence": {
+          "sigma": 0.2,
+          "nonlinear": 4387.0988500630465,
+          "relative_error": 8.292447768847132e-16
+        },
+        "smoothing": {
+          "sigma": 0.0,
+          "nonlinear": 1306.6442451714731,
+          "relative_error": 5.220403555523104e-16
+        }
+      }
+    },
+    {
+      "N": 4,
+      "scenario": "reference",
+      "time": 0.005,
+      "weights": {
+        "zero_radius": {
+          "sigma": 0.0,
+          "nonlinear": 2214.0076821845023,
+          "relative_error": 8.215822457088804e-16
+        },
+        "persistence": {
+          "sigma": 0.1975,
+          "nonlinear": 7216.61371020834,
+          "relative_error": 5.041116170518549e-16
+        },
+        "smoothing": {
+          "sigma": 0.00223606797749979,
+          "nonlinear": 2243.1671674485956,
+          "relative_error": 6.081767210470975e-16
+        }
+      }
+    },
+    {
+      "N": 7,
+      "scenario": "reference",
+      "time": 0.0,
+      "weights": {
+        "zero_radius": {
+          "sigma": 0.0,
+          "nonlinear": 1306.6442451714731,
+          "relative_error": 5.220403555523104e-16
+        },
+        "persistence": {
+          "sigma": 0.2,
+          "nonlinear": 4387.0988500630465,
+          "relative_error": 8.292447768847132e-16
+        },
+        "smoothing": {
+          "sigma": 0.0,
+          "nonlinear": 1306.6442451714731,
+          "relative_error": 5.220403555523104e-16
+        }
+      }
+    },
+    {
+      "N": 7,
+      "scenario": "reference",
+      "time": 0.005,
+      "weights": {
+        "zero_radius": {
+          "sigma": 0.0,
+          "nonlinear": 3429.9622883375887,
+          "relative_error": 2.6516172054292064e-16
+        },
+        "persistence": {
+          "sigma": 0.1975,
+          "nonlinear": 15331.463826593726,
+          "relative_error": 3.5593262798376724e-16
+        },
+        "smoothing": {
+          "sigma": 0.00223606797749979,
+          "nonlinear": 3485.795568426677,
+          "relative_error": 1.0436581077913654e-15
+        }
+      }
+    },
+    {
+      "N": 4,
+      "scenario": "combined_double_quarter_high",
+      "time": 0.0,
+      "weights": {
+        "zero_radius": {
+          "sigma": 0.0,
+          "nonlinear": 839.1526099321914,
+          "relative_error": 2.1676502962826294e-15
+        },
+        "persistence": {
+          "sigma": 0.2,
+          "nonlinear": 4208.027871404247,
+          "relative_error": 1.512932686514257e-15
+        },
+        "smoothing": {
+          "sigma": 0.0,
+          "nonlinear": 839.1526099321914,
+          "relative_error": 2.1676502962826294e-15
+        }
+      }
+    },
+    {
+      "N": 4,
+      "scenario": "combined_double_quarter_high",
+      "time": 0.005,
+      "weights": {
+        "zero_radius": {
+          "sigma": 0.0,
+          "nonlinear": 13434.552103547496,
+          "relative_error": 1.624756275781346e-15
+        },
+        "persistence": {
+          "sigma": 0.1975,
+          "nonlinear": 50430.4834382242,
+          "relative_error": 1.2984927778427163e-15
+        },
+        "smoothing": {
+          "sigma": 0.00223606797749979,
+          "nonlinear": 13630.579132337738,
+          "relative_error": 4.136924114701978e-15
+        }
+      }
+    },
+    {
+      "N": 7,
+      "scenario": "combined_double_quarter_high",
+      "time": 0.0,
+      "weights": {
+        "zero_radius": {
+          "sigma": 0.0,
+          "nonlinear": 839.1526099321914,
+          "relative_error": 2.1676502962826294e-15
+        },
+        "persistence": {
+          "sigma": 0.2,
+          "nonlinear": 4208.027871404247,
+          "relative_error": 1.512932686514257e-15
+        },
+        "smoothing": {
+          "sigma": 0.0,
+          "nonlinear": 839.1526099321914,
+          "relative_error": 2.1676502962826294e-15
+        }
+      }
+    },
+    {
+      "N": 7,
+      "scenario": "combined_double_quarter_high",
+      "time": 0.005,
+      "weights": {
+        "zero_radius": {
+          "sigma": 0.0,
+          "nonlinear": 153528.49554399314,
+          "relative_error": 4.739157762474473e-15
+        },
+        "persistence": {
+          "sigma": 0.1975,
+          "nonlinear": 1302219.4116539145,
+          "relative_error": 1.4303619901236617e-15
+        },
+        "smoothing": {
+          "sigma": 0.00223606797749979,
+          "nonlinear": 157236.3586881717,
+          "relative_error": 3.3317290771158985e-15
+        }
+      }
+    }
+  ],
+  "scope": "This exact commutator expansion does not prove the one-sided time-integrated reservation or a continuum radius."
+}

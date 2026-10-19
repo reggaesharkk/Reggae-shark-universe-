@@ -1,0 +1,296 @@
+{
+  "status": "post-hoc finite N12/N13 K36 turnover source-rate summary; no retuning",
+  "inputs_sha256": {
+    "n10_n11": "34a10cf119ab6614c46d29540c4d4701eab082229582fb0a8189add0cd8f96a5",
+    "n12": "ec07d1a263eb43c1a1d6228164ba80a4e29b90b6206bb606c612192a4ee38855",
+    "n13": "13e5e56676b9398e7c7ec32f55e32a4d07dec5a3830c67787c6cd6fb5c8e59cd",
+    "source": "193cbb7f485ab54ceed0d5cb38f97f0fc98c197e5f88e288fdbd277627608c8e"
+  },
+  "dt": 0.0001,
+  "h": 1e-8,
+  "recurrent_orbit": {
+    "left": [
+      3,
+      3,
+      4
+    ],
+    "right": [
+      0,
+      2,
+      3
+    ]
+  },
+  "snapshots": [
+    {
+      "N": 12,
+      "state": "inherited",
+      "t": 0,
+      "I_rate": 503757.2557245351,
+      "O_rate": 11381.767810143854,
+      "F_rate": 401321.3454332404,
+      "leading_outside_growth": {
+        "left": [
+          1,
+          1,
+          1
+        ],
+        "right": [
+          1,
+          2,
+          7
+        ],
+        "rate": 3696.199117708687
+      },
+      "recurrent_orbit_rate": -3961.398793284054
+    },
+    {
+      "N": 12,
+      "state": "inherited",
+      "t": 0.001,
+      "I_rate": 82978.8746105342,
+      "O_rate": 37243.39468887275,
+      "F_rate": -252211.67758932055,
+      "leading_outside_growth": {
+        "left": [
+          3,
+          3,
+          4
+        ],
+        "right": [
+          0,
+          2,
+          3
+        ],
+        "rate": 13224.11576039073
+      },
+      "recurrent_orbit_rate": 13224.11576039073
+    },
+    {
+      "N": 12,
+      "state": "target_only",
+      "t": 0,
+      "I_rate": 503761.705343031,
+      "O_rate": 11381.283082905304,
+      "F_rate": 401330.15759688325,
+      "leading_outside_growth": {
+        "left": [
+          1,
+          1,
+          1
+        ],
+        "right": [
+          1,
+          2,
+          7
+        ],
+        "rate": 3696.102442241056
+      },
+      "recurrent_orbit_rate": -3961.345676861683
+    },
+    {
+      "N": 12,
+      "state": "target_only",
+      "t": 0.001,
+      "I_rate": 82984.4180167072,
+      "O_rate": 37238.026596990174,
+      "F_rate": -252157.82135620437,
+      "leading_outside_growth": {
+        "left": [
+          3,
+          3,
+          4
+        ],
+        "right": [
+          0,
+          2,
+          3
+        ],
+        "rate": 13224.359492225445
+      },
+      "recurrent_orbit_rate": 13224.359492225445
+    },
+    {
+      "N": 12,
+      "state": "full_final",
+      "t": 0,
+      "I_rate": 373656.8874869284,
+      "O_rate": 18200.30288989308,
+      "F_rate": 209854.16147789068,
+      "leading_outside_growth": {
+        "left": [
+          2,
+          3,
+          3
+        ],
+        "right": [
+          0,
+          2,
+          3
+        ],
+        "rate": 4912.9796008989815
+      },
+      "recurrent_orbit_rate": -2855.7854387267766
+    },
+    {
+      "N": 12,
+      "state": "full_final",
+      "t": 0.001,
+      "I_rate": 212112.7175614412,
+      "O_rate": 49727.97762050926,
+      "F_rate": -235439.08102314212,
+      "leading_outside_growth": {
+        "left": [
+          3,
+          3,
+          4
+        ],
+        "right": [
+          0,
+          2,
+          3
+        ],
+        "rate": 13445.566538994313
+      },
+      "recurrent_orbit_rate": 13445.566538994313
+    },
+    {
+      "N": 13,
+      "state": "inherited",
+      "t": 0,
+      "I_rate": 375594.3412939833,
+      "O_rate": 18538.919315777184,
+      "F_rate": 208744.0674519886,
+      "leading_outside_growth": {
+        "left": [
+          2,
+          3,
+          3
+        ],
+        "right": [
+          0,
+          2,
+          3
+        ],
+        "rate": 4910.316794690117
+      },
+      "recurrent_orbit_rate": -2870.9209605626284
+    },
+    {
+      "N": 13,
+      "state": "inherited",
+      "t": 0.001,
+      "I_rate": 184492.90270518558,
+      "O_rate": 50077.037423923146,
+      "F_rate": -266200.43411012273,
+      "leading_outside_growth": {
+        "left": [
+          3,
+          3,
+          4
+        ],
+        "right": [
+          0,
+          2,
+          3
+        ],
+        "rate": 13260.982206331206
+      },
+      "recurrent_orbit_rate": 13260.982206331206
+    },
+    {
+      "N": 13,
+      "state": "target_only",
+      "t": 0,
+      "I_rate": 314218.07464997453,
+      "O_rate": 14091.800226725461,
+      "F_rate": 187391.87260944536,
+      "leading_outside_growth": {
+        "left": [
+          2,
+          3,
+          3
+        ],
+        "right": [
+          0,
+          2,
+          3
+        ],
+        "rate": 4909.7752065963
+      },
+      "recurrent_orbit_rate": -3719.0407753628915
+    },
+    {
+      "N": 13,
+      "state": "target_only",
+      "t": 0.001,
+      "I_rate": 56749.21423625134,
+      "O_rate": 38729.844611799555,
+      "F_rate": -291819.38726994465,
+      "leading_outside_growth": {
+        "left": [
+          3,
+          3,
+          4
+        ],
+        "right": [
+          0,
+          2,
+          3
+        ],
+        "rate": 12044.979530489996
+      },
+      "recurrent_orbit_rate": 12044.979530489996
+    },
+    {
+      "N": 13,
+      "state": "full_final",
+      "t": 0,
+      "I_rate": 289525.6810119373,
+      "O_rate": 18694.350073095702,
+      "F_rate": 121276.530354076,
+      "leading_outside_growth": {
+        "left": [
+          2,
+          3,
+          3
+        ],
+        "right": [
+          0,
+          2,
+          3
+        ],
+        "rate": 5003.782606638474
+      },
+      "recurrent_orbit_rate": -1696.4811502706566
+    },
+    {
+      "N": 13,
+      "state": "full_final",
+      "t": 0.001,
+      "I_rate": 67719.36104461584,
+      "O_rate": 34063.93497155898,
+      "F_rate": -238856.05369941494,
+      "leading_outside_growth": {
+        "left": [
+          3,
+          3,
+          4
+        ],
+        "right": [
+          0,
+          2,
+          3
+        ],
+        "rate": 9597.678508110885
+      },
+      "recurrent_orbit_rate": 9597.678508110885
+    }
+  ],
+  "stability_check_N13_inherited_t0": {
+    "5e-09": 208744.06745301446,
+    "1e-08": 208744.0674519886,
+    "2e-08": 208744.06745008568
+  },
+  "recurrent_orbit_interpretation": "At t=0 the recurrent orbit's absolute mass rate is negative in all six states; by t=0.001 it is the largest outside-K36 growth rate in all six. The same ordered orbit is later the largest outside-mass decrease in the separate N16 full_final-minus-inherited state comparison at t=0.0023. The latter is not a time derivative.",
+  "claim_boundary": "post-hoc finite-cutoff mechanism evidence only; no K36 retuning, uniform-in-N source law, continuum limit, or Navier-Stokes regularity claim"
+}

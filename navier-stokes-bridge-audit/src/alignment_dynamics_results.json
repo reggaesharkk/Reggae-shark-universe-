@@ -1,0 +1,454 @@
+{
+  "identity": "(log G)/2 derivative = (T/M)(M/G) - nu D/G when G,M>0",
+  "limitations": "The five local alignment samples and 41 scalar samples cover only [0,0.02] for selected finite cutoffs; monotonicity between snapshots, long-time cancellation, and cutoff-uniform control are not established.",
+  "rows": [
+    {
+      "scenario": "reference",
+      "N": 4,
+      "samples": [
+        {
+          "time": 0.0,
+          "alignment": 0.02431473638239478,
+          "max_strain_per_enstrophy": 13.92734654271159,
+          "transfer_per_enstrophy": 0.3386397596922896,
+          "viscous_rate": 0.5228400001376873,
+          "half_log_G_rate": -0.18420024044539768
+        },
+        {
+          "time": 0.005,
+          "alignment": 0.03752809280148139,
+          "max_strain_per_enstrophy": 13.83423525553236,
+          "transfer_per_enstrophy": 0.5191724645071439,
+          "viscous_rate": 0.5222032004886957,
+          "half_log_G_rate": -0.003030735981551791
+        },
+        {
+          "time": 0.01,
+          "alignment": 0.05044690143525354,
+          "max_strain_per_enstrophy": 13.756659309081128,
+          "transfer_per_enstrophy": 0.6939808362435786,
+          "viscous_rate": 0.5223528195580354,
+          "half_log_G_rate": 0.17162801668554328
+        },
+        {
+          "time": 0.015,
+          "alignment": 0.06285498771731979,
+          "max_strain_per_enstrophy": 13.696071056989352,
+          "transfer_per_enstrophy": 0.8608663780626048,
+          "viscous_rate": 0.5232881417887203,
+          "half_log_G_rate": 0.3375782362738845
+        },
+        {
+          "time": 0.02,
+          "alignment": 0.07455556409575688,
+          "max_strain_per_enstrophy": 13.653582562101127,
+          "transfer_per_enstrophy": 1.017950549845439,
+          "viscous_rate": 0.524988334009441,
+          "half_log_G_rate": 0.4929622158359981
+        }
+      ],
+      "five_point_integral_M_over_G": 0.27535912162176973,
+      "five_point_integral_T_over_G": 0.0137745122538398,
+      "five_point_integral_nuD_over_G": 0.010457498903954773,
+      "envelope_weighted_signed_alignment": 0.050023809535390366,
+      "dense_integral_T_over_G": 0.013774477460162096,
+      "dense_integral_positive_T_over_G": 0.013774477460162096,
+      "dense_integral_nuD_over_G": 0.010457501100833213,
+      "five_minus_dense_T_over_G": 3.479367770460595e-08,
+      "half_log_G_change": 0.0033169763554262814,
+      "dense_log_budget_residual": -3.902602199734595e-12
+    },
+    {
+      "scenario": "reference",
+      "N": 5,
+      "samples": [
+        {
+          "time": 0.0,
+          "alignment": 0.02431473638239478,
+          "max_strain_per_enstrophy": 13.92734654271159,
+          "transfer_per_enstrophy": 0.3386397596922896,
+          "viscous_rate": 0.5228400001376873,
+          "half_log_G_rate": -0.18420024044539768
+        },
+        {
+          "time": 0.005,
+          "alignment": 0.04361527039262981,
+          "max_strain_per_enstrophy": 13.826340675276143,
+          "transfer_per_enstrophy": 0.6030395870927848,
+          "viscous_rate": 0.5230900482497989,
+          "half_log_G_rate": 0.07994953884298595
+        },
+        {
+          "time": 0.01,
+          "alignment": 0.062397147091924524,
+          "max_strain_per_enstrophy": 13.768553917733184,
+          "transfer_per_enstrophy": 0.8591184840478912,
+          "viscous_rate": 0.5258561728815643,
+          "half_log_G_rate": 0.3332623111663269
+        },
+        {
+          "time": 0.015,
+          "alignment": 0.08020638753093626,
+          "max_strain_per_enstrophy": 13.756250893908225,
+          "transfer_per_enstrophy": 1.1033391901695915,
+          "viscous_rate": 0.5310473785621697,
+          "half_log_G_rate": 0.5722918116074218
+        },
+        {
+          "time": 0.02,
+          "alignment": 0.09664106289112698,
+          "max_strain_per_enstrophy": 13.790433977895185,
+          "transfer_per_enstrophy": 1.332722197353703,
+          "viscous_rate": 0.5385259832020486,
+          "half_log_G_rate": 0.7941962141516543
+        }
+      ],
+      "five_point_integral_M_over_G": 0.2759754243880177,
+      "five_point_integral_T_over_G": 0.017025190056985468,
+      "five_point_integral_nuD_over_G": 0.010549380060584566,
+      "envelope_weighted_signed_alignment": 0.061690964312272535,
+      "dense_integral_T_over_G": 0.01702513000191841,
+      "dense_integral_positive_T_over_G": 0.01702513000191841,
+      "dense_integral_nuD_over_G": 0.010549385163435197,
+      "five_minus_dense_T_over_G": 6.005506705819563e-08,
+      "half_log_G_change": 0.006475744831812765,
+      "dense_log_budget_residual": -6.6704471807232935e-12
+    },
+    {
+      "scenario": "reference",
+      "N": 6,
+      "samples": [
+        {
+          "time": 0.0,
+          "alignment": 0.02431473638239478,
+          "max_strain_per_enstrophy": 13.92734654271159,
+          "transfer_per_enstrophy": 0.3386397596922896,
+          "viscous_rate": 0.5228400001376873,
+          "half_log_G_rate": -0.18420024044539768
+        },
+        {
+          "time": 0.005,
+          "alignment": 0.043697166206902054,
+          "max_strain_per_enstrophy": 13.827955592934146,
+          "transfer_per_enstrophy": 0.6042424738461042,
+          "viscous_rate": 0.5231141297854307,
+          "half_log_G_rate": 0.08112834406067349
+        },
+        {
+          "time": 0.01,
+          "alignment": 0.06261571382036592,
+          "max_strain_per_enstrophy": 13.775581931440234,
+          "transfer_per_enstrophy": 0.8625678959280653,
+          "viscous_rate": 0.5259764255606654,
+          "half_log_G_rate": 0.3365914703673999
+        },
+        {
+          "time": 0.015,
+          "alignment": 0.0806512922613033,
+          "max_strain_per_enstrophy": 13.772657605166057,
+          "transfer_per_enstrophy": 1.1107826337291091,
+          "viscous_rate": 0.5313998031927356,
+          "half_log_G_rate": 0.5793828305363735
+        },
+        {
+          "time": 0.02,
+          "alignment": 0.09741543027254192,
+          "max_strain_per_enstrophy": 13.8203011939413,
+          "transfer_per_enstrophy": 1.3463105873039165,
+          "viscous_rate": 0.5393349145303169,
+          "half_log_G_rate": 0.8069756727735996
+        }
+      ],
+      "five_point_integral_M_over_G": 0.2761687739865569,
+      "five_point_integral_T_over_G": 0.01711697761525532,
+      "five_point_integral_nuD_over_G": 0.010553639162836668,
+      "envelope_weighted_signed_alignment": 0.0619801339889662,
+      "dense_integral_T_over_G": 0.01711694975289808,
+      "dense_integral_positive_T_over_G": 0.01711694975289808,
+      "dense_integral_nuD_over_G": 0.010553641464254969,
+      "five_minus_dense_T_over_G": 2.7862357240837632e-08,
+      "half_log_G_change": 0.006563308284855011,
+      "dense_log_budget_residual": -3.78810004197927e-12
+    },
+    {
+      "scenario": "reference",
+      "N": 7,
+      "samples": [
+        {
+          "time": 0.0,
+          "alignment": 0.02431473638239478,
+          "max_strain_per_enstrophy": 13.92734654271159,
+          "transfer_per_enstrophy": 0.3386397596922896,
+          "viscous_rate": 0.5228400001376873,
+          "half_log_G_rate": -0.18420024044539768
+        },
+        {
+          "time": 0.005,
+          "alignment": 0.04370673911272297,
+          "max_strain_per_enstrophy": 13.827922579865598,
+          "transfer_per_enstrophy": 0.6043734046691169,
+          "viscous_rate": 0.5231161605778928,
+          "half_log_G_rate": 0.08125724409122415
+        },
+        {
+          "time": 0.01,
+          "alignment": 0.06269312199313924,
+          "max_strain_per_enstrophy": 13.77530963880203,
+          "transfer_per_enstrophy": 0.8636171676786826,
+          "viscous_rate": 0.5260088258828661,
+          "half_log_G_rate": 0.33760834179581645
+        },
+        {
+          "time": 0.015,
+          "alignment": 0.08090920938657371,
+          "max_strain_per_enstrophy": 13.771853409332932,
+          "transfer_per_enstrophy": 1.1142697711369172,
+          "viscous_rate": 0.5315613766911587,
+          "half_log_G_rate": 0.5827083944457585
+        },
+        {
+          "time": 0.02,
+          "alignment": 0.0980057872491196,
+          "max_strain_per_enstrophy": 13.818737985338165,
+          "transfer_per_enstrophy": 1.3543162950423797,
+          "viscous_rate": 0.5398319888324161,
+          "half_log_G_rate": 0.8144843062099636
+        }
+      ],
+      "five_point_integral_M_over_G": 0.27615967960407994,
+      "five_point_integral_T_over_G": 0.017157938488860287,
+      "five_point_integral_nuD_over_G": 0.010555666316353404,
+      "envelope_weighted_signed_alignment": 0.0621304982445627,
+      "dense_integral_T_over_G": 0.017157928286101357,
+      "dense_integral_positive_T_over_G": 0.017157928286101357,
+      "dense_integral_nuD_over_G": 0.01055566478759637,
+      "five_minus_dense_T_over_G": 1.0202758929378497e-08,
+      "half_log_G_change": 0.006602263496545804,
+      "dense_log_budget_residual": -1.959182815980398e-12
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 4,
+      "samples": [
+        {
+          "time": 0.0,
+          "alignment": -2.8175563693018176e-18,
+          "max_strain_per_enstrophy": 28.50077069878465,
+          "transfer_per_enstrophy": -8.03025280123713e-17,
+          "viscous_rate": 0.7171300001007571,
+          "half_log_G_rate": -0.7171300001007572
+        },
+        {
+          "time": 0.005,
+          "alignment": 0.016197873590178408,
+          "max_strain_per_enstrophy": 28.3638420297752,
+          "transfer_per_enstrophy": 0.459433927730088,
+          "viscous_rate": 0.7156330432875481,
+          "half_log_G_rate": -0.25619911555746006
+        },
+        {
+          "time": 0.01,
+          "alignment": 0.02984051292108987,
+          "max_strain_per_enstrophy": 28.321760052169562,
+          "transfer_per_enstrophy": 0.8451358467847727,
+          "viscous_rate": 0.7150476404241825,
+          "half_log_G_rate": 0.13008820636059026
+        },
+        {
+          "time": 0.015,
+          "alignment": 0.04056130452170183,
+          "max_strain_per_enstrophy": 28.31778325398738,
+          "transfer_per_enstrophy": 1.1486062299445305,
+          "viscous_rate": 0.7146329206884627,
+          "half_log_G_rate": 0.4339733092560678
+        },
+        {
+          "time": 0.02,
+          "alignment": 0.04896700781863726,
+          "max_strain_per_enstrophy": 28.32518141948339,
+          "transfer_per_enstrophy": 1.386999380032162,
+          "viscous_rate": 0.7136935548196575,
+          "half_log_G_rate": 0.6733058252125046
+        }
+      ],
+      "five_point_integral_M_over_G": 0.5669932889294291,
+      "five_point_integral_T_over_G": 0.015849052840500304,
+      "five_point_integral_nuD_over_G": 0.014303304486121373,
+      "envelope_weighted_signed_alignment": 0.02795280499779065,
+      "dense_integral_T_over_G": 0.0158467833659876,
+      "dense_integral_positive_T_over_G": 0.0158467833659876,
+      "dense_integral_nuD_over_G": 0.014303304102905475,
+      "five_minus_dense_T_over_G": 2.269474512702624e-06,
+      "half_log_G_change": 0.0015434791019006146,
+      "dense_log_budget_residual": -1.6118151084654198e-10
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 5,
+      "samples": [
+        {
+          "time": 0.0,
+          "alignment": -2.8175563693018176e-18,
+          "max_strain_per_enstrophy": 28.50077069878465,
+          "transfer_per_enstrophy": -8.03025280123713e-17,
+          "viscous_rate": 0.7171300001007571,
+          "half_log_G_rate": -0.7171300001007572
+        },
+        {
+          "time": 0.005,
+          "alignment": 0.04930134412658896,
+          "max_strain_per_enstrophy": 28.088347366673442,
+          "transfer_per_enstrophy": 1.384793279471536,
+          "viscous_rate": 0.7265348093815257,
+          "half_log_G_rate": 0.6582584700900104
+        },
+        {
+          "time": 0.01,
+          "alignment": 0.09215360878369705,
+          "max_strain_per_enstrophy": 28.128469312854683,
+          "transfer_per_enstrophy": 2.5921399567410384,
+          "viscous_rate": 0.7585602429779316,
+          "half_log_G_rate": 1.8335797137631067
+        },
+        {
+          "time": 0.015,
+          "alignment": 0.11477649275774238,
+          "max_strain_per_enstrophy": 28.765577966554197,
+          "transfer_per_enstrophy": 3.3016121511504815,
+          "viscous_rate": 0.8048205332675157,
+          "half_log_G_rate": 2.4967916178829657
+        },
+        {
+          "time": 0.02,
+          "alignment": 0.11874873267152485,
+          "max_strain_per_enstrophy": 29.784771936030626,
+          "transfer_per_enstrophy": 3.536903920314036,
+          "viscous_rate": 0.8526272570683404,
+          "half_log_G_rate": 2.684276663245696
+        }
+      ],
+      "five_point_integral_M_over_G": 0.569930304322392,
+      "five_point_integral_T_over_G": 0.04577800926047364,
+      "five_point_integral_nuD_over_G": 0.015353831856201879,
+      "envelope_weighted_signed_alignment": 0.08032211818408314,
+      "dense_integral_T_over_G": 0.04575632768617885,
+      "dense_integral_positive_T_over_G": 0.04575632768617885,
+      "dense_integral_nuD_over_G": 0.015354173610573498,
+      "five_minus_dense_T_over_G": 2.1681574294787898e-05,
+      "half_log_G_change": 0.030402151523254456,
+      "dense_log_budget_residual": -2.5523508948716023e-09
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 6,
+      "samples": [
+        {
+          "time": 0.0,
+          "alignment": -2.8175563693018176e-18,
+          "max_strain_per_enstrophy": 28.50077069878465,
+          "transfer_per_enstrophy": -8.03025280123713e-17,
+          "viscous_rate": 0.7171300001007571,
+          "half_log_G_rate": -0.7171300001007572
+        },
+        {
+          "time": 0.005,
+          "alignment": 0.060018257953489126,
+          "max_strain_per_enstrophy": 28.10057538689199,
+          "transfer_per_enstrophy": 1.686547582211951,
+          "viscous_rate": 0.7314054595008678,
+          "half_log_G_rate": 0.9551421227110831
+        },
+        {
+          "time": 0.01,
+          "alignment": 0.1110151227670225,
+          "max_strain_per_enstrophy": 28.293846571082295,
+          "transfer_per_enstrophy": 3.1410448506399993,
+          "viscous_rate": 0.7761736131289179,
+          "half_log_G_rate": 2.3648712375110814
+        },
+        {
+          "time": 0.015,
+          "alignment": 0.14558930906250694,
+          "max_strain_per_enstrophy": 29.014452789270518,
+          "transfer_per_enstrophy": 4.2241941344166225,
+          "viscous_rate": 0.8470580851738984,
+          "half_log_G_rate": 3.3771360492427243
+        },
+        {
+          "time": 0.02,
+          "alignment": 0.163800719871244,
+          "max_strain_per_enstrophy": 30.009635347529095,
+          "transfer_per_enstrophy": 4.915599872998795,
+          "viscous_rate": 0.935864518931229,
+          "half_log_G_rate": 3.979735354067566
+        }
+      ],
+      "five_point_integral_M_over_G": 0.5725970198218806,
+      "five_point_integral_T_over_G": 0.05806776073465515,
+      "five_point_integral_nuD_over_G": 0.015865326539981475,
+      "envelope_weighted_signed_alignment": 0.10141121718153276,
+      "dense_integral_T_over_G": 0.058057079377490745,
+      "dense_integral_positive_T_over_G": 0.058057079377490745,
+      "dense_integral_nuD_over_G": 0.01586557208831033,
+      "five_minus_dense_T_over_G": 1.0681357164407657e-05,
+      "half_log_G_change": 0.042191504636734274,
+      "dense_log_budget_residual": -2.652446141199194e-09
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 7,
+      "samples": [
+        {
+          "time": 0.0,
+          "alignment": -2.8175563693018176e-18,
+          "max_strain_per_enstrophy": 28.50077069878465,
+          "transfer_per_enstrophy": -8.03025280123713e-17,
+          "viscous_rate": 0.7171300001007571,
+          "half_log_G_rate": -0.7171300001007572
+        },
+        {
+          "time": 0.005,
+          "alignment": 0.06538764958177307,
+          "max_strain_per_enstrophy": 28.066198424377284,
+          "transfer_per_enstrophy": 1.8351827476656932,
+          "viscous_rate": 0.7348971705257463,
+          "half_log_G_rate": 1.100285577139947
+        },
+        {
+          "time": 0.01,
+          "alignment": 0.12480176006547856,
+          "max_strain_per_enstrophy": 28.283807760489783,
+          "transfer_per_enstrophy": 3.5298689898627664,
+          "viscous_rate": 0.7934297254670571,
+          "half_log_G_rate": 2.736439264395709
+        },
+        {
+          "time": 0.015,
+          "alignment": 0.1678942315154208,
+          "max_strain_per_enstrophy": 29.170298415742057,
+          "transfer_per_enstrophy": 4.897524835586509,
+          "viscous_rate": 0.892156140514291,
+          "half_log_G_rate": 4.005368695072218
+        },
+        {
+          "time": 0.02,
+          "alignment": 0.189849982778133,
+          "max_strain_per_enstrophy": 30.557862660040207,
+          "transfer_per_enstrophy": 5.801409699745187,
+          "viscous_rate": 1.020697110649706,
+          "half_log_G_rate": 4.780712589095481
+        }
+      ],
+      "five_point_integral_M_over_G": 0.5742870604004697,
+      "five_point_integral_T_over_G": 0.06631996335413255,
+      "five_point_integral_nuD_over_G": 0.016388166343074544,
+      "envelope_weighted_signed_alignment": 0.11548225256526833,
+      "dense_integral_T_over_G": 0.06631199671581084,
+      "dense_integral_positive_T_over_G": 0.06631199671581084,
+      "dense_integral_nuD_over_G": 0.016388694644943424,
+      "five_minus_dense_T_over_G": 7.966638321713071e-06,
+      "half_log_G_change": 0.04992329883017273,
+      "dense_log_budget_residual": -3.2406946882945764e-09
+    }
+  ]
+}

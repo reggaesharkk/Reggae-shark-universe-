@@ -1,0 +1,21 @@
+{
+  "definition": "Z_kpq=-|k|^2<a_k,P_k[i(q.a_p)a_q]>, A_N=sum|Z_kpq|, chi_N=T_N/A_N",
+  "identity": "T_N=Re(sum Z_kpq), hence |T_N|<=A_N and |chi_N|<=1.",
+  "transformation_checks": {
+    "u_to_minus_u": "T and chi change sign; A_N is unchanged.",
+    "u_to_2u": "T and A_N scale by 2^3; chi is unchanged.",
+    "k_to_3k": "T and A_N scale by 3^3; chi is unchanged."
+  },
+  "sparse_family": "For the zero-modal-helicity triad, T(A,theta)=4 A^3 sin(theta). The cubic envelope is constant across theta at fixed A, while chi tracks the signed phase coherence.",
+  "limitation": "A_N is itself a cubic Fourier quantity and is not shown to be controlled by energy/enstrophy uniformly in cutoff. This gate therefore does not close the PDE or prove regularity.",
+  "rows": [
+    {"amplitude":1.0,"phase_radians":0.0,"ordered_triad_terms":12,"transfer":0.0,"complex_sum_imag":0.0,"cubic_envelope":48.0,"coherence":0.0},
+    {"amplitude":1.0,"phase_radians":1.5707963267948966,"ordered_triad_terms":12,"transfer":4.0,"complex_sum_imag":-4.930380657631324e-32,"cubic_envelope":48.0,"coherence":0.08333333333333333},
+    {"amplitude":1.0,"phase_radians":3.141592653589793,"ordered_triad_terms":12,"transfer":4.89858719658942e-16,"complex_sum_imag":0.0,"cubic_envelope":48.0,"coherence":1.0205389992894625e-17},
+    {"amplitude":1.0,"phase_radians":4.71238898038469,"ordered_triad_terms":12,"transfer":-4.0,"complex_sum_imag":0.0,"cubic_envelope":48.0,"coherence":-0.08333333333333333},
+    {"amplitude":2.0,"phase_radians":0.0,"ordered_triad_terms":12,"transfer":0.0,"complex_sum_imag":0.0,"cubic_envelope":384.0,"coherence":0.0},
+    {"amplitude":2.0,"phase_radians":1.5707963267948966,"ordered_triad_terms":12,"transfer":32.0,"complex_sum_imag":-3.944304526105059e-31,"cubic_envelope":384.0,"coherence":0.08333333333333333},
+    {"amplitude":2.0,"phase_radians":3.141592653589793,"ordered_triad_terms":12,"transfer":3.918869757271536e-15,"complex_sum_imag":0.0,"cubic_envelope":384.0,"coherence":1.0205389992894625e-17},
+    {"amplitude":2.0,"phase_radians":4.71238898038469,"ordered_triad_terms":12,"transfer":-32.0,"complex_sum_imag":0.0,"cubic_envelope":384.0,"coherence":-0.08333333333333333}
+  ]
+}

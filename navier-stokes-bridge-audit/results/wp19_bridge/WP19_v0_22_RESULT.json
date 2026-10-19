@@ -1,0 +1,54 @@
+{
+  "schema": "wp19-v0.22-recursive-drift-scout-summary-v1",
+  "date": "2026-09-30",
+  "copyright": "Copyright (c) 2026 Prince Upadhyay. All Rights Reserved.",
+  "workflow_run_id": 36714882801,
+  "workflow_artifact_digest": "sha256:3b0eb255dabe1f0480334d31a8021b3f3dc3c775f0985361aa17df70483acb58",
+  "status": "NON-RIGOROUS FALSIFICATION GATE — SIMPLE FULL-STATE ROUTE REJECTED AS NUMERICALLY USELESS",
+  "rows": [
+    {
+      "transition": "14->15",
+      "endpoint_nominal_drift": 0.062364048749974275,
+      "state_L1_upper_scout": 0.00006074891934359329,
+      "recursive_gamma_L1_scout": 17.193463193759044,
+      "direct_shell_bound": 1137605.677276568,
+      "combined_simple_route": 1137622.8707397617
+    },
+    {
+      "transition": "15->16",
+      "endpoint_nominal_drift": 0.04624179802644861,
+      "state_L1_upper_scout": 0.000042647619152401414,
+      "recursive_gamma_L1_scout": 12.07034261878764,
+      "direct_shell_bound": 830675.2043486156,
+      "combined_simple_route": 830687.2746912343
+    },
+    {
+      "transition": "16->17",
+      "endpoint_nominal_drift": 0.03290650965828473,
+      "state_L1_upper_scout": 0.00002989023475303545,
+      "recursive_gamma_L1_scout": 8.45968383688345,
+      "direct_shell_bound": 645549.3981163172,
+      "combined_simple_route": 645557.8578001541
+    },
+    {
+      "transition": "17->18",
+      "endpoint_nominal_drift": 0.018682611421231548,
+      "state_L1_upper_scout": 0.00001472084315412089,
+      "recursive_gamma_L1_scout": 4.166366705553092,
+      "direct_shell_bound": 521913.94190543145,
+      "combined_simple_route": 521918.108272137
+    }
+  ],
+  "recursive_successive_abs_ratios": [
+    0.702030910396748,
+    0.7008652615805492,
+    0.49249673934481025
+  ],
+  "combined_successive_abs_ratios": [
+    0.7301956527571071,
+    0.7771370496076365,
+    0.808476114055307
+  ],
+  "decision": "Do not interval-rigorize the simple full-state Lipschitz route. Advance to a goal-oriented adjoint/dual-weighted formulation. The direct-shell theorem remains structurally summable but its energy-only constant is far too large to close the finite margin numerically.",
+  "continuum_claim": false
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "wp19-v0.11-n14-same-datum-predictor-v1",
+  "status": "PREDICTOR_READY_NONRIGOROUS_UNTIL_ARB_ENCLOSURE",
+  "N": 14,
+  "nu_exact_decimal": "0.1",
+  "T_exact_decimal": "0.003",
+  "h_exact_decimal": "0.000025",
+  "steps": 120,
+  "modes": 11513,
+  "initial_field_rule": "same fixed rational N11 witness zero-padded/projected to N14; no retuning",
+  "witness_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624",
+  "K36_keys_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+  "nodes_sha256": "e0b0a36d8b308cccb5befb3abe45777ec0775cbc7e5a76fef0011eed0fd1f7f0",
+  "rhs_sha256": "f3a55190e9cba625b7285e5ba3e09e68fa4027e7a8909d1ad80671c1ee1ef253"
+}

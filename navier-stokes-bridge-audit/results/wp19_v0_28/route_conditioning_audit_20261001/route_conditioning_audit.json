@@ -1,0 +1,83 @@
+{
+  "audit_source_sha256": "39328b6fc9bc9f4c0267a381ae41f3b31b43bcd815bf560a8ba878a6f5fb1d79",
+  "conditional_repeated_worst_segment_scenario": {
+    "assumption": "repeat the maximum L and residual upper observed among steps 239, 238, and 237 on every remaining segment",
+    "assumption_status": "untested; not an a-priori bound and not a prediction",
+    "error_after_237_repeated_steps": "14407073377990.585522400489790850655661882994734721299472949053770327723972654028",
+    "first_repeated_step_exceeding_gradient_norm_reference": 186,
+    "interpretation": "conditioning stress scenario only; no comparison to signed-numerator margin because the norms have different units",
+    "maximum_observed_logarithmic_norm_upper": "1758.617670280",
+    "maximum_observed_residual_L2_upper": "771029886342.810495",
+    "ratio_to_gradient_norm_reference": "3.070587643582928650172817225",
+    "remaining_step_count": 237,
+    "starting_error_upper": "78258186399.829279366902453526407847624354331163635740230778665548882992825167394",
+    "v027_terminal_gradient_L2_upper_reference": "4691959667101.255187"
+  },
+  "frozen": {
+    "C500_portable_semantic_sha256": "1e9509cef054bf605d4a28af6580e383d021914f600a01b21cb1ebdf1086f71f",
+    "K36_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+    "K36_sign_chart_sha256": "de2e7cf42373285f16a4d357422d7784afa98c997f90e6594c0102952bf6d3d1",
+    "witness_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624"
+  },
+  "input_files_sha256": {
+    "notes/WP19_v0_27_RESULT.md": "d405ae0e738000832c6445006774742b275f931f7fd4fce09042213904eec6c6",
+    "results/wp19_v0_28/pilot_chained_237_36820757066/M14_segment_237.json": "c2110c2f7a245a36534a24f7ab6983b74bf4a51ba8fb209a0ec92a8727eecfdc",
+    "results/wp19_v0_28/pilot_chained_237_36820757066/chain_verification.json": "cbfb935af79cd7bb359c5688831c4a7329b70011ee9e6c1934442147a836f77f",
+    "results/wp19_v0_28/pilot_chained_238_36819581437/M14_segment_238.json": "c0bbf407df850b95e1a4b0daa3e1175962ce128e7e5f080d39127bd22b431fa6",
+    "results/wp19_v0_28/pilot_chained_238_36819581437/chain_verification.json": "c611b9eb2c5770d1880e64fdc7e0fc9f5136aef2f71b8b9afc4e1f533d09596c",
+    "results/wp19_v0_28/pilot_v2_36818369196/M14_segment_239.json": "d1b41363c88173594ec6c9e90453513cd3c8ed3e32c7037d2e73304d057a8c08",
+    "results/wp19_v0_28/pilot_v2_36818369196/verification.json": "41694c84922a28b0b99f9e2936589f8c2f8cb6c49fc2a68a281623a4fb39cb7e"
+  },
+  "observed_segments": [
+    {
+      "amplification_share_of_total_growth": "0.9940498204052071547077220499",
+      "growth_from_additive_residual": "9744587.4407888752621594403056598757095896922322535611337982468094235325068659695",
+      "growth_from_exponential_amplification": "1627951768.7022447825569901451596364494325553666963213526777338669707045918613518",
+      "incoming_error_upper": "73244978636.905585",
+      "logarithmic_norm_upper": "1758.617670280",
+      "nominal_residual_L2_upper": "53884259.691875",
+      "outgoing_error_upper": "74882674993.048618657819149585465296325142145058928574913811532113780128124368218",
+      "primal_uncertainty_penalty_upper": "770976002083.118621",
+      "residual_L2_upper": "771029886342.810495",
+      "segment_sha256": "d1b41363c88173594ec6c9e90453513cd3c8ed3e32c7037d2e73304d057a8c08",
+      "step": 239,
+      "uncertainty_penalty_over_nominal": "14308.00026745790335453185162"
+    },
+    {
+      "amplification_share_of_total_growth": "0.9941697950170304803538612312",
+      "growth_from_additive_residual": "9742624.2252261321165173721874930576905126705033615284935257677561869824902326166",
+      "growth_from_exponential_amplification": "1661317699.3285926661791988313632151425583602909122127833024090604972269263619327",
+      "incoming_error_upper": "74882674993.048618657819149585465296325142145058928574913811532113780128124368218",
+      "logarithmic_norm_upper": "1755.447052426",
+      "nominal_residual_L2_upper": "53870621.492741",
+      "outgoing_error_upper": "76553735316.602437456114865789016004525391018020344149225607466942033542033220384",
+      "primal_uncertainty_penalty_upper": "770836010422.558373",
+      "residual_L2_upper": "770889881044.051112",
+      "segment_sha256": "c0bbf407df850b95e1a4b0daa3e1175962ce128e7e5f080d39127bd22b431fa6",
+      "step": 238,
+      "uncertainty_penalty_over_nominal": "14309.02389953729376385125268"
+    },
+    {
+      "amplification_share_of_total_growth": "0.9946301483000794342241432815",
+      "growth_from_additive_residual": "9152649.5466971067708876769116041970865597616541531756621993439712502468663198528",
+      "growth_from_exponential_amplification": "1695298433.6801448040167000604802389018767533816374378295089992628782005450806900",
+      "incoming_error_upper": "76553735316.602437456114865789016004525391018020344149225607466942033542033220384",
+      "logarithmic_norm_upper": "1752.285153301",
+      "nominal_residual_L2_upper": "53857205.702019",
+      "outgoing_error_upper": "78258186399.829279366902453526407847624354331163635740230778665548882992825167394",
+      "primal_uncertainty_penalty_upper": "724168354547.568286",
+      "residual_L2_upper": "724222211753.270303",
+      "segment_sha256": "c2110c2f7a245a36534a24f7ab6983b74bf4a51ba8fb209a0ec92a8727eecfdc",
+      "step": 237,
+      "uncertainty_penalty_over_nominal": "13446.08107881134739788180079"
+    }
+  ],
+  "route_diagnosis": {
+    "claim_boundary": "This audit does not prove the scalar recurrence will remain at these values, does not prove the adjoint route impossible, and does not establish any all-cutoff or continuum Navier-Stokes claim.",
+    "next_gate": "Before more sequential segments, run a frozen one-segment comparison of a structured L2/tangent-space primal-uncertainty enclosure against the current componentwise/triangle bound. Preserve the current output and protocol as baseline; accept a sharper method only if its derivation is rigorous and independently checked.",
+    "observed_fact": "Across these three steps, about 99.4% of each scalar recurrence increase comes from exponential amplification of incoming adjoint error; additive residual contribution is below 1% of the increase.",
+    "observed_fact_2": "The primal-uncertainty residual penalty is roughly 13,446 to 14,309 times the nominal residual L2 upper."
+  },
+  "schema": "wp19-v0.28-route-conditioning-audit-v1",
+  "status": "DIAGNOSTIC_ONLY_NO_ROUTE_FAILURE_THEOREM"
+}

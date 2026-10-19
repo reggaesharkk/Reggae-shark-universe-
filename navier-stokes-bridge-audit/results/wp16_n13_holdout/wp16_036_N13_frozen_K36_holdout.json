@@ -1,0 +1,56 @@
+{
+  "status": "executed prospective N13 frozen K36 k-channel holdout",
+  "N": 13,
+  "source_coalition": "N11_from_N10 target_only first 36 absolute-ranked ordered source-orbit groups",
+  "frozen_prefix_size": 36,
+  "input_sha256": {
+    "n12_continuation": "ec07d1a263eb43c1a1d6228164ba80a4e29b90b6206bb606c612192a4ee38855",
+    "n13_continuation": "13e5e56676b9398e7c7ec32f55e32a4d07dec5a3830c67787c6cd6fb5c8e59cd",
+    "n11_source_ranking": "193cbb7f485ab54ceed0d5cb38f97f0fc98c197e5f88e288fdbd277627608c8e"
+  },
+  "criteria": {
+    "same_sign": true,
+    "minimum_absolute_mass_fraction": 0.9,
+    "signed_share_interval": [
+      0.8,
+      1.2
+    ]
+  },
+  "states": {
+    "inherited": {
+      "k_channel_total_signed": 464.15163205175577,
+      "k_channel_total_abs_group_contribution": 998.5951801619944,
+      "frozen_K36_signed_contribution": 478.01882963107926,
+      "signed_share_of_channel_total": 1.0298764382622643,
+      "absolute_mass_captured": 934.4168003371335,
+      "absolute_mass_fraction": 0.9357313342785715,
+      "same_sign_as_channel_total": true,
+      "passes_preregistered_consistency_criteria": true,
+      "present_key_count": 36
+    },
+    "target_only": {
+      "k_channel_total_signed": 493.00563693863853,
+      "k_channel_total_abs_group_contribution": 1058.721677716203,
+      "frozen_K36_signed_contribution": 505.1734775449706,
+      "signed_share_of_channel_total": 1.0246809360677684,
+      "absolute_mass_captured": 994.7312153674332,
+      "absolute_mass_fraction": 0.9395587492958438,
+      "same_sign_as_channel_total": true,
+      "passes_preregistered_consistency_criteria": true,
+      "present_key_count": 36
+    },
+    "full_final": {
+      "k_channel_total_signed": 503.7126502753055,
+      "k_channel_total_abs_group_contribution": 1038.2584122001858,
+      "frozen_K36_signed_contribution": 516.7729198900552,
+      "signed_share_of_channel_total": 1.0259280159186226,
+      "absolute_mass_captured": 970.292165001256,
+      "absolute_mass_fraction": 0.9345382166902921,
+      "same_sign_as_channel_total": true,
+      "passes_preregistered_consistency_criteria": true,
+      "present_key_count": 36
+    }
+  },
+  "all_three_states_pass": true,
+  "interpretation_rule": "One additional finite-cutoff holdout of a coalition frozen at N11. Passing does not establish all-N persistence or continuum phase dynamics; failure is retained without retuning K36 or its thresholds."
+}

@@ -1,0 +1,927 @@
+{
+  "status": "post-hoc local directional derivative; grouped absolute masses have kinks",
+  "N": {
+    "12": {
+      "inherited": {
+        "exit_sample_time": 0.0026000000000000003,
+        "anchor": {
+          "margin": 432.9548297447359,
+          "mass_fraction": 0.9404849156612692,
+          "rates": {
+            "1e-08": {
+              "full": {
+                "margin_central": 401321.34539589967,
+                "fraction_central": 18.025404524557587,
+                "margin_forward": 401322.62663519214
+              },
+              "nonlinear": {
+                "margin_central": 399096.7663298761,
+                "fraction_central": 17.823080306067496,
+                "margin_forward": 399098.0166463487
+              },
+              "viscous": {
+                "margin_central": 2224.5792365538364,
+                "fraction_central": 0.2023242295923211,
+                "margin_forward": 2224.5793388719903
+              },
+              "radial_magnitude": {
+                "margin_central": 87166.33000176444,
+                "fraction_central": -2.187384284813021,
+                "margin_forward": 87166.5539307287
+              },
+              "scalar_phase": {
+                "margin_central": 376743.5072631997,
+                "fraction_central": 24.76950815011314,
+                "margin_forward": 376742.98580441246
+              },
+              "vector_polarization": {
+                "margin_central": -62588.49185769577,
+                "fraction_central": -4.556719346293647,
+                "margin_forward": -62588.56374188326
+              }
+            },
+            "2e-08": {
+              "full": {
+                "margin_central": 401321.3454356901,
+                "fraction_central": 18.025404530108702,
+                "margin_forward": 401323.90802227746
+              },
+              "nonlinear": {
+                "margin_central": 399096.7662105049,
+                "fraction_central": 17.823080297740823,
+                "margin_forward": 399099.26697418996
+              },
+              "viscous": {
+                "margin_central": 2224.579208132127,
+                "fraction_central": 0.20232422681676354,
+                "margin_forward": 2224.579350240674
+              },
+              "radial_magnitude": {
+                "margin_central": 87166.33003018615,
+                "fraction_central": -2.187384279261906,
+                "margin_forward": 87166.77790516769
+              },
+              "scalar_phase": {
+                "margin_central": 376743.50729730574,
+                "fraction_central": 24.769508155664255,
+                "margin_forward": 376742.46430015046
+              },
+              "vector_polarization": {
+                "margin_central": -62588.49188043314,
+                "fraction_central": -4.556719346293647,
+                "margin_forward": -62588.63548964655
+              }
+            }
+          },
+          "additivity_residual": {
+            "1e-08": -1.136871287599206e-05,
+            "2e-08": -1.1368654668331146e-05
+          },
+          "max_component_speed": 2176.11915980923
+        },
+        "exit": {
+          "margin": -19.061106777128543,
+          "mass_fraction": 0.8983979658832366,
+          "rates": {
+            "1e-08": {
+              "full": {
+                "margin_central": -239821.6327605951,
+                "fraction_central": -20.382759086112756,
+                "margin_forward": -239820.46541277668
+              },
+              "nonlinear": {
+                "margin_central": -243241.7063232606,
+                "fraction_central": -20.670991740523448,
+                "margin_forward": -243240.54343196622
+              },
+              "viscous": {
+                "margin_central": 3420.073574034177,
+                "fraction_central": 0.2882326599618068,
+                "margin_forward": 3420.0737445644336
+              },
+              "radial_magnitude": {
+                "margin_central": -235733.44668648133,
+                "fraction_central": -20.120851734750644,
+                "margin_forward": -235733.18517264852
+              },
+              "scalar_phase": {
+                "margin_central": 105051.90855383262,
+                "fraction_central": 8.85071138045923,
+                "margin_forward": 105052.36805329332
+              },
+              "vector_polarization": {
+                "margin_central": -109140.09460520901,
+                "fraction_central": -9.112618737372458,
+                "margin_forward": -109140.48577888025
+              }
+            },
+            "2e-08": {
+              "full": {
+                "margin_central": -239821.6327605951,
+                "fraction_central": -20.382759086112756,
+                "margin_forward": -239819.29830370063
+              },
+              "nonlinear": {
+                "margin_central": -243241.70627778585,
+                "fraction_central": -20.67099173774789,
+                "margin_forward": -243239.38021098002
+              },
+              "viscous": {
+                "margin_central": 3420.073517190758,
+                "fraction_central": 0.2882326516351341,
+                "margin_forward": 3420.0736877210147
+              },
+              "radial_magnitude": {
+                "margin_central": -235733.44681153685,
+                "fraction_central": -20.120851743077317,
+                "margin_forward": -235732.92392029543
+              },
+              "scalar_phase": {
+                "margin_central": 105051.90863909775,
+                "fraction_central": 8.850711391561461,
+                "margin_forward": 105052.82787107717
+              },
+              "vector_polarization": {
+                "margin_central": -109140.09462226204,
+                "fraction_central": -9.1126187345969,
+                "margin_forward": -109140.87674791517
+              }
+            }
+          },
+          "additivity_residual": {
+            "1e-08": -2.2737367544323206e-05,
+            "2e-08": 3.410605131648481e-05
+          },
+          "max_component_speed": 2129.9461419882596
+        }
+      },
+      "target_only": {
+        "exit_sample_time": 0.0026000000000000003,
+        "anchor": {
+          "margin": 432.9764026367184,
+          "mass_fraction": 0.9404870236550121,
+          "rates": {
+            "1e-08": {
+              "full": {
+                "margin_central": 401330.15766059543,
+                "fraction_central": 18.025103420971078,
+                "margin_forward": 401331.43850198394
+              },
+              "nonlinear": {
+                "margin_central": 399105.6670315629,
+                "fraction_central": 17.822787695687126,
+                "margin_forward": 399106.9169387629
+              },
+              "viscous": {
+                "margin_central": 2224.490629032516,
+                "fraction_central": 0.2023157308350676,
+                "margin_forward": 2224.490935986978
+              },
+              "radial_magnitude": {
+                "margin_central": 87174.60131038024,
+                "fraction_central": -2.1872934630184915,
+                "margin_forward": 87174.82548945554
+              },
+              "scalar_phase": {
+                "margin_central": 376757.24561268,
+                "fraction_central": 24.770267187390616,
+                "margin_forward": 376756.7239037817
+              },
+              "vector_polarization": {
+                "margin_central": -62601.68935341426,
+                "fraction_central": -4.557870314503276,
+                "margin_forward": -62601.76098749071
+              }
+            },
+            "2e-08": {
+              "full": {
+                "margin_central": 401330.1575525929,
+                "fraction_central": 18.025103412644405,
+                "margin_forward": 401332.71907052404
+              },
+              "nonlinear": {
+                "margin_central": 399105.66695766646,
+                "fraction_central": 17.822787687360453,
+                "margin_forward": 399108.16656174575
+              },
+              "viscous": {
+                "margin_central": 2224.4906006108067,
+                "fraction_central": 0.20231572805951004,
+                "margin_forward": 2224.490845037508
+              },
+              "radial_magnitude": {
+                "margin_central": 87174.60136153932,
+                "fraction_central": -2.187293460242934,
+                "margin_forward": 87175.04957758138
+              },
+              "scalar_phase": {
+                "margin_central": 376757.24548762443,
+                "fraction_central": 24.770267179063943,
+                "margin_forward": 376756.2018879289
+              },
+              "vector_polarization": {
+                "margin_central": -62601.689285202156,
+                "fraction_central": -4.5578703061766035,
+                "margin_forward": -62601.832803466095
+              }
+            }
+          },
+          "additivity_residual": {
+            "1e-08": 9.094947017729282e-05,
+            "2e-08": -1.1368654668331146e-05
+          },
+          "max_component_speed": 2176.1192447177523
+        },
+        "exit": {
+          "margin": -19.029086379277942,
+          "mass_fraction": 0.8984006858390883,
+          "rates": {
+            "1e-08": {
+              "full": {
+                "margin_central": -239457.93566326756,
+                "fraction_central": -20.35146475787286,
+                "margin_forward": -239456.7671672121
+              },
+              "nonlinear": {
+                "margin_central": -242877.92357426952,
+                "fraction_central": -20.63968377874481,
+                "margin_forward": -242876.7593073644
+              },
+              "viscous": {
+                "margin_central": 3419.9879110019538,
+                "fraction_central": 0.28821901532083416,
+                "margin_forward": 3419.9880701635266
+              },
+              "radial_magnitude": {
+                "margin_central": -235645.49190950856,
+                "fraction_central": -20.112576532005377,
+                "margin_forward": -235645.2306457868
+              },
+              "scalar_phase": {
+                "margin_central": 105253.47988732392,
+                "fraction_central": 8.86743510286614,
+                "margin_forward": 105253.93972784514
+              },
+              "vector_polarization": {
+                "margin_central": -109065.92335686582,
+                "fraction_central": -9.106323300978048,
+                "margin_forward": -109066.31418947654
+              }
+            },
+            "2e-08": {
+              "full": {
+                "margin_central": -239457.9356007398,
+                "fraction_central": -20.351464752321746,
+                "margin_forward": -239455.59873936872
+              },
+              "nonlinear": {
+                "margin_central": -242877.92346058268,
+                "fraction_central": -20.639683764867023,
+                "margin_forward": -242875.59499498457
+              },
+              "viscous": {
+                "margin_central": 3419.987905317612,
+                "fraction_central": 0.28821901532083416,
+                "margin_forward": 3419.9881156382617
+              },
+              "radial_magnitude": {
+                "margin_central": -235645.49192656158,
+                "fraction_central": -20.112576534780935,
+                "margin_forward": -235644.96946164581
+              },
+              "scalar_phase": {
+                "margin_central": 105253.47989300826,
+                "fraction_central": 8.867435100090582,
+                "margin_forward": 105254.39935236136
+              },
+              "vector_polarization": {
+                "margin_central": -109065.92352171174,
+                "fraction_central": -9.106323314855835,
+                "margin_forward": -109066.70544272856
+              }
+            }
+          },
+          "additivity_residual": {
+            "1e-08": -0.0002842170943040401,
+            "2e-08": -4.547473508864641e-05
+          },
+          "max_component_speed": 2129.9470049052884
+        }
+      },
+      "full_final": {
+        "exit_sample_time": 0.0021000000000000003,
+        "anchor": {
+          "margin": 351.331504317493,
+          "mass_fraction": 0.9351975444210403,
+          "rates": {
+            "1e-08": {
+              "full": {
+                "margin_central": 209854.16147709655,
+                "fraction_central": 7.206189023278853,
+                "margin_forward": 209855.29869221864
+              },
+              "nonlinear": {
+                "margin_central": 207534.72029468865,
+                "fraction_central": 6.980724237548586,
+                "margin_forward": 207535.83628447814
+              },
+              "viscous": {
+                "margin_central": 2319.4411824078998,
+                "fraction_central": 0.22546478017915206,
+                "margin_forward": 2319.441227882635
+              },
+              "radial_magnitude": {
+                "margin_central": 33413.80300980745,
+                "fraction_central": -3.435244050331576,
+                "margin_forward": 33413.86295687698
+              },
+              "scalar_phase": {
+                "margin_central": 227023.44095364423,
+                "fraction_central": 14.695782973861427,
+                "margin_forward": 227023.27247543508
+              },
+              "vector_polarization": {
+                "margin_central": -50583.08248067078,
+                "fraction_central": -4.054349894699882,
+                "margin_forward": -50583.144150095904
+              }
+            },
+            "2e-08": {
+              "full": {
+                "margin_central": 209854.1615026761,
+                "fraction_central": 7.20618902605441,
+                "margin_forward": 209856.435878919
+              },
+              "nonlinear": {
+                "margin_central": 207534.72031458386,
+                "fraction_central": 6.980724243099701,
+                "margin_forward": 207536.9521946868
+              },
+              "viscous": {
+                "margin_central": 2319.4412079874382,
+                "fraction_central": 0.22546478295470962,
+                "margin_forward": 2319.4413472538145
+              },
+              "radial_magnitude": {
+                "margin_central": 33413.80307233521,
+                "fraction_central": -3.435244044780461,
+                "margin_forward": 33413.922784575334
+              },
+              "scalar_phase": {
+                "margin_central": 227023.44090532733,
+                "fraction_central": 14.695782968310311,
+                "margin_forward": 227023.10385511737
+              },
+              "vector_polarization": {
+                "margin_central": -50583.082486355124,
+                "fraction_central": -4.05434989747544,
+                "margin_forward": -50583.2057342559
+              }
+            }
+          },
+          "additivity_residual": {
+            "1e-08": -5.684327334165573e-06,
+            "2e-08": 1.1368683772161603e-05
+          },
+          "max_component_speed": 2197.1887050580267
+        },
+        "exit": {
+          "margin": -47.842840326838314,
+          "mass_fraction": 0.8964588630479094,
+          "rates": {
+            "1e-08": {
+              "full": {
+                "margin_central": -522434.5560577603,
+                "fraction_central": -39.101196852575626,
+                "margin_forward": -522433.75355374155
+              },
+              "nonlinear": {
+                "margin_central": -526369.4508812478,
+                "fraction_central": -39.39364126570588,
+                "margin_forward": -526368.6455236893
+              },
+              "viscous": {
+                "margin_central": 3934.8948121187277,
+                "fraction_central": 0.29244441313025504,
+                "margin_forward": 3934.8948348560953
+              },
+              "radial_magnitude": {
+                "margin_central": -279083.714610806,
+                "fraction_central": -21.256997229102126,
+                "margin_forward": -279083.46128242556
+              },
+              "scalar_phase": {
+                "margin_central": -31054.61659060893,
+                "fraction_central": -2.462171244665967,
+                "margin_forward": -31053.399038682983
+              },
+              "vector_polarization": {
+                "margin_central": -212296.22495866352,
+                "fraction_central": -15.382028384358648,
+                "margin_forward": -212296.83309229586
+              }
+            },
+            "2e-08": {
+              "full": {
+                "margin_central": -522434.5561259724,
+                "fraction_central": -39.101196852575626,
+                "margin_forward": -522432.95102698536
+              },
+              "nonlinear": {
+                "margin_central": -526369.4509267225,
+                "fraction_central": -39.39364126848144,
+                "margin_forward": -526367.8400638128
+              },
+              "viscous": {
+                "margin_central": 3934.8948121187277,
+                "fraction_central": 0.2924444159058126,
+                "margin_forward": 3934.8950167550356
+              },
+              "radial_magnitude": {
+                "margin_central": -279083.71455964696,
+                "fraction_central": -21.25699722632657,
+                "margin_forward": -279083.20782898954
+              },
+              "scalar_phase": {
+                "margin_central": -31054.61652808117,
+                "fraction_central": -2.462171239114852,
+                "margin_forward": -31052.181566337822
+              },
+              "vector_polarization": {
+                "margin_central": -212296.22508371904,
+                "fraction_central": -15.382028389909763,
+                "margin_forward": -212297.4413623524
+              }
+            }
+          },
+          "additivity_residual": {
+            "1e-08": 0.00010231818305328488,
+            "2e-08": 4.547473508864641e-05
+          },
+          "max_component_speed": 2166.023824660588
+        }
+      }
+    },
+    "13": {
+      "inherited": {
+        "exit_sample_time": 0.002,
+        "anchor": {
+          "margin": 356.81138191338584,
+          "mass_fraction": 0.9357313342785715,
+          "rates": {
+            "1e-08": {
+              "full": {
+                "margin_central": 208744.0674301888,
+                "fraction_central": 6.801053709093452,
+                "margin_forward": 208745.14895012908
+              },
+              "nonlinear": {
+                "margin_central": 206424.75144541095,
+                "fraction_central": 6.5758240741509155,
+                "margin_forward": 206425.8111545314
+              },
+              "viscous": {
+                "margin_central": 2319.3159506718075,
+                "fraction_central": 0.22522964049365157,
+                "margin_forward": 2319.3159904622007
+              },
+              "radial_magnitude": {
+                "margin_central": 32910.93666462075,
+                "fraction_central": -3.610861276648336,
+                "margin_forward": 32910.986078604765
+              },
+              "scalar_phase": {
+                "margin_central": 226552.37806361582,
+                "fraction_central": 14.394151937047184,
+                "margin_forward": 226552.16926068533
+              },
+              "vector_polarization": {
+                "margin_central": -50719.24725825738,
+                "fraction_central": -3.9822369346520503,
+                "margin_forward": -50719.31041129574
+              }
+            },
+            "2e-08": {
+              "full": {
+                "margin_central": 208744.06744439967,
+                "fraction_central": 6.801053714644567,
+                "margin_forward": 208746.2304928067
+              },
+              "nonlinear": {
+                "margin_central": 206424.75146246396,
+                "fraction_central": 6.575824076926473,
+                "margin_forward": 206426.8709091266
+              },
+              "viscous": {
+                "margin_central": 2319.3159620404913,
+                "fraction_central": 0.22522963494253645,
+                "margin_forward": 2319.316081411671
+              },
+              "radial_magnitude": {
+                "margin_central": 32910.93664756772,
+                "fraction_central": -3.6108612821994512,
+                "margin_forward": 32911.0354812201
+              },
+              "scalar_phase": {
+                "margin_central": 226552.37806361582,
+                "fraction_central": 14.394151939822741,
+                "margin_forward": 226551.96037817403
+              },
+              "vector_polarization": {
+                "margin_central": -50719.247323627314,
+                "fraction_central": -3.982236942978723,
+                "margin_forward": -50719.373632546194
+              }
+            }
+          },
+          "additivity_residual": {
+            "1e-08": -3.979037865065038e-05,
+            "2e-08": 5.684344796463847e-05
+          },
+          "max_component_speed": 2197.1761871773597
+        },
+        "exit": {
+          "margin": -41.48757022836162,
+          "mass_fraction": 0.8968769012205098,
+          "rates": {
+            "1e-08": {
+              "full": {
+                "margin_central": -521901.7229592282,
+                "fraction_central": -39.67662094428448,
+                "margin_forward": -521900.8977746853
+              },
+              "nonlinear": {
+                "margin_central": -525993.0016109138,
+                "fraction_central": -39.98575795471915,
+                "margin_forward": -525992.1739707352
+              },
+              "viscous": {
+                "margin_central": 4091.2787540037243,
+                "fraction_central": 0.30913701598578314,
+                "margin_forward": 4091.2791064329213
+              },
+              "radial_magnitude": {
+                "margin_central": -289930.1652746544,
+                "fraction_central": -22.336002408751554,
+                "margin_forward": -289929.93134124845
+              },
+              "scalar_phase": {
+                "margin_central": -28049.805143837148,
+                "fraction_central": -2.2466277449506578,
+                "margin_forward": -28048.731792296167
+              },
+              "vector_polarization": {
+                "margin_central": -203921.75232473164,
+                "fraction_central": -15.093990779480038,
+                "margin_forward": -203922.37954638404
+              }
+            },
+            "2e-08": {
+              "full": {
+                "margin_central": -521901.72283985704,
+                "fraction_central": -39.676620938733365,
+                "margin_forward": -521900.07288572815
+              },
+              "nonlinear": {
+                "margin_central": -525993.0015483861,
+                "fraction_central": -39.98575794916803,
+                "margin_forward": -525991.3465124555
+              },
+              "viscous": {
+                "margin_central": 4091.278816531485,
+                "fraction_central": 0.30913701598578314,
+                "margin_forward": 4091.2790836955537
+              },
+              "radial_magnitude": {
+                "margin_central": -289930.16532012913,
+                "fraction_central": -22.336002408751554,
+                "margin_forward": -289929.69768069085
+              },
+              "scalar_phase": {
+                "margin_central": -28049.80512109978,
+                "fraction_central": -2.2466277449506578,
+                "margin_forward": -28047.658520335972
+              },
+              "vector_polarization": {
+                "margin_central": -203921.75235315334,
+                "fraction_central": -15.093990782255595,
+                "margin_forward": -203923.0071318343
+              }
+            }
+          },
+          "additivity_residual": {
+            "1e-08": -0.0002160050207749009,
+            "2e-08": -4.5474793296307325e-05
+          },
+          "max_component_speed": 2168.943641344459
+        }
+      },
+      "target_only": {
+        "exit_sample_time": 0.002,
+        "anchor": {
+          "margin": 418.81705422850587,
+          "mass_fraction": 0.9395587492958439,
+          "rates": {
+            "1e-08": {
+              "full": {
+                "margin_central": 187391.8726005286,
+                "fraction_central": 5.432645189262786,
+                "margin_forward": 187392.35488283157
+              },
+              "nonlinear": {
+                "margin_central": 184977.74198067418,
+                "fraction_central": 5.216701887134079,
+                "margin_forward": 184978.20451557345
+              },
+              "viscous": {
+                "margin_central": 2414.130631223088,
+                "fraction_central": 0.21594330212870716,
+                "margin_forward": 2414.1307676472934
+              },
+              "radial_magnitude": {
+                "margin_central": 12104.868847018224,
+                "fraction_central": -4.214143511926949,
+                "margin_forward": 12104.846427973825
+              },
+              "scalar_phase": {
+                "margin_central": 216521.97218600122,
+                "fraction_central": 12.687749900708312,
+                "margin_forward": 216521.61608471943
+              },
+              "vector_polarization": {
+                "margin_central": -41234.968387016124,
+                "fraction_central": -3.0409611884163468,
+                "margin_forward": -41235.02155835013
+              }
+            },
+            "2e-08": {
+              "full": {
+                "margin_central": 187391.8726005286,
+                "fraction_central": 5.432645189262786,
+                "margin_forward": 187392.83714239718
+              },
+              "nonlinear": {
+                "margin_central": 184977.7419693055,
+                "fraction_central": 5.216701887134079,
+                "margin_forward": 184978.66691404852
+              },
+              "viscous": {
+                "margin_central": 2414.1306539604557,
+                "fraction_central": 0.21594330490426472,
+                "margin_forward": 2414.1308131220285
+              },
+              "radial_magnitude": {
+                "margin_central": 12104.868721962703,
+                "fraction_central": -4.214143523029179,
+                "margin_forward": 12104.823736081016
+              },
+              "scalar_phase": {
+                "margin_central": 216521.9721405265,
+                "fraction_central": 12.687749897932754,
+                "margin_forward": 216521.2599265942
+              },
+              "vector_polarization": {
+                "margin_central": -41234.96838133178,
+                "fraction_central": -3.0409611911919043,
+                "margin_forward": -41235.07458189124
+              }
+            }
+          },
+          "additivity_residual": {
+            "1e-08": -4.547473508864641e-05,
+            "2e-08": 0.0001193711650557816
+          },
+          "max_component_speed": 2197.0275357173655
+        },
+        "exit": {
+          "margin": -37.23921761573479,
+          "mass_fraction": 0.896989547753128,
+          "rates": {
+            "1e-08": {
+              "full": {
+                "margin_central": -500289.1861522585,
+                "fraction_central": -40.78216013225777,
+                "margin_forward": -500288.5560543291
+              },
+              "nonlinear": {
+                "margin_central": -504154.5800622771,
+                "fraction_central": -41.095862474138656,
+                "margin_forward": -504153.9479179846
+              },
+              "viscous": {
+                "margin_central": 3865.393807700457,
+                "fraction_central": 0.3137023363297686,
+                "margin_forward": 3865.393955493346
+              },
+              "radial_magnitude": {
+                "margin_central": -266183.5276626334,
+                "fraction_central": -21.94315457115792,
+                "margin_forward": -266183.3606680375
+              },
+              "scalar_phase": {
+                "margin_central": -22020.16412411467,
+                "fraction_central": -1.8514087374299493,
+                "margin_forward": -22019.23748543777
+              },
+              "vector_polarization": {
+                "margin_central": -212085.49429729828,
+                "fraction_central": -16.987596812567674,
+                "margin_forward": -212086.19048138644
+              }
+            },
+            "2e-08": {
+              "full": {
+                "margin_central": -500289.1861579428,
+                "fraction_central": -40.78216012670666,
+                "margin_forward": -500287.92627472285
+              },
+              "nonlinear": {
+                "margin_central": -504154.5799542746,
+                "fraction_central": -41.095862463036426,
+                "margin_forward": -504153.31597832846
+              },
+              "viscous": {
+                "margin_central": 3865.393853175192,
+                "fraction_central": 0.3137023391053262,
+                "margin_forward": 3865.3941146549187
+              },
+              "radial_magnitude": {
+                "margin_central": -266183.5276967395,
+                "fraction_central": -21.943154573933477,
+                "margin_forward": -266183.1939690273
+              },
+              "scalar_phase": {
+                "margin_central": -22020.164249170193,
+                "fraction_central": -1.851408745756622,
+                "margin_forward": -22018.31130150822
+              },
+              "vector_polarization": {
+                "margin_central": -212085.4942859296,
+                "fraction_central": -16.98759681534323,
+                "margin_forward": -212086.88698379774
+              }
+            }
+          },
+          "additivity_residual": {
+            "1e-08": -6.821210263296962e-05,
+            "2e-08": 7.389642996713519e-05
+          },
+          "max_component_speed": 2168.718494279291
+        }
+      },
+      "full_final": {
+        "exit_sample_time": 0.0023,
+        "anchor": {
+          "margin": 358.59594021088833,
+          "mass_fraction": 0.9345382166902922,
+          "rates": {
+            "1e-08": {
+              "full": {
+                "margin_central": 121276.530387604,
+                "fraction_central": 1.427662710273836,
+                "margin_forward": 121276.73021495866
+              },
+              "nonlinear": {
+                "margin_central": 118812.59547408263,
+                "fraction_central": 1.2017101480576997,
+                "margin_forward": 118812.77821430558
+              },
+              "viscous": {
+                "margin_central": 2463.9349135213706,
+                "fraction_central": 0.22595256221613624,
+                "margin_forward": 2463.934947627422
+              },
+              "radial_magnitude": {
+                "margin_central": 6454.528795529768,
+                "fraction_central": -4.132207048757053,
+                "margin_forward": 6454.533331634593
+              },
+              "scalar_phase": {
+                "margin_central": 175457.95591331625,
+                "fraction_central": 10.807254668954158,
+                "margin_forward": 175457.6809844366
+              },
+              "vector_polarization": {
+                "margin_central": -60635.95420755519,
+                "fraction_central": -5.247384904372154,
+                "margin_forward": -60636.0119945748
+              }
+            },
+            "2e-08": {
+              "full": {
+                "margin_central": 121276.53032507624,
+                "fraction_central": 1.4276627019471633,
+                "margin_forward": 121276.9301332628
+              },
+              "nonlinear": {
+                "margin_central": 118812.59546839829,
+                "fraction_central": 1.2017101480576997,
+                "margin_forward": 118812.96093179117
+              },
+              "viscous": {
+                "margin_central": 2463.934885099661,
+                "fraction_central": 0.22595255944057868,
+                "margin_forward": 2463.934993102157
+              },
+              "radial_magnitude": {
+                "margin_central": 6454.528715948982,
+                "fraction_central": -4.132207059859283,
+                "margin_forward": 6454.537810895999
+              },
+              "scalar_phase": {
+                "margin_central": 175457.95586784152,
+                "fraction_central": 10.807254668954158,
+                "margin_forward": 175457.4060669256
+              },
+              "vector_polarization": {
+                "margin_central": -60635.9542359769,
+                "fraction_central": -5.247384904372154,
+                "margin_forward": -60636.06982706915
+              }
+            }
+          },
+          "additivity_residual": {
+            "1e-08": -0.00011368683772161603,
+            "2e-08": -2.2737367544323206e-05
+          },
+          "max_component_speed": 2221.9607298094124
+        },
+        "exit": {
+          "margin": -4.406120222307663,
+          "mass_fraction": 0.899647933329296,
+          "rates": {
+            "1e-08": {
+              "full": {
+                "margin_central": -365535.8801552211,
+                "fraction_central": -29.217567892869667,
+                "margin_forward": -365535.6058288817
+              },
+              "nonlinear": {
+                "margin_central": -369643.8939186919,
+                "fraction_central": -29.545948282416745,
+                "margin_forward": -369643.6216614529
+              },
+              "viscous": {
+                "margin_central": 4108.01364978397,
+                "fraction_central": 0.3283803728937329,
+                "margin_forward": 4108.013717996073
+              },
+              "radial_magnitude": {
+                "margin_central": -252127.1781915857,
+                "fraction_central": -20.188218374794786,
+                "margin_forward": -252127.03696979588
+              },
+              "scalar_phase": {
+                "margin_central": 170684.68670231596,
+                "fraction_central": 13.675062754403555,
+                "margin_forward": 170685.3503264938
+              },
+              "vector_polarization": {
+                "margin_central": -284093.38867732004,
+                "fraction_central": -22.704412272478436,
+                "margin_forward": -284094.42536485585
+              }
+            },
+            "2e-08": {
+              "full": {
+                "margin_central": -365535.88010974636,
+                "fraction_central": -29.217567887318552,
+                "margin_forward": -365535.33133201196
+              },
+              "nonlinear": {
+                "margin_central": -369643.8938220581,
+                "fraction_central": -29.545948268538957,
+                "margin_forward": -369643.34932463313
+              },
+              "viscous": {
+                "margin_central": 4108.013814629885,
+                "fraction_central": 0.32838038954707827,
+                "margin_forward": 4108.0139794758
+              },
+              "radial_magnitude": {
+                "margin_central": -252127.17818021702,
+                "fraction_central": -20.18821837201923,
+                "margin_forward": -252126.8955206324
+              },
+              "scalar_phase": {
+                "margin_central": 170684.6867477907,
+                "fraction_central": 13.675062754403555,
+                "margin_forward": 170686.01414393925
+              },
+              "vector_polarization": {
+                "margin_central": -284093.38867732004,
+                "fraction_central": -22.704412272478436,
+                "margin_forward": -284095.4619614422
+              }
+            }
+          },
+          "additivity_residual": {
+            "1e-08": 1.1368654668331146e-05,
+            "2e-08": 0.0
+          },
+          "max_component_speed": 2184.442674523707
+        }
+      }
+    }
+  }
+}

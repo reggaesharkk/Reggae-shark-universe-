@@ -1,0 +1,7 @@
+{
+  "gradient_Fourier_l1_upper_decimal": "2129.635644",
+  "input_binary_sha256": "9e8cfe3c42bb8b0d8a7bcd137c912db94b6d5c6476b7c1a7a45c21a80590cf50",
+  "residual_L2_upper_decimal": "0.000199776381",
+  "status": "128-bit Arb whole-segment N13 polynomial enclosure",
+  "step": 74
+}

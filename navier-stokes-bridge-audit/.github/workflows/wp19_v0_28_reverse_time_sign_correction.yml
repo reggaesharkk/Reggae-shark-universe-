@@ -1,0 +1,55 @@
+name: WP19 v0.28 reverse-time sign correction
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/wp19_v0_28_reverse_time_sign_correction.yml'
+      - 'README.md'
+      - 'notes/**'
+      - 'src/wp19_v0_28_reverse_time_sign_correction.py'
+      - 'src/wp19_v0_28_verify_reverse_time_sign_correction.py'
+      - 'results/wp19_v0_28/**'
+  push:
+    branches: [wp19-v0.28-reverse-time-sign-correction]
+    paths:
+      - '.github/workflows/wp19_v0_28_reverse_time_sign_correction.yml'
+      - 'README.md'
+      - 'notes/WP19_CURRENT_STATUS_2026_09_30.md'
+      - 'notes/WP19_v0_28_REVERSE_TIME_SIGN_CORRECTION_2026_10_01.md'
+      - 'src/wp19_v0_28_reverse_time_sign_correction.py'
+      - 'src/wp19_v0_28_verify_reverse_time_sign_correction.py'
+      - 'results/wp19_v0_28/reverse_time_sign_correction_20261001/**'
+      - 'results/wp19_v0_28/pilot_v2_36818369196/**'
+      - 'results/wp19_v0_28/pilot_chained_238_36819581437/**'
+      - 'results/wp19_v0_28/pilot_chained_237_36820757066/**'
+      - 'results/wp19_v0_28/structured_uncertainty_ab_20261001/**'
+      - 'results/wp19_v0_28/backward_diffusion_audit_20261001/**'
+      - 'results/wp19_v0_28/corrected_chain_20261001/**'
+      - 'src/wp19_v0_28_backward_diffusion_log_norm_audit.py'
+      - 'src/wp19_v0_28_corrected_recurrence_chain.py'
+      - 'src/wp19_v0_28_verify_corrected_recurrence_chain.py'
+      - '.github/workflows/wp19_v0_28_backward_diffusion_audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  replay:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild the additive correction result
+        run: python src/wp19_v0_28_reverse_time_sign_correction.py
+      - name: Require deterministic result
+        run: git diff --exit-code -- results/wp19_v0_28/reverse_time_sign_correction_20261001/reverse_time_sign_correction.json
+      - name: Replay recurrence using the separate arithmetic implementation
+        run: python src/wp19_v0_28_verify_reverse_time_sign_correction.py
+      - name: Verify correction manifest
+        run: sha256sum -c results/wp19_v0_28/reverse_time_sign_correction_20261001/SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-28-reverse-time-sign-correction
+          path: results/wp19_v0_28/reverse_time_sign_correction_20261001/
+          retention-days: 90

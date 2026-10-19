@@ -1,0 +1,161 @@
+{
+  "N": 4,
+  "nu": 0.1,
+  "window": "exp(kappa*(cos x+cos y+cos z-3))",
+  "identity": "d/dt<phi e> = <(e+p)u.grad phi> + nu<e lap phi> - nu<phi |grad u|^2> + <phi u.R_N>",
+  "results": [
+    {
+      "shape": "line",
+      "time": 0.1,
+      "rows": [
+        {
+          "kappa": 0,
+          "window_mean": 1.0,
+          "lhs_local_energy_derivative": -0.37844910304266727,
+          "advective_plus_pressure_boundary": 0.0,
+          "diffusion_window_term": 0.0,
+          "viscous_dissipation": -0.37844910304266727,
+          "projection_residual": 2.168404344971009e-19,
+          "rhs": -0.37844910304266727,
+          "closure_error": 0.0,
+          "error_if_projection_omitted": 0.0,
+          "grid64_vs_grid96_lhs_diff": 2.220446049250313e-16,
+          "grid64_vs_grid96_projection_diff": 1.3733227518149722e-18
+        },
+        {
+          "kappa": 1,
+          "window_mean": 0.10103816881425744,
+          "lhs_local_energy_derivative": -0.04407745916506793,
+          "advective_plus_pressure_boundary": -0.0013084680081260486,
+          "diffusion_window_term": -0.005721152284488586,
+          "viscous_dissipation": -0.03722703072529102,
+          "projection_residual": 0.00017919185283774635,
+          "rhs": -0.04407745916506791,
+          "closure_error": 2.0816681711721685e-17,
+          "error_if_projection_omitted": 0.0001791918528377262,
+          "grid64_vs_grid96_lhs_diff": 2.7755575615628914e-17,
+          "grid64_vs_grid96_projection_diff": 4.0657581468206416e-19
+        },
+        {
+          "kappa": 4,
+          "window_mean": 0.008869989969871995,
+          "lhs_local_energy_derivative": -0.007766117855562534,
+          "advective_plus_pressure_boundary": -0.0031489864982574556,
+          "diffusion_window_term": -0.0015109228276480547,
+          "viscous_dissipation": -0.003134069225809042,
+          "projection_residual": 2.786069615202987e-05,
+          "rhs": -0.007766117855562523,
+          "closure_error": 1.1275702593849246e-17,
+          "error_if_projection_omitted": 2.7860696152018187e-05,
+          "grid64_vs_grid96_lhs_diff": 3.469446951953614e-18,
+          "grid64_vs_grid96_projection_diff": 7.453889935837843e-20
+        },
+        {
+          "kappa": 9,
+          "window_mean": 0.0024581626699344853,
+          "lhs_local_energy_derivative": -0.002711737491686878,
+          "advective_plus_pressure_boundary": -0.0014579749252528569,
+          "diffusion_window_term": -0.0003585309969577459,
+          "viscous_dissipation": -0.0009228934132176043,
+          "projection_residual": 2.766184374133829e-05,
+          "rhs": -0.002711737491686869,
+          "closure_error": 9.107298248878237e-18,
+          "error_if_projection_omitted": 2.766184374132898e-05,
+          "grid64_vs_grid96_lhs_diff": 1.3010426069826053e-18,
+          "grid64_vs_grid96_projection_diff": 1.1858461261560205e-19
+        },
+        {
+          "kappa": 16,
+          "window_mean": 0.001016412804315421,
+          "lhs_local_energy_derivative": -0.0011918048591554671,
+          "advective_plus_pressure_boundary": -0.0006903516395101277,
+          "diffusion_window_term": -0.00013059100502634745,
+          "viscous_dissipation": -0.0003942826663421049,
+          "projection_residual": 2.3420451723120196e-05,
+          "rhs": -0.0011918048591554598,
+          "closure_error": 7.37257477290143e-18,
+          "error_if_projection_omitted": 2.3420451723112816e-05,
+          "grid64_vs_grid96_lhs_diff": 6.505213034913027e-19,
+          "grid64_vs_grid96_projection_diff": 3.3881317890172014e-21
+        }
+      ]
+    },
+    {
+      "shape": "cube",
+      "time": 0.1,
+      "rows": [
+        {
+          "kappa": 0,
+          "window_mean": 1.0,
+          "lhs_local_energy_derivative": -0.6058178730453576,
+          "advective_plus_pressure_boundary": 0.0,
+          "diffusion_window_term": 0.0,
+          "viscous_dissipation": -0.6058178730453577,
+          "projection_residual": 1.951563910473908e-18,
+          "rhs": -0.6058178730453577,
+          "closure_error": 1.1102230246251565e-16,
+          "error_if_projection_omitted": 1.1102230246251565e-16,
+          "grid64_vs_grid96_lhs_diff": 4.440892098500626e-16,
+          "grid64_vs_grid96_projection_diff": 3.493540333564403e-18
+        },
+        {
+          "kappa": 1,
+          "window_mean": 0.10103816881425744,
+          "lhs_local_energy_derivative": -0.06744578623977414,
+          "advective_plus_pressure_boundary": -0.006076035255352167,
+          "diffusion_window_term": -0.0005048280781906426,
+          "viscous_dissipation": -0.06115219545290349,
+          "projection_residual": 0.00028727254667217187,
+          "rhs": -0.06744578623977412,
+          "closure_error": 1.3877787807814457e-17,
+          "error_if_projection_omitted": 0.00028727254667215707,
+          "grid64_vs_grid96_lhs_diff": 4.163336342344337e-17,
+          "grid64_vs_grid96_projection_diff": 6.505213034913027e-19
+        },
+        {
+          "kappa": 4,
+          "window_mean": 0.008869989969871995,
+          "lhs_local_energy_derivative": -0.007578391512941391,
+          "advective_plus_pressure_boundary": -0.0021435210761349757,
+          "diffusion_window_term": -0.00040360833876831143,
+          "viscous_dissipation": -0.0050245440449667444,
+          "projection_residual": -6.718053071358518e-06,
+          "rhs": -0.00757839151294139,
+          "closure_error": 8.673617379884035e-19,
+          "error_if_projection_omitted": 6.718053071359115e-06,
+          "grid64_vs_grid96_lhs_diff": 5.204170427930421e-18,
+          "grid64_vs_grid96_projection_diff": 1.4399560103323106e-20
+        },
+        {
+          "kappa": 9,
+          "window_mean": 0.0024581626699344853,
+          "lhs_local_energy_derivative": -0.002272682651775506,
+          "advective_plus_pressure_boundary": -0.000717163045557908,
+          "diffusion_window_term": -0.00012591723506700614,
+          "viscous_dissipation": -0.0013721000373299206,
+          "projection_residual": -5.7502333820667824e-05,
+          "rhs": -0.0022726826517755028,
+          "closure_error": 3.0357660829594124e-18,
+          "error_if_projection_omitted": 5.750233382067083e-05,
+          "grid64_vs_grid96_lhs_diff": 1.734723475976807e-18,
+          "grid64_vs_grid96_projection_diff": 1.2197274440461925e-19
+        },
+        {
+          "kappa": 16,
+          "window_mean": 0.001016412804315421,
+          "lhs_local_energy_derivative": -0.0009969540574110139,
+          "advective_plus_pressure_boundary": -0.0003430430275476368,
+          "diffusion_window_term": -6.0150454752942014e-05,
+          "viscous_dissipation": -0.0005604589761300513,
+          "projection_residual": -3.33015989803818e-05,
+          "rhs": -0.000996954057411012,
+          "closure_error": 1.951563910473908e-18,
+          "error_if_projection_omitted": 3.330159898038375e-05,
+          "grid64_vs_grid96_lhs_diff": 8.673617379884035e-19,
+          "grid64_vs_grid96_projection_diff": 1.0164395367051604e-19
+        }
+      ]
+    }
+  ],
+  "scope": "Finite Galerkin local equality with residual, not a local energy inequality for the infinite PDE."
+}

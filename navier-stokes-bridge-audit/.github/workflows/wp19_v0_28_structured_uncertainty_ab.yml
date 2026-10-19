@@ -1,0 +1,65 @@
+name: WP19 v0.28 frozen structured uncertainty A-B on M14 segment 237
+on:
+  push:
+    branches: [wp19-v0.28-adjoint-hermite-residual]
+    paths:
+      - '.github/workflows/wp19_v0_28_structured_uncertainty_ab.yml'
+      - 'src/wp19_v0_28_structured_uncertainty_ab.py'
+      - 'src/wp19_v0_28_verify_structured_uncertainty_ab.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  same-segment-ab:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install numpy==2.3.5 python-flint==0.8.0
+      - name: Verify independent direct-convolution and Young-bound self-check
+        run: python src/wp19_v0_28_structured_uncertainty_ab.py --self-check
+      - name: Retrieve and hash-check the frozen M14 adjoint path
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p work/adjoint output
+          gh api repos/${{ github.repository }}/actions/artifacts/11121015458/zip > work/adjoint.zip
+          echo '330bb3e931fa8d45d1837c090b13a4a638fb54577cb26b8d8eaa2fe009303058  work/adjoint.zip' | sha256sum -c -
+          unzip -q work/adjoint.zip -d work/adjoint
+      - name: Compare old and structured bounds on the frozen segment only
+        run: |
+          set -euo pipefail
+          python -u src/wp19_v0_28_structured_uncertainty_ab.py \
+            --adjoint-dir work/adjoint \
+            --segment results/wp19_v0_28/pilot_chained_237_36820757066/M14_segment_237.json \
+            --previous-verification results/wp19_v0_28/pilot_chained_238_36819581437/chain_verification.json \
+            --current-verification results/wp19_v0_28/pilot_chained_237_36820757066/chain_verification.json \
+            --output output/structured_uncertainty_ab.json
+          cp src/wp19_v0_28_structured_uncertainty_ab.py output/
+          cp src/wp19_v0_28_verify_structured_uncertainty_ab.py output/
+          cp results/wp19_v0_28/pilot_chained_237_36820757066/M14_segment_237.json output/baseline_segment_237.json
+          cp results/wp19_v0_28/pilot_chained_238_36819581437/chain_verification.json output/previous_chain_verification.json
+          cp results/wp19_v0_28/pilot_chained_237_36820757066/chain_verification.json output/baseline_chain_verification.json
+          python src/wp19_v0_28_verify_structured_uncertainty_ab.py \
+            output/structured_uncertainty_ab.json \
+            output/baseline_segment_237.json \
+            output/previous_chain_verification.json \
+            output/baseline_chain_verification.json
+          python - <<'PY'
+          import hashlib
+          from pathlib import Path
+          root=Path('output')
+          files=sorted(p for p in root.iterdir() if p.is_file() and p.name!='SHA256SUMS.txt')
+          (root/'SHA256SUMS.txt').write_text(''.join(f'{hashlib.sha256(p.read_bytes()).hexdigest()}  {p.name}\n' for p in files))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wp19-v0-28-structured-uncertainty-ab-M14-step237
+          path: output
+          if-no-files-found: error
+          retention-days: 90

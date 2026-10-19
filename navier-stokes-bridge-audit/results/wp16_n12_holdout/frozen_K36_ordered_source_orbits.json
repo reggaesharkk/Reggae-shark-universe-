@@ -1,0 +1,511 @@
+{
+  "reference": "N11_from_N10 target_only k-channel first 36 absolute-ranked source-orbit groups",
+  "source_original_sha256": "193cbb7f485ab54ceed0d5cb38f97f0fc98c197e5f88e288fdbd277627608c8e",
+  "frozen_before_N12_commit": "8a9f603bb2048e5d712bb44b76835329a9dfeaad",
+  "keys": [
+    {
+      "rank": 1,
+      "left_orbit": [
+        1,
+        1,
+        1
+      ],
+      "right_orbit": [
+        1,
+        2,
+        5
+      ],
+      "N11_alpha_dot_contribution": 173.03153674787632
+    },
+    {
+      "rank": 2,
+      "left_orbit": [
+        0,
+        0,
+        1
+      ],
+      "right_orbit": [
+        0,
+        3,
+        5
+      ],
+      "N11_alpha_dot_contribution": 119.24294571225349
+    },
+    {
+      "rank": 3,
+      "left_orbit": [
+        1,
+        1,
+        1
+      ],
+      "right_orbit": [
+        1,
+        4,
+        7
+      ],
+      "N11_alpha_dot_contribution": 114.16044275379606
+    },
+    {
+      "rank": 4,
+      "left_orbit": [
+        1,
+        1,
+        2
+      ],
+      "right_orbit": [
+        1,
+        2,
+        4
+      ],
+      "N11_alpha_dot_contribution": 92.19273738840575
+    },
+    {
+      "rank": 5,
+      "left_orbit": [
+        2,
+        2,
+        2
+      ],
+      "right_orbit": [
+        1,
+        2,
+        4
+      ],
+      "N11_alpha_dot_contribution": 89.20294889323316
+    },
+    {
+      "rank": 6,
+      "left_orbit": [
+        0,
+        0,
+        1
+      ],
+      "right_orbit": [
+        0,
+        3,
+        7
+      ],
+      "N11_alpha_dot_contribution": 83.9001312334398
+    },
+    {
+      "rank": 7,
+      "left_orbit": [
+        0,
+        0,
+        2
+      ],
+      "right_orbit": [
+        0,
+        3,
+        4
+      ],
+      "N11_alpha_dot_contribution": -46.833821094534855
+    },
+    {
+      "rank": 8,
+      "left_orbit": [
+        1,
+        2,
+        3
+      ],
+      "right_orbit": [
+        2,
+        2,
+        3
+      ],
+      "N11_alpha_dot_contribution": 30.648924368088878
+    },
+    {
+      "rank": 9,
+      "left_orbit": [
+        1,
+        2,
+        5
+      ],
+      "right_orbit": [
+        1,
+        1,
+        1
+      ],
+      "N11_alpha_dot_contribution": -27.387520787760504
+    },
+    {
+      "rank": 10,
+      "left_orbit": [
+        1,
+        2,
+        4
+      ],
+      "right_orbit": [
+        1,
+        1,
+        2
+      ],
+      "N11_alpha_dot_contribution": -26.512105498804917
+    },
+    {
+      "rank": 11,
+      "left_orbit": [
+        1,
+        1,
+        3
+      ],
+      "right_orbit": [
+        1,
+        2,
+        3
+      ],
+      "N11_alpha_dot_contribution": -24.649800504520794
+    },
+    {
+      "rank": 12,
+      "left_orbit": [
+        1,
+        2,
+        4
+      ],
+      "right_orbit": [
+        2,
+        2,
+        2
+      ],
+      "N11_alpha_dot_contribution": -21.58542893748753
+    },
+    {
+      "rank": 13,
+      "left_orbit": [
+        0,
+        1,
+        1
+      ],
+      "right_orbit": [
+        1,
+        2,
+        6
+      ],
+      "N11_alpha_dot_contribution": -21.494449987573542
+    },
+    {
+      "rank": 14,
+      "left_orbit": [
+        0,
+        1,
+        1
+      ],
+      "right_orbit": [
+        1,
+        4,
+        6
+      ],
+      "N11_alpha_dot_contribution": 18.58295365499244
+    },
+    {
+      "rank": 15,
+      "left_orbit": [
+        1,
+        2,
+        2
+      ],
+      "right_orbit": [
+        2,
+        2,
+        4
+      ],
+      "N11_alpha_dot_contribution": 14.695770842969935
+    },
+    {
+      "rank": 16,
+      "left_orbit": [
+        2,
+        2,
+        3
+      ],
+      "right_orbit": [
+        1,
+        2,
+        3
+      ],
+      "N11_alpha_dot_contribution": -13.986441835981655
+    },
+    {
+      "rank": 17,
+      "left_orbit": [
+        2,
+        2,
+        2
+      ],
+      "right_orbit": [
+        2,
+        5,
+        8
+      ],
+      "N11_alpha_dot_contribution": 13.581019365736486
+    },
+    {
+      "rank": 18,
+      "left_orbit": [
+        0,
+        3,
+        7
+      ],
+      "right_orbit": [
+        0,
+        0,
+        1
+      ],
+      "N11_alpha_dot_contribution": 10.254733338466707
+    },
+    {
+      "rank": 19,
+      "left_orbit": [
+        1,
+        1,
+        2
+      ],
+      "right_orbit": [
+        1,
+        4,
+        8
+      ],
+      "N11_alpha_dot_contribution": 9.99929637735304
+    },
+    {
+      "rank": 20,
+      "left_orbit": [
+        0,
+        2,
+        3
+      ],
+      "right_orbit": [
+        3,
+        3,
+        4
+      ],
+      "N11_alpha_dot_contribution": -9.912317269656008
+    },
+    {
+      "rank": 21,
+      "left_orbit": [
+        0,
+        0,
+        2
+      ],
+      "right_orbit": [
+        0,
+        3,
+        8
+      ],
+      "N11_alpha_dot_contribution": -8.919994895497892
+    },
+    {
+      "rank": 22,
+      "left_orbit": [
+        0,
+        1,
+        3
+      ],
+      "right_orbit": [
+        3,
+        3,
+        5
+      ],
+      "N11_alpha_dot_contribution": 8.799742902796911
+    },
+    {
+      "rank": 23,
+      "left_orbit": [
+        1,
+        2,
+        3
+      ],
+      "right_orbit": [
+        1,
+        1,
+        3
+      ],
+      "N11_alpha_dot_contribution": 8.629870555525644
+    },
+    {
+      "rank": 24,
+      "left_orbit": [
+        1,
+        1,
+        1
+      ],
+      "right_orbit": [
+        1,
+        4,
+        5
+      ],
+      "N11_alpha_dot_contribution": -8.62845279510326
+    },
+    {
+      "rank": 25,
+      "left_orbit": [
+        1,
+        2,
+        2
+      ],
+      "right_orbit": [
+        1,
+        2,
+        5
+      ],
+      "N11_alpha_dot_contribution": 8.316673052588495
+    },
+    {
+      "rank": 26,
+      "left_orbit": [
+        0,
+        3,
+        4
+      ],
+      "right_orbit": [
+        0,
+        0,
+        2
+      ],
+      "N11_alpha_dot_contribution": 8.131104825897559
+    },
+    {
+      "rank": 27,
+      "left_orbit": [
+        0,
+        3,
+        5
+      ],
+      "right_orbit": [
+        0,
+        0,
+        1
+      ],
+      "N11_alpha_dot_contribution": -7.7114172993394705
+    },
+    {
+      "rank": 28,
+      "left_orbit": [
+        1,
+        2,
+        5
+      ],
+      "right_orbit": [
+        1,
+        2,
+        2
+      ],
+      "N11_alpha_dot_contribution": -4.23927040284067
+    },
+    {
+      "rank": 29,
+      "left_orbit": [
+        0,
+        2,
+        2
+      ],
+      "right_orbit": [
+        2,
+        5,
+        6
+      ],
+      "N11_alpha_dot_contribution": 3.8366441136815976
+    },
+    {
+      "rank": 30,
+      "left_orbit": [
+        1,
+        2,
+        6
+      ],
+      "right_orbit": [
+        0,
+        1,
+        1
+      ],
+      "N11_alpha_dot_contribution": -3.831317089563633
+    },
+    {
+      "rank": 31,
+      "left_orbit": [
+        2,
+        2,
+        4
+      ],
+      "right_orbit": [
+        1,
+        2,
+        2
+      ],
+      "N11_alpha_dot_contribution": -2.9058453172774152
+    },
+    {
+      "rank": 32,
+      "left_orbit": [
+        1,
+        4,
+        6
+      ],
+      "right_orbit": [
+        0,
+        1,
+        1
+      ],
+      "N11_alpha_dot_contribution": -2.638242513102779
+    },
+    {
+      "rank": 33,
+      "left_orbit": [
+        0,
+        2,
+        2
+      ],
+      "right_orbit": [
+        1,
+        2,
+        6
+      ],
+      "N11_alpha_dot_contribution": 2.63549148579055
+    },
+    {
+      "rank": 34,
+      "left_orbit": [
+        3,
+        3,
+        5
+      ],
+      "right_orbit": [
+        0,
+        1,
+        3
+      ],
+      "N11_alpha_dot_contribution": -2.6311448257943804
+    },
+    {
+      "rank": 35,
+      "left_orbit": [
+        1,
+        1,
+        4
+      ],
+      "right_orbit": [
+        4,
+        4,
+        5
+      ],
+      "N11_alpha_dot_contribution": -2.583356567923549
+    },
+    {
+      "rank": 36,
+      "left_orbit": [
+        0,
+        2,
+        3
+      ],
+      "right_orbit": [
+        2,
+        3,
+        3
+      ],
+      "N11_alpha_dot_contribution": -2.5155882990198255
+    }
+  ]
+}

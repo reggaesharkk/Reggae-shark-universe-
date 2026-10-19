@@ -1,0 +1,23 @@
+{
+  "status": "exact rational initial margin for projected finite decimal data",
+  "witness_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624",
+  "K36_keys_sha256": "7da5fc6d39ee03140d42ba40c5158cc20b043de33e4cc7f3ea52b71b79143f47",
+  "conjugate_pairs": 112,
+  "nonzero_ordered_group_count": 66,
+  "max_coefficient_projection_change_upper_decimal": "5E-15",
+  "normalizer_squared_positive": true,
+  "I_interval_decimal": [
+    "947.7106558002",
+    "947.7106558003"
+  ],
+  "O_interval_decimal": [
+    "33.5452090725",
+    "33.5452090726"
+  ],
+  "F0_interval_decimal": [
+    "645.8037741471",
+    "645.8037741472"
+  ],
+  "exact_F0_positive": true,
+  "interpretation": "only the initial Galerkin algebra is certified; no validated trajectory or continuum claim"
+}

@@ -1,0 +1,51 @@
+{
+  "status": "executed WP16 structured phase-adversary searches",
+  "objective": "C_infinity_stretch=max(N_H2_high,0)/(b_stretch*X2)",
+  "amplitude_scaling": {
+    "H2_high_transfer": 3,
+    "viscous_reserve": 2,
+    "X2": 2,
+    "positive_H1_stretching": 3,
+    "G": 2,
+    "b_stretch": 1,
+    "b_stretch_times_X2": 3,
+    "C_infinity_stretch": 0
+  },
+  "initial_support_pilot": {
+    "best_C_infinity_stretch": 0.06070446821510359,
+    "N4_equals_N7_on_initial_support": true,
+    "interpretation": "the shared initial occupied support is too restrictive to reproduce the dangerous evolved state"
+  },
+  "evolved_anchor": {
+    "definition": "4 * combined_double_quarter_high evolved with RK4 dt=0.0005 to t=0.0035",
+    "N7": {
+      "active_conjugate_pairs": 709,
+      "baseline_C_infinity_stretch": 1.0381140504125754,
+      "best_C_infinity_stretch": 1.077899704172086,
+      "improvement_factor": 1.0383249352455046,
+      "best_seed": 20260925,
+      "best_chi_H2_high": 0.2671101399871652,
+      "best_b_stretch": 26.658052015335546,
+      "seed_20260926_best_C_infinity_stretch": 1.0722309804570331
+    },
+    "N4": {
+      "active_conjugate_pairs": 128,
+      "baseline_C_infinity_stretch": 0,
+      "best_C_infinity_stretch": 0.06879528624170367,
+      "best_seed": 20260925,
+      "seed_20260926_best_C_infinity_stretch": 0.05247425280337336
+    }
+  },
+  "artifact_digest": "sha256:4237705d4c3aa8a78b727142e557fdf16e30b344f28fd165d916bd17825ff69a",
+  "interpretation": "Phase geometry on the cascade-generated N=7 support can increase the tested large-amplitude quotient while preserving all modal magnitudes and polarizations. No unbounded family or monotone cutoff law is established.",
+  "finite_lower_benchmark_for_any_universal_C": 1.077899704172086,
+  "warning": "Finite local optimization, finite grid and only N=4,7. The benchmark does not imply existence of a finite universal constant.",
+  "amplitude_scaling_wolfram_explicit": {
+    "b_stretch_exponent": 1,
+    "b_stretch_X2_exponent": 3,
+    "N_H2_high_exponent": 3,
+    "viscous_reserve_exponent": 2,
+    "C_infinity_exponent": 0
+  },
+  "next_step": "larger Colab phase-torus search with global random draws, block-coordinate proposals, multiple evolved anchor times, and additional cutoffs before any analytical inference"
+}

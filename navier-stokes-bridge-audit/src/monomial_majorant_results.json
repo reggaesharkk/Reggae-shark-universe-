@@ -1,0 +1,306 @@
+{
+  "trial": "T <= nu D/2 + C(E0,nu) G^(1+p)",
+  "scope": "Fixed-energy spatial concentration excludes every p<5/4 for a coefficient depending only on E0 and nu. p>=5/4 is not excluded by this scaling, but its G^p time integral is not controlled by the energy identity.",
+  "standard_estimate": "|T| <= C G^(3/4) D^(3/4); Young gives nu D/2 + C_nu G^3, whose Gronwall coefficient is proportional to G^2; energy supplies only integral G.",
+  "warning": "Empirical ratios are maxima over finitely sampled Galerkin trajectories; they do not prove any inequality.",
+  "analytic_certificates": [
+    {
+      "p": 0.0,
+      "transfer_exponent": 4.5,
+      "dissipation_exponent": 4.0,
+      "residual_exponent": 2.0,
+      "fixed_energy_concentration": "refuted for all smooth data",
+      "coefficient_integral_from_energy": "bounded by energy identity on finite intervals"
+    },
+    {
+      "p": 0.5,
+      "transfer_exponent": 4.5,
+      "dissipation_exponent": 4.0,
+      "residual_exponent": 3.0,
+      "fixed_energy_concentration": "refuted for all smooth data",
+      "coefficient_integral_from_energy": "bounded by energy identity on finite intervals"
+    },
+    {
+      "p": 1.0,
+      "transfer_exponent": 4.5,
+      "dissipation_exponent": 4.0,
+      "residual_exponent": 4.0,
+      "fixed_energy_concentration": "refuted for all smooth data",
+      "coefficient_integral_from_energy": "bounded by energy identity on finite intervals"
+    },
+    {
+      "p": 1.25,
+      "transfer_exponent": 4.5,
+      "dissipation_exponent": 4.0,
+      "residual_exponent": 4.5,
+      "fixed_energy_concentration": "not excluded by this scaling test",
+      "coefficient_integral_from_energy": "not bounded by the energy identity alone"
+    }
+  ],
+  "runs": [
+    {
+      "scenario": "reference",
+      "N": 4,
+      "necessary_sampled_constants": {
+        "p=0": 0.7554563828406027,
+        "p=0.5": 0.032678546548017315,
+        "p=1": 0.0014135659301408713,
+        "p=1.25": 0.00029399689101096286
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.012696025288799812
+    },
+    {
+      "scenario": "reference",
+      "N": 5,
+      "necessary_sampled_constants": {
+        "p=0": 1.0634592057516572,
+        "p=0.5": 0.04585665124318777,
+        "p=1": 0.001977351319041019,
+        "p=1.25": 0.00041060533575150237
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.016256091531839836
+    },
+    {
+      "scenario": "reference",
+      "N": 6,
+      "necessary_sampled_constants": {
+        "p=0": 1.0766431300400694,
+        "p=0.5": 0.04642108068921618,
+        "p=1": 0.002001514403639505,
+        "p=1.25": 0.00041560470582364023
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.01640192540210596
+    },
+    {
+      "scenario": "half_amplitude",
+      "N": 4,
+      "necessary_sampled_constants": {
+        "p=0": 0.08736664989640817,
+        "p=0.5": 0.007623275314453253,
+        "p=1": 0.0006651774628975621,
+        "p=1.25": 0.00019648775346243436
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.008802033161593212
+    },
+    {
+      "scenario": "half_amplitude",
+      "N": 5,
+      "necessary_sampled_constants": {
+        "p=0": 0.16660303137459292,
+        "p=0.5": 0.014525505641586653,
+        "p=1": 0.001266425420971913,
+        "p=1.25": 0.0003739416152256066
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.010794210928670996
+    },
+    {
+      "scenario": "half_amplitude",
+      "N": 6,
+      "necessary_sampled_constants": {
+        "p=0": 0.16821051167937653,
+        "p=0.5": 0.01466546892556646,
+        "p=1": 0.0012786120002815785,
+        "p=1.25": 0.00037753757958163713
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.010834294468566185
+    },
+    {
+      "scenario": "double_amplitude",
+      "N": 4,
+      "necessary_sampled_constants": {
+        "p=0": 2.770842969199383,
+        "p=0.5": 0.05841331540890728,
+        "p=1": 0.001231435868069562,
+        "p=1.25": 0.00017879763519885404
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.017988094752915868
+    },
+    {
+      "scenario": "double_amplitude",
+      "N": 5,
+      "necessary_sampled_constants": {
+        "p=0": 3.8646352440566245,
+        "p=0.5": 0.08050673813314917,
+        "p=1": 0.0016770883862343852,
+        "p=1.25": 0.00024205709217132133
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.02272799183902229
+    },
+    {
+      "scenario": "double_amplitude",
+      "N": 6,
+      "necessary_sampled_constants": {
+        "p=0": 3.9909249529568536,
+        "p=0.5": 0.08307263455969026,
+        "p=1": 0.0017291887705317252,
+        "p=1.25": 0.0002494793580464011
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.02320556237536286
+    },
+    {
+      "scenario": "quarter_phase",
+      "N": 4,
+      "necessary_sampled_constants": {
+        "p=0": 0.32297888924804385,
+        "p=0.5": 0.014078625753965767,
+        "p=1": 0.0006136862492210971,
+        "p=1.25": 0.00012812664554173086
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.007370619449862553
+    },
+    {
+      "scenario": "quarter_phase",
+      "N": 5,
+      "necessary_sampled_constants": {
+        "p=0": 0.7125469386889229,
+        "p=0.5": 0.030944755929774016,
+        "p=1": 0.0013438804765833604,
+        "p=1.25": 0.00028005764740417704
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.012058576580922721
+    },
+    {
+      "scenario": "quarter_phase",
+      "N": 6,
+      "necessary_sampled_constants": {
+        "p=0": 0.7223230145395562,
+        "p=0.5": 0.031367269060995934,
+        "p=1": 0.0013621406885008392,
+        "p=1.25": 0.0002838537226909996
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.012170990226875011
+    },
+    {
+      "scenario": "opposite_phase",
+      "N": 4,
+      "necessary_sampled_constants": {
+        "p=0": 0.0,
+        "p=0.5": 0.0,
+        "p=1": 0.0,
+        "p=1.25": 0.0
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.0042506488051460775
+    },
+    {
+      "scenario": "opposite_phase",
+      "N": 5,
+      "necessary_sampled_constants": {
+        "p=0": 0.24332454102706114,
+        "p=0.5": 0.010653756827525769,
+        "p=1": 0.00046646562677551235,
+        "p=1.25": 9.760635169804918e-05
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.006364705779674987
+    },
+    {
+      "scenario": "opposite_phase",
+      "N": 6,
+      "necessary_sampled_constants": {
+        "p=0": 0.25393749028003687,
+        "p=0.5": 0.011117660056834042,
+        "p=1": 0.0004867432729331028,
+        "p=1.25": 0.00010184582764161325
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.006494980486049657
+    },
+    {
+      "scenario": "high_frequency_25pct_G",
+      "N": 4,
+      "necessary_sampled_constants": {
+        "p=0": 0.4140640370908977,
+        "p=0.5": 0.015623056521585452,
+        "p=1": 0.0005894737847592205,
+        "p=1.25": 0.00011450217642710811
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.006669691416117604
+    },
+    {
+      "scenario": "high_frequency_25pct_G",
+      "N": 5,
+      "necessary_sampled_constants": {
+        "p=0": 1.0473715122810132,
+        "p=0.5": 0.03923734469758582,
+        "p=1": 0.0014699361218678008,
+        "p=1.25": 0.0002845102311859738
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.011793371690710328
+    },
+    {
+      "scenario": "high_frequency_25pct_G",
+      "N": 6,
+      "necessary_sampled_constants": {
+        "p=0": 1.450289594653176,
+        "p=0.5": 0.05411936877234054,
+        "p=1": 0.0020195318832284736,
+        "p=1.25": 0.00039012134216089505
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.014808043702039956
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 4,
+      "necessary_sampled_constants": {
+        "p=0": 1.030152602620563,
+        "p=0.5": 0.019329728645429537,
+        "p=1": 0.0003627020002235162,
+        "p=1.25": 4.968348452622419e-05
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.005960279544086297
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 5,
+      "necessary_sampled_constants": {
+        "p=0": 3.110590291797729,
+        "p=0.5": 0.056706630626602486,
+        "p=1": 0.0010340586196587213,
+        "p=1.25": 0.000139747818033708
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.013009902968321005
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 6,
+      "necessary_sampled_constants": {
+        "p=0": 4.447667613526741,
+        "p=0.5": 0.08013150578708732,
+        "p=1": 0.0014436911158058601,
+        "p=1.25": 0.000193780366945723
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.016551515598248558
+    },
+    {
+      "scenario": "reference",
+      "N": 7,
+      "necessary_sampled_constants": {
+        "p=0": 1.084400300627433,
+        "p=0.5": 0.046753721377888045,
+        "p=1": 0.002015778178423982,
+        "p=1.25": 0.0004185583565083389
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.016487419837600686
+    },
+    {
+      "scenario": "high_frequency_25pct_G",
+      "N": 7,
+      "necessary_sampled_constants": {
+        "p=0": 1.6058911571211736,
+        "p=0.5": 0.059847679531274144,
+        "p=1": 0.002230378272770966,
+        "p=1.25": 0.0004305703603794466
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.015879695504819998
+    },
+    {
+      "scenario": "combined_double_quarter_high",
+      "N": 7,
+      "necessary_sampled_constants": {
+        "p=0": 5.291061144421817,
+        "p=0.5": 0.09459232166228748,
+        "p=1": 0.0016910988312608937,
+        "p=1.25": 0.00022611300496519577
+      },
+      "standard_G_3_4_D_3_4_ratio": 0.01817165829729923
+    }
+  ]
+}

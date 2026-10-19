@@ -1,0 +1,11 @@
+{
+  "status": "Arb residual and gradient segment bounds; endpoint F enclosure separate",
+  "witness_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624",
+  "h": 2.5e-05,
+  "steps": 120,
+  "initial_L2_error_upper_decimal": "0",
+  "maximum_residual_upper_decimal": "0.000203462251",
+  "maximum_gradient_l1_upper_decimal": "2391.907424",
+  "terminal_L2_error_upper_decimal": "0.000050798503",
+  "endpoint_F_certified": false
+}
