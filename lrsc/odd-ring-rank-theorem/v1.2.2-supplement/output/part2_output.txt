@@ -1,0 +1,27 @@
+Fourier inversion sum_r w_r = j: max err 2.54e-49
+stress strictly decreasing in |t| over all 50 orbits: True
+   orbit |t|=38 (nodes 38,61): stress = 0.12752327033025162552
+   orbit |t|=39 (nodes 39,60): stress = 0.10714434672759405461
+   orbit |t|=40 (nodes 40,59): stress = 0.088346807373176936356
+   orbit |t|=41 (nodes 41,58): stress = 0.071206343323506124824
+   orbit |t|=42 (nodes 42,57): stress = 0.055791973177689663942
+
+theta=0.07: active nodes=83, orbits=42, inactive=42..57
+   mask cell = [0.05579197317768966394229509, 0.07120634332350612482423088)
+   c=||E||^2 = 0.50451567155458613003   closure |E-sum V|/|E| = 8.99e-50
+   |S|=14 (0, 1, 2, 4, 5, 6, 42, 43, 44, 45, 46, 47, 48, 49): rel residual = 0.000974040815024211  pass=True
+   |S|=15 (0, 1, 3, 11, 12, 13, 14, 42, 43, 44, 45, 46, 47, 48, 49): rel residual = 0.000995214188027774  pass=True
+
+theta=0.08: active nodes=81, orbits=41, inactive=41..58
+   mask cell = [0.07120634332350612482423088, 0.08834680737317693635577447)
+   c=||E||^2 = 0.50451567155458613003   closure |E-sum V|/|E| = 8.78e-50
+   |S|=11 (0, 1, 3, 42, 43, 44, 45, 46, 47, 48, 49): rel residual = 0.00096236912766499  pass=True
+   |S|=10 (0, 1, 42, 43, 44, 45, 46, 47, 48, 49): rel residual = 0.00103982061909946  pass=False
+
+theta=0.09: active nodes=79, orbits=40, inactive=40..59
+   mask cell = [0.08834680737317693635577447, 0.1071443467275940546131651)
+   c=||E||^2 = 0.50039483308509315173   closure |E-sum V|/|E| = 8.7e-50
+   |S|=11 (0, 1, 3, 42, 43, 44, 45, 46, 47, 48, 49): rel residual = 0.00100116818848279  pass=False
+   |S|=12 (0, 1, 3, 41, 42, 43, 44, 45, 46, 47, 48, 49): rel residual = 0.000947945578373704  pass=True
+
+exported float64 vectors to bench_vectors.json

@@ -1,0 +1,9 @@
+# WP19 v0.28 follow-up audit clarifications — 1 October 2026
+
+This is an append-only umbrella mirror of the latest finite scalar-recurrence clarification. It records the scope and corrected segment-237 A/B explanation without altering earlier research artifacts or status snapshots.
+
+The A/B producer re-imports the segment's already-rounded decimal strings and applies `safe_decimal_upper`; it does not re-evaluate strain, nominal residual, or primal radius from predictor arrays. The source-level rounding path, with decimal-grid emulation, reproduces the recorded two-unit shifts at 9, 6, and 15 decimal places. The Arb-backed operation was not independently executed in that emulation. The old recurrence uses the rounded A/B strain, the segment's `residual_L2_upper`, and the shared incoming radius; the nominal-residual display is not an input. The approximately 0.001956341 output difference is accounted for by the 2e-9 strain shift. The structured-residual comparison remains diagnostic-only, and the existing A/B status is not promoted to the official chain.
+
+The machine-readable supersession register is maintained with the canonical WP19 record in `results/wp19_v0_28/followup_audit_clarifications_20261001/record.json` of the Navier–Stokes repository. It identifies stale claims, field names, and exact repository object identities. Legacy verifier and workflow passes replay their archived specifications and do not establish the withdrawn interpretation. The earlier records remain available in repository history.
+
+The strain-only recurrence for steps 239, 238, and 237 remains conditional on the finite M15 adjoint model and imported whole-segment bounds. The underlying predictor and adjoint arrays are not reconstructed by these records. This is not a complete adjoint certificate, signed endpoint-transfer proof, all-cutoff result, blow-up result, or continuum regularity result.

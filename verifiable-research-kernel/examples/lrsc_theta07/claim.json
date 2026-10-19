@@ -1,0 +1,82 @@
+{
+  "schema": "intentseal-vrk-claim-v1",
+  "claim_id": "lrsc.m99.theta007.k0001.eq14",
+  "claim_text": "For the specified LRSC M=99, k_idx=49, A=1/2, theta=0.07 finite benchmark, the minimum passing channel-subset cardinality at relative residual tolerance 1e-3 is K_0.001=14.",
+  "claim_class": "EXHAUSTIVE_FINITE_RESULT",
+  "scope": {
+    "applies_to": [
+      "LRSC finite benchmark M=99",
+      "k_idx=49",
+      "A=1/2",
+      "theta=0.07",
+      "relative complex L2 tolerance=1e-3"
+    ],
+    "does_not_imply": [
+      "matrix rank(V)=14",
+      "continuum Navier-Stokes statement",
+      "other LRSC parameter cells",
+      "multi-step dynamical theorem"
+    ]
+  },
+  "dependencies": [
+    {
+      "claim_id": "lrsc.m99.theta007.mask83",
+      "relation": "assumes_mask_cell"
+    }
+  ],
+  "evidence": [
+    {
+      "role": "definition",
+      "external": {
+        "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+        "commit": "0d59b323a06d386e81843a50db7604cec314e3f9",
+        "path": "finite-benchmark/theta07-rank14/CERTIFICATE.md",
+        "git_blob_sha": "b297f0935a5733319ccc7a988ae11a4d5b7f4fb9"
+      }
+    },
+    {
+      "role": "passing_witness",
+      "path": "evidence/witness_summary.json",
+      "sha256": "f982f3a60c50fb5432cb69f74bcb71baf9b85be84803bbd2f497690077c2ce71",
+      "plugin": "lrsc_witness_summary",
+      "plugin_args": {"K": 14}
+    },
+    {
+      "role": "exclusion_certificate",
+      "path": "evidence/rigorous_k11.txt",
+      "sha256": "60e7bbbd572e2d28d2f5fb52d21e1639082690b1e600933d6c64ef1437ca088b",
+      "plugin": "lrsc_coverage_log",
+      "plugin_args": {"N": 50, "K": 11}
+    },
+    {
+      "role": "exclusion_certificate",
+      "path": "evidence/rigorous_k12.txt",
+      "sha256": "39e6e60a085a49ca2699d712531851f79dd19f1429af91b2858a45dae6f2800a",
+      "plugin": "lrsc_coverage_log",
+      "plugin_args": {"N": 50, "K": 12}
+    },
+    {
+      "role": "exclusion_certificate",
+      "path": "evidence/rigorous_k13.txt",
+      "sha256": "94362758a93deac03635356fd9a3198de146f90157aeb128e11249d78ad62d98",
+      "plugin": "lrsc_coverage_log",
+      "plugin_args": {"N": 50, "K": 13}
+    },
+    {
+      "role": "coverage_certificate",
+      "path": "evidence/rigorous_k13.txt",
+      "sha256": "94362758a93deac03635356fd9a3198de146f90157aeb128e11249d78ad62d98",
+      "plugin": "lrsc_coverage_log",
+      "plugin_args": {"N": 50, "K": 13}
+    },
+    {
+      "role": "independent_verification",
+      "external": {
+        "repository": "reggaesharkk/lrsc-odd-ring-spectral-rank",
+        "commit": "0d59b323a06d386e81843a50db7604cec314e3f9",
+        "path": "odd-ring-rank-theorem/v1.2.2-supplement/README.md",
+        "git_blob_sha": "7e1cea12710e8709fe211bbc02a1cb19567e3ef1"
+      }
+    }
+  ]
+}

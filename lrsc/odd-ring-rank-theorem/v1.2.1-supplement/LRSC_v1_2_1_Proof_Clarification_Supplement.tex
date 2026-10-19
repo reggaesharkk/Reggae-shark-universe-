@@ -1,0 +1,284 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.92in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.42em}
+\setlist{nosep,leftmargin=1.4em}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+
+\title{LRSC Odd-Ring Spectral Rank Theorem\\
+\large Version 1.2.1 --- Proof Clarification and Verification Supplement}
+\author{Prince Upadhyay\\Independent Research}
+\date{23 September 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This supplement makes the finite Fourier calculation and channel construction in the frozen LRSC odd-ring theorem release explicit. It fixes the DFT convention, defines every channel entry, evaluates the finite cosine sums by a stated progression identity, and maps each hypothesis to the rank conclusion. It also reports a separately written numerical audit, clearly distinguished from the proof. Version 1.2 and its OSF registration (DOI \href{https://doi.org/10.17605/OSF.IO/NM5BW}{10.17605/OSF.IO/NM5BW}) remain frozen and unchanged. This document is explanatory and supplementary; it does not replace, amend, or silently revise the registered theorem.
+\end{abstract}
+
+\section{Purpose, scope, and provenance}
+
+The result addressed here is a theorem about a specified single-step operator on an odd cyclic lattice. The task of this note is narrower than a new result: it spells out the intermediate algebra and linear-algebra objects so that a reader can check the proof without inferring conventions. The theorem statement and scope remain those of v1.2.
+
+The frozen source release is \href{https://github.com/reggaesharkk/Reggae-shark-universe-/tree/main/lrsc/odd-ring-rank-theorem/v1.2/}{LRSC Odd-Ring Spectral Rank Theorem v1.2}; its OSF registration is \textbf{NM5BW}, DOI \textbf{10.17605/OSF.IO/NM5BW}. The companion verifier in that release is corroborative, not a premise of the analytic proof. This supplement is not itself represented as DOI-registered.
+
+\section{Definitions and theorem}
+
+Let $M\geq 9$ be odd, $k=(M-1)/2$, and $\alpha=\pi/M$. Indices lie in $\mathbb Z_M$. We use the centered representatives $t=-k,\ldots,k$ when describing the signal and the representatives $i=0,\ldots,k$ for reflection orbits $\{i,-i\}$ (with $\{0\}$ the singleton orbit).
+
+Define
+\[
+ X_t=1+A\cos\!\left(\frac{2\pi kt}{M}\right),\qquad A>0,
+ \qquad j_t=X_t-\min(X_{t-1},X_t,X_{t+1}).
+\]
+Let $m_i\in\{0,1\}$ obey $m_i=m_{-i}$. Assume at least one reflection orbit is inactive, and let $p$ be the number of active reflection orbits.
+
+For any $x\in\mathbb C^M$, fix the DFT convention
+\[
+ \widehat{x}_q=\sum_{t=0}^{M-1}x_t e^{-2\pi iqt/M},\qquad
+ x_t=\frac1M\sum_{q=0}^{M-1}\widehat{x}_q e^{2\pi iqt/M}.
+\]
+Thus $\widehat j_q/M$ is the normalized Fourier coefficient. Since $j$ is real and even, $\widehat j_q=\widehat j_{M-q}\in\mathbb R$.
+
+Define the real conjugate-balanced channels, for $i\in\mathbb Z_M$, by
+\begin{align*}
+ w_0(i)&=m_i\,\frac{\widehat j_0}{M},\\
+ w_r(i)&=m_i\left(\frac{\widehat j_r}{M}e^{2\pi iri/M}
+              +\frac{\widehat j_{M-r}}{M}e^{-2\pi iri/M}\right)
+       =2m_i\,\frac{\widehat j_r}{M}\cos\!\left(\frac{2\pi ri}{M}\right),
+       \quad 1\leq r\leq k.
+\end{align*}
+Here $W\in\mathbb R^{M\times(k+1)}$ has entries $W_{i,r}=w_r(i)$, with columns indexed $r=0,\ldots,k$. Including the common factor $1/M$ in each Fourier coefficient fixes the normalization; omitting it would only rescale all columns and would not change rank.
+
+Let $F$ be the DFT matrix under the convention above and define the real circulant stencil
+\[
+ S=F^{-1}\operatorname{diag}(s_0,\ldots,s_{M-1})F,
+ \qquad s_q=\cos\!\left(\frac{2\pi q}{M}\right)-1.
+\]
+The post-stencil matrix is $V=SW$.
+
+\textbf{Theorem (v1.2, unchanged).} Under these assumptions,
+\[
+ \boxed{\operatorname{rank}(V)=p.}
+\]
+
+\section{Exact shedding field and explicit finite Fourier sum}
+
+The centered carrier identity is
+\[
+ \cos\!\left(\frac{2\pi kt}{M}\right)
+ =\cos((\pi-\alpha)t)=(-1)^t\cos(\alpha t),
+\]
+so $X_t=1+A(-1)^t\cos(\alpha t)$. For odd $|t|$, the center value is the smaller of the three neighboring carrier values, giving $j_t=0$. At zero, $j_0=A(1+\cos\alpha)$. At nonzero even sites, the smaller neighbor is the adjacent odd site in the direction of the center, hence
+\[
+ j_t=A\{\cos(|t|\alpha)+\cos((|t|-1)\alpha)\},
+ \qquad 0<|t|\leq k,\quad |t|\text{ even}.
+\]
+This also shows directly that $j$ is real and reflection-even. Put $L=\lfloor(M-1)/4\rfloor$. Then the nonzero positive centered even representatives are exactly $2,4,\ldots,2L$, and
+\[
+ \frac{\widehat j_r}{M}
+ =\frac{1}{M}\left[j_0+2\sum_{u=1}^{L}j_{2u}
+                  \cos(4ru\alpha)\right],\qquad 0\leq r<k. \tag{1}
+\]
+
+The two adjacent cosines in $j_{2u}$ combine exactly:
+\[
+ j_{2u}=A\{\cos(2u\alpha)+\cos((2u-1)\alpha)\}
+      =2A\cos(\alpha/2)\cos((4u-1)\alpha/2). \tag{2}
+\]
+Also $j_0=2A\cos^2(\alpha/2)$. Substituting (2) in (1) gives
+\[
+ \frac{\widehat j_r}{M}=\frac{2A\cos(\alpha/2)}{M}B_r,
+ \quad
+ B_r=\cos(\alpha/2)+2\sum_{u=1}^{L}
+ \cos((4u-1)\alpha/2)\cos(4ru\alpha). \tag{3}
+\]
+Applying $2\cos a\cos b=\cos(a+b)+\cos(a-b)$ to each summand yields the two arithmetic progressions
+\[
+ B_r=\cos(\alpha/2)
+ +\sum_{u=1}^{L}\cos\!\left(\left[2(2r+1)u-\tfrac12\right]\alpha\right)
+ +\sum_{u=1}^{L}\cos\!\left(\left[2(2r-1)u+\tfrac12\right]\alpha\right). \tag{4}
+\]
+
+For completeness, if $d\notin2\pi\mathbb Z$, summing the geometric progression of $e^{i(ud+\beta)}$ and taking its real part gives
+\[
+ \sum_{u=1}^{L}\cos(ud+\beta)
+ =\frac{\sin(Ld/2)}{\sin(d/2)}
+  \cos\!\left(\beta+\frac{(L+1)d}{2}\right). \tag{5}
+\]
+Indeed, $\sum_{u=1}^L e^{i(ud+\beta)}=e^{i(\beta+(L+1)d/2)}\sin(Ld/2)/\sin(d/2)$; (5) follows by taking real parts. Applying (5) separately to the two sums in (4), with $(d,\beta)=(2(2r+1)\alpha,-\alpha/2)$ and $(2(2r-1)\alpha,+\alpha/2)$, gives the explicit evaluated finite sum
+\begin{align}
+ B_r={}&\cos(\alpha/2)
+ +\frac{\sin(L(2r+1)\alpha)}{\sin((2r+1)\alpha)}
+   \cos\!\left((L+1)(2r+1)\alpha-\alpha/2\right)\notag\\
+ &+\frac{\sin(L(2r-1)\alpha)}{\sin((2r-1)\alpha)}
+   \cos\!\left((L+1)(2r-1)\alpha+\alpha/2\right). \tag{6}
+\end{align}
+No unevaluated sum remains in (6).
+
+To reduce (6) to the compact residue formulas, the only residue-specific substitutions are
+\[
+\begin{array}{c|cc}
+ M & L\alpha &(L+1)\alpha\\ \hline
+ 4L+3 & \pi/4-3\alpha/4 & \pi/4+\alpha/4\\
+ 4L+1 & \pi/4-\alpha/4 & \pi/4+3\alpha/4
+\end{array} \tag{7}
+\]
+and the product-to-sum identities $2\sin x\cos y=\sin(x+y)+\sin(x-y)$ and $\sin(u+v)\sin(u-v)=\sin^2u-\sin^2v$. To make the common-denominator reduction explicit, put
+$D_r=\sin((2r-1)\alpha)\sin((2r+1)\alpha)$. Substitution of the first row of (7) into (6), expansion of the two products, and collection over $D_r$ gives
+\[
+ D_r B_r=-\frac{\sin(2\alpha)}{2}
+ \left[(-1)^r\cos(r\alpha)+\sin(\alpha/2)\right],
+ \qquad M=4L+3. \tag{8}
+\]
+Using the second row gives
+\[
+ D_r B_r=-\sin\alpha
+ \left[(-1)^r\cos(r\alpha)\cos(2r\alpha)
+       +\cos\alpha\sin(\alpha/2)\right],
+ \qquad M=4L+1. \tag{9}
+\]
+Here is the product-expansion step used in that collection. Write $u=(2r-1)\alpha$ and $v=(2r+1)\alpha$. In (6), use $2\sin x\cos y=\sin(x+y)+\sin(x-y)$ on each numerator product. Before collecting terms, the result is
+\begin{equation}
+\begin{aligned}
+2D_rB_r={}&2D_r\cos(\alpha/2)
++\sin u\{\sin((2L+1)v-\alpha/2)-\sin(v-\alpha/2)\}\\
+&+\sin v\{\sin((2L+1)u+\alpha/2)-\sin(u+\alpha/2)\}.
+\end{aligned}
+\tag{9a}
+\end{equation}
+For $M=4L+3$, $(2L+1)\alpha=\pi/2-\alpha/2$, so the first sine in the first brace is $(-1)^r\cos((r+1)\alpha)$ and the first sine in the second brace is $(-1)^{r-1}\cos((r-1)\alpha)$. For $M=4L+1$, $(2L+1)\alpha=\pi/2+\alpha/2$, and those two sines become $(-1)^r\cos(r\alpha)$ and $(-1)^{r-1}\cos(r\alpha)$. The remaining four sine terms have arguments $2r\alpha\pm\alpha/2$. Substituting these values into (9a) and using $\sin(u+v)\sin(u-v)=\sin^2u-\sin^2v$ gives exactly (8) and (9), respectively. Equations (6)--(9) therefore show the finite progressions, their exact summation, and the common-denominator reduction. In particular,
+\[
+ B_r=-\frac{\sin(2\alpha)[(-1)^r\cos(r\alpha)+\sin(\alpha/2)]}{2D_r}
+ \quad(M=4L+3), \tag{10}
+\]
+and
+\[
+ B_r=-\frac{\sin\alpha[(-1)^r\cos(r\alpha)\cos(2r\alpha)
+                    +\cos\alpha\sin(\alpha/2)]}{D_r}
+ \quad(M=4L+1). \tag{11}
+\]
+Thus the nonvanishing proof below rests on explicit finite expressions rather than an asserted summation step.
+
+\section{Non-vanishing for every required mode}
+
+For $0\leq r<k$, neither factor in $D_r$ vanishes: $2r-1$ and $2r+1$ are nonzero integers of magnitude less than $M$, so their products with $\alpha=\pi/M$ are not integer multiples of $\pi$. Also $A>0$, $\cos(\alpha/2)>0$, and the sine factors outside the brackets in (10)--(11) are positive. It remains to show that each bracket is nonzero.
+
+\subsection{$M=4L+3$}
+For even $r$, the bracket in (10) is $\cos(r\alpha)+\sin(\alpha/2)>0$. For odd $r$,
+\[
+ r\alpha\leq(k-1)\alpha=\pi/2-3\alpha/2,
+ \quad\text{so}\quad
+ \cos(r\alpha)\geq\sin(3\alpha/2)>\sin(\alpha/2).
+\]
+Consequently $-\cos(r\alpha)+\sin(\alpha/2)<0$. The bracket cannot vanish.
+
+\subsection{$M=4L+1$}
+Here $k=2L$, and a zero in (11) would imply
+\[
+ |\cos(r\alpha)\cos(2r\alpha)|=c,
+ \qquad c=\cos\alpha\sin(\alpha/2). \tag{12}
+\]
+Because $M\geq9$, $\alpha\leq\pi/9$ (in this residue class the first admissible $M$ is 13).
+
+For $0\leq r\leq L-1$, let $f(x)=\cos x\cos2x$. On $[0,\pi/4)$,
+\[
+ f'(x)=-\sin x\{\cos2x+4\cos x\}<0.
+\]
+Since $(L-1)\alpha=\pi/4-5\alpha/4$,
+\[
+ f(r\alpha)\geq
+ \cos(\pi/4-5\alpha/4)\sin(5\alpha/2)
+ >\frac{5\alpha}{\pi\sqrt2}>\frac\alpha2>c. \tag{13}
+\]
+Here the first strict bound uses $\cos(\pi/4-5\alpha/4)>1/\sqrt2$ and $\sin(5\alpha/2)\geq5\alpha/\pi$; the last uses $\cos\alpha<1$ and $\sin(\alpha/2)<\alpha/2$.
+
+At $r=L$, $L\alpha=\pi/4-\alpha/4$ and $2L\alpha=\pi/2-\alpha/2$, whence
+\[
+ |\cos(L\alpha)\cos(2L\alpha)|
+ =\cos(L\alpha)\sin(\alpha/2)<\cos\alpha\sin(\alpha/2)=c, \tag{14}
+\]
+because $L\alpha>\alpha$ and cosine decreases on $[0,\pi]$.
+
+For $L+1\leq r\leq2L-1$, set $s=2L-r$ and $t=(s+1/2)\alpha$. Then $1\leq s\leq L-1$, so
+\[
+ 3\alpha/2\leq t\leq\pi/4-3\alpha/4,
+ \qquad r\alpha=\pi/2-t,
+ \qquad |\cos(r\alpha)\cos(2r\alpha)|=h(t):=\sin t\cos2t.
+\]
+On this interval,
+\[
+ h'(t)=\cos t(1-6\sin^2t),
+\]
+which changes sign at most once, from positive to negative. Thus any interior critical point is a maximum and the minimum is at an endpoint. At the lower endpoint, using $\sin(3\alpha/2)/\sin(\alpha/2)=1+2\cos\alpha$,
+\[
+ \frac{h(3\alpha/2)}{c}
+ =\frac{(1+2\cos\alpha)\cos3\alpha}{\cos\alpha}
+ \geq\frac{1+2\cos\alpha}{2\cos\alpha}>1. \tag{15}
+\]
+At the upper endpoint, the same identity and $\sin(\pi/4-3\alpha/4)\geq1/2$ give
+\[
+ \frac{h(\pi/4-3\alpha/4)}{c}
+ =\sin(\pi/4-3\alpha/4)\frac{1+2\cos\alpha}{\cos\alpha}
+ \geq\frac{1+2\cos\alpha}{2\cos\alpha}>1. \tag{16}
+\]
+The inequalities use $\alpha\leq\pi/9$, so $\cos3\alpha\geq1/2$. Hence $h(t)>c$ throughout this range. Together (13)--(16) show that equality in (12) is impossible. Therefore $\widehat j_r\ne0$ for every $0\leq r<k$ in both odd residue classes.
+
+\section{Proof map: hypotheses to rank}
+
+The rank argument can be read as four implications.
+\begin{enumerate}
+ \item \textbf{Odd-ring signal $\to$ nonzero low modes.} The exact shedding calculation and (10)--(16) give $\widehat j_r\ne0$ for $0\leq r<k$.
+ \item \textbf{Inactive orbit $\to p\leq k$.} An odd ring has $k+1$ reflection orbits. At least one is inactive, so the active count satisfies $p\leq k$. Thus all first $p$ Fourier scales are nonzero.
+ \item \textbf{Distinct active orbits $\to$ pre-stencil rank $p$.} If $p=0$, then $W=0$ and the conclusion is immediate. For $p\geq1$, choose representatives $i_s\in\{0,\ldots,k\}$ for the active orbits, $s=0,\ldots,p-1$, and put $x_s=\cos(2\pi i_s/M)$. Since cosine is strictly decreasing on $[0,\pi]$, these $x_s$ are distinct. The $p\times p$ submatrix using these rows and channel columns $r=0,\ldots,p-1$ is
+ \[
+  W_{i_s,r}=c_r T_r(x_s),\qquad c_0=\widehat j_0/M,\quad c_r=2\widehat j_r/M\ (r\geq1),
+ \]
+ where $T_r$ is the Chebyshev polynomial of degree $r$. Every $c_r\ne0$. If $a_r$ is the leading coefficient of $T_r$ ($a_0=1$, $a_r=2^{r-1}$ for $r\geq1$), polynomial evaluation gives
+ \[
+  \det[T_r(x_s)]_{s,r=0}^{p-1}
+  =\left(\prod_{r=0}^{p-1}a_r\right)
+   \left(\prod_{0\leq u<v<p}(x_v-x_u)\right)\ne0.
+ \]
+ Hence $\operatorname{rank}(W)\geq p$. Conversely, each column is mask-supported and reflection-even, so its values are determined by at most the $p$ active orbit values; therefore $\operatorname{rank}(W)\leq p$. Thus $\operatorname{rank}(W)=p$.
+ \item \textbf{Inactive site $\to$ stencil preserves that rank.} The multiplier $s_q$ vanishes exactly at $q=0$, so $\ker S=\operatorname{span}\{\mathbf1\}$. Every vector in $\operatorname{span}(W)$ is zero on every inactive site. Since at least one such site exists, $\ker S\cap\operatorname{span}(W)=\{0\}$. The restriction of $S$ to this $p$-dimensional space is injective; consequently $\operatorname{rank}(V)=\operatorname{rank}(SW)=p$.
+\end{enumerate}
+
+This explains why both parts of the mask assumption matter. Reflection symmetry makes the active masked space have dimension at most $p$; an inactive orbit both forces $p\leq k$ for the non-vanishing argument and rules out a nonzero constant vector in the stencil kernel. The all-active-mask case is outside this theorem.
+
+\section{Independent numerical checks (corroboration only)}
+
+A separately written check script accompanies this supplement. It constructs $j$ directly from the local-minimum definition, computes its DFT independently, evaluates the finite sum in (1) directly, and compares both calculations with the compact formulas (10)--(11). It separately builds the channels and applies $S$ by FFT for rank checks. It does not call the v1.2 verifier. The script uses $A=0.5$ for numerical checks; the analytic proof covers every $A>0$.
+
+\begin{center}
+\begin{tabular}{@{}lr@{}}
+\toprule
+Independent check & Outcome \\
+\midrule
+Odd rings checked, $M=9,11,\ldots,401$ & 197 \\
+Fourier coefficients checked, all $0\leq r<k$ & 20,094 \\
+Largest absolute gap: direct finite sum vs. compact formula & $<2\times10^{-14}$ \\
+Largest absolute gap: direct DFT vs. compact formula & $<2\times10^{-14}$ \\
+Rank cases: all $p=1,\ldots,k$ for $M\in\{9,11,13,17,25\}$ & 35/35 pass \\
+In each rank case, both $W$ and $SW$ have numerical rank $p$ & 35/35 pass \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The independent calculation is finite, floating-point evidence. It checks the algebra and the defined matrix construction on selected inputs; it is not used to infer the universal result. The analytic proof above establishes the statement for all odd $M\geq9$ under the stated mask assumptions.
+
+\section{Limitations and release boundary}
+
+The theorem is a structural rank result for the defined single-step cyclic operator. It does not establish a universal fixed-unit compression number $K_\tau$, an all-active-mask conclusion, multi-step dynamics, a microscopic physical law, or the separate entropy-to-horizon bridge. Numerical checks do not enlarge these claims.
+
+This supplement clarifies v1.2; it does not alter the v1.2 PDF, source files, manifest, OSF registration, or DOI. Any later deposit should be identified as a separate supplement and should retain a verifiable provenance link to the frozen theorem release.
+
+\end{document}

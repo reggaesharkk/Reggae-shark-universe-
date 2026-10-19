@@ -1,0 +1,37 @@
+{
+  "initial_F_interval_decimal": [
+    "645.8037741471",
+    "645.8037741472"
+  ],
+  "aggregate": {
+    "status": "Arb residual and gradient segment bounds; endpoint F enclosure separate",
+    "witness_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624",
+    "h": 2.5e-05,
+    "steps": 120,
+    "initial_L2_error_upper_decimal": "0",
+    "maximum_residual_upper_decimal": "0.000197004885",
+    "maximum_gradient_l1_upper_decimal": "2331.907656",
+    "terminal_L2_error_upper_decimal": "0.00004588841",
+    "endpoint_F_certified": false
+  },
+  "endpoint": {
+    "status": "Arb endpoint margin conditional on supplied Galerkin L2 error radius",
+    "E_input_decimal": "0.00004588841",
+    "F_of_exact_decimal_endpoint_upper": "-48.390538868",
+    "F_of_exact_decimal_endpoint_lower": "[-48.390538870127602838337964857195024669 +/- 1.62e-37]",
+    "z_abs_lower_decimal": "[51423.934567976705798544434326355196994 +/- 1.16e-34]",
+    "z_perturbation_upper_decimal": "7.355414939",
+    "F_error_upper_decimal": "6.357870977",
+    "F_true_lower_decimal": "-54.748409847",
+    "F_true_upper_decimal": "-42.032667894",
+    "certified_negative_if_E_valid": true,
+    "ordered_group_count": 1624
+  },
+  "normalizer_guard": {
+    "status": "Arb normalizer nonvanishing guard conditional on uniform L2 radius",
+    "E_uniform_input_decimal": "0.001",
+    "z_abs_uniform_lower_decimal": "48990.29795521",
+    "all_120_segments_pass": true
+  },
+  "recomputed_all_segments": true
+}

@@ -1,0 +1,33 @@
+{
+  "schema": "wp19-v0.12-summary-v1",
+  "date": "2026-09-30",
+  "N14_validated_context": {
+    "result": "PASS",
+    "terminal_error_upper": "0.000012825905",
+    "F0_interval": ["645.8037741471", "645.8037741472"],
+    "FT_interval": ["-89.015834781", "-85.160766265"],
+    "normalizer_uniform_lower": "48850.68586052",
+    "workflow_artifact_sha256": "b0bb454fa320887c2b17dfd8a0bae916273253bb057ecff7acee3d6218234698"
+  },
+  "exact_recursive_identity": {
+    "low_equation": "dv_M/dt + nu A v_M + P11 B(v_M,v_M) = Gamma_M",
+    "closure_forcing": "Gamma_M = -P11[B(v_M,h_M)+B(h_M,v_M)+B(h_M,h_M)]",
+    "high_state": "h_M=(P_M-P11)u_M",
+    "same_datum_high_initial_state": "h_M(0)=0"
+  },
+  "recursive_stability_theorem": {
+    "statement": "For M,L>=11, ||v_M(t)-v_L(t)||_2 <= exp(C11||u0||_2 t) * integral_0^t ||Gamma_M-Gamma_L||_2 ds.",
+    "consequence": "L1_t L2_x Cauchy convergence of closure forcing implies C_t L2_x convergence of the fixed N11 projections."
+  },
+  "observable_transfer": {
+    "signed_numerator": "finite polynomial J on the fixed N11 coordinate space",
+    "sufficient_all_cutoff_condition": "base negative margin dominates the Lipschitz-weighted sum of closure increments"
+  },
+  "no_go_results": [
+    "Static F<0 or G_C500<0 cannot by itself imply singularity/local loss of smoothness.",
+    "Because G_C500(a)=G_C500(Pi11 a), G alone cannot control arbitrarily high-frequency vorticity, Sobolev norms, shell Reynolds numbers, or a determining wavenumber."
+  ],
+  "correct_regularity_architecture": "fixed low-mode recursive closure plus an independent high-frequency dissipation/continuation criterion",
+  "next_gate": "bound Gamma_{M+1}-Gamma_M by a shellwise high-frequency quantity with a summable or viscously absorbable budget",
+  "claim_boundary": "No all-N, continuum regularity, blowup, or global regularity theorem is claimed."
+}

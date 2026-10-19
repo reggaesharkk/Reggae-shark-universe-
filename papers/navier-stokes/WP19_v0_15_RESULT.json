@@ -1,0 +1,46 @@
+{
+  "schema": "wp19-v0.15-n14-full-pde-residual-scout-v1",
+  "date": "2026-09-30",
+  "status": "NON-RIGOROUS NODE-SAMPLED SCOUT; N14 finite-Galerkin trajectory itself has a separate Arb certificate",
+  "N": 14,
+  "nu": 0.1,
+  "T": 0.003,
+  "h": 2.5e-05,
+  "nodes": 121,
+  "witness_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624",
+  "predictor_nodes_sha256": "e0b0a36d8b308cccb5befb3abe45777ec0775cbc7e5a76fef0011eed0fd1f7f0",
+  "approximate_solution_sampled_norms": {
+    "Linf_L2_fourier": 111.22062618900333,
+    "Linf_Hdot1_fourier": 226.8278933845103,
+    "Linf_Hdot2_fourier": 746.3058167793007,
+    "Linf_Hdot3_fourier": 3926.973541103731,
+    "Linf_L3_grid_volume_normalized": 117.84418442022398,
+    "Linf_L6_grid_volume_normalized": 133.42813135099385,
+    "L4_t_L6_grid_volume_normalized": 31.08146380779683,
+    "L2_t_Hdot2_fourier": 40.02500195514237
+  },
+  "omitted_full_pde_residual_Q14_B_u_u_node_sampled": {
+    "Hminus1_max": 10.751542055048482,
+    "Hminus1_L1_t": 0.016685530315989933,
+    "Hminus1_L2_t": 0.33125826105111883,
+    "Hminus1_L3_t": 0.9360002088188286,
+    "L2_max": 160.9074305785268,
+    "L2_L1_t": 0.2502340501724935,
+    "L2_L2_t": 4.9703990588422915,
+    "H1_max": 2418.9595466324095,
+    "H1_L1_t": 3.771819658204193,
+    "H1_L2_t": 74.95061552657786,
+    "H2_max": 36551.07906789971,
+    "H2_L1_t": 57.17765957606875
+  },
+  "diagnostic_norm_reduction": {
+    "L1_H1_over_L1_Hminus1": 226.05332804973034,
+    "L2_L2_over_L2_Hminus1": 15.004604090689451
+  },
+  "interpretation": {
+    "older_positive_norm_route": "The full-PDE omitted residual is large in positive Sobolev norms on the N14 predictor, so older H1/H2-style a-posteriori criteria are not a promising direct certificate at this cutoff without major sharpening.",
+    "negative_norm_route": "The same omitted residual is much smaller in Fourier H^-1. Modern critical-space a-posteriori criteria use negative Sobolev residual norms, so this is the more plausible next verification route.",
+    "not_computed": "The W^{-1,3} residual norm and the full constants/inequalities of a modern L3 a-posteriori criterion were not certified here."
+  },
+  "claim_boundary": "These residual and physical-space norms are node-sampled floating diagnostics. They do not certify a continuum strong solution or regularity."
+}

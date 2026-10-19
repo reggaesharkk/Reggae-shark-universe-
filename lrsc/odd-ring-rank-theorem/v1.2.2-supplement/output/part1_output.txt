@@ -1,0 +1,11 @@
+[1] shedding field closed form vs direct local-min, 50 digits: max diff = 4.0369e-47
+[2] closed-form jhat_r vs direct 50-digit DFT: 11319 coefficients (M=9..301, all 0<=r<k), max relative diff = 7.4346e-44
+[3] inequality chain on every odd M=9..40001: violations = []
+    worst ratios (need >1, <1, >1, >1): 3mod4_odd_r=4.6015, 1mod4_low=3.5359, 1mod4_mid=0.8152, 1mod4_high=1.5321
+[4] exhaustive masks with >=1 inactive orbit, M=9..25: 16343/16343 have rank(W)=rank(V)=p
+    smallest kept sigma ratio 4.00e-04  vs largest discarded ratio 1.43e-14
+    all-active mask (outside theorem): (M, p, rank W, rank V) = [(9, 5, 5, 4), (11, 6, 6, 5), (13, 7, 7, 6), (15, 8, 8, 7), (17, 9, 9, 8), (19, 10, 10, 9), (21, 11, 11, 10), (23, 12, 12, 11), (25, 13, 13, 12)]
+[5] M=99: active nodes=81, active orbits p=41, rank(V)=41, sigma_p/sigma_1=3.23e-04, sigma_(p+1)/sigma_1=2.11e-17
+[5] M=101: active nodes=83, active orbits p=42, rank(V)=42, sigma_p/sigma_1=1.24e-05, sigma_(p+1)/sigma_1=1.52e-17
+[5] M=127: active nodes=103, active orbits p=52, rank(V)=52, sigma_p/sigma_1=1.96e-04, sigma_(p+1)/sigma_1=2.22e-17
+[6] random masks on M=99/101/127: 900/900 with rank(V)=p

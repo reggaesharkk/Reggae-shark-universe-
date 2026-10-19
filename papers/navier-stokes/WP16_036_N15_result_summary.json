@@ -1,0 +1,110 @@
+{
+  "status": "completed prospective frozen N15 K36 time-gate summary",
+  "date": "2026-09-27",
+  "hashes": {
+    "n14_predecessor": "747dfb0bd0ea12271bd53b39fae7a4e18f396656bed3084bd4c632a9f3e5a3d9",
+    "frozen_K36_source": "193cbb7f485ab54ceed0d5cb38f97f0fc98c197e5f88e288fdbd277627608c8e",
+    "n15_checkpoint": "2ad24749a9454c5377e627c103a7d8dd5f1701876958a4bc9c095e1fa222c4a6",
+    "n15_continuation": "c0bd97f554df3e8561d75e1ba62356d04200fbe4986f573e3305a98932ccb225",
+    "n15_time_gate": "e1a9d0d59b56375e2adf31098c97fcb71336d41ffa2e6098dfec744264a7d239"
+  },
+  "continuation": {
+    "seed": 20260940,
+    "search_grid": 48,
+    "completed_proposals": 520,
+    "active_conjugate_pairs": 6791,
+    "inherited_pairs": 5638,
+    "new_pairs": 1153,
+    "best_search_grid_C": 9.9109238004012,
+    "refined_C": {
+      "48": 9.9109238004012,
+      "64": 9.910944916518424,
+      "96": 9.911712653704301,
+      "128": 9.911923711291015
+    }
+  },
+  "protocol": {
+    "dt": 0.0001,
+    "steps": 30,
+    "nu": 0.1,
+    "same_sign": true,
+    "minimum_absolute_mass_fraction": 0.9,
+    "signed_share_interval": [
+      0.8,
+      1.2
+    ]
+  },
+  "states": {
+    "inherited": {
+      "tests": {
+        "static_gate_pass": true,
+        "all_samples_through_t001_pass_mass": true,
+        "mass_exit_in_frozen_window": true,
+        "signed_gate_at_first_mass_exit": true,
+        "initial_margin_rate_positive": true,
+        "exit_full_radial_polarization_rates_negative": true
+      },
+      "first_mass_failure_index": 23,
+      "first_any_failure_index": 23,
+      "first_mass_exit_time": 0.0023,
+      "mass_fraction_at_exit": 0.8997898991761898,
+      "signed_share_at_exit": 0.9156172047336606,
+      "initial_margin_rate": 102686.20623605784,
+      "exit_margin_rate": -377468.55030036386,
+      "exit_radial_rate": -250880.4025410427,
+      "exit_vector_polarization_rate": -299061.79513545794,
+      "exit_scalar_phase_rate": 172473.64738750548,
+      "half_step_mass_fraction_t00225": 0.9012535913771097,
+      "half_step_mass_fraction_t00230": 0.8997898998214954,
+      "coarse_half_difference_at_exit": 6.453055867439161e-10
+    },
+    "target_only": {
+      "tests": {
+        "static_gate_pass": true,
+        "all_samples_through_t001_pass_mass": true,
+        "mass_exit_in_frozen_window": true,
+        "signed_gate_at_first_mass_exit": true,
+        "initial_margin_rate_positive": true,
+        "exit_full_radial_polarization_rates_negative": true
+      },
+      "first_mass_failure_index": 23,
+      "first_any_failure_index": 23,
+      "first_mass_exit_time": 0.0023,
+      "mass_fraction_at_exit": 0.8997898991897335,
+      "signed_share_at_exit": 0.9156172047189142,
+      "initial_margin_rate": 102686.2061905831,
+      "exit_margin_rate": -377468.55016393965,
+      "exit_radial_rate": -250880.40313221427,
+      "exit_vector_polarization_rate": -299061.79482850345,
+      "exit_scalar_phase_rate": 172473.6475807731,
+      "half_step_mass_fraction_t00225": 0.9012535913898794,
+      "half_step_mass_fraction_t00230": 0.8997898998350387,
+      "coarse_half_difference_at_exit": 6.453051426547063e-10
+    },
+    "full_final": {
+      "tests": {
+        "static_gate_pass": true,
+        "all_samples_through_t001_pass_mass": true,
+        "mass_exit_in_frozen_window": true,
+        "signed_gate_at_first_mass_exit": true,
+        "initial_margin_rate_positive": true,
+        "exit_full_radial_polarization_rates_negative": true
+      },
+      "first_mass_failure_index": 23,
+      "first_any_failure_index": 23,
+      "first_mass_exit_time": 0.0023,
+      "mass_fraction_at_exit": 0.8985000952027818,
+      "signed_share_at_exit": 0.9067594375957017,
+      "initial_margin_rate": 279193.46326257254,
+      "exit_margin_rate": -406209.3270249534,
+      "exit_radial_rate": -216380.0974130936,
+      "exit_vector_polarization_rate": -305819.71629999316,
+      "exit_scalar_phase_rate": 115990.48677908286,
+      "half_step_mass_fraction_t00225": 0.9001970380307064,
+      "half_step_mass_fraction_t00230": 0.8985000953949837,
+      "coarse_half_difference_at_exit": 1.922018100231071e-10
+    }
+  },
+  "joint_outcome": "all three predeclared N15 tests passed in all three states",
+  "interpretation_rule": "finite prospective N15 Galerkin replication; not an all-N or continuum theorem and not a Navier-Stokes regularity proof"
+}

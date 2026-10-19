@@ -1,0 +1,10 @@
+{
+  "schema": "wp19-v0.17-same-datum-tail-scout-v1",
+  "status": "NON-RIGOROUS SAME-DATUM FLOATING SCOUT; N14 base separately Arb-certified",
+  "witness_sha256": "4789e27170f28279b3c6878f8874547b303d5cbd4a20848f3d5d8088bd10a624",
+  "endpoint_G": {"N14": -52.841462912045245, "N15": -50.62254481736636, "N16": -50.226878626650205, "N17": -50.12303602458246},
+  "endpoint_F": {"N14": -87.0883005229814, "N15": -86.92745752590145, "N16": -86.7086948234537, "N17": -86.47986827049112},
+  "P11_endpoint_drift_L2": {"14_to_15": 0.01576744775638136, "15_to_16": 0.00854409950126241, "16_to_17": 0.003272032584840531},
+  "closure_total_L1_t_L2_node_sampled": {"14_to_15": 0.01715919778126307, "15_to_16": 0.009069814492724662, "16_to_17": 0.003500172556058193},
+  "claim_boundary": "Floating scout only; no geometric tail, all-N, continuum, regularity, or blowup theorem."
+}

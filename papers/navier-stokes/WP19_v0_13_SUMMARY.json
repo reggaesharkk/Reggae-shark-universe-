@@ -1,0 +1,12 @@
+{
+  "schema":"wp19-v0.13-summary-v1",
+  "date":"2026-09-30",
+  "fixed_output_mode_count":5574,
+  "fixed_output_bilinear_constant_sqrt_mode_count":74.65922581972036,
+  "exact_bilinear_bound":"||P11 B(a,b)||_l2 <= sqrt(5574) ||a||_l2 ||b||_Hdot1",
+  "continuum_closure_result":"For every Leray-Hopf u, spectral truncations of the high tail give Gamma_M(u) -> Gamma(u) in L1_t L2_x.",
+  "weak_limit_transfer":"Along a standard Galerkin subsequence, fixed P11 modes pass to a Leray-Hopf weak limit; any uniform negative margin for the finite polynomial signed numerator J passes to that limit.",
+  "direct_shell_bound":"||Delta Gamma|| <= C11[||v+h||_2||s||_H1 + ||s||_2||v+h||_H1 + ||s||_2||s||_H1]",
+  "remaining_open_term":"state/backreaction drift between P_M u_{M+1} and u_M",
+  "claim_boundary":"No all-N negativity, regularity, singularity, or uniqueness theorem."
+}

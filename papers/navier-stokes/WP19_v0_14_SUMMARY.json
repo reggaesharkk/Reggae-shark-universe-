@@ -1,0 +1,20 @@
+{
+  "schema": "wp19-v0.14-summary-v1",
+  "date": "2026-09-30",
+  "exact_cancellation": "For k=p+q and divergence-free a_p, a_p dot q = a_p dot k.",
+  "fixed_output_mode_count": 5574,
+  "sum_output_squared_norms": 404724,
+  "fixed_output_constant": 636.1792200315882,
+  "exact_fixed_output_bound": "||P11 B(a,b)||_2 <= sqrt(404724) ||a||_2 ||b||_2 for divergence-free a.",
+  "continuum_tail_bound": "||Gamma-Gamma_M|| <= C11[2 sqrt(2)||u|| ||r_M|| + ||r_M||^2].",
+  "single_solution_shell_tail": "sum_{m>=M} ||DeltaGamma_m||_{L1L2} <= C11[2 U c_M sqrt(T) D + M^-2 D^2].",
+  "energy_only_consecutive_obstruction": "Uniform energy/dissipation gives a worst-case direct consecutive-shell contribution with leading O(1/M), which is not summable.",
+  "sufficient_upgrade": "Integrated shell decay O(M^{-1-epsilon}) makes the direct shell series summable; recursive state drift remains separate.",
+  "Wolfram_check": {
+    "nonzero_modes": 5574,
+    "sum_squared_norms": 404724,
+    "sqrt_sum_squared_norms": 636.1792200315882
+  },
+  "archive_zip_sha256": "0afb76a98ffc8e6c67858ce61cac50e71e4b39b22e726cb382735d4e11f01f68",
+  "claim_boundary": "No all-N persistence, regularity, singularity, or Millennium-problem result."
+}
