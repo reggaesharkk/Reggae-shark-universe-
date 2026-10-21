@@ -1,8 +1,8 @@
 # Specialist repositories
 
-The Reggae Shark Universe is the umbrella archive and paper-facing map. Project-specific development lives in six specialist repositories. IntentSeal and VRK remain program 06, now with their own dedicated specialist repository.
+The Reggae Shark Universe is the umbrella archive and paper-facing map. Project-specific development lives in specialist repositories, while the umbrella remains the canonical index and paper-facing ledger. The live repos below are the current GitHub source-of-truth for the active work stream.
 
-## Live specialist repositories
+## Canonical seven-program core
 
 1. **Self-Referential Processing + Design Lab**  
    https://github.com/reggaesharkk/self-referential-processing-designlab
@@ -23,15 +23,32 @@ The Reggae Shark Universe is the umbrella archive and paper-facing map. Project-
    https://github.com/reggaesharkk/intentseal  
    Umbrella mirrors remain at [Frozen lineage](intentseal/README.md) and [VRK](verifiable-research-kernel/README.md).
 
-## Additional independent specialist repository (October 2026)
+7. **Riemann Bandwidth-One Verification**  
+   https://github.com/reggaesharkk/riemann-bandwidth1-verification
 
-7. **Riemann Bandwidth-One Verification** — exact finite certificates, source-specific analytic identities and conditional simple-critical-zero research.  
-   https://github.com/reggaesharkk/riemann-bandwidth1-verification  
-   Frozen v0.1.0 release: https://github.com/reggaesharkk/riemann-bandwidth1-verification/releases/tag/v0.1.0  
-   Version DOI: https://doi.org/10.5281/zenodo.23244818  
-   All-versions concept DOI: https://doi.org/10.5281/zenodo.23244817
+## Additional active umbrella mirrors
 
-This additional track does not change the historical six-program classification, and it does not claim an unconditional strict >79% simple-zero theorem.
+8. **STRENGTH-B3 Interceptor Core**  
+   https://github.com/reggaesharkk/STRENGTH-B3-Interceptor-Core
+
+9. **strength-intent-ns-lean**  
+   https://github.com/reggaesharkk/strength-intent-ns-lean
+
+## Current mirror index (updated 2026-10-21)
+
+The umbrella repo is now aligned to the active public GitHub corpus as follows:
+
+- [Self-Referential Processing + Design Lab](https://github.com/reggaesharkk/self-referential-processing-designlab) — active research and design-lab validation pipeline.
+- [Psi Self-Modeling Benchmark](https://github.com/reggaesharkk/psi-self-modeling-benchmark) — self-vs-peer benchmark and OSF/provenance materials.
+- [Physics v1 Dynamical Sector](https://github.com/reggaesharkk/physics-v1-dynamical-sector) — equilibrium and linear-stability analysis around the phenomenological dynamical sector.
+- [LRSC Odd-Ring Spectral Rank](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank) — odd-ring spectral rank theorem and reproducible exact integer certificates.
+- [Navier–Stokes Bridge Audit](https://github.com/reggaesharkk/navier-stokes-bridge-audit) — finite Fourier–Galerkin audits and open proof gates.
+- [IntentSeal](https://github.com/reggaesharkk/intentseal) — verification infrastructure and trust-root code.
+- [Riemann Bandwidth-One Verification](https://github.com/reggaesharkk/riemann-bandwidth1-verification) — finite-band analytic verification and conditional zero-proportion work.
+- [STRENGTH-B3 Interceptor Core](https://github.com/reggaesharkk/STRENGTH-B3-Interceptor-Core) — current interceptor-core workstream.
+- [strength-intent-ns-lean](https://github.com/reggaesharkk/strength-intent-ns-lean) — Lean-based strength and intent verification work.
+
+This umbrella index is a map and archive, not the primary development home. For production work, source-of-truth remains in each specialist repo.
 
 ## Paper shelf
 
