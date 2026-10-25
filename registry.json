@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0.0",
+  "date": "2026-10-25",
+  "author": {
+    "name": "Prince Upadhyay",
+    "orcid": "0009-0002-1170-4487",
+    "email": "starxshark@gmail.com"
+  },
+  "counts": {
+    "programs": 10,
+    "osf_dois_total": 15,
+    "osf_dois_orcid_indexed": 13,
+    "osf_dois_companion": 2,
+    "zenodo_dois_total": 16,
+    "zenodo_version_deposits": 14,
+    "zenodo_concept_dois": 2,
+    "github_repositories": 10
+  },
+  "shark_protocol_releases": {
+    "v1_2_0_zenodo_v4": {
+      "version": "1.2.0",
+      "zenodo_doi": "10.5281/zenodo.23635351",
+      "concept_doi": "10.5281/zenodo.23618032",
+      "lean_theorems": 38,
+      "unit_tests": "33/33",
+      "tracked_files": 26,
+      "path": "protocols/shark_protocol_v1_2_0",
+      "security_advisory": "Contains public deterministic fallback seed (SHA-256: 914f28eabb2b93fb15bf6ad071120c21e8dd5a8a5e4825f053a1962b101901ec, pubkey: e3ad81062fa39a869b798e3ab3a7195316dbe7de0e5e0da22a7ff4194065b74c), permanently revoked in v1.3.1."
+    },
+    "v1_3_1_remediated": {
+      "version": "1.3.1",
+      "concept_doi": "10.5281/zenodo.23618032",
+      "lean_theorems": 41,
+      "lean_axioms_gate": "lean/AxiomsCheck.lean",
+      "unit_tests": "38/38",
+      "tracked_files": 31,
+      "path": "protocols/shark_protocol_v1_3_1",
+      "spec_pdf": "docs/research/The_Shark_Protocol_v1_3_1_Specification.pdf"
+    }
+  },
+  "required_tokens_in_docs": [
+    "0009-0002-1170-4487",
+    "10.5281/zenodo.23618032",
+    "10.5281/zenodo.23635351",
+    "10.5281/zenodo.23624605",
+    "10.5281/zenodo.23620074",
+    "10.5281/zenodo.23618033",
+    "10.5281/zenodo.23608244",
+    "10.5281/zenodo.23534449",
+    "10.5281/zenodo.23034545",
+    "10.5281/zenodo.23018459",
+    "10.17605/OSF.IO/NM5BW",
+    "10.17605/OSF.IO/JAK5X",
+    "v1.3.1",
+    "v1.2.0",
+    "914f28eabb2b93fb15bf6ad071120c21e8dd5a8a5e4825f053a1962b101901ec",
+    "e3ad81062fa39a869b798e3ab3a7195316dbe7de0e5e0da22a7ff4194065b74c"
+  ],
+  "doc_files": [
+    "README.md",
+    "RESEARCHER_AND_ARCHIVE_INDEX_2026_10_25.md",
+    "PORTFOLIO_EVIDENCE_AND_RIGHTS_STANDARD_2026_10_25.md"
+  ]
+}
