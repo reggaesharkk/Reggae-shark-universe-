@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="186" viewBox="0 0 1400 186" role="img" aria-label="Philosophical research motto on a vintage terminal">
+<defs><linearGradient id="bg" x2="1" y2="0"><stop stop-color="#0a1720"/><stop offset="1" stop-color="#151b27"/></linearGradient></defs>
+<rect width="1400" height="186" rx="9" fill="url(#bg)" stroke="#66bcb8" stroke-width="2"/>
+<rect x="16" y="15" width="1368" height="157" rx="4" fill="none" stroke="#a6a293" stroke-opacity=".25"/>
+<path d="M17 48H1382" stroke="#66bcb8" stroke-opacity=".4"/>
+<circle cx="42" cy="32" r="6" fill="#ee957a"/><circle cx="64" cy="32" r="6" fill="#ddc17a"/><circle cx="86" cy="32" r="6" fill="#6ee2bd"/>
+<text x="114" y="37" fill="#a2b6c2" font-family="Courier New,monospace" font-size="17" letter-spacing="1">/usr/local/research/ethos.log</text>
+<text x="46" y="85" fill="#86edc4" font-family="Courier New,monospace" font-size="24">&gt; The universe does not owe us certainty.</text>
+<text x="46" y="121" fill="#e2c493" font-family="Courier New,monospace" font-size="24">&gt; Our claims owe the universe evidence.</text>
+<text x="46" y="154" fill="#8d9fb4" font-family="Courier New,monospace" font-size="17">[ research mode: ON ]  [ counterexamples: preserved ]  [ universal claims: bounded ]</text>
+<rect x="1352" y="67" width="11" height="19" fill="#7beacb" opacity=".8"/>
+</svg>
