@@ -1,3 +1,6 @@
+<p align="center"><img src="assets/retro_cosmic_banner.svg" alt="Prince Upadhyay — retro-futurist independent research" width="100%"/></p>
+<p align="center"><img src="assets/terminal_ethos.svg" alt="The universe does not owe us certainty. Our claims owe the universe evidence." width="100%"/></p>
+
 # Reggae Shark Universe — Research Portfolio & Evidence Umbrella
 
 **Author & Maintainer:** Prince Upadhyay — Independent Researcher  
