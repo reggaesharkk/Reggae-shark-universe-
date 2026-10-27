@@ -6,6 +6,23 @@
 
 > **Scope & Global Claim Firewall:** This repository is the master archival index and cross-program provenance umbrella for ten independent research and verification programs. Their unifying thread is an evidence-bounded verification discipline—freezing protocols before prospective evaluation, binding claims to deterministic SHA-256 manifests and machine-checked or interval-certified artifacts, preserving falsified gates as permanent historical records, and enforcing a strict firewall between finite/model theorems and open universal conjectures. **This portfolio does not claim that the ten programs form a single unified law of nature.**
 
+## Available for Paid Technical Work — AI Evaluation & Research Verification
+
+I'm an independent researcher based in India, working on computational mathematics, formal verification, reproducible research and adversarial evaluation of AI-assisted software. **I am available for remote, paid, short-term technical assignments.**
+
+I can contribute to:
+
+- **AI coding-agent evaluation:** inspect agent-generated code and claims, build adversarial tests, reproduce failures and document actionable findings.
+- **Mathematical reasoning and proof review:** construct and check scoped computational-mathematics tasks, finite certificates, counterexamples and verification steps.
+- **Reproducibility and evidence audits:** authenticate source and result artifacts, replay available test suites, compare Windows/Linux runs and provide explicit **PASS / FAIL / OPEN** reports.
+- **Benchmark and regression-test design:** turn research questions or failure reports into reproducible evaluation cases with clear acceptance criteria.
+
+**Selected public work:** [LRSC odd-ring spectral certificate](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank) · [Riemann bandwidth-one verification](https://github.com/reggaesharkk/riemann-bandwidth1-verification) · [IntentSeal](https://github.com/reggaesharkk/intentseal) · [The Reggae Shark Protocol](https://github.com/reggaesharkk/The-Reggae-Shark-Protocol) · [ORCID research record](https://orcid.org/0009-0002-1170-4487).
+
+**Scope:** These links demonstrate defined mathematical statements, finite computations and development-stage verification software; they do not claim that an open mathematical problem is solved or that a prototype has been independently certified for production security.
+
+**Contact for paid collaborations:** `starxshark@gmail.com` (also listed in this repository's author header).
+
 ---
 
 ## Master Research Dossier & Umbrella Standards
