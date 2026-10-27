@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="186" viewBox="0 0 1400 186" role="img" aria-label="Philosophical research motto on a vintage terminal">
-<defs><linearGradient id="bg" x2="1" y2="0"><stop stop-color="#0a1720"/><stop offset="1" stop-color="#151b27"/></linearGradient></defs>
-<rect width="1400" height="186" rx="9" fill="url(#bg)" stroke="#66bcb8" stroke-width="2"/>
-<rect x="16" y="15" width="1368" height="157" rx="4" fill="none" stroke="#a6a293" stroke-opacity=".25"/>
-<path d="M17 48H1382" stroke="#66bcb8" stroke-opacity=".4"/>
-<circle cx="42" cy="32" r="6" fill="#ee957a"/><circle cx="64" cy="32" r="6" fill="#ddc17a"/><circle cx="86" cy="32" r="6" fill="#6ee2bd"/>
-<text x="114" y="37" fill="#a2b6c2" font-family="Courier New,monospace" font-size="17" letter-spacing="1">/usr/local/research/ethos.log</text>
-<text x="46" y="85" fill="#86edc4" font-family="Courier New,monospace" font-size="24">&gt; The universe does not owe us certainty.</text>
-<text x="46" y="121" fill="#e2c493" font-family="Courier New,monospace" font-size="24">&gt; Our claims owe the universe evidence.</text>
-<text x="46" y="154" fill="#8d9fb4" font-family="Courier New,monospace" font-size="17">[ research mode: ON ]  [ counterexamples: preserved ]  [ universal claims: bounded ]</text>
-<rect x="1352" y="67" width="11" height="19" fill="#7beacb" opacity=".8"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="192" viewBox="0 0 1400 192" role="img" aria-label="Vintage terminal philosophical ethos">
+<defs><linearGradient id="bg" x2="1"><stop stop-color="#020916"/><stop offset=".6" stop-color="#0A1023"/><stop offset="1" stop-color="#130A24"/></linearGradient><linearGradient id="stripe" x2="1"><stop stop-color="#00EAFF"/><stop offset=".55" stop-color="#BC63FF"/><stop offset="1" stop-color="#FFB75D"/></linearGradient><filter id="halo"><feGaussianBlur stdDeviation="3"/></filter></defs>
+<rect width="1400" height="192" rx="10" fill="url(#bg)" stroke="#0DF7FF" stroke-width="3"/>
+<rect x="15" y="14" width="1370" height="164" rx="3" fill="none" stroke="#AE7AFF" stroke-width="1.3" opacity=".8"/>
+<path d="M15 49H1385" stroke="url(#stripe)" stroke-width="3"/>
+<circle cx="39" cy="31" r="7" fill="#FF767E"/><circle cx="64" cy="31" r="7" fill="#FFBB66"/><circle cx="88" cy="31" r="7" fill="#32F7D9"/>
+<text x="113" y="38" fill="#A8EFFF" font-family="Courier New,monospace" font-size="18" font-weight="bold">/usr/local/research/PHILOSOPHY.TXT   •   CHANNEL OPEN</text>
+<text x="48" y="94" fill="#55FFD9" font-family="Courier New,monospace" font-size="28" font-weight="bold">&gt; The universe does not owe us certainty.</text>
+<text x="48" y="135" fill="#FFC77E" font-family="Courier New,monospace" font-size="28" font-weight="bold">&gt; Our claims owe the universe evidence.</text>
+<text x="49" y="166" fill="#D5CBFF" font-family="Courier New,monospace" font-size="17">[ BUILD: ACTIVE ]  [ COUNTEREXAMPLES: PRESERVED ]  [ UNKNOWN: HONESTLY MARKED ]</text>
+<rect x="1350" y="71" width="12" height="24" fill="#24FEEE" opacity=".7" filter="url(#halo)"/><rect x="1350" y="71" width="12" height="24" fill="#24FEEE"/>
 </svg>
