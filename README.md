@@ -5,7 +5,7 @@
 
 **Author & Maintainer:** Prince Upadhyay — Independent Researcher  
 **ORCID:** [0009-0002-1170-4487](https://orcid.org/0009-0002-1170-4487) · **GitHub:** [@reggaesharkk](https://github.com/reggaesharkk) · **Contact:** `starxshark@gmail.com`  
-**Umbrella Synthesis Date:** 26 October 2026 · **Epistemic Standard:** `Build. Attack. Falsify. Preserve.`
+**Umbrella Synthesis Date:** 1 November 2026 · **Epistemic Standard:** `Build. Attack. Falsify. Preserve.`
 
 > **Scope & Global Claim Firewall:** This repository is the master archival index and cross-program provenance umbrella for ten independent research and verification programs. Their unifying thread is an evidence-bounded verification discipline—freezing protocols before prospective evaluation, binding claims to deterministic SHA-256 manifests and machine-checked or interval-certified artifacts, preserving falsified gates as permanent historical records, and enforcing a strict firewall between finite/model theorems and open universal conjectures. **This portfolio does not claim that the ten programs form a single unified law of nature.**
 
@@ -87,6 +87,14 @@ I can contribute to:
   - Resolves post-Hopf runaway trajectories via smooth hyperbolic-tangent gates, establishing a compact positively invariant box $\mathcal{B}(e) = [0,\gamma_{\max}] \times [0,H_{\max}] \times [0,\dot{I}_{\max}(e)]$ with Lean 4 6-face boundary verification (`BoundaryVerification.lean`, SHA-256 `49229b6163b5a3a77dc83779a7dc5350502ff2b3d6a7f2de4d39996f4460e417`) and VRK v0.3.1 Certificate Digest `5eb316f25edef8e711db7ddec88224172a9cadd8cf7d332457dfa596f4368117`.
 
 ---
+
+## Software release — SharkLang v2.4.2 (1 November 2026)
+
+I built SharkLang as a small policy language and runtime for examining an approval-gated AI request flow. The v2.4.2 archive is a security-review release. Its demo makes real provider calls only when I run it with `--live`; the purchase amount and spending cap are simulated inputs and no payment is processed.
+
+- **GitHub:** [source, release archive and validation workflow](https://github.com/reggaesharkk/sharklang-v2.4.2-release)
+- **Zenodo:** [10.5281/zenodo.23841845](https://doi.org/10.5281/zenodo.23841845)
+- **Rights:** I reserve commercial and production use under the [SharkLang Evaluation License 1.0](https://github.com/reggaesharkk/sharklang-v2.4.2-release/blob/main/EVALUATION_LICENSE.txt).
 
 ## Global Claim-Boundary Checklist
 
