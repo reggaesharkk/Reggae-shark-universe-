@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 88" role="img" aria-labelledby="title">
+<title id="title">Reggae Shark Universe · public project map</title>
+<defs><linearGradient id="b" x2="1" y2="0"><stop stop-color="#07121f"/><stop offset=".56" stop-color="#0e2635"/><stop offset="1" stop-color="#153344"/></linearGradient><linearGradient id="l"><stop stop-color="#63d8c6"/><stop offset="1" stop-color="#d4a078"/></linearGradient></defs>
+<rect width="1600" height="88" rx="16" fill="url(#b)"/><path d="M0 87H1600" stroke="url(#l)" stroke-width="2" opacity=".8"/>
+<circle cx="48" cy="44" r="19" fill="none" stroke="#70dccc" stroke-width="2"/><path d="M38 51L48 30L58 51Z" fill="none" stroke="#d5a27b" stroke-width="1.6"/><circle cx="48" cy="44" r="3" fill="#72ddca"/>
+<text x="86" y="40" fill="#eff7fa" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" letter-spacing="3">REGGAE SHARK UNIVERSE</text>
+<text x="88" y="64" fill="#88b0bc" font-family="Arial,Helvetica,sans-serif" font-size="11" letter-spacing="3">PUBLIC PROJECT MAP · SOURCE REPOSITORIES · EVIDENCE BOUNDARIES</text>
+<text x="1450" y="51" fill="#75dfcd" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" letter-spacing="3">1 NOV 2026</text>
+</svg>

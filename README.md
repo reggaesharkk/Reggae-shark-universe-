@@ -1,30 +1,62 @@
-<p align="center"><img src="assets/retro_cosmic_banner.svg" alt="Prince Upadhyay — retro-futurist independent research" width="100%"/></p>
-<p align="center"><img src="assets/terminal_ethos.svg" alt="The universe does not owe us certainty. Our claims owe the universe evidence." width="100%"/></p>
+<p align="center"><img src="assets/universe_hero.svg" alt="Reggae Shark Universe — a map of public research" width="100%" /></p>
 
-# Reggae Shark Universe — Research Portfolio & Evidence Umbrella
+<p align="center"><a href="docs/REPO_MIRROR_INDEX.md">PUBLIC PROJECT MAP</a> &nbsp;·&nbsp; <a href="SPECIALIST_REPOSITORIES.md">SOURCE REPOSITORIES</a> &nbsp;·&nbsp; <a href="https://github.com/reggaesharkk">PROFILE</a> &nbsp;·&nbsp; <a href="https://orcid.org/0009-0002-1170-4487">ORCID</a></p>
 
-**Author & Maintainer:** Prince Upadhyay — Independent Researcher  
-**ORCID:** [0009-0002-1170-4487](https://orcid.org/0009-0002-1170-4487) · **GitHub:** [@reggaesharkk](https://github.com/reggaesharkk) · **Contact:** `starxshark@gmail.com`  
-**Umbrella Synthesis Date:** 1 November 2026 · **Epistemic Standard:** `Build. Attack. Falsify. Preserve.`
+# Reggae Shark Universe
 
-> **Scope & Global Claim Firewall:** This repository is the master archival index and cross-program provenance umbrella for ten independent research and verification programs. Their unifying thread is an evidence-bounded verification discipline—freezing protocols before prospective evaluation, binding claims to deterministic SHA-256 manifests and machine-checked or interval-certified artifacts, preserving falsified gates as permanent historical records, and enforcing a strict firewall between finite/model theorems and open universal conjectures. **This portfolio does not claim that the ten programs form a single unified law of nature.**
+**Prince Upadhyay · Independent Researcher · India**  
+[ORCID 0009-0002-1170-4487](https://orcid.org/0009-0002-1170-4487) · [GitHub profile](https://github.com/reggaesharkk) · [Contact](mailto:starxshark@gmail.com)  
+**Updated:** 1 November 2026 · **Method:** Build · Attack · Falsify · Preserve
 
-## Available for Paid Technical Work — AI Evaluation & Research Verification
+> *I follow the question until the evidence draws a line.*
 
-I'm an independent researcher based in India, working on computational mathematics, formal verification, reproducible research and adversarial evaluation of AI-assisted software. **I am available for remote, paid, short-term technical assignments.**
+I work across mathematical dynamics, spectral methods, formal reasoning, AI evaluation, and verifiable software. This repository is the public map and archival record. The work itself lives in the specialist repositories below, each with its own history and stated limits.
 
-I can contribute to:
+## The public work
 
-- **AI coding-agent evaluation:** inspect agent-generated code and claims, build adversarial tests, reproduce failures and document actionable findings.
-- **Mathematical reasoning and proof review:** construct and check scoped computational-mathematics tasks, finite certificates, counterexamples and verification steps.
-- **Reproducibility and evidence audits:** authenticate source and result artifacts, replay available test suites, compare Windows/Linux runs and provide explicit **PASS / FAIL / OPEN** reports.
-- **Benchmark and regression-test design:** turn research questions or failure reports into reproducible evaluation cases with clear acceptance criteria.
+| Project | Area | What the evidence says |
+|---|---|---|
+| [Physics · dynamical sector](https://github.com/reggaesharkk/physics-v1-dynamical-sector) | Mathematical dynamics | Model-specific dynamical-sector and stability work. The observer-to-horizon bridge remains open. |
+| [Ψ Self-Modeling Benchmark](https://github.com/reggaesharkk/psi-self-modeling-benchmark) | AI evaluation | Diagnostic self/peer benchmark. It does not establish consciousness or general self-awareness. |
+| [Navier–Stokes Bridge Audit](https://github.com/reggaesharkk/navier-stokes-bridge-audit) | Validated computation | Finite Fourier–Galerkin certificates; transfer to continuum regularity remains open. |
+| [Self-Referential Processing Design Lab](https://github.com/reggaesharkk/self-referential-processing-designlab) | Experimental design | Preregistered design and simulation validation; confirmatory collection is paused. |
+| [LRSC Odd-Ring Spectral Rank](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank) | Spectral methods | Scoped odd-ring spectral-rank result and finite eleven-channel certificate. |
+| [IntentSeal](https://github.com/reggaesharkk/intentseal) | Verification tooling | Prototype for claim boundaries, evidence provenance, and verification status. |
+| [Riemann Bandwidth-One Verification](https://github.com/reggaesharkk/riemann-bandwidth1-verification) | Computational number theory | Finite-band certificates and conditional analyses; the Riemann Hypothesis remains open. |
+| [STRENGTH-B3 Interceptor Core](https://github.com/reggaesharkk/STRENGTH-B3-Interceptor-Core) | AI systems | Windows ARM64 interceptor prototype; claims remain bounded by the repository’s measured scope. |
+| [Strength Intent · Lean](https://github.com/reggaesharkk/strength-intent-ns-lean) | Formal methods | Separate Lean-oriented companion in the STRENGTH research line; see its repository for current scope. |
+| [Theory of Bounded Existence](https://github.com/reggaesharkk/theory-of-bounded-existence) | Mathematical modeling | Model-specific 4D ODE system and formal artifacts; no physical or consciousness claim. |
+| [The Reggae Shark Protocol](https://github.com/reggaesharkk/The-Reggae-Shark-Protocol) | Execution evidence | Application-level verification and signed execution evidence prototype. |
+| [SharkLang v2.4.2](https://github.com/reggaesharkk/sharklang-v2.4.2-release) | Governed AI | Approval-gated policy-language/runtime release with an explicit evaluation boundary. |
+| [SharkLang Evidence Desk](https://github.com/reggaesharkk/sharklang-evidence-desk) | Release auditing | Local ZIP structure and checksum review; it does not execute archive contents. |
 
-**Selected public work:** [LRSC odd-ring spectral certificate](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank) · [Riemann bandwidth-one verification](https://github.com/reggaesharkk/riemann-bandwidth1-verification) · [IntentSeal](https://github.com/reggaesharkk/intentseal) · [The Reggae Shark Protocol](https://github.com/reggaesharkk/The-Reggae-Shark-Protocol) · [ORCID research record](https://orcid.org/0009-0002-1170-4487).
+The boundaries matter. Finite certificates remain finite. Simulations do not become observations. Prototypes do not become production security guarantees by presentation alone. The linked repositories state their assumptions, evidence, and open obligations.
 
-**Scope:** These links demonstrate defined mathematical statements, finite computations and development-stage verification software; they do not claim that an open mathematical problem is solved or that a prototype has been independently certified for production security.
+## One map. Independent source histories.
 
-**Contact for paid collaborations:** `starxshark@gmail.com` (also listed in this repository's author header).
+I pin the public project repositories and my profile as Git submodules, so this Umbrella can point to exact source commits without flattening each project’s history.
+
+```sh
+git clone --recurse-submodules https://github.com/reggaesharkk/Reggae-shark-universe-.git
+```
+
+If the Umbrella is already cloned:
+
+```sh
+git submodule update --init --recursive
+```
+
+GitHub’s ordinary “Download ZIP” does not include submodule file contents. Use the recursive clone command above to retrieve every pinned public source tree. The current complete list and commit pins are in [the live repository map](docs/REPO_MIRROR_INDEX.md). Private repositories remain private and are excluded.
+
+## How to read this archive
+
+I preserve the dated dossier, evidence standards, and release records below as historical material. Those snapshots are useful for provenance; the current repository map above is the live guide to the public source set.
+
+### Collaboration
+
+I value collaboration that begins with a real question, a careful challenge, or another set of eyes. If one of these projects intersects with your work, I welcome a thoughtful note. The repositories show what is established, what is only a prototype, and what remains open.
+
+**Contact:** [starxshark@gmail.com](mailto:starxshark@gmail.com)
 
 ---
 
@@ -40,7 +72,7 @@ I can contribute to:
 
 ---
 
-## Executive Map of the Ten Research Programs
+## Executive Map of the Ten Research Programs — 26 October 2026 snapshot
 
 | # | Program | Core Technical Object | Current Verified State (26 Oct 2026) | Evidence Class | Canonical Repository & Primary DOIs |
 |---|---|---|---|---|---|
@@ -57,7 +89,7 @@ I can contribute to:
 
 ---
 
-## Newly Added October 2026 Releases (Programs 10, 08 & 03)
+## October 2026 archival additions (Programs 10, 08 & 03)
 
 ### 1. Program 10 — The Reggae Shark Protocol (`v1.3.2`)
 - **Archival Lineage (MIT / CC BY 4.0):** Concept DOI [10.5281/zenodo.23618032](https://doi.org/10.5281/zenodo.23618032) (prior version deposits: `v4` [10.5281/zenodo.23635351](https://doi.org/10.5281/zenodo.23635351), `v3` [10.5281/zenodo.23624605](https://doi.org/10.5281/zenodo.23624605), `v2` [10.5281/zenodo.23620074](https://doi.org/10.5281/zenodo.23620074), and `v1` [10.5281/zenodo.23618033](https://doi.org/10.5281/zenodo.23618033)).
@@ -112,12 +144,11 @@ I built SharkLang as a small policy language and runtime for examining an approv
 
 ## Repository Contents & Navigation
 
-- [`docs/research/Prince_Upadhyay_Master_Research_Dossier_2026-10-24.pdf`](docs/research/Prince_Upadhyay_Master_Research_Dossier_2026-10-24.pdf) — Complete 21-page consolidated Master Research Dossier (`1,127,453` bytes, SHA-256: `3e05c82a3b478a7c15cf510946f4a8a9ad2c929cc1125494d9704966805dc41b`).
-- [`docs/research/The_Reggae_Shark_Protocol_v1_3_2_Specification.pdf`](docs/research/The_Reggae_Shark_Protocol_v1_3_2_Specification.pdf) — Compiled 3-page linearized `%PDF-1.4` specification for Program 10 (*The Reggae Shark Protocol v1.3.2*, `405,584` bytes, SHA-256: `2741d42d619e1037ffd7d00c74ba6f3902cf235d634e6b86bfb6108276688e6f`).
-- [`protocols/shark_protocol_v1_3_2/`](protocols/shark_protocol_v1_3_2/) — Complete 31-file mirror of [reggaesharkk/The-Reggae-Shark-Protocol](https://github.com/reggaesharkk/The-Reggae-Shark-Protocol) (`v1.3.2`, Concept DOI `10.5281/zenodo.23618032`).
-- [`RESEARCHER_AND_ARCHIVE_INDEX_2026_10_25.md`](RESEARCHER_AND_ARCHIVE_INDEX_2026_10_25.md) — Complete registry of all `15` OSF DOIs (`13` ORCID-indexed + `2` companion project archives), `17` Zenodo DOIs (`15` version deposits + `2` Concept DOIs), `10` GitHub repositories, CI runs, and SHA-256 digests.
-- [`PORTFOLIO_EVIDENCE_AND_RIGHTS_STANDARD_2026_10_25.md`](PORTFOLIO_EVIDENCE_AND_RIGHTS_STANDARD_2026_10_25.md) — Shared 8-field evidence standard, cross-program boundaries, and licensing/rights table across all ten programs.
-- [`registry.json`](registry.json) & [`tools/check_umbrella_registry.py`](tools/check_umbrella_registry.py) — Machine-readable single source of truth and automated consistency checker.
-- [`MANIFEST_SHA256.txt`](MANIFEST_SHA256.txt) — Repository-wide SHA-256 manifest covering every tracked file in the Umbrella archive.
+- [Live public repository map](docs/REPO_MIRROR_INDEX.md) — all 13 public project repositories, source links, and exact pinned commits.
+- [Specialist repository list](SPECIALIST_REPOSITORIES.md) — current source set and clone instructions.
+- [Pinned source tree directory](public-repositories/README.md) — how to retrieve the submodules with their contents.
+- [Research dossier and historical evidence](#master-research-dossier--umbrella-standards) — dated records preserved in this archive.
+- [Machine-readable registry](registry.json) and [registry checker](tools/check_umbrella_registry.py) — historical DOI/evidence registry and its consistency checker.
+- [Repository SHA-256 manifest](MANIFEST_SHA256.txt) — hashes for tracked Umbrella files; it does not hash itself.
 
 > **Security & Key-Pinning Note (`v1.3.2` vs Historical `v1.2.0`):** Historical archive deposit `v4` (`10.5281/zenodo.23635351`, `v1.2.0`) included a deterministic fallback Ed25519 seed (`SHA-256: 914f28eabb2b93fb15bf6ad071120c21e8dd5a8a5e4825f053a1962b101901ec`, public key `e3ad81062fa39a869b798e3ab3a7195316dbe7de0e5e0da22a7ff4194065b74c`). That seed is **permanently revoked** in `v1.3.2`: `Ed25519AuthoritySigner` requires `cryptography` and an explicit external `SHARK_ED25519_SEED_HEX` (or `IsolatedSignerSubprocess(generate_ephemeral=True)`), and `SharkProtocolEngine.verify_chain_list(..., *, expected_pubkey=...)` and `verify_exported_ledger` require a pinned verifier public key (`protocols/shark_protocol_v1_3_2/SECURITY.md`, `registry.json`).

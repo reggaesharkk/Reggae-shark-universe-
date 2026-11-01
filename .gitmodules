@@ -1,0 +1,55 @@
+[submodule "profile"]
+	path = public-repositories/profile
+	url = https://github.com/reggaesharkk/reggaesharkk.git
+
+[submodule "physics-v1-dynamical-sector"]
+	path = public-repositories/physics-v1-dynamical-sector
+	url = https://github.com/reggaesharkk/physics-v1-dynamical-sector.git
+
+[submodule "psi-self-modeling-benchmark"]
+	path = public-repositories/psi-self-modeling-benchmark
+	url = https://github.com/reggaesharkk/psi-self-modeling-benchmark.git
+
+[submodule "navier-stokes-bridge-audit"]
+	path = public-repositories/navier-stokes-bridge-audit
+	url = https://github.com/reggaesharkk/navier-stokes-bridge-audit.git
+
+[submodule "self-referential-processing-designlab"]
+	path = public-repositories/self-referential-processing-designlab
+	url = https://github.com/reggaesharkk/self-referential-processing-designlab.git
+
+[submodule "lrsc-odd-ring-spectral-rank"]
+	path = public-repositories/lrsc-odd-ring-spectral-rank
+	url = https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank.git
+
+[submodule "intentseal"]
+	path = public-repositories/intentseal
+	url = https://github.com/reggaesharkk/intentseal.git
+
+[submodule "riemann-bandwidth1-verification"]
+	path = public-repositories/riemann-bandwidth1-verification
+	url = https://github.com/reggaesharkk/riemann-bandwidth1-verification.git
+
+[submodule "STRENGTH-B3-Interceptor-Core"]
+	path = public-repositories/STRENGTH-B3-Interceptor-Core
+	url = https://github.com/reggaesharkk/STRENGTH-B3-Interceptor-Core.git
+
+[submodule "strength-intent-ns-lean"]
+	path = public-repositories/strength-intent-ns-lean
+	url = https://github.com/reggaesharkk/strength-intent-ns-lean.git
+
+[submodule "theory-of-bounded-existence"]
+	path = public-repositories/theory-of-bounded-existence
+	url = https://github.com/reggaesharkk/theory-of-bounded-existence.git
+
+[submodule "The-Reggae-Shark-Protocol"]
+	path = public-repositories/The-Reggae-Shark-Protocol
+	url = https://github.com/reggaesharkk/The-Reggae-Shark-Protocol.git
+
+[submodule "sharklang-v2.4.2-release"]
+	path = public-repositories/sharklang-v2.4.2-release
+	url = https://github.com/reggaesharkk/sharklang-v2.4.2-release.git
+
+[submodule "sharklang-evidence-desk"]
+	path = public-repositories/sharklang-evidence-desk
+	url = https://github.com/reggaesharkk/sharklang-evidence-desk.git

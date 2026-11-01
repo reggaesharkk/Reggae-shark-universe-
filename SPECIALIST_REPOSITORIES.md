@@ -1,72 +1,37 @@
+<p align="center"><img src="assets/universe_bar.svg" alt="Reggae Shark Universe public project map" width="100%" /></p>
+
 # Specialist repositories
 
-The Reggae Shark Universe is the umbrella archive and paper-facing map. Project-specific development lives in specialist repositories, while the umbrella remains the canonical index and paper-facing ledger. The live repos below are the current GitHub source-of-truth for the active work stream.
+**Updated:** 1 November 2026.
 
-## Canonical seven-program core
+I keep the project work in specialist repositories and use this Umbrella as the cross-project map and archive. The table below is the current public set; the listed source commits are pinned as Git submodules under `public-repositories/`.
 
-1. **Self-Referential Processing + Design Lab**  
-   https://github.com/reggaesharkk/self-referential-processing-designlab
+## Current public source set
 
-2. **Psi Self-Modeling Benchmark**  
-   https://github.com/reggaesharkk/psi-self-modeling-benchmark
+| # | Project | Repository | Scope note | Pinned commit |
+|---:|---|---|---|---|
+| 1 | Physics · dynamical sector | [physics-v1-dynamical-sector](https://github.com/reggaesharkk/physics-v1-dynamical-sector) | Model-specific dynamical-sector and stability work. The observer-to-horizon bridge remains open. | `c579bcd55b6d31549729b038159e02746375b000` |
+| 2 | Ψ Self-Modeling Benchmark | [psi-self-modeling-benchmark](https://github.com/reggaesharkk/psi-self-modeling-benchmark) | Diagnostic self/peer benchmark. It does not establish consciousness or general self-awareness. | `3c76eea6b0d64e11f9e7bc18eeb8f69e87f0e1cf` |
+| 3 | Navier–Stokes Bridge Audit | [navier-stokes-bridge-audit](https://github.com/reggaesharkk/navier-stokes-bridge-audit) | Finite Fourier–Galerkin certificates; transfer to continuum regularity remains open. | `def4df60b0ebdce8b0c99cea6006eb2905e0e02f` |
+| 4 | Self-Referential Processing Design Lab | [self-referential-processing-designlab](https://github.com/reggaesharkk/self-referential-processing-designlab) | Preregistered design and simulation validation; confirmatory collection is paused. | `10edbe34f1df741cfb4e7f3a7bb0dff4073e6186` |
+| 5 | LRSC Odd-Ring Spectral Rank | [lrsc-odd-ring-spectral-rank](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank) | Scoped odd-ring spectral-rank result and finite eleven-channel certificate. | `39db6e6bebcd364462605048f71933da4f8681a5` |
+| 6 | IntentSeal | [intentseal](https://github.com/reggaesharkk/intentseal) | Prototype for claim boundaries, evidence provenance, and verification status. | `bb01fbe07b8e8a0a6d172370793937e9785fd7ab` |
+| 7 | Riemann Bandwidth-One Verification | [riemann-bandwidth1-verification](https://github.com/reggaesharkk/riemann-bandwidth1-verification) | Finite-band certificates and conditional analyses; the Riemann Hypothesis remains open. | `4cec55eb89ddcdfac8f1b06ecec28b06632973d8` |
+| 8 | STRENGTH-B3 Interceptor Core | [STRENGTH-B3-Interceptor-Core](https://github.com/reggaesharkk/STRENGTH-B3-Interceptor-Core) | Windows ARM64 interceptor prototype; claims remain bounded by the repository’s measured scope. | `501bcffed22ed2b51e66762a5a287a92aa19a406` |
+| 9 | Strength Intent · Lean | [strength-intent-ns-lean](https://github.com/reggaesharkk/strength-intent-ns-lean) | Separate Lean-oriented companion in the STRENGTH research line; see its repository for current scope. | `e4a5f717ac495f30123f82ebfb2cc3c9958034b0` |
+| 10 | Theory of Bounded Existence | [theory-of-bounded-existence](https://github.com/reggaesharkk/theory-of-bounded-existence) | Model-specific 4D ODE system and formal artifacts; no physical or consciousness claim. | `5bc839e6e0cf492882268d8ed47bef6ff82d65fc` |
+| 11 | The Reggae Shark Protocol | [The-Reggae-Shark-Protocol](https://github.com/reggaesharkk/The-Reggae-Shark-Protocol) | Application-level verification and signed execution evidence prototype. | `1d7cce4f1071eda63b6d19a79267902adb37ea0a` |
+| 12 | SharkLang v2.4.2 | [sharklang-v2.4.2-release](https://github.com/reggaesharkk/sharklang-v2.4.2-release) | Approval-gated policy-language/runtime release with an explicit evaluation boundary. | `622a88fe2cc205b752e8c6cc2c5b1702a4c05487` |
+| 13 | SharkLang Evidence Desk | [sharklang-evidence-desk](https://github.com/reggaesharkk/sharklang-evidence-desk) | Local ZIP structure and checksum review; it does not execute archive contents. | `0963f5a5d360456ff724c4d8657aca461a4f1b68` |
 
-3. **Information-Theoretic Physics / dynamical sector**  
-   https://github.com/reggaesharkk/physics-v1-dynamical-sector
+The account profile and CV are also included as a pinned public submodule at `public-repositories/profile`: [reggaesharkk](https://github.com/reggaesharkk) · `190960ae06ec145fe532fdf118f7890f36960ad7`.
 
-4. **LRSC Odd-Ring Spectral Rank**  
-   https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank
+## Retrieve the source set
 
-5. **Navier–Stokes Bridge Audit**  
-   https://github.com/reggaesharkk/navier-stokes-bridge-audit
+```sh
+git clone --recurse-submodules https://github.com/reggaesharkk/Reggae-shark-universe-.git
+```
 
-6. **IntentSeal Verification Kernel + Verifiable Research Kernel**  
-   https://github.com/reggaesharkk/intentseal  
-   Umbrella mirrors remain at [Frozen lineage](intentseal/README.md) and [VRK](verifiable-research-kernel/README.md).
+The umbrella stores commit pointers, while each specialist repository remains the authoritative source for its own files and history. GitHub’s ordinary “Download ZIP” archive does not include submodule contents; clone with `--recurse-submodules` to retrieve them.
 
-7. **Riemann Bandwidth-One Verification**  
-   https://github.com/reggaesharkk/riemann-bandwidth1-verification
-
-## Additional active umbrella mirrors
-
-8. **STRENGTH-B3 Interceptor Core**  
-   https://github.com/reggaesharkk/STRENGTH-B3-Interceptor-Core
-
-9. **strength-intent-ns-lean**  
-   https://github.com/reggaesharkk/strength-intent-ns-lean
-
-## Current mirror index (updated 2026-10-21)
-
-The umbrella repo is now aligned to the active public GitHub corpus as follows:
-
-- [Self-Referential Processing + Design Lab](https://github.com/reggaesharkk/self-referential-processing-designlab) — active research and design-lab validation pipeline.
-- [Psi Self-Modeling Benchmark](https://github.com/reggaesharkk/psi-self-modeling-benchmark) — self-vs-peer benchmark and OSF/provenance materials.
-- [Physics v1 Dynamical Sector](https://github.com/reggaesharkk/physics-v1-dynamical-sector) — equilibrium and linear-stability analysis around the phenomenological dynamical sector.
-- [LRSC Odd-Ring Spectral Rank](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank) — odd-ring spectral rank theorem and reproducible exact integer certificates.
-- [Navier–Stokes Bridge Audit](https://github.com/reggaesharkk/navier-stokes-bridge-audit) — finite Fourier–Galerkin audits and open proof gates.
-- [IntentSeal](https://github.com/reggaesharkk/intentseal) — verification infrastructure and trust-root code.
-- [Riemann Bandwidth-One Verification](https://github.com/reggaesharkk/riemann-bandwidth1-verification) — finite-band analytic verification and conditional zero-proportion work.
-- [STRENGTH-B3 Interceptor Core](https://github.com/reggaesharkk/STRENGTH-B3-Interceptor-Core) — current interceptor-core workstream.
-- [strength-intent-ns-lean](https://github.com/reggaesharkk/strength-intent-ns-lean) — Lean-based strength and intent verification work.
-
-This umbrella index is a map and archive, not the primary development home. For production work, source-of-truth remains in each specialist repo.
-
-## Paper shelf
-
-The current cross-project paper index is:
-
-[papers/README.md](papers/README.md)
-
-The Universe mirrors paper artifacts where practical, while the specialist repositories remain the live source/code histories.
-
-## Archival records
-
-- IntentSeal Verification Kernel frozen v0.1.1–v0.5.0 lineage: https://doi.org/10.5281/zenodo.23016445
-- IntentSeal Verifiable Research Kernel v0.3.1: https://doi.org/10.5281/zenodo.23018459 (record: https://zenodo.org/records/23018459; All Rights Reserved; published 2026-09-28)
-
-- Self-Referential Processing consolidated master: https://doi.org/10.17605/OSF.IO/NV7DZ
-- Self-Referential Processing original foundation: https://doi.org/10.17605/OSF.IO/37H2Y
-- Physics Appendix A theorem: https://doi.org/10.17605/OSF.IO/U7M6H
-- LRSC frozen theorem: https://doi.org/10.17605/OSF.IO/NM5BW
-- LRSC complete lineage archive: https://doi.org/10.17605/OSF.IO/QJFR3
-
-Frozen archival records remain authoritative and are not silently replaced by later GitHub updates.
+This current list covers the public repositories only. Private repositories remain private and are not copied here.

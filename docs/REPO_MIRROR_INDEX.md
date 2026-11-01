@@ -1,30 +1,47 @@
-# Live mirror index for Reggae Shark Universe
+<p align="center"><img src="../assets/universe_bar.svg" alt="Reggae Shark Universe public project map" width="100%" /></p>
 
-This file is a live pointer index for the current public repo set associated with the Reggae Shark Universe research umbrella.
+# Public repository map
 
-The umbrella repo remains the archive and paper-facing map. The actual source-of-truth for active work lives in each specialist repository.
+**Updated:** 1 November 2026.
 
-## Current public repo mirror set
+This is the current index of the public source repositories connected to the Reggae Shark Universe. Each specialist repository keeps its own history, issues, license, and project-specific evidence. The Umbrella records the source commit it points to.
 
-| Repo | Purpose | URL |
-|---|---|---|
-| Self-Referential Processing + Design Lab | Design-lab validation and self-referential processing research | https://github.com/reggaesharkk/self-referential-processing-designlab |
-| Psi Self-Modeling Benchmark | Self-vs-peer benchmark and provenance-anchored experimental harness | https://github.com/reggaesharkk/psi-self-modeling-benchmark |
-| Physics v1 Dynamical Sector | Dynamical-sector and equilibrium/linear-stability analysis | https://github.com/reggaesharkk/physics-v1-dynamical-sector |
-| LRSC Odd-Ring Spectral Rank | Exact integer certificate and spectral-rank verification work | https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank |
-| Navier–Stokes Bridge Audit | Finite Fourier–Galerkin audit and bridge validation work | https://github.com/reggaesharkk/navier-stokes-bridge-audit |
-| IntentSeal | Verification kernel and evidence/trust-root infrastructure | https://github.com/reggaesharkk/intentseal |
-| Riemann Bandwidth-One Verification | Finite-band verification and conditional zero-proportion analytic track | https://github.com/reggaesharkk/riemann-bandwidth1-verification |
-| STRENGTH-B3 Interceptor Core | Current interceptor-core implementation and research work | https://github.com/reggaesharkk/STRENGTH-B3-Interceptor-Core |
-| strength-intent-ns-lean | Lean-based verification and intent/strength work | https://github.com/reggaesharkk/strength-intent-ns-lean |
-| Reggae Shark Universe umbrella | Archive, paper map, and cross-project index | https://github.com/reggaesharkk/Reggae-shark-universe- |
+I keep the boundary beside the link: a finite result is not a universal theorem; a diagnostic benchmark is not a consciousness finding; a prototype is not a production security certification.
 
-## Mirror status
+## Public project repositories
 
-This index reflects the current state as of 2026-10-21. It is intended to keep the umbrella repo synchronized with the newest active public repositories without replacing the original git histories in those repos.
+| Project | Area | Evidence boundary | Pinned source commit |
+|---|---|---|---|
+| [Physics · dynamical sector](https://github.com/reggaesharkk/physics-v1-dynamical-sector) | Mathematical dynamics | Model-specific dynamical-sector and stability work. The observer-to-horizon bridge remains open. | `c579bcd55b6d31549729b038159e02746375b000` |
+| [Ψ Self-Modeling Benchmark](https://github.com/reggaesharkk/psi-self-modeling-benchmark) | AI evaluation | Diagnostic self/peer benchmark. It does not establish consciousness or general self-awareness. | `3c76eea6b0d64e11f9e7bc18eeb8f69e87f0e1cf` |
+| [Navier–Stokes Bridge Audit](https://github.com/reggaesharkk/navier-stokes-bridge-audit) | Validated computation | Finite Fourier–Galerkin certificates; transfer to continuum regularity remains open. | `def4df60b0ebdce8b0c99cea6006eb2905e0e02f` |
+| [Self-Referential Processing Design Lab](https://github.com/reggaesharkk/self-referential-processing-designlab) | Experimental design | Preregistered design and simulation validation; confirmatory collection is paused. | `10edbe34f1df741cfb4e7f3a7bb0dff4073e6186` |
+| [LRSC Odd-Ring Spectral Rank](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank) | Spectral methods | Scoped odd-ring spectral-rank result and finite eleven-channel certificate. | `39db6e6bebcd364462605048f71933da4f8681a5` |
+| [IntentSeal](https://github.com/reggaesharkk/intentseal) | Verification tooling | Prototype for claim boundaries, evidence provenance, and verification status. | `bb01fbe07b8e8a0a6d172370793937e9785fd7ab` |
+| [Riemann Bandwidth-One Verification](https://github.com/reggaesharkk/riemann-bandwidth1-verification) | Computational number theory | Finite-band certificates and conditional analyses; the Riemann Hypothesis remains open. | `4cec55eb89ddcdfac8f1b06ecec28b06632973d8` |
+| [STRENGTH-B3 Interceptor Core](https://github.com/reggaesharkk/STRENGTH-B3-Interceptor-Core) | AI systems | Windows ARM64 interceptor prototype; claims remain bounded by the repository’s measured scope. | `501bcffed22ed2b51e66762a5a287a92aa19a406` |
+| [Strength Intent · Lean](https://github.com/reggaesharkk/strength-intent-ns-lean) | Formal methods | Separate Lean-oriented companion in the STRENGTH research line; see its repository for current scope. | `e4a5f717ac495f30123f82ebfb2cc3c9958034b0` |
+| [Theory of Bounded Existence](https://github.com/reggaesharkk/theory-of-bounded-existence) | Mathematical modeling | Model-specific 4D ODE system and formal artifacts; no physical or consciousness claim. | `5bc839e6e0cf492882268d8ed47bef6ff82d65fc` |
+| [The Reggae Shark Protocol](https://github.com/reggaesharkk/The-Reggae-Shark-Protocol) | Execution evidence | Application-level verification and signed execution evidence prototype. | `1d7cce4f1071eda63b6d19a79267902adb37ea0a` |
+| [SharkLang v2.4.2](https://github.com/reggaesharkk/sharklang-v2.4.2-release) | Governed AI | Approval-gated policy-language/runtime release with an explicit evaluation boundary. | `622a88fe2cc205b752e8c6cc2c5b1702a4c05487` |
+| [SharkLang Evidence Desk](https://github.com/reggaesharkk/sharklang-evidence-desk) | Release auditing | Local ZIP structure and checksum review; it does not execute archive contents. | `0963f5a5d360456ff724c4d8657aca461a4f1b68` |
 
-## Recommended usage
+## Profile
 
-- Keep all active code changes in the specialist repositories.
-- Use this umbrella repo as the canonical index, paper-facing map, and archive.
-- For any new projects, add a new row here and a matching entry in `SPECIALIST_REPOSITORIES.md`.
+[Prince Upadhyay — profile and research CV](https://github.com/reggaesharkk/reggaesharkk) · pinned commit `190960ae06ec145fe532fdf118f7890f36960ad7`
+
+## Clone the complete public source set
+
+The submodule entries under `public-repositories/` pin the repositories above and the profile repository. Clone the Umbrella with:
+
+```sh
+git clone --recurse-submodules https://github.com/reggaesharkk/Reggae-shark-universe-.git
+```
+
+If you already cloned it without submodules:
+
+```sh
+git submodule update --init --recursive
+```
+
+A normal clone contains the pinned links but not the contents of the source repositories. The command above retrieves the pinned source trees. Private projects are not included in this public map.
