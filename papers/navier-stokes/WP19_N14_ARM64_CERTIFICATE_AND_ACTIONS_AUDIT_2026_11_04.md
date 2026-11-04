@@ -21,15 +21,26 @@ Both archives contain 356 SHA-256-listed files (357 ZIP entries including the ma
 
 The Windows runs used Python 3.12.10 ARM64, NumPy 2.3.5, and python-flint 0.9.0. They ran on the CPU. Although the operator's device is a Snapdragon X Copilot+ PC, the NPU was not used by this Python/Arb workflow.
 
-## Previous GitHub Actions runs
+## Previous and latest GitHub Actions runs
 
-- [Run 41815716048](https://github.com/reggaesharkk/navier-stokes-bridge-audit/actions/runs/41815716048) passed on the open specialist PR #167. The Lean build and axiom checks, package checksums, finite arithmetic replay, and seven-test suite in normal, `-O`, and `-OO` modes passed.
-- [Run 41815716233](https://github.com/reggaesharkk/navier-stokes-bridge-audit/actions/runs/41815716233) recomputed the reverse-time correction, passed its separate recurrence replay and verifier, then failed the final checksum command because the `README.md` digest in the v0.28 correction manifest was stale. All other listed files passed. The manifest entry is being corrected on PR #167; a new run is needed to confirm that repair.
-- Neither run supplied the missing raw M15 trajectory or adjoint enclosures. CI verifies the committed package and code paths only.
+- [Run 41815716048](https://github.com/reggaesharkk/navier-stokes-bridge-audit/actions/runs/41815716048) passed the v0.29.1 package verification on an earlier PR commit: Lean build/axiom checks, package checksums, finite arithmetic replay, and seven tests in normal, `-O`, and `-OO` modes.
+- [Run 41815716233](https://github.com/reggaesharkk/navier-stokes-bridge-audit/actions/runs/41815716233) passed the reverse-time correction replay and verifier but failed the final checksum command because the README digest in the correction manifest was stale.
+- The stale README digest was corrected on the open PR branch. Fresh [run 41832891663](https://github.com/reggaesharkk/navier-stokes-bridge-audit/actions/runs/41832891663) passed the correction workflow including the final checksum.
+- The newest [v0.29.1 verification run 41832891665](https://github.com/reggaesharkk/navier-stokes-bridge-audit/actions/runs/41832891665) was still in progress at the latest Actions check; its result is not yet confirmed.
+- These CI runs verify the committed package and code paths. They do not supply the missing raw M15 trajectory or adjoint enclosures.
 
-## Tags and current release
+## Local Downloads snapshots and timeline
 
-The latest published specialist Navier tag/release remains `n13-same-datum-v1` from 29 September 2026; the other specialist tags are `v0.1` and `v0.2`. The umbrella repository has only `lrsc-v1.2.1-supplement`, which is unrelated to Navier. Tags are fixed commit labels and do not move as PRs change. PR #167 and mirror PR #55 are open and unmerged, so no new Navier release tag is created from them. After review and merge, a new, scoped finite-cutoff audit tag can be considered; it must not claim a continuum theorem.
+The October screenshots correspond to real ZIP members; the archives were inspected read-only through their roots and Navier trees.
+
+| Snapshot | What is inside | SHA-256 |
+|---|---|---|
+| `Reggae-Shark-Universe-v1.1.0-Release.zip` (19 Oct; 1,039 entries) | Its Navier subtree contains 808 paths and 23 workflow YAML files, the N14 same-datum runner, and v0.28 M14 recurrence outputs. The embedded WP19 status note is dated 30 Sep. It lacks the exact M15 lower-path `nodes.npy`, `rhs.npy`, and `metadata.json` inputs. The ZIP filename says v1.1.0 while its generic internal release manifest says v3.5.0-PR155-Final; these are not reconciled release labels. | `e812078ff451f4b5a1cf554f9cc9f8134a7c60f8a2b19071b3722300d59599b5` |
+| `Reggae_Shark_Universe_Umbrella_Update_2026-10-24.zip` (5 entries) | Portfolio index/README, standards, dossier PDF, and checksum manifest only; no Navier source tree. | `4a41d1bd20c1869ddc192c2a531047479e1ac8640823adbc66caeb9b9d4aa332` |
+| `Reggae_Shark_Universe_Umbrella_2026-10-26.zip` (54 entries) | Lightweight umbrella and Shark Protocol v1.3.2 mirror. The included WP19 JSON identifies an illustrative study using assumed rates and explicitly leaves all-cutoff status OPEN. | `7a962763fc2b0d1e18f7f137d9a3605f0237ce845dd4b88d63254c7e64e98150` |
+| `Reggae_Shark_Universe_Umbrella_2026-10-26_git_archive.zip` (1,169 entries) | Full umbrella Git snapshot with 846 Navier paths. It includes N14 code and v0.28 records, but no N14 result payload and none of the exact M15 lower-path inputs. | `fb19c96c32509531fb30b31b8561d0199568337027a701090021a105db87144c` |
+
+Chronology: initial finite Fourier project/version records on 24 Sep; the N11–N18 finite-cutoff record on 29–30 Sep; M14/M15 v0.28 sign/recurrence audits on 1 Oct; Zenodo v3 on 18 Oct; the umbrella release ZIP with an older 30 Sep Navier status note on 19 Oct; dossier-only umbrella update on 24 Oct; lightweight and full Git umbrella snapshots on 26 Oct; v0.29.1 audit PR on 1 Nov; and fresh local N14 128/192-bit CPU runs plus the corrected Actions rerun on 4 Nov. These are distinct records at distinct dates, not one continuously updated artifact.
 
 ## Remaining M14/M15 gate
 
