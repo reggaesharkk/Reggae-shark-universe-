@@ -26,7 +26,7 @@ The Windows runs used Python 3.12.10 ARM64, NumPy 2.3.5, and python-flint 0.9.0.
 - [Run 41815716048](https://github.com/reggaesharkk/navier-stokes-bridge-audit/actions/runs/41815716048) passed the v0.29.1 package verification on an earlier PR commit: Lean build/axiom checks, package checksums, finite arithmetic replay, and seven tests in normal, `-O`, and `-OO` modes.
 - [Run 41815716233](https://github.com/reggaesharkk/navier-stokes-bridge-audit/actions/runs/41815716233) passed the reverse-time correction replay and verifier but failed the final checksum command because the README digest in the correction manifest was stale.
 - The stale README digest was corrected on the open PR branch. Fresh [run 41832891663](https://github.com/reggaesharkk/navier-stokes-bridge-audit/actions/runs/41832891663) passed the correction workflow including the final checksum.
-- The newest [v0.29.1 verification run 41832891665](https://github.com/reggaesharkk/navier-stokes-bridge-audit/actions/runs/41832891665) was still in progress at the latest Actions check; its result is not yet confirmed.
+- The corrected [v0.29.1 verification run 41832891665](https://github.com/reggaesharkk/navier-stokes-bridge-audit/actions/runs/41832891665) passed. The follow-up v0.28 correction [run 41835258480](https://github.com/reggaesharkk/navier-stokes-bridge-audit/actions/runs/41835258480) and v0.29.1 verification [run 41835258517](https://github.com/reggaesharkk/navier-stokes-bridge-audit/actions/runs/41835258517) also passed on the updated documentation commit.
 - These CI runs verify the committed package and code paths. They do not supply the missing raw M15 trajectory or adjoint enclosures.
 
 ## Local Downloads snapshots and timeline
