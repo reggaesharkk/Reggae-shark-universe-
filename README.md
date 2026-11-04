@@ -6,11 +6,13 @@
 
 **Prince Upadhyay · Independent Researcher · India**  
 [ORCID 0009-0002-1170-4487](https://orcid.org/0009-0002-1170-4487) · [GitHub profile](https://github.com/reggaesharkk) · [Contact](mailto:starxshark@gmail.com)  
-**Updated:** 1 November 2026 · **Method:** Build · Attack · Falsify · Preserve
+**Updated:** 4 November 2026 (Navier–Stokes status addendum) · **Method:** Build · Attack · Falsify · Preserve
 
 > *I follow the question until the evidence draws a line.*
 
 I work across mathematical dynamics, spectral methods, formal reasoning, AI evaluation, and verifiable software. This repository is the public map and archival record. The work itself lives in the specialist repositories below, each with its own history and stated limits.
+
+**Current-status note:** The Navier–Stokes [4 November evidence timeline](papers/navier-stokes/NAVIER_STOKES_EVIDENCE_TIMELINE_2026_11_04.md) supplements the historical executive map below, which remains the 26 October 2026 snapshot. The separate [N14 and Actions audit note](papers/navier-stokes/WP19_N14_ARM64_CERTIFICATE_AND_ACTIONS_AUDIT_2026_11_04.md) records the fresh 128- and 192-bit finite N14 CPU runs and the current M14/M15 gates.
 
 ## The public work
 
@@ -18,7 +20,7 @@ I work across mathematical dynamics, spectral methods, formal reasoning, AI eval
 |---|---|---|
 | [Physics · dynamical sector](https://github.com/reggaesharkk/physics-v1-dynamical-sector) | Mathematical dynamics | Model-specific dynamical-sector and stability work. The observer-to-horizon bridge remains open. |
 | [Ψ Self-Modeling Benchmark](https://github.com/reggaesharkk/psi-self-modeling-benchmark) | AI evaluation | Diagnostic self/peer benchmark. It does not establish consciousness or general self-awareness. |
-| [Navier–Stokes Bridge Audit](https://github.com/reggaesharkk/navier-stokes-bridge-audit) | Validated computation | Finite Fourier–Galerkin certificates; transfer to continuum regularity remains open. |
+| [Navier–Stokes Bridge Audit](https://github.com/reggaesharkk/navier-stokes-bridge-audit) | Validated computation | Archived finite Fourier–Galerkin records; the current package replay checks supplied records, while full-path transfer and continuum regularity remain open. [4 November evidence timeline](papers/navier-stokes/NAVIER_STOKES_EVIDENCE_TIMELINE_2026_11_04.md). |
 | [Self-Referential Processing Design Lab](https://github.com/reggaesharkk/self-referential-processing-designlab) | Experimental design | Preregistered design and simulation validation; confirmatory collection is paused. |
 | [LRSC Odd-Ring Spectral Rank](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank) | Spectral methods | Scoped odd-ring spectral-rank result and finite eleven-channel certificate. |
 | [IntentSeal](https://github.com/reggaesharkk/intentseal) | Verification tooling | Prototype for claim boundaries, evidence provenance, and verification status. |
