@@ -156,7 +156,7 @@ Drive v0.18 archive: file ID `19pkWxPzj_w-fz6DlIo6TJnNsQPk3qoan`, SHA-256 `ad367
 
 | Program | Universe artifact | Canonical source status |
 |---|---|---|
-| Navier–Stokes | `papers/navier-stokes/NAVIER_STOKES_EVIDENCE_TIMELINE_2026_11_04.md` | Mirrored from the proposed update in specialist PR [#167](https://github.com/reggaesharkk/navier-stokes-bridge-audit/pull/167). PR #167 is open and unmerged, so the specialist source blob is not yet part of `main`; this mirror is review-ready and does not advance the source pin in `docs/REPO_MIRROR_INDEX.md`. Specialist source Git blob SHA: `f4b2e40a46a8eb5798909e77280fa3146053c613`. |
+| Navier–Stokes | `papers/navier-stokes/NAVIER_STOKES_EVIDENCE_TIMELINE_2026_11_04.md` | Mirrored from the proposed update in specialist PR [#167](https://github.com/reggaesharkk/navier-stokes-bridge-audit/pull/167). PR #167 is open and unmerged, so the specialist source blob is not yet part of `main`; this mirror is review-ready and does not advance the source pin in `docs/REPO_MIRROR_INDEX.md`. Specialist source Git blob SHA: `6bca9ae079ac0be75820249d296dcc6e43282887`. |
 
 The timeline separates archived finite-cutoff claims, manifest checks, recorded CI execution, and absent raw Arb inputs. Its scientific disposition remains: WP19 M14/M15 pilot **STOP**; continuum regularity **OPEN**.
 
@@ -165,6 +165,6 @@ The timeline separates archived finite-cutoff claims, manifest checks, recorded 
 
 | Program | Universe artifact | Canonical source | Specialist blob SHA |
 |---|---|---|---|
-| Navier–Stokes | `papers/navier-stokes/WP19_N14_ARM64_CERTIFICATE_AND_ACTIONS_AUDIT_2026_11_04.md` | `navier-stokes-bridge-audit/notes/WP19_N14_ARM64_CERTIFICATE_AND_ACTIONS_AUDIT_2026_11_04.md` | `49a041296493561d445ebb5aeb689b58531fa6fc` |
+| Navier–Stokes | `papers/navier-stokes/WP19_N14_ARM64_CERTIFICATE_AND_ACTIONS_AUDIT_2026_11_04.md` | `navier-stokes-bridge-audit/notes/WP19_N14_ARM64_CERTIFICATE_AND_ACTIONS_AUDIT_2026_11_04.md` | `4f1dffd229f35d6b71bc5211c24cca9f8aab09e3` |
 
 The N14 entry records fresh 128- and 192-bit Arb runs for one finite Galerkin datum, their local archive hashes, and the Actions manifest correction. The M14/M15 pilot remains STOP; continuum regularity remains OPEN. Specialist PR #167 and this mirror PR remain open and unmerged.
