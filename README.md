@@ -12,7 +12,7 @@
 
 I work across mathematical dynamics, spectral methods, formal reasoning, AI evaluation, and verifiable software. This repository is the public map and archival record. The work itself lives in the specialist repositories below, each with its own history and stated limits.
 
-**Current-status note:** The Navier–Stokes [4 November evidence timeline](papers/navier-stokes/NAVIER_STOKES_EVIDENCE_TIMELINE_2026_11_04.md) supplements the historical executive map below, which remains the 26 October 2026 snapshot.
+**Current-status note:** The Navier–Stokes [4 November evidence timeline](papers/navier-stokes/NAVIER_STOKES_EVIDENCE_TIMELINE_2026_11_04.md) supplements the historical executive map below, which remains the 26 October 2026 snapshot. The separate [N14 and Actions audit note](papers/navier-stokes/WP19_N14_ARM64_CERTIFICATE_AND_ACTIONS_AUDIT_2026_11_04.md) records the fresh 128- and 192-bit finite N14 CPU runs and the current M14/M15 gates.
 
 ## The public work
 
