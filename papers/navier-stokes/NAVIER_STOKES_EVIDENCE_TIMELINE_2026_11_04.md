@@ -1,7 +1,7 @@
 # Navier–Stokes evidence timeline and current status
 
 **As of:** 4 November 2026  
-**Method:** Read-only review of dated records, source files, manifests, and GitHub CI. No new PDE or Arb computation was run for this addendum.
+**Method:** Reconciles dated records, local archive manifests, GitHub Actions, and fresh finite N14 Arb runs on Windows ARM64 CPU at 128 and 192 bits. The N14 certificate is conditional on its supplied Galerkin trajectory-error radius and is not a continuum result.
 
 This chronology distinguishes archived claims from file/hash review and recorded execution. A matching manifest establishes byte agreement with that manifest; it does not, by itself, reproduce a numerical result.
 
@@ -10,13 +10,13 @@ This chronology distinguishes archived claims from file/hash review and recorded
 **The continuum regularity question remains open.** These materials do not prove global regularity, blowup, or a cutoff-uniform limit for three-dimensional incompressible Navier–Stokes.
 
 - **N11–N18:** The Sep 29–30 records report a same-datum Arb certificate family. The Nov 1 v0.29.1 bundle checks supplied finite records and arithmetic; raw upstream Arb trajectories and inputs needed to regenerate those enclosures are absent. This replay is not a fresh Arb reproduction.
-- **WP19 M14/M15:** The v0.29.1 M14 recurrence replays three backward scalar steps (239, 238, 237), conditional on imported strain and residual bounds; it is not a full adjoint-path enclosure. The reported M15 conservative remainder is about 1.6406e14 versus a signed lower bound of about 5.7586e9, leaving a negative margin. The reported steps 220–239 reduction is not independently reproduced in the bundle. The pilot remains **STOP**.
+- **N14 same datum, 4 Nov:** Fresh 128- and 192-bit Arb runs both returned PASS for one frozen rational datum at finite cutoff N14 (120 whole-segment enclosures; h=0.000025; T=0.003). The reported true-endpoint F interval is [-89.015834781, -85.160766265], conditional on the supplied trajectory-error radius. Sealed local ZIP hashes and full verification are recorded in [the audit note](WP19_N14_ARM64_CERTIFICATE_AND_ACTIONS_AUDIT_2026_11_04.md). This does not reproduce every archived N11–N18 certificate or establish continuum regularity.\n- **WP19 M14/M15:** The v0.29.1 M14 recurrence replays three backward scalar steps (239, 238, 237), conditional on imported strain and residual bounds; it is not a full adjoint-path enclosure. The reported M15 conservative remainder is about 1.6406e14 versus a signed lower bound of about 5.7586e9, leaving a negative margin. The reported steps 220–239 reduction is not independently reproduced in the bundle. The pilot remains **STOP**.
 - **Earlier M14 VJP archive:** The Downloads archive shown in Explorer contains M14_adjoint_rhs.npy, M14_adjoint_values.npy, M14_arb_vjp_point.json, and SHA256SUMS. The reviewed ZIP CRC and three manifest entries matched. Its metadata describes a binary64 saved reconstruction with one-point 192-bit Arb-versus-FFT VJP checks, including selected-mode checks; it does not supply a full adjoint trajectory, residual, or quadrature enclosure. The numerical checks were not recomputed in this review.
 - **192-bit Arb producer:** The local extracted tree contains wp19_v0_29_adjoint_segment_arb_v3.py, which imports python-flint Arb/Acb and sets 192-bit precision. It is written for one finite M-to-M+1 transition half-step using supplied arrays. Those arrays and run outputs are absent from the tree; this review did not run it.
 - **Downloads helper:** wp19_modewise_arb_bridge.py uses Python Decimal at 60-digit precision to read existing JSON segments. It does not call Arb or recreate the 192-bit calculation, so it is not new Arb evidence.
 - **Nov 1 closure ZIP:** Its 27-entry SHA-256 manifest matched on inspection. Stored outputs report N14→N15 endpoint separation, while N15→N16, N16→N17, and N17→N18 intervals are not separated. The modewise-vector item is a validator self-test, not a supplied full M15 error vector. The manifest does not independently recompute these results.
 - **Local folder in the screenshot:** ns_arb_verified_work/navier-stokes-bridge-audit is an extracted snapshot with no Git metadata. Its 44-entry root hash manifest matched 39 entries; five differed: .gitignore, CITATION.cff, LICENSE.md, README.md, and RELEASE_NOTES.md. Its patch ZIP contains older synthetic 2D versions of several verifier/runner files, so those files are not promoted to the active source branch.
-- **GitHub CI:** PR #167 is open and unmerged. Actions run #18 passed the Lean build and axiom audit, plus the Python replay and seven tests in normal, -O, and -OO modes (21 test executions). This verifies the included package, not absent raw Arb trajectories.
+- **GitHub Actions:** [Run 41815716048](https://github.com/reggaesharkk/navier-stokes-bridge-audit/actions/runs/41815716048) passed the Lean build/axiom checks, package checksum checks, arithmetic replay, and seven tests in normal, -O, and -OO modes. [Run 41815716233](https://github.com/reggaesharkk/navier-stokes-bridge-audit/actions/runs/41815716233) passed the reverse-time correction replay and verifier but failed its final checksum only because the README.md digest was stale; all other listed files matched. The manifest is being corrected on open PR #167; a fresh run must confirm.
 
 ## Dated record
 
@@ -34,7 +34,7 @@ This chronology distinguishes archived claims from file/hash review and recorded
 | 1 Nov 2026 | v0.29 closure ZIP extracted; v0.29.1 audit PR opened. | 27-entry manifest matched; outputs do not supply the full-path M15 modewise certificate. PR #167 remains open. |
 | 2 Nov 2026 | PR #167 CI run #18. | Confirms build and included package checks, not absent Arb inputs or a continuum result. |
 | 2 Nov 2026 | Local ns_arb_verified_work tree timestamp shown in Explorer. | Extracted, non-Git snapshot with five manifest mismatches; Arb source presence does not prove it was run. |
-| 4 Nov 2026 | Review of local Arb producer, Downloads Decimal helper, and v0.29 outputs. | No new numerical run. Pilot remains stopped pending certified vector, componentwise terminal-gradient comparison, and localized Hessian remainder. |
+| 4 Nov 2026 | Fresh N14 128-bit and 192-bit same-datum Arb certificates on Windows ARM64 CPU; review of earlier Actions. | Both finite N14 runs PASS, conditional on the supplied trajectory-error radius. M14/M15 pilot remains STOP; continuum regularity remains OPEN. The reverse-time Actions check exposed a stale README digest, which is being corrected. |
 
 ## Next proof gate
 
@@ -44,7 +44,7 @@ Until then, keep the pilot **STOP** and the continuum bridge **OPEN**. The Oct 1
 
 ## Source trail
 
-- [WP19 v0.29.1 audit PR #167](https://github.com/reggaesharkk/navier-stokes-bridge-audit/pull/167)
+- [WP19 N14 certificate and Actions audit note](WP19_N14_ARM64_CERTIFICATE_AND_ACTIONS_AUDIT_2026_11_04.md)\n- [WP19 v0.29.1 audit PR #167](https://github.com/reggaesharkk/navier-stokes-bridge-audit/pull/167)
 - [WP19 v0.28 reverse-time sign-correction note](https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/main/notes/WP19_v0_28_REVERSE_TIME_SIGN_CORRECTION_2026_10_01.md)
 - [WP19 v0.21 N11–N18 chain note](https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/main/notes/WP19_v0_21_N11_N18_CERTIFIED_CHAIN.md)
 - [Umbrella mirror index](https://github.com/reggaesharkk/Reggae-shark-universe-/blob/main/docs/REPO_MIRROR_INDEX.md)
