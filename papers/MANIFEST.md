@@ -159,3 +159,12 @@ Drive v0.18 archive: file ID `19pkWxPzj_w-fz6DlIo6TJnNsQPk3qoan`, SHA-256 `ad367
 | Navier–Stokes | `papers/navier-stokes/NAVIER_STOKES_EVIDENCE_TIMELINE_2026_11_04.md` | Mirrored from the proposed update in specialist PR [#167](https://github.com/reggaesharkk/navier-stokes-bridge-audit/pull/167). PR #167 is open and unmerged, so the specialist source blob is not yet part of `main`; this mirror is review-ready and does not advance the source pin in `docs/REPO_MIRROR_INDEX.md`. |
 
 The timeline separates archived finite-cutoff claims, manifest checks, recorded CI execution, and absent raw Arb inputs. Its scientific disposition remains: WP19 M14/M15 pilot **STOP**; continuum regularity **OPEN**.
+
+
+## WP19 N14 certificate and Actions audit — 4 November 2026
+
+| Program | Universe artifact | Canonical source | Specialist blob SHA |
+|---|---|---|---|
+| Navier–Stokes | `papers/navier-stokes/WP19_N14_ARM64_CERTIFICATE_AND_ACTIONS_AUDIT_2026_11_04.md` | `navier-stokes-bridge-audit/notes/WP19_N14_ARM64_CERTIFICATE_AND_ACTIONS_AUDIT_2026_11_04.md` | `5bc0679817bc23197489a7f4aff92e8f5d955fe4` |
+
+The N14 entry records fresh 128- and 192-bit Arb runs for one finite Galerkin datum, their local archive hashes, and the Actions manifest correction. The M14/M15 pilot remains STOP; continuum regularity remains OPEN. Specialist PR #167 and this mirror PR remain open and unmerged.
