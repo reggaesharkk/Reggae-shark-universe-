@@ -2,9 +2,9 @@
 
 # Public repository map
 
-**Updated:** 1 November 2026.
+**Updated:** 4 November 2026.
 
-This is the current index of the public source repositories connected to the Reggae Shark Universe. Each specialist repository keeps its own history, issues, license, and project-specific evidence. The Umbrella records the source commit it points to.
+This is the current index of the public source repositories connected to the Reggae Shark Universe. Each specialist repository keeps its own history, issues, license, and project-specific evidence. The Umbrella records the source commit it points to. The Navier–Stokes [4 November timeline](../papers/navier-stokes/NAVIER_STOKES_EVIDENCE_TIMELINE_2026_11_04.md) and [N14/Actions audit note](../papers/navier-stokes/WP19_N14_ARM64_CERTIFICATE_AND_ACTIONS_AUDIT_2026_11_04.md) document the latest finite-cutoff update. Specialist PR #167 is still unmerged, so its source pin below remains unchanged.
 
 I keep the boundary beside the link: a finite result is not a universal theorem; a diagnostic benchmark is not a consciousness finding; a prototype is not a production security certification.
 
