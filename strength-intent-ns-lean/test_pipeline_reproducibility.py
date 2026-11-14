@@ -1,8 +1,8 @@
-﻿import numpy as np
+import numpy as np
 
 def run_reproducibility_suite():
     print("=" * 78)
-    print("RUNNING REPRODUCIBILITY CERTIFIER: B3 ACCELERATION & LEAKAGE GUARDS")
+    print("RUNNING SYNTHETIC TOY CALCULATIONS (NOT A MODEL OR SECURITY VALIDATION)")
     print("=" * 78)
 
     time_steps = 100
@@ -21,13 +21,13 @@ def run_reproducibility_suite():
         
     energy_decay_fast = np.linalg.norm(h_fast[-10:])
     energy_decay_slow = np.linalg.norm(h_slow[-10:])
-    temporal_isolation_ratio = energy_decay_slow / (energy_decay_fast + 1e-12)
+    synthetic_residual_energy_ratio = energy_decay_slow / (energy_decay_fast + 1e-12)
     
     print(f"Fast Mode Residual L2 Energy (t=90..100) : {energy_decay_fast:.8f}")
     print(f"Slow Mode Residual L2 Energy (t=90..100) : {energy_decay_slow:.8f}")
-    print(f"Empirical Temporal Rate Isolation Ratio  : {temporal_isolation_ratio:.4f}")
+    print(f"Synthetic Residual-Energy Ratio          : {synthetic_residual_energy_ratio:.4f}")
     assert energy_decay_fast < energy_decay_slow
-    print("  -> Status: PASS [Fast-scale dissipation strictly dominates]")
+    print("  -> Toy check passed for this fixed synthetic sequence.")
     print("-" * 78)
     
     dim = 8
@@ -39,14 +39,15 @@ def run_reproducibility_suite():
     
     off_diagonal_energy = np.linalg.norm(A[:4, 4:]) + np.linalg.norm(A[4:, :4])
     block_norm = np.linalg.norm(A[:4, :4]) + np.linalg.norm(A[4:, 4:])
-    leakage_fraction = off_diagonal_energy / block_norm
+    synthetic_offblock_coupling_ratio = off_diagonal_energy / block_norm
     
     print(f"Off-Diagonal Block Coupling Energy       : {off_diagonal_energy:.8e}")
     print(f"Block Diagonal Preserved Energy           : {block_norm:.6f}")
-    print(f"Information Leakage Fraction              : {leakage_fraction:.8e}")
-    assert leakage_fraction < 1e-3
-    print("  -> Status: PASS [Off-diagonal leakage verified strictly < 1e-3]")
+    print(f"Synthetic Off-Block Coupling Ratio         : {synthetic_offblock_coupling_ratio:.8e}")
+    assert synthetic_offblock_coupling_ratio < 1e-3
+    print("  -> Toy check passed; this is not a gradient-leakage measurement.")
     print("=" * 78)
 
 if __name__ == "__main__":
     run_reproducibility_suite()
+

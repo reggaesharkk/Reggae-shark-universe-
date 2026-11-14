@@ -1,30 +1,46 @@
-# STRENGTH Framework: Branch B3 Multiscale Socket Interceptor
-**Author / Absolute Intellectual Owner:** Prince Upadhyay  
-**Substrate Optimization:** Windows ARM64 (Qualcomm Snapdragon X Oryon)  
-**Classification:** Autonomous In-Memory Causal Intervention Firewall  
+# STRENGTH B3 — research prototype
 
-## 🔬 Core Technological Innovation
+**Status:** experimental Python/NumPy and C++ code. This is not a deployable network firewall.
 
-The B3 Multiscale Socket Interceptor abandons traditional signature-based pattern matching in favor of **Behavioral Topology De-coupling**. Traditional network security systems hit an optimization ceiling known as *gradient update cancellation*—where joint tracking loops erase each other's parameters under high-noise thresholds. 
+I use STRENGTH to explore multiscale recurrent state and intervention ideas. The public source supports a narrower description than the earlier repository page did. This README maps each claim to the code that is actually present and separates synthetic checks from model or security evidence.
 
-This enterprise utility solves the bottleneck structurally at the layer level by enforcing a block-diagonal partition over hidden recurrent spaces:
+## Start with the implementation
 
-1. **Fast Timescale Group (16 Hidden Dimensions):** Absorbs volatile, high-variance non-linear input trajectories natively without accumulating deep temporal history.
-2. **Slow Timescale Group (16 Reservoir Dimensions):** Structurally locked to a bit-perfect Identity Matrix floor to protect long-horizon verification signals from exponential background decay.
+The main prototype is [`b3_temporal_bottleneck.py`](b3_temporal_bottleneck.py). It initializes a seeded 32-dimensional NumPy layer by default, splits its state into fast and slow blocks, and computes one caller-supplied forward step. The slow matrix starts as an identity matrix; the layer still applies `tanh`, input projection, and caller-provided `xi_t`. The file contains no training loop, trained checkpoint, packet capture, socket processing, or firewall integration.
 
-### 🛡️ The Causal Intervention Engine
+Other files:
 
-The subsystem profiles active network streams completely in-memory using standard linear algebra loops to continuously recompute Jacobian-Vector product alignment scores. Upon triggering a conflict event (Adversarial Cosine < 0), the **H2 Hidden-State Reset Knockout Switch** forcefully overwrites active transient vectors to absolute zero mid-forward pass, instantly dropping adversarial prediction capability to a blind $50\%$ random coin-flip chance floor.
+- [`h4_leakage_guard.py`](h4_leakage_guard.py) shuffles 100 integer IDs by default and returns an 80/20 partition. It does not measure information gain, fit a model, detect feature leakage, or validate a real dataset.
+- [`test_pipeline_reproducibility.py`](test_pipeline_reproducibility.py) calculates synthetic fast/slow sequences and a synthetic block-coupling ratio. These toy values are not measurements from B3 training or network traffic.
+- [`strength_ns_engine.py`](strength_ns_engine.py) checks two configured scalar limits using Python binary64 arithmetic. Its SHA-256 output is an unkeyed integrity digest, not a signature, authentication token, or IntentSeal authorization.
+- [`master_pipeline_audit.py`](master_pipeline_audit.py) hashes a static JSON configuration. It does not run Lean, the B3 model, or a cryptographic signer.
+- [`b3_hardware_accelerator.cpp`](b3_hardware_accelerator.cpp) is a bounded-dimension C ABI implementation of the same toy forward pass. It is ordinary C++ code; the repository does not provide hardware/NPU execution evidence.
+- [`TitanInterceptor.lean`](TitanInterceptor.lean) proves two elementary inequalities under their stated assumptions. The Lean terms are not connected to the Python or C++ runtime.
 
-## 🚀 Technical Specifications & Verification Status
+## Current evidence boundary
 
-* **Gradient Crossover Leakage:** 0.000000 (Bit-Perfect Architectural Moat)
-* **Execution Footprint:** Zero-Cost Stateless RAM Only (No local disk degradation)
-* **Dependency Matrix:** Pure Python/NumPy
-* **H4 Incremental Information Gain Premium:** +59.9168% Verified
-* **Workspace Status:** Authenticated, hardware-validated, and 100% clean of Git branch contamination.
+The public source does not substantiate the previous claims of exact-zero gradient leakage, a `+59.9168%` H4 information-gain premium, an empirically validated 50% adversarial prediction floor, hardware validation, or a production firewall. The H2 and H4 examples in [SharkByte](https://github.com/reggaesharkk/SharkByte/tree/main/examples/research) are explicitly synthetic arithmetic and split-integrity demonstrations; they do not run this model.
 
-## ⚖️ Commercial Licensing Restrictions
+No trained weights, evaluated dataset, prospective holdout result, latency profile, or live network interception result is published in this repository. This statement describes only this public source tree; it does not assert that no separate research runs exist. Results from outside this tree are not reproduced by this source, and H4 remains an open research question.
 
-Copyright © 2026 by Prince Upadhyay. All rights reserved. 
-This software module and its underlying multiscale block-diagonal parameters are proprietary assets. Unauthorized duplication, reverse engineering, or training replication without an explicit enterprise site license signed by Prince Upadhyay is strictly prohibited.
+## Reproduce the toy check
+
+With Python and NumPy installed, run:
+
+```bash
+python test_pipeline_reproducibility.py
+```
+
+This only reruns the synthetic calculations described above. A passing assertion would confirm those toy relationships for that run; it would not validate B3, H2, H4, or a security claim.
+
+## Evidence gates for the next release
+
+1. Freeze a documented dataset, labels, split protocol, seeds, and baseline before evaluating H4.
+2. Implement the H2 intervention in the actual model and compare it against a no-intervention control.
+3. Publish the training code, parameter provenance, metrics, and an independently reproducible evaluation before describing the model as trained or effective.
+4. Measure ARM64 performance and review memory, pointer, and threat-model boundaries before discussing deployment.
+
+## Rights
+
+The repository's existing [`LICENSE.md`](LICENSE.md) governs use of this source. The historical `STRENGTH-INTENT-NS-LEAN-v5.0.0-Omega-Release.zip` is retained unchanged; it is not a substitute for the current source notes or evidence described here.
+

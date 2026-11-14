@@ -14,11 +14,12 @@ The Architect hereby grants an independent engineering entity a non-exclusive, n
 * **No Reverse-Engineering or Derivative Work:** The licensee shall not modify, adapt, translate, extract, or reverse-engineer the multi-timescale array separation constants or gradient crossover shields.
 * **No Weights/Data Extraction:** Utilizing the parameter matrix initializations to train, fine-tune, or calibrate external large language models (LLMs) or recurrent neural networks (RNNs) is explicitly forbidden.
 
-## 3. ZERO-COMPROMISE DEFENSIVE FIREWALL
-This software is provided "as-is" with an engineered architectural guarantee: the block-diagonal structure maintains a validated off-diagonal gradient crossover score of an exact 0.000000. Under no circumstances shall Prince Upadhyay be held liable for local terminal environment exceptions, missing library paths, or system resets triggered autonomously by the H2 memory-knockout firewall during an adversarial threat detection event.
+## 3. NO SECURITY OR PERFORMANCE GUARANTEE
+This software is provided "as-is". The included public code does not establish an exact-zero gradient crossover score, a validated H2 intervention, a production firewall, cryptographic authorization, or automatic hardware/runtime lockdown. No security or performance result is guaranteed. Under no circumstances shall Prince Upadhyay be held liable for local terminal environment exceptions, missing library paths, or system resets.
 
 ## 4. BREACH AND AUDIT JURISDICTION
 Any unauthorized distribution, commercial cloning, or public code leaking automatically terminates this evaluation license. The Architect reserves the absolute right to legally audit any runtime tracking environment to verify compliance. All legal and arbitration boundaries shall be governed under the jurisdiction chosen exclusively by the Architect.
 
 Copyright © 2026 by Prince Upadhyay. All rights reserved. 
 The mathematical moat is locked. The work is true.
+
