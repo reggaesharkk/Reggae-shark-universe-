@@ -23,7 +23,7 @@ I keep the project work in specialist repositories and use this Umbrella as the 
 | 11 | The Reggae Shark Protocol | [The-Reggae-Shark-Protocol](https://github.com/reggaesharkk/The-Reggae-Shark-Protocol) | Application-level verification and signed execution evidence prototype. | `1d7cce4f1071eda63b6d19a79267902adb37ea0a` |
 | 12 | SharkLang v2.4.2 | [sharklang-v2.4.2-release](https://github.com/reggaesharkk/sharklang-v2.4.2-release) | Approval-gated policy-language/runtime release with an explicit evaluation boundary. | `622a88fe2cc205b752e8c6cc2c5b1702a4c05487` |
 | 13 | SharkLang Evidence Desk | [sharklang-evidence-desk](https://github.com/reggaesharkk/sharklang-evidence-desk) | Local ZIP structure and checksum review; it does not execute archive contents. | `0963f5a5d360456ff724c4d8657aca461a4f1b68` |
-| 14 | SharkByte | [SharkByte](https://github.com/reggaesharkk/SharkByte) | Classical, quantum simulation, and bounded hybrid toolchain with a reproducible Ubuntu ARM64 backend suite. | `f5c537a76fe2f1cab12288fa29f6820cf453eb40` |
+| 14 | SharkByte | [SharkByte](https://github.com/reggaesharkk/SharkByte) | Classical, quantum simulation, and bounded hybrid toolchain with a reproducible Ubuntu ARM64 backend suite. [Zenodo archive](https://doi.org/10.5281/zenodo.24213559) | `091d1975a0feed1c50a5fe64fce698c3e3748ab2` |
 
 The account profile and CV are also included as a pinned public submodule at `public-repositories/profile`: [reggaesharkk](https://github.com/reggaesharkk) · `190960ae06ec145fe532fdf118f7890f36960ad7`.
 
