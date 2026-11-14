@@ -25,7 +25,7 @@ I keep the boundary beside the link: a finite result is not a universal theorem;
 | [The Reggae Shark Protocol](https://github.com/reggaesharkk/The-Reggae-Shark-Protocol) | Execution evidence | Application-level verification and signed execution evidence prototype. | `1d7cce4f1071eda63b6d19a79267902adb37ea0a` |
 | [SharkLang v2.4.2](https://github.com/reggaesharkk/sharklang-v2.4.2-release) | Governed AI | Approval-gated policy-language/runtime release with an explicit evaluation boundary. | `622a88fe2cc205b752e8c6cc2c5b1702a4c05487` |
 | [SharkLang Evidence Desk](https://github.com/reggaesharkk/sharklang-evidence-desk) | Release auditing | Local ZIP structure and checksum review; it does not execute archive contents. | `0963f5a5d360456ff724c4d8657aca461a4f1b68` |
-| [SharkByte](https://github.com/reggaesharkk/SharkByte) | Programming languages and simulation | Frontier30 runs custom sparse circuits. The Ubuntu ARM64 suites check backend agreement and execution budgets. Native host isolation remains unverified. [Zenodo archive](https://doi.org/10.5281/zenodo.24213559) | `091d1975a0feed1c50a5fe64fce698c3e3748ab2` |
+| [SharkByte](https://github.com/reggaesharkk/SharkByte) | Programming languages and simulation | The checked-in Frontier30 receipt compares five circuits with analytical amplitudes under a 4,096-state cap; a projected 8,192-state expansion is refused. A separately verified Linux ARM64 revision passed backend-agreement and execution-budget checks. Native host isolation remains unverified. [System map](https://github.com/reggaesharkk/SharkByte/blob/main/ECOSYSTEM_MAP.md) · [Zenodo archive](https://doi.org/10.5281/zenodo.24213559) | `32a8a7e0dca5cfcf2556dd27ee6f1e66dcc81f02` |
 
 ## Profile
 
