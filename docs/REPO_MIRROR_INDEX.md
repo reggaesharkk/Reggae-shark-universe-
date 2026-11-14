@@ -2,7 +2,7 @@
 
 # Public repository map
 
-**Updated:** 4 November 2026.
+**Updated:** 14 November 2026.
 
 This is the current index of the public source repositories connected to the Reggae Shark Universe. Each specialist repository keeps its own history, issues, license, and project-specific evidence. The Umbrella records the source commit it points to. The Navier–Stokes [4 November timeline](../papers/navier-stokes/NAVIER_STOKES_EVIDENCE_TIMELINE_2026_11_04.md) and [N14/Actions audit note](../papers/navier-stokes/WP19_N14_ARM64_CERTIFICATE_AND_ACTIONS_AUDIT_2026_11_04.md) document the latest finite-cutoff update. Specialist PR #167 merged as source commit `43d9bbf1b9dd1d47fa6ee60793e4c54d749af0ea`; follow-up PR #168 merged the post-merge timeline and audit status as source commit `df401d491cf243d937842eb51be1bd1f5ff8c226`. The source pin below reflects the current specialist `main`.
 
@@ -25,6 +25,7 @@ I keep the boundary beside the link: a finite result is not a universal theorem;
 | [The Reggae Shark Protocol](https://github.com/reggaesharkk/The-Reggae-Shark-Protocol) | Execution evidence | Application-level verification and signed execution evidence prototype. | `1d7cce4f1071eda63b6d19a79267902adb37ea0a` |
 | [SharkLang v2.4.2](https://github.com/reggaesharkk/sharklang-v2.4.2-release) | Governed AI | Approval-gated policy-language/runtime release with an explicit evaluation boundary. | `622a88fe2cc205b752e8c6cc2c5b1702a4c05487` |
 | [SharkLang Evidence Desk](https://github.com/reggaesharkk/sharklang-evidence-desk) | Release auditing | Local ZIP structure and checksum review; it does not execute archive contents. | `0963f5a5d360456ff724c4d8657aca461a4f1b68` |
+| [SharkByte](https://github.com/reggaesharkk/SharkByte) | Programming languages and simulation | Three-backend agreement and execution-budget checks on Ubuntu ARM64. Frontier30 covers bounded sparse circuit simulations. Native host isolation remains unverified. | `fe59cd0aff1cab150d49ae9bd048ad725eee8897` |
 
 ## Profile
 

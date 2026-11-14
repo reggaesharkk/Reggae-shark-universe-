@@ -53,3 +53,6 @@
 [submodule "sharklang-evidence-desk"]
 	path = public-repositories/sharklang-evidence-desk
 	url = https://github.com/reggaesharkk/sharklang-evidence-desk.git
+[submodule "sharkbyte"]
+	path = public-repositories/sharkbyte
+	url = https://github.com/reggaesharkk/SharkByte.git

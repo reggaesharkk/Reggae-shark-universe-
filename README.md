@@ -6,7 +6,7 @@
 
 **Prince Upadhyay · Independent Researcher · India**  
 [ORCID 0009-0002-1170-4487](https://orcid.org/0009-0002-1170-4487) · [GitHub profile](https://github.com/reggaesharkk) · [Contact](mailto:starxshark@gmail.com)  
-**Updated:** 4 November 2026 (Navier–Stokes status addendum) · **Method:** Build · Attack · Falsify · Preserve
+**Updated:** 14 November 2026 · **Method:** Build · Attack · Falsify · Preserve
 
 > *I follow the question until the evidence draws a line.*
 
@@ -31,6 +31,7 @@ I work across mathematical dynamics, spectral methods, formal reasoning, AI eval
 | [The Reggae Shark Protocol](https://github.com/reggaesharkk/The-Reggae-Shark-Protocol) | Execution evidence | Application-level verification and signed execution evidence prototype. |
 | [SharkLang v2.4.2](https://github.com/reggaesharkk/sharklang-v2.4.2-release) | Governed AI | Approval-gated policy-language/runtime release with an explicit evaluation boundary. |
 | [SharkLang Evidence Desk](https://github.com/reggaesharkk/sharklang-evidence-desk) | Release auditing | Local ZIP structure and checksum review; it does not execute archive contents. |
+| [SharkByte](https://github.com/reggaesharkk/SharkByte) | Programming languages and simulation | MIT-licensed toolchain for classical programs, quantum circuit simulation, and bounded hybrid execution. On Ubuntu ARM64, SharkVM, Direct AArch64, and the native interpreter passed 27/27 agreement checks and all three execution-budget checks. Native host isolation remains unverified. [CI evidence](https://github.com/reggaesharkk/SharkByte/actions/runs/43512576013). |
 
 The boundaries matter. Finite certificates remain finite. Simulations do not become observations. Prototypes do not become production security guarantees by presentation alone. The linked repositories state their assumptions, evidence, and open obligations.
 
@@ -146,7 +147,7 @@ I built SharkLang as a small policy language and runtime for examining an approv
 
 ## Repository Contents & Navigation
 
-- [Live public repository map](docs/REPO_MIRROR_INDEX.md) — all 13 public project repositories, source links, and exact pinned commits.
+- [Live public repository map](docs/REPO_MIRROR_INDEX.md) — 14 public project repositories, source links, and exact pinned commits.
 - [Specialist repository list](SPECIALIST_REPOSITORIES.md) — current source set and clone instructions.
 - [Pinned source tree directory](public-repositories/README.md) — how to retrieve the submodules with their contents.
 - [Research dossier and historical evidence](#master-research-dossier--umbrella-standards) — dated records preserved in this archive.
