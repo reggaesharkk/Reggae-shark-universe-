@@ -1,0 +1,19 @@
+{
+  "revision": "bfad672e3cd6b5dbe1e69ac18c36001700244a1f",
+  "host": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "architecture": "x86_64",
+  "checks": {
+    "qiskit.json": {
+      "status": "PASS",
+      "sha256": "40d04c0930287dd288a6d7f615d7f86df9d2f6d06c328321e56ddb7c07cd5106"
+    },
+    "cirq-120.json": {
+      "status": "PASS",
+      "sha256": "7513e0e283a3a329f926c53ee4e38e8e25fe4279b01fc1ca8ece39222681996c"
+    },
+    "cirq-16777216.json": {
+      "status": "PASS",
+      "sha256": "c3ebd9a63af844164749ccdbccb3aa236699dbda1e685a142617f5bfccf042f7"
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "revision": "bfad672e3cd6b5dbe1e69ac18c36001700244a1f",
+  "host": "Linux",
+  "architecture": "x86_64",
+  "python": "3.13.18",
+  "cirq_core": "1.6.1",
+  "numpy": "2.5.4",
+  "source_sha256": "a24d8f389850e4a298f611d45ab4c5e953ead59c153777071916ecea73cd5316",
+  "added_gates": [
+    [
+      "h",
+      14
+    ],
+    [
+      "h",
+      16
+    ],
+    [
+      "h",
+      18
+    ],
+    [
+      "h",
+      20
+    ],
+    [
+      "h",
+      22
+    ],
+    [
+      "h",
+      2
+    ],
+    [
+      "h",
+      6
+    ]
+  ],
+  "archive_sha256": "d3560811ff8885c50aedaf2b8dff0af7f70b66804182a9f89bc2543762493da6",
+  "qubits": 40,
+  "gates": 56,
+  "components": [
+    {
+      "qubits": [
+        0,
+        1,
+        12,
+        13,
+        24,
+        30,
+        36
+      ],
+      "active_states": 16,
+      "norm": 1.0
+    },
+    {
+      "qubits": [
+        2,
+        3,
+        10,
+        11,
+        25,
+        29,
+        37
+      ],
+      "active_states": 16,
+      "norm": 1.0000000000000004
+    },
+    {
+      "qubits": [
+        4,
+        5,
+        16,
+        17,
+        26,
+        32,
+        38
+      ],
+      "active_states": 16,
+      "norm": 1.0000000000000004
+    },
+    {
+      "qubits": [
+        6,
+        7,
+        27,
+        39
+      ],
+      "active_states": 4,
+      "norm": 1.0
+    },
+    {
+      "qubits": [
+        8,
+        9,
+        20,
+        21,
+        28,
+        34
+      ],
+      "active_states": 16,
+      "norm": 1.0
+    },
+    {
+      "qubits": [
+        14,
+        15,
+        31
+      ],
+      "active_states": 4,
+      "norm": 1.0
+    },
+    {
+      "qubits": [
+        18,
+        19,
+        33
+      ],
+      "active_states": 4,
+      "norm": 1.0
+    },
+    {
+      "qubits": [
+        22,
+        23,
+        35
+      ],
+      "active_states": 4,
+      "norm": 1.0
+    }
+  ],
+  "reference_active_states": 16777216,
+  "reference_norm": 1.0000000000000009,
+  "sharkbyte_peak_states": 16777216,
+  "compared_amplitudes": 16777216,
+  "max_complex_amplitude_error": 7.403203638094062e-19,
+  "minimum_reference_magnitude": 0.0002441406250000001,
+  "amplitude_tolerance": 1e-12,
+  "component_zero_threshold": 1e-14,
+  "sharkbyte_evolution_seconds": 36.02465053900005,
+  "comparison_seconds": 8.90067550799995
+}
