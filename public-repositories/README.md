@@ -1,8 +1,8 @@
 # Public source repositories
 
-**Updated:** 14 November 2026.
+**Updated:** 16 November 2026.
 
-I keep the project source in its own GitHub repository and pin each public source here as a submodule. This preserves independent histories while giving the Umbrella one complete, versioned map.
+This directory pins the **15 public specialist repositories** and the public account profile as Git submodules. The umbrella preserves independent project histories while providing one dated, reproducible source map. Exact commit pins and scope notes are listed in [the public repository map](../docs/REPO_MIRROR_INDEX.md).
 
 ## Clone all pinned sources
 
@@ -16,9 +16,9 @@ For an existing clone:
 git submodule update --init --recursive
 ```
 
-GitHub’s normal ZIP download includes gitlink records, not the submodule file contents. Use the recursive clone command to retrieve the pinned repositories. Private repositories are intentionally excluded.
+GitHub’s normal ZIP download includes the gitlink records, not submodule contents. Use the recursive clone command to retrieve the pinned sources. Private repositories are excluded.
 
-To retrieve only SharkByte at the pinned revision:
+To retrieve only SharkByte:
 
 ```sh
 git submodule update --init -- public-repositories/sharkbyte

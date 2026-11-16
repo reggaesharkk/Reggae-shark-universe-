@@ -1,59 +1,82 @@
 <p align="center"><img src="assets/universe_hero.svg" alt="Reggae Shark Universe — a map of public research" width="100%" /></p>
 
-<p align="center"><a href="docs/REPO_MIRROR_INDEX.md">PUBLIC PROJECT MAP</a> &nbsp;·&nbsp; <a href="SPECIALIST_REPOSITORIES.md">SOURCE REPOSITORIES</a> &nbsp;·&nbsp; <a href="https://github.com/reggaesharkk">PROFILE</a> &nbsp;·&nbsp; <a href="https://orcid.org/0009-0002-1170-4487">ORCID</a></p>
+<p align="center"><a href="docs/REPO_MIRROR_INDEX.md">PUBLIC PROJECT MAP</a> &nbsp;·&nbsp; <a href="SPECIALIST_REPOSITORIES.md">SOURCE REPOSITORIES</a> &nbsp;·&nbsp; <a href="#selected-evidence-and-open-questions">EVIDENCE</a> &nbsp;·&nbsp; <a href="https://github.com/reggaesharkk">PROFILE</a> &nbsp;·&nbsp; <a href="https://orcid.org/0009-0002-1170-4487">ORCID</a></p>
 
 # Reggae Shark Universe
 
 **Prince Upadhyay · Independent Researcher · India**  
 [ORCID 0009-0002-1170-4487](https://orcid.org/0009-0002-1170-4487) · [GitHub profile](https://github.com/reggaesharkk) · [Contact](mailto:starxshark@gmail.com)  
-**Updated:** 15 November 2026 · **Method:** Build · Attack · Falsify · Preserve
+**Updated:** 16 November 2026 · **Method:** Build · Attack · Falsify · Preserve
 
 > *I follow the question until the evidence draws a line.*
 
-I work across mathematical dynamics, spectral methods, formal reasoning, AI evaluation, and verifiable software. This repository is the public map and archival record. The work itself lives in the specialist repositories below, each with its own history and stated limits.
+This repository is the front door to my public research and software. Each project keeps its own source history, evidence, license, and stated limits. The map below follows the current public default-branch commits; the linked commit pins in the repository index make this umbrella snapshot reproducible.
 
-**Current-status note:** The Navier–Stokes [4 November evidence timeline](papers/navier-stokes/NAVIER_STOKES_EVIDENCE_TIMELINE_2026_11_04.md) supplements the historical executive map below, which remains the 26 October 2026 snapshot. The separate [N14 and Actions audit note](papers/navier-stokes/WP19_N14_ARM64_CERTIFICATE_AND_ACTIONS_AUDIT_2026_11_04.md) records the fresh 128- and 192-bit finite N14 CPU runs and the current M14/M15 gates.
+## Start here
+
+- **Browse projects:** [Public repository map](docs/REPO_MIRROR_INDEX.md) · [Specialist repositories and exact pins](SPECIALIST_REPOSITORIES.md)
+- **Inspect evidence:** [SharkByte records](#selected-evidence-and-open-questions) · [Research dossier and archive](#master-research-dossier--umbrella-standards)
+- **Get the code:** clone with submodules using the commands in [One map, independent source histories](#one-map-independent-source-histories).
+
+## Selected evidence and open questions
+
+### SharkByte
+
+- A 40-qubit, 56-gate support-scaling circuit reached **16,777,216 populated amplitudes**. The independent Cirq comparison checked every populated amplitude in the Colab record; the maximum complex-amplitude difference was **7.40 × 10⁻¹⁹**. The gate graph has **eight disconnected components**, so this is not evidence of a fully connected 40-qubit simulation.
+- A separate Windows ARM64 Studio run reached the same state count and recorded **2.77 GiB peak process memory**. The receipt preserves the run’s source revision and dirty-tree status.
+- The connected 20-qubit experiment reached **1,048,576 amplitudes**; the documented full-state comparison agreed across four engines, with balanced-cut Schmidt rank **1,024** and entropy **9.005 bits**.
+- The Colab suite separately reports **120 seeded Qiskit/Cirq cases through six qubits**, plus connected-circuit and regression checks.
+
+Evidence: [integrated Colab summary](https://github.com/reggaesharkk/SharkByte/blob/15ea5e5df3a4d0dfefafeefe528862f737e2d2c8/evidence/colab-ec876e2/colab-summary.json) · [40-qubit Cirq receipt](https://github.com/reggaesharkk/SharkByte/blob/15ea5e5df3a4d0dfefafeefe528862f737e2d2c8/evidence/colab-ec876e2/cirq-40q-16777216.json) · [Windows Studio receipt](https://github.com/reggaesharkk/SharkByte/blob/15ea5e5df3a4d0dfefafeefe528862f737e2d2c8/evidence/studio_16m/windows_arm64/sharkbyte-85c74d14dcb54040a295e3c2fe422e53.json) · [20-qubit connected-circuit methods](https://github.com/reggaesharkk/SharkByte/blob/15ea5e5df3a4d0dfefafeefe528862f737e2d2c8/docs/high-support-connected-entanglement.md) · [Open integrated notebook in Colab](https://colab.research.google.com/github/reggaesharkk/SharkByte/blob/main/notebooks/SharkByte-Colab-Integrated-Verification.ipynb).
+
+### Riemann and Navier–Stokes
+
+- The Riemann verification and frontier repositories distinguish finite certificates, conditional calculations, model frontiers, and open analytic obligations. The strict **>79%** claim, the WP84 connected aggregate, the A1294 root predicate, and the Riemann Hypothesis all remain **OPEN**.
+- Navier–Stokes records establish only specified finite Fourier–Galerkin results. **M14/M15 remain STOP** and continuum regularity remains **OPEN**; a finite computation is not a continuum theorem.
+
+See the [Riemann verification repository](https://github.com/reggaesharkk/riemann-bandwidth1-verification/tree/1c0a8e917fb28bcbc6fedb16866a5a2387112706) and [frontier audit](https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/tree/f7af94cd1f2c57186521c662f124f703a1dfcd7d), plus the [Navier–Stokes evidence timeline](https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/df401d491cf243d937842eb51be1bd1f5ff8c226/notes/NAVIER_STOKES_EVIDENCE_TIMELINE_2026_11_04.md).
 
 ## The public work
 
-| Project | Area | What the evidence says |
+| Project | Area | Current scope |
 |---|---|---|
-| [Physics · dynamical sector](https://github.com/reggaesharkk/physics-v1-dynamical-sector) | Mathematical dynamics | Model-specific dynamical-sector and stability work. The observer-to-horizon bridge remains open. |
-| [Ψ Self-Modeling Benchmark](https://github.com/reggaesharkk/psi-self-modeling-benchmark) | AI evaluation | Diagnostic self/peer benchmark. It does not establish consciousness or general self-awareness. |
-| [Navier–Stokes Bridge Audit](https://github.com/reggaesharkk/navier-stokes-bridge-audit) | Validated computation | Archived finite Fourier–Galerkin records; the current package replay checks supplied records, while full-path transfer and continuum regularity remain open. [4 November evidence timeline](papers/navier-stokes/NAVIER_STOKES_EVIDENCE_TIMELINE_2026_11_04.md). |
+| [Physics · dynamical sector](https://github.com/reggaesharkk/physics-v1-dynamical-sector) | Mathematical dynamics | Model-specific dynamical-sector and stability work; the observer-to-horizon bridge remains open. |
+| [Ψ Self-Modeling Benchmark](https://github.com/reggaesharkk/psi-self-modeling-benchmark) | AI evaluation | Diagnostic self/peer benchmark; it does not establish consciousness or general self-awareness. |
+| [Navier–Stokes Bridge Audit](https://github.com/reggaesharkk/navier-stokes-bridge-audit) | Validated computation | Finite Fourier–Galerkin results only. M14/M15 remain STOP; continuum regularity remains OPEN. |
 | [Self-Referential Processing Design Lab](https://github.com/reggaesharkk/self-referential-processing-designlab) | Experimental design | Preregistered design and simulation validation; confirmatory collection is paused. |
 | [LRSC Odd-Ring Spectral Rank](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank) | Spectral methods | Scoped odd-ring spectral-rank result and finite eleven-channel certificate. |
 | [IntentSeal](https://github.com/reggaesharkk/intentseal) | Verification tooling | Prototype for claim boundaries, evidence provenance, and verification status. |
-| [Riemann Bandwidth-One Verification](https://github.com/reggaesharkk/riemann-bandwidth1-verification) | Computational number theory | Finite-band certificates and conditional analyses; the Riemann Hypothesis remains open. |
-| [STRENGTH-B3 Interceptor Core](https://github.com/reggaesharkk/STRENGTH-B3-Interceptor-Core) | AI systems | Research record only: the repository contains no executable interceptor, training pipeline, or firewall integration. Earlier H4, zero-leakage, and hardware claims are withdrawn. |
+| [Riemann Bandwidth-One Verification](https://github.com/reggaesharkk/riemann-bandwidth1-verification) | Computational number theory | Finite-band certificates and conditional analyses; strict >79% and the Riemann Hypothesis remain OPEN. |
+| [Riemann Bandwidth-One Frontier Audit](https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit) | Analytic proof frontier | A1294 root predicate and WP84 ordinary-prime connected aggregate remain OPEN; no Riemann Hypothesis proof is claimed. |
+| [STRENGTH-B3 Interceptor Core](https://github.com/reggaesharkk/STRENGTH-B3-Interceptor-Core) | AI systems | Research record only; no executable interceptor, training pipeline, or firewall integration. Earlier H4, zero-leakage, and hardware claims are withdrawn. |
 | [Strength Intent · Lean](https://github.com/reggaesharkk/strength-intent-ns-lean) | Formal methods | Toy Python/C++ recurrent forward step and narrowly scoped Lean statements; no training or deployment evidence in the public source tree. |
 | [Theory of Bounded Existence](https://github.com/reggaesharkk/theory-of-bounded-existence) | Mathematical modeling | Model-specific 4D ODE system and formal artifacts; no physical or consciousness claim. |
 | [The Reggae Shark Protocol](https://github.com/reggaesharkk/The-Reggae-Shark-Protocol) | Execution evidence | Application-level verification and signed execution evidence prototype. |
 | [SharkLang v2.4.2](https://github.com/reggaesharkk/sharklang-v2.4.2-release) | Governed AI | Approval-gated policy-language/runtime release with an explicit evaluation boundary. |
 | [SharkLang Evidence Desk](https://github.com/reggaesharkk/sharklang-evidence-desk) | Release auditing | Local ZIP structure and checksum review; it does not execute archive contents. |
-| [SharkByte](https://github.com/reggaesharkk/SharkByte) | Programming languages and simulation The 40-qubit terminal circuit reached **16,777,216 active states**. Cirq matched every populated amplitude on Ubuntu WSL2 ARM64 and Colab Linux x86_64. Colab also passed all 120 seeded Qiskit and Cirq comparisons. [Colab summary](docs/evidence/sharkbyte-colab/colab-summary.json) · [40-qubit receipt](docs/evidence/sharkbyte-colab/cirq-16777216.json) · [Full receipts and source](https://github.com/reggaesharkk/SharkByte/tree/3219fc53e1c6772fab7f85a6ffe05bdbb989cd58/evidence/colab-bfad672/). | `3219fc53e1c6772fab7f85a6ffe05bdbb989cd58` | `18e4eae2463eef9c768f15c0818963337456d9a6` |
+| [SharkByte](https://github.com/reggaesharkk/SharkByte) | Programming languages and simulation | See the bounded benchmark and independent-reference results below. |
 
-The boundaries matter. Finite certificates remain finite. Simulations do not become observations. Prototypes do not become production security guarantees by presentation alone. The linked repositories state their assumptions, evidence, and open obligations.
+The current public source set contains **15 specialist repositories** and the public profile. Private repositories are excluded. Finite certificates remain finite; simulations do not become observations; prototypes do not become production guarantees. Each source repository states its own assumptions and remaining obligations.
 
-## One map. Independent source histories.
+## One map, independent source histories
 
-I pin the public project repositories and my profile as Git submodules, so this Umbrella can point to exact source commits without flattening each project’s history.
+The project repositories and profile are pinned as Git submodules. This umbrella points to exact source commits without flattening their histories.
 
 ```sh
 git clone --recurse-submodules https://github.com/reggaesharkk/Reggae-shark-universe-.git
 ```
 
-If the Umbrella is already cloned:
+For an existing clone:
 
 ```sh
 git submodule update --init --recursive
 ```
 
-GitHub’s ordinary “Download ZIP” does not include submodule file contents. Use the recursive clone command above to retrieve every pinned public source tree. The current complete list and commit pins are in [the live repository map](docs/REPO_MIRROR_INDEX.md). Private repositories remain private and are excluded.
+GitHub’s ordinary “Download ZIP” does not include submodule contents. A recursive clone retrieves the public source trees at the pinned revisions. The complete pin list is in the [live repository map](docs/REPO_MIRROR_INDEX.md).
 
 ## How to read this archive
 
-I preserve the dated dossier, evidence standards, and release records below as historical material. Those snapshots are useful for provenance; the current repository map above is the live guide to the public source set.
+The dated dossier, standards, and release records below are preserved as historical material. They provide provenance; use the current project map above for live source pins and status. Historical repository counts and dated research summaries below describe their named snapshots, not the current repository inventory.
 
 ### Collaboration
 
