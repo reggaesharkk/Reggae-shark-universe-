@@ -56,3 +56,7 @@
 [submodule "sharkbyte"]
 	path = public-repositories/sharkbyte
 	url = https://github.com/reggaesharkk/SharkByte.git
+
+[submodule "riemann-bandwidth1-frontier-audit"]
+	path = public-repositories/riemann-bandwidth1-frontier-audit
+	url = https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit.git
