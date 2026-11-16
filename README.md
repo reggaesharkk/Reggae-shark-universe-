@@ -170,7 +170,7 @@ I built SharkLang as a small policy language and runtime for examining an approv
 
 ## Repository Contents & Navigation
 
-- [Live public repository map](docs/REPO_MIRROR_INDEX.md) — 14 public project repositories, source links, and exact pinned commits.
+- [Live public repository map](docs/REPO_MIRROR_INDEX.md) — 15 public specialist repositories, source links, and exact pinned commits.
 - [Specialist repository list](SPECIALIST_REPOSITORIES.md) — current source set and clone instructions.
 - [Pinned source tree directory](public-repositories/README.md) — how to retrieve the submodules with their contents.
 - [Research dossier and historical evidence](#master-research-dossier--umbrella-standards) — dated records preserved in this archive.
