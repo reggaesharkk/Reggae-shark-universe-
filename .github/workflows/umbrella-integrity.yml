@@ -1,0 +1,21 @@
+name: Umbrella integrity
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify tracked-file SHA-256 manifest
+        run: sha256sum --check --quiet MANIFEST_SHA256.txt
+      - name: Verify registry and mirrored protocol
+        run: python tools/check_umbrella_registry.py
