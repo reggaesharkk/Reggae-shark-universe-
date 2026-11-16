@@ -76,7 +76,7 @@ GitHub’s ordinary “Download ZIP” does not include submodule contents. A re
 
 ## How to read this archive
 
-The dated dossier, standards, and release records below are preserved as historical material. They provide provenance; use the current project map above for live source pins and status. Historical repository counts and dated research summaries below describe their named snapshots, not the current repository inventory.
+The Executive Map dated 26 October 2026, dossier material, and release notes below are preserved snapshots. They provide provenance; use the current project map above and this claim-boundary checklist for the present source set and status. Counts and research descriptions inside date-labeled sections apply to their named snapshots, not the current repository inventory.
 
 ### Collaboration
 
@@ -156,21 +156,25 @@ I built SharkLang as a small policy language and runtime for examining an approv
 
 ## Global Claim-Boundary Checklist
 
-| Question | Portfolio Answer |
+**Current as of 16 November 2026.** The dated Executive Map and release sections above remain historical snapshots; the current repository map and the notes below describe the present claim boundaries.
+
+| Question | Current portfolio answer |
 |---|---|
-| **Does the portfolio contain rigorous mathematical results?** | **Yes.** It includes analytic theorems (LRSC $\operatorname{rank}(V)=p$, Loewner constant-`12` trace truncation, Hopf `93/28` monomial positivity, rational $de_c/d\mathcal{P}_0 > 0$, Lean 4 42-theorem suite) and computer-assisted finite certificates ($13.43\,\mathrm{B}$ LRSC subsets, $151$-vertex $C_5$ polyhedron, 128-bit Arb `N11–N18` Galerkin chain) under explicit assumptions. |
-| **Does The Reggae Shark Protocol (`v1.3.2`) patch OS kernels, C/PHP interpreters, or prove global Lipschitz continuity of standard softmax dot-product attention?** | **No.** `lean/TypestateLifecycle.lean` proves multi-step trace safety of the formal state-transition model and `shark_protocol/kernel.py` enforces those invariants at the Python application layer (not OS ring-0 or C/PHP memory). Theorem 7 proves a linear-scaling lemma given an assumed sensitivity factor $L>0$, while runtime code evaluates a bounded-domain local sensitivity proxy on $\|x\|_2 \le 1$ (citing Kim, Papamakarios & Mnih, ICML 2021). Runtime box checks distinguish `inside_B4_checked` (IEEE-754 float gate) from `inside_B4_mp_iv_certified` (53-bit `mpmath.iv` interval enclosure). |
-| **Does the Navier–Stokes work solve the 3D Clay continuum regularity problem?** | **No.** All certified crossings (`N11–N18`) are finite-dimensional Fourier–Galerkin ODE theorems for one fixed 112-pair rational datum. The `WP19` conservative whole-path remainder ($1.6364 \times 10^{14}$) still exceeds the frozen signed integral lower bound ($5.7586 \times 10^9$), and cutoff-uniform continuum transfer remains `OPEN`. |
-| **Does the Riemann / WP84 work prove the Riemann Hypothesis or an unconditional $>79\%$ record?** | **No.** The published unconditional baseline remains $>67.25\%$ (Alpoge–Furman / Lamzouri / Wang 2026). The `68.820273%` figure (`R=400`) is conditional on unproved filtered-to-sharp fourth-order transfer, and `79.627%` (`11061/13891`) is a reference model consumer. |
-| **Do the Physics (`v1.5`) or Bounded Existence (`v1.0`) ODE theorems prove a microscopic law of nature or machine sentience?** | **No.** Both models are illustrative dimensionless phenomenological ODE systems with unit constants and no thermodynamic energy accounting. Gate 0 (microscopic observer-to-horizon bridge) remains `OPEN`, and $\Psi(t) > 0.50$ is a mathematical readout threshold on $R_{\mathrm{self}}$, not subjective consciousness or clinical EEG sleep equivalence. |
-| **Do the AI behavioral programs (`Design Lab` / `Psi`) establish LLM self-awareness?** | **No.** `v8.6.3` live confirmatory collection is paused (`FAIL-CLOSED`), Phase 7 (`4,000` GLMM fits) is synthetic Monte Carlo validation, and `Psi v4` is a pre-confirmatory diagnostic benchmark. |
-| **Are failed prospective gates preserved?** | **Yes.** Failed or unevaluable prospective outcomes—such as the `WP16 N17` directional-split mechanism gate, `Design Lab` model `M2` under the null screen, filtered fourth-cumulant Gram shortcuts, and naive $D-2$ causal markers—are preserved in the permanent record without post-hoc retuning. |
+| **Does the portfolio contain rigorous mathematical results?** | Yes. It includes scoped analytic results and finite certificates. Each specialist repository states its assumptions and evidence class; these results do not close the open claims listed here. |
+| **Does the Navier–Stokes work solve 3D continuum regularity?** | No. The current work establishes finite Fourier–Galerkin results only. **M14/M15 remain STOP** and continuum regularity remains **OPEN**. The main record reports an M15 conservative remainder of about `1.64 × 10¹⁴`, above the signed lower bound of about `5.76 × 10⁹`; the targeted steps 220–239 reduction is not independently reproduced. See the [current evidence timeline](https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/df401d491cf243d937842eb51be1bd1f5ff8c226/notes/NAVIER_STOKES_EVIDENCE_TIMELINE_2026_11_04.md). |
+| **Does the Riemann work prove the Riemann Hypothesis or an unconditional strict >79% result?** | No. `68.820273%` is conditional, `79.627%` is a model frontier, and strict **>79%**, the WP84 ordinary-prime connected aggregate, the A1294 root predicate, and the Riemann Hypothesis remain **OPEN**. See the [verification repository](https://github.com/reggaesharkk/riemann-bandwidth1-verification/tree/1c0a8e917fb28bcbc6fedb16866a5a2387112706) and [frontier audit](https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/tree/f7af94cd1f2c57186521c662f124f703a1dfcd7d). |
+| **Does SharkByte demonstrate a fully connected 40-qubit simulation?** | No. Its 40-qubit, 16,777,216-state support-scaling circuit has eight disconnected components. Cirq checked every populated amplitude for that circuit. Separately, the connected 20-qubit experiment reached 1,048,576 amplitudes and has a documented four-engine statevector comparison and entanglement witness. These are simulator results, not quantum-hardware runs. See the [SharkByte evidence](https://github.com/reggaesharkk/SharkByte/tree/15ea5e5df3a4d0dfefafeefe528862f737e2d2c8/evidence/colab-ec876e2/). |
+| **Do the Physics or Bounded Existence models establish a microscopic law of nature or machine sentience?** | No. They are model-specific ODE systems. The observer-to-horizon bridge remains open; model readouts are not claims of subjective consciousness. |
+| **Do the AI behavioral projects establish LLM self-awareness?** | No. The Ψ benchmark is diagnostic and does not establish consciousness. Confirmatory collection in the Self-Referential Processing Design Lab is paused. |
+| **Are the public STRENGTH projects deployable security systems?** | No. The B3 repository is a research record without an executable interceptor, training pipeline, or firewall integration. Earlier H4, zero-leakage, and hardware claims are withdrawn. The Lean companion contains a toy recurrent-step prototype and narrowly scoped formal statements, not training or deployment evidence. |
+| **Are failed or unevaluable prospective gates preserved?** | Yes. The specialist repositories retain failed and inconclusive outcomes with their stated limits; the portfolio does not convert them into positive results through post-hoc retuning. |
 
 ---
 
 ## Repository Contents & Navigation
 
 - [Live public repository map](docs/REPO_MIRROR_INDEX.md) — 15 public specialist repositories, source links, and exact pinned commits.
+- [Current claim-boundary checklist](#global-claim-boundary-checklist) — current evidence limits and open obligations.
 - [Specialist repository list](SPECIALIST_REPOSITORIES.md) — current source set and clone instructions.
 - [Pinned source tree directory](public-repositories/README.md) — how to retrieve the submodules with their contents.
 - [Research dossier and historical evidence](#master-research-dossier--umbrella-standards) — dated records preserved in this archive.
