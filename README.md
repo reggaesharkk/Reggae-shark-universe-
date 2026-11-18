@@ -1,26 +1,24 @@
-<p align="center"><img src="assets/universe_hero.svg" alt="Reggae Shark Universe — a map of public research" width="100%" /></p>
+<img src="assets/universe_hero.svg" alt="Reggae Shark Universe — research portfolio of Prince Upadhyay" width="100%">
 
-<p align="center"><a href="docs/REPO_MIRROR_INDEX.md">PUBLIC PROJECT MAP</a> &nbsp;·&nbsp; <a href="SPECIALIST_REPOSITORIES.md">SOURCE REPOSITORIES</a> &nbsp;·&nbsp; <a href="#selected-evidence-and-open-questions">EVIDENCE</a> &nbsp;·&nbsp; <a href="https://github.com/reggaesharkk">PROFILE</a> &nbsp;·&nbsp; <a href="https://orcid.org/0009-0002-1170-4487">ORCID</a></p>
+[Projects](#the-public-work) · [Benchmark receipts](#sharkbyte) · [Research archive](#how-to-read-this-archive) · [Clone the source](#one-map-independent-source-histories) · [Researcher profile](https://github.com/reggaesharkk/reggaesharkk)
 
 # Reggae Shark Universe
 
-**Prince Upadhyay · Independent Researcher · India**  
-[ORCID 0009-0002-1170-4487](https://orcid.org/0009-0002-1170-4487) · [GitHub profile](https://github.com/reggaesharkk) · [Contact](mailto:starxshark@gmail.com)  
-**Updated:** 16 November 2026 · **Method:** Build · Attack · Falsify · Preserve
+An independent research portfolio by **Prince Upadhyay**. Explore the software, inspect a computational result, or trace a mathematical claim to its source.
 
-> *I follow the question until the evidence draws a line.*
+| Explore by field | Starting points |
+|---|---|
+| Mathematics | [Navier–Stokes](https://github.com/reggaesharkk/navier-stokes-bridge-audit) · [Spectral rank](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank) · [Riemann verification](https://github.com/reggaesharkk/riemann-bandwidth1-verification) |
+| Languages and verification | [SharkByte](https://github.com/reggaesharkk/SharkByte) · [SharkLang](https://github.com/reggaesharkk/sharklang-v2.4.2-release) · [Reggae Shark Protocol](https://github.com/reggaesharkk/The-Reggae-Shark-Protocol) |
+| AI and experimental design | [Self-modeling benchmark](https://github.com/reggaesharkk/psi-self-modeling-benchmark) · [Design Lab](https://github.com/reggaesharkk/self-referential-processing-designlab) |
 
-This repository is the front door to my public research and software. Each project keeps its own source history, evidence, license, and stated limits. The map below follows the current public default-branch commits; the linked commit pins in the repository index make this umbrella snapshot reproducible.
-
-## Start here
-
-- **Browse projects:** [Public repository map](docs/REPO_MIRROR_INDEX.md) · [Specialist repositories and exact pins](SPECIALIST_REPOSITORIES.md)
-- **Inspect evidence:** [SharkByte records](#selected-evidence-and-open-questions) · [Research dossier and archive](#master-research-dossier--umbrella-standards)
-- **Get the code:** clone with submodules using the commands in [One map, independent source histories](#one-map-independent-source-histories).
+[Browse all 15 specialist repositories](#the-public-work) · [Pinned revisions](SPECIALIST_REPOSITORIES.md) · [ORCID](https://orcid.org/0009-0002-1170-4487) · [Contact](mailto:starxshark@gmail.com)
 
 ## Selected evidence and open questions
 
 ### SharkByte
+
+The connected 50-qubit GHZ-family benchmark materialized **4,294,967,296 active states** on disk. Google Compute Engine and Colab recorded matching SHA-256 digests for both the basis and amplitude arrays. [Google Cloud receipt](https://github.com/reggaesharkk/SharkByte/blob/26dae2551b926feae8641bc4bf46c498d03dcc12/evidence/connected-ghz50-gcp/2p32/sharkbyte-ghz50-4b-gcp-receipt.json) · [Colab receipt](https://github.com/reggaesharkk/SharkByte/blob/26dae2551b926feae8641bc4bf46c498d03dcc12/evidence/connected-ghz50-colab/retry-2p32/sharkbyte-connected-ghz50-4294967296-colab.json).
 
 - A 40-qubit, 56-gate support-scaling circuit reached **16,777,216 populated amplitudes**. The independent Cirq comparison checked every populated amplitude in the Colab record; the maximum complex-amplitude difference was **7.40 × 10⁻¹⁹**. The gate graph has **eight disconnected components**, so this is not evidence of a fully connected 40-qubit simulation.
 - A separate Windows ARM64 Studio run reached the same state count and recorded **2.77 GiB peak process memory**. The receipt preserves the run’s source revision and dirty-tree status.
@@ -32,7 +30,7 @@ Evidence: [integrated Colab summary](https://github.com/reggaesharkk/SharkByte/b
 ### Riemann and Navier–Stokes
 
 - The Riemann verification and frontier repositories distinguish finite certificates, conditional calculations, model frontiers, and open analytic obligations. The strict **>79%** claim, the WP84 connected aggregate, the A1294 root predicate, and the Riemann Hypothesis all remain **OPEN**.
-- Navier–Stokes records establish only specified finite Fourier–Galerkin results. **M14/M15 remain STOP** and continuum regularity remains **OPEN**; a finite computation is not a continuum theorem.
+- Navier–Stokes records establish only specified finite Fourier–Galerkin results. The M14 scalar recurrence is conditional on imported bounds. M15 and continuum regularity remain **OPEN**; a finite computation is not a continuum theorem.
 
 See the [Riemann verification repository](https://github.com/reggaesharkk/riemann-bandwidth1-verification/tree/1c0a8e917fb28bcbc6fedb16866a5a2387112706) and [frontier audit](https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/tree/f7af94cd1f2c57186521c662f124f703a1dfcd7d), plus the [Navier–Stokes evidence timeline](https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/df401d491cf243d937842eb51be1bd1f5ff8c226/notes/NAVIER_STOKES_EVIDENCE_TIMELINE_2026_11_04.md).
 
@@ -42,7 +40,7 @@ See the [Riemann verification repository](https://github.com/reggaesharkk/rieman
 |---|---|---|
 | [Physics · dynamical sector](https://github.com/reggaesharkk/physics-v1-dynamical-sector) | Mathematical dynamics | Model-specific dynamical-sector and stability work; the observer-to-horizon bridge remains open. |
 | [Ψ Self-Modeling Benchmark](https://github.com/reggaesharkk/psi-self-modeling-benchmark) | AI evaluation | Diagnostic self/peer benchmark; it does not establish consciousness or general self-awareness. |
-| [Navier–Stokes Bridge Audit](https://github.com/reggaesharkk/navier-stokes-bridge-audit) | Validated computation | Finite Fourier–Galerkin results only. M14/M15 remain STOP; continuum regularity remains OPEN. |
+| [Navier–Stokes Bridge Audit](https://github.com/reggaesharkk/navier-stokes-bridge-audit) | Validated computation | Finite Fourier–Galerkin results only. M14 scalar recurrence depends on imported bounds. M15 and continuum regularity remain open. |
 | [Self-Referential Processing Design Lab](https://github.com/reggaesharkk/self-referential-processing-designlab) | Experimental design | Preregistered design and simulation validation; confirmatory collection is paused. |
 | [LRSC Odd-Ring Spectral Rank](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank) | Spectral methods | Scoped odd-ring spectral-rank result and finite eleven-channel certificate. |
 | [IntentSeal](https://github.com/reggaesharkk/intentseal) | Verification tooling | Prototype for claim boundaries, evidence provenance, and verification status. |
@@ -54,7 +52,7 @@ See the [Riemann verification repository](https://github.com/reggaesharkk/rieman
 | [The Reggae Shark Protocol](https://github.com/reggaesharkk/The-Reggae-Shark-Protocol) | Execution evidence | Application-level verification and signed execution evidence prototype. |
 | [SharkLang v2.4.2](https://github.com/reggaesharkk/sharklang-v2.4.2-release) | Governed AI | Approval-gated policy-language/runtime release with an explicit evaluation boundary. |
 | [SharkLang Evidence Desk](https://github.com/reggaesharkk/sharklang-evidence-desk) | Release auditing | Local ZIP structure and checksum review; it does not execute archive contents. |
-| [SharkByte](https://github.com/reggaesharkk/SharkByte) | Programming languages and simulation | See the bounded benchmark and independent-reference results below. |
+| [SharkByte](https://github.com/reggaesharkk/SharkByte) | Programming languages and simulation | Disk-backed GHZ-family benchmark with matching Colab and Google Cloud array hashes. |
 
 The current public source set contains **15 specialist repositories** and the public profile. Private repositories are excluded. Finite certificates remain finite; simulations do not become observations; prototypes do not become production guarantees. Each source repository states its own assumptions and remaining obligations.
 
@@ -156,14 +154,14 @@ I built SharkLang as a small policy language and runtime for examining an approv
 
 ## Global Claim-Boundary Checklist
 
-**Current as of 16 November 2026.** The dated Executive Map and release sections above remain historical snapshots; the current repository map and the notes below describe the present claim boundaries.
+**Current as of 18 November 2026.** The dated Executive Map and release sections above remain historical snapshots; the current repository map and the notes below describe the present claim boundaries.
 
 | Question | Current portfolio answer |
 |---|---|
 | **Does the portfolio contain rigorous mathematical results?** | Yes. It includes scoped analytic results and finite certificates. Each specialist repository states its assumptions and evidence class; these results do not close the open claims listed here. |
 | **Does the Navier–Stokes work solve 3D continuum regularity?** | No. The current work establishes finite Fourier–Galerkin results only. **M14/M15 remain STOP** and continuum regularity remains **OPEN**. The main record reports an M15 conservative remainder of about `1.64 × 10¹⁴`, above the signed lower bound of about `5.76 × 10⁹`; the targeted steps 220–239 reduction is not independently reproduced. See the [current evidence timeline](https://github.com/reggaesharkk/navier-stokes-bridge-audit/blob/df401d491cf243d937842eb51be1bd1f5ff8c226/notes/NAVIER_STOKES_EVIDENCE_TIMELINE_2026_11_04.md). |
 | **Does the Riemann work prove the Riemann Hypothesis or an unconditional strict >79% result?** | No. `68.820273%` is conditional, `79.627%` is a model frontier, and strict **>79%**, the WP84 ordinary-prime connected aggregate, the A1294 root predicate, and the Riemann Hypothesis remain **OPEN**. See the [verification repository](https://github.com/reggaesharkk/riemann-bandwidth1-verification/tree/1c0a8e917fb28bcbc6fedb16866a5a2387112706) and [frontier audit](https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit/tree/f7af94cd1f2c57186521c662f124f703a1dfcd7d). |
-| **Does SharkByte demonstrate a fully connected 40-qubit simulation?** | No. Its 40-qubit, 16,777,216-state support-scaling circuit has eight disconnected components. Cirq checked every populated amplitude for that circuit. Separately, the connected 20-qubit experiment reached 1,048,576 amplitudes and has a documented four-engine statevector comparison and entanglement witness. These are simulator results, not quantum-hardware runs. See the [SharkByte evidence](https://github.com/reggaesharkk/SharkByte/tree/15ea5e5df3a4d0dfefafeefe528862f737e2d2c8/evidence/colab-ec876e2/). |
+| **What did the early 40-qubit support-scaling benchmark check?** | Its 40-qubit, 16,777,216-state support-scaling circuit has eight disconnected components. Cirq checked every populated amplitude for that circuit. Separately, the connected 20-qubit experiment reached 1,048,576 amplitudes and has a documented four-engine statevector comparison and entanglement witness. These are simulator results, not quantum-hardware runs. See the [SharkByte evidence](https://github.com/reggaesharkk/SharkByte/tree/15ea5e5df3a4d0dfefafeefe528862f737e2d2c8/evidence/colab-ec876e2/). |
 | **Do the Physics or Bounded Existence models establish a microscopic law of nature or machine sentience?** | No. They are model-specific ODE systems. The observer-to-horizon bridge remains open; model readouts are not claims of subjective consciousness. |
 | **Do the AI behavioral projects establish LLM self-awareness?** | No. The Ψ benchmark is diagnostic and does not establish consciousness. Confirmatory collection in the Self-Referential Processing Design Lab is paused. |
 | **Are the public STRENGTH projects deployable security systems?** | No. The B3 repository is a research record without an executable interceptor, training pipeline, or firewall integration. Earlier H4, zero-leakage, and hardware claims are withdrawn. The Lean companion contains a toy recurrent-step prototype and narrowly scoped formal statements, not training or deployment evidence. |
