@@ -2,7 +2,7 @@
 
 # Public repository map
 
-**Updated:** 25 November 2026.
+**Updated:** 26 November 2026.
 
 This is the current index of public source repositories connected to the Reggae Shark Universe. Each specialist repository keeps its own history, issues, license, and project evidence. This umbrella pins the default-branch commit selected for each public source on this date.
 
@@ -15,9 +15,9 @@ I keep scope beside the links: a finite result is not a universal theorem; a dia
 | Project | Area | Evidence boundary | Pinned source commit |
 |---|---|---|---|
 | [Physics · dynamical sector](https://github.com/reggaesharkk/physics-v1-dynamical-sector) | Mathematical dynamics | Model-specific dynamical-sector and stability work; the observer-to-horizon bridge remains open. | `0527f0c016dfa310ada17573967f16788c6bcb26` |
-| [Ψ Self-Modeling Benchmark](https://github.com/reggaesharkk/psi-self-modeling-benchmark) | AI evaluation | Diagnostic self/peer benchmark; it does not establish consciousness or general self-awareness. | `3c76eea6b0d64e11f9e7bc18eeb8f69e87f0e1cf` |
+| [Ψ Self-Modeling Benchmark](https://github.com/reggaesharkk/psi-self-modeling-benchmark) | AI evaluation | v5.0 VRK-aligned self/peer benchmark with live and replay artifacts. It does not establish consciousness or general self-awareness. | `70abb1ae17dfa55b59ce8d8f99e75c5e485cdc85` |
 | [Navier–Stokes Bridge Audit](https://github.com/reggaesharkk/navier-stokes-bridge-audit) | Validated computation | Finite Fourier–Galerkin results only. M14 scalar recurrence depends on imported bounds. M15 and continuum regularity remain open. | `df401d491cf243d937842eb51be1bd1f5ff8c226` |
-| [Self-Referential Processing Design Lab](https://github.com/reggaesharkk/self-referential-processing-designlab) | Experimental design | Preregistered design and simulation validation; confirmatory collection is paused. | `10edbe34f1df741cfb4e7f3a7bb0dff4073e6186` |
+| [Self-Referential Processing Design Lab](https://github.com/reggaesharkk/self-referential-processing-designlab) | Experimental design | Preregistered design and prospective v9 runner; confirmatory study runs remain at 0. Pinned to `v9-0-prospective-runner`. | `7df10e4fdac6c258c5b51258c6cc9b3620b6c049` |
 | [LRSC Odd-Ring Spectral Rank](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank) | Spectral methods | Scoped odd-ring spectral-rank result and finite eleven-channel certificate. | `39db6e6bebcd364462605048f71933da4f8681a5` |
 | [IntentSeal](https://github.com/reggaesharkk/intentseal) | Verification tooling | Prototype for claim boundaries, evidence provenance, and verification status. | `bb01fbe07b8e8a0a6d172370793937e9785fd7ab` |
 | [Riemann Bandwidth-One Verification](https://github.com/reggaesharkk/riemann-bandwidth1-verification) | Computational number theory | Finite-band certificates and conditional analyses; strict >79% and the Riemann Hypothesis remain OPEN. | `81f3aa6f605d8e8ac0978da50d0512d108f784da` |

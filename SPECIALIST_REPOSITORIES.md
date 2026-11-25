@@ -2,7 +2,7 @@
 
 # Specialist repositories
 
-**Updated:** 25 November 2026.
+**Updated:** 26 November 2026.
 
 This umbrella indexes the public projects and pins each source repository as a Git submodule under `public-repositories/`. Each specialist repository remains the authority for its own source, history, license, evidence, and project-specific scope.
 
@@ -11,9 +11,9 @@ This umbrella indexes the public projects and pins each source repository as a G
 | # | Project | Repository | Scope note | Pinned commit |
 |---:|---|---|---|---|
 | 1 | Physics · dynamical sector | [physics-v1-dynamical-sector](https://github.com/reggaesharkk/physics-v1-dynamical-sector) | Model-specific dynamical-sector and stability work; the observer-to-horizon bridge remains open. | `0527f0c016dfa310ada17573967f16788c6bcb26` |
-| 2 | Ψ Self-Modeling Benchmark | [psi-self-modeling-benchmark](https://github.com/reggaesharkk/psi-self-modeling-benchmark) | Diagnostic self/peer benchmark; it does not establish consciousness or general self-awareness. | `3c76eea6b0d64e11f9e7bc18eeb8f69e87f0e1cf` |
+| 2 | Ψ Self-Modeling Benchmark | [psi-self-modeling-benchmark](https://github.com/reggaesharkk/psi-self-modeling-benchmark) | v5.0 VRK-aligned self/peer benchmark with live and replay artifacts. It does not establish consciousness or general self-awareness. | `70abb1ae17dfa55b59ce8d8f99e75c5e485cdc85` |
 | 3 | Navier–Stokes Bridge Audit | [navier-stokes-bridge-audit](https://github.com/reggaesharkk/navier-stokes-bridge-audit) | Finite Fourier–Galerkin results only. M14 scalar recurrence depends on imported bounds. M15 and continuum regularity remain open. | `df401d491cf243d937842eb51be1bd1f5ff8c226` |
-| 4 | Self-Referential Processing Design Lab | [self-referential-processing-designlab](https://github.com/reggaesharkk/self-referential-processing-designlab) | Preregistered design and simulation validation; confirmatory collection is paused. | `10edbe34f1df741cfb4e7f3a7bb0dff4073e6186` |
+| 4 | Self-Referential Processing Design Lab | [self-referential-processing-designlab](https://github.com/reggaesharkk/self-referential-processing-designlab) | Preregistered design and prospective v9 runner; confirmatory study runs remain at 0. Pinned to `v9-0-prospective-runner`. | `7df10e4fdac6c258c5b51258c6cc9b3620b6c049` |
 | 5 | LRSC Odd-Ring Spectral Rank | [lrsc-odd-ring-spectral-rank](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank) | Scoped odd-ring spectral-rank result and finite eleven-channel certificate. | `39db6e6bebcd364462605048f71933da4f8681a5` |
 | 6 | IntentSeal | [intentseal](https://github.com/reggaesharkk/intentseal) | Prototype for claim boundaries, evidence provenance, and verification status. | `bb01fbe07b8e8a0a6d172370793937e9785fd7ab` |
 | 7 | Riemann Bandwidth-One Verification | [riemann-bandwidth1-verification](https://github.com/reggaesharkk/riemann-bandwidth1-verification) | Finite-band certificates and conditional analyses; strict >79% and the Riemann Hypothesis remain OPEN. | `81f3aa6f605d8e8ac0978da50d0512d108f784da` |
