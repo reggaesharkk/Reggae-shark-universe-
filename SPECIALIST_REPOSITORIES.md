@@ -2,7 +2,7 @@
 
 # Specialist repositories
 
-**Updated:** 18 November 2026.
+**Updated:** 25 November 2026.
 
 This umbrella indexes the public projects and pins each source repository as a Git submodule under `public-repositories/`. Each specialist repository remains the authority for its own source, history, license, evidence, and project-specific scope.
 
@@ -24,9 +24,9 @@ This umbrella indexes the public projects and pins each source repository as a G
 | 12 | The Reggae Shark Protocol | [The-Reggae-Shark-Protocol](https://github.com/reggaesharkk/The-Reggae-Shark-Protocol) | Application-level verification and signed execution evidence prototype. | `9ae4784233e1cb148426232af7dee667a4393b4d` |
 | 13 | SharkLang v2.4.2 | [sharklang-v2.4.2-release](https://github.com/reggaesharkk/sharklang-v2.4.2-release) | Approval-gated policy-language/runtime release with an explicit evaluation boundary. | `622a88fe2cc205b752e8c6cc2c5b1702a4c05487` |
 | 14 | SharkLang Evidence Desk | [sharklang-evidence-desk](https://github.com/reggaesharkk/sharklang-evidence-desk) | Local ZIP structure and checksum review; it does not execute archive contents. | `5c5156b886bb2d3b24a9207793c6bb0c67baefdb` |
-| 15 | SharkByte | [SharkByte](https://github.com/reggaesharkk/SharkByte) | Disk-backed GHZ-family benchmark with matching Colab and Google Cloud array hashes. | `26dae2551b926feae8641bc4bf46c498d03dcc12` |
+| 15 | SharkByte | [SharkByte](https://github.com/reggaesharkk/SharkByte) | Disk-backed GHZ-family benchmark with matching Colab and Google Cloud array hashes. | `9ff067d44f792f87624a9b546fb917543b5c9b6e` |
 
-The public account profile and research CV are also pinned at `public-repositories/profile`: [reggaesharkk](https://github.com/reggaesharkk) · `4c06715567f565a2df2562859e60c6f395cba6ef`.
+The public account profile and research CV are also pinned at `public-repositories/profile`: [reggaesharkk](https://github.com/reggaesharkk) · `e42f14d1dc5602775534eec5683b6171c39e641e`.
 
 ## Retrieve the source set
 

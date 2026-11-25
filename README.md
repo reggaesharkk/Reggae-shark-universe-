@@ -1,18 +1,17 @@
 <img src="assets/universe_hero.svg" alt="Reggae Shark Universe — research portfolio of Prince Upadhyay" width="100%">
 
-[Projects](#the-public-work) · [Benchmark receipts](#sharkbyte) · [Research archive](#how-to-read-this-archive) · [Clone the source](#one-map-independent-source-histories) · [Researcher profile](https://github.com/reggaesharkk/reggaesharkk)
-
 # Reggae Shark Universe
 
-An independent research portfolio by **Prince Upadhyay**. Explore the software, inspect a computational result, or trace a mathematical claim to its source.
+Prince Upadhyay’s guide to **15 public research repositories**. Start with a question below, open the project’s evidence, or retrieve the exact source revision used by this edition.
 
-| Explore by field | Starting points |
-|---|---|
-| Mathematics | [Navier–Stokes](https://github.com/reggaesharkk/navier-stokes-bridge-audit) · [Spectral rank](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank) · [Riemann verification](https://github.com/reggaesharkk/riemann-bandwidth1-verification) |
-| Languages and verification | [SharkByte](https://github.com/reggaesharkk/SharkByte) · [SharkLang](https://github.com/reggaesharkk/sharklang-v2.4.2-release) · [Reggae Shark Protocol](https://github.com/reggaesharkk/The-Reggae-Shark-Protocol) |
-| AI and experimental design | [Self-modeling benchmark](https://github.com/reggaesharkk/psi-self-modeling-benchmark) · [Design Lab](https://github.com/reggaesharkk/self-referential-processing-designlab) |
+[Research directory](#the-public-work) · [SharkByte benchmarks](#sharkbyte) · [Claim boundaries](#global-claim-boundary-checklist) · [Reproduce a result](#one-map-independent-source-histories) · [Dossier and archives](#how-to-read-this-archive) · [Researcher profile](https://github.com/reggaesharkk)
 
-[Browse all 15 specialist repositories](#the-public-work) · [Pinned revisions](SPECIALIST_REPOSITORIES.md) · [ORCID](https://orcid.org/0009-0002-1170-4487) · [Contact](mailto:starxshark@gmail.com)
+| What brings you here? | Where to start |
+| --- | --- |
+| Explore the portfolio | The [research directory](#the-public-work) gives a concrete result and its scope for every project. |
+| Inspect a numerical result | Compare the two [50-qubit benchmark receipts](#sharkbyte), or inspect the [eleven-channel spectral certificate](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank/blob/39db6e6bebcd364462605048f71933da4f8681a5/finite-benchmark/k001-certificate/CERTIFICATE.md). |
+| Find the assumptions or open questions | Read the [claim-boundary checklist](#global-claim-boundary-checklist) and follow the specialist audit for the result you intend to cite. |
+| Reproduce or cite the work | Use the [pinned revisions](SPECIALIST_REPOSITORIES.md) for source code and the [dated executive map](#executive-map-of-the-ten-research-programs--26-october-2026-snapshot) for the associated archival records. |
 
 ## Selected evidence and open questions
 
@@ -27,6 +26,8 @@ The connected 50-qubit GHZ-family benchmark materialized **4,294,967,296 active 
 
 Evidence: [integrated Colab summary](https://github.com/reggaesharkk/SharkByte/blob/15ea5e5df3a4d0dfefafeefe528862f737e2d2c8/evidence/colab-ec876e2/colab-summary.json) · [40-qubit Cirq receipt](https://github.com/reggaesharkk/SharkByte/blob/15ea5e5df3a4d0dfefafeefe528862f737e2d2c8/evidence/colab-ec876e2/cirq-40q-16777216.json) · [Windows Studio receipt](https://github.com/reggaesharkk/SharkByte/blob/15ea5e5df3a4d0dfefafeefe528862f737e2d2c8/evidence/studio_16m/windows_arm64/sharkbyte-85c74d14dcb54040a295e3c2fe422e53.json) · [20-qubit connected-circuit methods](https://github.com/reggaesharkk/SharkByte/blob/15ea5e5df3a4d0dfefafeefe528862f737e2d2c8/docs/high-support-connected-entanglement.md) · [Open integrated notebook in Colab](https://colab.research.google.com/github/reggaesharkk/SharkByte/blob/main/notebooks/SharkByte-Colab-Integrated-Verification.ipynb).
 
+**Later SharkByte milestones.** The public H4 compatibility checker reconstructs the archived gate sequence and compares its binary64 words and error charges. The stricter Gate 4c containment criterion failed. In a separate **private Certify RC1** trial, the public report records 74 Lean modules rebuilt on ARM64 and x86-64 and 220/220 expected native-verifier outcomes on Linux x86-64. The private quantum contract admits X/Z/CX/H circuits up to eight qubits and 64 gates without pruning. Native ARM64 deployment remains blocked. [Public replay contract](https://github.com/reggaesharkk/SharkByte/blob/9ff067d44f792f87624a9b546fb917543b5c9b6e/docs/h4-gate4b-compatibility.md) · [Trial report and limits](https://github.com/reggaesharkk/SharkByte/tree/9ff067d44f792f87624a9b546fb917543b5c9b6e#private-research-milestones--gates-6b156b23)
+
 ### Riemann and Navier–Stokes
 
 - The Riemann verification and frontier repositories distinguish finite certificates, conditional calculations, model frontiers, and open analytic obligations. The strict **>79%** claim, the WP84 connected aggregate, the A1294 root predicate, and the Riemann Hypothesis all remain **OPEN**.
@@ -36,27 +37,31 @@ See the [Riemann verification repository](https://github.com/reggaesharkk/rieman
 
 ## The public work
 
+<img src="https://raw.githubusercontent.com/reggaesharkk/reggaesharkk/e42f14d1dc5602775534eec5683b6171c39e641e/assets/orbits.svg" alt="" width="100%">
+
 | Project | Area | Current scope |
 |---|---|---|
-| [Physics · dynamical sector](https://github.com/reggaesharkk/physics-v1-dynamical-sector) | Mathematical dynamics | Model-specific dynamical-sector and stability work; the observer-to-horizon bridge remains open. |
-| [Ψ Self-Modeling Benchmark](https://github.com/reggaesharkk/psi-self-modeling-benchmark) | AI evaluation | Diagnostic self/peer benchmark; it does not establish consciousness or general self-awareness. |
-| [Navier–Stokes Bridge Audit](https://github.com/reggaesharkk/navier-stokes-bridge-audit) | Validated computation | Finite Fourier–Galerkin results only. M14 scalar recurrence depends on imported bounds. M15 and continuum regularity remain open. |
-| [Self-Referential Processing Design Lab](https://github.com/reggaesharkk/self-referential-processing-designlab) | Experimental design | Preregistered design and simulation validation; confirmatory collection is paused. |
-| [LRSC Odd-Ring Spectral Rank](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank) | Spectral methods | Scoped odd-ring spectral-rank result and finite eleven-channel certificate. |
-| [IntentSeal](https://github.com/reggaesharkk/intentseal) | Verification tooling | Prototype for claim boundaries, evidence provenance, and verification status. |
-| [Riemann Bandwidth-One Verification](https://github.com/reggaesharkk/riemann-bandwidth1-verification) | Computational number theory | Finite-band certificates and conditional analyses; strict >79% and the Riemann Hypothesis remain OPEN. |
-| [Riemann Bandwidth-One Frontier Audit](https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit) | Analytic proof frontier | A1294 root predicate and WP84 ordinary-prime connected aggregate remain OPEN; no Riemann Hypothesis proof is claimed. |
-| [STRENGTH-B3 Interceptor Core](https://github.com/reggaesharkk/STRENGTH-B3-Interceptor-Core) | AI systems | Research record only; no executable interceptor, training pipeline, or firewall integration. Earlier H4, zero-leakage, and hardware claims are withdrawn. |
-| [Strength Intent · Lean](https://github.com/reggaesharkk/strength-intent-ns-lean) | Formal methods | Toy Python/C++ recurrent forward step and narrowly scoped Lean statements; no training or deployment evidence in the public source tree. |
-| [Theory of Bounded Existence](https://github.com/reggaesharkk/theory-of-bounded-existence) | Mathematical modeling | Model-specific 4D ODE system and formal artifacts; no physical or consciousness claim. |
-| [The Reggae Shark Protocol](https://github.com/reggaesharkk/The-Reggae-Shark-Protocol) | Execution evidence | Application-level verification and signed execution evidence prototype. |
-| [SharkLang v2.4.2](https://github.com/reggaesharkk/sharklang-v2.4.2-release) | Governed AI | Approval-gated policy-language/runtime release with an explicit evaluation boundary. |
-| [SharkLang Evidence Desk](https://github.com/reggaesharkk/sharklang-evidence-desk) | Release auditing | Local ZIP structure and checksum review; it does not execute archive contents. |
-| [SharkByte](https://github.com/reggaesharkk/SharkByte) | Programming languages and simulation | Disk-backed GHZ-family benchmark with matching Colab and Google Cloud array hashes. |
+| [Physics · dynamical sector](https://github.com/reggaesharkk/physics-v1-dynamical-sector) | Mathematical dynamics | Lean checks the six boundary faces of the 3D model. The observer-to-horizon bridge remains open. |
+| [Ψ Self-Modeling Benchmark](https://github.com/reggaesharkk/psi-self-modeling-benchmark) | AI evaluation | Released a controlled, anonymized self-versus-peer diagnostic with a 50% chance baseline. Confirmatory evidence of self-awareness remains open. |
+| [Navier–Stokes Bridge Audit](https://github.com/reggaesharkk/navier-stokes-bridge-audit) | Validated computation | Published same-initial-data Fourier–Galerkin records across N = 11–18. M14 depends on imported bounds. M15 and continuum regularity remain open. |
+| [Self-Referential Processing Design Lab](https://github.com/reggaesharkk/self-referential-processing-designlab) | Experimental design | Phase 7 completed 4,000 simulated fits. The calibration rule retained M1 for a future study. Live confirmatory collection remains paused. |
+| [LRSC Odd-Ring Spectral Rank](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank) | Spectral methods | Proved the odd-ring rank result under its masking assumptions. For one 99-site instance, exactly 11 channels meet the specified error tolerance. |
+| [IntentSeal](https://github.com/reggaesharkk/intentseal) | Verification tooling | Released VRK v0.3.1. All 30 release tests passed and the verifier rejected all 33 adversarial cases. |
+| [Riemann Bandwidth-One Verification](https://github.com/reggaesharkk/riemann-bandwidth1-verification) | Computational number theory | Proved finite-dimensional Loewner band truncation. The 68.820273% calculation is conditional. The 79.627% figure is model-specific. |
+| [Riemann Bandwidth-One Frontier Audit](https://github.com/reggaesharkk/riemann-bandwidth1-frontier-audit) | Analytic proof frontier | Published selected Lean proofs and exact replays. The A1294 predicate, WP84 connected aggregate and strict >79% simple-zero bound remain open. |
+| [STRENGTH-B3 Interceptor Core](https://github.com/reggaesharkk/STRENGTH-B3-Interceptor-Core) | AI systems | Published a correction record withdrawing the earlier H4, hardware and firewall claims. The confirmatory H4 question remains open. |
+| [Strength Intent · Lean](https://github.com/reggaesharkk/strength-intent-ns-lean) | Formal methods | Implemented a toy recurrent forward step in Python and C++ and published two separate Lean inequalities. Training and deployment remain unverified. |
+| [Theory of Bounded Existence](https://github.com/reggaesharkk/theory-of-bounded-existence) | Mathematical modeling | Published 17 Lean boundary theorems and a zero-drive bistability result for the specified four-dimensional ODE. |
+| [The Reggae Shark Protocol](https://github.com/reggaesharkk/The-Reggae-Shark-Protocol) | Execution evidence | Released a signed application-level ledger. Version 1.3.2 records 42 Lean theorems across three modules and 42 passing tests. |
+| [SharkLang v2.4.2](https://github.com/reggaesharkk/sharklang-v2.4.2-release) | Governed AI | Released an approval-gated compiler and runtime. Ubuntu passed 70 tests. Windows ARM64 passed 69 with one POSIX-only skip. |
+| [SharkLang Evidence Desk](https://github.com/reggaesharkk/sharklang-evidence-desk) | Release auditing | Released a local ZIP auditor for archive structure, path hazards and SHA-256 manifests. It reads archives without executing their contents. |
+| [SharkByte](https://github.com/reggaesharkk/SharkByte) | Programming languages and simulation | Checked 4,294,967,296 populated GHZ-family entries against a closed-form reference on two platforms. See the [benchmark receipts](#sharkbyte) and bounded H4 replay above. |
 
 The current public source set contains **15 specialist repositories** and the public profile. Private repositories are excluded. Finite certificates remain finite; simulations do not become observations; prototypes do not become production guarantees. Each source repository states its own assumptions and remaining obligations.
 
 ## One map, independent source histories
+
+<img src="https://raw.githubusercontent.com/reggaesharkk/reggaesharkk/e42f14d1dc5602775534eec5683b6171c39e641e/assets/ledger.svg" alt="" width="100%">
 
 The project repositories and profile are pinned as Git submodules. This umbrella points to exact source commits without flattening their histories.
 
@@ -64,10 +69,11 @@ The project repositories and profile are pinned as Git submodules. This umbrella
 git clone --recurse-submodules https://github.com/reggaesharkk/Reggae-shark-universe-.git
 ```
 
-For an existing clone:
+To check which commits the clone retrieved, run the following inside the umbrella repository. For an existing checkout, the first command initializes any missing submodules at the pins recorded by that checkout.
 
 ```sh
 git submodule update --init --recursive
+git submodule status --recursive
 ```
 
 GitHub’s ordinary “Download ZIP” does not include submodule contents. A recursive clone retrieves the public source trees at the pinned revisions. The complete pin list is in the [live repository map](docs/REPO_MIRROR_INDEX.md).
@@ -154,7 +160,7 @@ I built SharkLang as a small policy language and runtime for examining an approv
 
 ## Global Claim-Boundary Checklist
 
-**Current as of 18 November 2026.** The dated Executive Map and release sections above remain historical snapshots; the current repository map and the notes below describe the present claim boundaries.
+**Reviewed 25 November 2026.** The dated Executive Map and release sections above remain historical snapshots; the current repository map and the notes below describe the present claim boundaries.
 
 | Question | Current portfolio answer |
 |---|---|

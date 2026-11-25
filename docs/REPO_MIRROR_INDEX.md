@@ -2,7 +2,7 @@
 
 # Public repository map
 
-**Updated:** 18 November 2026.
+**Updated:** 25 November 2026.
 
 This is the current index of public source repositories connected to the Reggae Shark Universe. Each specialist repository keeps its own history, issues, license, and project evidence. This umbrella pins the default-branch commit selected for each public source on this date.
 
@@ -28,11 +28,11 @@ I keep scope beside the links: a finite result is not a universal theorem; a dia
 | [The Reggae Shark Protocol](https://github.com/reggaesharkk/The-Reggae-Shark-Protocol) | Execution evidence | Application-level verification and signed execution evidence prototype. | `9ae4784233e1cb148426232af7dee667a4393b4d` |
 | [SharkLang v2.4.2](https://github.com/reggaesharkk/sharklang-v2.4.2-release) | Governed AI | Approval-gated policy-language/runtime release with an explicit evaluation boundary. | `622a88fe2cc205b752e8c6cc2c5b1702a4c05487` |
 | [SharkLang Evidence Desk](https://github.com/reggaesharkk/sharklang-evidence-desk) | Release auditing | Local ZIP structure and checksum review; it does not execute archive contents. | `5c5156b886bb2d3b24a9207793c6bb0c67baefdb` |
-| [SharkByte](https://github.com/reggaesharkk/SharkByte) | Programming languages and simulation | Disk-backed GHZ-family benchmark with matching Colab and Google Cloud array hashes. | `26dae2551b926feae8641bc4bf46c498d03dcc12` |
+| [SharkByte](https://github.com/reggaesharkk/SharkByte) | Programming languages and simulation | Disk-backed GHZ-family benchmark with matching Colab and Google Cloud array hashes. | `9ff067d44f792f87624a9b546fb917543b5c9b6e` |
 
 ## Profile
 
-[Prince Upadhyay — profile and research CV](https://github.com/reggaesharkk/reggaesharkk) · pinned commit `4c06715567f565a2df2562859e60c6f395cba6ef`
+[Prince Upadhyay — profile and research CV](https://github.com/reggaesharkk/reggaesharkk) · pinned commit `e42f14d1dc5602775534eec5683b6171c39e641e`
 
 ## Clone the complete public source set
 

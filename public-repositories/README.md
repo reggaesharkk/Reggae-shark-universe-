@@ -1,6 +1,6 @@
 # Public source repositories
 
-**Updated:** 18 November 2026.
+**Updated:** 25 November 2026.
 
 This directory pins the **15 public specialist repositories** and the public account profile as Git submodules. The umbrella preserves independent project histories while providing one dated, reproducible source map. Exact commit pins and scope notes are listed in [the public repository map](../docs/REPO_MIRROR_INDEX.md).
 
