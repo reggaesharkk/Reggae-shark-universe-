@@ -16,6 +16,13 @@ The Umbrella stores submodule pointers. Each specialist repository remains the a
 - That earlier Pilot B receipt records 10 HTTP calls started, 10 HTTP responses, and USD `0.00053603` estimated spend. It is explicitly prospective Pilot B; confirmatory data collected is `false`. Confirmatory study runs remain at 0.
 - The script changes were checked offline against the verified 260-item pool. No new provider API requests were sent during this reconciliation.
 
+## Account-local provider activity count
+
+- The September 27 audit evidence records 6 non-study engineering connectivity POST probes (4 HTTP 200, 1 HTTP 400, 1 HTTP 404) and 3 provider catalog GET requests. No `api_ping_check` requests or output were evidenced in that audit snapshot.
+- The attached receipt adds one prospective Pilot B run with 10 HTTP calls started and 10 responses. It is a partial run on `TR_01`, with USD `0.00053603` estimated spend. It is not a confirmatory study run.
+- Across the retrieved records, that is 16 documented model inference POST calls (6 engineering + 10 Pilot B) and 19 external provider HTTP requests when the 3 metadata GETs are included. Pilot A runs: 0. Confirmatory study runs: 0.
+- This is a local-artifact count, not provider-side billing evidence. This update sent no new LLM calls, and provider account/billing logs were not queried.
+
 ## PSI v5 work
 
 - Source: `reggaesharkk/psi-self-modeling-benchmark`, branch `main`, commit `70abb1ae17dfa55b59ce8d8f99e75c5e485cdc85`.
