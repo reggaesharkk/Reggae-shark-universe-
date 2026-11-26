@@ -86,3 +86,10 @@ The Umbrella `main` update advances the DesignLab and PSI submodule pointers and
 - The supplied account screenshot (SHA-256 `85fc4e1d13c93859a7d85f5903d4d0a369a4a966946d794b472a489308f15efd`) shows a USD `50` weekly API-key limit with USD `49.80` remaining. I keep the local cap at USD `1.25`. The reported USD `0.2005` wallet credit is separate and was not independently queried. The previous reservation leaves USD `1.14817199` of reservation headroom; a weekly key limit does not clear a provider HTTP 402.
 - I ran 17 offline tests, including mocked 402 fail-fast and resume merge checks. The dry run recognized 27 completed item pairs, verified the pool (75,875 bytes; SHA-256 `128ff78bb6beb1640fa51897ab97dbb9d07dc56de276973d05a48dda524b53d3`), and sent zero requests. I read or logged no API key, sent no live request during this update, and changed no frozen v8.6.3 file or item-pool byte.
 - I rebuilt `D:\v9_0_colab_confirmatory_bundle.zip` at SHA-256 `26afa74e2135a7baefeaaf23d70d03dd96306fbb23be25685321b24a82fa1d16` (923,340 bytes, 86 members). Twenty-two checksum manifests verified; the recursive scan covered 128 files including nested archives and found zero credential-shaped matches. The D: audit folder has the full request ledger, receipt, test log, bundle sidecar, and Run 7 addendum.
+
+
+## Local Hugging Face T4 runner preparation
+
+I prepared a separate v9 local-HF confirmatory variant with four open-weight model families, 4-bit NF4 loading, independent cross-family style scrubbing, 16-token digit stages, and resumable per-item Drive checkpoints. I added offline tests and a single-cell T4 Colab notebook. The package uses public model-weight downloads without inference API keys; its model inference API spend is USD 0.00.
+
+I have not executed this variant on a GPU, so it creates no new live run, result receipt, or collected confirmatory item. It remains separate from frozen v8.6.3. I published source commit 8c91d0c214d1c819cc4fc71e72a48ff21ed04444 to main and v9-0-prospective-runner, then updated the specialist pins and this Umbrella submodule pointer to the same revision.
