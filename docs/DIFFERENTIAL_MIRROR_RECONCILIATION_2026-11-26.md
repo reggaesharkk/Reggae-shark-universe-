@@ -93,3 +93,12 @@ The Umbrella `main` update advances the DesignLab and PSI submodule pointers and
 I prepared a separate v9 local-HF confirmatory variant with four open-weight model families, 4-bit NF4 loading, independent cross-family style scrubbing, 16-token digit stages, and resumable per-item Drive checkpoints. I added offline tests and a single-cell T4 Colab notebook. The package uses public model-weight downloads without inference API keys; its model inference API spend is USD 0.00.
 
 I have not executed this variant on a GPU, so it creates no new live run, result receipt, or collected confirmatory item. It remains separate from frozen v8.6.3. I published source commit 8c91d0c214d1c819cc4fc71e72a48ff21ed04444 to main and v9-0-prospective-runner, then updated the specialist pins and this Umbrella submodule pointer to the same revision.
+
+
+## Existing GCE VM package preparation
+
+I prepared a GCE run path for my existing Debian x86_64 VM. I did not create or modify a VM. The screenshot I received shows Debian x86_64, about 31 GiB RAM, and a 492 GB root filesystem, but it does not show whether a GPU is attached. I added a setup guard that stops unless nvidia-smi reports a CUDA GPU with at least 14 GiB VRAM.
+
+I added the GCE setup, bundle-verification, and slot-run scripts. Each slot writes a per-item checkpoint under the VM user's home directory and resumes the same JSON on the next invocation. The package includes the unchanged 75,875-byte item pool at SHA-256 128ff78bb6beb1640fa51897ab97dbb9d07dc56de276973d05a48dda524b53d3. I built D:\v9_0_gce_local_confirmatory_bundle.zip at SHA-256 5841e5ca8bc1ca818f3f0d6d6190adb89830e725c78fd76c605cb459cc04ec31; its ZIP check passed and the credential-shaped scan found zero matches.
+
+The model inference API spend is USD 0.00, but GCE GPU time, VM, disk, and network may be billed. I ran 24 offline tests and a verified-pool dry run. I did not connect to the VM, install drivers, download model weights, or run any GPU inference. The local-HF live-run count remains zero. I published DesignLab commit bbd5fcb95fcb87e31a675e4864676337bf96456f to main and v9-0-prospective-runner and advanced this Umbrella submodule pointer to the same commit.
