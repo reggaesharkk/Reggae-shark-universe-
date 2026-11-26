@@ -33,3 +33,13 @@ The Umbrella stores submodule pointers. Each specialist repository remains the a
 ## Umbrella changes
 
 The Umbrella `main` update advances the DesignLab and PSI submodule pointers and refreshes `SPECIALIST_REPOSITORIES.md`, `docs/REPO_MIRROR_INDEX.md`, and the SHA-256 manifest. The PSI project boundary remains diagnostic; it does not establish consciousness or general self-awareness. This document records provenance only and makes no additional scientific claim.
+
+
+## DesignLab run 3 update
+
+- I advanced `reggaesharkk/self-referential-processing-designlab` on `main` and `v9-0-prospective-runner` to commit `7d04419461ddedd2fe3f4a16664c5b34e3d28caa` and updated the Umbrella submodule pointer to that commit.
+- I archived the supplied run 3 source ZIP and its 80-call receipt. The request stated source ZIP SHA-256 `68859768a5bf7ff1f682df2ad54fe938dd28b70b3c66ad4ae692912d59430680`; the supplied bytes hash to `68859768a5bf7ff1f682df2ad54fe938dd28b70b3c66ad4ae692912d59430600`. I preserved the bytes and recorded both values rather than substituting the stated digest.
+- The receipt records 80 HTTP 200 responses and USD `0.00494411` estimated spend. Gemma completed 25/25 item-stage pairs across all five items; Llama completed 17/25, including complete pipelines for `TR_01`–`TR_03`. The cumulative DesignLab record now contains three Pilot B executions, 120 calls, and USD `0.00667538` estimated spend. Confirmatory study runs remain at 0.
+- I raised style-scrub `max_tokens` to 192 and updated the base and repair prompts to request three plain, neutral sentences totaling strictly 48–52 whitespace-separated words within the 45–55 word window. Phase 1 and Domain 2 evaluation caps remain at 16 tokens.
+- I rebuilt `D:\v9_0_colab_pilot_bundle.zip` with 34 members. Its SHA-256 is `a78e6e6541d1fadbb9e523cbc21769186a256674fb11aa7d67aa2c8b23ee0f75`. The 75,875-byte pool retained SHA-256 `128ff78bb6beb1640fa51897ab97dbb9d07dc56de276973d05a48dda524b53d3`; the one-code-cell notebook, manifests, nested archives, and ZIP integrity verified. The credential-shaped scan found zero matches.
+- I preserved the prior bundle in the D: audit folder. I made no provider API requests, read or logged no API keys, and modified no frozen v8.6.3 files or item-pool bytes.
