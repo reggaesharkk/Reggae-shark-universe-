@@ -43,3 +43,5 @@ git submodule update --init --recursive
 The umbrella stores commit pointers, while each specialist repository keeps its own files and Git history. GitHub’s normal ZIP download contains the gitlink records but not the submodule contents; use a recursive clone to retrieve the pinned source trees.
 
 This index covers the **15 public specialist repositories** and the public profile. Private repositories are excluded from this public map.
+
+**LRSC research review.** The [November 28 research revision](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank/tree/2773b9170399b246796b46ee400abb7a25e93b7e) includes the rank-41 theorem benchmark, output minimum 11, joint minimum 25, independent cardinality audit and measured synthetic codec wins. The industrial comparison recorded zero incremental primary savings. The branch revision is available for review before the default-branch pin advances.

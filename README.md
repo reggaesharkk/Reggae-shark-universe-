@@ -190,3 +190,5 @@ I built SharkLang as a small policy language and runtime for examining an approv
 ### LRSC field and output certificates
 
 On the 99-site benchmark at threshold 0.08, the post-stencil channel space has rank 41. Eleven channels suffice for output alone. S1 quantifies how that witness loses masked-field accuracy. S2 certifies an exact minimum of 25 channels for both errors at tolerance 0.001, including an independent exclusion of every smaller support. The separate industrial compression study closed with zero incremental primary savings. [Mathematical certificates and research record](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank/pull/11)
+
+**LRSC research review.** The [November 28 research revision](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank/tree/2773b9170399b246796b46ee400abb7a25e93b7e) includes the rank-41 theorem benchmark, output minimum 11, joint minimum 25, independent cardinality audit and measured synthetic codec wins. The industrial comparison recorded zero incremental primary savings. The branch revision is available for review before the default-branch pin advances.
