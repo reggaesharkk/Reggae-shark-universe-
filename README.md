@@ -186,3 +186,7 @@ I built SharkLang as a small policy language and runtime for examining an approv
 - [Repository SHA-256 manifest](MANIFEST_SHA256.txt) — hashes for tracked Umbrella files; it does not hash itself.
 
 > **Security & Key-Pinning Note (`v1.3.2` vs Historical `v1.2.0`):** Historical archive deposit `v4` (`10.5281/zenodo.23635351`, `v1.2.0`) included a deterministic fallback Ed25519 seed (`SHA-256: 914f28eabb2b93fb15bf6ad071120c21e8dd5a8a5e4825f053a1962b101901ec`, public key `e3ad81062fa39a869b798e3ab3a7195316dbe7de0e5e0da22a7ff4194065b74c`). That seed is **permanently revoked** in `v1.3.2`: `Ed25519AuthoritySigner` requires `cryptography` and an explicit external `SHARK_ED25519_SEED_HEX` (or `IsolatedSignerSubprocess(generate_ephemeral=True)`), and `SharkProtocolEngine.verify_chain_list(..., *, expected_pubkey=...)` and `verify_exported_ledger` require a pinned verifier public key (`protocols/shark_protocol_v1_3_2/SECURITY.md`, `registry.json`).
+
+### LRSC field and output certificates
+
+On the 99-site benchmark at threshold 0.08, the post-stencil channel space has rank 41. Eleven channels suffice for output alone. S1 quantifies how that witness loses masked-field accuracy. S2 certifies an exact minimum of 25 channels for both errors at tolerance 0.001, including an independent exclusion of every smaller support. The separate industrial compression study closed with zero incremental primary savings. [Mathematical certificates and research record](https://github.com/reggaesharkk/lrsc-odd-ring-spectral-rank/pull/11)
